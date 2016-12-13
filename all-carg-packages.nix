@@ -1,4 +1,4 @@
-{pkgs, stdenv, fetchurl} :
+{pkgs, stdenv, fetchurl, fetchgit} :
 
 let
   lib = stdenv.lib;
@@ -18,6 +18,15 @@ let
     cratesDeps = pkgs.lib.fold ( recursiveDeps : newCratesDeps: newCratesDeps ++ recursiveDeps.cratesDeps  ) deps deps;
     depsString = pkgs.lib.fold ( dep: str: "${str} --extern ${normalizeName dep.name}=${dep}/lib${normalizeName dep.name}.rlib") "" deps;
     symlinkCalc = pkgs.lib.fold ( dep: str: "${str} ln -sf ${dep}/lib${normalizeName dep.name}.rlib mylibs/ \n") "mkdir mylibs\n ";
+
+    # when you use a more recent nixpkgs then one can just use rustcNightlyBin.rustc from there instead!
+    # for now this is a convenience implementation
+    rustcNightly = newpkgs.rustcNightlyBin.rustc;
+    newpkgs = import (fetchgit {
+       url = https://github.com/NixOS/nixpkgs;
+       rev = "1f811a67274e340d9e13987801fe726308e748ab";
+       sha256 = "0dhmh0fcjki8qnvy1fyw4jhi0m3kvabj9nfcd2nc4dcl2ljc84mg";
+     }) {};
 
   in
     stdenv.mkDerivation {
@@ -64,7 +73,7 @@ let
         echo "${name} - ${depsString}"
         echo "namefix ${nameFix}"
         export OUT_DIR=$(mktemp -d --tmpdir nix-output.XXXXXX)
-        export PATH=''$PATH:${pkgs.rustc}/bin
+        export PATH=''$PATH:${rustcNightly}/bin
 
         ${symlinkCalc cratesDeps}
         echo "name ${name}"
@@ -77,11 +86,11 @@ let
         # if a rust build script is around we do strange things!
         if [ -f "build.rs" ]; then
           echo "------- build.rs found: $name ----------"
-          ${pkgs.rustc}/bin/rustc build.rs --crate-name build_script_build --crate-type "bin" ${depsString} --cap-lints "allow"  -L dependency=mylibs -o build-script-build
+          ${rustcNightly}/bin/rustc build.rs --crate-name build_script_build --crate-type "bin" ${depsString} --cap-lints "allow"  -L dependency=mylibs -o build-script-build
 #           du -ha
 #           du -ha $OUT_DIR/
         
-          export PATH=''$PATH:${pkgs.rustc}/bin/
+          export PATH=''$PATH:${rustcNightly}/bin/
           ./build-script-build
           echo "------- build.rs found: $name after build-script-build ----------"
 #           du -ha
@@ -93,7 +102,7 @@ let
           echo "About to use rustc to compile some lib - $name"
 
           # FIXME maybe different crates want different compiler features like --cfg "feature=\"default\"" --cfg "feature=\"std\""'  but this isn't implemented yet in nixcrates
-          ${pkgs.rustc}/bin/rustc --crate-type=lib -g ''${S}lib.rs  ${depsString} --crate-name ${nameFix} -L dependency=mylibs -L dependency=${pkgs.rustc}/   --out-dir $OUT_DIR/ --cfg "feature=\"default\"" --cfg "feature=\"std\""
+          ${rustcNightly}/bin/rustc --crate-type=lib -g ''${S}lib.rs  ${depsString} --crate-name ${nameFix} -L dependency=mylibs -L dependency=${rustcNightly}/   --out-dir $OUT_DIR/ --cfg "feature=\"default\"" --cfg "feature=\"std\""
         else
           # HACK this might be a serious issue but so far it seems to work nonetheless 
           echo "ERROR: not found lib.rs, just skipping which is wrong. I'm not exiting now but this won't work!"
