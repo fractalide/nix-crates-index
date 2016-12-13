@@ -25,6 +25,7 @@ rec {
     hash = "7bb162189e3fe9feff441ef2a6f1a0b821cbad97869d7e06a2dd90eb31d31c54";
     deps = with allCrates; [  libc ];
   };
+  "leveldb-sys_0_0" = leveldb-sys_0_0_3;
   "leveldb-sys_0" = leveldb-sys_0_0_3;
   leveldb-sys_2_0_0 = buildCratesLib {
     name = "leveldb-sys";
@@ -32,6 +33,7 @@ rec {
     hash = "2926fa1abaf634edeac4762060c8e23e8c888f460ede8105bd9d2718fe016d5f";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
+  "leveldb-sys_1_0" = leveldb-sys_1_0_0;
   "leveldb-sys_1" = leveldb-sys_1_0_0;
   "leveldb-sys_2_0" = leveldb-sys_2_0_0;
   "leveldb-sys_2" = leveldb-sys_2_0_0;}

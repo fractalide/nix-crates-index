@@ -13,6 +13,7 @@ rec {
     hash = "55d0f0fc16de3ba7876ab215a75a83bc175acec6768a98849ba6a3aca359d107";
     deps = with allCrates; [  all__clap.clap_2_0 all__serde_json.serde_json_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__strsim.strsim_0_5 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 ];
   };
+  "google-civicinfo2-cli_0_3" = google-civicinfo2-cli_0_3_6;
   "google-civicinfo2-cli_0" = google-civicinfo2-cli_0_3_6;
   "google-civicinfo2-cli_1_0" = google-civicinfo2-cli_1_0_0;
   "google-civicinfo2-cli_1" = google-civicinfo2-cli_1_0_0;}

@@ -19,6 +19,7 @@ rec {
     hash = "37b59ee359c16001bbdd7889090a6c70703addc656a891f00712f61e908a6513";
     deps = with allCrates; [  all__elog.elog_0_1 ];
   };
+  "ecla_0_1" = ecla_0_1_1;
   "ecla_0" = ecla_0_1_1;
   "ecla_1_0" = ecla_1_0_0;
   "ecla_1" = ecla_1_0_0;}

@@ -76,5 +76,19 @@ rec {
     deps = with allCrates; [  all__kernel32-sys.kernel32-sys_0_2 all__filetime.filetime_0_1 all__curl.curl_0_3 all__env_logger.env_logger_0_3 all__libgit2-sys.libgit2-sys_0_4 all__num_cpus.num_cpus_0_2 all__semver.semver_0_2 all__glob.glob_0_2 all__crates-io.crates-io_0_4 all__crossbeam.crossbeam_0_2 all__fs2.fs2_0_2 all__docopt.docopt_0_6 all__miow.miow_0_1 all__advapi32-sys.advapi32-sys_0_1 all__libc.libc_0_2 all__tempdir.tempdir_0_3 all__git2-curl.git2-curl_0_5 all__rustc-serialize.rustc-serialize_0_3 all__tar.tar_0_4 all__term.term_0_4 all__git2.git2_0_4 all__url.url_1_1 all__log.log_0_3 all__toml.toml_0_1 all__regex.regex_0_1 all__winapi.winapi_0_2 all__flate2.flate2_0_2 ];
   };
   "cargo_0_11" = cargo_0_11_0;
+  cargo_0_13_0 = buildCratesLib {
+    name = "cargo";
+    version = "0.13.0";
+    hash = "8360389a6b6ba539eb1f533a4452fd5eccfa4bb2b4e73bfa103c3751d5353ea6";
+    deps = with allCrates; [  all__crates-io.crates-io_0_4 all__glob.glob_0_2 all__log.log_0_3 all__libgit2-sys.libgit2-sys_0_4 all__fs2.fs2_0_2 all__libc.libc_0_2 all__crossbeam.crossbeam_0_2 all__docopt.docopt_0_6 all__filetime.filetime_0_1 all__miow.miow_0_1 all__tar.tar_0_4 all__url.url_1_1 all__env_logger.env_logger_0_3 all__git2.git2_0_4 all__git2-curl.git2-curl_0_5 all__toml.toml_0_2 all__rustc-serialize.rustc-serialize_0_3 all__kernel32-sys.kernel32-sys_0_2 all__tempdir.tempdir_0_3 all__num_cpus.num_cpus_1_0 all__term.term_0_4 all__advapi32-sys.advapi32-sys_0_2 all__regex.regex_0_1 all__winapi.winapi_0_2 all__semver.semver_0_2 all__curl.curl_0_3 all__flate2.flate2_0_2 all__openssl.openssl_0_7 ];
+  };
   "cargo_0_12" = cargo_0_12_0;
-  "cargo_0" = cargo_0_12_0;}
+  cargo_0_14_0 = buildCratesLib {
+    name = "cargo";
+    version = "0.14.0";
+    hash = "f7630f643f1c8de164eb78db782cd0d313f77e36373349dfdb110ee583aa3015";
+    deps = with allCrates; [  all__advapi32-sys.advapi32-sys_0_2 all__num_cpus.num_cpus_1_0 all__log.log_0_3 all__fs2.fs2_0_2 all__semver.semver_0_5 all__crates-io.crates-io_0_4 all__filetime.filetime_0_1 all__winapi.winapi_0_2 all__tempdir.tempdir_0_3 all__term.term_0_4 all__flate2.flate2_0_2 all__kernel32-sys.kernel32-sys_0_2 all__miow.miow_0_1 all__glob.glob_0_2 all__libc.libc_0_2 all__crossbeam.crossbeam_0_2 all__psapi-sys.psapi-sys_0_1 all__curl.curl_0_3 all__libgit2-sys.libgit2-sys_0_4 all__tar.tar_0_4 all__url.url_1_1 all__regex.regex_0_1 all__git2-curl.git2-curl_0_5 all__git2.git2_0_4 all__docopt.docopt_0_6 all__env_logger.env_logger_0_3 all__toml.toml_0_2 all__rustc-serialize.rustc-serialize_0_3 all__openssl.openssl_0_7 ];
+  };
+  "cargo_0_13" = cargo_0_13_0;
+  "cargo_0_14" = cargo_0_14_0;
+  "cargo_0" = cargo_0_14_0;}

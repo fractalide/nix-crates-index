@@ -198,6 +198,7 @@ rec {
     hash = "b35bde17f16b01066ae27819602838110f4cd05c6458b1b82afd518405b97df8";
     deps = with allCrates; [  ];
   };
+  "iobuf_3_5" = iobuf_3_5_8;
   "iobuf_3" = iobuf_3_5_8;
   iobuf_5_0_0 = buildCratesLib {
     name = "iobuf";
@@ -205,6 +206,7 @@ rec {
     hash = "beb3878550fc39aa9f8a6a1870e1c7eff30b8c0ee67f752e3a58351af322a635";
     deps = with allCrates; [  ];
   };
+  "iobuf_4_0" = iobuf_4_0_0;
   "iobuf_4" = iobuf_4_0_0;
   iobuf_5_0_1 = buildCratesLib {
     name = "iobuf";

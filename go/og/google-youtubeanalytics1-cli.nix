@@ -13,6 +13,7 @@ rec {
     hash = "902959d1d7f4a996ed8fa6b95c4c8a613e6f2ba12617c66336c19f3c3b4160c7";
     deps = with allCrates; [  all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__hyper.hyper_0_9 all__strsim.strsim_0_5 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
   };
+  "google-youtubeanalytics1-cli_0_3" = google-youtubeanalytics1-cli_0_3_6;
   "google-youtubeanalytics1-cli_0" = google-youtubeanalytics1-cli_0_3_6;
   "google-youtubeanalytics1-cli_1_0" = google-youtubeanalytics1-cli_1_0_0;
   "google-youtubeanalytics1-cli_1" = google-youtubeanalytics1-cli_1_0_0;}

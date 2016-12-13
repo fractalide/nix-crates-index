@@ -13,6 +13,7 @@ rec {
     hash = "c62da64e8f0a66b3d748a3c5ccc4b3525e8581dc233623fd95eb89f089ebd966";
     deps = with allCrates; [  all__rand.rand_0_3 ];
   };
+  "kolmogorov_smirnov_0_1" = kolmogorov_smirnov_0_1_0;
   "kolmogorov_smirnov_0" = kolmogorov_smirnov_0_1_0;
   kolmogorov_smirnov_1_0_1 = buildCratesLib {
     name = "kolmogorov_smirnov";

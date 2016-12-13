@@ -94,5 +94,36 @@ rec {
     hash = "5be68bf1e9dc2f710af94e883e0035cefa694d9dde75b775ec987606d506baa6";
     deps = with allCrates; [  all__serde-value.serde-value_0_2 all__typemap.typemap_0_3 all__log.log_0_3 all__libc.libc_0_2 all__chrono.chrono_0_2 all__antidote.antidote_0_1 all__crossbeam.crossbeam_0_2 all__humantime.humantime_0_1 all__winapi.winapi_0_2 all__kernel32-sys.kernel32-sys_0_2 all__serde.serde_0_7 ];
   };
-  "log4rs_0_4" = log4rs_0_4_6;
-  "log4rs_0" = log4rs_0_4_6;}
+  log4rs_0_4_7 = buildCratesLib {
+    name = "log4rs";
+    version = "0.4.7";
+    hash = "67ad0ad6e387cb02cca3a672ff206048de6a96f830d811efb9d8359b43a0f232";
+    deps = with allCrates; [  all__chrono.chrono_0_2 all__typemap.typemap_0_3 all__libc.libc_0_2 all__serde.serde_0_7 all__serde-value.serde-value_0_2 all__log.log_0_3 all__crossbeam.crossbeam_0_2 all__antidote.antidote_1_0 all__humantime.humantime_0_1 ];
+  };
+  log4rs_0_4_8 = buildCratesLib {
+    name = "log4rs";
+    version = "0.4.8";
+    hash = "6a7074be77422e232a2f02470bdab3331187110f54f7e9c05d84741671e0583a";
+    deps = with allCrates; [  all__libc.libc_0_2 all__crossbeam.crossbeam_0_2 all__humantime.humantime_0_1 all__serde.serde_0_7 all__typemap.typemap_0_3 all__chrono.chrono_0_2 all__serde-value.serde-value_0_2 all__antidote.antidote_1_0 all__log.log_0_3 ];
+  };
+  log4rs_0_5_0 = buildCratesLib {
+    name = "log4rs";
+    version = "0.5.0";
+    hash = "8a19d081710f5492ec06cd2f9bc210b4c14ca1bd5dd64f77582299cee4f326ea";
+    deps = with allCrates; [  all__log.log_0_3 all__fnv.fnv_1_0 all__crossbeam.crossbeam_0_2 ];
+  };
+  "log4rs_0_4" = log4rs_0_4_8;
+  log4rs_0_5_1 = buildCratesLib {
+    name = "log4rs";
+    version = "0.5.1";
+    hash = "c8350f342251141b5e9c30d79eee5df0cf7b23530ca4cd8cc15725d777285f9f";
+    deps = with allCrates; [  all__crossbeam.crossbeam_0_2 all__log.log_0_3 all__fnv.fnv_1_0 ];
+  };
+  log4rs_0_5_2 = buildCratesLib {
+    name = "log4rs";
+    version = "0.5.2";
+    hash = "9cf3c39664d1a1240905f63ca6e9df586501af775233e9c5cef4a9460fd14214";
+    deps = with allCrates; [  all__log.log_0_3 all__crossbeam.crossbeam_0_2 all__fnv.fnv_1_0 ];
+  };
+  "log4rs_0_5" = log4rs_0_5_2;
+  "log4rs_0" = log4rs_0_5_2;}

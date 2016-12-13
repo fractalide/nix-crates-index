@@ -27,6 +27,7 @@ rec {
     hash = "5545440e7a7ae5d878089bccdb2490d275c45b4db399d34438ebbff373ad892b";
     deps = with allCrates; [  ];
   };
+  "tiny-keccak_0_3" = tiny-keccak_0_3_0;
   "tiny-keccak_0" = tiny-keccak_0_3_0;
   tiny-keccak_1_0_1 = buildCratesLib {
     name = "tiny-keccak";

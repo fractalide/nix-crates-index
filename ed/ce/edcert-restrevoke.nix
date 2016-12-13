@@ -25,6 +25,7 @@ rec {
     hash = "5b3cdbe768f85069761c4e13edc43d09b580b5db40d3e11a17cadfdc1a01fce3";
     deps = with allCrates; [  all__edcert.edcert_5_0 all__chrono.chrono_0_2 all__hyper.hyper_0_8 all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  "edcert-restrevoke_0_1" = edcert-restrevoke_0_1_2;
   "edcert-restrevoke_0" = edcert-restrevoke_0_1_2;
   edcert-restrevoke_1_0_1 = buildCratesLib {
     name = "edcert-restrevoke";

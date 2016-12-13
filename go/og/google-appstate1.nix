@@ -103,6 +103,7 @@ rec {
     hash = "d3d592a9bfe44e86d508ebe5a5387031238536171aff18897a2443e619ddeec7";
     deps = with allCrates; [  all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 url ];
   };
+  "google-appstate1_0_1" = google-appstate1_0_1_15;
   "google-appstate1_0" = google-appstate1_0_1_15;
   "google-appstate1_1_0" = google-appstate1_1_0_0;
   "google-appstate1_1" = google-appstate1_1_0_0;}

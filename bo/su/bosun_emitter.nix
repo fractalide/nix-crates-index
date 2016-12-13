@@ -31,6 +31,7 @@ rec {
     hash = "2cc60cb2163b1f488ca1f9f9c261654be9bf9603e386f82322a46c3552dafc7f";
     deps = with allCrates; [  all__env_logger.env_logger_0_3 all__chrono.chrono_0_2 all__log.log_0_3 all__toml.toml_0_1 all__clap.clap_2 all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  "bosun_emitter_0_0" = bosun_emitter_0_0_6;
   "bosun_emitter_0" = bosun_emitter_0_0_6;
   bosun_emitter_1_0_1 = buildCratesLib {
     name = "bosun_emitter";

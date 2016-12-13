@@ -20,6 +20,7 @@ rec {
     hash = "8edabe8ad8de6636d36197ed812b092886d00559a333d09a6ff7e8a98f700ce9";
     deps = with allCrates; [  ];
   };
+  "seahash_0_2" = seahash_0_2_0;
   "seahash_0" = seahash_0_2_0;
   seahash_2_0_0 = buildCratesLib {
     name = "seahash";
@@ -27,6 +28,7 @@ rec {
     hash = "b1578d9420c0cf1b6ea98769911a99af519c1532d71f708f70b4a67d554f29cc";
     deps = with allCrates; [  ];
   };
+  "seahash_1_0" = seahash_1_0_0;
   "seahash_1" = seahash_1_0_0;
   seahash_2_1_0 = buildCratesLib {
     name = "seahash";
@@ -68,6 +70,7 @@ rec {
     hash = "dcfc7d04677cf3770db74b243300dc650ca3c1109e4c6cdfc2355dca8fa7b3e8";
     deps = with allCrates; [  ];
   };
+  "seahash_2_4" = seahash_2_4_0;
   "seahash_2" = seahash_2_4_0;
   seahash_3_0_1 = buildCratesLib {
     name = "seahash";

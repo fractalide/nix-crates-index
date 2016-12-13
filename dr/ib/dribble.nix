@@ -13,6 +13,7 @@ rec {
     hash = "88292cdfe52a7656953cda0cafd55957a502145db4ba4b8e45714418adaf6a26";
     deps = with allCrates; [  rand ];
   };
+  "dribble_0_1" = dribble_0_1_0;
   "dribble_0" = dribble_0_1_0;
   "dribble_1_0" = dribble_1_0_0;
   "dribble_1" = dribble_1_0_0;}

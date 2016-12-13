@@ -98,6 +98,7 @@ rec {
     hash = "a859041cbf7a70ea1ece4b87d1a2c6ef364dcb68749c88db1f97304b9ec09d5f";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
+  "num_cpus_0_2" = num_cpus_0_2_13;
   "num_cpus_0" = num_cpus_0_2_13;
   num_cpus_1_1_0 = buildCratesLib {
     name = "num_cpus";

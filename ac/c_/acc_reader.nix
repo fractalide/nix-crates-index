@@ -13,6 +13,7 @@ rec {
     hash = "0fd023affea2bbda90ae32be0563f64ada6d4666d90e60c20277ae4ce08e2799";
     deps = with allCrates; [  ];
   };
+  "acc_reader_1_0" = acc_reader_1_0_0;
   "acc_reader_1" = acc_reader_1_0_0;
   "acc_reader_2_0" = acc_reader_2_0_0;
   "acc_reader_2" = acc_reader_2_0_0;}

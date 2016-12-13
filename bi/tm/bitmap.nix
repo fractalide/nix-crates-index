@@ -25,6 +25,7 @@ rec {
     hash = "a940d0f1ca716139914c7ef36032f2a355ba0c354fe8052fa4c28cdf72d78573";
     deps = with allCrates; [  ];
   };
+  "bitmap_1_0" = bitmap_1_0_2;
   "bitmap_1" = bitmap_1_0_2;
   bitmap_3_0_0 = buildCratesLib {
     name = "bitmap";
@@ -32,6 +33,7 @@ rec {
     hash = "ede9f05e69632c59de71f8b5ff47da655ba2e50147006ea12ad6683981d1c551";
     deps = with allCrates; [  ];
   };
+  "bitmap_2_0" = bitmap_2_0_0;
   "bitmap_2" = bitmap_2_0_0;
   bitmap_3_0_1 = buildCratesLib {
     name = "bitmap";

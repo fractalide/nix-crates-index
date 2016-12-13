@@ -55,6 +55,7 @@ rec {
     hash = "5845bf77d497f79416df39462df26d4a8b71dd6440246848ee63709476dbb9a6";
     deps = with allCrates; [  ];
   };
+  "either_0_1" = either_0_1_7;
   "either_0" = either_0_1_7;
   either_1_0_1 = buildCratesLib {
     name = "either";

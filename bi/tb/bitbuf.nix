@@ -19,6 +19,7 @@ rec {
     hash = "2b15abc3435a3b8100f79df742035da77db57500f8f516c135ef33822279226a";
     deps = with allCrates; [  ];
   };
+  "bitbuf_0_1" = bitbuf_0_1_1;
   "bitbuf_0" = bitbuf_0_1_1;
   "bitbuf_1_0" = bitbuf_1_0_0;
   "bitbuf_1" = bitbuf_1_0_0;}

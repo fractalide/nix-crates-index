@@ -57,6 +57,7 @@ rec {
     hash = "14e7e0f166693284cf0db4e1d8877fdfec66c048d8f4b1e3ed6c6434958a7d6d";
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__fs2.fs2_0_2 all__rust-crypto.rust-crypto_0_2 all__rollsum.rollsum_0_2 all__argparse.argparse_0_2 all__flate2.flate2_0_2 all__sodiumoxide.sodiumoxide_0_0_12 all__log.log_0_3 ];
   };
+  "rdedup-lib_0_2" = rdedup-lib_0_2_0;
   "rdedup-lib_0" = rdedup-lib_0_2_0;
   rdedup-lib_1_0_1 = buildCratesLib {
     name = "rdedup-lib";

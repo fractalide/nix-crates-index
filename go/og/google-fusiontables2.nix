@@ -97,6 +97,7 @@ rec {
     hash = "a53c223b64397a4b2c7817777ae983dcbcf88f9df8ec18728957424a791d1fc9";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde_json.serde_json_0_8 url all__serde.serde_0_8 ];
   };
+  "google-fusiontables2_0_1" = google-fusiontables2_0_1_15;
   "google-fusiontables2_0" = google-fusiontables2_0_1_15;
   "google-fusiontables2_1_0" = google-fusiontables2_1_0_0;
   "google-fusiontables2_1" = google-fusiontables2_1_0_0;}

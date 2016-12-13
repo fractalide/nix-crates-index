@@ -32,6 +32,7 @@ rec {
     hash = "c8ad7bb8c1e689bad2ff10f335ba7bb0ba28d02517d5df4b1b156c82575739a8";
     deps = with allCrates; [  all__r2d2.r2d2_0_6 all__mysql.mysql_2_2 all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  "r2d2_mysql_0_2" = r2d2_mysql_0_2_2;
   "r2d2_mysql_0" = r2d2_mysql_0_2_2;
   r2d2_mysql_2_2_1 = buildCratesLib {
     name = "r2d2_mysql";
@@ -45,6 +46,7 @@ rec {
     hash = "52937b63afb6c21d7892cb66aced3f891e44e83305c0e89c77ee3d5a13ad9eb5";
     deps = with allCrates; [  all__r2d2.r2d2_0_6 all__mysql.mysql_3_0 all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  "r2d2_mysql_2_2" = r2d2_mysql_2_2_1;
   "r2d2_mysql_2" = r2d2_mysql_2_2_1;
   r2d2_mysql_7_1_0 = buildCratesLib {
     name = "r2d2_mysql";
@@ -52,6 +54,7 @@ rec {
     hash = "f6152876a7389fc319ff358421e361dbb129ba1bfe2fe3e753383764cb0ea637";
     deps = with allCrates; [  all__r2d2.r2d2_0_7 all__mysql.mysql_7_1 all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  "r2d2_mysql_3_0" = r2d2_mysql_3_0_0;
   "r2d2_mysql_3_0" = r2d2_mysql_3_0_0;
   "r2d2_mysql_3" = r2d2_mysql_3_0_0;
   "r2d2_mysql_7_1" = r2d2_mysql_7_1_0;

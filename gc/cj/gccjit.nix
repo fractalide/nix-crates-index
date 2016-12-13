@@ -19,6 +19,7 @@ rec {
     hash = "41f644d8e82b96754cf5093760ab95d10deb55c56829eefd7b3669793d9b57dc";
     deps = with allCrates; [  all__gccjit_sys.gccjit_sys_0_0_1 ];
   };
+  "gccjit_0_0" = gccjit_0_0_2;
   "gccjit_0" = gccjit_0_0_2;
   "gccjit_1_0" = gccjit_1_0_0;
   "gccjit_1" = gccjit_1_0_0;}

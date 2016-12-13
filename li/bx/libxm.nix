@@ -43,6 +43,7 @@ rec {
     hash = "0a44e312b610e247f8f7a53ab6095eaf5789c31d2075c3cbf7142ab1c50b6401";
     deps = with allCrates; [  libc all__gcc.gcc_0_3 ];
   };
+  "libxm_0_0" = libxm_0_0_6;
   "libxm_0" = libxm_0_0_6;
   "libxm_1_0" = libxm_1_0_0;
   "libxm_1" = libxm_1_0_0;}

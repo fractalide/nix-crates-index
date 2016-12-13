@@ -103,6 +103,7 @@ rec {
     hash = "b2e084806839bf271175a664c6a37a9c2ae90b41a7eca5ab687061f07b302c50";
     deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 url ];
   };
+  "google-youtubeanalytics1_0_1" = google-youtubeanalytics1_0_1_15;
   "google-youtubeanalytics1_0" = google-youtubeanalytics1_0_1_15;
   "google-youtubeanalytics1_1_0" = google-youtubeanalytics1_1_0_0;
   "google-youtubeanalytics1_1" = google-youtubeanalytics1_1_0_0;}

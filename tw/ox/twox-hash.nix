@@ -19,6 +19,7 @@ rec {
     hash = "967dcc388dfad978dacf0fb7ffdc41d88381a8b54d842f3948864390a3381613";
     deps = with allCrates; [  all__rand.rand_0_3 ];
   };
+  "twox-hash_0_1" = twox-hash_0_1_1;
   "twox-hash_0" = twox-hash_0_1_1;
   "twox-hash_1_0" = twox-hash_1_0_0;
   "twox-hash_1" = twox-hash_1_0_0;}

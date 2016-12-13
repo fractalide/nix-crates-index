@@ -13,6 +13,7 @@ rec {
     hash = "bba5cac03437a426c5feb845fb47ba0123fc11a836f2e17a83404a99b6db7eab";
     deps = with allCrates; [  all__nom.nom_0_3 ];
   };
+  "warc_parser_0_0" = warc_parser_0_0_1;
   "warc_parser_0" = warc_parser_0_0_1;
   warc_parser_1_0_1 = buildCratesLib {
     name = "warc_parser";

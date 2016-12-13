@@ -13,6 +13,7 @@ rec {
     hash = "fc9e92879dddefc75264292d983bc141201325029a038d60d90f46260addaaaa";
     deps = with allCrates; [  ];
   };
+  "add3_0_1" = add3_0_1_0;
   "add3_0" = add3_0_1_0;
   add3_2_0_0 = buildCratesLib {
     name = "add3";
@@ -20,6 +21,7 @@ rec {
     hash = "c286b15110f59cf2630a377d792ec808c9dc4430ffaef1a17b67d45b0fac87ce";
     deps = with allCrates; [  ];
   };
+  "add3_1_0" = add3_1_0_0;
   "add3_1" = add3_1_0_0;
   add3_2_0_1 = buildCratesLib {
     name = "add3";
@@ -40,6 +42,7 @@ rec {
     hash = "5744d87686e7058ab9718f34c7f4e260fc508af05ee9df4c190a4f14bc09a76f";
     deps = with allCrates; [  ];
   };
+  "add3_2_1" = add3_2_1_0;
   "add3_2" = add3_2_1_0;
   add3_3_0_1 = buildCratesLib {
     name = "add3";
@@ -60,6 +63,7 @@ rec {
     hash = "ba9bf5bd83ba9d4bd09f59b5d917043485eeef883d8b4f603b1dbed842286916";
     deps = with allCrates; [  ];
   };
+  "add3_3_1" = add3_3_1_0;
   "add3_3" = add3_3_1_0;
   "add3_4_0" = add3_4_0_0;
   "add3_4" = add3_4_0_0;}

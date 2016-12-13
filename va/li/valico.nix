@@ -206,6 +206,7 @@ rec {
     hash = "c10d105a25c650ecb33b91d6c361497c93ca1794b9b7023a16ebde4ab1c3587b";
     deps = with allCrates; [  all__uuid.uuid_0_2 all__traitobject.traitobject_0_0 all__phf.phf_0_7 all__typeable.typeable_0_1 all__jsonway.jsonway_1 all__url.url_1 all__serde_json.serde_json_0_7 all__regex.regex_0_1 all__serde.serde_0_7 all__lazy_static.lazy_static_0_2 all__phf_codegen.phf_codegen_0_7 ];
   };
+  "valico_0_8" = valico_0_8_2;
   "valico_0" = valico_0_8_2;
   valico_1_0_1 = buildCratesLib {
     name = "valico";

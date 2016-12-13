@@ -51,6 +51,7 @@ rec {
     hash = "f696751124e7ccde9f4841f2424d14689f6a630dfeb59fb9bd9448189dbecd22";
     deps = with allCrates; [  ];
   };
+  "bitsparrow_0_4" = bitsparrow_0_4_0;
   "bitsparrow_0" = bitsparrow_0_4_0;
   "bitsparrow_1_0" = bitsparrow_1_0_0;
   "bitsparrow_1" = bitsparrow_1_0_0;}

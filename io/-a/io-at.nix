@@ -55,5 +55,38 @@ rec {
     hash = "816c8341cb3a960ec9151c4a202e320c3eabad4335fcc7ea672118327bb57580";
     deps = with allCrates; [  libc nix ];
   };
+  io-at_0_2_0 = buildCratesLib {
+    name = "io-at";
+    version = "0.2.0";
+    hash = "0f893ab8da8569089c494e2d8de21168f25d5f58e58b4c4104c7ede46414fd14";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
   "io-at_0_1" = io-at_0_1_8;
-  "io-at_0" = io-at_0_1_8;}
+  io-at_0_3_0 = buildCratesLib {
+    name = "io-at";
+    version = "0.3.0";
+    hash = "03c52c0da52d4cd5eb2005632a1c337d228eef3dc46fc96e488a00f45a96cdc9";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "io-at_0_2" = io-at_0_2_0;
+  io-at_0_3_1 = buildCratesLib {
+    name = "io-at";
+    version = "0.3.1";
+    hash = "7313b4de0b73228c019cf42a73676c9f3f31a4991af411b6b7fb0d11ac1c2259";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  io-at_0_4_0 = buildCratesLib {
+    name = "io-at";
+    version = "0.4.0";
+    hash = "5099b6c2b740d0513d7620afe6139b3106fd53cd8ca10951c8ea79232acf4c78";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "io-at_0_3" = io-at_0_3_1;
+  io-at_0_4_1 = buildCratesLib {
+    name = "io-at";
+    version = "0.4.1";
+    hash = "9f6a37fae3302899ad1b4326692bbe71bb4d1bc25b596a443b4746d7219f7955";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "io-at_0_4" = io-at_0_4_1;
+  "io-at_0" = io-at_0_4_1;}

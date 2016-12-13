@@ -85,6 +85,7 @@ rec {
     hash = "6f413b6c37f312b70a8592887cb12bfa46c77ee67956fc143dd0e10d5f712635";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 url all__serde_json.serde_json_0_8 ];
   };
+  "google-gan1_beta1_0_1" = google-gan1_beta1_0_1_15;
   "google-gan1_beta1_0" = google-gan1_beta1_0_1_15;
   "google-gan1_beta1_1_0" = google-gan1_beta1_1_0_0;
   "google-gan1_beta1_1" = google-gan1_beta1_1_0_0;}

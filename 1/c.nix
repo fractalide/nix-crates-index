@@ -13,6 +13,7 @@ rec {
     hash = "23394e1b334e168b5929379221e9613711e23417b9a90151c50c1abacaef1da8";
     deps = with allCrates; [  libc ];
   };
+  "c_0_0" = c_0_0_1;
   "c_0" = c_0_0_1;
   "c_1_0" = c_1_0_0;
   "c_1" = c_1_0_0;}

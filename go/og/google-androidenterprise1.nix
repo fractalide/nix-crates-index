@@ -97,6 +97,7 @@ rec {
     hash = "0072755ff24b12fdc0ebcd4efd246932c40e1fea7e5832b8100c50c676dacb2e";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 url all__serde_json.serde_json_0_8 ];
   };
+  "google-androidenterprise1_0_1" = google-androidenterprise1_0_1_15;
   "google-androidenterprise1_0" = google-androidenterprise1_0_1_15;
   "google-androidenterprise1_1_0" = google-androidenterprise1_1_0_0;
   "google-androidenterprise1_1" = google-androidenterprise1_1_0_0;}

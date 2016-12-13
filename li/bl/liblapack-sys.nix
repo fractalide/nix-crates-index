@@ -7,6 +7,12 @@ rec {
     hash = "8c9798be0f1bb9fd4fdaa4accf84ac1b515467cbcf191f39c2472db9387b8198";
     deps = with allCrates; [  ];
   };
+  liblapack-sys_0_0_2 = buildCratesLib {
+    name = "liblapack-sys";
+    version = "0.0.2";
+    hash = "54bfbd2d0a203bbc2a1fb1841e1a4f9d227188f0ad0d05800603e4a806143bdc";
+    deps = with allCrates; [  all__libblas-sys.libblas-sys_0_0_2 ];
+  };
   liblapack-sys_0_0_3 = buildCratesLib {
     name = "liblapack-sys";
     version = "0.0.3";

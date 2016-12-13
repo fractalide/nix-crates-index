@@ -34,6 +34,7 @@ rec {
     hash = "0101499c765a9a67c4abf6fb540496f00dd51333d59c187be65de905f4675d82";
     deps = with allCrates; [  all__clap.clap_2_19 all__piston_window.piston_window_0_58 all__pistoncore-window.pistoncore-window_0_24 ];
   };
+  "shiny-pancake_0_4" = shiny-pancake_0_4_0;
   "shiny-pancake_0" = shiny-pancake_0_4_0;
   "shiny-pancake_1_0" = shiny-pancake_1_0_0;
   "shiny-pancake_1" = shiny-pancake_1_0_0;}

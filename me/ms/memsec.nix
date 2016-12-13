@@ -37,5 +37,60 @@ rec {
     hash = "7ae1e9568c0ee68dbadd02aae7f60fb4c27aeadea00a6460f4c8a4dd76c79f55";
     deps = with allCrates; [  all__rand.rand_0_3 all__libc.libc_0_2 all__kernel32-sys.kernel32-sys_0_2 all__winapi.winapi_0_2 ];
   };
-  "memsec_0_1" = memsec_0_1_5;
-  "memsec_0" = memsec_0_1_5;}
+  memsec_0_1_6 = buildCratesLib {
+    name = "memsec";
+    version = "0.1.6";
+    hash = "c3e388290e9412064d94c7d23091169e00cba0913503b437e547893bbd9cf9eb";
+    deps = with allCrates; [  all__rand.rand_0_3 ];
+  };
+  memsec_0_1_7 = buildCratesLib {
+    name = "memsec";
+    version = "0.1.7";
+    hash = "19f1b63d32f81493d3f115178365332304671b3832a05e8fc32bb07bdf0d094e";
+    deps = with allCrates; [  all__rand.rand_0_3 all__libc.libc_0_2 ];
+  };
+  memsec_0_1_8 = buildCratesLib {
+    name = "memsec";
+    version = "0.1.8";
+    hash = "3fbb7fe75b4c332ab8ad101c21667a94551d0d4fef9f726ffc7ff376f0ec6088";
+    deps = with allCrates; [  all__rand.rand_0_3 all__libc.libc_0_2 ];
+  };
+  memsec_0_1_9 = buildCratesLib {
+    name = "memsec";
+    version = "0.1.9";
+    hash = "db4e5d259fd1789dc66c8506a93afb38d59cf7a9655e519ff4d2e3a38ff64dc5";
+    deps = with allCrates; [  all__rand.rand_0_3 all__libc.libc_0_2 ];
+  };
+  memsec_0_1_10 = buildCratesLib {
+    name = "memsec";
+    version = "0.1.10";
+    hash = "d97a6c2bc25b20f1b78f54be9f10430533966c226e2a3736c9782d96cca39d88";
+    deps = with allCrates; [  all__rand.rand_0_3 all__libc.libc_0_2 ];
+  };
+  memsec_0_2_0 = buildCratesLib {
+    name = "memsec";
+    version = "0.2.0";
+    hash = "c7f426e8d752658cf7a088a139eb9d4a2630562ff4025af0f68284d9e2bb111f";
+    deps = with allCrates; [  all__rand.rand_0_3 all__libc.libc_0_2 ];
+  };
+  "memsec_0_1" = memsec_0_1_10;
+  memsec_0_2_1 = buildCratesLib {
+    name = "memsec";
+    version = "0.2.1";
+    hash = "a4d3a36162c6eabd3841066f4a156c87d71d4ec8e3e819329563012ee72f3b64";
+    deps = with allCrates; [  all__rand.rand_0_3 all__libc.libc_0_2 ];
+  };
+  memsec_0_2_2 = buildCratesLib {
+    name = "memsec";
+    version = "0.2.2";
+    hash = "e58728955ce76862865d69a1926f9f87431b92ec9f8018a52308d23ce9cd6d26";
+    deps = with allCrates; [  all__rand.rand_0_3 all__libc.libc_0_2 ];
+  };
+  memsec_0_2_3 = buildCratesLib {
+    name = "memsec";
+    version = "0.2.3";
+    hash = "f7ed85e0daed5cc215d666332f673a735daca8ac69d9367ed651a4481d39317a";
+    deps = with allCrates; [  all__rand.rand_0_3 all__libc.libc_0_2 ];
+  };
+  "memsec_0_2" = memsec_0_2_3;
+  "memsec_0" = memsec_0_2_3;}

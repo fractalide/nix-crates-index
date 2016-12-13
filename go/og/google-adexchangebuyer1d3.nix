@@ -97,6 +97,7 @@ rec {
     hash = "5f1fa72abca6796fc16aedef94818698ef0c62466db6e4bb53afa27c5ca2e779";
     deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__serde.serde_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 ];
   };
+  "google-adexchangebuyer1d3_0_1" = google-adexchangebuyer1d3_0_1_15;
   "google-adexchangebuyer1d3_0" = google-adexchangebuyer1d3_0_1_15;
   "google-adexchangebuyer1d3_1_0" = google-adexchangebuyer1d3_1_0_0;
   "google-adexchangebuyer1d3_1" = google-adexchangebuyer1d3_1_0_0;}

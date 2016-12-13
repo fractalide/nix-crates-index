@@ -19,6 +19,7 @@ rec {
     hash = "77807abc256d35af7ed1db0c5500958bec59aeb5a763e9c3b08d5d3267e9ff9b";
     deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 url all__serde.serde_0_8 all__hyper.hyper_0_9 ];
   };
+  "google-dfareporting2d5_0_1" = google-dfareporting2d5_0_1_15;
   "google-dfareporting2d5_0" = google-dfareporting2d5_0_1_15;
   "google-dfareporting2d5_1_0" = google-dfareporting2d5_1_0_0;
   "google-dfareporting2d5_1" = google-dfareporting2d5_1_0_0;}

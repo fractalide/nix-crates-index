@@ -37,5 +37,44 @@ rec {
     hash = "2cb3d18aa1709ba72654b0d9343317ba16e38bfdae184c913824c76e1e55133b";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__log.log_0_3 all__time.time_0_1 all__libc.libc_0_1 ];
   };
-  "ssdp_0_1" = ssdp_0_1_5;
-  "ssdp_0" = ssdp_0_1_5;}
+  ssdp_0_1_6 = buildCratesLib {
+    name = "ssdp";
+    version = "0.1.6";
+    hash = "16d421c4faf8a42c887ce53530e9b31d032e2aa46f9879168534e05d86d0e237";
+    deps = with allCrates; [  all__log.log_0_3 all__time.time_0_1 all__libc.libc_0_1 all__hyper.hyper_0_9 ];
+  };
+  ssdp_0_2_6 = buildCratesLib {
+    name = "ssdp";
+    version = "0.2.6";
+    hash = "9eac51d4591a3ae990a648239f8f60cb6c46d6e74543b2ec300abd3a231abaab";
+    deps = with allCrates; [  all__log.log_0_3 all__time.time_0_1 all__net2.net2_0_2 all__hyper.hyper_0_9 ];
+  };
+  "ssdp_0_1" = ssdp_0_1_6;
+  ssdp_0_3_0 = buildCratesLib {
+    name = "ssdp";
+    version = "0.3.0";
+    hash = "a4aa674bb52f1e7ae7daf7ff91930c670c31327e137a1bcd4505e8b9a0b65247";
+    deps = with allCrates; [  all__time.time_0_1 all__net2.net2_0_2 all__log.log_0_3 all__hyper.hyper_0_9 ];
+  };
+  "ssdp_0_2" = ssdp_0_2_6;
+  ssdp_0_3_1 = buildCratesLib {
+    name = "ssdp";
+    version = "0.3.1";
+    hash = "e3d898f2edaf0bee7fb24f927cbf7945a5906dbfc80d1fd33dbf93c33fa445da";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__log.log_0_3 all__time.time_0_1 all__net2.net2_0_2 ];
+  };
+  ssdp_0_3_2 = buildCratesLib {
+    name = "ssdp";
+    version = "0.3.2";
+    hash = "260761b3b067a0c2110898b9944bd44f82f99abff3793db2afe240d083972a83";
+    deps = with allCrates; [  all__net2.net2_0_2 all__hyper.hyper_0_9 all__time.time_0_1 all__log.log_0_3 ];
+  };
+  ssdp_0_4_0 = buildCratesLib {
+    name = "ssdp";
+    version = "0.4.0";
+    hash = "94dc35d5a6da0147a705db0315fd4bae5d6641ece85956a79498d5f97cfa8043";
+    deps = with allCrates; [  all__time.time_0_1 all__log.log_0_3 all__net2.net2_0_2 all__hyper.hyper_0_9 ];
+  };
+  "ssdp_0_3" = ssdp_0_3_2;
+  "ssdp_0_4" = ssdp_0_4_0;
+  "ssdp_0" = ssdp_0_4_0;}

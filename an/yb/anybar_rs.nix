@@ -141,6 +141,7 @@ rec {
     hash = "c421c6bf118e6218450a7eb914c6d734ff7f616f3068336f9cc2041b80e55546";
     deps = with allCrates; [  all__clap.clap_2_0_2 ];
   };
+  "anybar_rs_0_9" = anybar_rs_0_9_12;
   "anybar_rs_0" = anybar_rs_0_9_12;
   anybar_rs_1_0_1 = buildCratesLib {
     name = "anybar_rs";

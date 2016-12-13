@@ -129,6 +129,7 @@ rec {
     hash = "dc0afcf8cbf5a8ce20a26a3d13e7f3d35b79446cabd639a96a925363b4bafe33";
     deps = with allCrates; [  all__serde_json.serde_json_0_7 all__serde.serde_0_7 ];
   };
+  "jsonway_0_3" = jsonway_0_3_5;
   "jsonway_0" = jsonway_0_3_5;
   jsonway_1_0_1 = buildCratesLib {
     name = "jsonway";

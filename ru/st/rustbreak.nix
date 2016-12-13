@@ -26,6 +26,7 @@ rec {
     hash = "98cf95b56ab50f3e05fb8a65ac46a96793203e9da7ca141b2ee06ac7d2157429";
     deps = with allCrates; [  all__serde.serde_0_8 all__fs2.fs2_0_2 all__quick-error.quick-error_1_1 ];
   };
+  "rustbreak_0_2" = rustbreak_0_2_1;
   "rustbreak_0" = rustbreak_0_2_1;
   rustbreak_1_1_0 = buildCratesLib {
     name = "rustbreak";

@@ -62,6 +62,7 @@ rec {
     hash = "0da0214c3563b93ca75731666e29e32735617e1f51695ec808c385d29e89bb72";
     deps = with allCrates; [  all__clap.clap_2 all__lazy_static.lazy_static_0 all__git2.git2_0 all__nom.nom_1 all__rustc-serialize.rustc-serialize_0 all__term.term_0 all__chrono.chrono_0 all__rayon.rayon_0 all__toml.toml_0 all__regex.regex_0 ];
   };
+  "git-journal_0_8" = git-journal_0_8_0;
   "git-journal_0" = git-journal_0_8_0;
   git-journal_1_0_1 = buildCratesLib {
     name = "git-journal";

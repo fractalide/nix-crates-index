@@ -37,6 +37,7 @@ rec {
     hash = "9190d4fdcc6b93d290236afff590896050a971233ec853958c0e52d42bdeb72c";
     deps = with allCrates; [  ];
   };
+  "void_0_0" = void_0_0_5;
   "void_0" = void_0_0_5;
   void_1_0_1 = buildCratesLib {
     name = "void";

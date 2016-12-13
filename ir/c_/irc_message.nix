@@ -37,6 +37,7 @@ rec {
     hash = "ecff9a61289856be1096eda847f89c8785c96617c281f0665c1f4e30d89a4700";
     deps = with allCrates; [  ];
   };
+  "irc_message_0_0" = irc_message_0_0_5;
   "irc_message_0" = irc_message_0_0_5;
   "irc_message_1_0" = irc_message_1_0_0;
   "irc_message_1" = irc_message_1_0_0;}

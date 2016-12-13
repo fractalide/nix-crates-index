@@ -13,6 +13,7 @@ rec {
     hash = "fbf1bb823cd71e11ba3bc03848d3e928af0afe7a7975b9889954acb7522b11f4";
     deps = with allCrates; [  all__hyper.hyper_0_7 all__jsonrpc-core.jsonrpc-core_1_0 ];
   };
+  "jsonrpc-http-server_0_1" = jsonrpc-http-server_0_1_0;
   "jsonrpc-http-server_0" = jsonrpc-http-server_0_1_0;
   jsonrpc-http-server_1_1_0 = buildCratesLib {
     name = "jsonrpc-http-server";
@@ -33,6 +34,7 @@ rec {
     hash = "f5da3f8371182f741dc09e3909734cabc5fbe66a45e810e6207bc4873f1c8620";
     deps = with allCrates; [  all__unicase.unicase_1_2 all__hyper.hyper_0_7 all__jsonrpc-core.jsonrpc-core_1_1 ];
   };
+  "jsonrpc-http-server_1_1" = jsonrpc-http-server_1_1_2;
   "jsonrpc-http-server_1" = jsonrpc-http-server_1_1_2;
   jsonrpc-http-server_2_1_0 = buildCratesLib {
     name = "jsonrpc-http-server";
@@ -47,6 +49,7 @@ rec {
     hash = "f25eb0a69b65a11d19ae4aad47aa5eaa461c8f7469f8e3311862b55e59ca5eca";
     deps = with allCrates; [  all__jsonrpc-core.jsonrpc-core_2_0 all__hyper.hyper_0_7 all__unicase.unicase_1_3 ];
   };
+  "jsonrpc-http-server_2_1" = jsonrpc-http-server_2_1_0;
   "jsonrpc-http-server_2" = jsonrpc-http-server_2_1_0;
   jsonrpc-http-server_3_0_1 = buildCratesLib {
     name = "jsonrpc-http-server";

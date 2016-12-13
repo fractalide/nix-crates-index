@@ -37,5 +37,53 @@ rec {
     hash = "441156e9169c222eab84e88da3af50b8f9d4026aaeef584c128d0c7a7f012e60";
     deps = with allCrates; [  all__tempdir.tempdir_0_3 ];
   };
-  "atomicwrites_0_0" = atomicwrites_0_0_6;
-  "atomicwrites_0" = atomicwrites_0_0_6;}
+  atomicwrites_0_0_7 = buildCratesLib {
+    name = "atomicwrites";
+    version = "0.0.7";
+    hash = "d7fd75a68278d37937babfd5c7417fbecd64109a5c48224a6bf60bd082f22063";
+    deps = with allCrates; [  all__tempdir.tempdir_0_3 ];
+  };
+  atomicwrites_0_0_8 = buildCratesLib {
+    name = "atomicwrites";
+    version = "0.0.8";
+    hash = "8835fe820268c46257055ff989551df5736aee2f8f2e0e089cc53c2c15a42949";
+    deps = with allCrates; [  all__tempdir.tempdir_0_3 ];
+  };
+  atomicwrites_0_0_9 = buildCratesLib {
+    name = "atomicwrites";
+    version = "0.0.9";
+    hash = "5bfd9ec87d6f524ee706dbaf7c94202bfc42efb0c62cecdf6d200c034c3dc2e2";
+    deps = with allCrates; [  all__tempdir.tempdir_0_3 ];
+  };
+  atomicwrites_0_0_10 = buildCratesLib {
+    name = "atomicwrites";
+    version = "0.0.10";
+    hash = "b4fd6cdfe10f5be1eca014c434820217f73c79392dce0a0f3f17db5d66c9973a";
+    deps = with allCrates; [  all__tempdir.tempdir_0_3 ];
+  };
+  atomicwrites_0_0_11 = buildCratesLib {
+    name = "atomicwrites";
+    version = "0.0.11";
+    hash = "afe51202623cedfc723b691a9d7c129d775c982d94cc48cc66fa19ba4b41e924";
+    deps = with allCrates; [  all__tempdir.tempdir_0_3 ];
+  };
+  atomicwrites_0_0_12 = buildCratesLib {
+    name = "atomicwrites";
+    version = "0.0.12";
+    hash = "ff3742e697c9dd2ca29520e8fd098e3a5f817fd56ae093e65a5411e7cf023b8e";
+    deps = with allCrates; [  tempdir ];
+  };
+  atomicwrites_0_0_13 = buildCratesLib {
+    name = "atomicwrites";
+    version = "0.0.13";
+    hash = "0d6b9cfff8bfdc808fa81e52c92fe9f482d160c416b8a413b122f03394dfd9fe";
+    deps = with allCrates; [  tempdir ];
+  };
+  atomicwrites_0_0_14 = buildCratesLib {
+    name = "atomicwrites";
+    version = "0.0.14";
+    hash = "cb0c17968587e21d3fec90bd67dc2b7c956189a9e81ce4f8910172a787b66556";
+    deps = with allCrates; [  tempdir ];
+  };
+  "atomicwrites_0_0" = atomicwrites_0_0_14;
+  "atomicwrites_0" = atomicwrites_0_0_14;}

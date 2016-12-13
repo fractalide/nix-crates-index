@@ -70,6 +70,7 @@ rec {
     hash = "a66111bd432da22f445a243d6fd48885ce0f75ccf3f015dab308b80d470fdc1e";
     deps = with allCrates; [  all__num-traits.num-traits_0_1 all__rand.rand_0_3 all__lazy_static.lazy_static_0_2 all__rustc_version.rustc_version_0_1 ];
   };
+  "extprim_0_5" = extprim_0_5_1;
   "extprim_0" = extprim_0_5_1;
   extprim_1_0_1 = buildCratesLib {
     name = "extprim";

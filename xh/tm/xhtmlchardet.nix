@@ -13,6 +13,7 @@ rec {
     hash = "8bdd362aad2f0db3d879f65bda0eb09d68567f49ec0306cf302c38c8f98fa771";
     deps = with allCrates; [  ];
   };
+  "xhtmlchardet_0_1" = xhtmlchardet_0_1_0;
   "xhtmlchardet_0" = xhtmlchardet_0_1_0;
   xhtmlchardet_1_0_1 = buildCratesLib {
     name = "xhtmlchardet";
@@ -26,6 +27,7 @@ rec {
     hash = "fbdbd5af55d136750a0c8b8b16f178564c59848f62449c728128dbad40d11ed7";
     deps = with allCrates; [  ];
   };
+  "xhtmlchardet_1_0" = xhtmlchardet_1_0_1;
   "xhtmlchardet_1" = xhtmlchardet_1_0_1;
   "xhtmlchardet_2_0" = xhtmlchardet_2_0_0;
   "xhtmlchardet_2" = xhtmlchardet_2_0_0;}

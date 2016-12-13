@@ -13,5 +13,35 @@ rec {
     hash = "0cd8850a5a249f92f13daad9a08c53e2ea2ae86f545ea73e0be2c7685620b4cc";
     deps = with allCrates; [  all__libc.libc_0_2 all__bitflags.bitflags_0_7 all__shared_library.shared_library_0_1 ];
   };
-  "dvk_0_1" = dvk_0_1_1;
-  "dvk_0" = dvk_0_1_1;}
+  dvk_0_1_2 = buildCratesLib {
+    name = "dvk";
+    version = "0.1.2";
+    hash = "9b9e38e1d57ce367801182502571cf31618d1075ef7f7c4092135ec62b5f36b9";
+    deps = with allCrates; [  all__shared_library.shared_library_0_1 all__bitflags.bitflags_0_7 all__libc.libc_0_2 ];
+  };
+  dvk_0_1_3 = buildCratesLib {
+    name = "dvk";
+    version = "0.1.3";
+    hash = "026a723b457441fec86bbea4b569bc4bb7579202580d96de8891f188a10b17db";
+    deps = with allCrates; [  all__bitflags.bitflags_0_7 all__shared_library.shared_library_0_1 all__libc.libc_0_2 ];
+  };
+  dvk_0_1_4 = buildCratesLib {
+    name = "dvk";
+    version = "0.1.4";
+    hash = "2705ea1170009348444a6b271753cbd3b75523080ba466601c6e89359e3c6ada";
+    deps = with allCrates; [  all__libc.libc_0_2 all__shared_library.shared_library_0_1 all__bitflags.bitflags_0_7 ];
+  };
+  dvk_0_1_5 = buildCratesLib {
+    name = "dvk";
+    version = "0.1.5";
+    hash = "95d61e6e421782ca9347021bf597e2963e1d8946b17acca895e711d8f2be02bf";
+    deps = with allCrates; [  all__shared_library.shared_library_0_1 all__libc.libc_0_2 all__bitflags.bitflags_0_7 ];
+  };
+  dvk_0_1_6 = buildCratesLib {
+    name = "dvk";
+    version = "0.1.6";
+    hash = "b4a0490cdb0b83a9ffe68586f717cb4643f569645f3408b563819b3f6a3eee74";
+    deps = with allCrates; [  all__shared_library.shared_library_0_1 all__libc.libc_0_2 all__bitflags.bitflags_0_7 ];
+  };
+  "dvk_0_1" = dvk_0_1_6;
+  "dvk_0" = dvk_0_1_6;}

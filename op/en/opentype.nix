@@ -7,6 +7,12 @@ rec {
     hash = "a9b9ca6e81f86909bbd090aa05030fcfa9be8ab11898f66cbb256d2a5a4225ca";
     deps = with allCrates; [  ];
   };
+  opentype_0_0_2 = buildCratesLib {
+    name = "opentype";
+    version = "0.0.2";
+    hash = "9d17bac86107d36033f3557cdd905782b8bdbdc03301e7427adc13d7fba6fb9e";
+    deps = with allCrates; [  all__date.date_0_0_1 ];
+  };
   opentype_0_0_3 = buildCratesLib {
     name = "opentype";
     version = "0.0.3";

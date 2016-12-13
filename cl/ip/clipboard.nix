@@ -7,5 +7,17 @@ rec {
     hash = "deec24c8a1931588c7e1dc122014320081ccc51cbc75edc129ac6da56ffe6d14";
     deps = with allCrates; [  ];
   };
-  "clipboard_0_1" = clipboard_0_1_0;
-  "clipboard_0" = clipboard_0_1_0;}
+  clipboard_0_1_1 = buildCratesLib {
+    name = "clipboard";
+    version = "0.1.1";
+    hash = "457cb78106744a6f26f1096961cd93a4fd1629f01c630419134f278c107384f2";
+    deps = with allCrates; [  all__x11.x11_2_3 all__objc_id.objc_id_0_0_2 all__objc.objc_0_1 all__objc-foundation.objc-foundation_0_0_4 all__objc-foundation.objc-foundation_0_0_4 all__objc.objc_0_1 all__objc_id.objc_id_0_0_2 all__x11.x11_2_3 all__x11.x11_2_3 all__x11.x11_2_3 ];
+  };
+  clipboard_0_1_2 = buildCratesLib {
+    name = "clipboard";
+    version = "0.1.2";
+    hash = "811169a9ffda99ed1841a6db3c48cffbab9a9101376f77fee3c14a7581ab933d";
+    deps = with allCrates; [  all__x11.x11_2_3 ];
+  };
+  "clipboard_0_1" = clipboard_0_1_2;
+  "clipboard_0" = clipboard_0_1_2;}

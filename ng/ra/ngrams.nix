@@ -19,6 +19,7 @@ rec {
     hash = "adce0b277293864fb8a0ce53cfa05a0a09d0de8f2daabfce98fd36119681d872";
     deps = with allCrates; [  ];
   };
+  "ngrams_0_1" = ngrams_0_1_1;
   "ngrams_0" = ngrams_0_1_1;
   ngrams_1_0_1 = buildCratesLib {
     name = "ngrams";

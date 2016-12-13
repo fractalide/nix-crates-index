@@ -19,6 +19,7 @@ rec {
     hash = "9b7592cdbf5ef86a23b047f8395add1233456dc48c6dc8058b9baf3b5acc6fe3";
     deps = with allCrates; [  all__unreachable.unreachable_0_0_2 ];
   };
+  "quickersort_1_0" = quickersort_1_0_1;
   "quickersort_1" = quickersort_1_0_1;
   quickersort_2_0_1 = buildCratesLib {
     name = "quickersort";

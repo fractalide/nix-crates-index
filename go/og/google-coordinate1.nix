@@ -97,6 +97,7 @@ rec {
     hash = "3454954799aea38b3b82000e4916de346cc28ed0c252e84ccce82ab3f9a72a34";
     deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 ];
   };
+  "google-coordinate1_0_1" = google-coordinate1_0_1_15;
   "google-coordinate1_0" = google-coordinate1_0_1_15;
   "google-coordinate1_1_0" = google-coordinate1_1_0_0;
   "google-coordinate1_1" = google-coordinate1_1_0_0;}

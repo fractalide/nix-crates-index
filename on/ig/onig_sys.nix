@@ -67,6 +67,7 @@ rec {
     hash = "e2f78f6e7952f2188e7dc30b178bfba97c217c939dcf65d746d61e7e9b97c55f";
     deps = with allCrates; [  all__libc.libc_0_2 all__cmake.cmake_0_1 all__pkg-config.pkg-config_0_3 ];
   };
+  "onig_sys_0_8" = onig_sys_0_8_1;
   "onig_sys_0" = onig_sys_0_8_1;
   onig_sys_61_1_0 = buildCratesLib {
     name = "onig_sys";
@@ -74,6 +75,7 @@ rec {
     hash = "a35f2cca300f0945538564da6052a449db55e65870cf0e9d443c1bce3d5dda47";
     deps = with allCrates; [  all__libc.libc_0_2 all__cmake.cmake_0_1 all__pkg-config.pkg-config_0_3 ];
   };
+  "onig_sys_1_0" = onig_sys_1_0_0;
   "onig_sys_1_0" = onig_sys_1_0_0;
   "onig_sys_1" = onig_sys_1_0_0;
   "onig_sys_61_1" = onig_sys_61_1_0;

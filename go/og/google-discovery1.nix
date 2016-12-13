@@ -85,6 +85,7 @@ rec {
     hash = "87c4d6f1b8beb0499058e990e3c5ce9330f0d099a2c09acb6a32108d8e3dc121";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 url ];
   };
+  "google-discovery1_0_1" = google-discovery1_0_1_15;
   "google-discovery1_0" = google-discovery1_0_1_15;
   "google-discovery1_1_0" = google-discovery1_1_0_0;
   "google-discovery1_1" = google-discovery1_1_0_0;}

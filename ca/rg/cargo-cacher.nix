@@ -50,6 +50,7 @@ rec {
     hash = "699955ce509a59e9df9137931cde288ae2d701fb917c75338d2780e874b8dc84";
     deps = with allCrates; [  all__log.log_0_3 all__scoped_threadpool.scoped_threadpool_0_1 all__simple_logger.simple_logger_0_4 all__iron.iron_0_4 all__walkdir.walkdir_1 all__clap.clap_2_14 all__logger.logger_0_1 all__router.router_0_4 all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  "cargo-cacher_0_2" = cargo-cacher_0_2_3;
   "cargo-cacher_0" = cargo-cacher_0_2_3;
   cargo-cacher_1_0_1 = buildCratesLib {
     name = "cargo-cacher";

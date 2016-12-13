@@ -49,6 +49,7 @@ rec {
     hash = "4a086cbaab12e8457dcdb04b47c625d3199cbf2c06013c51212e64851fb17b27";
     deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url ];
   };
+  "google-youtubereporting1_0_1" = google-youtubereporting1_0_1_15;
   "google-youtubereporting1_0" = google-youtubereporting1_0_1_15;
   "google-youtubereporting1_1_0" = google-youtubereporting1_1_0_0;
   "google-youtubereporting1_1" = google-youtubereporting1_1_0_0;}

@@ -26,6 +26,7 @@ rec {
     hash = "0d70e2c66703238c9a7932d4dabca5355f1f9f3f76af24682e91a4c50b58029d";
     deps = with allCrates; [  all__lcms2-sys.lcms2-sys_0_4 ];
   };
+  "lcms2_0_2" = lcms2_0_2_1;
   "lcms2_0" = lcms2_0_2_1;
   lcms2_1_1_0 = buildCratesLib {
     name = "lcms2";

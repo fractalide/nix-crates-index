@@ -45,6 +45,7 @@ rec {
     hash = "da5f9a4afdeed617bb864a75046f7ffc4c57e9b4b2defa208015219f9ca3d463";
     deps = with allCrates; [  all__dbus.dbus_0_1 ];
   };
+  "notify-rust_0_9" = notify-rust_0_9_0;
   "notify-rust_0" = notify-rust_0_9_0;
   notify-rust_1_0_1 = buildCratesLib {
     name = "notify-rust";
@@ -65,6 +66,7 @@ rec {
     hash = "a6e9809dcfd744a81079796b9f9a275ac1234f87777090d4c7dbf6891dc9dc93";
     deps = with allCrates; [  all__dbus.dbus_0_1 ];
   };
+  "notify-rust_1_1" = notify-rust_1_1_0;
   "notify-rust_1" = notify-rust_1_1_0;
   notify-rust_2_1_0 = buildCratesLib {
     name = "notify-rust";
@@ -79,6 +81,7 @@ rec {
     hash = "59b32cfea7a3a092e2437a23bb230dc77f59b566c4e373d05a78427aeecd93ce";
     deps = with allCrates; [  all__dbus.dbus_0_1 ];
   };
+  "notify-rust_2_1" = notify-rust_2_1_0;
   "notify-rust_2" = notify-rust_2_1_0;
   notify-rust_3_0_1 = buildCratesLib {
     name = "notify-rust";

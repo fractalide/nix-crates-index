@@ -103,6 +103,7 @@ rec {
     hash = "3ffe080b6ce3417122204f1604668255b1db30bd6c99a13e0d35887fe9ec5e3d";
     deps = with allCrates; [  url all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
   };
+  "google-cloudmonitoring2_beta2_0_1" = google-cloudmonitoring2_beta2_0_1_15;
   "google-cloudmonitoring2_beta2_0" = google-cloudmonitoring2_beta2_0_1_15;
   "google-cloudmonitoring2_beta2_1_0" = google-cloudmonitoring2_beta2_1_0_0;
   "google-cloudmonitoring2_beta2_1" = google-cloudmonitoring2_beta2_1_0_0;}

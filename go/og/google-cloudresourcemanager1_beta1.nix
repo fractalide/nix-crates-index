@@ -43,6 +43,7 @@ rec {
     hash = "893f6a1873e19ac42e82dffa69deb90d3edbc26ce4dc8b0d65bfb2f75a6fb30c";
     deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 url all__mime.mime_0_2 ];
   };
+  "google-cloudresourcemanager1_beta1_0_1" = google-cloudresourcemanager1_beta1_0_1_15;
   "google-cloudresourcemanager1_beta1_0" = google-cloudresourcemanager1_beta1_0_1_15;
   "google-cloudresourcemanager1_beta1_1_0" = google-cloudresourcemanager1_beta1_1_0_0;
   "google-cloudresourcemanager1_beta1_1" = google-cloudresourcemanager1_beta1_1_0_0;}

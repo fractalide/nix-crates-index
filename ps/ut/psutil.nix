@@ -87,6 +87,7 @@ rec {
     hash = "7b03f668e4a841cb9a6375362f9c6590460807ca3bdf00c62a71723173d92c84";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_1 libc ];
   };
+  "psutil_0_9" = psutil_0_9_0;
   "psutil_0" = psutil_0_9_0;
   "psutil_1_0" = psutil_1_0_0;
   "psutil_1" = psutil_1_0_0;}

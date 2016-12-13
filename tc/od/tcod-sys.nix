@@ -13,6 +13,7 @@ rec {
     hash = "f5debe0fef08303d7cd9dfc6beb0c975987bfa23a4f411ef39479b8851b5a8e0";
     deps = with allCrates; [  ];
   };
+  "tcod-sys_1_5" = tcod-sys_1_5_2;
   "tcod-sys_1" = tcod-sys_1_5_2;
   tcod-sys_2_0_1 = buildCratesLib {
     name = "tcod-sys";
@@ -92,6 +93,7 @@ rec {
     hash = "bab13ff7f1dbdff7a86055e762d25a2313b3eaaf89641df5d406f8388d3acb05";
     deps = with allCrates; [  all__libc.libc_0_1 ];
   };
+  "tcod-sys_2_0" = tcod-sys_2_0_12;
   "tcod-sys_2" = tcod-sys_2_0_12;
   tcod-sys_3_0_1 = buildCratesLib {
     name = "tcod-sys";
@@ -111,6 +113,7 @@ rec {
     hash = "5492ca7acbaee8d244f1dce74603748ec664bcb717d6504e370d6976aa17c397";
     deps = with allCrates; [  all__libc.libc_0_1 all__pkg-config.pkg-config_0_3 all__gcc.gcc_0_3 ];
   };
+  "tcod-sys_3_0" = tcod-sys_3_0_2;
   "tcod-sys_3" = tcod-sys_3_0_2;
   tcod-sys_4_0_1 = buildCratesLib {
     name = "tcod-sys";

@@ -13,6 +13,7 @@ rec {
     hash = "0940bfcc3c8c0d16689896b07b79e0b2b86f68fa966cc4b6912f4e9145e90182";
     deps = with allCrates; [  all__libc.libc_0_2 all__uuid.uuid_0_3 all__ioctl.ioctl_0_3 ];
   };
+  "btrfs_0_1" = btrfs_0_1_0;
   "btrfs_0" = btrfs_0_1_0;
   btrfs_1_1_0 = buildCratesLib {
     name = "btrfs";

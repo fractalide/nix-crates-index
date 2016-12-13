@@ -19,6 +19,7 @@ rec {
     hash = "f6dc49ec9dd70e3a95ab580b771821172872eee2596b9ed1afacb124489ce769";
     deps = with allCrates; [  all__edcert.edcert_5_0 all__chrono.chrono_0_2 all__time.time_0_1 ];
   };
+  "edcert-letter_0_1" = edcert-letter_0_1_1;
   "edcert-letter_0" = edcert-letter_0_1_1;
   edcert-letter_1_0_1 = buildCratesLib {
     name = "edcert-letter";
@@ -57,6 +58,7 @@ rec {
     hash = "08a06bd89327af84e1e39bb70c913fa1f6f588fbad0511e58dcf92ee90b02439";
     deps = with allCrates; [  all__edcert.edcert_9_0 all__chrono.chrono_0_2 ];
   };
+  "edcert-letter_1_1" = edcert-letter_1_1_0;
   "edcert-letter_1" = edcert-letter_1_1_0;
   "edcert-letter_2_0" = edcert-letter_2_0_0;
   "edcert-letter_2" = edcert-letter_2_0_0;}

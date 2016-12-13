@@ -55,6 +55,7 @@ rec {
     hash = "20c6dbbef355c7691186f589356befd3136b1cb6bacf84cb6b64119177ff5975";
     deps = with allCrates; [  all__regex.regex_0_1 all__chrono.chrono_0_2 all__lazy_static.lazy_static_0_1 ];
   };
+  "ftp_0_0" = ftp_0_0_8;
   "ftp_0" = ftp_0_0_8;
   ftp_2_0_0 = buildCratesLib {
     name = "ftp";
@@ -62,6 +63,7 @@ rec {
     hash = "a770a76d78b77ab5d40ade18e7e4f5c0a3e57e796f6a162eb1577bfec9532e80";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_1 all__regex.regex_0_1 all__chrono.chrono_0_2 ];
   };
+  "ftp_1_0" = ftp_1_0_0;
   "ftp_1" = ftp_1_0_0;
   "ftp_2_0" = ftp_2_0_0;
   "ftp_2" = ftp_2_0_0;}

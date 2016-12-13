@@ -20,6 +20,7 @@ rec {
     hash = "475ee385f6799a4c89c60a258f2a3092dd2a5ff4d3fed52c0cd5d293dd3c3c45";
     deps = with allCrates; [  all__regex.regex_0_1 all__semver.semver_0_2 all__term.term_0_2 all__hyper.hyper_0_6 all__rustc-serialize.rustc-serialize_0_3 all__docopt.docopt_0_6 all__os_type.os_type_0_6 ];
   };
+  "avm_0_6" = avm_0_6_0;
   "avm_0" = avm_0_6_0;
   avm_1_0_1 = buildCratesLib {
     name = "avm";

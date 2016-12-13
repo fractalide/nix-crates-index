@@ -39,6 +39,7 @@ rec {
     hash = "059a34f111a9dee2ce1ac2826a68b24601c4298cfeb1a587c3cb493d5ab46f52";
     deps = with allCrates; [  libc nix ];
   };
+  "prctl_0_2" = prctl_0_2_0;
   "prctl_0" = prctl_0_2_0;
   "prctl_1_0" = prctl_1_0_0;
   "prctl_1" = prctl_1_0_0;}

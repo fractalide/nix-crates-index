@@ -70,6 +70,7 @@ rec {
     hash = "1a9978edd52405d5f7c476e2144478a38de35758824657638fa58f0ef85f9875";
     deps = with allCrates; [  all__argparse.argparse_0_2 all__rustc-serialize.rustc-serialize_0_3 all__env_logger.env_logger_0_3 all__rpassword.rpassword_0_2 all__rdedup-lib.rdedup-lib_1_0_0 all__log.log_0_3 ];
   };
+  "rdedup_0_3" = rdedup_0_3_0;
   "rdedup_0" = rdedup_0_3_0;
   rdedup_1_0_1 = buildCratesLib {
     name = "rdedup";

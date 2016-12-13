@@ -20,6 +20,7 @@ rec {
     hash = "63a412bddb4d192f6a834d66bc54ad3e28e86b138ab99d10580528c8f0c7afc5";
     deps = with allCrates; [  stream-dct rustc-serialize bit-vec ];
   };
+  "img_hash_0_5" = img_hash_0_5_0;
   "img_hash_0" = img_hash_0_5_0;
   "img_hash_1_0" = img_hash_1_0_0;
   "img_hash_1" = img_hash_1_0_0;}

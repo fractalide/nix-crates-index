@@ -19,5 +19,11 @@ rec {
     hash = "2a68ac3e8d914b15c9e72e06d621991a31dfd5c9cafaed3469b81dc8a5e49be2";
     deps = with allCrates; [  all__clap.clap_1_4 all__hyper.hyper_0_6 all__rust-install.rust-install_0_0_3 all__rand.rand_0_3 all__regex.regex_0_1 ];
   };
-  "multirust-rs_0_0" = multirust-rs_0_0_3;
-  "multirust-rs_0" = multirust-rs_0_0_3;}
+  multirust-rs_0_0_4 = buildCratesLib {
+    name = "multirust-rs";
+    version = "0.0.4";
+    hash = "34b254eea5eaf001b8cf75cc6ea9517accf1fb0730629bf5a86c6f02b2196c34";
+    deps = with allCrates; [  all__regex.regex_0_1 all__clap.clap_1_4 all__hyper.hyper_0_6 all__term.term_0_2 all__rust-install.rust-install_0_0_4 all__rand.rand_0_3 ];
+  };
+  "multirust-rs_0_0" = multirust-rs_0_0_4;
+  "multirust-rs_0" = multirust-rs_0_0_4;}

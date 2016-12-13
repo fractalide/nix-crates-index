@@ -25,5 +25,24 @@ rec {
     hash = "ec941308eab1678c9026901477f8b7a2d58eb54d2cb72ed2f45d9a042ad105f0";
     deps = with allCrates; [  all__winapi.winapi_0_2 all__kernel32-sys.kernel32-sys_0_2 all__lazy_static.lazy_static_0_2 all__target_build_utils.target_build_utils_0_1 ];
   };
-  "libloading_0_2" = libloading_0_2_3;
-  "libloading_0" = libloading_0_2_3;}
+  libloading_0_2_4 = buildCratesLib {
+    name = "libloading";
+    version = "0.2.4";
+    hash = "eceb2637ee9a27c7f19764048a9f377e40e3a70a322722f348e6bc7704d565f2";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__target_build_utils.target_build_utils_0_1 ];
+  };
+  libloading_0_3_0 = buildCratesLib {
+    name = "libloading";
+    version = "0.3.0";
+    hash = "2069c3d283cb87f37a08a5040b27f47603e59e988dbe5b2cf2ad768e19100fc3";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__target_build_utils.target_build_utils_0_1 ];
+  };
+  "libloading_0_2" = libloading_0_2_4;
+  libloading_0_3_1 = buildCratesLib {
+    name = "libloading";
+    version = "0.3.1";
+    hash = "84816a8c6ed8163dfe0dbdd2b09d35c6723270ea77a4c7afa4bedf038a36cb99";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__target_build_utils.target_build_utils_0_1 ];
+  };
+  "libloading_0_3" = libloading_0_3_1;
+  "libloading_0" = libloading_0_3_1;}

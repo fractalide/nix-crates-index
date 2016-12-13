@@ -13,6 +13,7 @@ rec {
     hash = "d70bf657397109c1ea2fe5989248448492cc848f767f0413b873041891aa15b0";
     deps = with allCrates; [  ];
   };
+  "unwrap_0_2" = unwrap_0_2_0;
   "unwrap_0" = unwrap_0_2_0;
   unwrap_1_1_0 = buildCratesLib {
     name = "unwrap";

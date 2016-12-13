@@ -19,6 +19,7 @@ rec {
     hash = "6e95322749b0e274226250f807fc2af3c07cdb93244ea4800aa4ebf64a36b127";
     deps = with allCrates; [  all__toml.toml_0_2 all__rustc-serialize.rustc-serialize_0_3 all__docopt.docopt_0_6 all__yaml-rust.yaml-rust_0_3 ];
   };
+  "cargo-yaml_2_0" = cargo-yaml_2_0_1;
   "cargo-yaml_2" = cargo-yaml_2_0_1;
   "cargo-yaml_3_0" = cargo-yaml_3_0_0;
   "cargo-yaml_3" = cargo-yaml_3_0_0;}

@@ -86,6 +86,7 @@ rec {
     hash = "49bd72a7f04d020d0f22e20a0cd80ac7d745d2023d1f35929497780ea06dbef8";
     deps = with allCrates; [  ];
   };
+  "httparse_0_1" = httparse_0_1_6;
   "httparse_0" = httparse_0_1_6;
   httparse_1_1_0 = buildCratesLib {
     name = "httparse";

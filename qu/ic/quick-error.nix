@@ -56,6 +56,7 @@ rec {
     hash = "c415e447dcced6ca7d8b290f5881050d1a2bb757967889cfba93b6f7f649ca50";
     deps = with allCrates; [  ];
   };
+  "quick-error_0_2" = quick-error_0_2_2;
   "quick-error_0" = quick-error_0_2_2;
   quick-error_1_1_0 = buildCratesLib {
     name = "quick-error";

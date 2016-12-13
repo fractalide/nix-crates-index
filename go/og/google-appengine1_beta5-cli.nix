@@ -13,6 +13,7 @@ rec {
     hash = "050d76b90c4890077761d1fd64f2dbea93f9a49ee985c3e710e2f53a924d29dc";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__clap.clap_2_0 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
   };
+  "google-appengine1_beta5-cli_0_3" = google-appengine1_beta5-cli_0_3_6;
   "google-appengine1_beta5-cli_0" = google-appengine1_beta5-cli_0_3_6;
   "google-appengine1_beta5-cli_1_0" = google-appengine1_beta5-cli_1_0_0;
   "google-appengine1_beta5-cli_1" = google-appengine1_beta5-cli_1_0_0;}

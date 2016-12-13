@@ -26,6 +26,7 @@ rec {
     hash = "c9f616483fe8e3deddd6d22905d74f19f7091a9257dda73af04135eed9527ab2";
     deps = with allCrates; [  all__byteorder.byteorder_0_4 ];
   };
+  "rwutil_0_4" = rwutil_0_4_0;
   "rwutil_0" = rwutil_0_4_0;
   rwutil_1_0_1 = buildCratesLib {
     name = "rwutil";

@@ -51,6 +51,7 @@ rec {
     hash = "ba190d6bfe6a5c8951f284a6c25c3e92b46a8c80fdc29bc49a3d91108c6ac0fc";
     deps = with allCrates; [  ];
   };
+  "mitochondria_0_3" = mitochondria_0_3_2;
   "mitochondria_0" = mitochondria_0_3_2;
   mitochondria_1_0_1 = buildCratesLib {
     name = "mitochondria";

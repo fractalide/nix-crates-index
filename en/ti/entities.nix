@@ -27,6 +27,7 @@ rec {
     hash = "34302e97cd148c302c39cf11f322bcf3412c06caddd2edf9222c22eac7fd63ef";
     deps = with allCrates; [  ];
   };
+  "entities_0_3" = entities_0_3_0;
   "entities_0" = entities_0_3_0;
   "entities_1_0" = entities_1_0_0;
   "entities_1" = entities_1_0_0;}

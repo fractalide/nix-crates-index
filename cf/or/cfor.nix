@@ -32,6 +32,7 @@ rec {
     hash = "f10526d1686c98f63f81e6f99f7b6baff65ef159ffd6a294e269b6900037373f";
     deps = with allCrates; [  ];
   };
+  "cfor_0_2" = cfor_0_2_1;
   "cfor_0" = cfor_0_2_1;
   cfor_1_1_0 = buildCratesLib {
     name = "cfor";

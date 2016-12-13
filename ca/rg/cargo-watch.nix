@@ -50,6 +50,7 @@ rec {
     hash = "1e8cba30768253e10d88c410d7a6de0f494ed8411de078ea28db121838846d31";
     deps = with allCrates; [  time regex all__log.log_0_3 all__notify.notify_2_1 all__env_logger.env_logger_0_3 rustc-serialize all__docopt.docopt_0_6 ];
   };
+  "cargo-watch_2_1" = cargo-watch_2_1_5;
   "cargo-watch_2" = cargo-watch_2_1_5;
   cargo-watch_3_0_1 = buildCratesLib {
     name = "cargo-watch";

@@ -19,6 +19,7 @@ rec {
     hash = "4ba8c3226492f30b05a9f366f8f307edeebc8aeeb2ddd2ade243288110202f54";
     deps = with allCrates; [  all__redis.redis_0_5 all__time.time_0_1 all__rand.rand_0_3 ];
   };
+  "redlock_0_3" = redlock_0_3_1;
   "redlock_0" = redlock_0_3_1;
   "redlock_1_0" = redlock_1_0_0;
   "redlock_1" = redlock_1_0_0;}

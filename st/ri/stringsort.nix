@@ -13,6 +13,7 @@ rec {
     hash = "b2849b8064ea75add11d8c1129660f1252c8553909f9e2b925e3d6e480e57ca3";
     deps = with allCrates; [  ];
   };
+  "stringsort_1_0" = stringsort_1_0_0;
   "stringsort_1" = stringsort_1_0_0;
   "stringsort_2_0" = stringsort_2_0_0;
   "stringsort_2" = stringsort_2_0_0;}

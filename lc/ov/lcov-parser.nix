@@ -74,6 +74,7 @@ rec {
     hash = "329ca2722fbb8a46a3ef65624eea5e39b36acb252d62365d4526a69648785be8";
     deps = with allCrates; [  all__combine.combine_1_3 ];
   };
+  "lcov-parser_0_8" = lcov-parser_0_8_0;
   "lcov-parser_0" = lcov-parser_0_8_0;
   lcov-parser_1_0_1 = buildCratesLib {
     name = "lcov-parser";
@@ -106,6 +107,7 @@ rec {
     hash = "e2a4de4d4d45fb2cacde2b00ef9a4b530acfeacdf032c84de75bb5028cab9e72";
     deps = with allCrates; [  all__combine.combine_1_3 ];
   };
+  "lcov-parser_1_1" = lcov-parser_1_1_2;
   "lcov-parser_1" = lcov-parser_1_1_2;
   lcov-parser_2_1_0 = buildCratesLib {
     name = "lcov-parser";

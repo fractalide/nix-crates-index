@@ -25,5 +25,11 @@ rec {
     hash = "cf2c67c92ee48b2e9ca462d4f1f322d54984dd06157eda810337121c3edd95de";
     deps = with allCrates; [  all__winapi.winapi_0_2 all__libc.libc_0_2 ];
   };
-  "c-types_0_1" = c-types_0_1_3;
-  "c-types_0" = c-types_0_1_3;}
+  c-types_0_1_4 = buildCratesLib {
+    name = "c-types";
+    version = "0.1.4";
+    hash = "3f96dc8732440c5e710c0c132dc7b2e8ec47112f041b08d1b9402af74d692672";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "c-types_0_1" = c-types_0_1_4;
+  "c-types_0" = c-types_0_1_4;}

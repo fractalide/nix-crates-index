@@ -19,6 +19,7 @@ rec {
     hash = "a0b8bd8de528ef6dad6e88864781dad637bca89531021b83089cc8089ed19224";
     deps = with allCrates; [  all__csv.csv_0_14 all__has.has_0_1 all__zip.zip_0_1 all__rustc-serialize.rustc-serialize_0_3 all__hyper.hyper_0_8 ];
   };
+  "quandl-v3_0_1" = quandl-v3_0_1_1;
   "quandl-v3_0" = quandl-v3_0_1_1;
   "quandl-v3_1_0" = quandl-v3_1_0_0;
   "quandl-v3_1" = quandl-v3_1_0_0;}

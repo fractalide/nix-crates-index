@@ -13,6 +13,7 @@ rec {
     hash = "08a2e0723c7589dad5d5d335f26d17488dc9c824de6d3b40caf4f532abff6f0f";
     deps = with allCrates; [  all__url.url_1_2 all__futures.futures_0_1 all__libc.libc_0_2 all__env_logger.env_logger_0_3 all__tokio-core.tokio-core_0_1 all__time.time_0_1 all__futures-cpupool.futures-cpupool_0_1 all__ip.ip_1 all__rand.rand_0_3 all__openssl.openssl_0_8 all__byteorder.byteorder_0_5 all__clap.clap_2 all__lazy_static.lazy_static_0_2 all__num_cpus.num_cpus_1_1 all__lru-cache.lru-cache_0_1 all__qrcode.qrcode_0_2 all__rustc-serialize.rustc-serialize_0_3 all__net2.net2_0_2 all__httparse.httparse_1_1 all__log.log_0_3 all__hyper.hyper_0_9 all__rust-crypto.rust-crypto_0_2 ];
   };
+  "shadowsocks-rust_0_9" = shadowsocks-rust_0_9_15;
   "shadowsocks-rust_0" = shadowsocks-rust_0_9_15;
   shadowsocks-rust_1_0_1 = buildCratesLib {
     name = "shadowsocks-rust";

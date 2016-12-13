@@ -49,6 +49,7 @@ rec {
     hash = "9637690007d060aaa46f5dec582b5fc50aa8f9c53b14ef8dc3672f797c8d0b4c";
     deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
   };
+  "google-partners2_0_1" = google-partners2_0_1_15;
   "google-partners2_0" = google-partners2_0_1_15;
   "google-partners2_1_0" = google-partners2_1_0_0;
   "google-partners2_1" = google-partners2_1_0_0;}

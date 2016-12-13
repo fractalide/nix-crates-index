@@ -441,6 +441,7 @@ rec {
     hash = "0f7c091e4539544e53c3cde367119fbea7341dec5ebe30cb89fe48a874ed3d90";
     deps = with allCrates; [  ];
   };
+  "clap_0_11" = clap_0_11_0;
   "clap_0" = clap_0_11_0;
   clap_1_0_1 = buildCratesLib {
     name = "clap";
@@ -651,6 +652,7 @@ rec {
     hash = "4d75b5f4d7435d933117d93a2f05fdb49182e421744c18312aec4d0cd0cab884";
     deps = with allCrates; [  all__bitflags.bitflags_0_4 all__vec_map.vec_map_0_4 ];
   };
+  "clap_1_5" = clap_1_5_5;
   "clap_1" = clap_1_5_5;
   clap_2_0_1 = buildCratesLib {
     name = "clap";
@@ -884,13 +886,19 @@ rec {
     hash = "3df6dcb3122b085b96399062f4fa59d69f4d0af50519944f2d76b7a7686629e3";
     deps = with allCrates; [  all__unicode-width.unicode-width_0_1 all__bitflags.bitflags_0_7 all__unicode-segmentation.unicode-segmentation_0_1 all__vec_map.vec_map_0_6 ];
   };
+  clap_2_11_0 = buildCratesLib {
+    name = "clap";
+    version = "2.11.0";
+    hash = "62db8e9e3ab6792670f99338be3dbc416f8728ba5d874c33e27aa9933e534512";
+    deps = with allCrates; [  all__bitflags.bitflags_0_7 all__unicode-segmentation.unicode-segmentation_0_1 all__unicode-width.unicode-width_0_1 all__vec_map.vec_map_0_6 ];
+  };
+  "clap_2_10" = clap_2_10_4;
   clap_2_11_1 = buildCratesLib {
     name = "clap";
     version = "2.11.1";
     hash = "1b3b11910ae164840900c8e0e9436f17575431c03983073ca0fc1887755eac7a";
     deps = with allCrates; [  all__unicode-width.unicode-width_0_1 all__bitflags.bitflags_0_7 all__unicode-segmentation.unicode-segmentation_0_1 all__vec_map.vec_map_0_6 ];
   };
-  "clap_2_10" = clap_2_10_4;
   clap_2_11_2 = buildCratesLib {
     name = "clap";
     version = "2.11.2";

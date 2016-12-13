@@ -43,6 +43,7 @@ rec {
     hash = "1b815b116906a4401028034c057d9c5c92078f552df970efc330f7b54b19aca7";
     deps = with allCrates; [  all__serde.serde_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde_json.serde_json_0_8 ];
   };
+  "google-logging2_beta1_0_1" = google-logging2_beta1_0_1_15;
   "google-logging2_beta1_0" = google-logging2_beta1_0_1_15;
   "google-logging2_beta1_1_0" = google-logging2_beta1_1_0_0;
   "google-logging2_beta1_1" = google-logging2_beta1_1_0_0;}

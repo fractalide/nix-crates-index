@@ -103,6 +103,7 @@ rec {
     hash = "896e97cc4c40fd9a456152cc8ca80044371e0fca27ab739088870bb7159f5db5";
     deps = with allCrates; [  all__mime.mime_0_2 url all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__hyper.hyper_0_9 ];
   };
+  "google-manager1_beta2_0_1" = google-manager1_beta2_0_1_15;
   "google-manager1_beta2_0" = google-manager1_beta2_0_1_15;
   "google-manager1_beta2_1_0" = google-manager1_beta2_1_0_0;
   "google-manager1_beta2_1" = google-manager1_beta2_1_0_0;}

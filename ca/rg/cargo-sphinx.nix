@@ -13,6 +13,7 @@ rec {
     hash = "5ebe6308b63dc5caa4598331acfa749b8d111999293b37dab2f90d1559dc180e";
     deps = with allCrates; [  all__toml.toml_0_2 all__term.term_0_4 all__cargo.cargo_0_12 all__quick-error.quick-error_1_1 all__clap.clap_2_10 ];
   };
+  "cargo-sphinx_0_1" = cargo-sphinx_0_1_0;
   "cargo-sphinx_0" = cargo-sphinx_0_1_0;
   "cargo-sphinx_1_0" = cargo-sphinx_1_0_0;
   "cargo-sphinx_1" = cargo-sphinx_1_0_0;}

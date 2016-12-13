@@ -67,6 +67,7 @@ rec {
     hash = "a1e7262a4a66d919121438777e274564b2a80c6912b2fb78d64180c49900c902";
     deps = with allCrates; [  ];
   };
+  "protobuf_0_0" = protobuf_0_0_10;
   "protobuf_0" = protobuf_0_0_10;
   protobuf_1_0_1 = buildCratesLib {
     name = "protobuf";

@@ -7,5 +7,52 @@ rec {
     hash = "fb56063bfece122e27baa06756d83148ab77ea7f48827145c3a235988a10cc65";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__rust-crypto.rust-crypto_0_2 all__env_logger.env_logger_0_3 all__chrono.chrono_0_2 all__log.log_0_3 all__try_opt.try_opt_0_1 all__clap.clap_2_11 all__fnv.fnv_1 all__lazy_static.lazy_static_0_2 all__toml.toml_0_1 all__mio.mio_0_5 all__rand.rand_0_3 all__regex.regex_0_1 all__lru_time_cache.lru_time_cache_0_5 ];
   };
+  shadowsocks_0_2_0 = buildCratesLib {
+    name = "shadowsocks";
+    version = "0.2.0";
+    hash = "6fb66d3fd2310451ba969a1a2b523c903f8507a57950d18521b16092afba765f";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__clap.clap_2_11 all__slog.slog_1_0 all__slog-term.slog-term_1_1 all__mio.mio_0_5 all__regex.regex_0_1 all__byteorder.byteorder_0_5 all__slog-stdlog.slog-stdlog_1_0 all__log.log_0_3 all__lru_time_cache.lru_time_cache_0_5 all__chrono.chrono_0_2 all__rust-crypto.rust-crypto_0_2 all__slog-stream.slog-stream_1_1 all__fnv.fnv_1_0 all__rand.rand_0_3 all__try_opt.try_opt_0_1 all__toml.toml_0_1 all__daemonize.daemonize_0_2 all__sig.sig_1_0 ];
+  };
   "shadowsocks_0_1" = shadowsocks_0_1_0;
-  "shadowsocks_0" = shadowsocks_0_1_0;}
+  shadowsocks_0_3_0 = buildCratesLib {
+    name = "shadowsocks";
+    version = "0.3.0";
+    hash = "dd05908e2e19b8811c7b12b9b0616c9f06a8b9d970c031f1b8c64f283e075db2";
+    deps = with allCrates; [  all__mio.mio_0_5 all__try_opt.try_opt_0_1 all__slog.slog_1_0 all__rand.rand_0_3 all__rust-crypto.rust-crypto_0_2 all__clap.clap_2_11 all__chrono.chrono_0_2 all__log.log_0_3 all__toml.toml_0_1 all__byteorder.byteorder_0_5 all__regex.regex_0_1 all__lru_time_cache.lru_time_cache_0_5 all__slog-term.slog-term_1_1 all__slog-stream.slog-stream_1_1 all__lazy_static.lazy_static_0_2 all__fnv.fnv_1_0 all__slog-stdlog.slog-stdlog_1_0 all__daemonize.daemonize_0_2 all__sig.sig_1_0 ];
+  };
+  "shadowsocks_0_2" = shadowsocks_0_2_0;
+  shadowsocks_0_3_1 = buildCratesLib {
+    name = "shadowsocks";
+    version = "0.3.1";
+    hash = "5968a1a7e852fc93cd8006533e7f9fae085db07adf5babd64b59f89ebff4a55f";
+    deps = with allCrates; [  all__lru_time_cache.lru_time_cache_0_5 all__mio.mio_0_5 all__slog.slog_1_0 all__slog-term.slog-term_1_1 all__regex.regex_0_1 all__log.log_0_3 all__lazy_static.lazy_static_0_2 all__rust-crypto.rust-crypto_0_2 all__toml.toml_0_1 all__byteorder.byteorder_0_5 all__try_opt.try_opt_0_1 all__slog-stdlog.slog-stdlog_1_0 all__slog-stream.slog-stream_1_1 all__clap.clap_2_11 all__rand.rand_0_3 all__chrono.chrono_0_2 all__fnv.fnv_1_0 all__daemonize.daemonize_0_2 all__sig.sig_1_0 ];
+  };
+  shadowsocks_0_4_0 = buildCratesLib {
+    name = "shadowsocks";
+    version = "0.4.0";
+    hash = "5ee4967587e244dcb53bdf935158e12443c98cecc8b146dc59ef3dee18483065";
+    deps = with allCrates; [  all__toml.toml_0_1 all__slog-stdlog.slog-stdlog_1_0 all__fnv.fnv_1_0 all__regex.regex_0_1 all__slog-term.slog-term_1_1 all__rand.rand_0_3 all__slog.slog_1_0 all__try_opt.try_opt_0_1 all__log.log_0_3 all__mio.mio_0_5 all__slog-stream.slog-stream_1_1 all__lru_time_cache.lru_time_cache_0_5 all__rust-crypto.rust-crypto_0_2 all__byteorder.byteorder_0_5 all__chrono.chrono_0_2 all__lazy_static.lazy_static_0_2 all__clap.clap_2_11 all__sig.sig_1_0 all__daemonize.daemonize_0_2 ];
+  };
+  "shadowsocks_0_3" = shadowsocks_0_3_1;
+  shadowsocks_0_5_0 = buildCratesLib {
+    name = "shadowsocks";
+    version = "0.5.0";
+    hash = "212ebff75c94ca707ec7c9280489ceda73727ed9fdb53cb245f187187682091b";
+    deps = with allCrates; [  all__fnv.fnv_1_0 all__lru_time_cache.lru_time_cache_0_5 all__rust-crypto.rust-crypto_0_2 all__chrono.chrono_0_2 all__try_opt.try_opt_0_1 all__slog-stdlog.slog-stdlog_1_1 all__toml.toml_0_1 all__byteorder.byteorder_0_5 all__lazy_static.lazy_static_0_2 all__slog-term.slog-term_1_3 all__log.log_0_3 all__clap.clap_2_18 all__regex.regex_0_1 all__rand.rand_0_3 all__slog-stream.slog-stream_1_2 all__mio.mio_0_5 all__slog.slog_1_3 all__sig.sig_1_0 all__openssl.openssl_0_9 all__daemonize.daemonize_0_2 ];
+  };
+  "shadowsocks_0_4" = shadowsocks_0_4_0;
+  shadowsocks_0_6_0 = buildCratesLib {
+    name = "shadowsocks";
+    version = "0.6.0";
+    hash = "21d9aab92ca8dc63f5c83f7eb158d318be309df8522d46f77ae6257fd1fd7df5";
+    deps = with allCrates; [  all__toml.toml_0_1 all__slog-stream.slog-stream_1_2 all__slog-scope.slog-scope_0_2 all__byteorder.byteorder_0_5 all__lru_time_cache.lru_time_cache_0_5 all__rust-crypto.rust-crypto_0_2 all__rustc-serialize.rustc-serialize_0_3 all__chrono.chrono_0_2 all__clap.clap_2_18 all__mio.mio_0_5 all__regex.regex_0_1 all__slog-term.slog-term_1_3 all__try_opt.try_opt_0_1 all__fnv.fnv_1_0 all__rand.rand_0_3 all__lazy_static.lazy_static_0_2 all__slog.slog_1_3 all__daemonize.daemonize_0_2 all__sig.sig_1_0 ];
+  };
+  "shadowsocks_0_5" = shadowsocks_0_5_0;
+  shadowsocks_0_6_1 = buildCratesLib {
+    name = "shadowsocks";
+    version = "0.6.1";
+    hash = "4aa13030c737fa7f8e42aea7b72a20c73c3619199805f81fc34f4f135ada160e";
+    deps = with allCrates; [  all__regex.regex_0_1 all__slog-stream.slog-stream_1_2 all__chrono.chrono_0_2 all__slog-scope.slog-scope_0_2 all__mio.mio_0_5 all__toml.toml_0_1 all__rustc-serialize.rustc-serialize_0_3 all__rust-crypto.rust-crypto_0_2 all__fnv.fnv_1_0 all__lazy_static.lazy_static_0_2 all__slog-term.slog-term_1_3 all__try_opt.try_opt_0_1 all__rand.rand_0_3 all__clap.clap_2_18 all__byteorder.byteorder_0_5 all__lru_time_cache.lru_time_cache_0_5 all__slog.slog_1_3 all__sig.sig_1_0 all__daemonize.daemonize_0_2 ];
+  };
+  "shadowsocks_0_6" = shadowsocks_0_6_1;
+  "shadowsocks_0" = shadowsocks_0_6_1;}

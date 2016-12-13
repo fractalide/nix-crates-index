@@ -26,6 +26,7 @@ rec {
     hash = "84f738be7777b2864a5a05b706acdcdfa2feb00fc4f54794b13bea5f1facd008";
     deps = with allCrates; [  all__phf_macros.phf_macros_0_7 all__num.num_0_1 all__phf.phf_0_7 all__rustc-serialize.rustc-serialize_0_3 all__rust-freqdist.rust-freqdist_0_1 ];
   };
+  "punkt_0_1" = punkt_0_1_2;
   "punkt_0" = punkt_0_1_2;
   punkt_1_0_2 = buildCratesLib {
     name = "punkt";

@@ -103,6 +103,7 @@ rec {
     hash = "179f10fa97ad94ac28ca529b52144ddbb25760b8ab31ed7b0d76efba9f84652e";
     deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 url ];
   };
+  "google-urlshortener1_0_1" = google-urlshortener1_0_1_15;
   "google-urlshortener1_0" = google-urlshortener1_0_1_15;
   "google-urlshortener1_1_0" = google-urlshortener1_1_0_0;
   "google-urlshortener1_1" = google-urlshortener1_1_0_0;}

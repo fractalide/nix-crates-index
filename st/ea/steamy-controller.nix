@@ -7,5 +7,24 @@ rec {
     hash = "b18a21dd23b31482897e0cdb3691f4685db1a8d288961f395e6befc7dbef9399";
     deps = with allCrates; [  all__byteorder.byteorder_0_4 all__libusb.libusb_0_2 all__bitflags.bitflags_0_3 ];
   };
-  "steamy-controller_0_1" = steamy-controller_0_1_0;
-  "steamy-controller_0" = steamy-controller_0_1_0;}
+  steamy-controller_0_1_1 = buildCratesLib {
+    name = "steamy-controller";
+    version = "0.1.1";
+    hash = "534be02fe1b7297dac048a59168fd3b2de4becb950ae66d61dad2705b3a03f35";
+    deps = with allCrates; [  all__bitflags.bitflags_0_3 all__byteorder.byteorder_0_4 all__libusb.libusb_0_2 all__hid.hid_0_1 ];
+  };
+  steamy-controller_0_2_0 = buildCratesLib {
+    name = "steamy-controller";
+    version = "0.2.0";
+    hash = "73ca6db6bd5598f9b6712737f822be52cfef842af76e2c568954846c51901726";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__bitflags.bitflags_0_3 all__libusb.libusb_0_2 all__hid.hid_0_2 ];
+  };
+  "steamy-controller_0_1" = steamy-controller_0_1_1;
+  steamy-controller_0_2_1 = buildCratesLib {
+    name = "steamy-controller";
+    version = "0.2.1";
+    hash = "77b73886bd70ae94e55cdea3758d7d27f6e293acd6350423395fba65a1e8ee9e";
+    deps = with allCrates; [  all__bitflags.bitflags_0_3 all__byteorder.byteorder_0_5 all__hid.hid_0_2 all__libusb.libusb_0_2 ];
+  };
+  "steamy-controller_0_2" = steamy-controller_0_2_1;
+  "steamy-controller_0" = steamy-controller_0_2_1;}

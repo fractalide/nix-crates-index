@@ -19,6 +19,7 @@ rec {
     hash = "1271cba4c57b4f9d0eedffa6211117356095fbd4736feb3bc9c9e5dcbfb224af";
     deps = with allCrates; [  errno num_cpus ];
   };
+  "hyperdex_0_0" = hyperdex_0_0_2;
   "hyperdex_0" = hyperdex_0_0_2;
   hyperdex_1_1_0 = buildCratesLib {
     name = "hyperdex";

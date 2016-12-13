@@ -56,6 +56,7 @@ rec {
     hash = "fc874b127765f014d792f16763a81245ab80500e2ad921ed4ee9e82481ee08fe";
     deps = with allCrates; [  ];
   };
+  "rlibc_0_1" = rlibc_0_1_5;
   "rlibc_0" = rlibc_0_1_5;
   "rlibc_1_0" = rlibc_1_0_0;
   "rlibc_1" = rlibc_1_0_0;}

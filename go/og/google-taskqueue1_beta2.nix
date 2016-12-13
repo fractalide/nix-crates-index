@@ -103,6 +103,7 @@ rec {
     hash = "d8c2f14dc8272c88dad01a0bf58290ef3c74edea9ea31e462a6166a58352a1fb";
     deps = with allCrates; [  all__serde.serde_0_8 url all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
   };
+  "google-taskqueue1_beta2_0_1" = google-taskqueue1_beta2_0_1_15;
   "google-taskqueue1_beta2_0" = google-taskqueue1_beta2_0_1_15;
   "google-taskqueue1_beta2_1_0" = google-taskqueue1_beta2_1_0_0;
   "google-taskqueue1_beta2_1" = google-taskqueue1_beta2_1_0_0;}

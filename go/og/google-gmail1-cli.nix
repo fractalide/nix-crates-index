@@ -13,6 +13,7 @@ rec {
     hash = "a45bf48f215428dc76138bc4d4a05b37e1fa2ba45f7bfa22f8b4bb4c773a83b3";
     deps = with allCrates; [  all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 all__mime.mime_0_2 all__strsim.strsim_0_5 all__clap.clap_2_0 all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
   };
+  "google-gmail1-cli_0_3" = google-gmail1-cli_0_3_6;
   "google-gmail1-cli_0" = google-gmail1-cli_0_3_6;
   "google-gmail1-cli_1_0" = google-gmail1-cli_1_0_0;
   "google-gmail1-cli_1" = google-gmail1-cli_1_0_0;}

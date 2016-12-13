@@ -13,6 +13,7 @@ rec {
     hash = "300d5f6f52a58d9245ef142962ba2c31f03dc8835edafc7185bb4b284e6f8954";
     deps = with allCrates; [  ];
   };
+  "clocked-dispatch_0_1" = clocked-dispatch_0_1_0;
   "clocked-dispatch_0" = clocked-dispatch_0_1_0;
   clocked-dispatch_1_2_0 = buildCratesLib {
     name = "clocked-dispatch";
@@ -40,6 +41,7 @@ rec {
     hash = "658a51a26627758a67d4745c4e8153767ae4fd391e83c88ce593e6f5c07e172d";
     deps = with allCrates; [  all__time.time_0_1 ];
   };
+  "clocked-dispatch_1_3" = clocked-dispatch_1_3_1;
   "clocked-dispatch_1" = clocked-dispatch_1_3_1;
   clocked-dispatch_2_0_1 = buildCratesLib {
     name = "clocked-dispatch";
@@ -90,6 +92,7 @@ rec {
     hash = "e80f7fd47079ae1bdd87c18cd428fb97c0e30ae0f9ea8a43c3c24774318c12a6";
     deps = with allCrates; [  all__rand.rand_0_3 ];
   };
+  "clocked-dispatch_2_1" = clocked-dispatch_2_1_3;
   "clocked-dispatch_2" = clocked-dispatch_2_1_3;
   clocked-dispatch_3_0_1 = buildCratesLib {
     name = "clocked-dispatch";
@@ -103,6 +106,7 @@ rec {
     hash = "a2c97fdcc8724a002b9f12f4f823835fd30411110ba659d7b4376a1f7fadda6b";
     deps = with allCrates; [  all__rand.rand_0_3 ];
   };
+  "clocked-dispatch_3_0" = clocked-dispatch_3_0_1;
   "clocked-dispatch_3" = clocked-dispatch_3_0_1;
   "clocked-dispatch_4_0" = clocked-dispatch_4_0_0;
   "clocked-dispatch_4" = clocked-dispatch_4_0_0;}

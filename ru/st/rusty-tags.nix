@@ -213,6 +213,7 @@ rec {
     hash = "41f45c9b9c39b26f72c8b3da425ccc08f2422233a1419d9bee658ae35ce459e4";
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__tempdir.tempdir_0_3 all__clap.clap_2_10 all__glob.glob_0_2 all__lazy_static.lazy_static_0_2 all__toml.toml_0_2 ];
   };
+  "rusty-tags_0_10" = rusty-tags_0_10_0;
   "rusty-tags_0" = rusty-tags_0_10_0;
   rusty-tags_1_0_1 = buildCratesLib {
     name = "rusty-tags";

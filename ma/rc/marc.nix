@@ -77,6 +77,7 @@ rec {
     hash = "dd7e0164f156f68de85d691b4c9454c7581a72872018d478bbba5c1d650762f8";
     deps = with allCrates; [  all__error-chain.error-chain_0_5 ];
   };
+  "marc_0_5" = marc_0_5_0;
   "marc_0" = marc_0_5_0;
   marc_1_1_0 = buildCratesLib {
     name = "marc";

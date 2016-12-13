@@ -20,6 +20,7 @@ rec {
     hash = "ef43f644f2b8f0dad9d7d8079c5ddf309052f0325246ed3a7895332906671899";
     deps = with allCrates; [  all__rust-crypto.rust-crypto_0_2 all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  "jsonwebtoken_0_2" = jsonwebtoken_0_2_0;
   "jsonwebtoken_0" = jsonwebtoken_0_2_0;
   jsonwebtoken_1_1_0 = buildCratesLib {
     name = "jsonwebtoken";

@@ -25,6 +25,7 @@ rec {
     hash = "a03a94d169ab2ef2b9c5b75ee81e15cbe86d06bef62230f6876a659677410699";
     deps = with allCrates; [  all__syntex_syntax.syntex_syntax_0_31 all__syntex.syntex_0_31 all__extprim.extprim_1_0_0 all__rustc_version.rustc_version_0_1 ];
   };
+  "extprim_literals_0_2" = extprim_literals_0_2_2;
   "extprim_literals_0" = extprim_literals_0_2_2;
   extprim_literals_1_0_1 = buildCratesLib {
     name = "extprim_literals";

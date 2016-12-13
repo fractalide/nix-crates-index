@@ -13,6 +13,7 @@ rec {
     hash = "069a2b387ca8b6645e3529036f320cabee1976022e324c72c42621af1972b66d";
     deps = with allCrates; [  all__serde.serde_0_8 all__clap.clap_2_0 all__mime.mime_0_2 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__hyper.hyper_0_9 ];
   };
+  "google-doubleclickbidmanager1-cli_0_3" = google-doubleclickbidmanager1-cli_0_3_6;
   "google-doubleclickbidmanager1-cli_0" = google-doubleclickbidmanager1-cli_0_3_6;
   "google-doubleclickbidmanager1-cli_1_0" = google-doubleclickbidmanager1-cli_1_0_0;
   "google-doubleclickbidmanager1-cli_1" = google-doubleclickbidmanager1-cli_1_0_0;}

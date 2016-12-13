@@ -88,6 +88,7 @@ rec {
     hash = "1235ef97f76f55e72a993208d41918197617e260c662dfc2b8c3ce1ebf6520eb";
     deps = with allCrates; [  all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  "vault_0_4" = vault_0_4_0;
   "vault_0" = vault_0_4_0;
   "vault_1_0" = vault_1_0_0;
   "vault_1" = vault_1_0_0;}

@@ -55,6 +55,7 @@ rec {
     hash = "ea4199c8306ab203641374c02671dc5c3fc22403a926cd367efa9b3077e7cfb1";
     deps = with allCrates; [  hyper log ];
   };
+  "yup-hyper-mock_0_1" = yup-hyper-mock_0_1_8;
   "yup-hyper-mock_0" = yup-hyper-mock_0_1_8;
   yup-hyper-mock_1_0_1 = buildCratesLib {
     name = "yup-hyper-mock";

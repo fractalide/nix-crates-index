@@ -19,6 +19,7 @@ rec {
     hash = "ffef0be1a3700e104a5120557d5bf27a26b5cfa87fe6ee6ea77e693ecee12d24";
     deps = with allCrates; [  ];
   };
+  "wavefront_obj_0_0" = wavefront_obj_0_0_2;
   "wavefront_obj_0" = wavefront_obj_0_0_2;
   wavefront_obj_2_0_0 = buildCratesLib {
     name = "wavefront_obj";
@@ -26,6 +27,7 @@ rec {
     hash = "3943dba325f4208f846c1696dab683177cef783c7b781fc6f5ba304768ce65da";
     deps = with allCrates; [  ];
   };
+  "wavefront_obj_1_0" = wavefront_obj_1_0_0;
   "wavefront_obj_1" = wavefront_obj_1_0_0;
   wavefront_obj_2_0_1 = buildCratesLib {
     name = "wavefront_obj";
@@ -57,6 +59,7 @@ rec {
     hash = "fe08bc3584d9db21e4cd68583f951286e9b78a1f8b1246ac3187fb6d09fd5cbd";
     deps = with allCrates; [  ];
   };
+  "wavefront_obj_2_0" = wavefront_obj_2_0_4;
   "wavefront_obj_2" = wavefront_obj_2_0_4;
   wavefront_obj_4_0_0 = buildCratesLib {
     name = "wavefront_obj";
@@ -64,6 +67,7 @@ rec {
     hash = "694ab7e795a99b66241275b74095b7ef17237aad3943fadd096771649dcba8af";
     deps = with allCrates; [  ];
   };
+  "wavefront_obj_3_0" = wavefront_obj_3_0_0;
   "wavefront_obj_3" = wavefront_obj_3_0_0;
   wavefront_obj_4_0_1 = buildCratesLib {
     name = "wavefront_obj";
@@ -83,6 +87,7 @@ rec {
     hash = "fe5d777ffea014fe243a327fde7c543c55683a5d59d5daedfe366143258ef396";
     deps = with allCrates; [  ];
   };
+  "wavefront_obj_4_0" = wavefront_obj_4_0_2;
   "wavefront_obj_4" = wavefront_obj_4_0_2;
   "wavefront_obj_5_0" = wavefront_obj_5_0_0;
   "wavefront_obj_5" = wavefront_obj_5_0_0;}

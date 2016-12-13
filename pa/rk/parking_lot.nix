@@ -25,13 +25,68 @@ rec {
     hash = "bc7aa67f8e68888da3352bbb8a1d3d1a71f32f09b3b60e2fbc5de8215331693b";
     deps = with allCrates; [  all__smallvec.smallvec_0_1 ];
   };
+  parking_lot_0_2_0 = buildCratesLib {
+    name = "parking_lot";
+    version = "0.2.0";
+    hash = "5fee9f262630fab2f3e42749d6f217a23709cc8d4485ee651474cc6498e30478";
+    deps = with allCrates; [  all__smallvec.smallvec_0_1 all__libc.libc_0_2 ];
+  };
+  "parking_lot_0_1" = parking_lot_0_1_3;
+  parking_lot_0_2_1 = buildCratesLib {
+    name = "parking_lot";
+    version = "0.2.1";
+    hash = "f2f5de3f3e2df904a72c78c39825dab24c1c770fd4a544f2e47878af99042ee5";
+    deps = with allCrates; [  all__smallvec.smallvec_0_1 all__libc.libc_0_2 ];
+  };
+  parking_lot_0_2_2 = buildCratesLib {
+    name = "parking_lot";
+    version = "0.2.2";
+    hash = "3a8e578620d5c883f66f65fcc65febfe86485eeacb1df6f68272b546d8e57569";
+    deps = with allCrates; [  all__smallvec.smallvec_0_1 all__libc.libc_0_2 ];
+  };
+  parking_lot_0_2_3 = buildCratesLib {
+    name = "parking_lot";
+    version = "0.2.3";
+    hash = "40f316aec8b620467484dc141679e23e80acd95a33952645a67f40183f52c484";
+    deps = with allCrates; [  all__smallvec.smallvec_0_1 all__libc.libc_0_2 ];
+  };
+  parking_lot_0_2_4 = buildCratesLib {
+    name = "parking_lot";
+    version = "0.2.4";
+    hash = "94b6bd7b5f4da03c375ae393617646715180a98a31920e963a373ff9f5883aa4";
+    deps = with allCrates; [  all__smallvec.smallvec_0_1 all__libc.libc_0_2 ];
+  };
+  parking_lot_0_2_5 = buildCratesLib {
+    name = "parking_lot";
+    version = "0.2.5";
+    hash = "3f901d35d86a32fc16cea54eb7a962daee4af68e20f77582653cfe2551f92452";
+    deps = with allCrates; [  all__smallvec.smallvec_0_1 all__libc.libc_0_2 ];
+  };
+  parking_lot_0_2_6 = buildCratesLib {
+    name = "parking_lot";
+    version = "0.2.6";
+    hash = "e0fd1be2c3cf5fef20a6d18fec252c4f3c87c14fc3039002eb7d4ed91e436826";
+    deps = with allCrates; [  all__smallvec.smallvec_0_1 all__libc.libc_0_2 ];
+  };
+  parking_lot_0_2_7 = buildCratesLib {
+    name = "parking_lot";
+    version = "0.2.7";
+    hash = "77308f7e53b15620f5081b49e699c8681bb934b53435f2f92810992c7dd07c32";
+    deps = with allCrates; [  all__smallvec.smallvec_0_1 all__libc.libc_0_2 ];
+  };
+  parking_lot_0_2_8 = buildCratesLib {
+    name = "parking_lot";
+    version = "0.2.8";
+    hash = "968f685642555d2f7e202c48b8b11de80569e9bfea817f7f12d7c61aac62d4e6";
+    deps = with allCrates; [  all__smallvec.smallvec_0_1 all__libc.libc_0_2 ];
+  };
   parking_lot_0_3_0 = buildCratesLib {
     name = "parking_lot";
     version = "0.3.0";
     hash = "c3f50ec3c8f2530302ec679c85d5a7fc3676e444cacddf08abb13dea06038615";
     deps = with allCrates; [  all__parking_lot_core.parking_lot_core_0_1 ];
   };
-  "parking_lot_0_1" = parking_lot_0_1_3;
+  "parking_lot_0_2" = parking_lot_0_2_8;
   parking_lot_0_3_1 = buildCratesLib {
     name = "parking_lot";
     version = "0.3.1";

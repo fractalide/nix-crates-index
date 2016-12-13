@@ -80,6 +80,7 @@ rec {
     hash = "702344cacf3cf962cec112eb078c87df33b9f8b65db216b238964be969c37fbf";
     deps = with allCrates; [  ];
   };
+  "symbolic_expressions_0_4" = symbolic_expressions_0_4_2;
   "symbolic_expressions_0" = symbolic_expressions_0_4_2;
   symbolic_expressions_2_0_3 = buildCratesLib {
     name = "symbolic_expressions";
@@ -87,6 +88,7 @@ rec {
     hash = "394eef72c11bbb6abf4234dcf80944a35dc2a4c39afd66d2407e42c37a05784f";
     deps = with allCrates; [  serde ];
   };
+  "symbolic_expressions_1_0" = symbolic_expressions_1_0_0;
   "symbolic_expressions_1" = symbolic_expressions_1_0_0;
   symbolic_expressions_2_0_8 = buildCratesLib {
     name = "symbolic_expressions";
@@ -100,6 +102,7 @@ rec {
     hash = "cfa39646ea2ba724b178e93ffff6d0daaf1e254690058aa9449498553a9b3a24";
     deps = with allCrates; [  ];
   };
+  "symbolic_expressions_2_0" = symbolic_expressions_2_0_8;
   "symbolic_expressions_2" = symbolic_expressions_2_0_8;
   "symbolic_expressions_3_0" = symbolic_expressions_3_0_0;
   "symbolic_expressions_3" = symbolic_expressions_3_0_0;}

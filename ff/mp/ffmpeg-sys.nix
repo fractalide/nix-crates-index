@@ -25,6 +25,7 @@ rec {
     hash = "9004a36085eaf4fd250c727c8d6200ef1f8e9307657f84ef59b83334f6f3440f";
     deps = with allCrates; [  all__libc.libc_0_2 all__num_cpus.num_cpus_0_2 ];
   };
+  "ffmpeg-sys_2_8" = ffmpeg-sys_2_8_9;
   "ffmpeg-sys_2" = ffmpeg-sys_2_8_9;
   "ffmpeg-sys_3_2" = ffmpeg-sys_3_2_0;
   "ffmpeg-sys_3" = ffmpeg-sys_3_2_0;}

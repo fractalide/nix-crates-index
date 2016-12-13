@@ -20,6 +20,7 @@ rec {
     hash = "03042e3fee3103233de14d777b9678a151bcc4cedeca77098c57889701f4f670";
     deps = with allCrates; [  ];
   };
+  "test-project_0_2" = test-project_0_2_0;
   "test-project_0" = test-project_0_2_0;
   test-project_1_1_0 = buildCratesLib {
     name = "test-project";
@@ -79,6 +80,7 @@ rec {
     hash = "47a4bf7b1c95eec3f61c4f9fd295404e569d9893d3395b2d9db670e6c94049fc";
     deps = with allCrates; [  ];
   };
+  "test-project_1_5" = test-project_1_5_1;
   "test-project_1" = test-project_1_5_1;
   test-project_2_1_0 = buildCratesLib {
     name = "test-project";

@@ -31,6 +31,7 @@ rec {
     hash = "1aac28ff4cdefa16c3c94836d9cba62bf950862d1cddfc8075ee7387a5394c0e";
     deps = with allCrates; [  url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__hyper.hyper_0_9 ];
   };
+  "google-people1_0_1" = google-people1_0_1_15;
   "google-people1_0" = google-people1_0_1_15;
   "google-people1_1_0" = google-people1_1_0_0;
   "google-people1_1" = google-people1_1_0_0;}

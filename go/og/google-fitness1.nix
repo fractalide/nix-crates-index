@@ -97,6 +97,7 @@ rec {
     hash = "362766e5efad9067d38053d9f0983bd7f8fcb210ae698e73149a29080ff65080";
     deps = with allCrates; [  all__serde.serde_0_8 url all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde_json.serde_json_0_8 ];
   };
+  "google-fitness1_0_1" = google-fitness1_0_1_15;
   "google-fitness1_0" = google-fitness1_0_1_15;
   "google-fitness1_1_0" = google-fitness1_1_0_0;
   "google-fitness1_1" = google-fitness1_1_0_0;}

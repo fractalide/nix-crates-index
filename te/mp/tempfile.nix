@@ -47,13 +47,27 @@ rec {
     deps = with allCrates; [  libc rand ];
   };
   "tempfile_0_3" = tempfile_0_3_0;
+  tempfile_0_5_0 = buildCratesLib {
+    name = "tempfile";
+    version = "0.5.0";
+    hash = "62001fcb70a2bee418550a8a34811cd8ba0ecad7d0e7bc937e9148317a940348";
+    deps = with allCrates; [  rand libc ];
+  };
+  "tempfile_0_4" = tempfile_0_4_0;
+  tempfile_0_5_1 = buildCratesLib {
+    name = "tempfile";
+    version = "0.5.1";
+    hash = "127f8c06ef8f0321a1c08e23d5617296179dd282e8b37f5c7135b0aac80bbdd0";
+    deps = with allCrates; [  rand libc ];
+  };
   tempfile_1_0_0 = buildCratesLib {
     name = "tempfile";
     version = "1.0.0";
     hash = "c0dd7c4b3a5e09e853b7f9c5d69782f37a9499030f42096cf5ff6e7dcb25c06f";
     deps = with allCrates; [  all__libc.libc_0_1 all__winapi.winapi_0_1 all__rand.rand_0_3 all__kernel32-sys.kernel32-sys_0_1 ];
   };
-  "tempfile_0" = tempfile_0_4_0;
+  "tempfile_0_5" = tempfile_0_5_1;
+  "tempfile_0" = tempfile_0_5_1;
   tempfile_1_1_0 = buildCratesLib {
     name = "tempfile";
     version = "1.1.0";
@@ -85,6 +99,7 @@ rec {
     hash = "2e699dc3836c640caf0df14afe1ac032c40f3fcb16a33d0e7035b645e2946726";
     deps = with allCrates; [  all__kernel32-sys.kernel32-sys_0_2 all__winapi.winapi_0_2 all__libc.libc_0_2 all__rand.rand_0_3 ];
   };
+  "tempfile_1_1" = tempfile_1_1_3;
   "tempfile_1" = tempfile_1_1_3;
   tempfile_2_0_1 = buildCratesLib {
     name = "tempfile";

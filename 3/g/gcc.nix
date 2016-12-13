@@ -130,6 +130,84 @@ rec {
     hash = "af3337a4270dff29e560d9d21395642ad136d9294ab1219d9aa9c2b32a78826e";
     deps = with allCrates; [  ];
   };
+  gcc_0_3_10 = buildCratesLib {
+    name = "gcc";
+    version = "0.3.10";
+    hash = "8fda8855b434d839feb4631c2f0fa60e00a39b98a057156204551ce2edce5f41";
+    deps = with allCrates; [  ];
+  };
+  gcc_0_3_11 = buildCratesLib {
+    name = "gcc";
+    version = "0.3.11";
+    hash = "e088dd3348bb8a733c13d874dfa5bf9f355f690f8971ba14a51d2620606befdb";
+    deps = with allCrates; [  ];
+  };
+  gcc_0_3_12 = buildCratesLib {
+    name = "gcc";
+    version = "0.3.12";
+    hash = "18bcc34bb3dc93931bd2e1d91f5dfbbb9519a2154c6d988c8f7020bac2ed4efa";
+    deps = with allCrates; [  ];
+  };
+  gcc_0_3_13 = buildCratesLib {
+    name = "gcc";
+    version = "0.3.13";
+    hash = "c817753e9a6ff928e71f62f5eb73478b1809b146ae0d2f5465be3bd1a8382579";
+    deps = with allCrates; [  ];
+  };
+  gcc_0_3_14 = buildCratesLib {
+    name = "gcc";
+    version = "0.3.14";
+    hash = "78dad1dbd92f0c2e580e75e95e0e17c67746aaba4c18a80d1f026b9734f3ad1d";
+    deps = with allCrates; [  ];
+  };
+  gcc_0_3_15 = buildCratesLib {
+    name = "gcc";
+    version = "0.3.15";
+    hash = "5eec232eef31d2fb5196566819b9243333254bec8dc8e83dcec7d0b1bf2f4b45";
+    deps = with allCrates; [  ];
+  };
+  gcc_0_3_16 = buildCratesLib {
+    name = "gcc";
+    version = "0.3.16";
+    hash = "10006dc745e74d2786c045b465633963954d4f04af324cd60b481d701f761954";
+    deps = with allCrates; [  ];
+  };
+  gcc_0_3_17 = buildCratesLib {
+    name = "gcc";
+    version = "0.3.17";
+    hash = "63a90572c55fc82a098397b122c7afe530a768a106c50dea63c7c89609ee52d5";
+    deps = with allCrates; [  ];
+  };
+  gcc_0_3_18 = buildCratesLib {
+    name = "gcc";
+    version = "0.3.18";
+    hash = "239353504d12fc59da2ac349b25eaa253e4fe99c70230a30a7214b1fdd17ad0a";
+    deps = with allCrates; [  ];
+  };
+  gcc_0_3_19 = buildCratesLib {
+    name = "gcc";
+    version = "0.3.19";
+    hash = "7c4709c32c47168f5fdf6fcece04b283931fc071b713435bff40d67b5f0b5d5d";
+    deps = with allCrates; [  ];
+  };
+  gcc_0_3_20 = buildCratesLib {
+    name = "gcc";
+    version = "0.3.20";
+    hash = "9f89ff529f5f01a3e0ce33858477e3687a961d9f0ade0ac558dc691de6807e64";
+    deps = with allCrates; [  ];
+  };
+  gcc_0_3_21 = buildCratesLib {
+    name = "gcc";
+    version = "0.3.21";
+    hash = "ca10e3e1f1c8278047da19b94dc17c4397861150d5fbcea052eedb1d9847d356";
+    deps = with allCrates; [  ];
+  };
+  gcc_0_3_22 = buildCratesLib {
+    name = "gcc";
+    version = "0.3.22";
+    hash = "d10b1b53a6acaae40478108ba9bab33d27752e44526db73b8a0b6ffbf8980b21";
+    deps = with allCrates; [  ];
+  };
   gcc_0_3_23 = buildCratesLib {
     name = "gcc";
     version = "0.3.23";

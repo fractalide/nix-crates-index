@@ -37,6 +37,7 @@ rec {
     hash = "40954ce032cd663a10e915cd05e508f068f9cdaa220a1f8c30ec962ad5dcbdcb";
     deps = with allCrates; [  all__regex.regex_0_1 ];
   };
+  "sort_str_to_sql_0_0" = sort_str_to_sql_0_0_5;
   "sort_str_to_sql_0" = sort_str_to_sql_0_0_5;
   "sort_str_to_sql_1_0" = sort_str_to_sql_1_0_0;
   "sort_str_to_sql_1" = sort_str_to_sql_1_0_0;}

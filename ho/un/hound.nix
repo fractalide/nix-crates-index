@@ -34,6 +34,7 @@ rec {
     hash = "8677d4ce11607f7be93e6edb1ade56644c907e051f08e48149cbd38f7837fe3a";
     deps = with allCrates; [  ];
   };
+  "hound_0_4" = hound_0_4_0;
   "hound_0" = hound_0_4_0;
   hound_1_1_0 = buildCratesLib {
     name = "hound";
@@ -48,6 +49,7 @@ rec {
     hash = "1e971fe26207d3ccdc66806fd9154508b28101fccb53fe152695e3ebcb53bd0f";
     deps = with allCrates; [  ];
   };
+  "hound_1_1" = hound_1_1_0;
   "hound_1" = hound_1_1_0;
   hound_3_0_0 = buildCratesLib {
     name = "hound";
@@ -55,6 +57,7 @@ rec {
     hash = "cbcce089471b4c7f51201675a3b85d932cffa2c6d3b913d35d20f3c7f3994530";
     deps = with allCrates; [  ];
   };
+  "hound_2_0" = hound_2_0_0;
   "hound_2" = hound_2_0_0;
   "hound_3_0" = hound_3_0_0;
   "hound_3" = hound_3_0_0;}

@@ -148,6 +148,7 @@ rec {
     hash = "2fa6497acadfbd0564c2a2843608b1979ace207535255e69552d818a9ed66166";
     deps = with allCrates; [  all__sdl2-sys.sdl2-sys_0_8 all__sdl2.sdl2_0_13 all__libc.libc_0_2 all__bitflags.bitflags_0_3 ];
   };
+  "sdl2_image_0_25" = sdl2_image_0_25_0;
   "sdl2_image_0" = sdl2_image_0_25_0;
   sdl2_image_1_1_0 = buildCratesLib {
     name = "sdl2_image";

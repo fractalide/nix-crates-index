@@ -13,6 +13,7 @@ rec {
     hash = "3fda8f001d7662b00ceb6814c3a8593822101858e40d211cd6993eddaed6c0a8";
     deps = with allCrates; [  all__regex.regex_0_1 ];
   };
+  "ram_4_0" = ram_4_0_0;
   "ram_4" = ram_4_0_0;
   "ram_5_0" = ram_5_0_0;
   "ram_5" = ram_5_0_0;}

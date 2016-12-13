@@ -97,6 +97,7 @@ rec {
     hash = "ad583e57c1e31a56305a0b4cbb209fdbd4ccb52a0264b1db8d0e3d0442a71ca8";
     deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 ];
   };
+  "google-calendar3_0_1" = google-calendar3_0_1_15;
   "google-calendar3_0" = google-calendar3_0_1_15;
   "google-calendar3_1_0" = google-calendar3_1_0_0;
   "google-calendar3_1" = google-calendar3_1_0_0;}

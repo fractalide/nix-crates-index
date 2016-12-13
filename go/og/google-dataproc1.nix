@@ -31,6 +31,7 @@ rec {
     hash = "d3fd9dcf918680704423994293820224da80794411990292e4ff88f213ab53e7";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 url all__mime.mime_0_2 all__serde_json.serde_json_0_8 ];
   };
+  "google-dataproc1_0_1" = google-dataproc1_0_1_15;
   "google-dataproc1_0" = google-dataproc1_0_1_15;
   "google-dataproc1_1_0" = google-dataproc1_1_0_0;
   "google-dataproc1_1" = google-dataproc1_1_0_0;}

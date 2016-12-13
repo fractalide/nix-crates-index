@@ -7,5 +7,11 @@ rec {
     hash = "dfa34b3180ad6b4fe63cbc4fb773da4a83c5b3db8db15789051a4785f2b43e58";
     deps = with allCrates; [  all__winapi.winapi_0_2 all__kernel32-sys.kernel32-sys_0_2 ];
   };
-  "windows-error_1_0" = windows-error_1_0_0;
-  "windows-error_1" = windows-error_1_0_0;}
+  windows-error_1_0_1 = buildCratesLib {
+    name = "windows-error";
+    version = "1.0.1";
+    hash = "4b6f041a47be7706a341bc283f83d347d2a9b175b1578cf304fa35b121551145";
+    deps = with allCrates; [  ];
+  };
+  "windows-error_1_0" = windows-error_1_0_1;
+  "windows-error_1" = windows-error_1_0_1;}

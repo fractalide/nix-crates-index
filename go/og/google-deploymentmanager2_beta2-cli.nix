@@ -13,6 +13,7 @@ rec {
     hash = "dc35d9cc045c677c472295fd33e0ec6c9bb4509b1e08f6e8418b6595e689e643";
     deps = with allCrates; [  all__yup-hyper-mock.yup-hyper-mock_1_0 all__strsim.strsim_0_5 all__mime.mime_0_2 all__hyper.hyper_0_9 all__clap.clap_2_0 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
   };
+  "google-deploymentmanager2_beta2-cli_0_3" = google-deploymentmanager2_beta2-cli_0_3_6;
   "google-deploymentmanager2_beta2-cli_0" = google-deploymentmanager2_beta2-cli_0_3_6;
   "google-deploymentmanager2_beta2-cli_1_0" = google-deploymentmanager2_beta2-cli_1_0_0;
   "google-deploymentmanager2_beta2-cli_1" = google-deploymentmanager2_beta2-cli_1_0_0;}

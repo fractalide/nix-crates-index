@@ -13,6 +13,7 @@ rec {
     hash = "397648ede92f9f106601b9fa9926b72277c5ac82dc8d7d38b89620350a2437e5";
     deps = with allCrates; [  ];
   };
+  "microstate_0_1" = microstate_0_1_0;
   "microstate_0" = microstate_0_1_0;
   "microstate_1_0" = microstate_1_0_0;
   "microstate_1" = microstate_1_0_0;}

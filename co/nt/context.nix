@@ -44,6 +44,7 @@ rec {
     hash = "32079bad06e056de0007a408d217fd37d9b0835a655beb8813d49eca50dbb7c0";
     deps = with allCrates; [  all__libc.libc_0_2 all__winapi.winapi_0_2 all__kernel32-sys.kernel32-sys_0_2 all__gcc.gcc_0_3 ];
   };
+  "context_0_2" = context_0_2_1;
   "context_0" = context_0_2_1;
   "context_1_0" = context_1_0_0;
   "context_1" = context_1_0_0;}

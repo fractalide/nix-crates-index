@@ -20,6 +20,7 @@ rec {
     hash = "1f17d109f5ea071d5f4a07f8c6d2eb023a9b276032d16a8466eed6189560ace9";
     deps = with allCrates; [  all__quick-error.quick-error_1_0_0 all__ansi_term.ansi_term_0_9 ];
   };
+  "colorparse_1_1" = colorparse_1_1_0;
   "colorparse_1" = colorparse_1_1_0;
   "colorparse_2_0" = colorparse_2_0_0;
   "colorparse_2" = colorparse_2_0_0;}

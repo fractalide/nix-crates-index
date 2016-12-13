@@ -19,6 +19,7 @@ rec {
     hash = "a4904853063aa799716f903ecbe631aa6ec31d4ef52632e936f9ab282c6907c8";
     deps = with allCrates; [  url all__hyper.hyper_0_9 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
   };
+  "google-safebrowsing4_0_1" = google-safebrowsing4_0_1_15;
   "google-safebrowsing4_0" = google-safebrowsing4_0_1_15;
   "google-safebrowsing4_1_0" = google-safebrowsing4_1_0_0;
   "google-safebrowsing4_1" = google-safebrowsing4_1_0_0;}

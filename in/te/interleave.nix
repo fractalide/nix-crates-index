@@ -37,6 +37,7 @@ rec {
     hash = "52dd6c4d8c95f4515f5d05a4f2f9fedf03e3ad33da18a0d6f954ca925a7d8fb4";
     deps = with allCrates; [  ];
   };
+  "interleave_0_2" = interleave_0_2_4;
   "interleave_0" = interleave_0_2_4;
   interleave_1_0_1 = buildCratesLib {
     name = "interleave";

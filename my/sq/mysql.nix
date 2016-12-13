@@ -357,6 +357,7 @@ rec {
     hash = "259e7e01fc067a6a703b936329dd9114bc6bd8ec62f21895e912a0b4b3f0a55c";
     deps = with allCrates; [  all__regex.regex_0_1 all__byteorder.byteorder_0_3 all__time.time_0_1 all__lazy_static.lazy_static_0_1 all__bitflags.bitflags_0_3 ];
   };
+  "mysql_0_20" = mysql_0_20_1;
   "mysql_0" = mysql_0_20_1;
   mysql_1_1_0 = buildCratesLib {
     name = "mysql";
@@ -384,6 +385,7 @@ rec {
     hash = "e0382d5e732bdc985edca284c6e349b3c54f47c37e0b736a7e5e94288fa1d7ae";
     deps = with allCrates; [  all__byteorder.byteorder_0_4 all__regex.regex_0_1 all__url.url_0_5 all__time.time_0_1 all__bitflags.bitflags_0_4 all__lazy_static.lazy_static_0_1 ];
   };
+  "mysql_1_2" = mysql_1_2_1;
   "mysql_1" = mysql_1_2_1;
   mysql_2_1_0 = buildCratesLib {
     name = "mysql";
@@ -411,6 +413,7 @@ rec {
     hash = "956161507ee88c605a0ab08ca10e5f2b5531e9ab83edf73767acc63bd08a2134";
     deps = with allCrates; [  all__bitflags.bitflags_0_4 all__byteorder.byteorder_0_4 all__chrono.chrono_0_2 all__regex.regex_0_1 all__url.url_0_5 all__bufstream.bufstream_0_1 all__lazy_static.lazy_static_0_1 all__time.time_0_1 all__fnv.fnv_1_0 ];
   };
+  "mysql_2_2" = mysql_2_2_1;
   "mysql_2" = mysql_2_2_1;
   mysql_4_0_0 = buildCratesLib {
     name = "mysql";
@@ -418,6 +421,7 @@ rec {
     hash = "b903c71d78ab96f722293b98d0f0311c108c9a34759e799e7fc9370c4c39ba6f";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_1 all__bufstream.bufstream_0_1 all__bitflags.bitflags_0_4 all__chrono.chrono_0_2 all__url.url_1_1 all__time.time_0_1 all__fnv.fnv_1_0 all__regex.regex_0_1 all__byteorder.byteorder_0_4 ];
   };
+  "mysql_3_0" = mysql_3_0_0;
   "mysql_3" = mysql_3_0_0;
   mysql_5_0_0 = buildCratesLib {
     name = "mysql";
@@ -425,6 +429,7 @@ rec {
     hash = "4bdf14fff6e8524da83eef9d5ea5fc947b9a8e869ed8752ee44325d2038876d0";
     deps = with allCrates; [  all__bitflags.bitflags_0_7 all__bufstream.bufstream_0_1 all__fnv.fnv_1_0 all__byteorder.byteorder_0_5 all__time.time_0_1 all__regex.regex_0_1 all__lazy_static.lazy_static_0_2 all__url.url_1_1 all__chrono.chrono_0_2 ];
   };
+  "mysql_4_0" = mysql_4_0_0;
   "mysql_4" = mysql_4_0_0;
   mysql_5_1_0 = buildCratesLib {
     name = "mysql";
@@ -458,6 +463,7 @@ rec {
     hash = "77c18c3d3fbb19d93ad4d69a378739f46ac52404152c5b62335940a7b97351bc";
     deps = with allCrates; [  all__chrono.chrono_0_2 all__lazy_static.lazy_static_0_2 all__bufstream.bufstream_0_1 all__url.url_1_1 all__time.time_0_1 all__nom.nom_1_2 all__twox-hash.twox-hash_1_0 all__fnv.fnv_1_0 all__bitflags.bitflags_0_7 all__regex.regex_0_1 all__byteorder.byteorder_0_5 ];
   };
+  "mysql_5_2" = mysql_5_2_2;
   "mysql_5" = mysql_5_2_2;
   mysql_6_0_1 = buildCratesLib {
     name = "mysql";
@@ -471,6 +477,7 @@ rec {
     hash = "47081d6fd6f5899313515decdbbdf3eab5024f03559bde1e310f6f97c0c4738b";
     deps = with allCrates; [  all__chrono.chrono_0_2 all__bitflags.bitflags_0_7 all__lazy_static.lazy_static_0_2 all__time.time_0_1 all__byteorder.byteorder_0_5 all__nom.nom_1_2 all__url.url_1_1 all__bufstream.bufstream_0_1 all__twox-hash.twox-hash_1_0 all__regex.regex_0_1 all__fnv.fnv_1_0 ];
   };
+  "mysql_6_0" = mysql_6_0_1;
   "mysql_6" = mysql_6_0_1;
   mysql_7_0_1 = buildCratesLib {
     name = "mysql";

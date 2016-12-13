@@ -26,6 +26,7 @@ rec {
     hash = "cd43a86046915d2e799d60bff5b1202b6605d6cc6741206ce48880230925d5ab";
     deps = with allCrates; [  all__regex.regex_0_1 all__encoding.encoding_0_2 ];
   };
+  "java-properties_0_2" = java-properties_0_2_0;
   "java-properties_0" = java-properties_0_2_0;
   "java-properties_1_0" = java-properties_1_0_0;
   "java-properties_1" = java-properties_1_0_0;}

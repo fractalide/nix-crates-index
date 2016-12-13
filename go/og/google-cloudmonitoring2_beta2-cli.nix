@@ -13,6 +13,7 @@ rec {
     hash = "0700b5a35890f29a508103e27c8a355642b95bbd49f33dfb0f131db3cb817429";
     deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__mime.mime_0_2 all__strsim.strsim_0_5 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
   };
+  "google-cloudmonitoring2_beta2-cli_0_3" = google-cloudmonitoring2_beta2-cli_0_3_6;
   "google-cloudmonitoring2_beta2-cli_0" = google-cloudmonitoring2_beta2-cli_0_3_6;
   "google-cloudmonitoring2_beta2-cli_1_0" = google-cloudmonitoring2_beta2-cli_1_0_0;
   "google-cloudmonitoring2_beta2-cli_1" = google-cloudmonitoring2_beta2-cli_1_0_0;}

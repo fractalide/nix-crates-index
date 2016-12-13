@@ -20,6 +20,7 @@ rec {
     hash = "be574e1532692b9e6ccf7210f7229430949742c9b2ac474b27f2d5f9faa1c01b";
     deps = with allCrates; [  ];
   };
+  "shortcut_1_1" = shortcut_1_1_0;
   "shortcut_1" = shortcut_1_1_0;
   shortcut_2_1_0 = buildCratesLib {
     name = "shortcut";
@@ -34,6 +35,7 @@ rec {
     hash = "29c061182ac43dad76760f666071cd19392fd1d8d8b728130d84a68b857bdeee";
     deps = with allCrates; [  ];
   };
+  "shortcut_2_1" = shortcut_2_1_0;
   "shortcut_2" = shortcut_2_1_0;
   shortcut_3_2_0 = buildCratesLib {
     name = "shortcut";
@@ -73,6 +75,7 @@ rec {
     hash = "d62f8767d444779ff86b9a497587f02ef3a2533f92aa1598277273c9041d2ebc";
     deps = with allCrates; [  ];
   };
+  "shortcut_3_3" = shortcut_3_3_2;
   "shortcut_3" = shortcut_3_3_2;
   shortcut_4_0_1 = buildCratesLib {
     name = "shortcut";

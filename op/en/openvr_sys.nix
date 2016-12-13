@@ -25,6 +25,7 @@ rec {
     hash = "0f19862895cd40e77f87a6f2d466a8153b1f7d25a535b606e53fcbe98790c898";
     deps = with allCrates; [  ];
   };
+  "openvr_sys_0_1" = openvr_sys_0_1_2;
   "openvr_sys_0" = openvr_sys_0_1_2;
   openvr_sys_1_0_2 = buildCratesLib {
     name = "openvr_sys";

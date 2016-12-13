@@ -45,6 +45,7 @@ rec {
     hash = "95a3f0aafb9aec54178e0dada91ae07365bd88322d146bb78d5c1147f15cd327";
     deps = with allCrates; [  ];
   };
+  "immi_0_3" = immi_0_3_0;
   "immi_0" = immi_0_3_0;
   immi_1_0_1 = buildCratesLib {
     name = "immi";

@@ -33,6 +33,7 @@ rec {
     hash = "b01f7701685cc1d733da7997dec6dc8966c9c95e095706a5c3ce7eeeb01decf0";
     deps = with allCrates; [  ramp custom_derive newtype_derive rand ];
   };
+  "pumpkin_0_3" = pumpkin_0_3_0;
   "pumpkin_0" = pumpkin_0_3_0;
   pumpkin_1_0_1 = buildCratesLib {
     name = "pumpkin";

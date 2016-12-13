@@ -103,6 +103,7 @@ rec {
     hash = "a59e9ce4327bb15027b8b424aba1fc98721a2b6badb326c360e281ba08b5103d";
     deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 all__mime.mime_0_2 ];
   };
+  "google-appsactivity1_0_1" = google-appsactivity1_0_1_15;
   "google-appsactivity1_0" = google-appsactivity1_0_1_15;
   "google-appsactivity1_1_0" = google-appsactivity1_1_0_0;
   "google-appsactivity1_1" = google-appsactivity1_1_0_0;}

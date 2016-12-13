@@ -19,6 +19,7 @@ rec {
     hash = "b09026f07e47385aae12e37d625a13550743a19bdd4e3de9bd2dc047a6e13f58";
     deps = with allCrates; [  all__log.log_0_3 all__docopt.docopt_0_6 all__libmultilog.libmultilog_0_1 all__libwgetj.libwgetj_1_0 all__rustc-serialize.rustc-serialize_0_3 all__vergen.vergen_0_1 ];
   };
+  "wgetj_0_1" = wgetj_0_1_11;
   "wgetj_0" = wgetj_0_1_11;
   wgetj_1_0_1 = buildCratesLib {
     name = "wgetj";

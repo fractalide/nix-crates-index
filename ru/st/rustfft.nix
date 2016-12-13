@@ -32,6 +32,7 @@ rec {
     hash = "0ae271cb6596529ee682823c35bcd1f72b51002e38a2e4b14d6b448314c5a023";
     deps = with allCrates; [  num ];
   };
+  "rustfft_0_1" = rustfft_0_1_0;
   "rustfft_0" = rustfft_0_1_0;
   rustfft_1_0_1 = buildCratesLib {
     name = "rustfft";

@@ -20,6 +20,7 @@ rec {
     hash = "53a44b7e0a996761ec612f7182dada9cc298f7fc9989d2ab28bf271d5e51dc15";
     deps = with allCrates; [  all__slog.slog_1 all__chrono.chrono_0_2 all__nix.nix_0_6 all__slog-json.slog-json_1 ];
   };
+  "slog-bunyan_0_7" = slog-bunyan_0_7_0;
   "slog-bunyan_0" = slog-bunyan_0_7_0;
   slog-bunyan_1_1_0 = buildCratesLib {
     name = "slog-bunyan";

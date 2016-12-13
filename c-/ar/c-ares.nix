@@ -156,5 +156,26 @@ rec {
     deps = with allCrates; [  all__c-types.c-types_0_1 all__bitflags.bitflags_0_3 all__c-ares-sys.c-ares-sys_0_10 ];
   };
   "c-ares_0_17" = c-ares_0_17_0;
+  c-ares_0_19_0 = buildCratesLib {
+    name = "c-ares";
+    version = "0.19.0";
+    hash = "6d7601b775fc32ae82922cab9b0cb6cb137be8fc866adcb0e5b1f7236ce5a935";
+    deps = with allCrates; [  all__c-types.c-types_0_1 all__c-ares-sys.c-ares-sys_0_11 all__bitflags.bitflags_0_7 ];
+  };
   "c-ares_0_18" = c-ares_0_18_0;
-  "c-ares_0" = c-ares_0_18_0;}
+  c-ares_0_20_0 = buildCratesLib {
+    name = "c-ares";
+    version = "0.20.0";
+    hash = "a9c8b0fbe75705c7550138e3b31d027628c8fe686be8e670d8d4372f11831b7e";
+    deps = with allCrates; [  all__c-ares-sys.c-ares-sys_0_12 all__c-types.c-types_0_1 all__bitflags.bitflags_0_7 all__itertools.itertools_0_5 ];
+  };
+  "c-ares_0_19" = c-ares_0_19_0;
+  c-ares_0_21_0 = buildCratesLib {
+    name = "c-ares";
+    version = "0.21.0";
+    hash = "bc1281f29952664ef9883a7c885ef3f3ad89d11fb2d0f324bc942a01cb969dcb";
+    deps = with allCrates; [  all__itertools.itertools_0_5 all__bitflags.bitflags_0_7 all__c-types.c-types_0_1 all__c-ares-sys.c-ares-sys_0_13 ];
+  };
+  "c-ares_0_20" = c-ares_0_20_0;
+  "c-ares_0_21" = c-ares_0_21_0;
+  "c-ares_0" = c-ares_0_21_0;}

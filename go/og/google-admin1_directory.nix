@@ -97,6 +97,7 @@ rec {
     hash = "93bb4713249aeb684bdf2d2db93690753e04ce2f46347afe24dfd8a24928b66f";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
   };
+  "google-admin1_directory_0_1" = google-admin1_directory_0_1_15;
   "google-admin1_directory_0" = google-admin1_directory_0_1_15;
   "google-admin1_directory_1_0" = google-admin1_directory_1_0_0;
   "google-admin1_directory_1" = google-admin1_directory_1_0_0;}

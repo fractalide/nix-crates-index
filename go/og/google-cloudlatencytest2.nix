@@ -85,6 +85,7 @@ rec {
     hash = "70a9b1148b68c1b00a01a44092e9e9ecd1d62717acf0df0227baacfbec4e7d94";
     deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 url ];
   };
+  "google-cloudlatencytest2_0_1" = google-cloudlatencytest2_0_1_15;
   "google-cloudlatencytest2_0" = google-cloudlatencytest2_0_1_15;
   "google-cloudlatencytest2_1_0" = google-cloudlatencytest2_1_0_0;
   "google-cloudlatencytest2_1" = google-cloudlatencytest2_1_0_0;}

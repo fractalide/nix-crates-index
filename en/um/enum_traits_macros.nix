@@ -31,6 +31,7 @@ rec {
     hash = "514236478ad079ac514b5e214b20633f09ace7bed83f1d604b7f87062ae85710";
     deps = with allCrates; [  all__quote.quote_0_3 all__syn.syn_0_10 ];
   };
+  "enum_traits_macros_0_1" = enum_traits_macros_0_1_3;
   "enum_traits_macros_0" = enum_traits_macros_0_1_3;
   enum_traits_macros_1_1_0 = buildCratesLib {
     name = "enum_traits_macros";

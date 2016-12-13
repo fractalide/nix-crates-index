@@ -13,6 +13,7 @@ rec {
     hash = "1310e2879e7fac929346f074adaac3a93f7e7bc81dfb9b7bbb92b7081876e03e";
     deps = with allCrates; [  all__serde_json.serde_json_0_7 all__clap.clap_2_2 ];
   };
+  "cargo-lipo_0_1" = cargo-lipo_0_1_0;
   "cargo-lipo_0" = cargo-lipo_0_1_0;
   cargo-lipo_1_0_1 = buildCratesLib {
     name = "cargo-lipo";

@@ -47,6 +47,7 @@ rec {
     hash = "dfe114954840147025b889ab5ccead1b5d7de8a8da4d031d0fcb57e6c809a634";
     deps = with allCrates; [  ];
   };
+  "vsop87_0_5" = vsop87_0_5_1;
   "vsop87_0" = vsop87_0_5_1;
   vsop87_1_0_1 = buildCratesLib {
     name = "vsop87";

@@ -7,13 +7,26 @@ rec {
     hash = "8fb9c25ee31d07a9366aa93d87b88a609cecad0fb4dd223f845318bad5a90f9e";
     deps = with allCrates; [  all__serial.serial_0_3 ];
   };
+  qik_1_1_1 = buildCratesLib {
+    name = "qik";
+    version = "1.1.1";
+    hash = "917fb66223262389bc752c10d6cecb61bf69a75e0acf5ea96950e4c99f6414e2";
+    deps = with allCrates; [  all__serial.serial_0_3 all__sysfs_gpio.sysfs_gpio_0_4 ];
+  };
+  "qik_1_0" = qik_1_0_1;
+  qik_1_1_2 = buildCratesLib {
+    name = "qik";
+    version = "1.1.2";
+    hash = "3fe9e06f8facfe9b4469ad51248e15bef8714a373b30e990be15a369a022580b";
+    deps = with allCrates; [  all__serial.serial_0_3 all__sysfs_gpio.sysfs_gpio_0_4 ];
+  };
   qik_1_2_0 = buildCratesLib {
     name = "qik";
     version = "1.2.0";
     hash = "f1eaec3224a4a5bb11a7f915b27569cb24b4ec25ad5dc4e4ea0d624514dede03";
     deps = with allCrates; [  all__serial.serial_0_3 all__sysfs_gpio.sysfs_gpio_0_4 ];
   };
-  "qik_1_0" = qik_1_0_1;
+  "qik_1_1" = qik_1_1_2;
   qik_1_2_1 = buildCratesLib {
     name = "qik";
     version = "1.2.1";

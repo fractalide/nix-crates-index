@@ -13,6 +13,7 @@ rec {
     hash = "6132a77eba5bd412b1bb5362ac91db1018260df9e3bda53db9e21d081cf8aa12";
     deps = with allCrates; [  all__ring.ring_0_6 ];
   };
+  "merkle_0_1" = merkle_0_1_0;
   "merkle_0" = merkle_0_1_0;
   "merkle_1_0" = merkle_1_0_0;
   "merkle_1" = merkle_1_0_0;}

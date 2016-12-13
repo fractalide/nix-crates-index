@@ -110,6 +110,7 @@ rec {
     hash = "6624eabcf238a82ad9e756be70001f50a1db1b8d492ea44f8a33f7b479a5d05a";
     deps = with allCrates; [  url all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
   };
+  "google-groupsmigration1_0_1" = google-groupsmigration1_0_1_15;
   "google-groupsmigration1_0" = google-groupsmigration1_0_1_15;
   "google-groupsmigration1_1_0" = google-groupsmigration1_1_0_0;
   "google-groupsmigration1_1" = google-groupsmigration1_1_0_0;}

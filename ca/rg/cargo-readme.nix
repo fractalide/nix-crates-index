@@ -19,6 +19,7 @@ rec {
     hash = "4a0440821e2b62c435080bfaf8bc67fb7f0a55014486a7125846daa3884f7e9b";
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__clap.clap_2_0 all__regex.regex_0_1 all__toml.toml_0_1 ];
   };
+  "cargo-readme_0_2" = cargo-readme_0_2_3;
   "cargo-readme_0" = cargo-readme_0_2_3;
   cargo-readme_1_1_0 = buildCratesLib {
     name = "cargo-readme";
