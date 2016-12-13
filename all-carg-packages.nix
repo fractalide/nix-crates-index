@@ -30,14 +30,13 @@ let
 
       unpackPhase = ''
         tar xvzf $src
-        # FIXME will fail for packages with names containing a '-' when they are replaced by '_'
-        if [ "${name}" == "sqlite3" ]; then
-          cd rust-sqlite-0.3.0
-        else
-          cd ${name}-${version}
-        fi
+        cd ${name}-${version}
       '';
-      # hack for rusqlite
+      # HACK for rusqlite, this should be in the mkDerivation of the respective crate and not a global setting as it is here
+      #      but due to our time/budget constraint we didn't write a proper abstraction for that yet.
+      #      - instead of buildCratesLib one could have a mkDerivation per crate for which a user can override single phases
+      #        and [ pkgs.openssl ] dependencies.
+      #      - if whoever wants this be done properly just give us funding to info@nixcloud.io
       SQLITE3_LIB_DIR="${pkgs.openssl}/lib";
       buildInputs = [ pkgs.openssl pkgs.pkgconfig pkgs.sqlite ];
 
@@ -50,6 +49,8 @@ let
       CARGO_PKG_HOMEPAGE="";
       CARGO_PKG_AUTHORS="";
       CARGO_PKG_DESCRIPTION="";
+
+      # FIXME don't know why we have that here
       PKG_CONFIG_ALLOW_CROSS=1;
 
       # if TARGET is not set we see this
@@ -65,7 +66,6 @@ let
         export OUT_DIR=$(mktemp -d --tmpdir nix-output.XXXXXX)
         export PATH=''$PATH:${pkgs.rustc}/bin
 
-
         ${symlinkCalc cratesDeps}
         echo "name ${name}"
         # ugly hack since some creates use src/ and others don't! what a mess!
@@ -78,16 +78,14 @@ let
         if [ -f "build.rs" ]; then
           echo "------- build.rs found: $name ----------"
           ${pkgs.rustc}/bin/rustc build.rs --crate-name build_script_build --crate-type "bin" ${depsString} --cap-lints "allow"  -L dependency=mylibs -o build-script-build
-          du -ha
-          du -ha $OUT_DIR/
+#           du -ha
+#           du -ha $OUT_DIR/
         
           export PATH=''$PATH:${pkgs.rustc}/bin/
           ./build-script-build
           echo "------- build.rs found: $name after build-script-build ----------"
-          du -ha
-          du -ha $OUT_DIR/
-
-#["rustc", "/home/joachim/.cargo/registry/src/github.com-1ecc6299db9ec823/target_build_utils-0.1.2/build.rs", "--crate-name", "build_script_build", "--crate-type", "bin", "-g", "--out-dir", "/home/joachim/Desktop/projects/fractalide/fetchUrl/hello_flate2/target/debug/build/target_build_utils-d8a53fa4b38f6bc1", "--emit=dep-info,link", "-L", "dependency=/home/joachim/Desktop/projects/fractalide/fetchUrl/hello_flate2/target/debug/deps", "-L", "dependency=/home/joachim/Desktop/projects/fractalide/fetchUrl/hello_flate2/target/debug/deps", "--extern", "phf_codegen=/home/joachim/Desktop/projects/fractalide/fetchUrl/hello_flate2/target/debug/deps/libphf_codegen-8c5dc4c06cc5b2f5.rlib", "--cap-lints", "allow"], [/* 106 vars */]) = 0
+#           du -ha
+#           du -ha $OUT_DIR/
           echo "------- /build.rs found: $name ----------"
         fi
 
@@ -95,56 +93,17 @@ let
           echo "About to use rustc to compile some lib - $name"
 
           # FIXME maybe different crates want different compiler features like --cfg "feature=\"default\"" --cfg "feature=\"std\""'  but this isn't implemented yet in nixcrates
-          ${pkgs.rustc}/bin/rustc --crate-type=lib -g ''${S}lib.rs  ${depsString} --crate-name ${nameFix}   -L dependency=mylibs -L dependency=${pkgs.rustc}/   --out-dir $OUT_DIR/ --cfg "feature=\"default\"" --cfg "feature=\"std\""
+          ${pkgs.rustc}/bin/rustc --crate-type=lib -g ''${S}lib.rs  ${depsString} --crate-name ${nameFix} -L dependency=mylibs -L dependency=${pkgs.rustc}/   --out-dir $OUT_DIR/ --cfg "feature=\"default\"" --cfg "feature=\"std\""
         else
+          # HACK this might be a serious issue but so far it seems to work nonetheless 
           echo "ERROR: not found lib.rs, just skipping which is wrong. I'm not exiting now but this won't work!"
         fi
-
-#36[pid  1128] execve("/nix/store/fff3jbf9vbqhmf6qjrmzhliq516x7yrf-rustc-1.11.0/bin/rustc", ["rustc", "/home/joachim/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-0.8.19/src/lib.rs", "--crate-name", "serde", "--crate-type", "lib", "-g", "--cfg", "feature=\"default\"", "--cfg", "feature=\"std\"", "-C", "metadata=97f01bf227222121", "-C", "extra-filename=-97f01bf227222121", "--out-dir", "/home/joachim/Desktop/projects/fractalide/fetchUrl/hello_flate2/target/debug/deps", "--emit=dep-info,link", "-L", "dependency=/home/joachim/Desktop/projects/fractalide/fetchUrl/hello_flate2/target/debug/deps", "-L", "dependency=/home/joachim/Desktop/projects/fractalide/fetchUrl/hello_flate2/target/debug/deps", "--cap-lints", "allow"], [/* 105 vars */] <unfinished ...>
-# 
-# {
-#   "name": "serde",
-#   "vers": "0.8.19",
-#   "deps": [
-#     {
-#       "name": "clippy",
-#       "req": "0.*",
-#       "features": [],
-#       "optional": true,
-#       "default_features": true,
-#       "target": null,
-#       "kind": "normal"
-#     }
-#   ],
-#   "cksum": "58a19c0871c298847e6b68318484685cd51fa5478c0c905095647540031356e5",
-#   "features": {
-#     "std": [],
-#     "alloc": [
-#       "unstable"
-#     ],
-#     "unstable-testing": [
-#       "clippy",
-#       "unstable",
-#       "std"
-#     ],
-#     "unstable": [],
-#     "default": [
-#       "std"
-#     ],
-#     "collections": [
-#       "alloc"
-#     ]
-#   },
-#   "yanked": false
-# }
-
-
       '';
       # FIXME refactor this to use $lib and $src
       installPhase = ''
-        echo "----- $name install Phase-----"
-        du -a
-        echo "----- $name install Phase-----"
+#         echo "----- $name install Phase-----"
+#         du -a
+#         echo "----- $name install Phase-----"
         mkdir $out
 #         cp -Rf . $out
         if [ -f "''${S}lib.rs" ]; then
