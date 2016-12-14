@@ -21,6 +21,7 @@ let
 
     # when you use a more recent nixpkgs then one can just use rustcNightlyBin.rustc from there instead!
     # for now this is a convenience implementation
+    # WARNING: this is also added in defualt.nix in the nix-crates-index using repo nixcrates
     rustcNightly = newpkgs.rustcNightlyBin.rustc;
     newpkgs = import (fetchgit {
        url = https://github.com/NixOS/nixpkgs;
