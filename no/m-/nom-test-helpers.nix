@@ -19,6 +19,7 @@ rec {
     hash = "0f166d1090f83a537459e20bf3cebff8f81dff6526b103f7169b8de45f962de0";
     deps = with allCrates; [  all__nom.nom_2 ];
   };
+  "nom-test-helpers_1_0" = nom-test-helpers_1_0_1;
   "nom-test-helpers_1" = nom-test-helpers_1_0_1;
   "nom-test-helpers_2_0" = nom-test-helpers_2_0_0;
   "nom-test-helpers_2" = nom-test-helpers_2_0_0;}

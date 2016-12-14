@@ -20,6 +20,7 @@ rec {
     hash = "31a7a908b8f32538a2143e59a6e4e2508988832d5d4d6f7c156b3cbc762643a5";
     deps = with allCrates; [  ];
   };
+  "file_diff_0_2" = file_diff_0_2_0;
   "file_diff_0" = file_diff_0_2_0;
   "file_diff_1_0" = file_diff_1_0_0;
   "file_diff_1" = file_diff_1_0_0;}

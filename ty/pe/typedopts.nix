@@ -13,6 +13,7 @@ rec {
     hash = "66cd7021d917bbaea8003b8c55d1274b16996dd9a3f0a1e2b27fb6d5232543e2";
     deps = with allCrates; [  all__getopts.getopts_0_1 all__rustc-serialize.rustc-serialize_0_2 ];
   };
+  "typedopts_0_0" = typedopts_0_0_1;
   "typedopts_0" = typedopts_0_0_1;
   typedopts_1_0_1 = buildCratesLib {
     name = "typedopts";

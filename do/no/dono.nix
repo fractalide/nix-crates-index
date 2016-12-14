@@ -50,6 +50,7 @@ rec {
     hash = "b090e1dacdaa25b3ca635b7e2dddb821fca3cb6d9bd5c6b8ad8847a0ca7f91a3";
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__regex.regex_0_1 all__os_type.os_type_0_5 all__rust-crypto.rust-crypto_0_2 ];
   };
+  "dono_1_1" = dono_1_1_5;
   "dono_1" = dono_1_1_5;
   "dono_2_0" = dono_2_0_0;
   "dono_2" = dono_2_0_0;}

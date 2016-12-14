@@ -26,6 +26,7 @@ rec {
     hash = "97c2fff2e84b2146f7b731cca0eacd0a0c9a315d8abdd72197b098157b6e7d9e";
     deps = with allCrates; [  ];
   };
+  "recs_1_1" = recs_1_1_0;
   "recs_1" = recs_1_1_0;
   recs_2_0_1 = buildCratesLib {
     name = "recs";

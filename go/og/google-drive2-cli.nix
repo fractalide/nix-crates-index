@@ -13,6 +13,7 @@ rec {
     hash = "7258a151544b0b9c55c20c15ff864a5ce6760171ac24d9a1f9de34aa877d0b2e";
     deps = with allCrates; [  all__strsim.strsim_0_5 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 all__clap.clap_2_0 all__serde.serde_0_8 ];
   };
+  "google-drive2-cli_0_3" = google-drive2-cli_0_3_6;
   "google-drive2-cli_0" = google-drive2-cli_0_3_6;
   "google-drive2-cli_1_0" = google-drive2-cli_1_0_0;
   "google-drive2-cli_1" = google-drive2-cli_1_0_0;}

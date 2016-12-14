@@ -25,5 +25,12 @@ rec {
     hash = "55d50df66f1499e62cfda0591a27ec0aa47452da442119ca05de8533957628fa";
     deps = with allCrates; [  all__log.log_0_3 all__bitflags.bitflags_0_3 all__libc.libc_0_1 all__libudt4-sys.libudt4-sys_0_1 ];
   };
+  udt_0_2_0 = buildCratesLib {
+    name = "udt";
+    version = "0.2.0";
+    hash = "a65882c20d9d2ceef4cac374865228c6302382e734ec124b294134266e5661dd";
+    deps = with allCrates; [  all__libudt4-sys.libudt4-sys_0_2 all__log.log_0_3 all__libc.libc_0_2 all__bitflags.bitflags_0_7 ];
+  };
   "udt_0_1" = udt_0_1_4;
-  "udt_0" = udt_0_1_4;}
+  "udt_0_2" = udt_0_2_0;
+  "udt_0" = udt_0_2_0;}

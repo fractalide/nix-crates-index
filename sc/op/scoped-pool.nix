@@ -73,6 +73,7 @@ rec {
     hash = "817a3a15e704545ce59ed2b5c60a5d32bda4d7869befb8b36667b658a6c00b43";
     deps = with allCrates; [  all__scopeguard.scopeguard_0_1 all__crossbeam.crossbeam_0_2 all__variance.variance_0_1 ];
   };
+  "scoped-pool_0_1" = scoped-pool_0_1_10;
   "scoped-pool_0" = scoped-pool_0_1_10;
   "scoped-pool_1_0" = scoped-pool_1_0_0;
   "scoped-pool_1" = scoped-pool_1_0_0;}

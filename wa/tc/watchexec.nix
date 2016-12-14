@@ -20,5 +20,45 @@ rec {
     hash = "89fe0330f833fa64ad0ac48e1946f1ba7dd46798dc16bb5a8ec92e00a2de001d";
     deps = with allCrates; [  all__env_logger.env_logger_0_3 all__glob.glob_0_2 all__notify.notify_2_6 all__clap.clap_2_14 all__log.log_0_3 ];
   };
+  watchexec_1_2_0 = buildCratesLib {
+    name = "watchexec";
+    version = "1.2.0";
+    hash = "c9bc112698c554e0307e0883dc6c91d330e54d155c36f3f4758c1d60a5fd2aff";
+    deps = with allCrates; [  all__notify.notify_2_6 all__lazy_static.lazy_static_0_2 all__env_logger.env_logger_0_3 all__threadpool.threadpool_1_3 all__glob.glob_0_2 all__log.log_0_3 all__clap.clap_2_14 all__libc.libc_0_2 all__nix.nix_0_6 ];
+  };
   "watchexec_1_1" = watchexec_1_1_1;
-  "watchexec_1" = watchexec_1_1_1;}
+  watchexec_1_2_1 = buildCratesLib {
+    name = "watchexec";
+    version = "1.2.1";
+    hash = "a0001e8a7042cda8970f11a31fd4b9930cabbda5e9724cca42057af4fde764c8";
+    deps = with allCrates; [  all__libc.libc_0_2 all__env_logger.env_logger_0_3 all__glob.glob_0_2 all__clap.clap_2_14 all__lazy_static.lazy_static_0_2 all__threadpool.threadpool_1_3 all__notify.notify_2_6 all__log.log_0_3 all__nix.nix_0_7 ];
+  };
+  watchexec_1_2_2 = buildCratesLib {
+    name = "watchexec";
+    version = "1.2.2";
+    hash = "b8d30a20c075edb86509dd687113ad23dc28cf619c786dbf8c0719ee2de63eea";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__notify.notify_2_6 all__env_logger.env_logger_0_3 all__glob.glob_0_2 all__libc.libc_0_2 all__threadpool.threadpool_1_3 all__clap.clap_2_14 all__log.log_0_3 all__nix.nix_0_7 ];
+  };
+  watchexec_1_3_0 = buildCratesLib {
+    name = "watchexec";
+    version = "1.3.0";
+    hash = "2c15dbf157d3796ff5af736064e95d47e4b6c6d398bd776e4cf156cea520638c";
+    deps = with allCrates; [  all__notify.notify_2_6 all__lazy_static.lazy_static_0_2 all__clap.clap_2_14 all__log.log_0_3 all__glob.glob_0_2 all__libc.libc_0_2 all__env_logger.env_logger_0_3 all__nix.nix_0_7 ];
+  };
+  "watchexec_1_2" = watchexec_1_2_2;
+  watchexec_1_4_0 = buildCratesLib {
+    name = "watchexec";
+    version = "1.4.0";
+    hash = "b4302e5209c0a2e49ccd4dfa4fef0d767fe041af1f897fa42ed806ba1ab52455";
+    deps = with allCrates; [  all__log.log_0_3 all__glob.glob_0_2 all__lazy_static.lazy_static_0_2 all__libc.libc_0_2 all__env_logger.env_logger_0_3 all__notify.notify_3_0_0 all__globset.globset_0_1 all__clap.clap_2_14 all__nix.nix_0_7 ];
+  };
+  "watchexec_1_3" = watchexec_1_3_0;
+  watchexec_1_5_0 = buildCratesLib {
+    name = "watchexec";
+    version = "1.5.0";
+    hash = "9722f5f10be33e42b4a23aaf7ee8fac546d4e2eae63e3399c451c8e61c72aa19";
+    deps = with allCrates; [  all__env_logger.env_logger_0_3 all__lazy_static.lazy_static_0_2 all__libc.libc_0_2 all__notify.notify_3_0_0 all__glob.glob_0_2 all__log.log_0_3 all__globset.globset_0_1 all__clap.clap_2_14 all__nix.nix_0_7 ];
+  };
+  "watchexec_1_4" = watchexec_1_4_0;
+  "watchexec_1_5" = watchexec_1_5_0;
+  "watchexec_1" = watchexec_1_5_0;}

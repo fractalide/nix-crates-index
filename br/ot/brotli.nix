@@ -19,6 +19,7 @@ rec {
     hash = "bff2d5511b5ba5840f46cc3f9c0c3ab09db20e9b9a4db344ef7df3fb547a627a";
     deps = with allCrates; [  all__alloc-no-stdlib.alloc-no-stdlib_1_2 ];
   };
+  "brotli_0_1" = brotli_0_1_1;
   "brotli_0" = brotli_0_1_1;
   brotli_1_0_7 = buildCratesLib {
     name = "brotli";

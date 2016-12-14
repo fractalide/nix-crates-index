@@ -79,6 +79,7 @@ rec {
     hash = "4239d45e127aa4999d850d85c3c39c37219dd7f8f82ce239683d6c4478e8cef0";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__onig_sys.onig_sys_1_0 all__bitflags.bitflags_0_7 all__libc.libc_0_2 ];
   };
+  "onig_0_6" = onig_0_6_1;
   "onig_0" = onig_0_6_1;
   onig_1_1_0 = buildCratesLib {
     name = "onig";

@@ -19,6 +19,7 @@ rec {
     hash = "f4cde2a8da9963328b66e0730a931148a8963d7f4d6e71f0813f8b5434fb277c";
     deps = with allCrates; [  deque rand num_cpus ];
   };
+  "forkjoin_1_0" = forkjoin_1_0_1;
   "forkjoin_1" = forkjoin_1_0_1;
   forkjoin_2_0_1 = buildCratesLib {
     name = "forkjoin";

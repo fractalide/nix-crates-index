@@ -19,6 +19,7 @@ rec {
     hash = "8d552707aa0b7e59653be208127779097a5db76829f2f6eff93623292338dc81";
     deps = with allCrates; [  all__num_cpus.num_cpus_0_2 all__atomic-option.atomic-option_0_1 all__time.time_0_1 ];
   };
+  "bus_0_2" = bus_0_2_1;
   "bus_0" = bus_0_2_1;
   bus_1_0_1 = buildCratesLib {
     name = "bus";

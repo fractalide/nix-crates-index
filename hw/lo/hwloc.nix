@@ -21,5 +21,12 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__errno.errno_0_1 all__bitflags.bitflags_0_4 all__num.num_0_1 all__pkg-config.pkg-config_0_3 ];
   };
   "hwloc_0_2" = hwloc_0_2_0;
+  hwloc_0_4_0 = buildCratesLib {
+    name = "hwloc";
+    version = "0.4.0";
+    hash = "e73fb5b9fb93d786287e5b7da55099bc80369cde115d5f0edcad74dfdf6cb47e";
+    deps = with allCrates; [  all__errno.errno_0_1 all__num.num_0_1 all__libc.libc_0_2 all__bitflags.bitflags_0_5 all__pkg-config.pkg-config_0_3 ];
+  };
   "hwloc_0_3" = hwloc_0_3_0;
-  "hwloc_0" = hwloc_0_3_0;}
+  "hwloc_0_4" = hwloc_0_4_0;
+  "hwloc_0" = hwloc_0_4_0;}

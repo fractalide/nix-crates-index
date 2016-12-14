@@ -76,6 +76,7 @@ rec {
     hash = "ca3d7545d97461572f876f8f7583b621f1cce5c333b82c438bc9c06727fc1289";
     deps = with allCrates; [  all__interleave.interleave_1_0 ];
   };
+  "tile_net_1_3" = tile_net_1_3_3;
   "tile_net_1" = tile_net_1_3_3;
   tile_net_2_0_1 = buildCratesLib {
     name = "tile_net";

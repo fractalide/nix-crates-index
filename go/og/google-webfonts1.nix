@@ -103,6 +103,7 @@ rec {
     hash = "fbe87a48d8f4af2a92f50c547238bbe0e6230c7e700b253fe750a69181543c0d";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 url ];
   };
+  "google-webfonts1_0_1" = google-webfonts1_0_1_15;
   "google-webfonts1_0" = google-webfonts1_0_1_15;
   "google-webfonts1_1_0" = google-webfonts1_1_0_0;
   "google-webfonts1_1" = google-webfonts1_1_0_0;}

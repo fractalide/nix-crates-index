@@ -26,6 +26,7 @@ rec {
     hash = "ad31b1b50e69baffd6e9dc1380641d6bee06bcce403d7d55826ae6bf71e5d036";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
+  "which_0_2" = which_0_2_1;
   "which_0" = which_0_2_1;
   "which_1_0" = which_1_0_0;
   "which_1" = which_1_0_0;}

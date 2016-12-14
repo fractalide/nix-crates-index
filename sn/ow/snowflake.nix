@@ -32,6 +32,7 @@ rec {
     hash = "8830a5530a32ffdb68e222d1c321c025d036d40003911f7631b883ae92171de0";
     deps = with allCrates; [  ];
   };
+  "snowflake_0_6" = snowflake_0_6_0;
   "snowflake_0" = snowflake_0_6_0;
   snowflake_1_1_0 = buildCratesLib {
     name = "snowflake";

@@ -54,5 +54,30 @@ rec {
     deps = with allCrates; [  all__getopts.getopts_0_2 all__term.term_0_4 all__toml.toml_0_1 all__log.log_0_3 all__diff.diff_0_1 all__rustc-serialize.rustc-serialize_0_3 all__regex.regex_0_1 all__unicode-segmentation.unicode-segmentation_0_1 all__strings.strings_0_0_1 all__syntex_syntax.syntex_syntax_0_32 all__env_logger.env_logger_0_3 ];
   };
   "rustfmt_0_4" = rustfmt_0_4_1;
+  rustfmt_0_6_0 = buildCratesLib {
+    name = "rustfmt";
+    version = "0.6.0";
+    hash = "fdd0bd76e71df05286afda72f517d1661895f49f1e082afd499864c70afb792e";
+    deps = with allCrates; [  all__getopts.getopts_0_2 all__diff.diff_0_1 all__toml.toml_0_1 all__env_logger.env_logger_0_3 all__regex.regex_0_1 all__rustc-serialize.rustc-serialize_0_3 all__unicode-segmentation.unicode-segmentation_0_1 all__log.log_0_3 all__syntex_syntax.syntex_syntax_0_33 all__strings.strings_0_0_1 all__itertools.itertools_0_4 all__term.term_0_4 all__multimap.multimap_0_3 all__walkdir.walkdir_0_1 all__libc.libc_0_2 ];
+  };
   "rustfmt_0_5" = rustfmt_0_5_0;
-  "rustfmt_0" = rustfmt_0_5_0;}
+  rustfmt_0_6_1 = buildCratesLib {
+    name = "rustfmt";
+    version = "0.6.1";
+    hash = "8c5bcf74599c60e361f39c91d7cddd12b9effc2360ee61a8d90924721f75550d";
+    deps = with allCrates; [  all__env_logger.env_logger_0_3 all__unicode-segmentation.unicode-segmentation_0_1 all__term.term_0_4 all__rustc-serialize.rustc-serialize_0_3 all__itertools.itertools_0_4 all__syntex_syntax.syntex_syntax_0_43 all__log.log_0_3 all__strings.strings_0_0_1 all__syntex_errors.syntex_errors_0_43 all__toml.toml_0_1 all__multimap.multimap_0_3 all__regex.regex_0_1 all__diff.diff_0_1 all__getopts.getopts_0_2 all__walkdir.walkdir_0_1 all__libc.libc_0_2 ];
+  };
+  rustfmt_0_6_2 = buildCratesLib {
+    name = "rustfmt";
+    version = "0.6.2";
+    hash = "f942beb83e9bc352bb5920dccf5be2a66a4596577e85331591fc7827e7d07b97";
+    deps = with allCrates; [  all__itertools.itertools_0_4 all__term.term_0_4 all__unicode-segmentation.unicode-segmentation_0_1 all__log.log_0_3 all__toml.toml_0_1 all__syntex_syntax.syntex_syntax_0_43 all__getopts.getopts_0_2 all__rustc-serialize.rustc-serialize_0_3 all__strings.strings_0_0_1 all__env_logger.env_logger_0_3 all__syntex_errors.syntex_errors_0_43 all__multimap.multimap_0_3 all__regex.regex_0_1 all__diff.diff_0_1 all__walkdir.walkdir_0_1 all__libc.libc_0_2 ];
+  };
+  rustfmt_0_6_3 = buildCratesLib {
+    name = "rustfmt";
+    version = "0.6.3";
+    hash = "21a36236a22925a6057ea1025152584bc750a61051cf5f885cb5299788d76f17";
+    deps = with allCrates; [  all__strings.strings_0_0_1 all__itertools.itertools_0_4 all__syntex_syntax.syntex_syntax_0_44 all__toml.toml_0_1 all__unicode-segmentation.unicode-segmentation_0_1 all__getopts.getopts_0_2 all__rustc-serialize.rustc-serialize_0_3 all__regex.regex_0_1 all__term.term_0_4 all__syntex_errors.syntex_errors_0_44 all__diff.diff_0_1 all__log.log_0_3 all__env_logger.env_logger_0_3 all__multimap.multimap_0_3 all__walkdir.walkdir_0_1 all__libc.libc_0_2 ];
+  };
+  "rustfmt_0_6" = rustfmt_0_6_3;
+  "rustfmt_0" = rustfmt_0_6_3;}

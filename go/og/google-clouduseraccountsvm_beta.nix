@@ -43,6 +43,7 @@ rec {
     hash = "c0e8ca39b037b1571c451323b00262188222569a341a0f7dfd57a575732e477f";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
   };
+  "google-clouduseraccountsvm_beta_0_1" = google-clouduseraccountsvm_beta_0_1_15;
   "google-clouduseraccountsvm_beta_0" = google-clouduseraccountsvm_beta_0_1_15;
   "google-clouduseraccountsvm_beta_1_0" = google-clouduseraccountsvm_beta_1_0_0;
   "google-clouduseraccountsvm_beta_1" = google-clouduseraccountsvm_beta_1_0_0;}

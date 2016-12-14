@@ -21,5 +21,17 @@ rec {
     deps = with allCrates; [  all__mozprofile.mozprofile_0_2 all__log.log_0_3 ];
   };
   "mozrunner_0_2" = mozrunner_0_2_0;
-  "mozrunner_0_3" = mozrunner_0_3_0;
-  "mozrunner_0" = mozrunner_0_3_0;}
+  mozrunner_0_3_1 = buildCratesLib {
+    name = "mozrunner";
+    version = "0.3.1";
+    hash = "46b113531b8d91a96cf2cfbb3828564bd86fd7a05c694de26354b23fc04d4549";
+    deps = with allCrates; [  all__log.log_0_3 all__mozprofile.mozprofile_0_2 ];
+  };
+  mozrunner_0_3_2 = buildCratesLib {
+    name = "mozrunner";
+    version = "0.3.2";
+    hash = "999be8c424b7addde367030a6b578e8ad0de32287e67b903ad187860f939bae7";
+    deps = with allCrates; [  all__mozprofile.mozprofile_0_2 all__log.log_0_3 ];
+  };
+  "mozrunner_0_3" = mozrunner_0_3_2;
+  "mozrunner_0" = mozrunner_0_3_2;}

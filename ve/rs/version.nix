@@ -20,6 +20,7 @@ rec {
     hash = "248b5692247e7df8742f8bfa33f88279752283d64eeff962e8c3cca3b1c6cd9d";
     deps = with allCrates; [  ];
   };
+  "version_1_1" = version_1_1_0;
   "version_1" = version_1_1_0;
   version_2_0_1 = buildCratesLib {
     name = "version";

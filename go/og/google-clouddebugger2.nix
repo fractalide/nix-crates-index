@@ -49,6 +49,7 @@ rec {
     hash = "779ecf1d7ed2291a67adde3ee7bbc526e01a016afa28632c1bb8933902a75e69";
     deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url all__mime.mime_0_2 ];
   };
+  "google-clouddebugger2_0_1" = google-clouddebugger2_0_1_15;
   "google-clouddebugger2_0" = google-clouddebugger2_0_1_15;
   "google-clouddebugger2_1_0" = google-clouddebugger2_1_0_0;
   "google-clouddebugger2_1" = google-clouddebugger2_1_0_0;}

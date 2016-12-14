@@ -43,6 +43,7 @@ rec {
     hash = "984735654fc238b785d78cfcc4f905144b98330d96760f6f47011f74b8a46b5a";
     deps = with allCrates; [  ];
   };
+  "phantom-enum_0_9" = phantom-enum_0_9_5;
   "phantom-enum_0" = phantom-enum_0_9_5;
   "phantom-enum_1_0" = phantom-enum_1_0_0;
   "phantom-enum_1" = phantom-enum_1_0_0;}

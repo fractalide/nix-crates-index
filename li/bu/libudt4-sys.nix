@@ -13,5 +13,12 @@ rec {
     hash = "9c0334e13b5670427779e1d2be94ce23f15217fdcf3c0be33d360726fdbb18ff";
     deps = with allCrates; [  all__libc.libc_0_1 all__gcc.gcc_0_3 ];
   };
+  libudt4-sys_0_2_0 = buildCratesLib {
+    name = "libudt4-sys";
+    version = "0.2.0";
+    hash = "53d7bdb9181cdfc255a2ca5665ccdb4c18fba5daf4f8394dee0d67a064db6e17";
+    deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
+  };
   "libudt4-sys_0_1" = libudt4-sys_0_1_1;
-  "libudt4-sys_0" = libudt4-sys_0_1_1;}
+  "libudt4-sys_0_2" = libudt4-sys_0_2_0;
+  "libudt4-sys_0" = libudt4-sys_0_2_0;}

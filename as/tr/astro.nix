@@ -20,6 +20,7 @@ rec {
     hash = "522beb42a306ac59e6725d38c5376f792fa776f653fb08a9b5bf18abc4727933";
     deps = with allCrates; [  ];
   };
+  "astro_0_1" = astro_0_1_0;
   "astro_0" = astro_0_1_0;
   astro_1_0_2 = buildCratesLib {
     name = "astro";
@@ -63,6 +64,7 @@ rec {
     hash = "199632e1a87451cf771da7adeba192cab923ede42657ac3de0133ba6f4ae14be";
     deps = with allCrates; [  ];
   };
+  "astro_1_0" = astro_1_0_7;
   "astro_1" = astro_1_0_7;
   "astro_2_0" = astro_2_0_0;
   "astro_2" = astro_2_0_0;}

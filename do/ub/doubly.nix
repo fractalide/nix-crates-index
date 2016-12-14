@@ -13,6 +13,7 @@ rec {
     hash = "1733374271b3f3c11197645d2092f63742ecd33dca20dae2a3bac03de5816dd5";
     deps = with allCrates; [  ];
   };
+  "doubly_0_0" = doubly_0_0_1;
   "doubly_0" = doubly_0_0_1;
   doubly_1_0_1 = buildCratesLib {
     name = "doubly";

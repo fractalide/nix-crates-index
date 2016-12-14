@@ -7,5 +7,12 @@ rec {
     hash = "7387e3ffdbfb114e9697a211ba4831622ace750f51c0bf19a1b354c0440e0a2f";
     deps = with allCrates; [  ];
   };
+  skia_0_1_0 = buildCratesLib {
+    name = "skia";
+    version = "0.1.0";
+    hash = "060354f0c2daf74840255b42c844d0462baec9f10837c38725d912e3a2363eff";
+    deps = with allCrates; [  all__servo-glutin.servo-glutin_0_4 all__gleam.gleam_0_1 all__libc.libc_0_2 all__skia-sys.skia-sys_0_20130412 all__expat-sys.expat-sys_2_1 all__euclid.euclid_0_4 all__servo-fontconfig.servo-fontconfig_0_2 all__servo-egl.servo-egl_0_2 all__servo-freetype-sys.servo-freetype-sys_2_4 all__servo-fontconfig.servo-fontconfig_0_2 all__glx.glx_0_1 all__servo-freetype-sys.servo-freetype-sys_2_4 all__x11.x11_2_0_0 all__io-surface.io-surface_0_1 all__cgl.cgl_0_1 all__servo-fontconfig.servo-fontconfig_0_2 all__glx.glx_0_1 all__x11.x11_2_0_0 all__servo-freetype-sys.servo-freetype-sys_2_4 all__servo-fontconfig.servo-fontconfig_0_2 all__glx.glx_0_1 all__servo-freetype-sys.servo-freetype-sys_2_4 all__x11.x11_2_0_0 all__glx.glx_0_1 all__servo-fontconfig.servo-fontconfig_0_2 all__servo-freetype-sys.servo-freetype-sys_2_4 all__x11.x11_2_0_0 ];
+  };
   "skia_0_0" = skia_0_0_1;
-  "skia_0" = skia_0_0_1;}
+  "skia_0_1" = skia_0_1_0;
+  "skia_0" = skia_0_1_0;}

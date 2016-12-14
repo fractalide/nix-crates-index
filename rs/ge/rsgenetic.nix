@@ -156,6 +156,7 @@ rec {
     hash = "b6e362a465c627384f51233f23773b5bb320cc2291b6152bc7684963455b357c";
     deps = with allCrates; [  all__time.time_0_1 all__rand.rand_0_3 ];
   };
+  "rsgenetic_0_14" = rsgenetic_0_14_0;
   "rsgenetic_0" = rsgenetic_0_14_0;
   rsgenetic_1_1_0 = buildCratesLib {
     name = "rsgenetic";

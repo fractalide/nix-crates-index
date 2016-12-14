@@ -43,6 +43,7 @@ rec {
     hash = "5b2b13ace80c3d758f098f6538c1055aa99bb2966cf42632504edb40c68bdee8";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 url ];
   };
+  "google-appengine1_beta4_0_1" = google-appengine1_beta4_0_1_15;
   "google-appengine1_beta4_0" = google-appengine1_beta4_0_1_15;
   "google-appengine1_beta4_1_0" = google-appengine1_beta4_1_0_0;
   "google-appengine1_beta4_1" = google-appengine1_beta4_1_0_0;}

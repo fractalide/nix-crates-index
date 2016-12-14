@@ -13,6 +13,7 @@ rec {
     hash = "b4b2bf82cd880c0c3454d139182277ca22e1925d5f818d35137ce74e5c26dda5";
     deps = with allCrates; [  all__cmake.cmake_0_1 all__pkg-config.pkg-config_0_3 ];
   };
+  "servo-freetype-sys_2_4" = servo-freetype-sys_2_4_11;
   "servo-freetype-sys_2" = servo-freetype-sys_2_4_11;
   servo-freetype-sys_4_0_1 = buildCratesLib {
     name = "servo-freetype-sys";

@@ -97,6 +97,7 @@ rec {
     hash = "fd144b0951e401b825b97ef5571b5cee7b4df8beee33146fd177dfc65a1a80e1";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 url ];
   };
+  "google-mirror1_0_1" = google-mirror1_0_1_15;
   "google-mirror1_0" = google-mirror1_0_1_15;
   "google-mirror1_1_0" = google-mirror1_1_0_0;
   "google-mirror1_1" = google-mirror1_1_0_0;}

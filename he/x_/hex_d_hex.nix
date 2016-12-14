@@ -13,6 +13,7 @@ rec {
     hash = "78e7a6157bc8cd096c13143255e00decd997789028a1e0e40fbcb577494d0925";
     deps = with allCrates; [  ];
   };
+  "hex_d_hex_0_1" = hex_d_hex_0_1_0;
   "hex_d_hex_0" = hex_d_hex_0_1_0;
   hex_d_hex_1_0_1 = buildCratesLib {
     name = "hex_d_hex";

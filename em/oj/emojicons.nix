@@ -39,6 +39,7 @@ rec {
     hash = "b33d768e7453a7e7cca4794d0215f063c7d4eeb973ff3fc2d78f239dbf62324b";
     deps = with allCrates; [  all__regex.regex_0_1 all__phf.phf_0_7 all__phf_codegen.phf_codegen_0_7 ];
   };
+  "emojicons_0_5" = emojicons_0_5_3;
   "emojicons_0" = emojicons_0_5_3;
   emojicons_1_0_1 = buildCratesLib {
     name = "emojicons";

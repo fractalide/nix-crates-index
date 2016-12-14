@@ -25,6 +25,7 @@ rec {
     hash = "74cd6079078eabb17f97aa6b9db6da449d2f7d84f6df6b8944f2ad246c4af33d";
     deps = with allCrates; [  all__slog-stream.slog-stream_1_2 all__toml.toml_0 all__slog-atomic.slog-atomic_0_4 all__clap.clap_2 all__rustc-serialize.rustc-serialize_0 all__slog-json.slog-json_1_2 all__slog.slog_1_2 all__lazy_static.lazy_static_0 all__ssh2.ssh2_0 all__slog-term.slog-term_1_3 ];
   };
+  "mussh_0_1" = mussh_0_1_2;
   "mussh_0" = mussh_0_1_2;
   "mussh_1_0" = mussh_1_0_0;
   "mussh_1" = mussh_1_0_0;}

@@ -55,6 +55,7 @@ rec {
     hash = "9fa948f9ec9f095cc955efbe4fd00ac5774ef933cc2442562a8fe5a57c4ef919";
     deps = with allCrates; [  ];
   };
+  "abort_on_panic_0_0" = abort_on_panic_0_0_8;
   "abort_on_panic_0" = abort_on_panic_0_0_8;
   "abort_on_panic_1_0" = abort_on_panic_1_0_0;
   "abort_on_panic_1" = abort_on_panic_1_0_0;}

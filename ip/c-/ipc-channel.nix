@@ -27,12 +27,18 @@ rec {
     deps = with allCrates; [  all__uuid.uuid_0_3 all__rand.rand_0_3 all__lazy_static.lazy_static_0_2 all__libc.libc_0_2 all__serde.serde_0_8 all__bincode.bincode_0_6 ];
   };
   "ipc-channel_0_4" = ipc-channel_0_4_0;
+  ipc-channel_0_5_1 = buildCratesLib {
+    name = "ipc-channel";
+    version = "0.5.1";
+    hash = "675587430ede6756dd03fdfdf9888f22f83855fd131c8451d842a710b059e571";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__bincode.bincode_0_6 all__libc.libc_0_2 all__rand.rand_0_3 all__serde.serde_0_8 ];
+  };
   ipc-channel_0_6_0 = buildCratesLib {
     name = "ipc-channel";
     version = "0.6.0";
     hash = "f379ec6400f5cb93edbbb0ac56de3bf38331e22cbae9e27a10f04c1a0b4f8e90";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__uuid.uuid_0_3 all__bincode.bincode_0_6 all__serde.serde_0_8 all__rand.rand_0_3 all__libc.libc_0_2 ];
   };
-  "ipc-channel_0_5" = ipc-channel_0_5_0;
+  "ipc-channel_0_5" = ipc-channel_0_5_1;
   "ipc-channel_0_6" = ipc-channel_0_6_0;
   "ipc-channel_0" = ipc-channel_0_6_0;}

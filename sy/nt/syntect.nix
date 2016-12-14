@@ -47,6 +47,7 @@ rec {
     hash = "1bef1edbd56e07dc759e20565f757e06b08a242d484b7a98d751356231bba176";
     deps = with allCrates; [  all__fnv.fnv_1_0_2 all__onig.onig_0_6 all__walkdir.walkdir_0_1 all__bitflags.bitflags_0_4 all__lazy_static.lazy_static_0_2 all__rustc-serialize.rustc-serialize_0_3 all__regex-syntax.regex-syntax_0_3 all__bincode.bincode_0_5 all__flate2.flate2_0_2 all__plist.plist_0_0_13 all__yaml-rust.yaml-rust_0_3 ];
   };
+  "syntect_0_7" = syntect_0_7_0;
   "syntect_0" = syntect_0_7_0;
   syntect_1_0_1 = buildCratesLib {
     name = "syntect";

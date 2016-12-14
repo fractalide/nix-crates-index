@@ -61,6 +61,7 @@ rec {
     hash = "929d382bc99598c13f6f337fd30ec12ea1ac28a4cb3c6c5cda4491ea7d9bbe26";
     deps = with allCrates; [  ];
   };
+  "cesu8_0_0" = cesu8_0_0_9;
   "cesu8_0" = cesu8_0_0_9;
   cesu8_1_1_0 = buildCratesLib {
     name = "cesu8";

@@ -13,6 +13,7 @@ rec {
     hash = "d01eba67a0ad7c132c1be3111499c3992a0f82ddc27ec7e426899de2ab525929";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__strsim.strsim_0_5 ];
   };
+  "google-manager1_beta2-cli_0_3" = google-manager1_beta2-cli_0_3_6;
   "google-manager1_beta2-cli_0" = google-manager1_beta2-cli_0_3_6;
   "google-manager1_beta2-cli_1_0" = google-manager1_beta2-cli_1_0_0;
   "google-manager1_beta2-cli_1" = google-manager1_beta2-cli_1_0_0;}

@@ -32,6 +32,7 @@ rec {
     hash = "ce0609d028e550369a0d496ab770b1e87acd2711d13a8027cc7f1fe3dc1f921e";
     deps = with allCrates; [  all__sodiumoxide.sodiumoxide_0_0_9 all__rustc-serialize.rustc-serialize_0_3 all__chrono.chrono_0_2 all__hyper.hyper_0_7 all__time.time_0_1 all__rust-lzma.rust-lzma_0_2 ];
   };
+  "edcert_2_1" = edcert_2_1_2;
   "edcert_2" = edcert_2_1_2;
   edcert_3_0_1 = buildCratesLib {
     name = "edcert";
@@ -45,6 +46,7 @@ rec {
     hash = "aa0d42eb13a031918e646616a180477e25179613371b7a9a4ffc31c188fb5187";
     deps = with allCrates; [  all__chrono.chrono_0_2 all__time.time_0_1 all__rustc-serialize.rustc-serialize_0_3 all__sodiumoxide.sodiumoxide_0_0_9 ];
   };
+  "edcert_3_0" = edcert_3_0_1;
   "edcert_3" = edcert_3_0_1;
   edcert_4_1_0 = buildCratesLib {
     name = "edcert";
@@ -65,6 +67,7 @@ rec {
     hash = "cfe09dcafb69fa58f710c8184cfb087db8260714fabc7874cffa4515c4cb31f4";
     deps = with allCrates; [  all__chrono.chrono_0_2 all__rustc-serialize.rustc-serialize_0_3 all__time.time_0_1 all__sodiumoxide.sodiumoxide_0_0_9 ];
   };
+  "edcert_4_1" = edcert_4_1_1;
   "edcert_4" = edcert_4_1_1;
   edcert_6_0_0 = buildCratesLib {
     name = "edcert";
@@ -72,6 +75,7 @@ rec {
     hash = "6f257f744c168982155e11373dd6aa46bdeb319dc8160e6ceaba7258e022427d";
     deps = with allCrates; [  all__chrono.chrono_0_2 all__sodiumoxide.sodiumoxide_0_0_9 all__time.time_0_1 all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  "edcert_5_0" = edcert_5_0_0;
   "edcert_5" = edcert_5_0_0;
   edcert_6_0_1 = buildCratesLib {
     name = "edcert";
@@ -98,6 +102,7 @@ rec {
     hash = "3de9219ee9f03dd541c76abdfee8e63b350a3361cd07ae54c28faee48346c444";
     deps = with allCrates; [  all__chrono.chrono_0_2 all__rustc-serialize.rustc-serialize_0_3 all__sodiumoxide.sodiumoxide_0_0_9 all__time.time_0_1 ];
   };
+  "edcert_6_1" = edcert_6_1_0;
   "edcert_6" = edcert_6_1_0;
   edcert_8_0_0 = buildCratesLib {
     name = "edcert";
@@ -105,6 +110,7 @@ rec {
     hash = "51e7057d29fe9c5ef67a6c1a68c45deea8831724457dfc05a19f8f26d9a60d50";
     deps = with allCrates; [  all__time.time_0_1 all__rustc-serialize.rustc-serialize_0_3 all__chrono.chrono_0_2 all__sodiumoxide.sodiumoxide_0_0_9 ];
   };
+  "edcert_7_0" = edcert_7_0_0;
   "edcert_7" = edcert_7_0_0;
   edcert_8_0_1 = buildCratesLib {
     name = "edcert";
@@ -132,6 +138,7 @@ rec {
     hash = "45d7016fe3cc81fc1a5cb13be012f4e54170adb29f17caf8b48df6d46d072106";
     deps = with allCrates; [  all__sodiumoxide.sodiumoxide_0_0_12 all__secrets.secrets_0_11 all__rustc-serialize.rustc-serialize_0_3 all__chrono.chrono_0_2 ];
   };
+  "edcert_8_2" = edcert_8_2_0;
   "edcert_8" = edcert_8_2_0;
   edcert_9_0_1 = buildCratesLib {
     name = "edcert";

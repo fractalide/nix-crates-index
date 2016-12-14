@@ -13,6 +13,7 @@ rec {
     hash = "dcc9859319d2e8111476b17a5fb1c6468e97c9e95d06b79de817789ec1200049";
     deps = with allCrates; [  all__libc.libc_0_2 all__rustc-serialize.rustc-serialize_0_3 all__lru-cache.lru-cache_0_0 all__rust-crypto.rust-crypto_0_2 all__protobuf.protobuf_1_0 ];
   };
+  "rzbackup_0_1" = rzbackup_0_1_0;
   "rzbackup_0" = rzbackup_0_1_0;
   rzbackup_1_0_1 = buildCratesLib {
     name = "rzbackup";
@@ -32,6 +33,7 @@ rec {
     hash = "bf1ed83f6942d7a5767a57eb41708da6e0244bdc1cbaa9d129248d9ebb6cb4dc";
     deps = with allCrates; [  all__libc.libc_0_2 all__num_cpus.num_cpus_1_1 all__threadpool.threadpool_1_0 all__futures.futures_0_1 all__protobuf.protobuf_1_0 all__lru-cache.lru-cache_0_0 all__minilzo.minilzo_0_1 all__futures-cpupool.futures-cpupool_0_1 all__rust-crypto.rust-crypto_0_2 all__rustc-serialize.rustc-serialize_0_3 all__clap.clap_2_13 ];
   };
+  "rzbackup_1_0" = rzbackup_1_0_2;
   "rzbackup_1" = rzbackup_1_0_2;
   rzbackup_2_0_1 = buildCratesLib {
     name = "rzbackup";

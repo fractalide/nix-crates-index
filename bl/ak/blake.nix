@@ -13,6 +13,7 @@ rec {
     hash = "a63c24e90dc089c2d8a8f5701f05e390b3bf98e4996bd8901d7bb75853beea07";
     deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
   };
+  "blake_0_1" = blake_0_1_0;
   "blake_0" = blake_0_1_0;
   blake_1_0_1 = buildCratesLib {
     name = "blake";

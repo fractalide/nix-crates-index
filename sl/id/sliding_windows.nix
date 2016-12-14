@@ -13,6 +13,7 @@ rec {
     hash = "91d895ea571c02e5b41879fdc49ca79c8b74ea36b1f899d2701faf7f1a2fe8f9";
     deps = with allCrates; [  ];
   };
+  "sliding_windows_1_0" = sliding_windows_1_0_0;
   "sliding_windows_1" = sliding_windows_1_0_0;
   sliding_windows_2_0_1 = buildCratesLib {
     name = "sliding_windows";

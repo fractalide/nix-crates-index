@@ -13,6 +13,7 @@ rec {
     hash = "92e89afb7ff563d88bb56b9cac3fc7d0944537d472082f5fe38f3425c00d24c7";
     deps = with allCrates; [  ];
   };
+  "c_linked_list_0_1" = c_linked_list_0_1_0;
   "c_linked_list_0" = c_linked_list_0_1_0;
   c_linked_list_1_1_0 = buildCratesLib {
     name = "c_linked_list";

@@ -25,6 +25,7 @@ rec {
     hash = "0095d076939c4f9dc76ea678b45e94cf0a9fe0fc1c1c3c2cb6b1e3a3ccfcbbfc";
     deps = with allCrates; [  ];
   };
+  "xdg-basedir_0_2" = xdg-basedir_0_2_2;
   "xdg-basedir_0" = xdg-basedir_0_2_2;
   "xdg-basedir_1_0" = xdg-basedir_1_0_0;
   "xdg-basedir_1" = xdg-basedir_1_0_0;}

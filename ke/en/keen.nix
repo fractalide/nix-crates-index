@@ -39,6 +39,7 @@ rec {
     hash = "2b22367f8d401ad6a678005d48d6f0acf1840c0780afd2f4545d344e9b0fa3f1";
     deps = with allCrates; [  all__hyper.hyper_0_6 all__itertools.itertools_0_4 all__chrono.chrono_0_2 ];
   };
+  "keen_0_3" = keen_0_3_0;
   "keen_0" = keen_0_3_0;
   keen_1_0_2 = buildCratesLib {
     name = "keen";

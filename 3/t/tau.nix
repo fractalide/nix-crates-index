@@ -19,6 +19,7 @@ rec {
     hash = "1e56e5ed6c6e4e3a2d053499df8b8af1bd7d975c0a900080db504e3566dc3345";
     deps = with allCrates; [  ];
   };
+  "tau_0_0" = tau_0_0_2;
   "tau_0" = tau_0_0_2;
   tau_1_0_1 = buildCratesLib {
     name = "tau";

@@ -13,6 +13,7 @@ rec {
     hash = "0b247494db1e48657b356381f004b3bc1bb560c8ad0b5a3f01b7aa45391250be";
     deps = with allCrates; [  all__compiletest_rs.compiletest_rs_0_0_11 all__rusqlite.rusqlite_0_6 ];
   };
+  "herbie-lint_0_1" = herbie-lint_0_1_0;
   "herbie-lint_0" = herbie-lint_0_1_0;
   herbie-lint_1_0_1 = buildCratesLib {
     name = "herbie-lint";

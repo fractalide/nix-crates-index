@@ -13,6 +13,7 @@ rec {
     hash = "c71dcd0a406a8ef022693e35de128439eb0d38a4fc7ce9e2d5d0f1845609e2ba";
     deps = with allCrates; [  rand getopts ];
   };
+  "pwrs_0_1" = pwrs_0_1_0;
   "pwrs_0" = pwrs_0_1_0;
   pwrs_1_0_1 = buildCratesLib {
     name = "pwrs";

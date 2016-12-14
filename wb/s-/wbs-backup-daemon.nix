@@ -37,6 +37,7 @@ rec {
     hash = "80f8c2b07ed677294e2340e64cc6dc30c9f5475b2eacf589f7bd77ebb1a952c6";
     deps = with allCrates; [  all__time.time_0_1 all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  "wbs-backup-daemon_0_1" = wbs-backup-daemon_0_1_14;
   "wbs-backup-daemon_0" = wbs-backup-daemon_0_1_14;
   "wbs-backup-daemon_1_1" = wbs-backup-daemon_1_1_15;
   "wbs-backup-daemon_1" = wbs-backup-daemon_1_1_15;}

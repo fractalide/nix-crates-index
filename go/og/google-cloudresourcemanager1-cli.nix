@@ -13,6 +13,7 @@ rec {
     hash = "ecd0e3f7268101c63a0ae17765651fcb96abeb308eaded5a7a569356fc40429c";
     deps = with allCrates; [  all__clap.clap_2_0 all__hyper.hyper_0_9 all__strsim.strsim_0_5 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
   };
+  "google-cloudresourcemanager1-cli_0_3" = google-cloudresourcemanager1-cli_0_3_6;
   "google-cloudresourcemanager1-cli_0" = google-cloudresourcemanager1-cli_0_3_6;
   "google-cloudresourcemanager1-cli_1_0" = google-cloudresourcemanager1-cli_1_0_0;
   "google-cloudresourcemanager1-cli_1" = google-cloudresourcemanager1-cli_1_0_0;}

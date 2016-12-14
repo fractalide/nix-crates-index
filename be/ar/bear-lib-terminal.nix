@@ -13,6 +13,7 @@ rec {
     hash = "61b356c4114b1963bb5bb009f47988ae1a95f1deb7a1f4eb2acb6eebaacc582c";
     deps = with allCrates; [  all__bear-lib-terminal-sys.bear-lib-terminal-sys_1_1 ];
   };
+  "bear-lib-terminal_0_9" = bear-lib-terminal_0_9_0;
   "bear-lib-terminal_0" = bear-lib-terminal_0_9_0;
   bear-lib-terminal_1_0_1 = buildCratesLib {
     name = "bear-lib-terminal";

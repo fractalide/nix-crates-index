@@ -13,6 +13,7 @@ rec {
     hash = "754ee72f1f6a3b116f0870a957cfb93e5bf8b652dc84001665dbe0427119c7e7";
     deps = with allCrates; [  ];
   };
+  "gtin-validate_0_5" = gtin-validate_0_5_0;
   "gtin-validate_0" = gtin-validate_0_5_0;
   "gtin-validate_1_0" = gtin-validate_1_0_0;
   "gtin-validate_1" = gtin-validate_1_0_0;}

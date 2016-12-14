@@ -13,5 +13,18 @@ rec {
     hash = "d470ef1b870a5c71e691676ff34397b175820fd35e30550e5244f35079be02bf";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
+  term_size_0_2_0 = buildCratesLib {
+    name = "term_size";
+    version = "0.2.0";
+    hash = "641a0c1efb82d65d17238db9990e10df846dd08a4668908c1c70f9ebf954ac4f";
+    deps = with allCrates; [  ];
+  };
   "term_size_0_1" = term_size_0_1_1;
-  "term_size_0" = term_size_0_1_1;}
+  term_size_0_2_1 = buildCratesLib {
+    name = "term_size";
+    version = "0.2.1";
+    hash = "3f7f5f3f71b0040cecc71af239414c23fd3c73570f5ff54cf50e03cef637f2a0";
+    deps = with allCrates; [  ];
+  };
+  "term_size_0_2" = term_size_0_2_1;
+  "term_size_0" = term_size_0_2_1;}

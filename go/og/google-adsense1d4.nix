@@ -97,6 +97,7 @@ rec {
     hash = "b9f589eb8209fde3170165f2f15bf7797b7eea38aede15393d9855d6c653abed";
     deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url ];
   };
+  "google-adsense1d4_0_1" = google-adsense1d4_0_1_15;
   "google-adsense1d4_0" = google-adsense1d4_0_1_15;
   "google-adsense1d4_1_0" = google-adsense1d4_1_0_0;
   "google-adsense1d4_1" = google-adsense1d4_1_0_0;}

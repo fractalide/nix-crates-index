@@ -46,6 +46,7 @@ rec {
     hash = "c94a64ea2bd61885b5e4b749a95b5419c888bfb6ea5fe8405da9aef88e9af6e4";
     deps = with allCrates; [  ];
   };
+  "integer-encoding_0_12" = integer-encoding_0_12_0;
   "integer-encoding_0" = integer-encoding_0_12_0;
   integer-encoding_1_0_1 = buildCratesLib {
     name = "integer-encoding";

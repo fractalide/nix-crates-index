@@ -20,6 +20,7 @@ rec {
     hash = "ae8be8822c0b9e9ab14b46223b90fa49dee06f462e3eeeb28747ae94facc68ac";
     deps = with allCrates; [  all__fnv.fnv_1_0 ];
   };
+  "zero_sum_0_2" = zero_sum_0_2_0;
   "zero_sum_0" = zero_sum_0_2_0;
   "zero_sum_1_0" = zero_sum_1_0_0;
   "zero_sum_1" = zero_sum_1_0_0;}

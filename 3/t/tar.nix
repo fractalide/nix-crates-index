@@ -251,5 +251,23 @@ rec {
     hash = "59a5014d9493d6c2799dff5da5d780c2f159bf368c54f115dbc421d02f1d5496";
     deps = with allCrates; [  all__filetime.filetime_0_1 all__libc.libc_0_2 ];
   };
-  "tar_0_4" = tar_0_4_6;
-  "tar_0" = tar_0_4_6;}
+  tar_0_4_7 = buildCratesLib {
+    name = "tar";
+    version = "0.4.7";
+    hash = "a05f62bf3862b1725b03059def56375a32178ee2c99dce2fb745f004b8bc82dc";
+    deps = with allCrates; [  all__libc.libc_0_2 all__filetime.filetime_0_1 all__xattr.xattr_0_1 ];
+  };
+  tar_0_4_8 = buildCratesLib {
+    name = "tar";
+    version = "0.4.8";
+    hash = "12e1b959f637c2e4c69dbdbf4d7dc609edbaada9b8c35d0c2fc9802d02383b65";
+    deps = with allCrates; [  all__filetime.filetime_0_1 all__libc.libc_0_2 ];
+  };
+  tar_0_4_9 = buildCratesLib {
+    name = "tar";
+    version = "0.4.9";
+    hash = "0c9048e27119ff1fcf5b0e147ca0936d911b607d87440b042d4ecaa111b523ee";
+    deps = with allCrates; [  all__filetime.filetime_0_1 all__libc.libc_0_2 ];
+  };
+  "tar_0_4" = tar_0_4_9;
+  "tar_0" = tar_0_4_9;}

@@ -13,5 +13,12 @@ rec {
     hash = "33fc01daee867d9d99e9557325fdbe6e6c7404f670e019ec3dbe256f19a25428";
     deps = with allCrates; [  ];
   };
+  tutil_0_2_0 = buildCratesLib {
+    name = "tutil";
+    version = "0.2.0";
+    hash = "88b75a868abcef14ad35a3ba7f8e420705b36380af9335667c8266bd6d4d94b9";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
   "tutil_0_1" = tutil_0_1_1;
-  "tutil_0" = tutil_0_1_1;}
+  "tutil_0_2" = tutil_0_2_0;
+  "tutil_0" = tutil_0_2_0;}

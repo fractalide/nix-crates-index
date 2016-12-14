@@ -37,6 +37,7 @@ rec {
     hash = "29f50dce033aaffddf834d54ef20c797f002265fbf4b9734568b83c12bfe4148";
     deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__serde.serde_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
   };
+  "google-serviceregistryalpha_0_1" = google-serviceregistryalpha_0_1_15;
   "google-serviceregistryalpha_0" = google-serviceregistryalpha_0_1_15;
   "google-serviceregistryalpha_1_0" = google-serviceregistryalpha_1_0_0;
   "google-serviceregistryalpha_1" = google-serviceregistryalpha_1_0_0;}

@@ -223,6 +223,7 @@ rec {
     hash = "df249a829952cdf1509f72a0b287bbec6a5424ff59fdd8c965d59a61ada3aa7e";
     deps = with allCrates; [  libc pkg-config ];
   };
+  "x11_0_0" = x11_0_0_36;
   "x11_0" = x11_0_0_36;
   x11_1_0_1 = buildCratesLib {
     name = "x11";
@@ -249,6 +250,7 @@ rec {
     hash = "73de577e9a19ed9c38defdf9ed6f7678da43743b758015c7660da79d25d6ecf5";
     deps = with allCrates; [  libc pkg-config ];
   };
+  "x11_1_1" = x11_1_1_1;
   "x11_1" = x11_1_1_1;
   x11_2_0_1 = buildCratesLib {
     name = "x11";

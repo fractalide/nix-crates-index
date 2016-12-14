@@ -97,6 +97,7 @@ rec {
     hash = "fcbc5fb57d4866ff52b7cf717e2c2cce74e5706d8c35e1f3716903a50321417c";
     deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 url all__hyper.hyper_0_9 ];
   };
+  "google-storage1_0_1" = google-storage1_0_1_15;
   "google-storage1_0" = google-storage1_0_1_15;
   "google-storage1_1_0" = google-storage1_1_0_0;
   "google-storage1_1" = google-storage1_1_0_0;}

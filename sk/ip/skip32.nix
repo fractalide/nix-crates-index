@@ -19,6 +19,7 @@ rec {
     hash = "402a518fcefca18c7371a8d8b92be8b32fce112c4bf5da50f4e7cad258907217";
     deps = with allCrates; [  ];
   };
+  "skip32_0_1" = skip32_0_1_1;
   "skip32_0" = skip32_0_1_1;
   skip32_1_0_1 = buildCratesLib {
     name = "skip32";

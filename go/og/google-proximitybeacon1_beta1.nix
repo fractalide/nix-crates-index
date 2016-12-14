@@ -43,6 +43,7 @@ rec {
     hash = "75aad1912f072b46f77f5a8fb82d89defb88424f3a31775510c30b7f4dd80301";
     deps = with allCrates; [  all__hyper.hyper_0_9 url all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
   };
+  "google-proximitybeacon1_beta1_0_1" = google-proximitybeacon1_beta1_0_1_15;
   "google-proximitybeacon1_beta1_0" = google-proximitybeacon1_beta1_0_1_15;
   "google-proximitybeacon1_beta1_1_0" = google-proximitybeacon1_beta1_1_0_0;
   "google-proximitybeacon1_beta1_1" = google-proximitybeacon1_beta1_1_0_0;}

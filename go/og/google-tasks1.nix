@@ -97,6 +97,7 @@ rec {
     hash = "6fde35cbdf9ba84399937fa754fd070ef81d0a7b771c0ae03972e9cfde9ec36e";
     deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 ];
   };
+  "google-tasks1_0_1" = google-tasks1_0_1_15;
   "google-tasks1_0" = google-tasks1_0_1_15;
   "google-tasks1_1_0" = google-tasks1_1_0_0;
   "google-tasks1_1" = google-tasks1_1_0_0;}

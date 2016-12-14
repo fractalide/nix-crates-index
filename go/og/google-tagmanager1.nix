@@ -97,6 +97,7 @@ rec {
     hash = "aaf748c66b89df3be7b6acae75be3781fa96c7c29e144e0ee743c39acb9c4436";
     deps = with allCrates; [  url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__hyper.hyper_0_9 ];
   };
+  "google-tagmanager1_0_1" = google-tagmanager1_0_1_15;
   "google-tagmanager1_0" = google-tagmanager1_0_1_15;
   "google-tagmanager1_1_0" = google-tagmanager1_1_0_0;
   "google-tagmanager1_1" = google-tagmanager1_1_0_0;}

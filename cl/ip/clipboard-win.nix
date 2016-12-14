@@ -104,6 +104,7 @@ rec {
     hash = "8309a051b8c72db90f519b337ba4c80ced79139ee1f2e1184721f054afe31732";
     deps = with allCrates; [  winapi kernel32-sys user32-sys libc ];
   };
+  "clipboard-win_0_9" = clipboard-win_0_9_3;
   "clipboard-win_0" = clipboard-win_0_9_3;
   clipboard-win_1_0_1 = buildCratesLib {
     name = "clipboard-win";
@@ -209,5 +210,11 @@ rec {
     deps = with allCrates; [  all__user32-sys.user32-sys_0_2 all__kernel32-sys.kernel32-sys_0_2 all__winapi.winapi_0_2 all__windows-error.windows-error_1_0_0 ];
   };
   "clipboard-win_1_7" = clipboard-win_1_7_1;
-  "clipboard-win_1_8" = clipboard-win_1_8_0;
-  "clipboard-win_1" = clipboard-win_1_8_0;}
+  clipboard-win_1_8_1 = buildCratesLib {
+    name = "clipboard-win";
+    version = "1.8.1";
+    hash = "f05017278a9e5485eacce962c9efc52f720eef0d19646dc3a7af714aad22ed2c";
+    deps = with allCrates; [  ];
+  };
+  "clipboard-win_1_8" = clipboard-win_1_8_1;
+  "clipboard-win_1" = clipboard-win_1_8_1;}

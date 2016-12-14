@@ -13,6 +13,7 @@ rec {
     hash = "2e3e2b1a3533851da169dff4d5d5f1acd6b4e66b11a7af4e52a362108aa985d0";
     deps = with allCrates; [  bitflags regex_macros regex ];
   };
+  "hoedown_0_0" = hoedown_0_0_1;
   "hoedown_0" = hoedown_0_0_1;
   hoedown_1_1_0 = buildCratesLib {
     name = "hoedown";
@@ -93,6 +94,7 @@ rec {
     hash = "5ba0123cc23c34320616246d9849238c9dd31acca624c22a3db7b9e2afe74155";
     deps = with allCrates; [  libc bitflags regex_macros regex ];
   };
+  "hoedown_1_1" = hoedown_1_1_11;
   "hoedown_1" = hoedown_1_1_11;
   hoedown_3_0_0 = buildCratesLib {
     name = "hoedown";
@@ -100,6 +102,7 @@ rec {
     hash = "4ae6576384cdb3d304717843789de0b742ca706c2397fbdb5c8845cbf79c9391";
     deps = with allCrates; [  libc bitflags regex_macros regex ];
   };
+  "hoedown_2_0" = hoedown_2_0_0;
   "hoedown_2" = hoedown_2_0_0;
   hoedown_3_0_1 = buildCratesLib {
     name = "hoedown";
@@ -131,6 +134,7 @@ rec {
     hash = "fba343b2d7c0cedd1dd63adb365ac97e477c6e12c4a250afdbebf217d50f1909";
     deps = with allCrates; [  all__bitflags.bitflags_0_5 all__libc.libc_0_2 all__gcc.gcc_0_3 ];
   };
+  "hoedown_3_0" = hoedown_3_0_5;
   "hoedown_3" = hoedown_3_0_5;
   hoedown_5_0_0 = buildCratesLib {
     name = "hoedown";
@@ -138,6 +142,7 @@ rec {
     hash = "0d048e031a490109d95496ff3fc71d36d63bbb6f4116867ca93fd321f773b2e2";
     deps = with allCrates; [  all__libc.libc_0_2 all__bitflags.bitflags_0_5 all__gcc.gcc_0_3 ];
   };
+  "hoedown_4_0" = hoedown_4_0_0;
   "hoedown_4" = hoedown_4_0_0;
   "hoedown_5_0" = hoedown_5_0_0;
   "hoedown_5" = hoedown_5_0_0;}

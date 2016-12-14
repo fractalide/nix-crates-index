@@ -13,6 +13,7 @@ rec {
     hash = "0d4b277299f5884f654d83ba80be10645af98e7f022714ba50287420e7cfd9f6";
     deps = with allCrates; [  all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__clap.clap_2_0 all__serde.serde_0_8 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
   };
+  "google-identitytoolkit3-cli_0_3" = google-identitytoolkit3-cli_0_3_6;
   "google-identitytoolkit3-cli_0" = google-identitytoolkit3-cli_0_3_6;
   "google-identitytoolkit3-cli_1_0" = google-identitytoolkit3-cli_1_0_0;
   "google-identitytoolkit3-cli_1" = google-identitytoolkit3-cli_1_0_0;}

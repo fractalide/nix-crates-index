@@ -13,6 +13,7 @@ rec {
     hash = "4aaf05eab4e768eaf459c35fa50433fc650802aeae97469d8fbe31e3512d1da4";
     deps = with allCrates; [  all__rpcperf_request.rpcperf_request_1_1 all__log.log_0_3 all__shuteye.shuteye_0_1 all__time.time_0_1 all__ratelimit.ratelimit_0_2 all__rand.rand_0_3 all__pad.pad_0_1 all__mpmc.mpmc_0_1 ];
   };
+  "rpcperf_workload_1_0" = rpcperf_workload_1_0_0;
   "rpcperf_workload_1" = rpcperf_workload_1_0_0;
   "rpcperf_workload_2_0" = rpcperf_workload_2_0_0;
   "rpcperf_workload_2" = rpcperf_workload_2_0_0;}

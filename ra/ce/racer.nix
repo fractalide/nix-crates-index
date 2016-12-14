@@ -14,6 +14,7 @@ rec {
     deps = with allCrates; [  syntex_syntax env_logger typed-arena log all__clap.clap_1_5 toml ];
   };
   "racer_0_0" = racer_0_0_1;
+  "racer_0_0" = racer_0_0_1;
   "racer_0" = racer_0_0_1;
   racer_1_2_0 = buildCratesLib {
     name = "racer";

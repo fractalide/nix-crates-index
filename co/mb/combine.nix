@@ -58,6 +58,7 @@ rec {
     hash = "3ee3450f370d30aa4ebc6f83ef2089742634078f6accdd827449b8cc52b592aa";
     deps = with allCrates; [  all__ascii.ascii_0_7 ];
   };
+  "combine_1_3" = combine_1_3_0;
   "combine_1" = combine_1_3_0;
   combine_2_1_0 = buildCratesLib {
     name = "combine";

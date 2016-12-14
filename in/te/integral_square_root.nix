@@ -19,6 +19,7 @@ rec {
     hash = "ebf0a5f03c0993fc294ecd056f5eb0006ce074fedacdc0c93dfc47e8ce667598";
     deps = with allCrates; [  ];
   };
+  "integral_square_root_0_0" = integral_square_root_0_0_1;
   "integral_square_root_0" = integral_square_root_0_0_1;
   integral_square_root_1_0_1 = buildCratesLib {
     name = "integral_square_root";

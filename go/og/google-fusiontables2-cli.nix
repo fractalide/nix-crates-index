@@ -13,6 +13,7 @@ rec {
     hash = "e5afbf2658cecb9dafd89a0c92102e2cc59a3467fa84d815fae82f6d38698f59";
     deps = with allCrates; [  all__serde.serde_0_8 all__strsim.strsim_0_5 all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
   };
+  "google-fusiontables2-cli_0_3" = google-fusiontables2-cli_0_3_6;
   "google-fusiontables2-cli_0" = google-fusiontables2-cli_0_3_6;
   "google-fusiontables2-cli_1_0" = google-fusiontables2-cli_1_0_0;
   "google-fusiontables2-cli_1" = google-fusiontables2-cli_1_0_0;}

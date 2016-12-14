@@ -55,6 +55,7 @@ rec {
     hash = "09c9d3760673c427d46f91a0350f0a84a52e6bc5a84adf26dc610b6c52436630";
     deps = with allCrates; [  ];
   };
+  "khronos_api_0_0" = khronos_api_0_0_8;
   "khronos_api_0" = khronos_api_0_0_8;
   "khronos_api_1_0" = khronos_api_1_0_0;
   "khronos_api_1" = khronos_api_1_0_0;}

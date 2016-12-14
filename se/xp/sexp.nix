@@ -19,6 +19,7 @@ rec {
     hash = "7b06879be7d603a112b01cd30097de5c4d8f3b1dc8ae5bc902157fdcd46d05cc";
     deps = with allCrates; [  ];
   };
+  "sexp_0_1" = sexp_0_1_1;
   "sexp_0" = sexp_0_1_1;
   sexp_1_0_1 = buildCratesLib {
     name = "sexp";

@@ -47,6 +47,7 @@ rec {
     hash = "3c0befafc1f8b7e1091e20cfd7e9efe7c9dfdb7405cdf34b306cf1025469c948";
     deps = with allCrates; [  all__combine.combine_1_1 ];
   };
+  "combine-language_0_9" = combine-language_0_9_0;
   "combine-language_0" = combine-language_0_9_0;
   combine-language_2_0_0 = buildCratesLib {
     name = "combine-language";
@@ -54,6 +55,7 @@ rec {
     hash = "72e1ce928af3882662d53b59caa64117876ca4f791df5a00ae02f2b46bc433a6";
     deps = with allCrates; [  all__combine.combine_2_0_0 ];
   };
+  "combine-language_1_0" = combine-language_1_0_0;
   "combine-language_1" = combine-language_1_0_0;
   "combine-language_2_0" = combine-language_2_0_0;
   "combine-language_2" = combine-language_2_0_0;}

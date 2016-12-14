@@ -62,6 +62,7 @@ rec {
     hash = "3ca116f713dbb3774773c76301502943e20919b9dfa52e0081d8759605d0026d";
     deps = with allCrates; [  ];
   };
+  "trace-macro_0_8" = trace-macro_0_8_0;
   "trace-macro_0" = trace-macro_0_8_0;
   trace-macro_1_1_0 = buildCratesLib {
     name = "trace-macro";

@@ -32,5 +32,13 @@ rec {
     hash = "c89d7fbec10381ade2f9db491b1ebd8a84a59fb7acf64b463aaf3a338985aca3";
     deps = with allCrates; [  all__nix.nix_0_5 all__encode_unicode.encode_unicode_0_1 all__libc.libc_0_2 all__unicode-width.unicode-width_0_1 ];
   };
+  rustyline_1_0_0 = buildCratesLib {
+    name = "rustyline";
+    version = "1.0.0";
+    hash = "00b06ac9c8e8e3e83b33d175d39a9f7b6c2c930c82990593719c8e48788ae2d9";
+    deps = with allCrates; [  all__encode_unicode.encode_unicode_0_1 all__unicode-width.unicode-width_0_1 all__libc.libc_0_2 all__nix.nix_0_5 ];
+  };
   "rustyline_0_2" = rustyline_0_2_3;
-  "rustyline_0" = rustyline_0_2_3;}
+  "rustyline_0" = rustyline_0_2_3;
+  "rustyline_1_0" = rustyline_1_0_0;
+  "rustyline_1" = rustyline_1_0_0;}

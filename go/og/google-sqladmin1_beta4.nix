@@ -97,6 +97,7 @@ rec {
     hash = "2a95e4cbcbb84ab59b1ffa3545044cc545f9b78a44a6d6c7cf48a573549eca46";
     deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 ];
   };
+  "google-sqladmin1_beta4_0_1" = google-sqladmin1_beta4_0_1_15;
   "google-sqladmin1_beta4_0" = google-sqladmin1_beta4_0_1_15;
   "google-sqladmin1_beta4_1_0" = google-sqladmin1_beta4_1_0_0;
   "google-sqladmin1_beta4_1" = google-sqladmin1_beta4_1_0_0;}

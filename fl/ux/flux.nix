@@ -49,6 +49,7 @@ rec {
     hash = "6700bb68282c3444b31507a0c73cc32278c12ee636e58961a19e27c8fc219cb8";
     deps = with allCrates; [  all__serde.serde_0_7 all__serde_json.serde_json_0_7 all__serde_macros.serde_macros_0_7 all__hyper.hyper_0_9 ];
   };
+  "flux_1_0" = flux_1_0_7;
   "flux_1" = flux_1_0_7;
   flux_2_0_3 = buildCratesLib {
     name = "flux";
@@ -62,6 +63,7 @@ rec {
     hash = "206d6165f07869e4be2ba27ed68af3a6b763e51ec4d2da8a3aca2faf7d5ae6ed";
     deps = with allCrates; [  all__json.json_0_7 all__hyper.hyper_0_9 all__log.log_0_3 ];
   };
+  "flux_2_0" = flux_2_0_3;
   "flux_2" = flux_2_0_3;
   flux_3_0_1 = buildCratesLib {
     name = "flux";

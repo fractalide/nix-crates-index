@@ -20,6 +20,7 @@ rec {
     hash = "f296711aeb4fe4c2d6a45ed52ec46a643bc1eb1422a87761a4bd116bbb6e8ae3";
     deps = with allCrates; [  all__serde_json.serde_json_0_6 all__serde_macros.serde_macros_0_6 all__serde.serde_0_6 ];
   };
+  "jsonrpc-core_0_2" = jsonrpc-core_0_2_0;
   "jsonrpc-core_0" = jsonrpc-core_0_2_0;
   jsonrpc-core_1_0_1 = buildCratesLib {
     name = "jsonrpc-core";
@@ -77,6 +78,7 @@ rec {
     hash = "9eebb29bcce8332c9622b1b513df72e2c496cdba0958da173a2367822218599d";
     deps = with allCrates; [  all__serde.serde_0_7 all__serde_json.serde_json_0_7 all__syntex.syntex_0_29 ];
   };
+  "jsonrpc-core_1_2" = jsonrpc-core_1_2_0;
   "jsonrpc-core_1" = jsonrpc-core_1_2_0;
   jsonrpc-core_2_0_1 = buildCratesLib {
     name = "jsonrpc-core";
@@ -127,6 +129,7 @@ rec {
     hash = "e913b3c809aab9378889da8b990b4a46b98bd4794c8117946a1cf63c5f87bcde";
     deps = with allCrates; [  all__log.log_0_3 all__serde.serde_0_8 all__parking_lot.parking_lot_0_2 all__serde_json.serde_json_0_8 ];
   };
+  "jsonrpc-core_2_1" = jsonrpc-core_2_1_1;
   "jsonrpc-core_2" = jsonrpc-core_2_1_1;
   jsonrpc-core_3_0_1 = buildCratesLib {
     name = "jsonrpc-core";
@@ -146,6 +149,7 @@ rec {
     hash = "d56a7152c0d41850535f9af2f5dded6829dac89546d1b8b9b8a4ff85b39680d1";
     deps = with allCrates; [  all__serde.serde_0_8 all__log.log_0_3 all__serde_json.serde_json_0_8 all__parking_lot.parking_lot_0_2 ];
   };
+  "jsonrpc-core_3_0" = jsonrpc-core_3_0_2;
   "jsonrpc-core_3" = jsonrpc-core_3_0_2;
   "jsonrpc-core_4_0" = jsonrpc-core_4_0_0;
   "jsonrpc-core_4" = jsonrpc-core_4_0_0;}

@@ -39,6 +39,7 @@ rec {
     hash = "f847282eb3d192321c0cee74d342d90781ba24ef67860cfece5b60c4dec897be";
     deps = with allCrates; [  all__gcc.gcc_0_3 ];
   };
+  "unqlite-sys_0_3" = unqlite-sys_0_3_2;
   "unqlite-sys_0" = unqlite-sys_0_3_2;
   "unqlite-sys_1_0" = unqlite-sys_1_0_0;
   "unqlite-sys_1" = unqlite-sys_1_0_0;}

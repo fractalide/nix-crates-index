@@ -19,6 +19,7 @@ rec {
     hash = "f90f98405ffb0b5b80733be4b20245d1f3067b711d281baaa0771450c21e6c54";
     deps = with allCrates; [  all__argonaut.argonaut_0_7 ];
   };
+  "cargo-linebreak_1_0" = cargo-linebreak_1_0_1;
   "cargo-linebreak_1" = cargo-linebreak_1_0_1;
   "cargo-linebreak_2_0" = cargo-linebreak_2_0_0;
   "cargo-linebreak_2" = cargo-linebreak_2_0_0;}

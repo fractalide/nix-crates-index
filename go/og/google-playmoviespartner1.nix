@@ -49,6 +49,7 @@ rec {
     hash = "05bd0bf686964db044c85e06ea04befcb02fcf056ef6be0fc5f2621af4c71624";
     deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 url all__mime.mime_0_2 all__hyper.hyper_0_9 ];
   };
+  "google-playmoviespartner1_0_1" = google-playmoviespartner1_0_1_15;
   "google-playmoviespartner1_0" = google-playmoviespartner1_0_1_15;
   "google-playmoviespartner1_1_0" = google-playmoviespartner1_1_0_0;
   "google-playmoviespartner1_1" = google-playmoviespartner1_1_0_0;}

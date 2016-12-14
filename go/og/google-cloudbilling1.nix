@@ -49,6 +49,7 @@ rec {
     hash = "55f6e346a86dc00e4810fbb1774b142b46e863e31f66d9ff8658637fdcb14b29";
     deps = with allCrates; [  all__serde.serde_0_8 url all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
   };
+  "google-cloudbilling1_0_1" = google-cloudbilling1_0_1_15;
   "google-cloudbilling1_0" = google-cloudbilling1_0_1_15;
   "google-cloudbilling1_1_0" = google-cloudbilling1_1_0_0;
   "google-cloudbilling1_1" = google-cloudbilling1_1_0_0;}

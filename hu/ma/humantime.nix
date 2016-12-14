@@ -31,6 +31,7 @@ rec {
     hash = "0e9298fffb2a54569e1fcb818e9c2ff77caa2fad68d64b6e409b9f777bdb1960";
     deps = with allCrates; [  all__quick-error.quick-error_1_0_0 ];
   };
+  "humantime_0_1" = humantime_0_1_3;
   "humantime_0" = humantime_0_1_3;
   "humantime_1_0" = humantime_1_0_0;
   "humantime_1" = humantime_1_0_0;}

@@ -13,6 +13,7 @@ rec {
     hash = "8302bbf78ed3a5753b316535e3a7d15177c673bbeccb84eddab2048c9fb7cf35";
     deps = with allCrates; [  ];
   };
+  "syslog_0_0" = syslog_0_0_1;
   "syslog_0" = syslog_0_0_1;
   syslog_1_0_1 = buildCratesLib {
     name = "syslog";
@@ -51,6 +52,7 @@ rec {
     hash = "c262783cd757178e32ee2e1f224ae8bda91fc881a1a6c4e95b2b8d0213a2586d";
     deps = with allCrates; [  all__rand.rand_0_3 all__libc.libc_0_1 all__time.time_0_1 all__unix_socket.unix_socket_0_4 ];
   };
+  "syslog_1_1" = syslog_1_1_0;
   "syslog_1" = syslog_1_1_0;
   syslog_2_1_0 = buildCratesLib {
     name = "syslog";
@@ -72,6 +74,7 @@ rec {
     hash = "78ed5b688b084bcb290c1a83d9ef22b1d82fd4ee78a0051d9e8743eb3d79a298";
     deps = with allCrates; [  all__unix_socket.unix_socket_0_4 all__time.time_0_1 all__libc.libc_0_1 all__log.log_0_3 ];
   };
+  "syslog_2_2" = syslog_2_2_0;
   "syslog_2" = syslog_2_2_0;
   syslog_3_1_0 = buildCratesLib {
     name = "syslog";

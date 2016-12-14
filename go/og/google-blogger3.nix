@@ -97,6 +97,7 @@ rec {
     hash = "11f2d3c991440b0b62117af5a6d55e90e454e91709fc278de804ddb9aba4761c";
     deps = with allCrates; [  url all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
   };
+  "google-blogger3_0_1" = google-blogger3_0_1_15;
   "google-blogger3_0" = google-blogger3_0_1_15;
   "google-blogger3_1_0" = google-blogger3_1_0_0;
   "google-blogger3_1" = google-blogger3_1_0_0;}

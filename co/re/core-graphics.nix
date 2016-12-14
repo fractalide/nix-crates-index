@@ -13,13 +13,19 @@ rec {
     hash = "e9884af5b4fbebb91f2939c2003cb89e48124590b6b0a6a7e54078edaa24360c";
     deps = with allCrates; [  ];
   };
+  core-graphics_0_1_0 = buildCratesLib {
+    name = "core-graphics";
+    version = "0.1.0";
+    hash = "6755d94f4aeab1d6a7d05c99f11999169ca74e386a267a40cbcce5f186904289";
+    deps = with allCrates; [  libc core-foundation ];
+  };
+  "core-graphics_0_0" = core-graphics_0_0_2;
   core-graphics_0_1_1 = buildCratesLib {
     name = "core-graphics";
     version = "0.1.1";
     hash = "e2e1e0b812fe3f09d9c9db5b69aca3b8fc09a66a10ea4e5b90e4fab8e1c583f9";
     deps = with allCrates; [  libc core-foundation ];
   };
-  "core-graphics_0_0" = core-graphics_0_0_2;
   core-graphics_0_1_2 = buildCratesLib {
     name = "core-graphics";
     version = "0.1.2";

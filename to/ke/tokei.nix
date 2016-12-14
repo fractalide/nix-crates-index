@@ -65,6 +65,7 @@ rec {
     hash = "9134db11b57032d0d0d0e54efa3b7ecb92fda53b46d4a8f47c18e71ba9840ee0";
     deps = with allCrates; [  all__clap.clap_2_5 all__glob.glob_0_2 all__rayon.rayon_0_3 all__maplit.maplit_0_1 all__walkdir.walkdir_0_1 ];
   };
+  "tokei_1_6" = tokei_1_6_0;
   "tokei_1" = tokei_1_6_0;
   tokei_2_1_0 = buildCratesLib {
     name = "tokei";
@@ -97,6 +98,7 @@ rec {
     hash = "fba6650fbb0e16c2ac65bd878bb1eca54f1054148253db6a5316894f90d80f6a";
     deps = with allCrates; [  all__toml.toml_0_1 all__maplit.maplit_0_1 all__serializable_enum.serializable_enum_0_3 all__serde.serde_0_7 all__walkdir.walkdir_0_1 all__serde_json.serde_json_0_7 all__rustc-serialize.rustc-serialize_0_3 all__clap.clap_2_5 all__rayon.rayon_0_3 all__glob.glob_0_2 all__serde_cbor.serde_cbor_0_3 all__serde_yaml.serde_yaml_0_2 all__serde_codegen.serde_codegen_0_7 all__syntex.syntex_0_33 ];
   };
+  "tokei_2_1" = tokei_2_1_3;
   "tokei_2" = tokei_2_1_3;
   tokei_3_0_1 = buildCratesLib {
     name = "tokei";
@@ -116,6 +118,7 @@ rec {
     hash = "fa53dd8e9762dbdab913ab89fdd88f17a4416b9d3fe969e935fcfce816678a40";
     deps = with allCrates; [  all__glob.glob_0_2 all__walkdir.walkdir_0_1 all__rayon.rayon_0_4 all__clap.clap_2_10 all__maplit.maplit_0_1 ];
   };
+  "tokei_3_0" = tokei_3_0_2;
   "tokei_3" = tokei_3_0_2;
   tokei_4_1_0 = buildCratesLib {
     name = "tokei";

@@ -55,13 +55,97 @@ rec {
     hash = "74465e8a842f365db725011e1e3aecedaed3ab6381c116406271b08182e29753";
     deps = with allCrates; [  all__log.log_0_1 ];
   };
+  term_0_1_9 = buildCratesLib {
+    name = "term";
+    version = "0.1.9";
+    hash = "17dca644163f3ec0dbc4fa10688415bfbe38bc298a931f33030ef2b02f8c85d0";
+    deps = with allCrates; [  all__log.log_0_1 ];
+  };
+  term_0_1_10 = buildCratesLib {
+    name = "term";
+    version = "0.1.10";
+    hash = "d9082571e8510e2ce3ecb7257627ae7712ec6ad30c40808fab34cf98b42968a5";
+    deps = with allCrates; [  all__log.log_0_2 ];
+  };
+  term_0_1_11 = buildCratesLib {
+    name = "term";
+    version = "0.1.11";
+    hash = "daa082fb6d5f8277fea871cfc6d4215dc37d8cc80e7ecdf69aedc30b259947cc";
+    deps = with allCrates; [  all__log.log_0_2 ];
+  };
+  term_0_1_12 = buildCratesLib {
+    name = "term";
+    version = "0.1.12";
+    hash = "6247a3e0ef9973ba4b150588df03ba99bcd17fd747f598b90e92816fc4d8556d";
+    deps = with allCrates; [  all__log.log_0_2 ];
+  };
+  term_0_1_13 = buildCratesLib {
+    name = "term";
+    version = "0.1.13";
+    hash = "cdb94511c374d33849800f55585172aeb2830eded420ad4b18ec9d199145c0de";
+    deps = with allCrates; [  all__log.log_0_2 ];
+  };
+  term_0_2_0 = buildCratesLib {
+    name = "term";
+    version = "0.2.0";
+    hash = "5679dfc745c76f8110a8a4846fad3c3c99854c9029b6c2fd84d501e5ec755d8c";
+    deps = with allCrates; [  ];
+  };
+  "term_0_1" = term_0_1_13;
+  term_0_2_1 = buildCratesLib {
+    name = "term";
+    version = "0.2.1";
+    hash = "319ad708f9543fb916b0b0bbe9e21d95eebf4511b43ee16547d9bf8632255d90";
+    deps = with allCrates; [  ];
+  };
+  term_0_2_2 = buildCratesLib {
+    name = "term";
+    version = "0.2.2";
+    hash = "5be7b0691c567ebf60a25ada93dd29fe7dc7a3542801c1149ddd7c266a2aabfe";
+    deps = with allCrates; [  ];
+  };
+  term_0_2_3 = buildCratesLib {
+    name = "term";
+    version = "0.2.3";
+    hash = "259afcdcabac3ae78fca3e8b70091916f8c0d4c50946001fa049533f1b19751f";
+    deps = with allCrates; [  ];
+  };
+  term_0_2_4 = buildCratesLib {
+    name = "term";
+    version = "0.2.4";
+    hash = "33b5317935f46ff9d510083f5420bf2ca710227b9f2146652dc9aa6d83cf1957";
+    deps = with allCrates; [  ];
+  };
+  term_0_2_5 = buildCratesLib {
+    name = "term";
+    version = "0.2.5";
+    hash = "f8c5375ac9de52c8c816c6dccec32155a4c9064cde019f2d0821f76aa04f928d";
+    deps = with allCrates; [  ];
+  };
+  term_0_2_6 = buildCratesLib {
+    name = "term";
+    version = "0.2.6";
+    hash = "b89fdb4dafebc3384e7a630caaa7bf0699761beb28a1b9e53c6b3448d3b3c4bf";
+    deps = with allCrates; [  ];
+  };
+  term_0_2_7 = buildCratesLib {
+    name = "term";
+    version = "0.2.7";
+    hash = "f578317e342fe0a9b571331f4da2017feca895bf56ec6f94faab177da5ba22a2";
+    deps = with allCrates; [  ];
+  };
   term_0_2_8 = buildCratesLib {
     name = "term";
     version = "0.2.8";
     hash = "3577e4a764866da6a2ad5e28f330b1ba117adeaaa525653a5e489cd82da0dc3f";
     deps = with allCrates; [  all__winapi.winapi_0_1 all__kernel32-sys.kernel32-sys_0_1 ];
   };
-  "term_0_1" = term_0_1_8;
+  term_0_2_9 = buildCratesLib {
+    name = "term";
+    version = "0.2.9";
+    hash = "ad878f70f1ec015c84d0dcfabf9e95c71fd6352eba382761b1eabbd870e3940c";
+    deps = with allCrates; [  ];
+  };
   term_0_2_10 = buildCratesLib {
     name = "term";
     version = "0.2.10";

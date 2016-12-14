@@ -25,6 +25,7 @@ rec {
     hash = "d7e8d321c8d394f20cbd8f8bf98b8617d5c84cbcc8b96d119a4dbf6461d65699";
     deps = with allCrates; [  all__winapi.winapi_0_2 all__kernel32-sys.kernel32-sys_0_1 all__libc.libc_0_1 ];
   };
+  "ctrlc_0_1" = ctrlc_0_1_2;
   "ctrlc_0" = ctrlc_0_1_2;
   ctrlc_1_0_1 = buildCratesLib {
     name = "ctrlc";
@@ -51,6 +52,7 @@ rec {
     hash = "9218312cd87e3b8d5a6a8599ff0e7b8f0880859f5bbc54e88a88c3a96b3e38a1";
     deps = with allCrates; [  all__kernel32-sys.kernel32-sys_0_2 all__libc.libc_0_2 all__winapi.winapi_0_2 ];
   };
+  "ctrlc_1_1" = ctrlc_1_1_1;
   "ctrlc_1" = ctrlc_1_1_1;
   ctrlc_2_0_1 = buildCratesLib {
     name = "ctrlc";

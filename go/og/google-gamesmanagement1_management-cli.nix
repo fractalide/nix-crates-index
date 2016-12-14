@@ -13,6 +13,7 @@ rec {
     hash = "f4d1dfa39fdff971165e31f7827cd894f332e3637d3c71f9ec14431a31856633";
     deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__strsim.strsim_0_5 all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
   };
+  "google-gamesmanagement1_management-cli_0_3" = google-gamesmanagement1_management-cli_0_3_6;
   "google-gamesmanagement1_management-cli_0" = google-gamesmanagement1_management-cli_0_3_6;
   "google-gamesmanagement1_management-cli_1_0" = google-gamesmanagement1_management-cli_1_0_0;
   "google-gamesmanagement1_management-cli_1" = google-gamesmanagement1_management-cli_1_0_0;}

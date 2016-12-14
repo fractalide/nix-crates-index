@@ -19,6 +19,24 @@ rec {
     hash = "1107e393f397caaa15252a6a27f1a7924930eea84b6a9bc1b74963a8bf343eb3";
     deps = with allCrates; [  all__sdl2_ttf.sdl2_ttf_0_9 all__sdl2.sdl2_0_9 ];
   };
+  orbtk_0_0_4 = buildCratesLib {
+    name = "orbtk";
+    version = "0.0.4";
+    hash = "1f3a1c9ecabe38e52a27e944c1143f4e8bcaf314fb9b9fa806ab0522ba8c0b2c";
+    deps = with allCrates; [  all__sdl2.sdl2_0_9 all__sdl2_ttf.sdl2_ttf_0_9 all__sdl2_ttf.sdl2_ttf_0_9 all__sdl2.sdl2_0_9 all__sdl2.sdl2_0_9 all__sdl2_ttf.sdl2_ttf_0_9 all__sdl2_ttf.sdl2_ttf_0_9 all__sdl2.sdl2_0_9 ];
+  };
+  orbtk_0_0_5 = buildCratesLib {
+    name = "orbtk";
+    version = "0.0.5";
+    hash = "529ae1d4619ffefa2e428252383bca8895e81bcdde8c6e439dd53a0aa90ad98c";
+    deps = with allCrates; [  all__sdl2_ttf.sdl2_ttf_0_9 all__sdl2.sdl2_0_9 all__sdl2_ttf.sdl2_ttf_0_9 all__sdl2.sdl2_0_9 all__sdl2_ttf.sdl2_ttf_0_9 all__sdl2.sdl2_0_9 all__sdl2.sdl2_0_9 all__sdl2_ttf.sdl2_ttf_0_9 ];
+  };
+  orbtk_0_0_6 = buildCratesLib {
+    name = "orbtk";
+    version = "0.0.6";
+    hash = "97e678ef4200cefa9a5b0725b9b912167adbd9a37395520cdc571a56796a199f";
+    deps = with allCrates; [  all__sdl2_ttf.sdl2_ttf_0_9 all__sdl2.sdl2_0_9 all__sdl2.sdl2_0_9 all__sdl2_ttf.sdl2_ttf_0_9 all__sdl2.sdl2_0_9 all__sdl2_ttf.sdl2_ttf_0_9 all__sdl2.sdl2_0_9 all__sdl2_ttf.sdl2_ttf_0_9 ];
+  };
   orbtk_0_0_7 = buildCratesLib {
     name = "orbtk";
     version = "0.0.7";

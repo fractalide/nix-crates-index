@@ -13,6 +13,7 @@ rec {
     hash = "0e5b4463091d5fe4595e6c55c7c084872341d3ddba00022d909cbeb64e5f7e19";
     deps = with allCrates; [  ];
   };
+  "iso3166-1_0_1" = iso3166-1_0_1_0;
   "iso3166-1_0" = iso3166-1_0_1_0;
   iso3166-1_1_0_1 = buildCratesLib {
     name = "iso3166-1";

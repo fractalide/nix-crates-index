@@ -47,6 +47,7 @@ rec {
     hash = "d2c02572b05735314b1c806c472fd7141c6af95c5482ac6797a109d6fcabe6a1";
     deps = with allCrates; [  all__num-traits.num-traits_0_1 ];
   };
+  "vpsearch_0_5" = vpsearch_0_5_0;
   "vpsearch_0" = vpsearch_0_5_0;
   "vpsearch_1_0" = vpsearch_1_0_0;
   "vpsearch_1" = vpsearch_1_0_0;}

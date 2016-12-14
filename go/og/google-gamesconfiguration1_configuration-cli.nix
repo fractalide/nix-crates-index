@@ -13,6 +13,7 @@ rec {
     hash = "5ddf6ffe7eb52ade7e9271c7d2d481461a9d50cc1ecc01b8b708e35da821235a";
     deps = with allCrates; [  all__strsim.strsim_0_5 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__clap.clap_2_0 ];
   };
+  "google-gamesconfiguration1_configuration-cli_0_3" = google-gamesconfiguration1_configuration-cli_0_3_6;
   "google-gamesconfiguration1_configuration-cli_0" = google-gamesconfiguration1_configuration-cli_0_3_6;
   "google-gamesconfiguration1_configuration-cli_1_0" = google-gamesconfiguration1_configuration-cli_1_0_0;
   "google-gamesconfiguration1_configuration-cli_1" = google-gamesconfiguration1_configuration-cli_1_0_0;}

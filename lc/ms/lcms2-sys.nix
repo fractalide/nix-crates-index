@@ -47,6 +47,7 @@ rec {
     hash = "34035cf4c4b6c8bb758fa5d1ba01434c08641744b213f0e494741096a5ef2025";
     deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
   };
+  "lcms2-sys_0_5" = lcms2-sys_0_5_0;
   "lcms2-sys_0" = lcms2-sys_0_5_0;
   "lcms2-sys_1_0" = lcms2-sys_1_0_0;
   "lcms2-sys_1" = lcms2-sys_1_0_0;}

@@ -31,6 +31,7 @@ rec {
     hash = "cd0900efafb9cf283d247e592a85b75dd30aae6ee8f01be04f9597570a93449f";
     deps = with allCrates; [  ];
   };
+  "ihex_0_1" = ihex_0_1_3;
   "ihex_0" = ihex_0_1_3;
   "ihex_1_0" = ihex_1_0_0;
   "ihex_1" = ihex_1_0_0;}

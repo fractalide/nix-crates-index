@@ -27,6 +27,7 @@ rec {
     hash = "6bde81fe584d51764e1af7988af7f1e651fd669037adcb91b4168130c02083bf";
     deps = with allCrates; [  all__chrono.chrono_0_2 all__slog.slog_1 all__serde_json.serde_json_0_8 all__slog-serde.slog-serde_1_0_0-alpha8 all__slog-stream.slog-stream_1 ];
   };
+  "slog-json_0_7" = slog-json_0_7_0;
   "slog-json_0" = slog-json_0_7_0;
   slog-json_1_1_0 = buildCratesLib {
     name = "slog-json";

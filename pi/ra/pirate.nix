@@ -20,6 +20,7 @@ rec {
     hash = "89a86d3ac1f1e93f428a5ea69ddb16ecc7d5f883a2400917fd2ae052bf966d4f";
     deps = with allCrates; [  ];
   };
+  "pirate_0_2" = pirate_0_2_0;
   "pirate_0" = pirate_0_2_0;
   "pirate_1_0" = pirate_1_0_0;
   "pirate_1" = pirate_1_0_0;}

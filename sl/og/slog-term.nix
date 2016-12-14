@@ -27,6 +27,7 @@ rec {
     hash = "532b5eb1f13f69fdcc124e5ccaeff1c96c1ff23a7687446feeb57e6e93aced1e";
     deps = with allCrates; [  all__isatty.isatty_0_1 all__chrono.chrono_0_2 all__slog-stream.slog-stream_1 all__ansi_term.ansi_term_0_7 all__slog.slog_1 ];
   };
+  "slog-term_0_7" = slog-term_0_7_0;
   "slog-term_0" = slog-term_0_7_0;
   slog-term_1_1_0 = buildCratesLib {
     name = "slog-term";

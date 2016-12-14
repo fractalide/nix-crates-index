@@ -13,6 +13,7 @@ rec {
     hash = "c927f67cc1b42d471cfa256eea18edf0db127ac1102ce652f5ecdf7bd3b92466";
     deps = with allCrates; [  all__toml.toml_0_2 all__rustc-serialize.rustc-serialize_0_3 all__regex.regex_0_1 all__egg-mode.egg-mode_0_4 all__lazy_static.lazy_static_0_2 all__clap.clap_2_11 all__chrono.chrono_0_2 ];
   };
+  "not-stakkr_0_1" = not-stakkr_0_1_0;
   "not-stakkr_0" = not-stakkr_0_1_0;
   "not-stakkr_1_0" = not-stakkr_1_0_0;
   "not-stakkr_1" = not-stakkr_1_0_0;}

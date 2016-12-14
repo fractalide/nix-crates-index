@@ -34,6 +34,7 @@ rec {
     hash = "c1681c101d216457d3bc23d8c6d8e516b9dff9b8a90e4c2fa4bf29bf2e3fa152";
     deps = with allCrates; [  ];
   };
+  "define_error_1_3" = define_error_1_3_0;
   "define_error_1" = define_error_1_3_0;
   define_error_3_0_0 = buildCratesLib {
     name = "define_error";
@@ -41,6 +42,7 @@ rec {
     hash = "b9d97a723e4f1115fc1bd2c880e0570ffea3420b56be15de6ca8ab6f114a8a79";
     deps = with allCrates; [  ];
   };
+  "define_error_2_3" = define_error_2_3_0;
   "define_error_2" = define_error_2_3_0;
   define_error_4_0_0 = buildCratesLib {
     name = "define_error";
@@ -48,6 +50,7 @@ rec {
     hash = "0a4302b6e8ce47264f339e8b2bb10559bc0c5d485a9efe4e71ed635fbc5822d5";
     deps = with allCrates; [  ];
   };
+  "define_error_3_0" = define_error_3_0_0;
   "define_error_3" = define_error_3_0_0;
   define_error_4_0_1 = buildCratesLib {
     name = "define_error";

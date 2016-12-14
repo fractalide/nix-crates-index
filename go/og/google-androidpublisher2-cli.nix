@@ -13,6 +13,7 @@ rec {
     hash = "9c425adf90fded56ae40edc27611f65cf356f727c2b97cdf979e36cc54366102";
     deps = with allCrates; [  all__clap.clap_2_0 all__strsim.strsim_0_5 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__mime.mime_0_2 ];
   };
+  "google-androidpublisher2-cli_0_3" = google-androidpublisher2-cli_0_3_6;
   "google-androidpublisher2-cli_0" = google-androidpublisher2-cli_0_3_6;
   "google-androidpublisher2-cli_1_0" = google-androidpublisher2-cli_1_0_0;
   "google-androidpublisher2-cli_1" = google-androidpublisher2-cli_1_0_0;}

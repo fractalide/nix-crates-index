@@ -14,13 +14,41 @@ rec {
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__leb128.leb128_0_1 ];
   };
   "gimli_0_1" = gimli_0_1_0;
+  gimli_0_3_0 = buildCratesLib {
+    name = "gimli";
+    version = "0.3.0";
+    hash = "f3782612a426cca86fb1f79fcbdb1fa0826caf94fc5d354b48e9beb5708de656";
+    deps = with allCrates; [  all__leb128.leb128_0_2 all__byteorder.byteorder_0_5 ];
+  };
+  "gimli_0_2" = gimli_0_2_0;
+  gimli_0_4_0 = buildCratesLib {
+    name = "gimli";
+    version = "0.4.0";
+    hash = "5e4f0e32e7d5c157e86df238ea4da6309f489b32a0270a0e87c8e2e2a15a3adf";
+    deps = with allCrates; [  all__leb128.leb128_0_2 all__byteorder.byteorder_0_5 ];
+  };
+  "gimli_0_3" = gimli_0_3_0;
+  gimli_0_5_0 = buildCratesLib {
+    name = "gimli";
+    version = "0.5.0";
+    hash = "71bd0196a22adb392609b29067326a9e69b84f9b90a90043196a2fcc37300e0f";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__leb128.leb128_0_2 ];
+  };
+  "gimli_0_4" = gimli_0_4_0;
+  gimli_0_6_0 = buildCratesLib {
+    name = "gimli";
+    version = "0.6.0";
+    hash = "c05ec658feedc951f4d2a42cfc4dad6155cffe2ee14897f5c776678250053ff5";
+    deps = with allCrates; [  all__leb128.leb128_0_2 all__byteorder.byteorder_0_5 ];
+  };
+  "gimli_0_5" = gimli_0_5_0;
   gimli_0_7_0 = buildCratesLib {
     name = "gimli";
     version = "0.7.0";
     hash = "723822d2f571e383d9f4f4793e1b5d4ee74cd7de7eea68f9ca7bd6bb0f8673e3";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__leb128.leb128_0_2 all__fallible-iterator.fallible-iterator_0_1 ];
   };
-  "gimli_0_2" = gimli_0_2_0;
+  "gimli_0_6" = gimli_0_6_0;
   gimli_0_8_0 = buildCratesLib {
     name = "gimli";
     version = "0.8.0";

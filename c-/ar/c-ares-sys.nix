@@ -75,5 +75,26 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__winapi.winapi_0_2 all__c-types.c-types_0_1 all__pkg-config.pkg-config_0_3 all__gcc.gcc_0_3 ];
   };
   "c-ares-sys_0_9" = c-ares-sys_0_9_0;
+  c-ares-sys_0_11_0 = buildCratesLib {
+    name = "c-ares-sys";
+    version = "0.11.0";
+    hash = "4452751ea1f85cbc25310463b4f6e30ed027270991c291b3bd1029f0de47fddb";
+    deps = with allCrates; [  all__c-types.c-types_0_1 all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 all__gcc.gcc_0_3 ];
+  };
   "c-ares-sys_0_10" = c-ares-sys_0_10_0;
-  "c-ares-sys_0" = c-ares-sys_0_10_0;}
+  c-ares-sys_0_12_0 = buildCratesLib {
+    name = "c-ares-sys";
+    version = "0.12.0";
+    hash = "4ed4936d8fd25ca82db00d42d3446b4670468ce730cb7f8147f3fecdd4bd2846";
+    deps = with allCrates; [  all__c-types.c-types_0_1 all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 all__gcc.gcc_0_3 ];
+  };
+  "c-ares-sys_0_11" = c-ares-sys_0_11_0;
+  c-ares-sys_0_13_0 = buildCratesLib {
+    name = "c-ares-sys";
+    version = "0.13.0";
+    hash = "7172e0865a82d41cbd77212da46dfe73cc9295fe89dfd379478813ee988534b9";
+    deps = with allCrates; [  all__c-types.c-types_0_1 all__libc.libc_0_2 all__gcc.gcc_0_3 all__pkg-config.pkg-config_0_3 ];
+  };
+  "c-ares-sys_0_12" = c-ares-sys_0_12_0;
+  "c-ares-sys_0_13" = c-ares-sys_0_13_0;
+  "c-ares-sys_0" = c-ares-sys_0_13_0;}

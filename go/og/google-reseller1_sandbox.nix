@@ -97,6 +97,7 @@ rec {
     hash = "f06ad08f2cdf944fb27718f89bbedcb9be82ce9961f0368419ea3b33f36c05f1";
     deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
   };
+  "google-reseller1_sandbox_0_1" = google-reseller1_sandbox_0_1_15;
   "google-reseller1_sandbox_0" = google-reseller1_sandbox_0_1_15;
   "google-reseller1_sandbox_1_0" = google-reseller1_sandbox_1_0_0;
   "google-reseller1_sandbox_1" = google-reseller1_sandbox_1_0_0;}

@@ -56,6 +56,7 @@ rec {
     hash = "9a1358273c6382876145b9cd8d0d5c47dfe793db844a9db07c1b28415b439ed2";
     deps = with allCrates; [  all__libc.libc_0_2 all__regex.regex_0_1 all__toml.toml_0_1 all__gcc.gcc_0_3 ];
   };
+  "cld2-sys_0_1" = cld2-sys_0_1_0;
   "cld2-sys_0" = cld2-sys_0_1_0;
   "cld2-sys_1_0" = cld2-sys_1_0_0;
   "cld2-sys_1" = cld2-sys_1_0_0;}

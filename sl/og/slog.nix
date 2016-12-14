@@ -55,6 +55,7 @@ rec {
     hash = "fff6d8845a2ae6c0da0d09bc7f59b75a5f8b263d9acf608e80991921adf0c136";
     deps = with allCrates; [  ];
   };
+  "slog_0_7" = slog_0_7_0;
   "slog_0" = slog_0_7_0;
   slog_1_0_1 = buildCratesLib {
     name = "slog";

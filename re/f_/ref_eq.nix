@@ -13,6 +13,7 @@ rec {
     hash = "b5be05580cabe5669689db3f2fad4af6af21eb2a5c7edef0bd195f28757cabd9";
     deps = with allCrates; [  ];
   };
+  "ref_eq_0_1" = ref_eq_0_1_0;
   "ref_eq_0" = ref_eq_0_1_0;
   "ref_eq_1_0" = ref_eq_1_0_0;
   "ref_eq_1" = ref_eq_1_0_0;}

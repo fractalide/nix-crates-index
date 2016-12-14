@@ -13,6 +13,7 @@ rec {
     hash = "8bd1031c365e9e20c40feff723eda0c1ed04fc5df939c2899377fafa6674e889";
     deps = with allCrates; [  all__mime.mime_0_2 all__clap.clap_2_0 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__hyper.hyper_0_9 all__serde.serde_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
   };
+  "google-sqladmin1_beta4-cli_0_3" = google-sqladmin1_beta4-cli_0_3_6;
   "google-sqladmin1_beta4-cli_0" = google-sqladmin1_beta4-cli_0_3_6;
   "google-sqladmin1_beta4-cli_1_0" = google-sqladmin1_beta4-cli_1_0_0;
   "google-sqladmin1_beta4-cli_1" = google-sqladmin1_beta4-cli_1_0_0;}

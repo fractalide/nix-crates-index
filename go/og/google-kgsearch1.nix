@@ -37,6 +37,7 @@ rec {
     hash = "28ace4dc842e0e579a1c18da8d329499ad4c2885e0fc9a5814ec5876c48380e9";
     deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 url all__mime.mime_0_2 ];
   };
+  "google-kgsearch1_0_1" = google-kgsearch1_0_1_15;
   "google-kgsearch1_0" = google-kgsearch1_0_1_15;
   "google-kgsearch1_1_0" = google-kgsearch1_1_0_0;
   "google-kgsearch1_1" = google-kgsearch1_1_0_0;}

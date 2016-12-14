@@ -19,6 +19,7 @@ rec {
     hash = "7bd393165e0b7fb629e24bef78e3af5048c4f17d8d5b28b4174fbcbae5498e5d";
     deps = with allCrates; [  all__servo-freetype-sys.servo-freetype-sys_4_0_0 all__expat-sys.expat-sys_2_1 all__pkg-config.pkg-config_0_3 ];
   };
+  "servo-fontconfig-sys_2_11" = servo-fontconfig-sys_2_11_3;
   "servo-fontconfig-sys_2" = servo-fontconfig-sys_2_11_3;
   servo-fontconfig-sys_4_0_1 = buildCratesLib {
     name = "servo-fontconfig-sys";

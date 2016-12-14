@@ -20,6 +20,7 @@ rec {
     hash = "89077218e3b0a9a56eb9a398af5932fec0ca196b90df05c05913a6189defafb2";
     deps = with allCrates; [  all__chrono.chrono_0_2 all__hyper.hyper_0_8 all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  "algorithmia_0_8" = algorithmia_0_8_0;
   "algorithmia_0" = algorithmia_0_8_0;
   algorithmia_1_1_0 = buildCratesLib {
     name = "algorithmia";

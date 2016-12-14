@@ -19,6 +19,7 @@ rec {
     hash = "6d1d4e9c48f62c3f311f46833a78c17e66efecd5c0aee2150df1f32ad24ed4f7";
     deps = with allCrates; [  all__rust-lzma.rust-lzma_0_2 all__edcert.edcert_5_0 all__rustc-serialize.rustc-serialize_0_3 all__chrono.chrono_0_2 all__time.time_0_1 ];
   };
+  "edcert-compressor_0_1" = edcert-compressor_0_1_1;
   "edcert-compressor_0" = edcert-compressor_0_1_1;
   edcert-compressor_1_0_1 = buildCratesLib {
     name = "edcert-compressor";

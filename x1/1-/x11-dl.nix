@@ -26,6 +26,7 @@ rec {
     hash = "d4ffaec63ac63ab699564c5cce73f222d8e6b5b71677a67d2d6605a8ae8e9d1b";
     deps = with allCrates; [  libc dylib ];
   };
+  "x11-dl_1_1" = x11-dl_1_1_0;
   "x11-dl_1" = x11-dl_1_1_0;
   x11-dl_2_0_1 = buildCratesLib {
     name = "x11-dl";

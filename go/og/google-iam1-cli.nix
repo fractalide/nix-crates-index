@@ -13,6 +13,7 @@ rec {
     hash = "4ec40dea3f71d2d88a3300e3dc964fe7fbf31b0192c68cb9b3b8db9893008e43";
     deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 all__strsim.strsim_0_5 ];
   };
+  "google-iam1-cli_0_3" = google-iam1-cli_0_3_6;
   "google-iam1-cli_0" = google-iam1-cli_0_3_6;
   "google-iam1-cli_1_0" = google-iam1-cli_1_0_0;
   "google-iam1-cli_1" = google-iam1-cli_1_0_0;}

@@ -103,6 +103,7 @@ rec {
     hash = "48f79bc0f5b4f55055e011b18fd9026ee760514273ac9712bcba53e1e533464b";
     deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 url ];
   };
+  "google-qpxexpress1_0_1" = google-qpxexpress1_0_1_15;
   "google-qpxexpress1_0" = google-qpxexpress1_0_1_15;
   "google-qpxexpress1_1_0" = google-qpxexpress1_1_0_0;
   "google-qpxexpress1_1" = google-qpxexpress1_1_0_0;}

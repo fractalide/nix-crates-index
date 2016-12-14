@@ -103,6 +103,7 @@ rec {
     hash = "c2e9638a42f7fa3565d9fb2dc9f370dd4590e0c13a36c53972078219db00d92a";
     deps = with allCrates; [  all__serde.serde_0_8 url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
   };
+  "google-admin1_reports_0_1" = google-admin1_reports_0_1_15;
   "google-admin1_reports_0" = google-admin1_reports_0_1_15;
   "google-admin1_reports_1_0" = google-admin1_reports_1_0_0;
   "google-admin1_reports_1" = google-admin1_reports_1_0_0;}

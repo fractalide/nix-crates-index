@@ -19,6 +19,7 @@ rec {
     hash = "6567e29578f9bfade6a5d94a32b9a4256348358d2a3f448cab0021f9a02614a2";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
+  "sig_0_1" = sig_0_1_1;
   "sig_0" = sig_0_1_1;
   "sig_1_0" = sig_1_0_0;
   "sig_1" = sig_1_0_0;}

@@ -57,6 +57,7 @@ rec {
     hash = "a1c824692f12466fbf30d9b6107bd27d6587c403b6ba88ffc625602b60248edf";
     deps = with allCrates; [  all__bitflags.bitflags_0_1 ];
   };
+  "raw-cpuid_0_2" = raw-cpuid_0_2_0;
   "raw-cpuid_0" = raw-cpuid_0_2_0;
   raw-cpuid_1_0_1 = buildCratesLib {
     name = "raw-cpuid";
@@ -88,6 +89,7 @@ rec {
     hash = "ce48aa568197f6ccf01c3deb708ebed9e9ab4fcd92c57aea73f6dbfd9dc82cf1";
     deps = with allCrates; [  ];
   };
+  "raw-cpuid_1_0" = raw-cpuid_1_0_4;
   "raw-cpuid_1" = raw-cpuid_1_0_4;
   raw-cpuid_2_0_1 = buildCratesLib {
     name = "raw-cpuid";

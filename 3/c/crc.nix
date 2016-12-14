@@ -46,6 +46,7 @@ rec {
     hash = "8880a944c64921c75d382393ac90f6682e857fc19f03157204a048e2d9655159";
     deps = with allCrates; [  lazy_static ];
   };
+  "crc_0_3" = crc_0_3_1;
   "crc_0" = crc_0_3_1;
   crc_1_1_0 = buildCratesLib {
     name = "crc";

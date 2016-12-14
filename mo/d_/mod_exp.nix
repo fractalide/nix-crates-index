@@ -13,6 +13,7 @@ rec {
     hash = "fe3458d57d821b3f389edefbfd83237cde9886f010a30a61f7cd19b650ec72a9";
     deps = with allCrates; [  num ];
   };
+  "mod_exp_0_1" = mod_exp_0_1_0;
   "mod_exp_0" = mod_exp_0_1_0;
   "mod_exp_1_0" = mod_exp_1_0_0;
   "mod_exp_1" = mod_exp_1_0_0;}

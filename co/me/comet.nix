@@ -26,6 +26,7 @@ rec {
     hash = "132fe13da1a5c406ae0c8b92df2211763021d9aeb28f45b34863e5d806ee4857";
     deps = with allCrates; [  all__docopt.docopt_0_6 all__term.term_0_4 all__rustc-serialize.rustc-serialize_0_3 all__notify.notify_2_5 ];
   };
+  "comet_1_1" = comet_1_1_1;
   "comet_1" = comet_1_1_1;
   "comet_2_0" = comet_2_0_0;
   "comet_2" = comet_2_0_0;}

@@ -61,6 +61,7 @@ rec {
     hash = "81661f8737d607d521e7f4634c315c180fbbb34ad59121aef3500c6c4856b50d";
     deps = with allCrates; [  all__nalgebra.nalgebra_0_4 ];
   };
+  "summed-area-table_0_0" = summed-area-table_0_0_9;
   "summed-area-table_0" = summed-area-table_0_0_9;
   "summed-area-table_1_0" = summed-area-table_1_0_0;
   "summed-area-table_1" = summed-area-table_1_0_0;}

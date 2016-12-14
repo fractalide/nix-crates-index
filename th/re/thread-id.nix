@@ -13,6 +13,15 @@ rec {
     hash = "a9539db560102d1cef46b8b78ce737ff0bb64e7e18d35b2a5688f7d097d0ff03";
     deps = with allCrates; [  all__libc.libc_0_2 all__kernel32-sys.kernel32-sys_0_2 ];
   };
+  "thread-id_1_0" = thread-id_1_0_0;
   "thread-id_1" = thread-id_1_0_0;
+  thread-id_3_0_0 = buildCratesLib {
+    name = "thread-id";
+    version = "3.0.0";
+    hash = "4437c97558c70d129e40629a5b385b3fb1ffac301e63941335e4d354081ec14a";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
   "thread-id_2_0" = thread-id_2_0_0;
-  "thread-id_2" = thread-id_2_0_0;}
+  "thread-id_2" = thread-id_2_0_0;
+  "thread-id_3_0" = thread-id_3_0_0;
+  "thread-id_3" = thread-id_3_0_0;}

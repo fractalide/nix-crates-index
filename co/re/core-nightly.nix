@@ -19,6 +19,7 @@ rec {
     hash = "ed6ef3f6486b825fdc45da13ea630d385c5b676a155251b9de2f3d339964986b";
     deps = with allCrates; [  ];
   };
+  "core-nightly_2014_12" = core-nightly_2014_12_29;
   "core-nightly_2014" = core-nightly_2014_12_29;
   core-nightly_2015_1_5 = buildCratesLib {
     name = "core-nightly";

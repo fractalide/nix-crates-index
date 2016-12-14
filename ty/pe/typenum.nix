@@ -32,6 +32,7 @@ rec {
     hash = "6b956fd4e897475a42aebbe05d16fe7447e7b94b6c23097675c4e1cf4355c71f";
     deps = with allCrates; [  ];
   };
+  "typenum_0_1" = typenum_0_1_1;
   "typenum_0" = typenum_0_1_1;
   typenum_1_0_1 = buildCratesLib {
     name = "typenum";

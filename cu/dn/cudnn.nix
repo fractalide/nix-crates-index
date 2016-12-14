@@ -31,6 +31,7 @@ rec {
     hash = "a65173e6b1fba953153134e3ac98dd18c7776ba39224023a61d701c6e252e8cc";
     deps = with allCrates; [  all__libc.libc_0_2 all__cudnn-sys.cudnn-sys_0_0_1 ];
   };
+  "cudnn_0_1" = cudnn_0_1_3;
   "cudnn_0" = cudnn_0_1_3;
   cudnn_1_0_1 = buildCratesLib {
     name = "cudnn";

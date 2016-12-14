@@ -170,5 +170,23 @@ rec {
     hash = "6a816012ca11cb47009693c1e0c6130e26d39e4d97ee2a13c50e868ec83e3204";
     deps = with allCrates; [  all__ws2_32-sys.ws2_32-sys_0_2 all__kernel32-sys.kernel32-sys_0_2 all__cfg-if.cfg-if_0_1 all__libc.libc_0_2 all__winapi.winapi_0_2 ];
   };
-  "net2_0_2" = net2_0_2_23;
-  "net2_0" = net2_0_2_23;}
+  net2_0_2_24 = buildCratesLib {
+    name = "net2";
+    version = "0.2.24";
+    hash = "078b0d6022f893aeeb2aeb4ed0b41683a09a97ec3c3c565fa74a5d3539d25618";
+    deps = with allCrates; [  all__cfg-if.cfg-if_0_1 all__libc.libc_0_2 ];
+  };
+  net2_0_2_25 = buildCratesLib {
+    name = "net2";
+    version = "0.2.25";
+    hash = "1dd775c6de972a1f57a34016f3b2bdc9e086e948f870b38675d1db410a21566b";
+    deps = with allCrates; [  all__cfg-if.cfg-if_0_1 all__libc.libc_0_2 ];
+  };
+  net2_0_2_26 = buildCratesLib {
+    name = "net2";
+    version = "0.2.26";
+    hash = "5edf9cb6be97212423aed9413dd4729d62b370b5e1c571750e882cebbbc1e3e2";
+    deps = with allCrates; [  all__cfg-if.cfg-if_0_1 all__libc.libc_0_2 all__libc.libc_0_2 all__libc.libc_0_2 all__libc.libc_0_2 all__libc.libc_0_2 ];
+  };
+  "net2_0_2" = net2_0_2_26;
+  "net2_0" = net2_0_2_26;}

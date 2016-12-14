@@ -25,6 +25,7 @@ rec {
     hash = "55626594feae15d266d52440b26ff77de0e22230cf0c113abe619084c1ddc910";
     deps = with allCrates; [  ];
   };
+  "crc64_0_2" = crc64_0_2_2;
   "crc64_0" = crc64_0_2_2;
   "crc64_1_0" = crc64_1_0_0;
   "crc64_1" = crc64_1_0_0;}

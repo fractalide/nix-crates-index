@@ -20,6 +20,7 @@ rec {
     hash = "d912704cfdae7cf13a185e87af94961c88286de3014891dd43c4050afae40043";
     deps = with allCrates; [  all__slog.slog_1 all__slog-term.slog-term_1 all__lazy_static.lazy_static_0_2 all__crossbeam.crossbeam_0_2 all__log.log_0_3 ];
   };
+  "slog-stdlog_0_7" = slog-stdlog_0_7_0;
   "slog-stdlog_0" = slog-stdlog_0_7_0;
   slog-stdlog_1_0_1 = buildCratesLib {
     name = "slog-stdlog";

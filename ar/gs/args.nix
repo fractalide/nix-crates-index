@@ -19,6 +19,7 @@ rec {
     hash = "59fae574add7743710b9bbd61ec861b0ac3aa71364ea2f1bed5dad3857432904";
     deps = with allCrates; [  all__log.log_0_3 all__getopts.getopts_0_2 ];
   };
+  "args_0_1" = args_0_1_1;
   "args_0" = args_0_1_1;
   args_1_0_1 = buildCratesLib {
     name = "args";
@@ -38,6 +39,7 @@ rec {
     hash = "7e97112ef00b54f7d9afa54a1d586d3a4a40949da04f9e9bf08daea951e25741";
     deps = with allCrates; [  all__getopts.getopts_0 all__log.log_0 ];
   };
+  "args_1_0" = args_1_0_2;
   "args_1" = args_1_0_2;
   args_2_0_1 = buildCratesLib {
     name = "args";

@@ -43,6 +43,7 @@ rec {
     hash = "cd8547f44d9fc1e598020a7de4450171836df4b5976435480f6ea05d3f548ae4";
     deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 url ];
   };
+  "google-storagetransfer1_0_1" = google-storagetransfer1_0_1_15;
   "google-storagetransfer1_0" = google-storagetransfer1_0_1_15;
   "google-storagetransfer1_1_0" = google-storagetransfer1_1_0_0;
   "google-storagetransfer1_1" = google-storagetransfer1_1_0_0;}

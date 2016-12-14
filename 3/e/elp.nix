@@ -13,6 +13,7 @@ rec {
     hash = "0f655f777c034bc1f57423a5c539b28573cfbe455ee4d88e9c009e66828ee938";
     deps = with allCrates; [  all__chrono.chrono_0_2 all__log.log_0_3 all__walkdir.walkdir_0_1 ];
   };
+  "elp_0_99" = elp_0_99_0;
   "elp_0" = elp_0_99_0;
   "elp_1_0" = elp_1_0_0;
   "elp_1" = elp_1_0_0;}

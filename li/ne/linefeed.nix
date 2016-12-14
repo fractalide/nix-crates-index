@@ -31,5 +31,30 @@ rec {
     hash = "eea02a6648e308381d565f1e4be0f926530be60adac6eda4c51826706f6c5599";
     deps = with allCrates; [  all__nix.nix_0_6 all__libc.libc_0_2 all__kernel32-sys.kernel32-sys_0_2 all__shell32-sys.shell32-sys_0_1 all__winapi.winapi_0_2 all__ole32-sys.ole32-sys_0_2 ];
   };
-  "linefeed_0_1" = linefeed_0_1_4;
-  "linefeed_0" = linefeed_0_1_4;}
+  linefeed_0_1_5 = buildCratesLib {
+    name = "linefeed";
+    version = "0.1.5";
+    hash = "ff56c1f86fc5461bb140696e89fd6a8d098716d2c6748c8bac701266c3d1301d";
+    deps = with allCrates; [  all__libc.libc_0_2 all__nix.nix_0_6 ];
+  };
+  linefeed_0_2_0 = buildCratesLib {
+    name = "linefeed";
+    version = "0.2.0";
+    hash = "0d04dff7f1655f02d86bc44b551c29a77610dc0ee22677a49acbebae45047fde";
+    deps = with allCrates; [  all__libc.libc_0_2 all__nix.nix_0_7 ];
+  };
+  "linefeed_0_1" = linefeed_0_1_5;
+  linefeed_0_2_1 = buildCratesLib {
+    name = "linefeed";
+    version = "0.2.1";
+    hash = "b2be7d9f93b2410ebc451baf413e58902c7cf382e32eb9ec52ca66b2d291d86d";
+    deps = with allCrates; [  all__libc.libc_0_2 all__nix.nix_0_7 ];
+  };
+  linefeed_0_2_2 = buildCratesLib {
+    name = "linefeed";
+    version = "0.2.2";
+    hash = "e715e20eeeacb0d1aa1b68333eecb84c191012dbd091ceca30d3b61ee8f74849";
+    deps = with allCrates; [  all__libc.libc_0_2 all__nix.nix_0_7 ];
+  };
+  "linefeed_0_2" = linefeed_0_2_2;
+  "linefeed_0" = linefeed_0_2_2;}

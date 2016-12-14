@@ -13,6 +13,7 @@ rec {
     hash = "e5adbcb0e0d4ab332889903ac55696023ed8662511d7c52116dc742437f7582c";
     deps = with allCrates; [  all__libc.libc_0_2 all__unqlite-sys.unqlite-sys_0_3 ];
   };
+  "unqlite_0_1" = unqlite_0_1_0;
   "unqlite_0" = unqlite_0_1_0;
   unqlite_1_1_0 = buildCratesLib {
     name = "unqlite";

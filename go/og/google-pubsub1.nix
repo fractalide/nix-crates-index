@@ -43,6 +43,7 @@ rec {
     hash = "2ea4f9d269f8886e597115901b7f092d989e41258211a371660d7eeea6ab14b3";
     deps = with allCrates; [  all__serde.serde_0_8 url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
   };
+  "google-pubsub1_0_1" = google-pubsub1_0_1_15;
   "google-pubsub1_0" = google-pubsub1_0_1_15;
   "google-pubsub1_1_0" = google-pubsub1_1_0_0;
   "google-pubsub1_1" = google-pubsub1_1_0_0;}

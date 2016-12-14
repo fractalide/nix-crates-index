@@ -25,6 +25,7 @@ rec {
     hash = "c7a1aaa346b53c50ad936c6b118178d312986c9959b7c063a04be013b540db62";
     deps = with allCrates; [  ];
   };
+  "linear-map_0_0" = linear-map_0_0_4;
   "linear-map_0" = linear-map_0_0_4;
   linear-map_1_1_0 = buildCratesLib {
     name = "linear-map";

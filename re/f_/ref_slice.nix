@@ -13,6 +13,7 @@ rec {
     hash = "24c91f8f8903c37f0525112df98ef53b1985abca5702972e5e00854cd874baf2";
     deps = with allCrates; [  ];
   };
+  "ref_slice_0_1" = ref_slice_0_1_0;
   "ref_slice_0" = ref_slice_0_1_0;
   ref_slice_1_1_0 = buildCratesLib {
     name = "ref_slice";

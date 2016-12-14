@@ -50,6 +50,7 @@ rec {
     hash = "16094a09d6dd4e16e46469c981279745d66d51c126fe567a0a11ff63810b14b5";
     deps = with allCrates; [  ];
   };
+  "threadpool_0_2" = threadpool_0_2_1;
   "threadpool_0" = threadpool_0_2_1;
   threadpool_1_0_1 = buildCratesLib {
     name = "threadpool";

@@ -13,6 +13,7 @@ rec {
     hash = "f8beb5ba24eca52f9958874445c4de5e086a7e82a1ec6b7ab81e5fcfb134f25a";
     deps = with allCrates; [  ];
   };
+  "log_buffer_0_1" = log_buffer_0_1_0;
   "log_buffer_0" = log_buffer_0_1_0;
   log_buffer_1_1_0 = buildCratesLib {
     name = "log_buffer";

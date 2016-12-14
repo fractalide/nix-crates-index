@@ -97,6 +97,7 @@ rec {
     hash = "2c5989883d551c9f410eddd45faa7c7b94a87b805aad878234ee19fcaa48db99";
     deps = with allCrates; [  url all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
   };
+  "google-webmasters3_0_1" = google-webmasters3_0_1_15;
   "google-webmasters3_0" = google-webmasters3_0_1_15;
   "google-webmasters3_1_0" = google-webmasters3_1_0_0;
   "google-webmasters3_1" = google-webmasters3_1_0_0;}

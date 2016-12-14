@@ -44,5 +44,19 @@ rec {
     hash = "bcd414e5a1a979b931bb92f41b7a54106d3f6d2e6c253e9ce943b7cd468251ef";
     deps = with allCrates; [  all__winapi.winapi_0_2 all__kernel32-sys.kernel32-sys_0_2 all__libc.libc_0_2 ];
   };
+  fs2_0_3_0 = buildCratesLib {
+    name = "fs2";
+    version = "0.3.0";
+    hash = "640001e1bd865c7c32806292822445af576a6866175b5225aa2087ca5e3de551";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
   "fs2_0_2" = fs2_0_2_5;
-  "fs2_0" = fs2_0_2_5;}
+  fs2_0_4_0 = buildCratesLib {
+    name = "fs2";
+    version = "0.4.0";
+    hash = "237b7991317b8d94391c0a4813b1f74fd81c11352440cd598d2b763ed288bfc1";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "fs2_0_3" = fs2_0_3_0;
+  "fs2_0_4" = fs2_0_4_0;
+  "fs2_0" = fs2_0_4_0;}

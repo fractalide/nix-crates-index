@@ -90,6 +90,7 @@ rec {
     hash = "bf0752ea81959fd65c71900f77442aba87bcc9acfc07d02edeee376e3a810f32";
     deps = with allCrates; [  all__libc.libc_0_2 all__bitflags.bitflags_0_7 ];
   };
+  "epoll_0_6" = epoll_0_6_0;
   "epoll_0" = epoll_0_6_0;
   "epoll_1_0" = epoll_1_0_0;
   "epoll_1" = epoll_1_0_0;}

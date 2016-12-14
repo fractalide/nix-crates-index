@@ -13,6 +13,7 @@ rec {
     hash = "047e7cb8fabd2e079d33e654f453460c14201b9f3d481b565cda8545b9d7cf01";
     deps = with allCrates; [  ];
   };
+  "thread-scoped_0_0" = thread-scoped_0_0_1;
   "thread-scoped_0" = thread-scoped_0_0_1;
   thread-scoped_1_0_1 = buildCratesLib {
     name = "thread-scoped";

@@ -43,6 +43,7 @@ rec {
     hash = "f9758fb805cb685e2f1a7b6f4f35ac7afaac1b32ec64ec389a05c6b24b559347";
     deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url all__mime.mime_0_2 ];
   };
+  "google-genomics1_0_1" = google-genomics1_0_1_15;
   "google-genomics1_0" = google-genomics1_0_1_15;
   "google-genomics1_1_0" = google-genomics1_1_0_0;
   "google-genomics1_1" = google-genomics1_1_0_0;}

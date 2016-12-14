@@ -37,6 +37,7 @@ rec {
     hash = "8f0acbdfb4dfb6ec9477e07164c662b9ac7fd96270368e708e8f5e2661a35bbd";
     deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url ];
   };
+  "google-deploymentmanager2_beta2_0_1" = google-deploymentmanager2_beta2_0_1_15;
   "google-deploymentmanager2_beta2_0" = google-deploymentmanager2_beta2_0_1_15;
   "google-deploymentmanager2_beta2_1_0" = google-deploymentmanager2_beta2_1_0_0;
   "google-deploymentmanager2_beta2_1" = google-deploymentmanager2_beta2_1_0_0;}

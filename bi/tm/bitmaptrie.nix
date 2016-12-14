@@ -13,6 +13,7 @@ rec {
     hash = "43bb265d8fa370f207668f38bf74c3b19a0ff72bea6609d639c1145dc058e3d8";
     deps = with allCrates; [  ];
   };
+  "bitmaptrie_0_9" = bitmaptrie_0_9_0;
   "bitmaptrie_0" = bitmaptrie_0_9_0;
   bitmaptrie_1_0_1 = buildCratesLib {
     name = "bitmaptrie";

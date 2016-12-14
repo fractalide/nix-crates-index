@@ -223,6 +223,7 @@ rec {
     hash = "96749399271b71255d8af408a9f7dba0039b2b8d7c2053813a506ffccf5b8169";
     deps = with allCrates; [  all__chrono.chrono_0_2 all__hyper.hyper_0_9 all__itertools.itertools_0_4 all__serde.serde_0_8 all__openssl.openssl_0_7 all__serde_json.serde_json_0_8 all__log.log_0_3 all__base64.base64_0_2 all__url.url_0_5 ];
   };
+  "yup-oauth2_0_9" = yup-oauth2_0_9_0;
   "yup-oauth2_0" = yup-oauth2_0_9_0;
   yup-oauth2_1_0_1 = buildCratesLib {
     name = "yup-oauth2";

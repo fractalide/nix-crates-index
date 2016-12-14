@@ -44,6 +44,7 @@ rec {
     hash = "cb874ebe26bbb9a961e2da8ba26c409a37ea371d0137663605830799b26f303a";
     deps = with allCrates; [  ];
   };
+  "unicase_0_1" = unicase_0_1_0;
   "unicase_0" = unicase_0_1_0;
   unicase_1_0_1 = buildCratesLib {
     name = "unicase";

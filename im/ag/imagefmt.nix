@@ -59,6 +59,7 @@ rec {
     hash = "3ebf828f6852b60091f47f9808bfc16c70dc0444f57c130086ccdcd104f5efe9";
     deps = with allCrates; [  ];
   };
+  "imagefmt_0_5" = imagefmt_0_5_1;
   "imagefmt_0" = imagefmt_0_5_1;
   imagefmt_1_0_1 = buildCratesLib {
     name = "imagefmt";
@@ -98,6 +99,7 @@ rec {
     hash = "cf0a821619ebaca521a4f2c0317d31b462bde43e83128434275fa4995b4fe915";
     deps = with allCrates; [  ];
   };
+  "imagefmt_1_2" = imagefmt_1_2_0;
   "imagefmt_1" = imagefmt_1_2_0;
   imagefmt_2_1_0 = buildCratesLib {
     name = "imagefmt";
@@ -118,6 +120,7 @@ rec {
     hash = "69e8ec7a9f18be79f6e3924e19028e25cd8aff8f29691a4c177c715c8bad2f04";
     deps = with allCrates; [  ];
   };
+  "imagefmt_2_1" = imagefmt_2_1_1;
   "imagefmt_2" = imagefmt_2_1_1;
   imagefmt_3_0_1 = buildCratesLib {
     name = "imagefmt";
@@ -131,6 +134,7 @@ rec {
     hash = "6ccf4a97bdaf8e465ee22c8583834000188c3f44fd3b6b3d15f858cbaf2b362f";
     deps = with allCrates; [  ];
   };
+  "imagefmt_3_0" = imagefmt_3_0_1;
   "imagefmt_3" = imagefmt_3_0_1;
   "imagefmt_4_0" = imagefmt_4_0_0;
   "imagefmt_4" = imagefmt_4_0_0;}

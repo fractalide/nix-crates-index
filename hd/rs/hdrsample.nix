@@ -13,6 +13,7 @@ rec {
     hash = "68166e07f8d8464cd825837c555d0b01f5bdcc96835f1825b9b4bc07a8f2dcf5";
     deps = with allCrates; [  all__num.num_0_1 ];
   };
+  "hdrsample_0_1" = hdrsample_0_1_0;
   "hdrsample_0" = hdrsample_0_1_0;
   hdrsample_1_1_0 = buildCratesLib {
     name = "hdrsample";
@@ -33,6 +34,7 @@ rec {
     hash = "8c5bf7e450d89e7e988d69994b8258edb1b359dea491b35c00a0f6b613758aa5";
     deps = with allCrates; [  all__num.num_0_1 ];
   };
+  "hdrsample_1_1" = hdrsample_1_1_1;
   "hdrsample_1" = hdrsample_1_1_1;
   hdrsample_2_1_0 = buildCratesLib {
     name = "hdrsample";

@@ -13,6 +13,7 @@ rec {
     hash = "586af90f948f528f72a9241ee25c88a67748d318d5353f3229ef835c615f89a0";
     deps = with allCrates; [  all__libpulse-sys.libpulse-sys_0_0 all__libc.libc_0_2 ];
   };
+  "pulse-simple_0_0" = pulse-simple_0_0_0;
   "pulse-simple_0" = pulse-simple_0_0_0;
   "pulse-simple_1_0" = pulse-simple_1_0_0;
   "pulse-simple_1" = pulse-simple_1_0_0;}

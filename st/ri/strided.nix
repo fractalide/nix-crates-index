@@ -7,13 +7,19 @@ rec {
     hash = "a934f7452baeed0d684e85a9cf569ebcaa15502f940889a0e7913406d776ec11";
     deps = with allCrates; [  ];
   };
+  strided_0_2_0 = buildCratesLib {
+    name = "strided";
+    version = "0.2.0";
+    hash = "f79a8cab6cb917b5a386cbeb2455a761fee287d8bb10e4ae2246e8621157169c";
+    deps = with allCrates; [  all__num.num_0_0 ];
+  };
+  "strided_0_1" = strided_0_1_0;
   strided_0_2_1 = buildCratesLib {
     name = "strided";
     version = "0.2.1";
     hash = "574e514bf29849a99e122ca6b094b68d47a4ffce720a1cdc5b5480b05a225dde";
     deps = with allCrates; [  all__num.num_0_0 ];
   };
-  "strided_0_1" = strided_0_1_0;
   strided_0_2_2 = buildCratesLib {
     name = "strided";
     version = "0.2.2";

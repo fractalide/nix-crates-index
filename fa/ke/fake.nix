@@ -34,6 +34,7 @@ rec {
     hash = "bfb4b87f8404f39abe025739d349ae6d26ba1eda4532f5a63536693269497bfd";
     deps = with allCrates; [  all__rand.rand_0_3 ];
   };
+  "fake_0_4" = fake_0_4_0;
   "fake_0" = fake_0_4_0;
   fake_1_1_0 = buildCratesLib {
     name = "fake";

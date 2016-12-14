@@ -13,6 +13,7 @@ rec {
     hash = "01ab3f13d822d5c864a0b00c1b6619644bf6c3d992487d616b9fb8f40edbadce";
     deps = with allCrates; [  all__rand.rand_0_3 all__piston_window.piston_window_0_15 all__clap.clap_1_2 all__find_folder.find_folder_0_2 ];
   };
+  "minesweeper_0_1" = minesweeper_0_1_0;
   "minesweeper_0" = minesweeper_0_1_0;
   minesweeper_1_1_0 = buildCratesLib {
     name = "minesweeper";

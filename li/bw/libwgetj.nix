@@ -73,6 +73,7 @@ rec {
     hash = "da907b0e3915f7e640bf730b588195ce6ff7b54a9655e864fcb7c1580a9e37be";
     deps = with allCrates; [  all__log.log_0_3 all__commandext.commandext_0_1 all__vergen.vergen_0_1 ];
   };
+  "libwgetj_0_1" = libwgetj_0_1_11;
   "libwgetj_0" = libwgetj_0_1_11;
   libwgetj_1_0_1 = buildCratesLib {
     name = "libwgetj";

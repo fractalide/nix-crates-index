@@ -43,6 +43,7 @@ rec {
     hash = "dd9dbf17fb22a2b6a820a601d7b4fd1eb100d2a365090a74ac6649222f53ba34";
     deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde.serde_0_8 ];
   };
+  "google-content2_sandbox_0_1" = google-content2_sandbox_0_1_15;
   "google-content2_sandbox_0" = google-content2_sandbox_0_1_15;
   "google-content2_sandbox_1_0" = google-content2_sandbox_1_0_0;
   "google-content2_sandbox_1" = google-content2_sandbox_1_0_0;}

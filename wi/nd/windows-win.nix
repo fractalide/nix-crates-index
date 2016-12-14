@@ -68,5 +68,11 @@ rec {
     deps = with allCrates; [  all__user32-sys.user32-sys_0_2 all__windows-error.windows-error_1_0_0 all__winapi.winapi_0_2 all__kernel32-sys.kernel32-sys_0_2 ];
   };
   "windows-win_0_7" = windows-win_0_7_0;
-  "windows-win_0_8" = windows-win_0_8_0;
-  "windows-win_0" = windows-win_0_8_0;}
+  windows-win_0_8_1 = buildCratesLib {
+    name = "windows-win";
+    version = "0.8.1";
+    hash = "e69d5e1a2d59a9131762630396b7caf27a4d629769d8fe2d1b39500358229719";
+    deps = with allCrates; [  ];
+  };
+  "windows-win_0_8" = windows-win_0_8_1;
+  "windows-win_0" = windows-win_0_8_1;}

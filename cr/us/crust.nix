@@ -388,5 +388,45 @@ rec {
     deps = with allCrates; [  all__net2.net2_0_2 all__igd.igd_0_4 all__crossbeam.crossbeam_0_2 all__config_file_handler.config_file_handler_0_3 all__get_if_addrs.get_if_addrs_0_4 all__socket_addr.socket_addr_0_1 all__maidsafe_utilities.maidsafe_utilities_0_6 all__quick-error.quick-error_1_0 all__sodiumoxide.sodiumoxide_0_0 all__byteorder.byteorder_0_5 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__rand.rand_0_3 all__tmp_mio.tmp_mio_0_5 ];
   };
   "crust_0_14" = crust_0_14_0;
+  crust_0_16_0 = buildCratesLib {
+    name = "crust";
+    version = "0.16.0";
+    hash = "758d518f695b023816a5b4921f1ed40e705683555baca38d76d8a8eca3191432";
+    deps = with allCrates; [  all__libc.libc_0_2 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__net2.net2_0_2 all__igd.igd_0_4 all__rand.rand_0_3 all__byteorder.byteorder_0_5 all__tmp_mio.tmp_mio_0_5 all__sodiumoxide.sodiumoxide_0_0 all__maidsafe_utilities.maidsafe_utilities_0_8 all__crossbeam.crossbeam_0_2 all__config_file_handler.config_file_handler_0_3 all__quick-error.quick-error_1_1 all__c_linked_list.c_linked_list_1_1 ];
+  };
   "crust_0_15" = crust_0_15_0;
-  "crust_0" = crust_0_15_0;}
+  crust_0_16_1 = buildCratesLib {
+    name = "crust";
+    version = "0.16.1";
+    hash = "84f6ca5058eced8e27fe37feb43bcf68cf87ed0dbe182336e67557ed14796161";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__crossbeam.crossbeam_0_2 all__unwrap.unwrap_1_1 all__log.log_0_3 all__config_file_handler.config_file_handler_0_3 all__tmp_mio.tmp_mio_0_5 all__net2.net2_0_2 all__rand.rand_0_3 all__igd.igd_0_4 all__libc.libc_0_2 all__maidsafe_utilities.maidsafe_utilities_0_8 all__byteorder.byteorder_0_5 all__c_linked_list.c_linked_list_1_1 all__quick-error.quick-error_1_1 sodiumoxide ];
+  };
+  crust_0_16_2 = buildCratesLib {
+    name = "crust";
+    version = "0.16.2";
+    hash = "400a478c2405d38d3c59246f62bbf697a3339052be735c3835521edaf0b052b3";
+    deps = with allCrates; [  all__log.log_0_3 all__unwrap.unwrap_1_1 all__igd.igd_0_5 all__config_file_handler.config_file_handler_0_3 all__tmp_mio.tmp_mio_0_5 all__maidsafe_utilities.maidsafe_utilities_0_8 all__net2.net2_0_2 all__crossbeam.crossbeam_0_2 all__rand.rand_0_3 all__rustc-serialize.rustc-serialize_0_3 all__c_linked_list.c_linked_list_1_1 all__libc.libc_0_2 sodiumoxide all__byteorder.byteorder_0_5 all__quick-error.quick-error_1_1 ];
+  };
+  crust_0_17_0 = buildCratesLib {
+    name = "crust";
+    version = "0.17.0";
+    hash = "037813af45b55802662da543c7dae4614e61378a7a295b967e6349ded29e3a3d";
+    deps = with allCrates; [  all__rand.rand_0_3 all__rust_sodium.rust_sodium_0_1 all__igd.igd_0_5 all__net2.net2_0_2 all__config_file_handler.config_file_handler_0_4 all__c_linked_list.c_linked_list_1_1 all__unwrap.unwrap_1_1 all__quick-error.quick-error_1_1 all__crossbeam.crossbeam_0_2 all__maidsafe_utilities.maidsafe_utilities_0_9 all__log.log_0_3 all__byteorder.byteorder_0_5 all__tmp_mio.tmp_mio_0_5 all__libc.libc_0_2 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "crust_0_16" = crust_0_16_2;
+  crust_0_18_0 = buildCratesLib {
+    name = "crust";
+    version = "0.18.0";
+    hash = "b3ab601e89adf0bf10a407744d7add26599bcc62b1b725013152a1e7d8ef31d6";
+    deps = with allCrates; [  all__maidsafe_utilities.maidsafe_utilities_0_9 all__igd.igd_0_5 all__tmp_mio.tmp_mio_0_5 all__libc.libc_0_2 all__net2.net2_0_2 all__log.log_0_3 all__unwrap.unwrap_1_1 all__crossbeam.crossbeam_0_2 all__rust_sodium.rust_sodium_0_1 all__rand.rand_0_3 all__c_linked_list.c_linked_list_1_1 all__config_file_handler.config_file_handler_0_4 all__quick-error.quick-error_1_1 all__rustc-serialize.rustc-serialize_0_3 all__byteorder.byteorder_0_5 ];
+  };
+  "crust_0_17" = crust_0_17_0;
+  crust_0_19_0 = buildCratesLib {
+    name = "crust";
+    version = "0.19.0";
+    hash = "774087d75eed86a05939934f148c192037be53c645237f4235556fb100f82fac";
+    deps = with allCrates; [  all__quick-error.quick-error_1_1 all__log.log_0_3 all__net2.net2_0_2 all__rand.rand_0_3 all__crossbeam.crossbeam_0_2 all__rustc-serialize.rustc-serialize_0_3 all__rust_sodium.rust_sodium_0_1 all__c_linked_list.c_linked_list_1_1 all__unwrap.unwrap_1_1 all__byteorder.byteorder_0_5 all__config_file_handler.config_file_handler_0_4 all__libc.libc_0_2 all__igd.igd_0_5 all__maidsafe_utilities.maidsafe_utilities_0_10 all__tmp_mio.tmp_mio_0_5 ];
+  };
+  "crust_0_18" = crust_0_18_0;
+  "crust_0_19" = crust_0_19_0;
+  "crust_0" = crust_0_19_0;}

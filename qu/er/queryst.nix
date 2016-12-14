@@ -103,6 +103,7 @@ rec {
     hash = "b3f9a854d563bde8771cffea9ae0f32ea8e35a005680fdae618383781519ba0f";
     deps = with allCrates; [  all__regex.regex_0_1 all__serde_json.serde_json_0_7 all__url.url_1 all__serde.serde_0_7 all__lazy_static.lazy_static_0_2 ];
   };
+  "queryst_0_1" = queryst_0_1_16;
   "queryst_0" = queryst_0_1_16;
   queryst_1_0_1 = buildCratesLib {
     name = "queryst";

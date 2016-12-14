@@ -97,6 +97,7 @@ rec {
     hash = "f5fd62ae0b5f92152dbcec703f72c6f4638aa8bf3ae40965218248122065f2c8";
     deps = with allCrates; [  all__mime.mime_0_2 url all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 ];
   };
+  "google-replicapool1_beta2_0_1" = google-replicapool1_beta2_0_1_15;
   "google-replicapool1_beta2_0" = google-replicapool1_beta2_0_1_15;
   "google-replicapool1_beta2_1_0" = google-replicapool1_beta2_1_0_0;
   "google-replicapool1_beta2_1" = google-replicapool1_beta2_1_0_0;}

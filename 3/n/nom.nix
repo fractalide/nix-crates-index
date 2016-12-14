@@ -168,6 +168,7 @@ rec {
     hash = "382e7540dd6a45efb292024886148f0ba03510a3c10f872874cf7d504bf64cb6";
     deps = with allCrates; [  ];
   };
+  "nom_0_5" = nom_0_5_0;
   "nom_0" = nom_0_5_0;
   nom_1_0_1 = buildCratesLib {
     name = "nom";
@@ -219,6 +220,7 @@ rec {
     hash = "628d6ee18ab0ca1c1feb3331caa6ad2e53f6053b2505662b90d194889bbcd571";
     deps = with allCrates; [  ];
   };
+  "nom_1_2" = nom_1_2_4;
   "nom_1" = nom_1_2_4;
   "nom_2_0" = nom_2_0_0;
   "nom_2" = nom_2_0_0;}

@@ -70,6 +70,7 @@ rec {
     hash = "572a9fb04ff1780c7465cff8b68ead1687bb5e2febf6fd93a4421bab8fe93a0c";
     deps = with allCrates; [  ];
   };
+  "alfred_0_3" = alfred_0_3_1;
   "alfred_0" = alfred_0_3_1;
   alfred_1_0_1 = buildCratesLib {
     name = "alfred";
@@ -83,6 +84,7 @@ rec {
     hash = "74aa235f690e56af45cb239cbeb3acb5594e12c9a2bdfcdd577acb1149673765";
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  "alfred_1_0" = alfred_1_0_1;
   "alfred_1" = alfred_1_0_1;
   "alfred_2_0" = alfred_2_0_0;
   "alfred_2" = alfred_2_0_0;}

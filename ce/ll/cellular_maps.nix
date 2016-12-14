@@ -38,6 +38,7 @@ rec {
     hash = "6e7c79f7f57ec0c11a9e3199935892a31566b015ffd9bd53002db0ee271dc7eb";
     deps = with allCrates; [  all__rand.rand_0_3 ];
   };
+  "cellular_maps_0_1" = cellular_maps_0_1_1;
   "cellular_maps_0" = cellular_maps_0_1_1;
   "cellular_maps_1_0" = cellular_maps_1_0_0;
   "cellular_maps_1" = cellular_maps_1_0_0;}

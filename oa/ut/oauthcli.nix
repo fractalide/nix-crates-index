@@ -68,6 +68,7 @@ rec {
     hash = "77086323390b4db9ba5da9f07fed3f05a3e898e4e89f76635d3db50d9a0b604f";
     deps = with allCrates; [  all__time.time_0_1 all__rand.rand_0_3 all__rustc-serialize.rustc-serialize_0_3 all__url.url_1_2 ];
   };
+  "oauthcli_0_1" = oauthcli_0_1_2;
   "oauthcli_0" = oauthcli_0_1_2;
   oauthcli_1_0_1 = buildCratesLib {
     name = "oauthcli";

@@ -46,5 +46,12 @@ rec {
     deps = with allCrates; [  all__kernel32-sys.kernel32-sys_0_2 all__libc.libc_0_2 all__fs2.fs2_0_2 all__winapi.winapi_0_2 ];
   };
   "memmap_0_3" = memmap_0_3_0;
+  memmap_0_5_0 = buildCratesLib {
+    name = "memmap";
+    version = "0.5.0";
+    hash = "065ce59af31c18ea2c419100bda6247dd4ec3099423202b12f0bd32e529fabd2";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
   "memmap_0_4" = memmap_0_4_0;
-  "memmap_0" = memmap_0_4_0;}
+  "memmap_0_5" = memmap_0_5_0;
+  "memmap_0" = memmap_0_5_0;}
