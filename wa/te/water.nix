@@ -26,5 +26,186 @@ rec {
     hash = "1e550e033d05bf024c6b39b981aac4eda00ff2bdbba5eefbc53655c26a4cd645";
     deps = with allCrates; [  ];
   };
-  "water_0_1" = water_0_1_5;
-  "water_0" = water_0_1_5;}
+  water_0_1_6 = buildCratesLib {
+    name = "water";
+    version = "0.1.6";
+    hash = "fc4ff20d05d1293768c885019d1df1955de64ce84ef9cbfe031d5079bdb2d098";
+    deps = with allCrates; [  ];
+  };
+  water_0_1_7 = buildCratesLib {
+    name = "water";
+    version = "0.1.7";
+    hash = "d59bee5fd0d8665c0cb9cbf741c5ebc622defcd756c3c91500b8973681e88337";
+    deps = with allCrates; [  ];
+  };
+  water_0_2_8 = buildCratesLib {
+    name = "water";
+    version = "0.2.8";
+    hash = "52eafd966e0110bdac339fb9c8606260b1d85f5f0816ef9cff63056877bbf702";
+    deps = with allCrates; [  ];
+  };
+  "water_0_1" = water_0_1_7;
+  water_0_3_9 = buildCratesLib {
+    name = "water";
+    version = "0.3.9";
+    hash = "bb1d223dd4a32b38b498652fa530d019d17767facc004bf4820bc18c626a4fad";
+    deps = with allCrates; [  ];
+  };
+  "water_0_2" = water_0_2_8;
+  water_0_3_10 = buildCratesLib {
+    name = "water";
+    version = "0.3.10";
+    hash = "02a601957e04f078864d7a59b5215809093d393c814a942b2246cc41b182604b";
+    deps = with allCrates; [  ];
+  };
+  water_0_3_11 = buildCratesLib {
+    name = "water";
+    version = "0.3.11";
+    hash = "1e9e8926764c8e972617f38be4262662aae1ca82662960b5547706c643509123";
+    deps = with allCrates; [  ];
+  };
+  water_0_4_12 = buildCratesLib {
+    name = "water";
+    version = "0.4.12";
+    hash = "28b7892c855d1f2df2b677a2fdfcd9098bda4486b3df4e8347bcf1b4f244e6cd";
+    deps = with allCrates; [  ];
+  };
+  "water_0_3" = water_0_3_11;
+  water_0_4_13 = buildCratesLib {
+    name = "water";
+    version = "0.4.13";
+    hash = "6139fdfca1d0bdbd1d4eda954849fe50c4aeab50253431b23843b4c5636559d3";
+    deps = with allCrates; [  ];
+  };
+  water_0_6_18 = buildCratesLib {
+    name = "water";
+    version = "0.6.18";
+    hash = "1f9270edff88cbce72838ee4860d562d44593c1e2f74d88810f9ce18416b1be5";
+    deps = with allCrates; [  ];
+  };
+  "water_0_4" = water_0_4_13;
+  water_0_6_19 = buildCratesLib {
+    name = "water";
+    version = "0.6.19";
+    hash = "170ef7fdd010718c263db001552570a7e17229d27ba9063608c7161622ba75ef";
+    deps = with allCrates; [  ];
+  };
+  water_0_6_20 = buildCratesLib {
+    name = "water";
+    version = "0.6.20";
+    hash = "6debe64148c7903f5c5be9110c880a918de1aaef55dcd47018e996be12c129be";
+    deps = with allCrates; [  ];
+  };
+  water_0_6_21 = buildCratesLib {
+    name = "water";
+    version = "0.6.21";
+    hash = "c68730e4cdc2a0fa51582dab26fef5847db15735d4a547eeddea1df985a3d6eb";
+    deps = with allCrates; [  ];
+  };
+  water_0_7_22 = buildCratesLib {
+    name = "water";
+    version = "0.7.22";
+    hash = "d2fc83e6fae28f65679843678e9d576ed9d6f98fb93f145e60e49a27bd9745be";
+    deps = with allCrates; [  ];
+  };
+  "water_0_6" = water_0_6_21;
+  water_0_8_23 = buildCratesLib {
+    name = "water";
+    version = "0.8.23";
+    hash = "e5acf9a888a426a525b8f5063081c71ec418a4f818778976cdb4249d52f54602";
+    deps = with allCrates; [  ];
+  };
+  "water_0_7" = water_0_7_22;
+  water_0_10_25 = buildCratesLib {
+    name = "water";
+    version = "0.10.25";
+    hash = "639803965a112b7f14c9d53499106193cbdc7ea2a2f8198a4bedb55450457d33";
+    deps = with allCrates; [  ];
+  };
+  "water_0_8" = water_0_8_23;
+  water_0_10_26 = buildCratesLib {
+    name = "water";
+    version = "0.10.26";
+    hash = "b05a779f58979d208085b53b0057cb8f2cce8e12de7219dc9dbec59221a0610d";
+    deps = with allCrates; [  time ];
+  };
+  water_0_11_27 = buildCratesLib {
+    name = "water";
+    version = "0.11.27";
+    hash = "39fccc41a3aaf356608d97eba19eebf1fbf0e1e83199ce15b684c60e026a4fff";
+    deps = with allCrates; [  time ];
+  };
+  "water_0_10" = water_0_10_26;
+  water_0_12_30 = buildCratesLib {
+    name = "water";
+    version = "0.12.30";
+    hash = "f3c16214d67632810f3835668ef0af4b100039d01b2387605eeab7c010ebc615";
+    deps = with allCrates; [  time ];
+  };
+  "water_0_11" = water_0_11_27;
+  water_0_13_31 = buildCratesLib {
+    name = "water";
+    version = "0.13.31";
+    hash = "f90c1d0ff20dd60bf97b8623ccf58f5fd3c2997d55d2347f400cc88d6a344fbd";
+    deps = with allCrates; [  time ];
+  };
+  "water_0_12" = water_0_12_30;
+  water_0_14_33 = buildCratesLib {
+    name = "water";
+    version = "0.14.33";
+    hash = "2a7d537d7064e8650cfece6ef7b336fd9d71f47028389f86459e535f2a99df86";
+    deps = with allCrates; [  all__time.time_0_1 ];
+  };
+  "water_0_13" = water_0_13_31;
+  water_0_14_34 = buildCratesLib {
+    name = "water";
+    version = "0.14.34";
+    hash = "d2b799c3114fe39097d4283299e952457faecfc734080dfe1242368643306ddc";
+    deps = with allCrates; [  all__time.time_0_1 ];
+  };
+  water_0_14_38 = buildCratesLib {
+    name = "water";
+    version = "0.14.38";
+    hash = "a997648931dc62ff953f746b4f1fa9a7acdc68f3b46a749e7c4e6a0296832371";
+    deps = with allCrates; [  time ];
+  };
+  water_0_14_39 = buildCratesLib {
+    name = "water";
+    version = "0.14.39";
+    hash = "d1465358d2068a1dc7a412a8d6a3e1e1b4cee7d99019fdf81814e132245ff792";
+    deps = with allCrates; [  time ];
+  };
+  water_0_14_41 = buildCratesLib {
+    name = "water";
+    version = "0.14.41";
+    hash = "d33d61c73698c63ca72de52bf521f0dca22fae3e852609e05f67f0687b1f0df8";
+    deps = with allCrates; [  time ];
+  };
+  water_0_15_42 = buildCratesLib {
+    name = "water";
+    version = "0.15.42";
+    hash = "99e5ed3219626c3f9e863daaacbf6929addee5b35873b3dad37c573e42bfedeb";
+    deps = with allCrates; [  time ];
+  };
+  "water_0_14" = water_0_14_41;
+  water_0_16_43 = buildCratesLib {
+    name = "water";
+    version = "0.16.43";
+    hash = "0bb36335ddc1585cedf121d7d7ffd9bf73ec215226b20933d234f7d426a4ad69";
+    deps = with allCrates; [  time ];
+  };
+  "water_0_15" = water_0_15_42;
+  water_0_16_44 = buildCratesLib {
+    name = "water";
+    version = "0.16.44";
+    hash = "84ee813280366261591d123d82d2857f033bda760fdcff2599204e74b0bc9feb";
+    deps = with allCrates; [  time ];
+  };
+  water_0_16_45 = buildCratesLib {
+    name = "water";
+    version = "0.16.45";
+    hash = "58810f7fc8f2f784e3de86e6b5f819a42eca29161ebd90a9bfedda618026e715";
+    deps = with allCrates; [  time ];
+  };
+  "water_0_16" = water_0_16_45;
+  "water_0" = water_0_16_45;}

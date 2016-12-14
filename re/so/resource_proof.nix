@@ -20,5 +20,42 @@ rec {
     hash = "d6ea6fea2a95b8f16e0399ee3252d7a919f9feb653ca797493614f914e2f4e7c";
     deps = with allCrates; [  all__termion.termion_1_1 all__tiny-keccak.tiny-keccak_1_1 all__clap.clap_2_14 ];
   };
-  "resource_proof_0_2" = resource_proof_0_2_1;
-  "resource_proof_0" = resource_proof_0_2_1;}
+  resource_proof_0_2_2 = buildCratesLib {
+    name = "resource_proof";
+    version = "0.2.2";
+    hash = "0a6da99e5a4fe13b997d26452a331df2a3912eb189b35a32d6962e7b312a310c";
+    deps = with allCrates; [  all__clap.clap_2_14 all__tiny-keccak.tiny-keccak_1_1 all__termion.termion_1_1 ];
+  };
+  resource_proof_0_2_3 = buildCratesLib {
+    name = "resource_proof";
+    version = "0.2.3";
+    hash = "df4ea85e5435072edcb0549ca29ef68d141eb3f254e72a9e3820173f7b4c91a1";
+    deps = with allCrates; [  all__clap.clap_2_14 all__tiny-keccak.tiny-keccak_1_1 all__termion.termion_1_1 ];
+  };
+  resource_proof_0_2_4 = buildCratesLib {
+    name = "resource_proof";
+    version = "0.2.4";
+    hash = "5111fa05e4370464007d4802bd13fe0c03bf43b821b11329a2361ac08e22e2b8";
+    deps = with allCrates; [  all__tiny-keccak.tiny-keccak_1_1 all__clap.clap_2_14 all__termion.termion_1_1 ];
+  };
+  resource_proof_0_2_5 = buildCratesLib {
+    name = "resource_proof";
+    version = "0.2.5";
+    hash = "8cb2a5ac20c3cab2368e2458add532f4e7a757e5db5e69759f4385abe96bdcbe";
+    deps = with allCrates; [  all__clap.clap_2_14 all__tiny-keccak.tiny-keccak_1_1 all__termion.termion_1_1 ];
+  };
+  resource_proof_0_2_7 = buildCratesLib {
+    name = "resource_proof";
+    version = "0.2.7";
+    hash = "fb8b2f8604618596dfbcf85a2f8df6d0a004d412bc47e0180921c5a6b1b7f0c2";
+    deps = with allCrates; [  all__tiny-keccak.tiny-keccak_1_1 all__clap.clap_2_14 all__rand.rand_0_3 all__termion.termion_1_1 ];
+  };
+  resource_proof_0_3_0 = buildCratesLib {
+    name = "resource_proof";
+    version = "0.3.0";
+    hash = "bc10dff38a814d0cb7c61560a60a23bf5738f85a2641754806e3f5a3f0a3951c";
+    deps = with allCrates; [  all__rand.rand_0_3 all__clap.clap_2_14 all__tiny-keccak.tiny-keccak_1_1 all__termion.termion_1_1 ];
+  };
+  "resource_proof_0_2" = resource_proof_0_2_7;
+  "resource_proof_0_3" = resource_proof_0_3_0;
+  "resource_proof_0" = resource_proof_0_3_0;}

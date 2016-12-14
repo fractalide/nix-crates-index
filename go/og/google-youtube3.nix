@@ -58,8 +58,8 @@ rec {
   google-youtube3_0_1_9 = buildCratesLib {
     name = "google-youtube3";
     version = "0.1.9";
-    hash = "49dbdb35228be3e9648747763e43782f90f3ed9c1887ce623246a0ab4cf1971e";
-    deps = with allCrates; [  url all__mime.mime_0_1 hyper yup-oauth2 serde serde_json syntex serde_codegen ];
+    hash = "dfb217f9489a42575b631655f1b6feeb1cf8517288954b23a491bd86baf153e0";
+    deps = with allCrates; [  serde_json all__mime.mime_0_1 serde yup-oauth2 url hyper syntex serde_codegen ];
   };
   google-youtube3_0_1_10 = buildCratesLib {
     name = "google-youtube3";
@@ -82,8 +82,8 @@ rec {
   google-youtube3_0_1_14 = buildCratesLib {
     name = "google-youtube3";
     version = "0.1.14";
-    hash = "7e8dfc196db81570842fbe48ccfa163f279502675bd210274cb43200d2d74dc1";
-    deps = with allCrates; [  all__serde.serde_0_7 all__serde_json.serde_json_0_7 all__hyper.hyper_0_9 url all__mime.mime_0_2 ];
+    hash = "92dfbdacf288510135c9690e5d41c4c92c7e67fa47c57cfe43359ff817195b31";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 url all__serde.serde_0_8 ];
   };
   google-youtube3_0_1_15 = buildCratesLib {
     name = "google-youtube3";

@@ -7,6 +7,12 @@ rec {
     hash = "1c31862716f55d7fa2345df2f75459e431bbe537faa310debbffedd4df67c65f";
     deps = with allCrates; [  libc all__pkg-config.pkg-config_0_3 all__gcc.gcc_0_3 ];
   };
+  pam-sys_0_0_2 = buildCratesLib {
+    name = "pam-sys";
+    version = "0.0.2";
+    hash = "2d99be5c2c333b61028949a6c54a56cbf12eca887ef8f2edb339582ba7e1a83d";
+    deps = with allCrates; [  libc all__pkg-config.pkg-config_0_3 all__gcc.gcc_0_3 ];
+  };
   pam-sys_0_0_3 = buildCratesLib {
     name = "pam-sys";
     version = "0.0.3";

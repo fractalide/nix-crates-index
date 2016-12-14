@@ -22,8 +22,8 @@ rec {
   google-dfareporting2d1_0_1_9 = buildCratesLib {
     name = "google-dfareporting2d1";
     version = "0.1.9";
-    hash = "c4fb555c2ad425cb275176675c22daecc08fed0cedb94f10bce6612b15216c47";
-    deps = with allCrates; [  serde url serde_json yup-oauth2 all__mime.mime_0_1 hyper syntex serde_codegen ];
+    hash = "d491e0ba0d438c8ec0c8b494a86937d9e158622796caaabec309f36950f6a3b8";
+    deps = with allCrates; [  hyper yup-oauth2 serde all__mime.mime_0_1 serde_json url serde_codegen syntex ];
   };
   google-dfareporting2d1_0_1_10 = buildCratesLib {
     name = "google-dfareporting2d1";

@@ -58,8 +58,8 @@ rec {
   google-admin1_directory_0_1_9 = buildCratesLib {
     name = "google-admin1_directory";
     version = "0.1.9";
-    hash = "1fab690a41e00e77b2c3f690ded1393ebbff858af02a104f6103fc9625ae3017";
-    deps = with allCrates; [  yup-oauth2 serde serde_json url hyper all__mime.mime_0_1 serde_codegen syntex ];
+    hash = "7277918be7742657c6699af657ba0136e097f7d804469b084c8b687103c4c701";
+    deps = with allCrates; [  all__mime.mime_0_1 hyper serde_json url yup-oauth2 serde serde_codegen syntex ];
   };
   google-admin1_directory_0_1_10 = buildCratesLib {
     name = "google-admin1_directory";
@@ -82,8 +82,8 @@ rec {
   google-admin1_directory_0_1_14 = buildCratesLib {
     name = "google-admin1_directory";
     version = "0.1.14";
-    hash = "4d53de8ee83ea0db66d12c665a4f3a9a3939122d7bb1a637225f5e6fa6aa9d6c";
-    deps = with allCrates; [  all__serde_json.serde_json_0_7 all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_7 url ];
+    hash = "5b3a848b4c58d94bc61933e0a73c8b48cb3ee3fcb981338ecb307aafbd0b4fb8";
+    deps = with allCrates; [  all__serde.serde_0_8 url all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
   };
   google-admin1_directory_0_1_15 = buildCratesLib {
     name = "google-admin1_directory";

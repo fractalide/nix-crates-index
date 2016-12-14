@@ -34,8 +34,8 @@ rec {
   google-youtubereporting1_0_1_14 = buildCratesLib {
     name = "google-youtubereporting1";
     version = "0.1.14";
-    hash = "ca470b4d58a8581f6d14eb13cc32a48ac6aa08691d9d7deaf2c043ee5720cc9e";
-    deps = with allCrates; [  all__serde_json.serde_json_0_7 url all__serde.serde_0_7 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+    hash = "7082c410a042a62d56705f0ae9c83af6bbe43b35ce8809369329503d2065776b";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 url all__serde_json.serde_json_0_8 ];
   };
   google-youtubereporting1_0_1_15 = buildCratesLib {
     name = "google-youtubereporting1";

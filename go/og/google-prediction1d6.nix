@@ -88,8 +88,8 @@ rec {
   google-prediction1d6_0_1_14 = buildCratesLib {
     name = "google-prediction1d6";
     version = "0.1.14";
-    hash = "611b29f1c589e778a3df55ccbd34c25db2396da4b900e42ecaa4d6ae225c2cad";
-    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_7 all__mime.mime_0_2 url all__serde_json.serde_json_0_7 ];
+    hash = "89b584ab8f859b03a12eee4a6f620dcf20fc13830fa97fad724c7ba5df80668a";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 url all__serde.serde_0_8 ];
   };
   google-prediction1d6_0_1_15 = buildCratesLib {
     name = "google-prediction1d6";

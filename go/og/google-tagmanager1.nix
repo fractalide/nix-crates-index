@@ -58,8 +58,8 @@ rec {
   google-tagmanager1_0_1_9 = buildCratesLib {
     name = "google-tagmanager1";
     version = "0.1.9";
-    hash = "c96295b381888495ca0a0968716e2d745586bc6932a456cfb4e4680878bbedb1";
-    deps = with allCrates; [  hyper url all__mime.mime_0_1 serde_json serde yup-oauth2 syntex serde_codegen ];
+    hash = "591c35550719b9d8a6d3adf6540a3a8aab41792852f3e2683b33439b26b6822c";
+    deps = with allCrates; [  serde_json hyper serde url yup-oauth2 all__mime.mime_0_1 syntex serde_codegen ];
   };
   google-tagmanager1_0_1_10 = buildCratesLib {
     name = "google-tagmanager1";

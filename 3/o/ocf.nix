@@ -7,5 +7,12 @@ rec {
     hash = "c522e011e130341dd61be7388eb31baf5a4b14e254e06856181468a4faad598c";
     deps = with allCrates; [  all__serde.serde_0_6 all__semver.semver_0_2 all__serde-value.serde-value_0_0 all__serde_json.serde_json_0_6 ];
   };
+  ocf_0_2_0 = buildCratesLib {
+    name = "ocf";
+    version = "0.2.0";
+    hash = "5b0d4613d56c13c337de92d757f56f33246e5b7d625e1c67bd6465fb4bff64f5";
+    deps = with allCrates; [  all__serde-value.serde-value_0_1 all__serde.serde_0_7 all__serde_json.serde_json_0_7 all__semver.semver_0_2 ];
+  };
   "ocf_0_0" = ocf_0_0_1;
-  "ocf_0" = ocf_0_0_1;}
+  "ocf_0_2" = ocf_0_2_0;
+  "ocf_0" = ocf_0_2_0;}

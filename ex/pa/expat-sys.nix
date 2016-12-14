@@ -4,8 +4,8 @@ rec {
   expat-sys_2_1_0 = buildCratesLib {
     name = "expat-sys";
     version = "2.1.0";
-    hash = "bd50013cec61cce96511dda94abf11d93bb45137188fb90afd1a1148f0469549";
-    deps = with allCrates; [  all__make-cmd.make-cmd_0_1 all__pkg-config.pkg-config_0_3 ];
+    hash = "303661971109f841907e5c80d0649c0a01df8762c04d86595893c3e89096f31f";
+    deps = with allCrates; [  all__pkg-config.pkg-config_0_3 all__make-cmd.make-cmd_0_1 ];
   };
   expat-sys_2_1_1 = buildCratesLib {
     name = "expat-sys";

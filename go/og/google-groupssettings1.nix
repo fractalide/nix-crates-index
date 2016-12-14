@@ -88,8 +88,8 @@ rec {
   google-groupssettings1_0_1_14 = buildCratesLib {
     name = "google-groupssettings1";
     version = "0.1.14";
-    hash = "6f168e091d4ca5efa8532ce88031fdc1acf0af4d60b4aa48b831b4a2d13c86c9";
-    deps = with allCrates; [  all__serde.serde_0_7 all__hyper.hyper_0_9 all__serde_json.serde_json_0_7 all__mime.mime_0_2 url ];
+    hash = "88d94c4a6e51bbd4644709e5c07570ac05bab95ad377f771ffed1e00978e481d";
+    deps = with allCrates; [  all__serde.serde_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde_json.serde_json_0_8 url ];
   };
   google-groupssettings1_0_1_15 = buildCratesLib {
     name = "google-groupssettings1";

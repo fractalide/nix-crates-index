@@ -58,8 +58,8 @@ rec {
   google-webmasters3_0_1_9 = buildCratesLib {
     name = "google-webmasters3";
     version = "0.1.9";
-    hash = "e318fce2bf0d4b7afebfe709ba7883789fd6222434f0aad01ba2120537acb416";
-    deps = with allCrates; [  yup-oauth2 serde_json all__mime.mime_0_1 serde hyper url syntex serde_codegen ];
+    hash = "0a2cc9da23479435d12aee4e177035e3979f1053272ed8d411e602cc0e133988";
+    deps = with allCrates; [  all__mime.mime_0_1 serde url yup-oauth2 serde_json hyper serde_codegen syntex ];
   };
   google-webmasters3_0_1_10 = buildCratesLib {
     name = "google-webmasters3";

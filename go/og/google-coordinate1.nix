@@ -58,8 +58,8 @@ rec {
   google-coordinate1_0_1_9 = buildCratesLib {
     name = "google-coordinate1";
     version = "0.1.9";
-    hash = "84267291adc20573c79a1a855da5e81215157fbdcafa762595d9e17b41fff4d0";
-    deps = with allCrates; [  serde url hyper all__mime.mime_0_1 serde_json yup-oauth2 syntex serde_codegen ];
+    hash = "e09dbcde6ee29fcd33efbcaf5567faf6a72eef019cf10c0fc77965d5a9b665eb";
+    deps = with allCrates; [  hyper yup-oauth2 serde serde_json url all__mime.mime_0_1 syntex serde_codegen ];
   };
   google-coordinate1_0_1_10 = buildCratesLib {
     name = "google-coordinate1";

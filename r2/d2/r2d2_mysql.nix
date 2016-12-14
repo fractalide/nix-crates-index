@@ -55,7 +55,6 @@ rec {
     deps = with allCrates; [  all__r2d2.r2d2_0_7 all__mysql.mysql_7_1 all__rustc-serialize.rustc-serialize_0_3 ];
   };
   "r2d2_mysql_3_0" = r2d2_mysql_3_0_0;
-  "r2d2_mysql_3_0" = r2d2_mysql_3_0_0;
   "r2d2_mysql_3" = r2d2_mysql_3_0_0;
   "r2d2_mysql_7_1" = r2d2_mysql_7_1_0;
   "r2d2_mysql_7" = r2d2_mysql_7_1_0;}

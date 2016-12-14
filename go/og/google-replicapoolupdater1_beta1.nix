@@ -58,8 +58,8 @@ rec {
   google-replicapoolupdater1_beta1_0_1_9 = buildCratesLib {
     name = "google-replicapoolupdater1_beta1";
     version = "0.1.9";
-    hash = "6619fd873546101ba6e9236a64f30b512b83deb5ecb04448d530cfab922277f0";
-    deps = with allCrates; [  hyper serde yup-oauth2 serde_json url all__mime.mime_0_1 syntex serde_codegen ];
+    hash = "8f9aad442e7f29ea5bd63e9d2d975c5315bb57967b4ed8367fd3e3f2e83892a6";
+    deps = with allCrates; [  hyper all__mime.mime_0_1 serde_json yup-oauth2 url serde serde_codegen syntex ];
   };
   google-replicapoolupdater1_beta1_0_1_10 = buildCratesLib {
     name = "google-replicapoolupdater1_beta1";

@@ -7,5 +7,12 @@ rec {
     hash = "759a757b6356979cdf20ef7391247efc246fdb5daadcccd1c6d40d6acb2d6a04";
     deps = with allCrates; [  all__cookie.cookie_0_2 all__typeable.typeable_0_1 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__vecio.vecio_0_1 all__url.url_1_0 all__language-tags.language-tags_0_2 all__mime.mime_0_2 all__spmc.spmc_0_2 all__httparse.httparse_1_0 all__rotor.rotor_0_6 all__unicase.unicase_1_0 all__time.time_0_1 all__traitobject.traitobject_0_0_1 ];
   };
+  sotahyper_0_10_0 = buildCratesLib {
+    name = "sotahyper";
+    version = "0.10.0";
+    hash = "e50d0a3f070a47e813b175d878973ab25880c62f4b7bb909894b57f3b633bd34";
+    deps = with allCrates; [  all__time.time_0_1 all__rotor.rotor_0_6 all__log.log_0_3 all__spmc.spmc_0_2 all__cookie.cookie_0_2 all__httparse.httparse_1_0 all__rustc-serialize.rustc-serialize_0_3 all__unicase.unicase_1_0 all__mime.mime_0_2 all__language-tags.language-tags_0_2 all__vecio.vecio_0_1 all__url.url_1_0 ];
+  };
   "sotahyper_0_9" = sotahyper_0_9_400;
-  "sotahyper_0" = sotahyper_0_9_400;}
+  "sotahyper_0_10" = sotahyper_0_10_0;
+  "sotahyper_0" = sotahyper_0_10_0;}

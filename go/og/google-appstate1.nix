@@ -58,8 +58,8 @@ rec {
   google-appstate1_0_1_9 = buildCratesLib {
     name = "google-appstate1";
     version = "0.1.9";
-    hash = "68e36bc45f66ad902707819d37ee6ff2681dce02162de83b0963506f0c6ffc50";
-    deps = with allCrates; [  url serde_json all__mime.mime_0_1 yup-oauth2 hyper serde serde_codegen syntex ];
+    hash = "42d93904ac11d6050c17a0716d7de0c31add15ed970a83df649ef0dc942f29f5";
+    deps = with allCrates; [  yup-oauth2 url serde all__mime.mime_0_1 serde_json hyper syntex serde_codegen ];
   };
   google-appstate1_0_1_10 = buildCratesLib {
     name = "google-appstate1";
@@ -88,8 +88,8 @@ rec {
   google-appstate1_0_1_14 = buildCratesLib {
     name = "google-appstate1";
     version = "0.1.14";
-    hash = "b47929338b29349c3cca6f03ebf775f4a7bec2d57979fc82ccb16f24aa14199e";
-    deps = with allCrates; [  all__serde.serde_0_7 url all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_7 ];
+    hash = "819e4362483760009623e85d3fc89a082c7ac6f5c56a23e48756ad033128f70a";
+    deps = with allCrates; [  all__serde.serde_0_8 url all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
   };
   google-appstate1_0_1_15 = buildCratesLib {
     name = "google-appstate1";

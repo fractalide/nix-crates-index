@@ -75,5 +75,13 @@ rec {
   };
   "uchardet_0_0" = uchardet_0_0_12;
   "uchardet_0" = uchardet_0_0_12;
+  uchardet_2_0_0 = buildCratesLib {
+    name = "uchardet";
+    version = "2.0.0";
+    hash = "1eedefbbb9733c45609634755193b7d6d946beebe50893acc7453b346a396eab";
+    deps = with allCrates; [  uchardet-sys all__error-chain.error-chain_0_5 all__libc.libc_0_2 ];
+  };
   "uchardet_1_0" = uchardet_1_0_0;
-  "uchardet_1" = uchardet_1_0_0;}
+  "uchardet_1" = uchardet_1_0_0;
+  "uchardet_2_0" = uchardet_2_0_0;
+  "uchardet_2" = uchardet_2_0_0;}

@@ -4,7 +4,7 @@ rec {
   html-entities_0_1_0 = buildCratesLib {
     name = "html-entities";
     version = "0.1.0";
-    hash = "b999f822bc9ae2a92fdb1f30b4989b2084d5848ac1d657b2f5e4c3ab1cc4b745";
+    hash = "18d57ae052df4379087aba566ca1b4896831237e8c42aeadda905a29d5c7c2fb";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 ];
   };
   "html-entities_0_1" = html-entities_0_1_0;

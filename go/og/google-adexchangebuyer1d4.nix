@@ -28,8 +28,8 @@ rec {
   google-adexchangebuyer1d4_0_1_14 = buildCratesLib {
     name = "google-adexchangebuyer1d4";
     version = "0.1.14";
-    hash = "4d3d2196ab61f926693402644af9ba949c654f7ee19c2983fe9c6b2823ea9161";
-    deps = with allCrates; [  url all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde_json.serde_json_0_7 all__serde.serde_0_7 ];
+    hash = "2c3245d446033ce4eb1419c1ce461e3fd65e4d37c4e617edf8e7db313bec50f8";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 url all__serde_json.serde_json_0_8 ];
   };
   google-adexchangebuyer1d4_0_1_15 = buildCratesLib {
     name = "google-adexchangebuyer1d4";

@@ -45,5 +45,13 @@ rec {
   };
   "uchardet-sys_0_0" = uchardet-sys_0_0_12;
   "uchardet-sys_0" = uchardet-sys_0_0_12;
+  uchardet-sys_2_0_0 = buildCratesLib {
+    name = "uchardet-sys";
+    version = "2.0.0";
+    hash = "78de6e3c5f4f4918a11bf6ade27d2116fa70fa94edec8da14df57bd08dadb195";
+    deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 all__cmake.cmake_0_1 ];
+  };
   "uchardet-sys_1_0" = uchardet-sys_1_0_0;
-  "uchardet-sys_1" = uchardet-sys_1_0_0;}
+  "uchardet-sys_1" = uchardet-sys_1_0_0;
+  "uchardet-sys_2_0" = uchardet-sys_2_0_0;
+  "uchardet-sys_2" = uchardet-sys_2_0_0;}

@@ -10,7 +10,7 @@ rec {
   json_macros_0_0_2 = buildCratesLib {
     name = "json_macros";
     version = "0.0.2";
-    hash = "c1aaa480324815c07c26858b1e8f106f41a31775cd8738a3cbc6e1cea3dea9f7";
+    hash = "6cedfb179cfb8b3351551b634bd00f0215ffe84e2057d2d16076ebdb665e210c";
     deps = with allCrates; [  ];
   };
   json_macros_0_0_3 = buildCratesLib {

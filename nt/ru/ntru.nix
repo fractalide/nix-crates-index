@@ -21,13 +21,25 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
   "ntru_0_1" = ntru_0_1_0;
+  ntru_0_4_0 = buildCratesLib {
+    name = "ntru";
+    version = "0.4.0";
+    hash = "08781f088340ace4762726388192857ae40286e493e8669dbe465b9e2f56bb2c";
+    deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
+  };
+  "ntru_0_2" = ntru_0_2_0;
+  ntru_0_4_2 = buildCratesLib {
+    name = "ntru";
+    version = "0.4.2";
+    hash = "1f755e5f8fb3434b3f668a262bbd10d25052eac1b07b0ef9ecde9b1a7d8b2281";
+    deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
+  };
   ntru_0_4_3 = buildCratesLib {
     name = "ntru";
     version = "0.4.3";
     hash = "ec193f4ece8423adedd08141d4f818bad2e769840328116d6c4c5c6a1ceeb930";
     deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
   };
-  "ntru_0_2" = ntru_0_2_0;
   ntru_0_5_0 = buildCratesLib {
     name = "ntru";
     version = "0.5.0";

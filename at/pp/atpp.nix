@@ -14,7 +14,6 @@ rec {
     deps = with allCrates; [  byteorder ];
   };
   "atpp_0_1" = atpp_0_1_0;
-  "atpp_0_1" = atpp_0_1_0;
   "atpp_0" = atpp_0_1_0;
   atpp_1_6_7 = buildCratesLib {
     name = "atpp";

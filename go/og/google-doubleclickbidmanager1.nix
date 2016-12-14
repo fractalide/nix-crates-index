@@ -40,8 +40,8 @@ rec {
   google-doubleclickbidmanager1_0_1_9 = buildCratesLib {
     name = "google-doubleclickbidmanager1";
     version = "0.1.9";
-    hash = "eb2105f1f27115df07a72c591b26f3dd7008fda6156cab3a73e532a4e97b6139";
-    deps = with allCrates; [  url yup-oauth2 serde_json all__mime.mime_0_1 hyper serde syntex serde_codegen ];
+    hash = "105b786b5ecebf40963dab392e2915c254756f674f53ab8973945d6dc77b7ea1";
+    deps = with allCrates; [  url serde_json serde yup-oauth2 all__mime.mime_0_1 hyper serde_codegen syntex ];
   };
   google-doubleclickbidmanager1_0_1_10 = buildCratesLib {
     name = "google-doubleclickbidmanager1";
@@ -70,8 +70,8 @@ rec {
   google-doubleclickbidmanager1_0_1_14 = buildCratesLib {
     name = "google-doubleclickbidmanager1";
     version = "0.1.14";
-    hash = "8dd816b3bde195aeb506d97ca1fbba3a2cb013d5c7493b4497be14ad4d768eae";
-    deps = with allCrates; [  all__serde_json.serde_json_0_7 url all__mime.mime_0_2 all__serde.serde_0_7 all__hyper.hyper_0_9 ];
+    hash = "496bafd6039b52ce4ac123132aa511bb371af21ad2803ce5f9e6ff5ef554a729";
+    deps = with allCrates; [  all__serde.serde_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde_json.serde_json_0_8 ];
   };
   google-doubleclickbidmanager1_0_1_15 = buildCratesLib {
     name = "google-doubleclickbidmanager1";

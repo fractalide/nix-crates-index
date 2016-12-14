@@ -82,8 +82,8 @@ rec {
   google-fitness1_0_1_14 = buildCratesLib {
     name = "google-fitness1";
     version = "0.1.14";
-    hash = "ba79e12dfc9e5406e6d693d93ef27842fe92e45232415c7d4c58c49f3672bd40";
-    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_7 all__serde.serde_0_7 ];
+    hash = "6e0e71f2cb33ec4562fbf62559a3d089d7628d022bb02fe7e778734ddf049ca7";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__serde_json.serde_json_0_8 url all__mime.mime_0_2 ];
   };
   google-fitness1_0_1_15 = buildCratesLib {
     name = "google-fitness1";

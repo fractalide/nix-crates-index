@@ -58,8 +58,8 @@ rec {
   google-analytics3_0_1_9 = buildCratesLib {
     name = "google-analytics3";
     version = "0.1.9";
-    hash = "02868a3b5daa714aa282e76dc77b54d1216ef8f78b19356c1db4c387d7aa98c3";
-    deps = with allCrates; [  serde_json all__mime.mime_0_1 yup-oauth2 hyper serde url syntex serde_codegen ];
+    hash = "d6ad4237f22254f1cf0d3be5cf08088b9f4a58f5617ae496ad98a2da68130848";
+    deps = with allCrates; [  all__mime.mime_0_1 serde_json hyper yup-oauth2 url serde serde_codegen syntex ];
   };
   google-analytics3_0_1_10 = buildCratesLib {
     name = "google-analytics3";
@@ -82,8 +82,8 @@ rec {
   google-analytics3_0_1_14 = buildCratesLib {
     name = "google-analytics3";
     version = "0.1.14";
-    hash = "ef69c9fa49cf50b322bdda13de6ae28d41e508183819247a3919c7f9b1e2db9c";
-    deps = with allCrates; [  url all__serde_json.serde_json_0_7 all__serde.serde_0_7 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+    hash = "8fc753bd18dc2a2c2609af602cda5a61d43ec2f6e68784700d8383dd97462ac6";
+    deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url all__mime.mime_0_2 ];
   };
   google-analytics3_0_1_15 = buildCratesLib {
     name = "google-analytics3";

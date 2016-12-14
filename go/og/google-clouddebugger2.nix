@@ -34,8 +34,8 @@ rec {
   google-clouddebugger2_0_1_14 = buildCratesLib {
     name = "google-clouddebugger2";
     version = "0.1.14";
-    hash = "ff3ae453e541258c96c39957f6cf9bbd60511f50720814b9e837ddbf3ebc60ad";
-    deps = with allCrates; [  url all__serde_json.serde_json_0_7 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_7 ];
+    hash = "d450facfdaef6f4ee256b15517b9dc73bcbfce53e33b8c480e86d5d38ed3accc";
+    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 ];
   };
   google-clouddebugger2_0_1_15 = buildCratesLib {
     name = "google-clouddebugger2";

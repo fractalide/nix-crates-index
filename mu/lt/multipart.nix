@@ -111,5 +111,12 @@ rec {
     hash = "b16d6498fe5b0c2f6d973fd9753da099948834f96584d628e44a75f0d2955b03";
     deps = with allCrates; [  all__mime.mime_0_2 all__log.log_0_3 all__mime_guess.mime_guess_1_8 all__rand.rand_0_3 tempdir ];
   };
+  multipart_0_9_0 = buildCratesLib {
+    name = "multipart";
+    version = "0.9.0";
+    hash = "d2b16121cfa2742d838d2da5aaedf0a7457f4a0ba48bf28ec55f9683ff046eca";
+    deps = with allCrates; [  all__mime.mime_0_2 all__rand.rand_0_3 tempdir all__mime_guess.mime_guess_1_8 all__log.log_0_3 ];
+  };
   "multipart_0_8" = multipart_0_8_1;
-  "multipart_0" = multipart_0_8_1;}
+  "multipart_0_9" = multipart_0_9_0;
+  "multipart_0" = multipart_0_9_0;}

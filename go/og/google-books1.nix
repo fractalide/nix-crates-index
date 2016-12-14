@@ -58,8 +58,8 @@ rec {
   google-books1_0_1_9 = buildCratesLib {
     name = "google-books1";
     version = "0.1.9";
-    hash = "8751d693240c68a079b6f1a66d202683c1b1814c864b6332754c8ba623c04c5e";
-    deps = with allCrates; [  hyper yup-oauth2 serde_json serde url all__mime.mime_0_1 syntex serde_codegen ];
+    hash = "a6650ed7b482548ce0bc71079f951fc59a72152fc03576e435868e3314f64778";
+    deps = with allCrates; [  serde_json all__mime.mime_0_1 serde hyper url yup-oauth2 serde_codegen syntex ];
   };
   google-books1_0_1_10 = buildCratesLib {
     name = "google-books1";
@@ -82,8 +82,8 @@ rec {
   google-books1_0_1_14 = buildCratesLib {
     name = "google-books1";
     version = "0.1.14";
-    hash = "979f53bbe0b6c82ebcde037fc43f1af2467f3451b498774dbff12d65f82ebc3f";
-    deps = with allCrates; [  all__serde_json.serde_json_0_7 all__hyper.hyper_0_9 all__serde.serde_0_7 url all__mime.mime_0_2 ];
+    hash = "d15d5dde8e44e7b2e6eacf535f910ef44592db4e759df1390b64bfc4d615d9aa";
+    deps = with allCrates; [  all__hyper.hyper_0_9 url all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
   };
   google-books1_0_1_15 = buildCratesLib {
     name = "google-books1";

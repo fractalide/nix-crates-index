@@ -58,8 +58,8 @@ rec {
   google-siteverification1_0_1_9 = buildCratesLib {
     name = "google-siteverification1";
     version = "0.1.9";
-    hash = "b7b6a567bbf334997f09d7ec694db16fcfb8c1b64e7ecc6be7c5b655503f0889";
-    deps = with allCrates; [  all__mime.mime_0_1 hyper url serde yup-oauth2 serde_json serde_codegen syntex ];
+    hash = "e5caf218a3ee7db11f5469d3d54372035f117113f5cf1eb8885b452eebd95d6c";
+    deps = with allCrates; [  serde_json serde all__mime.mime_0_1 hyper yup-oauth2 url serde_codegen syntex ];
   };
   google-siteverification1_0_1_10 = buildCratesLib {
     name = "google-siteverification1";

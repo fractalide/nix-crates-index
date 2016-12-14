@@ -58,8 +58,8 @@ rec {
   google-gmail1_0_1_9 = buildCratesLib {
     name = "google-gmail1";
     version = "0.1.9";
-    hash = "4f9f16ef9a9a9fa1e7f68678051eb3d053187718e9c167d4a8972744fd6fb59a";
-    deps = with allCrates; [  all__mime.mime_0_1 hyper yup-oauth2 serde serde_json url serde_codegen syntex ];
+    hash = "2d3084073655e6f75ba1b6f5753de3937e1347420bc7c11e281afac35bcdadaa";
+    deps = with allCrates; [  all__mime.mime_0_1 hyper url serde_json yup-oauth2 serde syntex serde_codegen ];
   };
   google-gmail1_0_1_10 = buildCratesLib {
     name = "google-gmail1";
@@ -82,8 +82,8 @@ rec {
   google-gmail1_0_1_14 = buildCratesLib {
     name = "google-gmail1";
     version = "0.1.14";
-    hash = "433f95e0a37b55f78d23a2b6f0a7a101ba39ddfe2fd916c7fd79cfbdcc180ee9";
-    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_7 all__serde.serde_0_7 url ];
+    hash = "97bb7f5129b0ad4e4b3cbbb1aad7e6b96131ec01de530f2af3c13330175c2b10";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url all__mime.mime_0_2 all__serde.serde_0_8 ];
   };
   google-gmail1_0_1_15 = buildCratesLib {
     name = "google-gmail1";

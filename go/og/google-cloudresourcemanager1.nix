@@ -16,8 +16,8 @@ rec {
   google-cloudresourcemanager1_0_1_14 = buildCratesLib {
     name = "google-cloudresourcemanager1";
     version = "0.1.14";
-    hash = "0db257c774de8502471daf769fde18c95e691ab3a78189e019db9bfbecf52632";
-    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_7 all__serde.serde_0_7 url ];
+    hash = "fb7f737cdc068d32b349e273efb3f9fdcbeaee82fc063f8b0b80589e34808dee";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url ];
   };
   google-cloudresourcemanager1_0_1_15 = buildCratesLib {
     name = "google-cloudresourcemanager1";

@@ -88,8 +88,8 @@ rec {
   google-taskqueue1_beta2_0_1_14 = buildCratesLib {
     name = "google-taskqueue1_beta2";
     version = "0.1.14";
-    hash = "c9d398bbdc7f8a6002f634c7af3e6d4a96462b8aeb489efd746c3dd71a686d38";
-    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_7 all__serde.serde_0_7 ];
+    hash = "d8cb8ada7f4394d9212b6623b43bf1ef5a93b04611e666c846d924cf09c6b1bb";
+    deps = with allCrates; [  all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url all__mime.mime_0_2 ];
   };
   google-taskqueue1_beta2_0_1_15 = buildCratesLib {
     name = "google-taskqueue1_beta2";

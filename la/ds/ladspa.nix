@@ -59,8 +59,8 @@ rec {
   ladspa_0_3_0 = buildCratesLib {
     name = "ladspa";
     version = "0.3.0";
-    hash = "d30f375eb2c1096e072d2b032887e0284d5ef0b226865b354c81ff11f9a516b4";
-    deps = with allCrates; [  all__bitflags.bitflags_0_3 all__vec_map.vec_map_0_4 ];
+    hash = "991430324f68255b329f1c6dc1f9fdcfb717dd08fa93520360af36d8fa14b9ae";
+    deps = with allCrates; [  all__vec_map.vec_map_0_4 all__bitflags.bitflags_0_3 ];
   };
   "ladspa_0_2" = ladspa_0_2_3;
   ladspa_0_3_1 = buildCratesLib {

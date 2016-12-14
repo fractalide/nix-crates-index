@@ -4,7 +4,7 @@ rec {
   rosc_0_1_1 = buildCratesLib {
     name = "rosc";
     version = "0.1.1";
-    hash = "583a1f2a7e6600fda2d663c4e98855d531a5a67b51c756a1c9a78dae856f5fb0";
+    hash = "7625e646767b3043f42dade464377fb9c87eb69ad0b059d2951a1446962cde00";
     deps = with allCrates; [  all__byteorder.byteorder_0_3 ];
   };
   rosc_0_1_2 = buildCratesLib {

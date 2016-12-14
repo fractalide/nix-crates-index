@@ -10,7 +10,7 @@ rec {
   glfw-sys_3_0_4 = buildCratesLib {
     name = "glfw-sys";
     version = "3.0.4";
-    hash = "f685c53450259b47a5c9271cabe09df027fd3c911a00674fd1a0a8d52dd8d37c";
+    hash = "f53580fc8d75ac5e1b9db2cc562de95ef1e3f3768901dfbf6f735f9f67b5ecac";
     deps = with allCrates; [  ];
   };
   glfw-sys_3_0_41 = buildCratesLib {

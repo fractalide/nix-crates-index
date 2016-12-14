@@ -34,8 +34,8 @@ rec {
   google-container1_0_1_14 = buildCratesLib {
     name = "google-container1";
     version = "0.1.14";
-    hash = "834325e3199cac6976ccdb5444ab180db939c9c5fc2169124fe4144514270676";
-    deps = with allCrates; [  url all__serde.serde_0_7 all__mime.mime_0_2 all__serde_json.serde_json_0_7 all__hyper.hyper_0_9 ];
+    hash = "57295cd2e6e19e24e3301c8d93eff57f71e11b6dc33e09838ffe48c2bdc210e0";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 all__serde_json.serde_json_0_8 url ];
   };
   google-container1_0_1_15 = buildCratesLib {
     name = "google-container1";

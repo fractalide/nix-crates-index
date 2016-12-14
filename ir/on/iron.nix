@@ -4,7 +4,7 @@ rec {
   iron_0_0_1 = buildCratesLib {
     name = "iron";
     version = "0.0.1";
-    hash = "1338df92092166134878fc6177ce3e97c55094f6ba6ca4512bcd35582417b0c1";
+    hash = "020a2f2888ab85b6e02087123ae5a3486118053c276af18e920a9bfbcc4beb3a";
     deps = with allCrates; [  ];
   };
   iron_0_0_2 = buildCratesLib {
@@ -12,6 +12,12 @@ rec {
     version = "0.0.2";
     hash = "af0250cc6225932a7a3ce711481c0ec15cc1fcc474e28bc997ba54dcdb087da0";
     deps = with allCrates; [  error modifier plugin typemap url hyper ];
+  };
+  iron_0_0_3 = buildCratesLib {
+    name = "iron";
+    version = "0.0.3";
+    hash = "a77c37a103f3bad2b51e5d324b094209cb89f2fa378dbbe0ac134dfa44ec1d76";
+    deps = with allCrates; [  hyper error typemap modifier plugin url ];
   };
   iron_0_0_4 = buildCratesLib {
     name = "iron";

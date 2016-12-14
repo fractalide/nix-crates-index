@@ -7,5 +7,11 @@ rec {
     hash = "a94067959c3635c47908d2677fbac664b758a84919f7f71787e78e5ae4aa03d0";
     deps = with allCrates; [  ];
   };
-  "cargo-travis_0_0" = cargo-travis_0_0_0;
-  "cargo-travis_0" = cargo-travis_0_0_0;}
+  cargo-travis_0_0_1 = buildCratesLib {
+    name = "cargo-travis";
+    version = "0.0.1";
+    hash = "d8e214e6c14990af87b0ffdfc6b4f14300cb6ded0870efa574f8d9fe9a01c85a";
+    deps = with allCrates; [  all__cargo.cargo_0_13 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "cargo-travis_0_0" = cargo-travis_0_0_1;
+  "cargo-travis_0" = cargo-travis_0_0_1;}

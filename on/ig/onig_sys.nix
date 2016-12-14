@@ -76,7 +76,6 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__cmake.cmake_0_1 all__pkg-config.pkg-config_0_3 ];
   };
   "onig_sys_1_0" = onig_sys_1_0_0;
-  "onig_sys_1_0" = onig_sys_1_0_0;
   "onig_sys_1" = onig_sys_1_0_0;
   "onig_sys_61_1" = onig_sys_61_1_0;
   "onig_sys_61" = onig_sys_61_1_0;}

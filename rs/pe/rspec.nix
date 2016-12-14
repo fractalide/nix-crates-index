@@ -7,5 +7,13 @@ rec {
     hash = "62f013eeeeb04f4d83093f288e5b6091c8a6e996be5b21b848ffea2b18d562b9";
     deps = with allCrates; [  all__expectest.expectest_0_5 ];
   };
+  rspec_1_0_0 = buildCratesLib {
+    name = "rspec";
+    version = "1.0.0";
+    hash = "08eed2b5c10f7842e891d44d44838b845053a8d42eea1a19363ad08c53ee6159";
+    deps = with allCrates; [  ];
+  };
   "rspec_0_1" = rspec_0_1_0;
-  "rspec_0" = rspec_0_1_0;}
+  "rspec_0" = rspec_0_1_0;
+  "rspec_1_0" = rspec_1_0_0;
+  "rspec_1" = rspec_1_0_0;}

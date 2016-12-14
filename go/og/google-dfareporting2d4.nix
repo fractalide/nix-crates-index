@@ -10,8 +10,8 @@ rec {
   google-dfareporting2d4_0_1_14 = buildCratesLib {
     name = "google-dfareporting2d4";
     version = "0.1.14";
-    hash = "0b38f593899b29d6888d79904c3ab0bbb17bd0f9a920dea860ffa822451a1e88";
-    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_7 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_7 ];
+    hash = "d23c7489508d1e43681715fda97ca80789470b1157b442431e99029abb959f49";
+    deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 url ];
   };
   google-dfareporting2d4_0_1_15 = buildCratesLib {
     name = "google-dfareporting2d4";

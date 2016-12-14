@@ -7,6 +7,12 @@ rec {
     hash = "792a36f5519594503223906b7b71b3af3c027081b7b185d4e11f2fe4c3f4f7cf";
     deps = with allCrates; [  all__servo-freetype-sys.servo-freetype-sys_2_4 all__expat-sys.expat-sys_2_1 ];
   };
+  servo-fontconfig-sys_2_11_2 = buildCratesLib {
+    name = "servo-fontconfig-sys";
+    version = "2.11.2";
+    hash = "050ee3e66687c71c613baee9860925b8a2262f919a2d5cd765168d8d639111d5";
+    deps = with allCrates; [  all__servo-freetype-sys.servo-freetype-sys_2_4 all__expat-sys.expat-sys_2_1 all__pkg-config.pkg-config_0_3 ];
+  };
   servo-fontconfig-sys_2_11_3 = buildCratesLib {
     name = "servo-fontconfig-sys";
     version = "2.11.3";

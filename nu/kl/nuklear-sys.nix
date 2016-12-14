@@ -32,7 +32,6 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
   };
   "nuklear-sys_0_1" = nuklear-sys_0_1_3;
-  "nuklear-sys_0_1" = nuklear-sys_0_1_3;
   "nuklear-sys_0" = nuklear-sys_0_1_3;
   "nuklear-sys_1_156" = nuklear-sys_1_156_0;
   "nuklear-sys_1" = nuklear-sys_1_156_0;}

@@ -28,8 +28,8 @@ rec {
   google-proximitybeacon1_beta1_0_1_14 = buildCratesLib {
     name = "google-proximitybeacon1_beta1";
     version = "0.1.14";
-    hash = "e2b7f88077b3f0bacf42faef8337fe92bcd221345fa482c6a24e48c4d51c0d6c";
-    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde_json.serde_json_0_7 all__mime.mime_0_2 all__serde.serde_0_7 ];
+    hash = "75a4fc407ac46fa7b60151c4f513164439aec66260e04d4b8c72f3db91040755";
+    deps = with allCrates; [  url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 ];
   };
   google-proximitybeacon1_beta1_0_1_15 = buildCratesLib {
     name = "google-proximitybeacon1_beta1";

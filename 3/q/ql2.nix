@@ -13,5 +13,12 @@ rec {
     hash = "2e36552aa9a5217fc0f56f0a0a04e6efb227ec8868e9944128bd5f854da829c5";
     deps = with allCrates; [  all__protobuf.protobuf_1_0_18 ];
   };
+  ql2_1_1_0 = buildCratesLib {
+    name = "ql2";
+    version = "1.1.0";
+    hash = "9d97d67ab366818ebc481c77ca70b72f904fde624f468574523bd424d84e305a";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__protobuf.protobuf_1_0 ];
+  };
   "ql2_1_0" = ql2_1_0_1;
-  "ql2_1" = ql2_1_0_1;}
+  "ql2_1_1" = ql2_1_1_0;
+  "ql2_1" = ql2_1_1_0;}

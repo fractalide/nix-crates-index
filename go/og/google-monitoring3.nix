@@ -10,8 +10,8 @@ rec {
   google-monitoring3_0_1_14 = buildCratesLib {
     name = "google-monitoring3";
     version = "0.1.14";
-    hash = "cb9474992498ba11e873085a23f2088d897e077d51eacaff68ae14fee744d7c0";
-    deps = with allCrates; [  all__serde.serde_0_7 all__serde_json.serde_json_0_7 all__mime.mime_0_2 all__hyper.hyper_0_9 url ];
+    hash = "323cd3165620a5c925f381c42b19538d67cc2fa800665c33194c69cf3b35e2dc";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 ];
   };
   google-monitoring3_0_1_15 = buildCratesLib {
     name = "google-monitoring3";

@@ -58,8 +58,8 @@ rec {
   google-compute1_0_1_9 = buildCratesLib {
     name = "google-compute1";
     version = "0.1.9";
-    hash = "fc7bd6197375f356e308e0592263633137325be83a24d028e6ab6fa1c12d9be2";
-    deps = with allCrates; [  yup-oauth2 hyper url serde_json serde all__mime.mime_0_1 syntex serde_codegen ];
+    hash = "2af1f29ac59158e6c70d76f74e9b851d6881b6503989e5957028eb2b8191333d";
+    deps = with allCrates; [  yup-oauth2 all__mime.mime_0_1 url serde_json hyper serde syntex serde_codegen ];
   };
   google-compute1_0_1_10 = buildCratesLib {
     name = "google-compute1";

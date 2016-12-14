@@ -58,8 +58,8 @@ rec {
   google-mirror1_0_1_9 = buildCratesLib {
     name = "google-mirror1";
     version = "0.1.9";
-    hash = "944428088794d90916aff6875f006ae7315a66e03825db3fcca0cfd7e7a4ff1e";
-    deps = with allCrates; [  yup-oauth2 hyper serde_json all__mime.mime_0_1 url serde syntex serde_codegen ];
+    hash = "76f99f377c05d6af0a6e0ddb8c7b719d188cc0e0793f520c2645b76e6ac7fceb";
+    deps = with allCrates; [  serde_json hyper url serde yup-oauth2 all__mime.mime_0_1 syntex serde_codegen ];
   };
   google-mirror1_0_1_10 = buildCratesLib {
     name = "google-mirror1";
@@ -82,8 +82,8 @@ rec {
   google-mirror1_0_1_14 = buildCratesLib {
     name = "google-mirror1";
     version = "0.1.14";
-    hash = "3d56c1872da7b306e234ab667e9a12b02085c8e5200bc35a368f31a9430b6115";
-    deps = with allCrates; [  all__hyper.hyper_0_9 url all__mime.mime_0_2 all__serde_json.serde_json_0_7 all__serde.serde_0_7 ];
+    hash = "6ddf105dfe66035a37ccdeea3b6bb443d034de811715421747bf1da87c43dec0";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url ];
   };
   google-mirror1_0_1_15 = buildCratesLib {
     name = "google-mirror1";

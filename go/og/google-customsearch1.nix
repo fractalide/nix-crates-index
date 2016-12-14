@@ -88,8 +88,8 @@ rec {
   google-customsearch1_0_1_14 = buildCratesLib {
     name = "google-customsearch1";
     version = "0.1.14";
-    hash = "059510f158222e5b7c852ff9c3faa7aad8814a196da2bf851b7bb9c4c4e87caa";
-    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 url all__serde.serde_0_7 all__serde_json.serde_json_0_7 ];
+    hash = "e077721705c3533adb8182be87a3a37be1dedd64baa185f0cf21412a09991a05";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 url all__serde_json.serde_json_0_8 ];
   };
   google-customsearch1_0_1_15 = buildCratesLib {
     name = "google-customsearch1";

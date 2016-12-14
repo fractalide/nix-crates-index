@@ -58,8 +58,8 @@ rec {
   google-container1_beta1_0_1_9 = buildCratesLib {
     name = "google-container1_beta1";
     version = "0.1.9";
-    hash = "bf2016b78404fe817c07179d6ba0c9571f05b57bf8e30c5662929bbb61f9ef53";
-    deps = with allCrates; [  all__mime.mime_0_1 yup-oauth2 hyper serde_json serde url syntex serde_codegen ];
+    hash = "b0a22fae292eec9cdadc66a77e7b0c8e862072b56a6abbd4cae3d54f2d329c81";
+    deps = with allCrates; [  yup-oauth2 hyper all__mime.mime_0_1 serde serde_json url serde_codegen syntex ];
   };
   google-container1_beta1_0_1_10 = buildCratesLib {
     name = "google-container1_beta1";

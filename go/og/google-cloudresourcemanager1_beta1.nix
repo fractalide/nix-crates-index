@@ -4,8 +4,8 @@ rec {
   google-cloudresourcemanager1_beta1_0_1_9 = buildCratesLib {
     name = "google-cloudresourcemanager1_beta1";
     version = "0.1.9";
-    hash = "54a890a7203696c890e320fa9dde6052ad669d23a424ee8339bd4ca79d57c31c";
-    deps = with allCrates; [  serde_json url all__mime.mime_0_1 yup-oauth2 serde hyper syntex serde_codegen ];
+    hash = "7899abbf22a30477b20960e1b5f7f46e451af251b3e13b2a1ab9b0e15665248a";
+    deps = with allCrates; [  serde_json yup-oauth2 url hyper serde all__mime.mime_0_1 syntex serde_codegen ];
   };
   google-cloudresourcemanager1_beta1_0_1_10 = buildCratesLib {
     name = "google-cloudresourcemanager1_beta1";
@@ -28,8 +28,8 @@ rec {
   google-cloudresourcemanager1_beta1_0_1_14 = buildCratesLib {
     name = "google-cloudresourcemanager1_beta1";
     version = "0.1.14";
-    hash = "177a79104bd01b13adceacd4c7dddfada2f946ca1fd0ba3e14e2870ffcff6e5f";
-    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_7 url all__serde_json.serde_json_0_7 ];
+    hash = "de38321dc675ea1bf16cb5f2cd30b102ae541e7ddc0dca6cf6ca1563870fcf5a";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 url all__hyper.hyper_0_9 ];
   };
   google-cloudresourcemanager1_beta1_0_1_15 = buildCratesLib {
     name = "google-cloudresourcemanager1_beta1";

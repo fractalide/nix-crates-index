@@ -82,8 +82,8 @@ rec {
   google-fusiontables2_0_1_14 = buildCratesLib {
     name = "google-fusiontables2";
     version = "0.1.14";
-    hash = "b507472c97f40c1d1ede4605f151f2dc623b9f05f1f6769ef1681a127e9c8ae1";
-    deps = with allCrates; [  all__mime.mime_0_2 url all__serde.serde_0_7 all__hyper.hyper_0_9 all__serde_json.serde_json_0_7 ];
+    hash = "edd42f5c773235890c736709a53ec6e4cf8d8bd53df902c82570cb1900f6dd4b";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url all__mime.mime_0_2 all__serde.serde_0_8 ];
   };
   google-fusiontables2_0_1_15 = buildCratesLib {
     name = "google-fusiontables2";

@@ -76,7 +76,7 @@ rec {
   plaintalk_0_0_13 = buildCratesLib {
     name = "plaintalk";
     version = "0.0.13";
-    hash = "13f21c3fcbfad9cc8b4778e190f78a1ccfc881e23c58c6cd78a91897bb2448a3";
+    hash = "3286e62e74874eeb4f8a68fb4b811c620ea41d485966eaeab39c44e48416e0bc";
     deps = with allCrates; [  all__num.num_0_1 ];
   };
   plaintalk_0_0_14 = buildCratesLib {

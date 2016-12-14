@@ -13,13 +13,19 @@ rec {
     hash = "889754b3e1df2d2ede96e0b1cc97481a7daeed013bd92482fb103eb169099200";
     deps = with allCrates; [  ];
   };
+  seax_svm_0_2_0 = buildCratesLib {
+    name = "seax_svm";
+    version = "0.2.0";
+    hash = "9b04e2469e0acd60e7922e40dc95c1b9569f639a07dca3c3e615081e985397e0";
+    deps = with allCrates; [  ];
+  };
+  "seax_svm_0_1" = seax_svm_0_1_3;
   seax_svm_0_2_3 = buildCratesLib {
     name = "seax_svm";
     version = "0.2.3";
     hash = "a027454a14aff26618cee1239df85f44f0bb4983b27a836ef10cfc6e254cdbee";
     deps = with allCrates; [  ];
   };
-  "seax_svm_0_1" = seax_svm_0_1_3;
   seax_svm_0_2_5 = buildCratesLib {
     name = "seax_svm";
     version = "0.2.5";

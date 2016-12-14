@@ -34,8 +34,8 @@ rec {
   google-cloudtrace1_0_1_14 = buildCratesLib {
     name = "google-cloudtrace1";
     version = "0.1.14";
-    hash = "383557649991f358c1558536a00b9be765c7b9b76735c600a984c840dfb54811";
-    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_7 all__serde_json.serde_json_0_7 all__mime.mime_0_2 url ];
+    hash = "18f9a3413ec1307438c3378f8b75ac8155ad51d7c8c27313792a3bb674c23916";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 url all__mime.mime_0_2 ];
   };
   google-cloudtrace1_0_1_15 = buildCratesLib {
     name = "google-cloudtrace1";

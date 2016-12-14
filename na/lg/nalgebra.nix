@@ -60,7 +60,7 @@ rec {
     name = "nalgebra";
     version = "0.2.8";
     hash = "b9c70ffa7da6c54cfb681e5bd0c7512bf55c25276a76953221ab94d6c4467e78";
-    deps = with allCrates; [  all__rand.rand_0_3 rustc-serialize ];
+    deps = with allCrates; [  rustc-serialize all__rand.rand_0_3 ];
   };
   nalgebra_0_2_9 = buildCratesLib {
     name = "nalgebra";

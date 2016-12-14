@@ -13,6 +13,12 @@ rec {
     hash = "e2d5ee6d85f16b518c56194053c831f5c1b92d2825aa0b1512f31ac08203ba7a";
     deps = with allCrates; [  ];
   };
+  resources_package_package_0_0_3 = buildCratesLib {
+    name = "resources_package_package";
+    version = "0.0.3";
+    hash = "77af3bf1b7165d9407ed42727deac0c041d0dc7c3e0994d1aeeeb1b3c646b0d8";
+    deps = with allCrates; [  ];
+  };
   resources_package_package_0_0_4 = buildCratesLib {
     name = "resources_package_package";
     version = "0.0.4";

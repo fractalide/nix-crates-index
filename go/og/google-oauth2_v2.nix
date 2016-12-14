@@ -58,8 +58,8 @@ rec {
   google-oauth2_v2_0_1_9 = buildCratesLib {
     name = "google-oauth2_v2";
     version = "0.1.9";
-    hash = "24c280974d407a8f0e90515647d343506a25411e6d9ec29ff024926e4900879d";
-    deps = with allCrates; [  hyper yup-oauth2 serde_json url all__mime.mime_0_1 serde syntex serde_codegen ];
+    hash = "7876c7898c3d3628d24868c20faf151ea44609221b4718df76f872608858d0eb";
+    deps = with allCrates; [  serde_json hyper all__mime.mime_0_1 url serde yup-oauth2 syntex serde_codegen ];
   };
   google-oauth2_v2_0_1_10 = buildCratesLib {
     name = "google-oauth2_v2";

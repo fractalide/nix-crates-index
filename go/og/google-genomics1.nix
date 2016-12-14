@@ -4,8 +4,8 @@ rec {
   google-genomics1_0_1_9 = buildCratesLib {
     name = "google-genomics1";
     version = "0.1.9";
-    hash = "fc8873edff46b99e88c9260e68d3dc9ca1c97ee86baada46fc4c04d9e2e1678b";
-    deps = with allCrates; [  url yup-oauth2 all__mime.mime_0_1 serde hyper serde_json serde_codegen syntex ];
+    hash = "8ba7a7a7dc320cf53ea977af608606831ed87e91b9603a45256c56801a9d2f07";
+    deps = with allCrates; [  yup-oauth2 all__mime.mime_0_1 url hyper serde_json serde syntex serde_codegen ];
   };
   google-genomics1_0_1_10 = buildCratesLib {
     name = "google-genomics1";
@@ -28,8 +28,8 @@ rec {
   google-genomics1_0_1_14 = buildCratesLib {
     name = "google-genomics1";
     version = "0.1.14";
-    hash = "967779a7fe1772b185be35aead13aa8059699e8747599f6803f02d2e48f593ff";
-    deps = with allCrates; [  all__serde_json.serde_json_0_7 all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_7 url ];
+    hash = "f2a7038ad245553738cc532f793ae851d74a2fa834ca0b5032574af0cc294bd6";
+    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 ];
   };
   google-genomics1_0_1_15 = buildCratesLib {
     name = "google-genomics1";

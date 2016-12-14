@@ -10,7 +10,7 @@ rec {
   bitmap_1_0_1 = buildCratesLib {
     name = "bitmap";
     version = "1.0.1";
-    hash = "f8b3439489d8dd71089f22bb47764f3c68b77cab1ad596f734b43a60f58db537";
+    hash = "3fcbab19051015196774f1ac2b3d9177237c915837c01d5b37eb2e93509e0fe0";
     deps = with allCrates; [  ];
   };
   bitmap_1_0_2 = buildCratesLib {

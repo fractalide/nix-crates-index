@@ -58,8 +58,8 @@ rec {
   google-storage1_0_1_9 = buildCratesLib {
     name = "google-storage1";
     version = "0.1.9";
-    hash = "87491acdb1b7bbeb192379a9186aa7069e84b6fa24ffd8ea93512ddde208b794";
-    deps = with allCrates; [  all__mime.mime_0_1 url serde yup-oauth2 hyper serde_json serde_codegen syntex ];
+    hash = "b241b577a9b3b050473461c32e6e491a134833b87e28469a0a594bdb6b20e102";
+    deps = with allCrates; [  hyper all__mime.mime_0_1 serde url yup-oauth2 serde_json serde_codegen syntex ];
   };
   google-storage1_0_1_10 = buildCratesLib {
     name = "google-storage1";
@@ -82,8 +82,8 @@ rec {
   google-storage1_0_1_14 = buildCratesLib {
     name = "google-storage1";
     version = "0.1.14";
-    hash = "b83d1c6bddc449211262f282c26d3987f6616d5021aa73401a75422854ee0686";
-    deps = with allCrates; [  url all__hyper.hyper_0_9 all__serde.serde_0_7 all__mime.mime_0_2 all__serde_json.serde_json_0_7 ];
+    hash = "871a8759a6719b3119e0ef30268ee39da4aa14bbff48e8cb64131a4e6d8766a8";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 url all__hyper.hyper_0_9 all__serde.serde_0_8 ];
   };
   google-storage1_0_1_15 = buildCratesLib {
     name = "google-storage1";

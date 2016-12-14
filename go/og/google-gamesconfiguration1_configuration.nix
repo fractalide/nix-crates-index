@@ -58,8 +58,8 @@ rec {
   google-gamesconfiguration1_configuration_0_1_9 = buildCratesLib {
     name = "google-gamesconfiguration1_configuration";
     version = "0.1.9";
-    hash = "f43c1e37d44b80b09ffe36ace73c9044598d90e17ddfde50c31f1dd3c17c18a1";
-    deps = with allCrates; [  hyper all__mime.mime_0_1 yup-oauth2 url serde_json serde syntex serde_codegen ];
+    hash = "fefb9da8aa606c3724177504383fdea21904463ba13251e40f6f04428a71db7c";
+    deps = with allCrates; [  serde_json url yup-oauth2 hyper serde all__mime.mime_0_1 serde_codegen syntex ];
   };
   google-gamesconfiguration1_configuration_0_1_10 = buildCratesLib {
     name = "google-gamesconfiguration1_configuration";
@@ -82,8 +82,8 @@ rec {
   google-gamesconfiguration1_configuration_0_1_14 = buildCratesLib {
     name = "google-gamesconfiguration1_configuration";
     version = "0.1.14";
-    hash = "e9fcdcda1ef5283e13000d3ef6739a5607dca3647e4c64a347030ddf0b0cb767";
-    deps = with allCrates; [  all__serde.serde_0_7 all__mime.mime_0_2 all__serde_json.serde_json_0_7 all__hyper.hyper_0_9 url ];
+    hash = "93559579e43530cb834bd83669496e2b0358cce1c88f9973eb28a499d9b03a34";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 ];
   };
   google-gamesconfiguration1_configuration_0_1_15 = buildCratesLib {
     name = "google-gamesconfiguration1_configuration";

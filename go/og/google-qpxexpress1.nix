@@ -88,8 +88,8 @@ rec {
   google-qpxexpress1_0_1_14 = buildCratesLib {
     name = "google-qpxexpress1";
     version = "0.1.14";
-    hash = "e522243230d251a9f701d61dd0bf6d8eea37566b13a35cdbca2a8f22881cbf0e";
-    deps = with allCrates; [  all__serde.serde_0_7 url all__serde_json.serde_json_0_7 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+    hash = "e65b0f51eae7f088465b2761cc56c4f82ffc529faa72de6fe0cfc4f0e8c80a46";
+    deps = with allCrates; [  url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 ];
   };
   google-qpxexpress1_0_1_15 = buildCratesLib {
     name = "google-qpxexpress1";

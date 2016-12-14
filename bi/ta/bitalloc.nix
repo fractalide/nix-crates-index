@@ -4,8 +4,8 @@ rec {
   bitalloc_0_0_1 = buildCratesLib {
     name = "bitalloc";
     version = "0.0.1";
-    hash = "0e569ad8a5e69fce56753b2ee67164575eb4572c9abce3d288636190f84f5fdf";
-    deps = with allCrates; [  ilog2 ];
+    hash = "85554dc6d11d6c3a68c286b9f4a05ae73364a3484befa2be7b6e169371284305";
+    deps = with allCrates; [  num ilog2 ];
   };
   "bitalloc_0_0" = bitalloc_0_0_1;
   "bitalloc_0" = bitalloc_0_0_1;}

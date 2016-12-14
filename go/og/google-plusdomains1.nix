@@ -58,8 +58,8 @@ rec {
   google-plusdomains1_0_1_9 = buildCratesLib {
     name = "google-plusdomains1";
     version = "0.1.9";
-    hash = "467639d090f4abccddd24160a27558c1de8529bbb0c805a3f31ee294630149e2";
-    deps = with allCrates; [  hyper yup-oauth2 serde serde_json all__mime.mime_0_1 url syntex serde_codegen ];
+    hash = "dac6187100b7108a7b2e3409d5aa0ab6c41145fba5869d5ad7405316cfbfaf38";
+    deps = with allCrates; [  hyper yup-oauth2 all__mime.mime_0_1 url serde_json serde syntex serde_codegen ];
   };
   google-plusdomains1_0_1_10 = buildCratesLib {
     name = "google-plusdomains1";
@@ -82,8 +82,8 @@ rec {
   google-plusdomains1_0_1_14 = buildCratesLib {
     name = "google-plusdomains1";
     version = "0.1.14";
-    hash = "c411f2e09bf53e0f2ef9e67245c535662680be9cac0e6894450ed0183650612d";
-    deps = with allCrates; [  all__mime.mime_0_2 all__serde_json.serde_json_0_7 url all__serde.serde_0_7 all__hyper.hyper_0_9 ];
+    hash = "892dab4dc62d27a6eac0a595718c587977176ef9fa4aca119a40eaeae4a5bb51";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 url ];
   };
   google-plusdomains1_0_1_15 = buildCratesLib {
     name = "google-plusdomains1";

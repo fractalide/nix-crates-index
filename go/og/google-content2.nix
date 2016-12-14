@@ -58,8 +58,8 @@ rec {
   google-content2_0_1_9 = buildCratesLib {
     name = "google-content2";
     version = "0.1.9";
-    hash = "b5ef6a4f08caff4272452621be0be2585817ef8b9942bd8f4f0494f3fdd398de";
-    deps = with allCrates; [  yup-oauth2 hyper serde_json all__mime.mime_0_1 url serde serde_codegen syntex ];
+    hash = "420ecd07cacdd54089a2a68207c88b896a68ecb908273dfc2973a78778d57ad4";
+    deps = with allCrates; [  all__mime.mime_0_1 yup-oauth2 hyper url serde_json serde serde_codegen syntex ];
   };
   google-content2_0_1_10 = buildCratesLib {
     name = "google-content2";
@@ -82,8 +82,8 @@ rec {
   google-content2_0_1_14 = buildCratesLib {
     name = "google-content2";
     version = "0.1.14";
-    hash = "d1ec6cb8c434138a95df1961c80682148a7211a7aa7504f1918aaa9381e31bf2";
-    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_7 all__serde_json.serde_json_0_7 all__hyper.hyper_0_9 url ];
+    hash = "44ac3ff1a2bf97552175dac1e0096c0e43ba6e18cce354725067ff4ba813d1de";
+    deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 ];
   };
   google-content2_0_1_15 = buildCratesLib {
     name = "google-content2";

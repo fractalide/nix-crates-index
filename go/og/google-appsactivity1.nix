@@ -88,8 +88,8 @@ rec {
   google-appsactivity1_0_1_14 = buildCratesLib {
     name = "google-appsactivity1";
     version = "0.1.14";
-    hash = "e1ef795a19f06127fc389d4daa9132cf1a3516814c51ba669d9a449abd5a3e57";
-    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_7 all__serde_json.serde_json_0_7 url all__mime.mime_0_2 ];
+    hash = "71b215a7cc7e0464bb376385d60885f87c1e667212a602424b1cc4ded7c9eccf";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 url ];
   };
   google-appsactivity1_0_1_15 = buildCratesLib {
     name = "google-appsactivity1";

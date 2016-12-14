@@ -22,8 +22,8 @@ rec {
   google-dns1_0_1_9 = buildCratesLib {
     name = "google-dns1";
     version = "0.1.9";
-    hash = "86e2b0a157970d8284542d19fab61e160d709b543e929331ad769c1ce4ad7864";
-    deps = with allCrates; [  yup-oauth2 all__mime.mime_0_1 serde_json url serde hyper serde_codegen syntex ];
+    hash = "ad3db7ec8d5ee8bd86671c780df436150c06152bc444a072f00cae93225c11bb";
+    deps = with allCrates; [  all__mime.mime_0_1 hyper serde_json url yup-oauth2 serde serde_codegen syntex ];
   };
   google-dns1_0_1_10 = buildCratesLib {
     name = "google-dns1";
@@ -52,8 +52,8 @@ rec {
   google-dns1_0_1_14 = buildCratesLib {
     name = "google-dns1";
     version = "0.1.14";
-    hash = "31596a5822a82ead69ffdf6ab728868c2b87b5f0e4af93ca3af907af1b429656";
-    deps = with allCrates; [  url all__serde_json.serde_json_0_7 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_7 ];
+    hash = "bd70da783f346bdee0b0afe1df2b544a3e13de8a09936e21bc70e077e68ee364";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
   };
   google-dns1_0_1_15 = buildCratesLib {
     name = "google-dns1";

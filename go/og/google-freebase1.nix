@@ -58,8 +58,8 @@ rec {
   google-freebase1_0_1_9 = buildCratesLib {
     name = "google-freebase1";
     version = "0.1.9";
-    hash = "b58aa97623a19d7a0b0721a5a1d07c0fee828ec9e53228cdccf802063c062626";
-    deps = with allCrates; [  url serde serde_json yup-oauth2 hyper all__mime.mime_0_1 syntex serde_codegen ];
+    hash = "a26d0ee02190c840ee6919600d07650a0c6096c046f9d9ec14bd73554feada34";
+    deps = with allCrates; [  hyper serde url yup-oauth2 serde_json all__mime.mime_0_1 syntex serde_codegen ];
   };
   google-freebase1_0_1_10 = buildCratesLib {
     name = "google-freebase1";

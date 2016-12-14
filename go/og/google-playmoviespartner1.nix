@@ -34,8 +34,8 @@ rec {
   google-playmoviespartner1_0_1_14 = buildCratesLib {
     name = "google-playmoviespartner1";
     version = "0.1.14";
-    hash = "1b494139c886d3dcbbe467777633535d4c3a2d62c1823fdb723cf2ef1f4e4c94";
-    deps = with allCrates; [  url all__serde_json.serde_json_0_7 all__serde.serde_0_7 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+    hash = "cbc80a742254e47d7fdb78336a8a10c9dd5281fa027827916b7dc21d7d538a9f";
+    deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 ];
   };
   google-playmoviespartner1_0_1_15 = buildCratesLib {
     name = "google-playmoviespartner1";

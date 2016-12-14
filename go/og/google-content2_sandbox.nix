@@ -28,8 +28,8 @@ rec {
   google-content2_sandbox_0_1_14 = buildCratesLib {
     name = "google-content2_sandbox";
     version = "0.1.14";
-    hash = "1f6e80b5b1b71b8fa53b9ac5debbb361f0d458a2246d1265de4f67dfbf51ff9f";
-    deps = with allCrates; [  all__serde_json.serde_json_0_7 all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_7 url ];
+    hash = "9760c6d8bc7a2cce26b33d07525bdd20d2b26c619b97a9fedfb2b26a1b0629f9";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 url ];
   };
   google-content2_sandbox_0_1_15 = buildCratesLib {
     name = "google-content2_sandbox";

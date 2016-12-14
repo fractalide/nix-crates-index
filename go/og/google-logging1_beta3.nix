@@ -40,8 +40,8 @@ rec {
   google-logging1_beta3_0_1_9 = buildCratesLib {
     name = "google-logging1_beta3";
     version = "0.1.9";
-    hash = "882c08f1506c0c2f63f0b66b247b703de08f29dfb6a226ed75b36b62f11cf5d1";
-    deps = with allCrates; [  yup-oauth2 all__mime.mime_0_1 serde hyper url serde_json syntex serde_codegen ];
+    hash = "604277fef7f834fddcad3b1eeb1a98ebbe49465746d9f2ff9205a49eca1e27f4";
+    deps = with allCrates; [  serde_json serde url hyper all__mime.mime_0_1 yup-oauth2 serde_codegen syntex ];
   };
   google-logging1_beta3_0_1_10 = buildCratesLib {
     name = "google-logging1_beta3";

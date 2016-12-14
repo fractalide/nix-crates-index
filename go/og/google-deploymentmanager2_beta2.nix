@@ -4,8 +4,8 @@ rec {
   google-deploymentmanager2_beta2_0_1_9 = buildCratesLib {
     name = "google-deploymentmanager2_beta2";
     version = "0.1.9";
-    hash = "554012210e276cd5c509c9c2f2323ee475fc8bd249bfde5146d58c402bfb9acb";
-    deps = with allCrates; [  hyper serde_json url serde all__mime.mime_0_1 yup-oauth2 serde_codegen syntex ];
+    hash = "550e68afa112b70c26b819bb12aa0de54048aa214629c9833bfa0cf7febe52cb";
+    deps = with allCrates; [  serde_json hyper yup-oauth2 serde all__mime.mime_0_1 url syntex serde_codegen ];
   };
   google-deploymentmanager2_beta2_0_1_10 = buildCratesLib {
     name = "google-deploymentmanager2_beta2";

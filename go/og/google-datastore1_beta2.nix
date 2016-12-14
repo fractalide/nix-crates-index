@@ -58,8 +58,8 @@ rec {
   google-datastore1_beta2_0_1_9 = buildCratesLib {
     name = "google-datastore1_beta2";
     version = "0.1.9";
-    hash = "8b63f26d65f899ceea58fa33e0ed0c8a7524758b8141127326ad3910407c5447";
-    deps = with allCrates; [  hyper yup-oauth2 serde serde_json url all__mime.mime_0_1 syntex serde_codegen ];
+    hash = "fa5d386c46463c81430609b666ca5858b70df7a2793f211c4f90151cc21bf64b";
+    deps = with allCrates; [  yup-oauth2 url serde serde_json all__mime.mime_0_1 hyper serde_codegen syntex ];
   };
   google-datastore1_beta2_0_1_10 = buildCratesLib {
     name = "google-datastore1_beta2";

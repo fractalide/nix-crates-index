@@ -82,8 +82,8 @@ rec {
   google-resourceviews1_beta2_0_1_14 = buildCratesLib {
     name = "google-resourceviews1_beta2";
     version = "0.1.14";
-    hash = "22f2ddbcac83b73aeddbe0ff1120c9b964b24442f3662bd499d309d24deba7fc";
-    deps = with allCrates; [  all__serde.serde_0_7 all__mime.mime_0_2 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_7 ];
+    hash = "c002b1708dc4b81de4f7344470ad603dcb1d972d95b061b7b37c911c5bed7747";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 url ];
   };
   google-resourceviews1_beta2_0_1_15 = buildCratesLib {
     name = "google-resourceviews1_beta2";

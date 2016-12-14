@@ -58,8 +58,8 @@ rec {
   google-calendar3_0_1_9 = buildCratesLib {
     name = "google-calendar3";
     version = "0.1.9";
-    hash = "ab134b3a02f71b94b4168b5bf591a64551ec7da7a595986cb42627a3135946e1";
-    deps = with allCrates; [  url serde serde_json yup-oauth2 all__mime.mime_0_1 hyper syntex serde_codegen ];
+    hash = "69a96e04d6796c0d123238abcacb711afdc2ac393b6eafb05550a4a705bf3018";
+    deps = with allCrates; [  serde hyper yup-oauth2 url all__mime.mime_0_1 serde_json serde_codegen syntex ];
   };
   google-calendar3_0_1_10 = buildCratesLib {
     name = "google-calendar3";
@@ -82,8 +82,8 @@ rec {
   google-calendar3_0_1_14 = buildCratesLib {
     name = "google-calendar3";
     version = "0.1.14";
-    hash = "066970a4c55038fb1b9e9cecb6713a35a2ff9073df34508259dc1c77e3167418";
-    deps = with allCrates; [  url all__serde.serde_0_7 all__serde_json.serde_json_0_7 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+    hash = "c026b55236959704952d57f39318e0bc782d1337c5344fa33d884c876991c64d";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__serde.serde_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
   };
   google-calendar3_0_1_15 = buildCratesLib {
     name = "google-calendar3";

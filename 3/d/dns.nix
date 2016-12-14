@@ -4,8 +4,20 @@ rec {
   dns_0_0_1 = buildCratesLib {
     name = "dns";
     version = "0.0.1";
-    hash = "d4f106debd6988bd0f2ffb88d21b9609183b45b424c3d0eb2e7867ab821d2454";
+    hash = "58cc8ffab34b07c6e0d7ed51145cf678d84d2424110867db61fbec3455485656";
     deps = with allCrates; [  ];
   };
-  "dns_0_0" = dns_0_0_1;
-  "dns_0" = dns_0_0_1;}
+  dns_0_0_2 = buildCratesLib {
+    name = "dns";
+    version = "0.0.2";
+    hash = "8e5bea840abbbb8bd414ee42a93f2e57b80db3dce7bbae186468a59e53aede83";
+    deps = with allCrates; [  ];
+  };
+  dns_0_0_3 = buildCratesLib {
+    name = "dns";
+    version = "0.0.3";
+    hash = "d96dc8e9a4594c692238a6d46a5614c866bb7999d8e5ce7c3fcebf8a47023c4d";
+    deps = with allCrates; [  ];
+  };
+  "dns_0_0" = dns_0_0_3;
+  "dns_0" = dns_0_0_3;}

@@ -88,8 +88,8 @@ rec {
   google-translate2_0_1_14 = buildCratesLib {
     name = "google-translate2";
     version = "0.1.14";
-    hash = "da7334c878984a837697b7b420826c42db0f057a589a98b9bb1951e825dd912d";
-    deps = with allCrates; [  all__serde.serde_0_7 url all__serde_json.serde_json_0_7 all__mime.mime_0_2 all__hyper.hyper_0_9 ];
+    hash = "1b93a454a2252adf392caa7c17d33728002b90778205f4210d4fd21887231178";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url all__serde.serde_0_8 all__mime.mime_0_2 ];
   };
   google-translate2_0_1_15 = buildCratesLib {
     name = "google-translate2";

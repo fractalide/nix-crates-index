@@ -58,8 +58,8 @@ rec {
   google-cloudmonitoring2_beta2_0_1_9 = buildCratesLib {
     name = "google-cloudmonitoring2_beta2";
     version = "0.1.9";
-    hash = "c9d528bc90b0e56b052f464745ade125f78070034c6300365799d325b73a42c4";
-    deps = with allCrates; [  hyper serde_json yup-oauth2 url serde all__mime.mime_0_1 syntex serde_codegen ];
+    hash = "9d36e5d72680f5a8f2b8703a341a4f368d767f165662aa882a04c3fb28ef77d3";
+    deps = with allCrates; [  url serde_json serde yup-oauth2 all__mime.mime_0_1 hyper serde_codegen syntex ];
   };
   google-cloudmonitoring2_beta2_0_1_10 = buildCratesLib {
     name = "google-cloudmonitoring2_beta2";
@@ -88,8 +88,8 @@ rec {
   google-cloudmonitoring2_beta2_0_1_14 = buildCratesLib {
     name = "google-cloudmonitoring2_beta2";
     version = "0.1.14";
-    hash = "cebb88afa0bd76fd3d1cacc6c8a890a0758716f5f98d0fdea969b232b4f16fdd";
-    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde_json.serde_json_0_7 all__serde.serde_0_7 url ];
+    hash = "beb8e5448cc0325aeea5729265cacccb4c311bf89c24de0eaa21c0088b357d24";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 url ];
   };
   google-cloudmonitoring2_beta2_0_1_15 = buildCratesLib {
     name = "google-cloudmonitoring2_beta2";

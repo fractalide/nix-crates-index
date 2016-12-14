@@ -58,8 +58,8 @@ rec {
   google-drive2_0_1_9 = buildCratesLib {
     name = "google-drive2";
     version = "0.1.9";
-    hash = "93ac01583bedd14c7181f51991edc22fd00bc9a603e4331efbaae12cb11037cb";
-    deps = with allCrates; [  serde_json all__mime.mime_0_1 serde hyper yup-oauth2 url serde_codegen syntex ];
+    hash = "1f62300059154452c6adb19ba9c9d4611e081e07b7ebae41d456bd99c29f6bbc";
+    deps = with allCrates; [  serde url all__mime.mime_0_1 serde_json yup-oauth2 hyper syntex serde_codegen ];
   };
   google-drive2_0_1_10 = buildCratesLib {
     name = "google-drive2";
@@ -82,8 +82,8 @@ rec {
   google-drive2_0_1_14 = buildCratesLib {
     name = "google-drive2";
     version = "0.1.14";
-    hash = "a66a828da2c48a73a518789abcf4674b7b8355745591a2862644c700a516f40f";
-    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde_json.serde_json_0_7 url all__serde.serde_0_7 ];
+    hash = "c145d692257c502ded89c10271a7861c9acf116b274ad8eb06927be45789e58e";
+    deps = with allCrates; [  all__serde.serde_0_8 url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
   };
   google-drive2_0_1_15 = buildCratesLib {
     name = "google-drive2";

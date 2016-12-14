@@ -28,8 +28,8 @@ rec {
   google-classroom1_0_1_14 = buildCratesLib {
     name = "google-classroom1";
     version = "0.1.14";
-    hash = "e7e0e1e3c95c6beaa3c98444eb30c4670f8319c4e2a6c9091adda9015a1b149a";
-    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_7 all__serde.serde_0_7 ];
+    hash = "1790abd4d9a7edbbf6fced0dc47dfe07b3af6c648fb9e683f874151bd7f1dde0";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url all__mime.mime_0_2 all__serde.serde_0_8 ];
   };
   google-classroom1_0_1_15 = buildCratesLib {
     name = "google-classroom1";

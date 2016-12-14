@@ -16,8 +16,8 @@ rec {
   google-drive3_0_1_14 = buildCratesLib {
     name = "google-drive3";
     version = "0.1.14";
-    hash = "a4682eb7c0d8848d973efa04f6e4c4919edd0e2d29a14e753d4525ae442d9350";
-    deps = with allCrates; [  all__serde_json.serde_json_0_7 all__mime.mime_0_2 url all__hyper.hyper_0_9 all__serde.serde_0_7 ];
+    hash = "66590ffb978dd5480ae5c16109ec0946e37733c5dff8ff194aac595e9625ed62";
+    deps = with allCrates; [  url all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
   };
   google-drive3_0_1_15 = buildCratesLib {
     name = "google-drive3";

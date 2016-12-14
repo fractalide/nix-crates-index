@@ -61,6 +61,8 @@
     "fast_chemail" = all__fast_chemail."fast_chemail_0_9_3";
     "all__fastq" = self.callPackage ./fa/st/fastq.nix { };
     "fastq" = all__fastq."fastq_0_4_1";
+    "all__fastcgi" = self.callPackage ./fa/st/fastcgi.nix { };
+    "fastcgi" = all__fastcgi."fastcgi_1_0_0";
     "all__fann-sys" = self.callPackage ./fa/nn/fann-sys.nix { };
     "fann-sys" = all__fann-sys."fann-sys_0_1_6";
     "all__fann" = self.callPackage ./fa/nn/fann.nix { };
@@ -101,6 +103,8 @@
     "nalgebra" = all__nalgebra."nalgebra_0_10_1";
     "all__nalgebra-lapack" = self.callPackage ./na/lg/nalgebra-lapack.nix { };
     "nalgebra-lapack" = all__nalgebra-lapack."nalgebra-lapack_0_4_0";
+    "all__nail" = self.callPackage ./na/il/nail.nix { };
+    "nail" = all__nail."nail_0_1_0";
     "all__nailgun" = self.callPackage ./na/il/nailgun.nix { };
     "nailgun" = all__nailgun."nailgun_0_1_0";
     "all__nat_traversal" = self.callPackage ./na/t_/nat_traversal.nix { };
@@ -1328,7 +1332,7 @@
     "all__dev" = self.callPackage ./3/d/dev.nix { };
     "dev" = all__dev."dev_0_1_0";
     "all__dns" = self.callPackage ./3/d/dns.nix { };
-    "dns" = all__dns."dns_0_0_1";
+    "dns" = all__dns."dns_0_0_3";
     "all__dvk" = self.callPackage ./3/d/dvk.nix { };
     "dvk" = all__dvk."dvk_0_1_6";
     "all__dtl" = self.callPackage ./3/d/dtl.nix { };
@@ -1479,6 +1483,8 @@
     "peg" = all__peg."peg_0_4_0";
     "all__png" = self.callPackage ./3/p/png.nix { };
     "png" = all__png."png_0_5_2";
+    "all__phi" = self.callPackage ./3/p/phi.nix { };
+    "phi" = all__phi."phi_0_0_0";
     "all__phf" = self.callPackage ./3/p/phf.nix { };
     "phf" = all__phf."phf_0_7_20";
     "all__pty" = self.callPackage ./3/p/pty.nix { };
@@ -1492,7 +1498,7 @@
     "all__pop" = self.callPackage ./3/p/pop.nix { };
     "pop" = all__pop."pop_0_0_0";
     "all__pbr" = self.callPackage ./3/p/pbr.nix { };
-    "pbr" = all__pbr."pbr_0_3_1";
+    "pbr" = all__pbr."pbr_1_0_0";
     "all__ptp" = self.callPackage ./3/p/ptp.nix { };
     "ptp" = all__ptp."ptp_0_5_0";
     "all__pcp" = self.callPackage ./3/p/pcp.nix { };
@@ -1736,7 +1742,7 @@
     "all__qik" = self.callPackage ./3/q/qik.nix { };
     "qik" = all__qik."qik_1_2_3";
     "all__ql2" = self.callPackage ./3/q/ql2.nix { };
-    "ql2" = all__ql2."ql2_1_0_1";
+    "ql2" = all__ql2."ql2_1_1_0";
     "all__qwk" = self.callPackage ./3/q/qwk.nix { };
     "qwk" = all__qwk."qwk_0_1_3";
     "all__oak" = self.callPackage ./3/o/oak.nix { };
@@ -1756,7 +1762,7 @@
     "all__oil" = self.callPackage ./3/o/oil.nix { };
     "oil" = all__oil."oil_0_1_0";
     "all__ocf" = self.callPackage ./3/o/ocf.nix { };
-    "ocf" = all__ocf."ocf_0_0_1";
+    "ocf" = all__ocf."ocf_0_2_0";
     "all__orc" = self.callPackage ./3/o/orc.nix { };
     "orc" = all__orc."orc_0_0_1";
     "all__orf" = self.callPackage ./3/o/orf.nix { };
@@ -3070,7 +3076,7 @@
     "all__riak" = self.callPackage ./ri/ak/riak.nix { };
     "riak" = all__riak."riak_0_1_7";
     "all__ring" = self.callPackage ./ri/ng/ring.nix { };
-    "ring" = all__ring."ring_0_5_3";
+    "ring" = all__ring."ring_0_6_0";
     "all__ring-pwhash" = self.callPackage ./ri/ng/ring-pwhash.nix { };
     "ring-pwhash" = all__ring-pwhash."ring-pwhash_0_1_1";
     "all__riff-wave" = self.callPackage ./ri/ff/riff-wave.nix { };
@@ -3288,7 +3294,7 @@
     "all__slog-scope" = self.callPackage ./sl/og/slog-scope.nix { };
     "slog-scope" = all__slog-scope."slog-scope_0_2_2";
     "all__slog-syslog" = self.callPackage ./sl/og/slog-syslog.nix { };
-    "slog-syslog" = all__slog-syslog."slog-syslog_0_7_0";
+    "slog-syslog" = all__slog-syslog."slog-syslog_1_0_0";
     "all__slog-stdlog" = self.callPackage ./sl/og/slog-stdlog.nix { };
     "slog-stdlog" = all__slog-stdlog."slog-stdlog_1_1_0";
     "all__slog-atomic" = self.callPackage ./sl/og/slog-atomic.nix { };
@@ -3296,7 +3302,7 @@
     "all__slog-term" = self.callPackage ./sl/og/slog-term.nix { };
     "slog-term" = all__slog-term."slog-term_1_3_3";
     "all__slog-serde" = self.callPackage ./sl/og/slog-serde.nix { };
-    "slog-serde" = all__slog-serde."slog-serde_0_7_0";
+    "slog-serde" = all__slog-serde."slog-serde_1_0_0";
     "all__slog" = self.callPackage ./sl/og/slog.nix { };
     "slog" = all__slog."slog_1_3_2";
     "all__slog-example-lib" = self.callPackage ./sl/og/slog-example-lib.nix { };
@@ -3709,6 +3715,8 @@
     "libmarpa-sys" = all__libmarpa-sys."libmarpa-sys_0_1_2";
     "all__limiter" = self.callPackage ./li/mi/limiter.nix { };
     "limiter" = all__limiter."limiter_0_3_1";
+    "all__lifx" = self.callPackage ./li/fx/lifx.nix { };
+    "lifx" = all__lifx."lifx_0_0_1";
     "all__liquidfun" = self.callPackage ./li/qu/liquidfun.nix { };
     "liquidfun" = all__liquidfun."liquidfun_0_8_0";
     "all__liquid" = self.callPackage ./li/qu/liquid.nix { };
@@ -3765,6 +3773,8 @@
     "linux_ip" = all__linux_ip."linux_ip_0_1_0";
     "all__linux-api-sys" = self.callPackage ./li/nu/linux-api-sys.nix { };
     "linux-api-sys" = all__linux-api-sys."linux-api-sys_0_0_1";
+    "all__linux" = self.callPackage ./li/nu/linux.nix { };
+    "linux" = all__linux."linux_0_0_0";
     "all__linux-api" = self.callPackage ./li/nu/linux-api.nix { };
     "linux-api" = all__linux-api."linux-api_0_0_5";
     "all__linux-api-math" = self.callPackage ./li/nu/linux-api-math.nix { };
@@ -3851,6 +3861,8 @@
     "librocksdb-sys" = all__librocksdb-sys."librocksdb-sys_0_4_0";
     "all__libressl-pnacl-sys" = self.callPackage ./li/br/libressl-pnacl-sys.nix { };
     "libressl-pnacl-sys" = all__libressl-pnacl-sys."libressl-pnacl-sys_2_1_6";
+    "all__librdkafka-sys" = self.callPackage ./li/br/librdkafka-sys.nix { };
+    "librdkafka-sys" = all__librdkafka-sys."librdkafka-sys_0_9_2";
     "all__libraw-sys" = self.callPackage ./li/br/libraw-sys.nix { };
     "libraw-sys" = all__libraw-sys."libraw-sys_0_1_1";
     "all__libretro-sys" = self.callPackage ./li/br/libretro-sys.nix { };
@@ -4136,7 +4148,7 @@
     "all__multiset" = self.callPackage ./mu/lt/multiset.nix { };
     "multiset" = all__multiset."multiset_0_0_3";
     "all__multipart" = self.callPackage ./mu/lt/multipart.nix { };
-    "multipart" = all__multipart."multipart_0_8_1";
+    "multipart" = all__multipart."multipart_0_9_0";
     "all__multiarray" = self.callPackage ./mu/lt/multiarray.nix { };
     "multiarray" = all__multiarray."multiarray_0_1_3";
     "all__multimap" = self.callPackage ./mu/lt/multimap.nix { };
@@ -4227,6 +4239,8 @@
     "cipher" = all__cipher."cipher_0_1_1";
     "all__dnslib-sys" = self.callPackage ./dn/sl/dnslib-sys.nix { };
     "dnslib-sys" = all__dnslib-sys."dnslib-sys_0_0_1";
+    "all__dns2" = self.callPackage ./dn/s2/dns2.nix { };
+    "dns2" = all__dns2."dns2_0_0_0";
     "all__dns-sd" = self.callPackage ./dn/s-/dns-sd.nix { };
     "dns-sd" = all__dns-sd."dns-sd_0_1_3";
     "all__dns-lookup" = self.callPackage ./dn/s-/dns-lookup.nix { };
@@ -4482,7 +4496,7 @@
     "all__refstruct" = self.callPackage ./re/fs/refstruct.nix { };
     "refstruct" = all__refstruct."refstruct_0_1_1";
     "all__rendarray" = self.callPackage ./re/nd/rendarray.nix { };
-    "rendarray" = all__rendarray."rendarray_0_1_1";
+    "rendarray" = all__rendarray."rendarray_0_2_0";
     "all__reki3" = self.callPackage ./re/ki/reki3.nix { };
     "reki3" = all__reki3."reki3_0_0_2";
     "all__redox_syscall" = self.callPackage ./re/do/redox_syscall.nix { };
@@ -4516,7 +4530,7 @@
     "all__resources_package" = self.callPackage ./re/so/resources_package.nix { };
     "resources_package" = all__resources_package."resources_package_0_1_0";
     "all__resource_proof" = self.callPackage ./re/so/resource_proof.nix { };
-    "resource_proof" = all__resource_proof."resource_proof_0_2_1";
+    "resource_proof" = all__resource_proof."resource_proof_0_3_0";
     "all__resolv-conf" = self.callPackage ./re/so/resolv-conf.nix { };
     "resolv-conf" = all__resolv-conf."resolv-conf_0_4_0";
     "all__resources_package_package" = self.callPackage ./re/so/resources_package_package.nix { };
@@ -5279,6 +5293,8 @@
     "dot_vox" = all__dot_vox."dot_vox_0_3_0";
     "all__dotty" = self.callPackage ./do/tt/dotty.nix { };
     "dotty" = all__dotty."dotty_0_1_0";
+    "all__done" = self.callPackage ./do/ne/done.nix { };
+    "done" = all__done."done_0_0_0";
     "all__dojo" = self.callPackage ./do/jo/dojo.nix { };
     "dojo" = all__dojo."dojo_0_1_0";
     "all__dogged" = self.callPackage ./do/gg/dogged.nix { };
@@ -5346,7 +5362,7 @@
     "all__succinct" = self.callPackage ./su/cc/succinct.nix { };
     "succinct" = all__succinct."succinct_0_4_2";
     "all__substudy" = self.callPackage ./su/bs/substudy.nix { };
-    "substudy" = all__substudy."substudy_0_4_0";
+    "substudy" = all__substudy."substudy_0_4_1";
     "all__subotai" = self.callPackage ./su/bo/subotai.nix { };
     "subotai" = all__subotai."subotai_1_0_3";
     "all__suffix" = self.callPackage ./su/ff/suffix.nix { };
@@ -5373,6 +5389,8 @@
     "rp-sys" = all__rp-sys."rp-sys_0_5_0";
     "all__rpcns4-sys" = self.callPackage ./rp/cn/rpcns4-sys.nix { };
     "rpcns4-sys" = all__rpcns4-sys."rpcns4-sys_0_0_1";
+    "all__rpc-perf" = self.callPackage ./rp/c-/rpc-perf.nix { };
+    "rpc-perf" = all__rpc-perf."rpc-perf_1_0_0";
     "all__rpgffi" = self.callPackage ./rp/gf/rpgffi.nix { };
     "rpgffi" = all__rpgffi."rpgffi_0_1_1";
     "all__rpcperf_request" = self.callPackage ./rp/cp/rpcperf_request.nix { };
@@ -5401,6 +5419,8 @@
     "hetu" = all__hetu."hetu_0_2_0";
     "all__hermes" = self.callPackage ./he/rm/hermes.nix { };
     "hermes" = all__hermes."hermes_0_0_1";
+    "all__helianto" = self.callPackage ./he/li/helianto.nix { };
+    "helianto" = all__helianto."helianto_0_1_0";
     "all__heliotrope" = self.callPackage ./he/li/heliotrope.nix { };
     "heliotrope" = all__heliotrope."heliotrope_0_1_0";
     "all__heredoc" = self.callPackage ./he/re/heredoc.nix { };
@@ -5540,7 +5560,7 @@
     "all__wavelet" = self.callPackage ./wa/ve/wavelet.nix { };
     "wavelet" = all__wavelet."wavelet_0_0_1";
     "all__water" = self.callPackage ./wa/te/water.nix { };
-    "water" = all__water."water_0_1_5";
+    "water" = all__water."water_0_16_45";
     "all__waterfall" = self.callPackage ./wa/te/waterfall.nix { };
     "waterfall" = all__waterfall."waterfall_0_6_3";
     "all__waterrower" = self.callPackage ./wa/te/waterrower.nix { };
@@ -5839,6 +5859,8 @@
     "zeit-rs" = all__zeit-rs."zeit-rs_0_1_2";
     "all__zeus" = self.callPackage ./ze/us/zeus.nix { };
     "zeus" = all__zeus."zeus_0_0_1";
+    "all__zeromq" = self.callPackage ./ze/ro/zeromq.nix { };
+    "zeromq" = all__zeromq."zeromq_0_1_0";
     "all__zero85" = self.callPackage ./ze/ro/zero85.nix { };
     "zero85" = all__zero85."zero85_0_2_0";
     "all__zero" = self.callPackage ./ze/ro/zero.nix { };
@@ -6007,6 +6029,8 @@
     "cupi" = all__cupi."cupi_0_1_0";
     "all__curs" = self.callPackage ./cu/rs/curs.nix { };
     "curs" = all__curs."curs_0_1_3";
+    "all__curses-sys" = self.callPackage ./cu/rs/curses-sys.nix { };
+    "curses-sys" = all__curses-sys."curses-sys_6_0_0";
     "all__curse" = self.callPackage ./cu/rs/curse.nix { };
     "curse" = all__curse."curse_0_1_0";
     "all__cursebox" = self.callPackage ./cu/rs/cursebox.nix { };
@@ -6249,6 +6273,8 @@
     "search" = all__search."search_0_0_2";
     "all__selectors" = self.callPackage ./se/le/selectors.nix { };
     "selectors" = all__selectors."selectors_0_15_0";
+    "all__selecta" = self.callPackage ./se/le/selecta.nix { };
+    "selecta" = all__selecta."selecta_0_0_2";
     "all__select_color" = self.callPackage ./se/le/select_color.nix { };
     "select_color" = all__select_color."select_color_0_8_0";
     "all__selective_middleware" = self.callPackage ./se/le/selective_middleware.nix { };
@@ -6472,7 +6498,7 @@
     "all__sotassl-sys" = self.callPackage ./so/ta/sotassl-sys.nix { };
     "sotassl-sys" = all__sotassl-sys."sotassl-sys_0_7_1400";
     "all__sotahyper" = self.callPackage ./so/ta/sotahyper.nix { };
-    "sotahyper" = all__sotahyper."sotahyper_0_9_400";
+    "sotahyper" = all__sotahyper."sotahyper_0_10_0";
     "all__solicit" = self.callPackage ./so/li/solicit.nix { };
     "solicit" = all__solicit."solicit_0_4_4";
     "all__sodium-sys" = self.callPackage ./so/di/sodium-sys.nix { };
@@ -6625,6 +6651,8 @@
     "filetype" = all__filetype."filetype_0_2_0";
     "all__fingertree" = self.callPackage ./fi/ng/fingertree.nix { };
     "fingertree" = all__fingertree."fingertree_0_0_1";
+    "all__fisher" = self.callPackage ./fi/sh/fisher.nix { };
+    "fisher" = all__fisher."fisher_1_0_0";
     "all__field-offset" = self.callPackage ./fi/el/field-offset.nix { };
     "field-offset" = all__field-offset."field-offset_0_1_1";
     "all__wcmguid-sys" = self.callPackage ./wc/mg/wcmguid-sys.nix { };
@@ -7294,7 +7322,7 @@
     "all__core-midi" = self.callPackage ./co/re/core-midi.nix { };
     "core-midi" = all__core-midi."core-midi_0_1_0";
     "all__core_rustc-serialize" = self.callPackage ./co/re/core_rustc-serialize.nix { };
-    "core_rustc-serialize" = all__core_rustc-serialize."core_rustc-serialize_0_3_19";
+    "core_rustc-serialize" = all__core_rustc-serialize."core_rustc-serialize_0_3_20";
     "all__codifyle" = self.callPackage ./co/di/codifyle.nix { };
     "codifyle" = all__codifyle."codifyle_0_0_1";
     "all__cobalt" = self.callPackage ./co/ba/cobalt.nix { };
@@ -7311,6 +7339,8 @@
     "construct" = all__construct."construct_0_0_3";
     "all__conshash" = self.callPackage ./co/ns/conshash.nix { };
     "conshash" = all__conshash."conshash_0_1_2";
+    "all__consistency" = self.callPackage ./co/ns/consistency.nix { };
+    "consistency" = all__consistency."consistency_1_0_0";
     "all__constant_time_eq" = self.callPackage ./co/ns/constant_time_eq.nix { };
     "constant_time_eq" = all__constant_time_eq."constant_time_eq_0_1_2";
     "all__consecutive-vecmap" = self.callPackage ./co/ns/consecutive-vecmap.nix { };
@@ -8814,7 +8844,7 @@
     "all__cargo-sphinx" = self.callPackage ./ca/rg/cargo-sphinx.nix { };
     "cargo-sphinx" = all__cargo-sphinx."cargo-sphinx_1_0_0";
     "all__cargo-travis" = self.callPackage ./ca/rg/cargo-travis.nix { };
-    "cargo-travis" = all__cargo-travis."cargo-travis_0_0_0";
+    "cargo-travis" = all__cargo-travis."cargo-travis_0_0_1";
     "all__cargo-when" = self.callPackage ./ca/rg/cargo-when.nix { };
     "cargo-when" = all__cargo-when."cargo-when_0_1_0";
     "all__cargo-vendor" = self.callPackage ./ca/rg/cargo-vendor.nix { };
@@ -8830,7 +8860,7 @@
     "all__cargo-cln" = self.callPackage ./ca/rg/cargo-cln.nix { };
     "cargo-cln" = all__cargo-cln."cargo-cln_0_1_0";
     "all__cargo-release" = self.callPackage ./ca/rg/cargo-release.nix { };
-    "cargo-release" = all__cargo-release."cargo-release_0_6_0";
+    "cargo-release" = all__cargo-release."cargo-release_0_7_0";
     "all__cargo-script" = self.callPackage ./ca/rg/cargo-script.nix { };
     "cargo-script" = all__cargo-script."cargo-script_0_1_5";
     "all__cargo-cacher" = self.callPackage ./ca/rg/cargo-cacher.nix { };
@@ -9979,6 +10009,8 @@
     "oleaut32-sys" = all__oleaut32-sys."oleaut32-sys_0_2_0";
     "all__ole32-sys" = self.callPackage ./ol/e3/ole32-sys.nix { };
     "ole32-sys" = all__ole32-sys."ole32-sys_0_2_0";
+    "all__old-http" = self.callPackage ./ol/d-/old-http.nix { };
+    "old-http" = all__old-http."old-http_0_1_1";
     "all__hc128" = self.callPackage ./hc/12/hc128.nix { };
     "hc128" = all__hc128."hc128_0_1_4";
     "all__hc256" = self.callPackage ./hc/25/hc256.nix { };
@@ -10072,7 +10104,7 @@
     "all__rslogic" = self.callPackage ./rs/lo/rslogic.nix { };
     "rslogic" = all__rslogic."rslogic_0_1_0";
     "all__rspec" = self.callPackage ./rs/pe/rspec.nix { };
-    "rspec" = all__rspec."rspec_0_1_0";
+    "rspec" = all__rspec."rspec_1_0_0";
     "all__rs-auto-sync" = self.callPackage ./rs/-a/rs-auto-sync.nix { };
     "rs-auto-sync" = all__rs-auto-sync."rs-auto-sync_0_1_7";
     "all__rstatic" = self.callPackage ./rs/ta/rstatic.nix { };
@@ -10502,9 +10534,9 @@
     "all__rlapack" = self.callPackage ./rl/ap/rlapack.nix { };
     "rlapack" = all__rlapack."rlapack_0_0_5";
     "all__uchardet-sys" = self.callPackage ./uc/ha/uchardet-sys.nix { };
-    "uchardet-sys" = all__uchardet-sys."uchardet-sys_1_0_0";
+    "uchardet-sys" = all__uchardet-sys."uchardet-sys_2_0_0";
     "all__uchardet" = self.callPackage ./uc/ha/uchardet.nix { };
-    "uchardet" = all__uchardet."uchardet_1_0_0";
+    "uchardet" = all__uchardet."uchardet_2_0_0";
     "all__ucontext" = self.callPackage ./uc/on/ucontext.nix { };
     "ucontext" = all__ucontext."ucontext_0_0_5";
     "all__lcms2-sys" = self.callPackage ./lc/ms/lcms2-sys.nix { };
@@ -11195,6 +11227,8 @@
     "syscall-alt" = all__syscall-alt."syscall-alt_0_0_11";
     "all__syscall" = self.callPackage ./sy/sc/syscall.nix { };
     "syscall" = all__syscall."syscall_0_2_1";
+    "all__symtern" = self.callPackage ./sy/mt/symtern.nix { };
+    "symtern" = all__symtern."symtern_0_1_0";
     "all__syntex_syntax" = self.callPackage ./sy/nt/syntex_syntax.nix { };
     "syntex_syntax" = all__syntex_syntax."syntex_syntax_0_52_0";
     "all__syntect" = self.callPackage ./sy/nt/syntect.nix { };
@@ -11293,6 +11327,8 @@
     "todotxt" = all__todotxt."todotxt_0_3_0";
     "all__tobj" = self.callPackage ./to/bj/tobj.nix { };
     "tobj" = all__tobj."tobj_0_1_2";
+    "all__token" = self.callPackage ./to/ke/token.nix { };
+    "token" = all__token."token_1_0_0";
     "all__tokei" = self.callPackage ./to/ke/tokei.nix { };
     "tokei" = all__tokei."tokei_4_5_3";
     "all__to-directory" = self.callPackage ./to/-d/to-directory.nix { };
@@ -11855,6 +11891,8 @@
     "rdispatcher" = all__rdispatcher."rdispatcher_0_1_0";
     "all__rdrand" = self.callPackage ./rd/ra/rdrand.nix { };
     "rdrand" = all__rdrand."rdrand_0_1_5";
+    "all__rdkafka-sys" = self.callPackage ./rd/ka/rdkafka-sys.nix { };
+    "rdkafka-sys" = all__rdkafka-sys."rdkafka-sys_0_9_2";
     "all__rdkafka" = self.callPackage ./rd/ka/rdkafka.nix { };
     "rdkafka" = all__rdkafka."rdkafka_0_4_0";
     "all__rdedup-lib" = self.callPackage ./rd/ed/rdedup-lib.nix { };
@@ -12743,6 +12781,8 @@
     "http-box" = all__http-box."http-box_0_1_0";
     "all__http2hpack" = self.callPackage ./ht/tp/http2hpack.nix { };
     "http2hpack" = all__http2hpack."http2hpack_0_1_3";
+    "all__http" = self.callPackage ./ht/tp/http.nix { };
+    "http" = all__http."http_0_0_0";
     "all__http-fetch" = self.callPackage ./ht/tp/http-fetch.nix { };
     "http-fetch" = all__http-fetch."http-fetch_0_2_1";
     "all__http-pull-parser" = self.callPackage ./ht/tp/http-pull-parser.nix { };
@@ -13003,6 +13043,8 @@
     "clj_rub" = all__clj_rub."clj_rub_0_0_4";
     "all__clamp" = self.callPackage ./cl/am/clamp.nix { };
     "clamp" = all__clamp."clamp_0_1_0";
+    "all__cldr" = self.callPackage ./cl/dr/cldr.nix { };
+    "cldr" = all__cldr."cldr_29_0_0";
     "all__cld2-sys" = self.callPackage ./cl/d2/cld2-sys.nix { };
     "cld2-sys" = all__cld2-sys."cld2-sys_1_0_0";
     "all__cld2" = self.callPackage ./cl/d2/cld2.nix { };
@@ -13138,7 +13180,7 @@
     "all__ffmpeg-sys" = self.callPackage ./ff/mp/ffmpeg-sys.nix { };
     "ffmpeg-sys" = all__ffmpeg-sys."ffmpeg-sys_3_2_0";
     "all__ffmpeg" = self.callPackage ./ff/mp/ffmpeg.nix { };
-    "ffmpeg" = all__ffmpeg."ffmpeg_0_1_1";
+    "ffmpeg" = all__ffmpeg."ffmpeg_0_2_0";
     "all__lru2" = self.callPackage ./lr/u2/lru2.nix { };
     "lru2" = all__lru2."lru2_0_1_0";
     "all__lru-cache" = self.callPackage ./lr/u-/lru-cache.nix { };
@@ -13217,6 +13259,8 @@
     "sapi-sys" = all__sapi-sys."sapi-sys_0_0_1";
     "all__sass-sys" = self.callPackage ./sa/ss/sass-sys.nix { };
     "sass-sys" = all__sass-sys."sass-sys_0_0_14";
+    "all__sassers" = self.callPackage ./sa/ss/sassers.nix { };
+    "sassers" = all__sassers."sassers_0_12_0";
     "all__sass-rs" = self.callPackage ./sa/ss/sass-rs.nix { };
     "sass-rs" = all__sass-rs."sass-rs_0_0_18";
     "all__samlib-sys" = self.callPackage ./sa/ml/samlib-sys.nix { };
@@ -13285,6 +13329,8 @@
     "shrust" = all__shrust."shrust_0_0_4";
     "all__shmem" = self.callPackage ./sh/me/shmem.nix { };
     "shmem" = all__shmem."shmem_0_2_0";
+    "all__shoop" = self.callPackage ./sh/oo/shoop.nix { };
+    "shoop" = all__shoop."shoop_0_0_6";
     "all__shlwapi-sys" = self.callPackage ./sh/lw/shlwapi-sys.nix { };
     "shlwapi-sys" = all__shlwapi-sys."shlwapi-sys_0_0_1";
     "all__sharedmem" = self.callPackage ./sh/ar/sharedmem.nix { };
@@ -13719,6 +13765,8 @@
     "jamkit" = all__jamkit."jamkit_0_3_1";
     "all__jalali" = self.callPackage ./ja/la/jalali.nix { };
     "jalali" = all__jalali."jalali_0_1_0";
+    "all__jade" = self.callPackage ./ja/de/jade.nix { };
+    "jade" = all__jade."jade_0_0_1";
     "all__jamendo" = self.callPackage ./ja/me/jamendo.nix { };
     "jamendo" = all__jamendo."jamendo_0_1_0";
     "all__javascript" = self.callPackage ./ja/va/javascript.nix { };
@@ -14034,7 +14082,7 @@
     "all__sphere" = self.callPackage ./sp/he/sphere.nix { };
     "sphere" = all__sphere."sphere_0_3_0";
     "all__spatial" = self.callPackage ./sp/at/spatial.nix { };
-    "spatial" = all__spatial."spatial_0_1_1";
+    "spatial" = all__spatial."spatial_0_2_0";
     "all__spotify" = self.callPackage ./sp/ot/spotify.nix { };
     "spotify" = all__spotify."spotify_0_6_0";
     "all__spmc" = self.callPackage ./sp/mc/spmc.nix { };

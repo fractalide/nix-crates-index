@@ -21,5 +21,13 @@ rec {
     deps = with allCrates; [  all__slog.slog_0_7 all__serde.serde_0_7 ];
   };
   "slog-serde_0_6" = slog-serde_0_6_0;
+  slog-serde_1_0_0 = buildCratesLib {
+    name = "slog-serde";
+    version = "1.0.0";
+    hash = "24b6ee17a7dd8bf927c6f418bceada98d33e07d78383681108a83d60dbf82a83";
+    deps = with allCrates; [  all__slog.slog_1_3 all__serde.serde_0_8 ];
+  };
   "slog-serde_0_7" = slog-serde_0_7_0;
-  "slog-serde_0" = slog-serde_0_7_0;}
+  "slog-serde_0" = slog-serde_0_7_0;
+  "slog-serde_1_0" = slog-serde_1_0_0;
+  "slog-serde_1" = slog-serde_1_0_0;}

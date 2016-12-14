@@ -65,5 +65,11 @@ rec {
     deps = with allCrates; [  all__handlebars.handlebars_0_11 all__encoding.encoding_0_2 all__cld2.cld2_0_1 all__lazy_static.lazy_static_0_1 all__env_logger.env_logger_0_3 all__rustc-serialize.rustc-serialize_0_3 all__log.log_0_3 all__num.num_0_1 all__regex.regex_0_1 all__csv.csv_0_14 all__uchardet.uchardet_1_0_0 all__docopt.docopt_0_6 ];
   };
   "substudy_0_3" = substudy_0_3_0;
-  "substudy_0_4" = substudy_0_4_0;
-  "substudy_0" = substudy_0_4_0;}
+  substudy_0_4_1 = buildCratesLib {
+    name = "substudy";
+    version = "0.4.1";
+    hash = "7b2137545b708fe97acd2ea971009c9e6b62a52b32d0f8654b10858ac2b2ada6";
+    deps = with allCrates; [  all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 uchardet all__env_logger.env_logger_0_3 all__lazy_static.lazy_static_0_1 all__docopt.docopt_0_6 all__num.num_0_1 all__csv.csv_0_14 all__cld2.cld2_1_0_0 all__handlebars.handlebars_0_11 all__regex.regex_0_1 all__encoding.encoding_0_2 ];
+  };
+  "substudy_0_4" = substudy_0_4_1;
+  "substudy_0" = substudy_0_4_1;}

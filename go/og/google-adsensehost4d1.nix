@@ -58,8 +58,8 @@ rec {
   google-adsensehost4d1_0_1_9 = buildCratesLib {
     name = "google-adsensehost4d1";
     version = "0.1.9";
-    hash = "516f571ba5906f2f45b456f1af003e6ab994bb242d63625b79b2ddefd9ff5b04";
-    deps = with allCrates; [  all__mime.mime_0_1 serde url yup-oauth2 serde_json hyper serde_codegen syntex ];
+    hash = "f4e3244d020343a88dda0de4d5bd7458df4232a13c22d73c2ad3004576fe20b8";
+    deps = with allCrates; [  serde_json all__mime.mime_0_1 serde url yup-oauth2 hyper serde_codegen syntex ];
   };
   google-adsensehost4d1_0_1_10 = buildCratesLib {
     name = "google-adsensehost4d1";
@@ -82,8 +82,8 @@ rec {
   google-adsensehost4d1_0_1_14 = buildCratesLib {
     name = "google-adsensehost4d1";
     version = "0.1.14";
-    hash = "23aab110da7db965050cb332fe282a982275ddadef09ca71901ff4c35e678af3";
-    deps = with allCrates; [  url all__serde_json.serde_json_0_7 all__hyper.hyper_0_9 all__serde.serde_0_7 all__mime.mime_0_2 ];
+    hash = "61fa333f0d2ae32bda2045d64bd3975ee07ebcfd2f8b1364f77b948781143b28";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 url all__serde_json.serde_json_0_8 ];
   };
   google-adsensehost4d1_0_1_15 = buildCratesLib {
     name = "google-adsensehost4d1";

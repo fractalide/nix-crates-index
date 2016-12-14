@@ -14,5 +14,13 @@ rec {
     deps = with allCrates; [  all__syslog.syslog_3_1 all__nix.nix_0_6 all__slog.slog_0_7 all__rustc-serialize.rustc-serialize_0_3 ];
   };
   "slog-syslog_0_6" = slog-syslog_0_6_0;
+  slog-syslog_1_0_0 = buildCratesLib {
+    name = "slog-syslog";
+    version = "1.0.0";
+    hash = "2972115b60933e1c9a466cec3bb5a15d2c5a60445e3e624e98bbdcd43e9c7cd1";
+    deps = with allCrates; [  all__nix.nix_0_6 all__slog-stream.slog-stream_1_1 all__syslog.syslog_3_1 all__slog.slog_1_1 ];
+  };
   "slog-syslog_0_7" = slog-syslog_0_7_0;
-  "slog-syslog_0" = slog-syslog_0_7_0;}
+  "slog-syslog_0" = slog-syslog_0_7_0;
+  "slog-syslog_1_0" = slog-syslog_1_0_0;
+  "slog-syslog_1" = slog-syslog_1_0_0;}

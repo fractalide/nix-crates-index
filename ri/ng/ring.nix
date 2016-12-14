@@ -88,5 +88,12 @@ rec {
     hash = "c0743ef007bcff4909b107907a410418eb7e5c6ad55b843d70b39f62bfb7112e";
     deps = with allCrates; [  all__untrusted.untrusted_0_3 all__lazy_static.lazy_static_0_2 ];
   };
+  ring_0_6_0 = buildCratesLib {
+    name = "ring";
+    version = "0.6.0";
+    hash = "0c9d14fdd6779c80311183b64598d57e640993fd1732119ce2cedb3234217532";
+    deps = with allCrates; [  all__untrusted.untrusted_0_3 all__lazy_static.lazy_static_0_2 ];
+  };
   "ring_0_5" = ring_0_5_3;
-  "ring_0" = ring_0_5_3;}
+  "ring_0_6" = ring_0_6_0;
+  "ring_0" = ring_0_6_0;}

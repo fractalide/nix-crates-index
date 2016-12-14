@@ -58,8 +58,8 @@ rec {
   google-sqladmin1_beta4_0_1_9 = buildCratesLib {
     name = "google-sqladmin1_beta4";
     version = "0.1.9";
-    hash = "a662fd664766c0fcc146e802af6ed5d0f7f8e49caf05e05c6d3991f6b3c2a0ad";
-    deps = with allCrates; [  serde_json url yup-oauth2 hyper serde all__mime.mime_0_1 syntex serde_codegen ];
+    hash = "b394c5596b1b11e2b3f2fc093c4f9a39ae3faeeee98cbe9790243a65bb02040d";
+    deps = with allCrates; [  all__mime.mime_0_1 yup-oauth2 url serde_json hyper serde syntex serde_codegen ];
   };
   google-sqladmin1_beta4_0_1_10 = buildCratesLib {
     name = "google-sqladmin1_beta4";
@@ -82,8 +82,8 @@ rec {
   google-sqladmin1_beta4_0_1_14 = buildCratesLib {
     name = "google-sqladmin1_beta4";
     version = "0.1.14";
-    hash = "e874b7fa262cdd07210e6102a62b4021a6fe508855713b7c02bfe1d752e26edb";
-    deps = with allCrates; [  all__serde.serde_0_7 all__serde_json.serde_json_0_7 url all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+    hash = "1929a6bc2203d3421bf9febecf9e89a8358f45ab499b122c418a22923158dba3";
+    deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url ];
   };
   google-sqladmin1_beta4_0_1_15 = buildCratesLib {
     name = "google-sqladmin1_beta4";

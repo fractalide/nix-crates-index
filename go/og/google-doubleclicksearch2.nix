@@ -58,8 +58,8 @@ rec {
   google-doubleclicksearch2_0_1_9 = buildCratesLib {
     name = "google-doubleclicksearch2";
     version = "0.1.9";
-    hash = "2a16700ddd555d900d84153d72c49258d7511412f17416e73de4d87e8fd0ae05";
-    deps = with allCrates; [  serde hyper url yup-oauth2 serde_json all__mime.mime_0_1 syntex serde_codegen ];
+    hash = "2afb3722ec117f50332d379c59e042e7cc49a122cf8a496f86abeeacda503eee";
+    deps = with allCrates; [  serde all__mime.mime_0_1 hyper yup-oauth2 url serde_json syntex serde_codegen ];
   };
   google-doubleclicksearch2_0_1_10 = buildCratesLib {
     name = "google-doubleclicksearch2";
@@ -88,8 +88,8 @@ rec {
   google-doubleclicksearch2_0_1_14 = buildCratesLib {
     name = "google-doubleclicksearch2";
     version = "0.1.14";
-    hash = "d022c9b3db01a0a7acd439f3223e6c1819f0e0224bc71fb8b1c1c8941a5226c3";
-    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde.serde_0_7 all__serde_json.serde_json_0_7 all__mime.mime_0_2 ];
+    hash = "c8ed507d8893311e82ce14b69d086848bd2d06e881afd6526c6a5864c2925896";
+    deps = with allCrates; [  url all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
   };
   google-doubleclicksearch2_0_1_15 = buildCratesLib {
     name = "google-doubleclicksearch2";

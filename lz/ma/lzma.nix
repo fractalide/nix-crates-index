@@ -16,7 +16,7 @@ rec {
   lzma_0_2_0 = buildCratesLib {
     name = "lzma";
     version = "0.2.0";
-    hash = "8f85db72856f54031815d68a91a30c7b6c64b7f90cdda85656812d744f2ce522";
+    hash = "ee4eb2cb1a895044c06f34b29c34e1d0a68d4cdce5209452c8a462bf32b1b557";
     deps = with allCrates; [  byteorder ];
   };
   "lzma_0_1" = lzma_0_1_1;

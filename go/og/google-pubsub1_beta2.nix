@@ -40,8 +40,8 @@ rec {
   google-pubsub1_beta2_0_1_9 = buildCratesLib {
     name = "google-pubsub1_beta2";
     version = "0.1.9";
-    hash = "b500cbeb72828687e120b65c93f5976ff1319ee4d51dd0b8129792c373feee72";
-    deps = with allCrates; [  all__mime.mime_0_1 serde_json url yup-oauth2 hyper serde serde_codegen syntex ];
+    hash = "e6bc832dbc98d5fa412c02f9dec040b084eeb8332f7c1ad6d1114b931a1a7939";
+    deps = with allCrates; [  serde hyper serde_json yup-oauth2 url all__mime.mime_0_1 serde_codegen syntex ];
   };
   google-pubsub1_beta2_0_1_10 = buildCratesLib {
     name = "google-pubsub1_beta2";

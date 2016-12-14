@@ -66,5 +66,12 @@ rec {
     deps = with allCrates; [  all__regex.regex_0_1 all__semver.semver_0_2 all__toml.toml_0_1 all__clap.clap_2_1 all__quick-error.quick-error_0_1 ];
   };
   "cargo-release_0_5" = cargo-release_0_5_0;
+  cargo-release_0_7_0 = buildCratesLib {
+    name = "cargo-release";
+    version = "0.7.0";
+    hash = "f9af5ccfe796e23b89acc25cc19ce3a89987e1b8627bc0796f6927901c1a914a";
+    deps = with allCrates; [  all__toml.toml_0_1 all__regex.regex_0_1 all__quick-error.quick-error_0_1 all__clap.clap_2_1 all__semver.semver_0_2 ];
+  };
   "cargo-release_0_6" = cargo-release_0_6_0;
-  "cargo-release_0" = cargo-release_0_6_0;}
+  "cargo-release_0_7" = cargo-release_0_7_0;
+  "cargo-release_0" = cargo-release_0_7_0;}

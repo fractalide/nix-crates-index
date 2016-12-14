@@ -4,7 +4,7 @@ rec {
   accel-mma84_0_1_0 = buildCratesLib {
     name = "accel-mma84";
     version = "0.1.0";
-    hash = "7c0c9e36ef76c3e20fc3a3cbd0b945f0f851b4dad6cfbee2cc59766692603808";
+    hash = "d33c1f3e81a6d2bb96c728bcfc6ea73a5216ca818b631fb0528e9205a256a235";
     deps = with allCrates; [  all__tessel.tessel_0_2 ];
   };
   accel-mma84_0_1_1 = buildCratesLib {

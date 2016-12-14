@@ -58,8 +58,8 @@ rec {
   google-androidpublisher2_0_1_9 = buildCratesLib {
     name = "google-androidpublisher2";
     version = "0.1.9";
-    hash = "d49a7778cdc1c2df075a2b4bbe9f7ea348fa64a977e21b7f6ebb4357456508ef";
-    deps = with allCrates; [  serde_json hyper yup-oauth2 all__mime.mime_0_1 serde url serde_codegen syntex ];
+    hash = "0b983d002a5e173a9bc0e8879e4802b77fbad5ecdf92affb2534bf2617974ba6";
+    deps = with allCrates; [  url all__mime.mime_0_1 serde_json hyper serde yup-oauth2 syntex serde_codegen ];
   };
   google-androidpublisher2_0_1_10 = buildCratesLib {
     name = "google-androidpublisher2";
@@ -82,8 +82,8 @@ rec {
   google-androidpublisher2_0_1_14 = buildCratesLib {
     name = "google-androidpublisher2";
     version = "0.1.14";
-    hash = "61659365082c647f20c35480de493055faf74bfa2eb20dffe01b02c15bfd492b";
-    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_7 url all__serde_json.serde_json_0_7 all__hyper.hyper_0_9 ];
+    hash = "e5d2448ed68ff664c3dd87d32e4a6a2ccf574784d287c543bc042f182d0c7a25";
+    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 ];
   };
   google-androidpublisher2_0_1_15 = buildCratesLib {
     name = "google-androidpublisher2";

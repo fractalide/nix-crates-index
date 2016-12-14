@@ -14,7 +14,6 @@ rec {
     deps = with allCrates; [  ];
   };
   "boolinator_0_1" = boolinator_0_1_0;
-  "boolinator_0_1" = boolinator_0_1_0;
   "boolinator_0" = boolinator_0_1_0;
   "boolinator_2_4" = boolinator_2_4_0;
   "boolinator_2" = boolinator_2_4_0;}

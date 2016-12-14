@@ -45,7 +45,6 @@ rec {
     deps = with allCrates; [  all__maplit.maplit_0_1 all__bincode.bincode_0_5 all__rustc-serialize.rustc-serialize_0_3 all__quickcheck.quickcheck_0_2 all__rand.rand_0_3 ];
   };
   "crdts_0_1" = crdts_0_1_4;
-  "crdts_0_1" = crdts_0_1_4;
   "crdts_0" = crdts_0_1_4;
   crdts_1_2_9 = buildCratesLib {
     name = "crdts";

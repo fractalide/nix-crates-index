@@ -13,5 +13,12 @@ rec {
     hash = "d1e8cf102ab2ac6440c86810f5c6335252a4b35cc3b58aab912a6af102c904b0";
     deps = with allCrates; [  all__num.num_0_1 all__itertools.itertools_0_4 ];
   };
+  rendarray_0_2_0 = buildCratesLib {
+    name = "rendarray";
+    version = "0.2.0";
+    hash = "4660c7cec60f52f1ae25a6840900bc6d6d3c88361d705fd19170b4d5a735ff26";
+    deps = with allCrates; [  all__itertools.itertools_0_4 all__num.num_0_1 all__rustc_version.rustc_version_0_1 ];
+  };
   "rendarray_0_1" = rendarray_0_1_1;
-  "rendarray_0" = rendarray_0_1_1;}
+  "rendarray_0_2" = rendarray_0_2_0;
+  "rendarray_0" = rendarray_0_2_0;}

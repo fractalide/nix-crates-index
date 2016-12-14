@@ -58,8 +58,8 @@ rec {
   google-androidenterprise1_0_1_9 = buildCratesLib {
     name = "google-androidenterprise1";
     version = "0.1.9";
-    hash = "cb66f83de585b6d000621691912c1d2534355842f9e3b6fcfef8b3f3296f91ff";
-    deps = with allCrates; [  serde yup-oauth2 url serde_json hyper all__mime.mime_0_1 serde_codegen syntex ];
+    hash = "dd0796edab900fb63aea21a634f3ff8f14b8fabbc19a8b715955f4e23c8d2996";
+    deps = with allCrates; [  all__mime.mime_0_1 hyper serde yup-oauth2 serde_json url serde_codegen syntex ];
   };
   google-androidenterprise1_0_1_10 = buildCratesLib {
     name = "google-androidenterprise1";
@@ -82,8 +82,8 @@ rec {
   google-androidenterprise1_0_1_14 = buildCratesLib {
     name = "google-androidenterprise1";
     version = "0.1.14";
-    hash = "090697bcf949216c052d6a10b5e223e3361957db517e7a97b161ac1a8ae4b989";
-    deps = with allCrates; [  all__serde_json.serde_json_0_7 all__serde.serde_0_7 all__mime.mime_0_2 url all__hyper.hyper_0_9 ];
+    hash = "3bc5ed59566e91f692f1837129f074f2d8dde88068100c7fbad4c1bac34b1a86";
+    deps = with allCrates; [  url all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
   };
   google-androidenterprise1_0_1_15 = buildCratesLib {
     name = "google-androidenterprise1";

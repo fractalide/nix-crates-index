@@ -58,8 +58,8 @@ rec {
   google-identitytoolkit3_0_1_9 = buildCratesLib {
     name = "google-identitytoolkit3";
     version = "0.1.9";
-    hash = "4a6314a9ea1fc7bbf15124c42228630b741ffb5dca82355221dddc58cc1670e7";
-    deps = with allCrates; [  hyper yup-oauth2 all__mime.mime_0_1 url serde_json serde serde_codegen syntex ];
+    hash = "b16ffb4ac396dca97b132af0ca2bc327d616fbf46c6756fffc4fb2fb92d8b3e9";
+    deps = with allCrates; [  all__mime.mime_0_1 serde hyper serde_json yup-oauth2 url syntex serde_codegen ];
   };
   google-identitytoolkit3_0_1_10 = buildCratesLib {
     name = "google-identitytoolkit3";
@@ -82,8 +82,8 @@ rec {
   google-identitytoolkit3_0_1_14 = buildCratesLib {
     name = "google-identitytoolkit3";
     version = "0.1.14";
-    hash = "a72004d2afa996ae66483cdb28957ba87122ffd931bc07c0aa236ebbcd20c562";
-    deps = with allCrates; [  all__mime.mime_0_2 url all__hyper.hyper_0_9 all__serde.serde_0_7 all__serde_json.serde_json_0_7 ];
+    hash = "b8aa7399320bb5df70a4a3d7c57bb85d2f4fb846b3908f448d54b34cfd4ecde7";
+    deps = with allCrates; [  url all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
   };
   google-identitytoolkit3_0_1_15 = buildCratesLib {
     name = "google-identitytoolkit3";

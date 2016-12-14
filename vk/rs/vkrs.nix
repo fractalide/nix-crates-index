@@ -69,8 +69,8 @@ rec {
   vkrs_0_6_2 = buildCratesLib {
     name = "vkrs";
     version = "0.6.2";
-    hash = "bd8dc1414b16d25bcf4a26d2948f5d7d9660f4f39025d58819582e1d5b6e224d";
-    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__serde_json.serde_json_0_7 all__serde.serde_0_7 all__inth-oauth2.inth-oauth2_0_9 all__chrono.chrono_0_2 all__url.url_0_5 all__hyper.hyper_0_8 ];
+    hash = "681633dc13da6af6f48adcdd9ec8e5974adfd496d194c42fbd2dac3258ad4258";
+    deps = with allCrates; [  all__serde.serde_0_8 all__hyper.hyper_0_8 all__chrono.chrono_0_2 all__inth-oauth2.inth-oauth2_0_9 all__serde_json.serde_json_0_8 all__url.url_0_5 all__rustc-serialize.rustc-serialize_0_3 ];
   };
   vkrs_0_6_3 = buildCratesLib {
     name = "vkrs";

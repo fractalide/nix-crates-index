@@ -58,8 +58,8 @@ rec {
   google-spectrum1_explorer_0_1_9 = buildCratesLib {
     name = "google-spectrum1_explorer";
     version = "0.1.9";
-    hash = "75285878357fc3d0a310bdda8f49357488b74b262901cc0d1e14c0bf75b74505";
-    deps = with allCrates; [  serde serde_json url hyper all__mime.mime_0_1 yup-oauth2 serde_codegen syntex ];
+    hash = "952b9e90085ead090d19ab9c5f1eee4745892890cacdb0198c2fe8bf5550731c";
+    deps = with allCrates; [  yup-oauth2 all__mime.mime_0_1 url hyper serde_json serde serde_codegen syntex ];
   };
   google-spectrum1_explorer_0_1_10 = buildCratesLib {
     name = "google-spectrum1_explorer";
@@ -88,8 +88,8 @@ rec {
   google-spectrum1_explorer_0_1_14 = buildCratesLib {
     name = "google-spectrum1_explorer";
     version = "0.1.14";
-    hash = "57a787de1900d9297b55ede8a817bee416344a75175e45b1ca4d7e12b6309764";
-    deps = with allCrates; [  all__mime.mime_0_2 url all__hyper.hyper_0_9 all__serde.serde_0_7 all__serde_json.serde_json_0_7 ];
+    hash = "3b35b3c7f458b88c7406d66ce416311e741c08abb615f9cdeb31b304b50f7ce4";
+    deps = with allCrates; [  url all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 ];
   };
   google-spectrum1_explorer_0_1_15 = buildCratesLib {
     name = "google-spectrum1_explorer";

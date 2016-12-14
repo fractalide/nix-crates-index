@@ -17,7 +17,7 @@ rec {
   guilt-by-association_0_2_1 = buildCratesLib {
     name = "guilt-by-association";
     version = "0.2.1";
-    hash = "6621d12976824a985a947030418b73fe0f619e21acbb3eedad1f0351c7435ad1";
+    hash = "d69f5574f53286d39cc3b4259ae35c5351e739ca76a287d0993b2ab2ed99aaf4";
     deps = with allCrates; [  ];
   };
   guilt-by-association_0_3_0 = buildCratesLib {

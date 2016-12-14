@@ -28,8 +28,8 @@ rec {
   cpufreq_0_1_6 = buildCratesLib {
     name = "cpufreq";
     version = "0.1.6";
-    hash = "5d240981bbdf362845ee61bd05fff489535b4e84c8d7878d29833dcae05eed93";
-    deps = with allCrates; [  all__libc.libc_0_2 all__errno.errno_0_1 all__gcc.gcc_0_3 ];
+    hash = "295209e56acc9c1e6050ccab09ad0759f5780e08e01a8cad4d04f36980eed5a7";
+    deps = with allCrates; [  all__errno.errno_0_1 all__libc.libc_0_2 all__gcc.gcc_0_3 ];
   };
   "cpufreq_0_1" = cpufreq_0_1_6;
   "cpufreq_0" = cpufreq_0_1_6;}

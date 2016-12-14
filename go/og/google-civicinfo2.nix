@@ -40,8 +40,8 @@ rec {
   google-civicinfo2_0_1_9 = buildCratesLib {
     name = "google-civicinfo2";
     version = "0.1.9";
-    hash = "619025179121c4672957d738d33f5cbb4bf65f902c62174e8ed29723ec46a228";
-    deps = with allCrates; [  serde all__mime.mime_0_1 serde_json url yup-oauth2 hyper serde_codegen syntex ];
+    hash = "284afd9a88ed2bc01f1d7ffc4c79e708c5aef37f715c5db3d4ac6e7db00b8017";
+    deps = with allCrates; [  hyper serde_json serde url all__mime.mime_0_1 yup-oauth2 syntex serde_codegen ];
   };
   google-civicinfo2_0_1_10 = buildCratesLib {
     name = "google-civicinfo2";
@@ -70,8 +70,8 @@ rec {
   google-civicinfo2_0_1_14 = buildCratesLib {
     name = "google-civicinfo2";
     version = "0.1.14";
-    hash = "57b41f8d9a9f2b88ab6a3db7d6acc5f555cc322cf5add61be652ac2c34dcb52a";
-    deps = with allCrates; [  all__mime.mime_0_2 all__serde_json.serde_json_0_7 url all__serde.serde_0_7 all__hyper.hyper_0_9 ];
+    hash = "178498f4db51aef6402e2d79c2174e1a0335144db0b530527ca2b18060c6bdcf";
+    deps = with allCrates; [  url all__serde.serde_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
   };
   google-civicinfo2_0_1_15 = buildCratesLib {
     name = "google-civicinfo2";
