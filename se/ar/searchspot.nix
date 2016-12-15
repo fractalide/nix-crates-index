@@ -61,5 +61,11 @@ rec {
     deps = with allCrates; [  all__toml.toml_0_2 all__logger.logger_0_1 all__maplit.maplit_0_1 all__params.params_0_5 all__router.router_0_4 all__chrono.chrono_0_2 all__rs-es.rs-es_0_6 all__lazy_static.lazy_static_0_2 all__iron.iron_0_4 all__serde.serde_0_8 all__oath.oath_0_1 all__log.log_0_3 all__serde_json.serde_json_0_8 ];
   };
   "searchspot_0_10" = searchspot_0_10_0;
-  "searchspot_0_11" = searchspot_0_11_0;
-  "searchspot_0" = searchspot_0_11_0;}
+  searchspot_0_11_2 = buildCratesLib {
+    name = "searchspot";
+    version = "0.11.2";
+    hash = "37417c46ab747734eda96098a0979b6ef6f8ad54f760b3cc702f656301b244ff";
+    deps = with allCrates; [  all__serde.serde_0_8 all__toml.toml_0_2 all__chrono.chrono_0_2 all__log.log_0_3 all__iron.iron_0_4 all__router.router_0_4 all__lazy_static.lazy_static_0_2 all__rs-es.rs-es_0_6 all__params.params_0_5 all__serde_json.serde_json_0_8 all__oath.oath_0_1 all__logger.logger_0_1 all__maplit.maplit_0_1 ];
+  };
+  "searchspot_0_11" = searchspot_0_11_2;
+  "searchspot_0" = searchspot_0_11_2;}

@@ -13,5 +13,11 @@ rec {
     hash = "616e9f18a3dd4ecff9d4823eaf842b4c580226f27a04ee5aa16b275972a30f04";
     deps = with allCrates; [  ];
   };
-  "allehanda_0_1" = allehanda_0_1_1;
-  "allehanda_0" = allehanda_0_1_1;}
+  allehanda_0_1_2 = buildCratesLib {
+    name = "allehanda";
+    version = "0.1.2";
+    hash = "cbf5086384915b543451442d41b73965e95c5b91503ef492751bab4cd73fb3fd";
+    deps = with allCrates; [  ];
+  };
+  "allehanda_0_1" = allehanda_0_1_2;
+  "allehanda_0" = allehanda_0_1_2;}

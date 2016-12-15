@@ -144,5 +144,18 @@ rec {
     hash = "85bac8ec1b6195772a902ae32091d0ae28ec0948cd91b1f3d78b1e9f067fd386";
     deps = with allCrates; [  all__cassandra-sys.cassandra-sys_0_6 all__clap.clap_1 all__libc.libc_0_2 all__ip.ip_1_0 all__time.time_0_1 all__decimal.decimal_0_2 all__chrono.chrono_0_2 all__num.num_0_1 all__log.log_0_3 all__uuid.uuid_0_1 all__rusty-cheddar.rusty-cheddar_0_3 ];
   };
+  cassandra_0_8_0 = buildCratesLib {
+    name = "cassandra";
+    version = "0.8.0";
+    hash = "b03684e23c00b0c68fd32aef0088251e8c04fdba7c62a3399364091782fbf2ed";
+    deps = with allCrates; [  all__clap.clap_1 all__ip.ip_1_0 all__error-chain.error-chain_0_7 all__libc.libc_0_2 all__cassandra-sys.cassandra-sys_0_8 all__chrono.chrono_0_2 all__time.time_0_1 all__decimal.decimal_0_2 all__log.log_0_3 all__num.num_0_1 all__uuid.uuid_0_1 all__rusty-cheddar.rusty-cheddar_0_3 ];
+  };
   "cassandra_0_7" = cassandra_0_7_3;
-  "cassandra_0" = cassandra_0_7_3;}
+  cassandra_0_8_1 = buildCratesLib {
+    name = "cassandra";
+    version = "0.8.1";
+    hash = "f28241919ea5882eacbfbec01f09ed02947371dc4e691baa32472f54f7054979";
+    deps = with allCrates; [  all__clap.clap_1 all__libc.libc_0_2 all__time.time_0_1 all__ip.ip_1_0 all__error-chain.error-chain_0_7 all__log.log_0_3 all__cassandra-sys.cassandra-sys_0_8 all__num.num_0_1 all__uuid.uuid_0_1 all__decimal.decimal_0_2 all__chrono.chrono_0_2 all__rusty-cheddar.rusty-cheddar_0_3 ];
+  };
+  "cassandra_0_8" = cassandra_0_8_1;
+  "cassandra_0" = cassandra_0_8_1;}

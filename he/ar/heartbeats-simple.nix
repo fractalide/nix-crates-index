@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__heartbeats-simple-sys.heartbeats-simple-sys_0_3 ];
   };
   "heartbeats-simple_0_2" = heartbeats-simple_0_2_0;
+  heartbeats-simple_0_4_0 = buildCratesLib {
+    name = "heartbeats-simple";
+    version = "0.4.0";
+    hash = "9ad003ce233955e9d95f2c69cde84e68302ba9ba4a673d351c9bff93c738aadc";
+    deps = with allCrates; [  all__heartbeats-simple-sys.heartbeats-simple-sys_0_4 all__libc.libc_0_2 ];
+  };
   "heartbeats-simple_0_3" = heartbeats-simple_0_3_0;
-  "heartbeats-simple_0" = heartbeats-simple_0_3_0;}
+  "heartbeats-simple_0_4" = heartbeats-simple_0_4_0;
+  "heartbeats-simple_0" = heartbeats-simple_0_4_0;}

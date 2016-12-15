@@ -13,5 +13,18 @@ rec {
     hash = "430e4854afe10a63c6d4c3a6ea435ce0d7250f2ad3c050dde1a93c2aaa28f715";
     deps = with allCrates; [  all__mio.mio_0_6 all__inotify.inotify_0_2 all__tokio-core.tokio-core_0_1 all__futures.futures_0_1 ];
   };
-  "tokio-inotify_0_2" = tokio-inotify_0_2_1;
-  "tokio-inotify_0" = tokio-inotify_0_2_1;}
+  tokio-inotify_0_2_2 = buildCratesLib {
+    name = "tokio-inotify";
+    version = "0.2.2";
+    hash = "39b325fa9830067607dd36e480ce1426b1ff8e7f61cd41f28b19222eff4cd24b";
+    deps = with allCrates; [  all__mio.mio_0_6 all__futures.futures_0_1 all__inotify.inotify_0_2 all__tokio-core.tokio-core_0_1 ];
+  };
+  tokio-inotify_0_3_0 = buildCratesLib {
+    name = "tokio-inotify";
+    version = "0.3.0";
+    hash = "0f14cfc286d5f2304c616cb545f772c32f1dab2dc48460877fcc782aedc781c5";
+    deps = with allCrates; [  all__mio.mio_0_6 all__futures.futures_0_1 all__inotify.inotify_0_3 all__tokio-core.tokio-core_0_1 ];
+  };
+  "tokio-inotify_0_2" = tokio-inotify_0_2_2;
+  "tokio-inotify_0_3" = tokio-inotify_0_3_0;
+  "tokio-inotify_0" = tokio-inotify_0_3_0;}

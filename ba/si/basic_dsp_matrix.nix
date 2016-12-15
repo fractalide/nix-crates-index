@@ -13,5 +13,11 @@ rec {
     hash = "eb7bd4273d191d649fa2a9604ab4ef3e0397c27c236a6b7eb0703198c239be9b";
     deps = with allCrates; [  all__basic_dsp_vector.basic_dsp_vector_0_4 all__num.num_0_1 ];
   };
-  "basic_dsp_matrix_0_4" = basic_dsp_matrix_0_4_1;
-  "basic_dsp_matrix_0" = basic_dsp_matrix_0_4_1;}
+  basic_dsp_matrix_0_4_2 = buildCratesLib {
+    name = "basic_dsp_matrix";
+    version = "0.4.2";
+    hash = "8e542ed5a2ac5d769a755513b8249154130ec5fabe084a04e3319ce21f9e64e3";
+    deps = with allCrates; [  all__num.num_0_1 all__basic_dsp_vector.basic_dsp_vector_0_4 ];
+  };
+  "basic_dsp_matrix_0_4" = basic_dsp_matrix_0_4_2;
+  "basic_dsp_matrix_0" = basic_dsp_matrix_0_4_2;}

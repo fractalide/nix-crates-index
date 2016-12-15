@@ -190,5 +190,11 @@ rec {
     hash = "44ef2a3e4a621518e488db36820a12b49a9d5004764b8daf1458bbe5d7c9b626";
     deps = with allCrates; [  all__num-traits.num-traits_0_1 all__rustc-serialize.rustc-serialize_0_3 all__log.log_0_3 all__heapsize.heapsize_0_3 all__serde.serde_0_8 ];
   };
-  "euclid_0_10" = euclid_0_10_2;
-  "euclid_0" = euclid_0_10_2;}
+  euclid_0_10_3 = buildCratesLib {
+    name = "euclid";
+    version = "0.10.3";
+    hash = "0c274f13773ec277a48408d0c7a8dc935ad4bfe190f4cfccd0126d203afc3c83";
+    deps = with allCrates; [  all__num-traits.num-traits_0_1 all__heapsize.heapsize_0_3 all__rustc-serialize.rustc-serialize_0_3 all__log.log_0_3 all__serde.serde_0_8 ];
+  };
+  "euclid_0_10" = euclid_0_10_3;
+  "euclid_0" = euclid_0_10_3;}

@@ -41,5 +41,12 @@ rec {
     deps = with allCrates; [  all__rdkafka-sys.rdkafka-sys_0_9 all__env_logger.env_logger_0_3 all__errno.errno_0_1 futures all__libc.libc_0_2 all__log.log_0_3 all__clap.clap_2_18 ];
   };
   "rdkafka_0_3" = rdkafka_0_3_0;
+  rdkafka_0_5_0 = buildCratesLib {
+    name = "rdkafka";
+    version = "0.5.0";
+    hash = "bb410304a056ecb6476ccda8b12a9a8605ad968eb7e969c8d8a1eeaed78a2eae";
+    deps = with allCrates; [  all__clap.clap_2_18 all__env_logger.env_logger_0_3 all__errno.errno_0_1 all__log.log_0_3 all__libc.libc_0_2 futures all__rdkafka-sys.rdkafka-sys_0_9 ];
+  };
   "rdkafka_0_4" = rdkafka_0_4_0;
-  "rdkafka_0" = rdkafka_0_4_0;}
+  "rdkafka_0_5" = rdkafka_0_5_0;
+  "rdkafka_0" = rdkafka_0_5_0;}

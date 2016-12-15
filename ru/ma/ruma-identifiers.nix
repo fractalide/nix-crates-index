@@ -46,5 +46,12 @@ rec {
     hash = "2bb5b77c19bd1dfc151fe691fd2c6d09d5daf38a64fb6b4cb23c3fa7f51cf3ff";
     deps = with allCrates; [  all__rand.rand_0_3 all__lazy_static.lazy_static_0_2 all__url.url_1_2 all__regex.regex_0_1 all__serde.serde_0_8 ];
   };
+  ruma-identifiers_0_5_0 = buildCratesLib {
+    name = "ruma-identifiers";
+    version = "0.5.0";
+    hash = "6a7e7acb9d0255beea27ed6388206b09d1f0c294051134bc89fe79d7b3e848de";
+    deps = with allCrates; [  all__url.url_1_2 all__regex.regex_0_1 all__rand.rand_0_3 all__serde.serde_0_8 all__lazy_static.lazy_static_0_2 ];
+  };
   "ruma-identifiers_0_4" = ruma-identifiers_0_4_3;
-  "ruma-identifiers_0" = ruma-identifiers_0_4_3;}
+  "ruma-identifiers_0_5" = ruma-identifiers_0_5_0;
+  "ruma-identifiers_0" = ruma-identifiers_0_5_0;}

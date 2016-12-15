@@ -13,5 +13,11 @@ rec {
     hash = "68b171c3c551d26ce92d85135ee90a263bf8515c46359a75c4b641f4ac731b75";
     deps = with allCrates; [  all__specs.specs_0_7 ];
   };
-  "specs_engine_0_0" = specs_engine_0_0_2;
-  "specs_engine_0" = specs_engine_0_0_2;}
+  specs_engine_0_0_3 = buildCratesLib {
+    name = "specs_engine";
+    version = "0.0.3";
+    hash = "861aa3b7e3faa75324e505e106af2a049eb5166820f40f8c95ec6ca1960716e4";
+    deps = with allCrates; [  all__slog.slog_1_3 all__slog-term.slog-term_1_3 all__specs.specs_0_7 ];
+  };
+  "specs_engine_0_0" = specs_engine_0_0_3;
+  "specs_engine_0" = specs_engine_0_0_3;}

@@ -118,5 +118,11 @@ rec {
     hash = "16def8d179a7eff0c6f6779d13e84e7f782a709b85635b7ef86fd8a698669b60";
     deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 all__glob.glob_0_2 ];
   };
-  "zstd_0_4" = zstd_0_4_1;
-  "zstd_0" = zstd_0_4_1;}
+  zstd_0_4_2 = buildCratesLib {
+    name = "zstd";
+    version = "0.4.2";
+    hash = "97b42e6184ac20d9c54694f86dd8938766efe2ae398552e63d8c8a035801ecc5";
+    deps = with allCrates; [  all__libc.libc_0_2 all__glob.glob_0_2 all__gcc.gcc_0_3 ];
+  };
+  "zstd_0_4" = zstd_0_4_2;
+  "zstd_0" = zstd_0_4_2;}

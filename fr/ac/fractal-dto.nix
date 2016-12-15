@@ -290,5 +290,12 @@ rec {
     hash = "4e748a235f0ca5099014fa0efee8a059ef6158a9a57c8c01137f3e40d7a128dc";
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__chrono.chrono_0_2 all__fractal-utils.fractal-utils_0_2 ];
   };
+  fractal-dto_0_8_0 = buildCratesLib {
+    name = "fractal-dto";
+    version = "0.8.0";
+    hash = "a75da607d54265c588cf7317705107735294e1a5b01aaf0baf65e81325ff1298";
+    deps = with allCrates; [  all__fractal-utils.fractal-utils_0_2 all__rustc-serialize.rustc-serialize_0_3 all__chrono.chrono_0_2 ];
+  };
   "fractal-dto_0_7" = fractal-dto_0_7_1;
-  "fractal-dto_0" = fractal-dto_0_7_1;}
+  "fractal-dto_0_8" = fractal-dto_0_8_0;
+  "fractal-dto_0" = fractal-dto_0_8_0;}

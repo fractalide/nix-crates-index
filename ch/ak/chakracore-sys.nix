@@ -13,5 +13,12 @@ rec {
     hash = "7b42613ce4189b828b9b29292d38337529d56ad1e55eb57cf21a6aedfa85bc68";
     deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
   };
+  chakracore-sys_0_1_0 = buildCratesLib {
+    name = "chakracore-sys";
+    version = "0.1.0";
+    hash = "7793ef05917fb93f0eaca9e310218da3c7085e9056865774662320d150f74be4";
+    deps = with allCrates; [  all__libc.libc_0_2 all__clang-sys.clang-sys_0_8 all__libbindgen.libbindgen_0_1 all__pkg-config.pkg-config_0_3 all__regex.regex_0_1 ];
+  };
   "chakracore-sys_0_0" = chakracore-sys_0_0_2;
-  "chakracore-sys_0" = chakracore-sys_0_0_2;}
+  "chakracore-sys_0_1" = chakracore-sys_0_1_0;
+  "chakracore-sys_0" = chakracore-sys_0_1_0;}

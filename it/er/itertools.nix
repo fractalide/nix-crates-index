@@ -558,5 +558,11 @@ rec {
     hash = "4e80479061d4444bfb160054b66fa92cf45e5a6490aadec415ea214004198194";
     deps = with allCrates; [  all__either.either_1_0 ];
   };
-  "itertools_0_5" = itertools_0_5_6;
-  "itertools_0" = itertools_0_5_6;}
+  itertools_0_5_7 = buildCratesLib {
+    name = "itertools";
+    version = "0.5.7";
+    hash = "8e8d6f7e00ae9fd6ad3075412717c706d823cebc4a2f127ae43c1744452a087a";
+    deps = with allCrates; [  all__either.either_1_0 ];
+  };
+  "itertools_0_5" = itertools_0_5_7;
+  "itertools_0" = itertools_0_5_7;}

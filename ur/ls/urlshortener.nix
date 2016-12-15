@@ -35,5 +35,24 @@ rec {
     deps = with allCrates; [  all__log.log_0_3 all__hyper.hyper_0_9 all__url.url_1_2 ];
   };
   "urlshortener_0_4" = urlshortener_0_4_0;
+  urlshortener_0_6_0 = buildCratesLib {
+    name = "urlshortener";
+    version = "0.6.0";
+    hash = "2086ec931d9cb30a6fcf40359f6118edf7a4fe982b28a75ce5e9188b9ffad146";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__url.url_1_2 all__log.log_0_3 ];
+  };
   "urlshortener_0_5" = urlshortener_0_5_0;
-  "urlshortener_0" = urlshortener_0_5_0;}
+  urlshortener_0_6_1 = buildCratesLib {
+    name = "urlshortener";
+    version = "0.6.1";
+    hash = "d7da4c0778b564cbee5f9cc5487eb09271bfc16d7c30a52ecf5bef342592a7fb";
+    deps = with allCrates; [  all__log.log_0_3 all__hyper.hyper_0_9 all__url.url_1_2 ];
+  };
+  urlshortener_0_6_2 = buildCratesLib {
+    name = "urlshortener";
+    version = "0.6.2";
+    hash = "b40e006fac59ce1c0907b0a0bda2302d25e48dd39026e5feec9f0de321ba1b09";
+    deps = with allCrates; [  all__url.url_1_2 all__hyper.hyper_0_9 all__log.log_0_3 ];
+  };
+  "urlshortener_0_6" = urlshortener_0_6_2;
+  "urlshortener_0" = urlshortener_0_6_2;}

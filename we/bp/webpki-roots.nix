@@ -35,5 +35,12 @@ rec {
     deps = with allCrates; [  all__untrusted.untrusted_0_3 all__webpki.webpki_0_3 ];
   };
   "webpki-roots_0_4" = webpki-roots_0_4_0;
+  webpki-roots_0_6_0 = buildCratesLib {
+    name = "webpki-roots";
+    version = "0.6.0";
+    hash = "73093f9095120f5d3b3ea923ff09e50c3d44bffb0bb27ecf85f3ff442ecdf826";
+    deps = with allCrates; [  all__webpki.webpki_0_8 all__untrusted.untrusted_0_3 ];
+  };
   "webpki-roots_0_5" = webpki-roots_0_5_0;
-  "webpki-roots_0" = webpki-roots_0_5_0;}
+  "webpki-roots_0_6" = webpki-roots_0_6_0;
+  "webpki-roots_0" = webpki-roots_0_6_0;}

@@ -108,5 +108,11 @@ rec {
     hash = "c40c5e416ee0666e56a8da4df178fe0a9cc9f9bf2c511c9dd772d2f4a415a9dd";
     deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
   };
-  "ntrumls_0_9" = ntrumls_0_9_5;
-  "ntrumls_0" = ntrumls_0_9_5;}
+  ntrumls_0_9_6 = buildCratesLib {
+    name = "ntrumls";
+    version = "0.9.6";
+    hash = "51f1cf14df1371a4d7fe71972661d79f5fadb64fc9b5946b66c2c9357e29d804";
+    deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
+  };
+  "ntrumls_0_9" = ntrumls_0_9_6;
+  "ntrumls_0" = ntrumls_0_9_6;}

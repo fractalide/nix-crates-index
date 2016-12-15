@@ -56,5 +56,12 @@ rec {
     hash = "4ba645db75d82cf3f60da0aec6f783fb46d088094bcce370eb3304222fc5d8ce";
     deps = with allCrates; [  ];
   };
+  tag_safe_0_2_0 = buildCratesLib {
+    name = "tag_safe";
+    version = "0.2.0";
+    hash = "0161886a87063b8667137a5a36492c66df94b129bedd84f2b897715a217797f2";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 ];
+  };
   "tag_safe_0_1" = tag_safe_0_1_1;
-  "tag_safe_0" = tag_safe_0_1_1;}
+  "tag_safe_0_2" = tag_safe_0_2_0;
+  "tag_safe_0" = tag_safe_0_2_0;}

@@ -14,5 +14,30 @@ rec {
     deps = with allCrates; [  ];
   };
   "slice-pool_0_1" = slice-pool_0_1_0;
+  slice-pool_0_3_0 = buildCratesLib {
+    name = "slice-pool";
+    version = "0.3.0";
+    hash = "e3161d6686c93b61527355e2f5eede9e66177c8075d60f2b688bd3a835c13d2b";
+    deps = with allCrates; [  ];
+  };
   "slice-pool_0_2" = slice-pool_0_2_0;
-  "slice-pool_0" = slice-pool_0_2_0;}
+  slice-pool_0_3_1 = buildCratesLib {
+    name = "slice-pool";
+    version = "0.3.1";
+    hash = "a95e1a650e20cf4c0a6ae7d85256d4d8fc2d428d34c3f353bf12c6a7f2ee05c3";
+    deps = with allCrates; [  ];
+  };
+  slice-pool_0_3_2 = buildCratesLib {
+    name = "slice-pool";
+    version = "0.3.2";
+    hash = "d1acd79f5dfe99af8cee838d3eb2b0aa7deb9b600ae159ecb16c6dc654c25ca1";
+    deps = with allCrates; [  ];
+  };
+  slice-pool_0_3_3 = buildCratesLib {
+    name = "slice-pool";
+    version = "0.3.3";
+    hash = "b9a593f5116c625ea2aac7dd133e136012177a48eb039182127ea68dba199516";
+    deps = with allCrates; [  ];
+  };
+  "slice-pool_0_3" = slice-pool_0_3_3;
+  "slice-pool_0" = slice-pool_0_3_3;}

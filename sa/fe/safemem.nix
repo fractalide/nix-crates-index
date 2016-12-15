@@ -13,5 +13,12 @@ rec {
     hash = "725b3bf47ae40b4abcd27b5f0a9540369426a29f7b905649b3e1468e13e22009";
     deps = with allCrates; [  ];
   };
+  safemem_0_2_0 = buildCratesLib {
+    name = "safemem";
+    version = "0.2.0";
+    hash = "e27a8b19b835f7aea908818e871f5cc3a5a186550c30773be987e155e8163d8f";
+    deps = with allCrates; [  ];
+  };
   "safemem_0_1" = safemem_0_1_1;
-  "safemem_0" = safemem_0_1_1;}
+  "safemem_0_2" = safemem_0_2_0;
+  "safemem_0" = safemem_0_2_0;}

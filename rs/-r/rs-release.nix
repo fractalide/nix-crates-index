@@ -37,5 +37,11 @@ rec {
     hash = "6b0230d1531b23206ecc701a56c1a5ce0bb8c391a56364123004dad05714ea07";
     deps = with allCrates; [  ];
   };
-  "rs-release_0_1" = rs-release_0_1_5;
-  "rs-release_0" = rs-release_0_1_5;}
+  rs-release_0_1_6 = buildCratesLib {
+    name = "rs-release";
+    version = "0.1.6";
+    hash = "6098e0dc07c52ac70e78dd46f4cc4f14551807ed827b88a06220cbafb1d6fe46";
+    deps = with allCrates; [  ];
+  };
+  "rs-release_0_1" = rs-release_0_1_6;
+  "rs-release_0" = rs-release_0_1_6;}

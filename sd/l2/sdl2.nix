@@ -447,5 +447,12 @@ rec {
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__sdl2-sys.sdl2-sys_0_26 all__bitflags.bitflags_0_7 all__num.num_0_1 all__libc.libc_0_2 all__rand.rand_0_3 ];
   };
   "sdl2_0_25" = sdl2_0_25_0;
+  sdl2_0_27_0 = buildCratesLib {
+    name = "sdl2";
+    version = "0.27.0";
+    hash = "52728fd7966342c2d399b79894e3015212e15dc2dc6f9cdb4366b43c34cfda31";
+    deps = with allCrates; [  all__bitflags.bitflags_0_7 all__libc.libc_0_2 all__num.num_0_1 all__sdl2-sys.sdl2-sys_0_27 all__lazy_static.lazy_static_0_2 all__rand.rand_0_3 ];
+  };
   "sdl2_0_26" = sdl2_0_26_0;
-  "sdl2_0" = sdl2_0_26_0;}
+  "sdl2_0_27" = sdl2_0_27_0;
+  "sdl2_0" = sdl2_0_27_0;}

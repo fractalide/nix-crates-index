@@ -7,5 +7,11 @@ rec {
     hash = "9bd3e116ff5148ffe2ac48803a89f4690005a712cfb14fb1e9cb3a8d8daeff3f";
     deps = with allCrates; [  all__toml.toml_0_1 ];
   };
-  "rustup-version-name_0_2" = rustup-version-name_0_2_0;
-  "rustup-version-name_0" = rustup-version-name_0_2_0;}
+  rustup-version-name_0_2_1 = buildCratesLib {
+    name = "rustup-version-name";
+    version = "0.2.1";
+    hash = "1c371d9410ad6a984df984f436c75ab3fb4b9d2f4e76b9ceca6d3b9cf65cf2b5";
+    deps = with allCrates; [  all__toml.toml_0_1 ];
+  };
+  "rustup-version-name_0_2" = rustup-version-name_0_2_1;
+  "rustup-version-name_0" = rustup-version-name_0_2_1;}

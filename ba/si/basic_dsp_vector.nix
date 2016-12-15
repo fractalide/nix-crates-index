@@ -13,5 +13,11 @@ rec {
     hash = "c49bbd4cef40072edcd21acb95b944c5353ed3e28083ed3360756911c3ec352b";
     deps = with allCrates; [  all__num.num_0_1 all__rustfft.rustfft_1_0_0 all__num_cpus.num_cpus_0_2 all__crossbeam.crossbeam_0_2 ];
   };
-  "basic_dsp_vector_0_4" = basic_dsp_vector_0_4_1;
-  "basic_dsp_vector_0" = basic_dsp_vector_0_4_1;}
+  basic_dsp_vector_0_4_2 = buildCratesLib {
+    name = "basic_dsp_vector";
+    version = "0.4.2";
+    hash = "6641be1963cc8ad8c8fc3b89978f5ce72e4c4a42f1d6649a8918d3c85a2da862";
+    deps = with allCrates; [  all__num_cpus.num_cpus_0_2 all__num.num_0_1 all__crossbeam.crossbeam_0_2 all__rustfft.rustfft_1_0_0 ];
+  };
+  "basic_dsp_vector_0_4" = basic_dsp_vector_0_4_2;
+  "basic_dsp_vector_0" = basic_dsp_vector_0_4_2;}

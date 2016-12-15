@@ -19,5 +19,13 @@ rec {
     hash = "f2ae8faf7d5b2594306a7e1960d3846d0b1bb1b735adff0a9f2f04847be5f0d4";
     deps = with allCrates; [  all__svg.svg_0_5 ];
   };
+  rust-birkana_1_0_0 = buildCratesLib {
+    name = "rust-birkana";
+    version = "1.0.0";
+    hash = "19cce6e969fb7cb53674fa910c20c1120d5b8eb55faada1084a0a6227188c3fd";
+    deps = with allCrates; [  all__svg.svg_0_5 ];
+  };
   "rust-birkana_0_1" = rust-birkana_0_1_2;
-  "rust-birkana_0" = rust-birkana_0_1_2;}
+  "rust-birkana_0" = rust-birkana_0_1_2;
+  "rust-birkana_1_0" = rust-birkana_1_0_0;
+  "rust-birkana_1" = rust-birkana_1_0_0;}

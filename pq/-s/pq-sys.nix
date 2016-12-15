@@ -44,5 +44,23 @@ rec {
     hash = "bef99a69a5220cade3a7bd056ea33abde833b14d872bca84dddc98663c4a911c";
     deps = with allCrates; [  libc ];
   };
-  "pq-sys_0_2" = pq-sys_0_2_4;
-  "pq-sys_0" = pq-sys_0_2_4;}
+  pq-sys_0_2_5 = buildCratesLib {
+    name = "pq-sys";
+    version = "0.2.5";
+    hash = "efc0d93170da259a495a2b271030ab0611b2fd16196c23301da820a16bd5bf4d";
+    deps = with allCrates; [  libc ];
+  };
+  pq-sys_0_2_6 = buildCratesLib {
+    name = "pq-sys";
+    version = "0.2.6";
+    hash = "9401d44e27d998023a528d66c8d2fa4e2d23ca51f9d063e6721e05924f25dc9c";
+    deps = with allCrates; [  libc all__pkg-config.pkg-config_0_3 ];
+  };
+  pq-sys_0_2_7 = buildCratesLib {
+    name = "pq-sys";
+    version = "0.2.7";
+    hash = "33cd6d75cd3dac41f0adc6dad3eb644ff63a9208c5168835386b4991b88b481d";
+    deps = with allCrates; [  libc ];
+  };
+  "pq-sys_0_2" = pq-sys_0_2_7;
+  "pq-sys_0" = pq-sys_0_2_7;}

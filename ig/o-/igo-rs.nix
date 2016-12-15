@@ -13,5 +13,18 @@ rec {
     hash = "20b783610690c19389e54034244ee871600162bdfcddf57f34046ab0e141fe39";
     deps = with allCrates; [  all__env_logger.env_logger_0_3 all__log.log_0_3 all__byteorder.byteorder_0_5 getopts ];
   };
+  igo-rs_0_2_0 = buildCratesLib {
+    name = "igo-rs";
+    version = "0.2.0";
+    hash = "752778294c51038d174768137992540fc738d08a54415cf2b02bbfe1e4d9196a";
+    deps = with allCrates; [  all__bit-set.bit-set_0 getopts all__simple_logger.simple_logger_0_4 all__byteorder.byteorder_0_5 all__log.log_0_3 all__glob.glob_0_2 all__encoding.encoding_0_2 ];
+  };
   "igo-rs_0_1" = igo-rs_0_1_1;
-  "igo-rs_0" = igo-rs_0_1_1;}
+  igo-rs_0_2_1 = buildCratesLib {
+    name = "igo-rs";
+    version = "0.2.1";
+    hash = "6efdeca287ad2332167ffc188cfc628a86c602cebd5b2c185ff6ed80424e51f2";
+    deps = with allCrates; [  all__simple_logger.simple_logger_0_4 all__glob.glob_0_2 all__bit-set.bit-set_0 all__byteorder.byteorder_0_5 getopts all__encoding.encoding_0_2 all__log.log_0_3 ];
+  };
+  "igo-rs_0_2" = igo-rs_0_2_1;
+  "igo-rs_0" = igo-rs_0_2_1;}

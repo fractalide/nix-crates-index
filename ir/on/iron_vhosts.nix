@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__iron.iron_0_3 all__url.url_0_5 ];
   };
   "iron_vhosts_0_1" = iron_vhosts_0_1_0;
+  iron_vhosts_0_4_0 = buildCratesLib {
+    name = "iron_vhosts";
+    version = "0.4.0";
+    hash = "66bbc96a85415035fb3d7b560ef7c84aa6fe6021ee392432f3df95e601b2186b";
+    deps = with allCrates; [  all__iron.iron_0_4 ];
+  };
   "iron_vhosts_0_2" = iron_vhosts_0_2_0;
-  "iron_vhosts_0" = iron_vhosts_0_2_0;}
+  "iron_vhosts_0_4" = iron_vhosts_0_4_0;
+  "iron_vhosts_0" = iron_vhosts_0_4_0;}

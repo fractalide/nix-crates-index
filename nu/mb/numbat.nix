@@ -27,5 +27,11 @@ rec {
     deps = with allCrates; [  all__time.time_0_1 all__url.url_1_2 all__serde.serde_0_8 all__lazy_static.lazy_static_0_1 all__libc.libc_0_2 all__serde_json.serde_json_0_8 ];
   };
   "numbat_0_2" = numbat_0_2_0;
-  "numbat_0_3" = numbat_0_3_0;
-  "numbat_0" = numbat_0_3_0;}
+  numbat_0_3_1 = buildCratesLib {
+    name = "numbat";
+    version = "0.3.1";
+    hash = "78913c19f12bfd79af61f5b11dfb976f94b7b1cf913d39c97aa4edcdace9f347";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_1 all__time.time_0_1 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__url.url_1_2 all__libc.libc_0_2 ];
+  };
+  "numbat_0_3" = numbat_0_3_1;
+  "numbat_0" = numbat_0_3_1;}

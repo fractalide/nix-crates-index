@@ -88,5 +88,12 @@ rec {
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__libc.libc_0_2 all__onig_sys.onig_sys_61_1 all__bitflags.bitflags_0_7 ];
   };
   "onig_1_0" = onig_1_0_0;
+  onig_1_2_0 = buildCratesLib {
+    name = "onig";
+    version = "1.2.0";
+    hash = "0c5f586e53fa11ead18582956ea282c30baea1f25d3ee4c5fb85803f98727cb7";
+    deps = with allCrates; [  all__libc.libc_0_2 all__lazy_static.lazy_static_0_2 all__bitflags.bitflags_0_7 all__onig_sys.onig_sys_61_1 all__onig_sys.onig_sys_61_1 ];
+  };
   "onig_1_1" = onig_1_1_0;
-  "onig_1" = onig_1_1_0;}
+  "onig_1_2" = onig_1_2_0;
+  "onig_1" = onig_1_2_0;}

@@ -77,5 +77,11 @@ rec {
     hash = "ac8697229a42c97aed5a7844be3c8c51565cfb9ccaed016a494147fb1a8191ad";
     deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
   };
-  "ntru_0_5" = ntru_0_5_5;
-  "ntru_0" = ntru_0_5_5;}
+  ntru_0_5_6 = buildCratesLib {
+    name = "ntru";
+    version = "0.5.6";
+    hash = "1529ecefb499c128db3cfdcff1f30106ed379b00443cd674e7a9afc49962a987";
+    deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
+  };
+  "ntru_0_5" = ntru_0_5_6;
+  "ntru_0" = ntru_0_5_6;}

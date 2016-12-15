@@ -13,5 +13,17 @@ rec {
     hash = "6b3a2364fd71bc721ffe36e9d828cf13d059fd1d397b3b560033f70ce481eac8";
     deps = with allCrates; [  all__snowflake.snowflake_1_2 ];
   };
-  "id_tree_0_2" = id_tree_0_2_4;
-  "id_tree_0" = id_tree_0_2_4;}
+  id_tree_0_2_5 = buildCratesLib {
+    name = "id_tree";
+    version = "0.2.5";
+    hash = "b919247ed844297af0054e06ec61b17fcbce111730d49778252b61814b84dbca";
+    deps = with allCrates; [  all__snowflake.snowflake_1_2 ];
+  };
+  id_tree_0_2_6 = buildCratesLib {
+    name = "id_tree";
+    version = "0.2.6";
+    hash = "79de6a4e79f9a3ecc1e40688212b9c92b79bda03e29d8dc95970eb961c5aea7b";
+    deps = with allCrates; [  all__snowflake.snowflake_1_2 ];
+  };
+  "id_tree_0_2" = id_tree_0_2_6;
+  "id_tree_0" = id_tree_0_2_6;}

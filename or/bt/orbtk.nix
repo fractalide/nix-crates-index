@@ -92,5 +92,18 @@ rec {
     hash = "cea7fccb0a64945204eba98248da8263c1b0dd34396d5ceb61215ac729e5d30b";
     deps = with allCrates; [  all__orbclient.orbclient_0_1 all__orbimage.orbimage_0_1 all__orbfont.orbfont_0_1 ];
   };
+  orbtk_0_2_0 = buildCratesLib {
+    name = "orbtk";
+    version = "0.2.0";
+    hash = "72e9e78e4463927c9001482ca6749b34ba895a7c35c8b044a1389e2b85be6120";
+    deps = with allCrates; [  all__orbfont.orbfont_0_1 all__orbimage.orbimage_0_1 all__orbclient.orbclient_0_1 ];
+  };
   "orbtk_0_1" = orbtk_0_1_9;
-  "orbtk_0" = orbtk_0_1_9;}
+  orbtk_0_2_1 = buildCratesLib {
+    name = "orbtk";
+    version = "0.2.1";
+    hash = "7b5428372abd6a02b4344ffe2766e81664d8dc7456c5ac71ef91cfcc4ede830d";
+    deps = with allCrates; [  all__orbfont.orbfont_0_1 all__orbimage.orbimage_0_1 all__orbclient.orbclient_0_1 ];
+  };
+  "orbtk_0_2" = orbtk_0_2_1;
+  "orbtk_0" = orbtk_0_2_1;}

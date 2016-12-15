@@ -13,5 +13,12 @@ rec {
     hash = "98392a49bb836ed675970fcea1c0e6687b2462eadf6bc7c58b10bfd460a56701";
     deps = with allCrates; [  ];
   };
+  owned_chars_0_2_0 = buildCratesLib {
+    name = "owned_chars";
+    version = "0.2.0";
+    hash = "5273716d336a41085b17f446a35076b854970500ea30581d0820074f9738c350";
+    deps = with allCrates; [  ];
+  };
   "owned_chars_0_1" = owned_chars_0_1_1;
-  "owned_chars_0" = owned_chars_0_1_1;}
+  "owned_chars_0_2" = owned_chars_0_2_0;
+  "owned_chars_0" = owned_chars_0_2_0;}

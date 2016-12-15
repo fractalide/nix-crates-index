@@ -86,5 +86,11 @@ rec {
     hash = "e4e1d5bf3f50383d44514d5df6569ef2badd115fd352a9fb3114a2f4feae1623";
     deps = with allCrates; [  all__threadpool.threadpool_1_3 all__log.log_0_3 ];
   };
-  "cadence_0_8" = cadence_0_8_1;
-  "cadence_0" = cadence_0_8_1;}
+  cadence_0_8_2 = buildCratesLib {
+    name = "cadence";
+    version = "0.8.2";
+    hash = "b4fb40d3f59150e23d59d759544e1b0089273557696d49d085d9bc1c32469169";
+    deps = with allCrates; [  all__threadpool.threadpool_1_3 all__log.log_0_3 ];
+  };
+  "cadence_0_8" = cadence_0_8_2;
+  "cadence_0" = cadence_0_8_2;}

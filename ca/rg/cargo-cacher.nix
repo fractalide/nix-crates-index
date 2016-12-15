@@ -70,5 +70,12 @@ rec {
     hash = "4effc6841effb176d003097a3a6a751f55d666feed7b02cabec18e8d18996d7e";
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__log.log_0_3 all__scoped_threadpool.scoped_threadpool_0_1 all__clap.clap_2_14 all__simple_logger.simple_logger_0_4 all__router.router_0_4 all__logger.logger_0_1 all__walkdir.walkdir_1 all__iron.iron_0_4 ];
   };
+  cargo-cacher_1_1_0 = buildCratesLib {
+    name = "cargo-cacher";
+    version = "1.1.0";
+    hash = "453713da0c5ca4537b135815cbca7489af28f3a80319dba2608b64c82db18235";
+    deps = with allCrates; [  all__clap.clap_2_14 all__logger.logger_0_1 all__rustc-serialize.rustc-serialize_0_3 all__walkdir.walkdir_1 all__iron.iron_0_4 all__simple_logger.simple_logger_0_4 all__scoped_threadpool.scoped_threadpool_0_1 all__router.router_0_4 all__rusqlite.rusqlite_0_7 all__log.log_0_3 ];
+  };
   "cargo-cacher_1_0" = cargo-cacher_1_0_3;
-  "cargo-cacher_1" = cargo-cacher_1_0_3;}
+  "cargo-cacher_1_1" = cargo-cacher_1_1_0;
+  "cargo-cacher_1" = cargo-cacher_1_1_0;}

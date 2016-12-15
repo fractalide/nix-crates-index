@@ -69,5 +69,12 @@ rec {
     deps = with allCrates; [  libc log zmq-sys time rand ];
   };
   "zmq_0_6" = zmq_0_6_7;
+  zmq_0_8_0 = buildCratesLib {
+    name = "zmq";
+    version = "0.8.0";
+    hash = "9d58a0273355358980735c75f1b6f5f2e215cd36742053fe75906b2c002155d7";
+    deps = with allCrates; [  all__log.log_0_3 all__zmq-sys.zmq-sys_0_8 all__libc.libc_0_2 all__zmq-sys.zmq-sys_0_8 ];
+  };
   "zmq_0_7" = zmq_0_7_0;
-  "zmq_0" = zmq_0_7_0;}
+  "zmq_0_8" = zmq_0_8_0;
+  "zmq_0" = zmq_0_8_0;}

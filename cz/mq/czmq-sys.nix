@@ -19,5 +19,12 @@ rec {
     hash = "86733e262234d970a28ef71c004bea6b51e6da040373f2a432fc05c76f3a1e5d";
     deps = with allCrates; [  libc ];
   };
+  czmq-sys_0_1_0 = buildCratesLib {
+    name = "czmq-sys";
+    version = "0.1.0";
+    hash = "13f528835f7d21f895ddc2f74f13f29b089e05673434d87c342480200a6b6a99";
+    deps = with allCrates; [  libc ];
+  };
   "czmq-sys_0_0" = czmq-sys_0_0_3;
-  "czmq-sys_0" = czmq-sys_0_0_3;}
+  "czmq-sys_0_1" = czmq-sys_0_1_0;
+  "czmq-sys_0" = czmq-sys_0_1_0;}

@@ -7,5 +7,11 @@ rec {
     hash = "a5a98d56fd30092e3af2a71d8ee78bf9031557b8d3058e112bc34659fdb0f41e";
     deps = with allCrates; [  all__gcc.gcc_0_3 ];
   };
-  "sparkey-sys_0_1" = sparkey-sys_0_1_0;
-  "sparkey-sys_0" = sparkey-sys_0_1_0;}
+  sparkey-sys_0_1_1 = buildCratesLib {
+    name = "sparkey-sys";
+    version = "0.1.1";
+    hash = "89aa87d1ee2bacd0f7d9a8704589c82e1c835674d3fc7f0173010d8327e7974e";
+    deps = with allCrates; [  all__gcc.gcc_0_3 ];
+  };
+  "sparkey-sys_0_1" = sparkey-sys_0_1_1;
+  "sparkey-sys_0" = sparkey-sys_0_1_1;}

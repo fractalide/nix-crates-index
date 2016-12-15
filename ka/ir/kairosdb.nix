@@ -26,5 +26,11 @@ rec {
     hash = "98f59ad1ab4214cf6d8039b32ba0f04b9f770a61728b52f731e5223a25b09320";
     deps = with allCrates; [  all__log.log_0_3 all__chrono.chrono_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__env_logger.env_logger_0_3 all__hyper.hyper_0_9 ];
   };
-  "kairosdb_0_2" = kairosdb_0_2_2;
-  "kairosdb_0" = kairosdb_0_2_2;}
+  kairosdb_0_2_3 = buildCratesLib {
+    name = "kairosdb";
+    version = "0.2.3";
+    hash = "40e602925b5516d7eb4e4fe6bd9a90d880a1e46208ebdad894180dae446d839a";
+    deps = with allCrates; [  all__log.log_0_3 all__serde_json.serde_json_0_8 all__env_logger.env_logger_0_3 all__hyper.hyper_0_9 all__chrono.chrono_0_2 all__serde.serde_0_8 ];
+  };
+  "kairosdb_0_2" = kairosdb_0_2_3;
+  "kairosdb_0" = kairosdb_0_2_3;}

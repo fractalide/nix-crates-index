@@ -574,5 +574,11 @@ rec {
     hash = "86ea0c0ff7e6ef09eff72234800ddb48b6263277936e7ecd6ecd3250345d705f";
     deps = with allCrates; [  all__time.time_0_1 all__url.url_1_0 all__cookie.cookie_0_2 all__mime.mime_0_2 all__num_cpus.num_cpus_1_0 all__solicit.solicit_0_4 all__traitobject.traitobject_0_0_1 all__language-tags.language-tags_0_2 all__typeable.typeable_0_1 all__httparse.httparse_1_0 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__unicase.unicase_1_0 ];
   };
-  "hyper_0_9" = hyper_0_9_13;
-  "hyper_0" = hyper_0_9_13;}
+  hyper_0_9_14 = buildCratesLib {
+    name = "hyper";
+    version = "0.9.14";
+    hash = "bcb3fc65554155980167fb821d05c7c66177f92464976c0b676a19d9e03387a7";
+    deps = with allCrates; [  all__time.time_0_1 all__mime.mime_0_2 all__rustc-serialize.rustc-serialize_0_3 all__cookie.cookie_0_2 all__num_cpus.num_cpus_1_0 all__unicase.unicase_1_0 all__solicit.solicit_0_4 all__httparse.httparse_1_0 all__log.log_0_3 all__url.url_1_0 all__traitobject.traitobject_0_0_1 all__language-tags.language-tags_0_2 all__typeable.typeable_0_1 ];
+  };
+  "hyper_0_9" = hyper_0_9_14;
+  "hyper_0" = hyper_0_9_14;}

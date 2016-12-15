@@ -25,5 +25,11 @@ rec {
     hash = "d5bfc6782530ac8ace97af10a540054a37126b63b0702ddaaa243b73b5745b9a";
     deps = with allCrates; [  all__winapi.winapi_0_2 all__net2.net2_0_2 all__kernel32-sys.kernel32-sys_0_2 all__ws2_32-sys.ws2_32-sys_0_2 ];
   };
-  "miow_0_1" = miow_0_1_3;
-  "miow_0" = miow_0_1_3;}
+  miow_0_1_4 = buildCratesLib {
+    name = "miow";
+    version = "0.1.4";
+    hash = "c6b54090eaa23880441a80c4adec5fd6b4af1152a49c5e78f96a82469abc6942";
+    deps = with allCrates; [  all__ws2_32-sys.ws2_32-sys_0_2 all__kernel32-sys.kernel32-sys_0_2 all__winapi.winapi_0_2 all__net2.net2_0_2 ];
+  };
+  "miow_0_1" = miow_0_1_4;
+  "miow_0" = miow_0_1_4;}

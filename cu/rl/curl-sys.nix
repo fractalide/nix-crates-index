@@ -291,5 +291,11 @@ rec {
     hash = "f8d9bdbfab1cb053cdd87f1c3063c5b228cdb72890dbf01340e4f0604756fe27";
     deps = with allCrates; [  libz-sys all__libc.libc_0_2 all__gcc.gcc_0_3 all__pkg-config.pkg-config_0_3 ];
   };
-  "curl-sys_0_3" = curl-sys_0_3_5;
-  "curl-sys_0" = curl-sys_0_3_5;}
+  curl-sys_0_3_6 = buildCratesLib {
+    name = "curl-sys";
+    version = "0.3.6";
+    hash = "218a149208e1f4e5f7e20f1d0ed1e9431a086a6b4333ff95dba82237be9c283a";
+    deps = with allCrates; [  libz-sys all__libc.libc_0_2 all__gcc.gcc_0_3 all__pkg-config.pkg-config_0_3 ];
+  };
+  "curl-sys_0_3" = curl-sys_0_3_6;
+  "curl-sys_0" = curl-sys_0_3_6;}

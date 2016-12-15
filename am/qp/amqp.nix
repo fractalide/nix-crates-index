@@ -79,5 +79,11 @@ rec {
     hash = "94aa008fd88c7a5f74074e4d1f292db9d2cdfabe919dfa28910cc2b35ff0b69a";
     deps = with allCrates; [  all__bit-vec.bit-vec_0_4 all__byteorder.byteorder_0_5 all__log.log_0_3 all__enum_primitive.enum_primitive_0_1 all__env_logger.env_logger_0_3 all__url.url_1_2 ];
   };
-  "amqp_0_0" = amqp_0_0_19;
-  "amqp_0" = amqp_0_0_19;}
+  amqp_0_0_20 = buildCratesLib {
+    name = "amqp";
+    version = "0.0.20";
+    hash = "713e6aed2e9e8b34b076af7bc38f5d3e5964e27a12b91fde31b9ef2d1fcd070e";
+    deps = with allCrates; [  all__enum_primitive.enum_primitive_0_1 all__url.url_1_2 all__byteorder.byteorder_0_5 all__bit-vec.bit-vec_0_4 all__log.log_0_3 all__env_logger.env_logger_0_3 ];
+  };
+  "amqp_0_0" = amqp_0_0_20;
+  "amqp_0" = amqp_0_0_20;}

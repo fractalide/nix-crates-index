@@ -19,5 +19,23 @@ rec {
     hash = "f6bcd4f7fca1e9b4caf74ee1559ba7ddbaad6744061392c6c6f82a32632cc01b";
     deps = with allCrates; [  all__regex.regex_0_1 all__tempdir.tempdir_0_3 all__clap.clap_2_19 ];
   };
-  "evalrs_0_0" = evalrs_0_0_3;
-  "evalrs_0" = evalrs_0_0_3;}
+  evalrs_0_0_4 = buildCratesLib {
+    name = "evalrs";
+    version = "0.0.4";
+    hash = "0ca1bc5aeb1db63e8d26b1f514745c210db585eba3b22ebcfb9a5a69744d5062";
+    deps = with allCrates; [  all__regex.regex_0_1 all__tempdir.tempdir_0_3 all__clap.clap_2_19 ];
+  };
+  evalrs_0_0_5 = buildCratesLib {
+    name = "evalrs";
+    version = "0.0.5";
+    hash = "b099e467b4821142a14595c430061ebe536f0d9fd7e29f908c8076a55a6e65d6";
+    deps = with allCrates; [  all__clap.clap_2_19 all__tempdir.tempdir_0_3 all__regex.regex_0_1 ];
+  };
+  evalrs_0_0_6 = buildCratesLib {
+    name = "evalrs";
+    version = "0.0.6";
+    hash = "37bd80badf62f9950be50e5e1e7a6090d9e14562f20bbe731666ab2e5e4c71d2";
+    deps = with allCrates; [  all__clap.clap_2_19 all__regex.regex_0_1 all__tempdir.tempdir_0_3 ];
+  };
+  "evalrs_0_0" = evalrs_0_0_6;
+  "evalrs_0" = evalrs_0_0_6;}

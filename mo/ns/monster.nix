@@ -151,5 +151,17 @@ rec {
     hash = "227d7361bd796515e2529aa9d3bb19b3d2306be56bf56bf2e46cabbc7da91810";
     deps = with allCrates; [  ];
   };
-  "monster_0_1" = monster_0_1_25;
-  "monster_0" = monster_0_1_25;}
+  monster_0_1_26 = buildCratesLib {
+    name = "monster";
+    version = "0.1.26";
+    hash = "e5638328e21a049ebf572e68e17e0277246880f3c6ab4ebfa2be319d14b31fdb";
+    deps = with allCrates; [  ];
+  };
+  monster_0_1_27 = buildCratesLib {
+    name = "monster";
+    version = "0.1.27";
+    hash = "8b41cea8046ae6c89048cd2f99526e1b5a5dc02bca24f042f3585a821bb9cc64";
+    deps = with allCrates; [  ];
+  };
+  "monster_0_1" = monster_0_1_27;
+  "monster_0" = monster_0_1_27;}

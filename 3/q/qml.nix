@@ -49,5 +49,11 @@ rec {
     hash = "2e8fea224d672d99707c12a3766437c8618c10947c4ada6dd24b1cc4656bcafa";
     deps = with allCrates; [  all__libc.libc_0_2 all__lazy_static.lazy_static_0_2 ];
   };
-  "qml_0_0" = qml_0_0_8;
-  "qml_0" = qml_0_0_8;}
+  qml_0_0_9 = buildCratesLib {
+    name = "qml";
+    version = "0.0.9";
+    hash = "5e5b41634e0699593958a59f2b574d09b18681aff08844afdfaebc7cdaffcbc6";
+    deps = with allCrates; [  all__libc.libc_0_2 all__lazy_static.lazy_static_0_2 ];
+  };
+  "qml_0_0" = qml_0_0_9;
+  "qml_0" = qml_0_0_9;}

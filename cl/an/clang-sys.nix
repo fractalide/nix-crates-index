@@ -167,5 +167,12 @@ rec {
     hash = "19911f7964ce61a02d382adee8400f919d0fedd53c5441e3d6a9858ba73e249e";
     deps = with allCrates; [  all__libc.libc_0_2 all__glob.glob_0_2 all__bitflags.bitflags_0_7 all__glob.glob_0_2 ];
   };
+  clang-sys_0_12_0 = buildCratesLib {
+    name = "clang-sys";
+    version = "0.12.0";
+    hash = "822ea22bbbef9f5934e9477860545fb0311a1759e43a276de42e2856c605aa2b";
+    deps = with allCrates; [  all__glob.glob_0_2 all__bitflags.bitflags_0_7 all__libc.libc_0_2 all__glob.glob_0_2 ];
+  };
   "clang-sys_0_11" = clang-sys_0_11_1;
-  "clang-sys_0" = clang-sys_0_11_1;}
+  "clang-sys_0_12" = clang-sys_0_12_0;
+  "clang-sys_0" = clang-sys_0_12_0;}

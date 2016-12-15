@@ -7,5 +7,12 @@ rec {
     hash = "ada8fc9883a173959abbecb25beeba6cbd7e6c7cf1407f67a38ccbbef82ec3da";
     deps = with allCrates; [  all__time.time_0_1 all__rustc-serialize.rustc-serialize_0_3 all__tantivy.tantivy_0_1 all__mount.mount_0_2 all__urlencoded.urlencoded_0_4 all__staticfile.staticfile_0_3 all__iron.iron_0_4 all__ansi_term.ansi_term_0_8 all__clap.clap_2 all__persistent.persistent_0_2 ];
   };
+  tantivy-cli_0_2_0 = buildCratesLib {
+    name = "tantivy-cli";
+    version = "0.2.0";
+    hash = "7dcb49cf1ef45ca0ecb4e50bf5688eb037cdf7805e998725aeb7bcbeb63cb06b";
+    deps = with allCrates; [  all__time.time_0_1 all__urlencoded.urlencoded_0_4 all__mount.mount_0_2 all__chan.chan_0_1 all__staticfile.staticfile_0_3 all__env_logger.env_logger_0_3 all__ansi_term.ansi_term_0_8 all__tantivy.tantivy_0_2 all__bincode.bincode_0_4 all__byteorder.byteorder_0_5 all__iron.iron_0_4 all__log.log_0_3 all__clap.clap_2 all__rustc-serialize.rustc-serialize_0_3 all__persistent.persistent_0_2 ];
+  };
   "tantivy-cli_0_1" = tantivy-cli_0_1_1;
-  "tantivy-cli_0" = tantivy-cli_0_1_1;}
+  "tantivy-cli_0_2" = tantivy-cli_0_2_0;
+  "tantivy-cli_0" = tantivy-cli_0_2_0;}

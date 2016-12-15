@@ -45,5 +45,12 @@ rec {
     hash = "b2d4764ca07ffe4a6afd47c14b7af0cfb2bf114a3160cb874d87c700ef9b87d6";
     deps = with allCrates; [  all__serde.serde_0_6 all__serde_json.serde_json_0_6 all__syntex.syntex_0_29 all__serde_codegen.serde_codegen_0_6 ];
   };
+  pandoc_ast_0_4_0 = buildCratesLib {
+    name = "pandoc_ast";
+    version = "0.4.0";
+    hash = "d577b1fa487ccf6c830bcddce9171e437645e99cec365cc8aa033f30a03a9037";
+    deps = with allCrates; [  all__serde.serde_0_6 all__serde_json.serde_json_0_6 all__syntex.syntex_0_29 all__serde_codegen.serde_codegen_0_6 ];
+  };
   "pandoc_ast_0_3" = pandoc_ast_0_3_4;
-  "pandoc_ast_0" = pandoc_ast_0_3_4;}
+  "pandoc_ast_0_4" = pandoc_ast_0_4_0;
+  "pandoc_ast_0" = pandoc_ast_0_4_0;}

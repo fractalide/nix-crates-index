@@ -7,5 +7,11 @@ rec {
     hash = "3e0ab991abb1eec35079831199b79b4139553d299a9182aa3bfc4019615a0cb1";
     deps = with allCrates; [  ];
   };
-  "fake-simd_0_1" = fake-simd_0_1_0;
-  "fake-simd_0" = fake-simd_0_1_0;}
+  fake-simd_0_1_1 = buildCratesLib {
+    name = "fake-simd";
+    version = "0.1.1";
+    hash = "b52aea8838e96fb8d19325611f9824ec355d8320bd8033685cca2b690fc77db7";
+    deps = with allCrates; [  ];
+  };
+  "fake-simd_0_1" = fake-simd_0_1_1;
+  "fake-simd_0" = fake-simd_0_1_1;}

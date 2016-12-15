@@ -51,5 +51,11 @@ rec {
     hash = "5cbdc37f0be0ad7d94ec355c24117d712da2ee45da5f87e8703d6b6f41d2a305";
     deps = with allCrates; [  all__num.num_0_1 ];
   };
-  "fraction_0_3" = fraction_0_3_3;
-  "fraction_0" = fraction_0_3_3;}
+  fraction_0_3_4 = buildCratesLib {
+    name = "fraction";
+    version = "0.3.4";
+    hash = "bee85d5628b59c0197f177774acefc2fe96972a5f206c9b007d949bc0147ef29";
+    deps = with allCrates; [  all__num.num_0_1 ];
+  };
+  "fraction_0_3" = fraction_0_3_4;
+  "fraction_0" = fraction_0_3_4;}

@@ -222,5 +222,11 @@ rec {
   };
   "nom_1_2" = nom_1_2_4;
   "nom_1" = nom_1_2_4;
-  "nom_2_0" = nom_2_0_0;
-  "nom_2" = nom_2_0_0;}
+  nom_2_0_1 = buildCratesLib {
+    name = "nom";
+    version = "2.0.1";
+    hash = "ffc564b2727f758993db55d4ffed0d84bbd7f387a66509516768c8f786bb0b10";
+    deps = with allCrates; [  ];
+  };
+  "nom_2_0" = nom_2_0_1;
+  "nom_2" = nom_2_0_1;}

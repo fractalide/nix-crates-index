@@ -13,5 +13,11 @@ rec {
     hash = "05a45f610598c3fb0befd3d168386c658aab2c2df2d417e93381319f1ec5de3f";
     deps = with allCrates; [  ];
   };
-  "streaming-iterator_0_1" = streaming-iterator_0_1_1;
-  "streaming-iterator_0" = streaming-iterator_0_1_1;}
+  streaming-iterator_0_1_2 = buildCratesLib {
+    name = "streaming-iterator";
+    version = "0.1.2";
+    hash = "64f27c2d4d3544f10f441a5ce544013d1f4bd2aeff6cd006d546fd9b5a8028b1";
+    deps = with allCrates; [  ];
+  };
+  "streaming-iterator_0_1" = streaming-iterator_0_1_2;
+  "streaming-iterator_0" = streaming-iterator_0_1_2;}

@@ -7,5 +7,12 @@ rec {
     hash = "f199aff2572654c2bf243bf007bfec1543b58fe2e85c42915240931fc591ab0b";
     deps = with allCrates; [  all__libusb.libusb_0_3 all__byteorder.byteorder_0_5 all__error-chain.error-chain_0_7 ];
   };
+  aw-fel_0_2_0 = buildCratesLib {
+    name = "aw-fel";
+    version = "0.2.0";
+    hash = "b20d3bc0cdc78ff6642b675b8f7627a2b4e2c562cf5fdf0ea1d29aba695682f4";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__libusb.libusb_0_3 all__error-chain.error-chain_0_7 ];
+  };
   "aw-fel_0_1" = aw-fel_0_1_0;
-  "aw-fel_0" = aw-fel_0_1_0;}
+  "aw-fel_0_2" = aw-fel_0_2_0;
+  "aw-fel_0" = aw-fel_0_2_0;}

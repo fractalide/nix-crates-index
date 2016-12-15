@@ -59,5 +59,12 @@ rec {
     deps = with allCrates; [  all__nalgebra.nalgebra_0_5 all__num.num_0_1 ];
   };
   "zoom_1_3" = zoom_1_3_0;
+  zoom_1_5_0 = buildCratesLib {
+    name = "zoom";
+    version = "1.5.0";
+    hash = "e0ac24ea586704925b1ff6be71fb2f101ec4f005b1cc160507552ce030b2c851";
+    deps = with allCrates; [  all__nalgebra.nalgebra_0_10 all__num.num_0_1 ];
+  };
   "zoom_1_4" = zoom_1_4_0;
-  "zoom_1" = zoom_1_4_0;}
+  "zoom_1_5" = zoom_1_5_0;
+  "zoom_1" = zoom_1_5_0;}

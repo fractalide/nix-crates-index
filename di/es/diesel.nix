@@ -105,5 +105,11 @@ rec {
     deps = with allCrates; [  byteorder libc ];
   };
   "diesel_0_8" = diesel_0_8_2;
-  "diesel_0_9" = diesel_0_9_0;
-  "diesel_0" = diesel_0_9_0;}
+  diesel_0_9_1 = buildCratesLib {
+    name = "diesel";
+    version = "0.9.1";
+    hash = "572e0546bf05f51985b95af3f72ea1d32edf62370a94794ed7ad771a144fbe86";
+    deps = with allCrates; [  libc byteorder ];
+  };
+  "diesel_0_9" = diesel_0_9_1;
+  "diesel_0" = diesel_0_9_1;}

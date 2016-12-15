@@ -14,5 +14,17 @@ rec {
     deps = with allCrates; [  ];
   };
   "hd44780_0_1" = hd44780_0_1_0;
-  "hd44780_0_2" = hd44780_0_2_0;
-  "hd44780_0" = hd44780_0_2_0;}
+  hd44780_0_2_1 = buildCratesLib {
+    name = "hd44780";
+    version = "0.2.1";
+    hash = "c0aa0637eda41e4c332662863abedf23d0e852817698cb2ab54772727042e4e0";
+    deps = with allCrates; [  ];
+  };
+  hd44780_0_2_2 = buildCratesLib {
+    name = "hd44780";
+    version = "0.2.2";
+    hash = "de02e998ea1fc7cc1f933e339e23425b837d86bde4a90c6f17f032ee4a80ce99";
+    deps = with allCrates; [  ];
+  };
+  "hd44780_0_2" = hd44780_0_2_2;
+  "hd44780_0" = hd44780_0_2_2;}

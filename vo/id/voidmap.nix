@@ -151,5 +151,11 @@ rec {
     hash = "696c4be93a1182f8b872c58d0c01c3a57a148164eeb01d036e75a2b326f15074";
     deps = with allCrates; [  all__time.time_0_1 all__getopts.getopts_0_2 all__unicode-segmentation.unicode-segmentation_0_1 all__protobuf.protobuf_1_0 all__log.log_0_3 all__hyper.hyper_0_9 all__lazy_static.lazy_static_0_2 all__rand.rand_0_3 all__regex.regex_0_1 all__termion.termion_1_1 all__libc.libc_0_2 ];
   };
-  "voidmap_0_2" = voidmap_0_2_24;
-  "voidmap_0" = voidmap_0_2_24;}
+  voidmap_0_2_25 = buildCratesLib {
+    name = "voidmap";
+    version = "0.2.25";
+    hash = "f82ee428fe7f601a9a03ec99ab17f024ffd2bb237d49a0a4a2a56fa974345cf8";
+    deps = with allCrates; [  all__time.time_0_1 all__protobuf.protobuf_1_0 all__log.log_0_3 all__getopts.getopts_0_2 all__termion.termion_1_1 all__unicode-segmentation.unicode-segmentation_0_1 all__libc.libc_0_2 all__hyper.hyper_0_9 all__rand.rand_0_3 all__lazy_static.lazy_static_0_2 all__regex.regex_0_1 ];
+  };
+  "voidmap_0_2" = voidmap_0_2_25;
+  "voidmap_0" = voidmap_0_2_25;}

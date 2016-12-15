@@ -13,5 +13,11 @@ rec {
     hash = "2a91e35db9dc6e0f5fe229bb452e9e20b09c8fc451c2054e7e1fea9de2b4afc3";
     deps = with allCrates; [  ];
   };
-  "odbc_0_1" = odbc_0_1_1;
-  "odbc_0" = odbc_0_1_1;}
+  odbc_0_1_2 = buildCratesLib {
+    name = "odbc";
+    version = "0.1.2";
+    hash = "4ddfed1c644931f972000d811f8a4947db815ca08172da027798643ddfa43be7";
+    deps = with allCrates; [  ];
+  };
+  "odbc_0_1" = odbc_0_1_2;
+  "odbc_0" = odbc_0_1_2;}

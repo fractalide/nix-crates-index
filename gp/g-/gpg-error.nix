@@ -31,5 +31,11 @@ rec {
     hash = "434cf54a001dc14b5cb2d3b9dc2a0fe8a507839b0dec821cf1f4b73b781747dd";
     deps = with allCrates; [  all__libgpg-error-sys.libgpg-error-sys_0_1 ];
   };
-  "gpg-error_0_1" = gpg-error_0_1_4;
-  "gpg-error_0" = gpg-error_0_1_4;}
+  gpg-error_0_1_5 = buildCratesLib {
+    name = "gpg-error";
+    version = "0.1.5";
+    hash = "fe62d018b7051a2ca99562fa5c5998a31430bf4527f843d60a4c39f355dc153e";
+    deps = with allCrates; [  all__libgpg-error-sys.libgpg-error-sys_0_1 ];
+  };
+  "gpg-error_0_1" = gpg-error_0_1_5;
+  "gpg-error_0" = gpg-error_0_1_5;}

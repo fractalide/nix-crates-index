@@ -32,5 +32,12 @@ rec {
     hash = "53c4b67617665d7f4172f381f9843c1bec6a4fccc9a9226529e5b1be40dc1301";
     deps = with allCrates; [  all__libc.libc_0_2 all__cmake.cmake_0_1 all__pkg-config.pkg-config_0_3 ];
   };
+  heartbeats-simple-sys_0_4_0 = buildCratesLib {
+    name = "heartbeats-simple-sys";
+    version = "0.4.0";
+    hash = "8be7839c304f725521e57b002954ac3f3178f9314fbf5870646ab3301bd580aa";
+    deps = with allCrates; [  all__libc.libc_0_2 all__cmake.cmake_0_1 all__pkg-config.pkg-config_0_3 ];
+  };
   "heartbeats-simple-sys_0_3" = heartbeats-simple-sys_0_3_2;
-  "heartbeats-simple-sys_0" = heartbeats-simple-sys_0_3_2;}
+  "heartbeats-simple-sys_0_4" = heartbeats-simple-sys_0_4_0;
+  "heartbeats-simple-sys_0" = heartbeats-simple-sys_0_4_0;}

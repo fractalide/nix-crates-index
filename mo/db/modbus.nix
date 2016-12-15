@@ -83,5 +83,12 @@ rec {
     hash = "925d6af46211746d51bdca8ae39a0152f2691dac1ffabe1a5cb9844195020701";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__num.num_0_1 all__rustc-serialize.rustc-serialize_0_3 all__bincode.bincode_0_5 all__enum_primitive.enum_primitive_0_1 ];
   };
+  modbus_0_5_0 = buildCratesLib {
+    name = "modbus";
+    version = "0.5.0";
+    hash = "393a0f041264a7328850492e7622f449a608f4134cb544419bdff747820fb5dd";
+    deps = with allCrates; [  all__num.num_0_1 all__enum_primitive.enum_primitive_0_1 all__rustc-serialize.rustc-serialize_0_3 all__byteorder.byteorder_0_5 all__bincode.bincode_0_5 ];
+  };
   "modbus_0_4" = modbus_0_4_2;
-  "modbus_0" = modbus_0_4_2;}
+  "modbus_0_5" = modbus_0_5_0;
+  "modbus_0" = modbus_0_5_0;}

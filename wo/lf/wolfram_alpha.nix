@@ -13,5 +13,12 @@ rec {
     hash = "2d5977a93bd5bbb21dbcf4c9f8ab52e33bce19a5ab044a7cb33133c2d2189956";
     deps = with allCrates; [  all__serde.serde_0_8 all__url.url_1_1 all__log.log_0_3 all__serde_xml.serde_xml_0_8 ];
   };
+  wolfram_alpha_0_2_0 = buildCratesLib {
+    name = "wolfram_alpha";
+    version = "0.2.0";
+    hash = "2f9c75205c3da66da46b4217c2852bf71d646c35bf19db81ff998795a25d15cb";
+    deps = with allCrates; [  all__serde.serde_0_8 all__url.url_1_1 all__log.log_0_3 all__serde_xml.serde_xml_0_8 ];
+  };
   "wolfram_alpha_0_1" = wolfram_alpha_0_1_1;
-  "wolfram_alpha_0" = wolfram_alpha_0_1_1;}
+  "wolfram_alpha_0_2" = wolfram_alpha_0_2_0;
+  "wolfram_alpha_0" = wolfram_alpha_0_2_0;}

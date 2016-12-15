@@ -7,5 +7,17 @@ rec {
     hash = "0930a2b47dc31140ec81dbebd129897e2dc3b8c12e4e5222f8184b980b1873ee";
     deps = with allCrates; [  all__env_logger.env_logger_0_3 all__rand.rand_0_3 all__byteorder.byteorder_0_5 all__log.log_0_3 all__crc.crc_1_3 all__memmap.memmap_0_5 ];
   };
-  "commitlog_0_0" = commitlog_0_0_1;
-  "commitlog_0" = commitlog_0_0_1;}
+  commitlog_0_0_3 = buildCratesLib {
+    name = "commitlog";
+    version = "0.0.3";
+    hash = "94ee763ae2695d9bc4af002eabecf7b02d70d38db0c979b443f5b50ec181ba60";
+    deps = with allCrates; [  all__crc.crc_1_3 all__log.log_0_3 all__memmap.memmap_0_5 all__byteorder.byteorder_0_5 ];
+  };
+  commitlog_0_0_4 = buildCratesLib {
+    name = "commitlog";
+    version = "0.0.4";
+    hash = "df912e41aeada424cce6583382b2ada3673c9be048ebc51ca814ae65bbaa473b";
+    deps = with allCrates; [  all__log.log_0_3 all__byteorder.byteorder_0_5 all__crc.crc_1_3 all__memmap.memmap_0_5 ];
+  };
+  "commitlog_0_0" = commitlog_0_0_4;
+  "commitlog_0" = commitlog_0_0_4;}

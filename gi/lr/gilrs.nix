@@ -27,5 +27,18 @@ rec {
     hash = "0ac896e3cf50e891087e8ae2007f55cb2808500ff605d850ef5ea13e88b205f6";
     deps = with allCrates; [  all__log.log_0_3 all__vec_map.vec_map_0_6 all__uuid.uuid_0_2 all__libudev-sys.libudev-sys_0_1 all__libc.libc_0_2 all__ioctl.ioctl_0_3 ];
   };
+  gilrs_0_4_0 = buildCratesLib {
+    name = "gilrs";
+    version = "0.4.0";
+    hash = "d52559106be3c921b7eb4a739ceb1722ca9402a09d06717b4000307f40a23820";
+    deps = with allCrates; [  all__log.log_0_3 all__uuid.uuid_0_2 all__vec_map.vec_map_0_6 all__libudev-sys.libudev-sys_0_1 all__libc.libc_0_2 all__ioctl.ioctl_0_3 ];
+  };
   "gilrs_0_3" = gilrs_0_3_1;
-  "gilrs_0" = gilrs_0_3_1;}
+  gilrs_0_4_1 = buildCratesLib {
+    name = "gilrs";
+    version = "0.4.1";
+    hash = "0d946bd44fa7da63fb7530e3eaee835630feacdd107c978e999d7989713bc8fc";
+    deps = with allCrates; [  all__vec_map.vec_map_0_6 all__log.log_0_3 all__uuid.uuid_0_2 all__libc.libc_0_2 all__ioctl.ioctl_0_3 all__libudev-sys.libudev-sys_0_1 ];
+  };
+  "gilrs_0_4" = gilrs_0_4_1;
+  "gilrs_0" = gilrs_0_4_1;}

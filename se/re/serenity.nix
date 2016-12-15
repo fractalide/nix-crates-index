@@ -13,5 +13,17 @@ rec {
     hash = "4404646336dff0c5d4aef6811526d0de824441ca6bb0c785462954a74eb714e0";
     deps = with allCrates; [  all__bitflags.bitflags_0_7 all__lazy_static.lazy_static_0_2 all__log.log_0_3 all__hyper.hyper_0_9 all__time.time_0_1 all__serde_json.serde_json_0_8 all__base64.base64_0_2 all__websocket.websocket_0_17 all__flate2.flate2_0_2 all__typemap.typemap_0_3 all__byteorder.byteorder_0_5 all__cookie.cookie_0_2 all__multipart.multipart_0_8 all__yaml-rust.yaml-rust_0_3 ];
   };
-  "serenity_0_1" = serenity_0_1_1;
-  "serenity_0" = serenity_0_1_1;}
+  serenity_0_1_2 = buildCratesLib {
+    name = "serenity";
+    version = "0.1.2";
+    hash = "d4e871b1c1320c4db94b6765a2504d0f4cf7e95cd0ec829a3af5119c81125b27";
+    deps = with allCrates; [  all__typemap.typemap_0_3 all__bitflags.bitflags_0_7 all__log.log_0_3 all__flate2.flate2_0_2 all__multipart.multipart_0_8 all__byteorder.byteorder_0_5 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__time.time_0_1 all__websocket.websocket_0_17 all__lazy_static.lazy_static_0_2 all__cookie.cookie_0_2 all__base64.base64_0_2 all__yaml-rust.yaml-rust_0_3 ];
+  };
+  serenity_0_1_3 = buildCratesLib {
+    name = "serenity";
+    version = "0.1.3";
+    hash = "ec8d445f8950e5f9ce80f6eba05599ff5b9b712c2ba06aa763e9808e62b75d0d";
+    deps = with allCrates; [  all__bitflags.bitflags_0_7 all__flate2.flate2_0_2 all__lazy_static.lazy_static_0_2 all__time.time_0_1 all__log.log_0_3 all__byteorder.byteorder_0_5 all__typemap.typemap_0_3 all__base64.base64_0_2 all__multipart.multipart_0_8 all__serde_json.serde_json_0_8 all__websocket.websocket_0_17 all__cookie.cookie_0_2 all__hyper.hyper_0_9 all__yaml-rust.yaml-rust_0_3 ];
+  };
+  "serenity_0_1" = serenity_0_1_3;
+  "serenity_0" = serenity_0_1_3;}

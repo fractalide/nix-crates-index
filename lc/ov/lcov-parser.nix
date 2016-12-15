@@ -122,5 +122,13 @@ rec {
     hash = "2b88a5122ad2183729650951d9949f0df777612539f5eaec7b521e1e12bffca1";
     deps = with allCrates; [  all__combine.combine_2_0_0 ];
   };
+  lcov-parser_3_0_0 = buildCratesLib {
+    name = "lcov-parser";
+    version = "3.0.0";
+    hash = "9c73bfafabd9233c3ab2e2a31488fb898c2d514aa19d5d10a1f5267b3d9fbe21";
+    deps = with allCrates; [  all__combine.combine_2_0_0 ];
+  };
   "lcov-parser_2_1" = lcov-parser_2_1_1;
-  "lcov-parser_2" = lcov-parser_2_1_1;}
+  "lcov-parser_2" = lcov-parser_2_1_1;
+  "lcov-parser_3_0" = lcov-parser_3_0_0;
+  "lcov-parser_3" = lcov-parser_3_0_0;}

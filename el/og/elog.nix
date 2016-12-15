@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__colored.colored_1_3 all__time.time_0_1 ];
   };
   "elog_0_1" = elog_0_1_0;
+  elog_0_3_0 = buildCratesLib {
+    name = "elog";
+    version = "0.3.0";
+    hash = "496d7bbe0cd62bd9b04109f0cf982c538f0a78f972d8e94bacf4aee6816c4166";
+    deps = with allCrates; [  all__time.time_0_1 all__thread-id.thread-id_3_0 all__colored.colored_1_3 ];
+  };
   "elog_0_2" = elog_0_2_0;
-  "elog_0" = elog_0_2_0;}
+  "elog_0_3" = elog_0_3_0;
+  "elog_0" = elog_0_3_0;}

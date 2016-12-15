@@ -32,5 +32,11 @@ rec {
     hash = "8ebf235e1c1f96a1501b02842111e95b81132df346eee751131779a2adca8090";
     deps = with allCrates; [  all__rand.rand_0_3 all__quick-error.quick-error_1_1 all__futures.futures_0_1 ];
   };
-  "abstract-ns_0_2" = abstract-ns_0_2_3;
-  "abstract-ns_0" = abstract-ns_0_2_3;}
+  abstract-ns_0_2_4 = buildCratesLib {
+    name = "abstract-ns";
+    version = "0.2.4";
+    hash = "a018091c9b967b119102067689bdb44abced52378df48c3cf43b353d4820250a";
+    deps = with allCrates; [  all__quick-error.quick-error_1_1 all__futures.futures_0_1 all__rand.rand_0_3 ];
+  };
+  "abstract-ns_0_2" = abstract-ns_0_2_4;
+  "abstract-ns_0" = abstract-ns_0_2_4;}

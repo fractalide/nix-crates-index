@@ -81,5 +81,11 @@ rec {
     hash = "603531ad0a0e55062c81bbdbe0c2fbda86e103c3d1c82668bd3081417864c24d";
     deps = with allCrates; [  ];
   };
-  "netbuf_0_3" = netbuf_0_3_7;
-  "netbuf_0" = netbuf_0_3_7;}
+  netbuf_0_3_8 = buildCratesLib {
+    name = "netbuf";
+    version = "0.3.8";
+    hash = "6917d6a0bda749bbbea59c048147c784b0de36a3b3b1d880ce0eb313ebefac86";
+    deps = with allCrates; [  ];
+  };
+  "netbuf_0_3" = netbuf_0_3_8;
+  "netbuf_0" = netbuf_0_3_8;}

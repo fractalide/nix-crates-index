@@ -52,5 +52,11 @@ rec {
     hash = "9f8d5616284f605572bd645f6744d76a326ec766f5f92f76fa740493315afb2f";
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__rand.rand_0_3 all__byteorder.byteorder_0_5 ];
   };
-  "bn_0_4" = bn_0_4_1;
-  "bn_0" = bn_0_4_1;}
+  bn_0_4_2 = buildCratesLib {
+    name = "bn";
+    version = "0.4.2";
+    hash = "dfd6f521598886450c254e53079b785298c1fac39631500b28d52c11cf785eeb";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__rand.rand_0_3 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "bn_0_4" = bn_0_4_2;
+  "bn_0" = bn_0_4_2;}

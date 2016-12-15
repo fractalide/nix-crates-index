@@ -313,5 +313,12 @@ rec {
     hash = "dd24d7b0db372da7704f829b9b3f137d21b897eca4665899d3d153e929dbaeae";
     deps = with allCrates; [  all__handlebars.handlebars_0_22 all__walkdir.walkdir_0_1 all__iron.iron_0_4 all__plugin.plugin_0_2 all__log.log_0_3 ];
   };
+  handlebars-iron_0_20_0 = buildCratesLib {
+    name = "handlebars-iron";
+    version = "0.20.0";
+    hash = "2adb780d4733a57c053ef243dae572be710ba506923867bb4e89fbab59283858";
+    deps = with allCrates; [  all__iron.iron_0_4 all__walkdir.walkdir_0_1 all__handlebars.handlebars_0_23 all__plugin.plugin_0_2 all__log.log_0_3 ];
+  };
   "handlebars-iron_0_19" = handlebars-iron_0_19_2;
-  "handlebars-iron_0" = handlebars-iron_0_19_2;}
+  "handlebars-iron_0_20" = handlebars-iron_0_20_0;
+  "handlebars-iron_0" = handlebars-iron_0_20_0;}

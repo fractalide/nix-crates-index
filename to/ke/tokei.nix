@@ -179,5 +179,11 @@ rec {
     hash = "46c1692778e8991cf9ce5405882a304e7217ab979306673020bf607975971b90";
     deps = with allCrates; [  all__regex.regex_0_1 all__encoding.encoding_0_2 rayon all__maplit.maplit_0_1 all__ignore.ignore_0_1 all__env_logger.env_logger_0_3 all__log.log_0_3 all__clap.clap_2_10 all__lazy_static.lazy_static_0_2 all__errln.errln_0_1 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__handlebars.handlebars_0_21 ];
   };
-  "tokei_4_5" = tokei_4_5_3;
-  "tokei_4" = tokei_4_5_3;}
+  tokei_4_5_4 = buildCratesLib {
+    name = "tokei";
+    version = "4.5.4";
+    hash = "cfdb913211cc33d608d8a5e54c6eb77615ce9141f2abea4d0bb48f047af31b5e";
+    deps = with allCrates; [  all__env_logger.env_logger_0_3 all__lazy_static.lazy_static_0_2 all__clap.clap_2_19 all__errln.errln_0_1 all__encoding.encoding_0_2 all__ignore.ignore_0_1 rayon all__maplit.maplit_0_1 all__regex.regex_0_1 all__log.log_0_3 all__errln.errln_0_1 all__serde.serde_0_8 all__handlebars.handlebars_0_21 all__serde_json.serde_json_0_8 ];
+  };
+  "tokei_4_5" = tokei_4_5_4;
+  "tokei_4" = tokei_4_5_4;}

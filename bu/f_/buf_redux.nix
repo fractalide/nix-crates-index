@@ -70,5 +70,18 @@ rec {
     hash = "d390c21a1f16bb5ce04e1cd0d13348e6743ec1f2d991aabe37c9a7d5ef7a1149";
     deps = with allCrates; [  all__safemem.safemem_0_1 ];
   };
+  buf_redux_0_6_0 = buildCratesLib {
+    name = "buf_redux";
+    version = "0.6.0";
+    hash = "325ef715a61874fcaf762d734e4f57f04ef145febe09c7a80b0544d316eaa84a";
+    deps = with allCrates; [  all__safemem.safemem_0_1 all__memchr.memchr_0_1 ];
+  };
   "buf_redux_0_5" = buf_redux_0_5_4;
-  "buf_redux_0" = buf_redux_0_5_4;}
+  buf_redux_0_6_1 = buildCratesLib {
+    name = "buf_redux";
+    version = "0.6.1";
+    hash = "e1497634c131ba13483b6e8123f69e219253b018bb32949eefd55c6b5051585d";
+    deps = with allCrates; [  all__memchr.memchr_0_1 all__safemem.safemem_0_1 ];
+  };
+  "buf_redux_0_6" = buf_redux_0_6_1;
+  "buf_redux_0" = buf_redux_0_6_1;}

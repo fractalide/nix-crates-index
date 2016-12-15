@@ -7,5 +7,11 @@ rec {
     hash = "daeb884eaee1f717c9031e9eada99fdaa84df5b49b21a8ff61a5853f81ea2e56";
     deps = with allCrates; [  all__toml.toml_0_2 ];
   };
-  "rustup_prompt_helper_1_0" = rustup_prompt_helper_1_0_0;
-  "rustup_prompt_helper_1" = rustup_prompt_helper_1_0_0;}
+  rustup_prompt_helper_1_0_1 = buildCratesLib {
+    name = "rustup_prompt_helper";
+    version = "1.0.1";
+    hash = "39a2bee01c5b3e44d32e2841487f44b5108949ead5a29d9e76d1a74ad97a5920";
+    deps = with allCrates; [  all__toml.toml_0_2 ];
+  };
+  "rustup_prompt_helper_1_0" = rustup_prompt_helper_1_0_1;
+  "rustup_prompt_helper_1" = rustup_prompt_helper_1_0_1;}

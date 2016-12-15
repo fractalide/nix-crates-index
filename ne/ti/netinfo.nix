@@ -20,5 +20,12 @@ rec {
     deps = with allCrates; [  all__enum_primitive.enum_primitive_0_1 all__pnet.pnet_0_14 all__error-chain.error-chain_0_7 all__log.log_0_3 all__byteorder.byteorder_0_5 ];
   };
   "netinfo_0_1" = netinfo_0_1_1;
+  netinfo_0_3_0 = buildCratesLib {
+    name = "netinfo";
+    version = "0.3.0";
+    hash = "bc6763537b30b2b5fb474a2519ab3a8b8f4d1f5daf81f3fdaacc4de42428f101";
+    deps = with allCrates; [  all__pnet.pnet_0_14 all__byteorder.byteorder_0_5 all__enum_primitive.enum_primitive_0_1 all__error-chain.error-chain_0_7 all__log.log_0_3 ];
+  };
   "netinfo_0_2" = netinfo_0_2_0;
-  "netinfo_0" = netinfo_0_2_0;}
+  "netinfo_0_3" = netinfo_0_3_0;
+  "netinfo_0" = netinfo_0_3_0;}

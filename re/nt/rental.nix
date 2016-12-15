@@ -38,5 +38,24 @@ rec {
     hash = "42534413c26ae5b22a19572f39eb9cdbe9829c6c68a0024d2eb28c42e34aecc1";
     deps = with allCrates; [  ];
   };
+  rental_0_3_0 = buildCratesLib {
+    name = "rental";
+    version = "0.3.0";
+    hash = "4db737073fae02e7d1f81e1f073aa8a0f97c314ebeb06e8589799e88d8bf9bf4";
+    deps = with allCrates; [  ];
+  };
   "rental_0_2" = rental_0_2_4;
-  "rental_0" = rental_0_2_4;}
+  rental_0_3_1 = buildCratesLib {
+    name = "rental";
+    version = "0.3.1";
+    hash = "c6e6dae69e1547a7114aa4fbde658433382b87c7576043887a784678c7d6744f";
+    deps = with allCrates; [  ];
+  };
+  rental_0_3_2 = buildCratesLib {
+    name = "rental";
+    version = "0.3.2";
+    hash = "eaa244981f62d0f5f9b1412dacddbbe5fea5f0a7096bacff33e9f5a2851c975b";
+    deps = with allCrates; [  ];
+  };
+  "rental_0_3" = rental_0_3_2;
+  "rental_0" = rental_0_3_2;}

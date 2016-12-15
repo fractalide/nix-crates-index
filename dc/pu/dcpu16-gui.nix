@@ -32,5 +32,12 @@ rec {
     hash = "4b36cb22f6a0f71d42fed847398b3bac9d5a32fa47e5d049b055d0991a318f3f";
     deps = with allCrates; [  all__piston.piston_0_27 all__piston2d-opengl_graphics.piston2d-opengl_graphics_0_36 all__piston2d-graphics.piston2d-graphics_0_19 all__image.image_0_10 all__getopts.getopts_0_2 all__pistoncore-event_loop.pistoncore-event_loop_0_27 all__dcpu16.dcpu16_0_0_7 all__libc.libc_0_1 all__gl.gl_0_6 all__piston_window.piston_window_0_58 ];
   };
+  dcpu16-gui_0_2_0 = buildCratesLib {
+    name = "dcpu16-gui";
+    version = "0.2.0";
+    hash = "4bde3108fd5ecbb21f3ec89c67e81d3ca45c0765e7d91ca8d3ba2f07b820fb00";
+    deps = with allCrates; [  all__piston2d-opengl_graphics.piston2d-opengl_graphics_0_36 all__libc.libc_0_1 all__gl.gl_0_6 all__time.time_0_1 all__piston.piston_0_27 all__image.image_0_10 all__piston_window.piston_window_0_58 all__getopts.getopts_0_2 all__piston2d-graphics.piston2d-graphics_0_19 all__dcpu16.dcpu16_0_1 all__pistoncore-event_loop.pistoncore-event_loop_0_27 ];
+  };
   "dcpu16-gui_0_1" = dcpu16-gui_0_1_1;
-  "dcpu16-gui_0" = dcpu16-gui_0_1_1;}
+  "dcpu16-gui_0_2" = dcpu16-gui_0_2_0;
+  "dcpu16-gui_0" = dcpu16-gui_0_2_0;}

@@ -93,5 +93,18 @@ rec {
     hash = "725cdc431bc5cc1cf111dd0853dd4c0d5f0a1b6ad06cb42833e4c706b1b32001";
     deps = with allCrates; [  all__filetime.filetime_0_1 all__tiny_http.tiny_http_0_5 all__time.time_0_1 all__rustc-serialize.rustc-serialize_0_3 all__term.term_0_2 all__multipart.multipart_0_5 all__rand.rand_0_3 all__url.url_1_2 ];
   };
+  rouille_0_4_0 = buildCratesLib {
+    name = "rouille";
+    version = "0.4.0";
+    hash = "c174611ab8d60613317a902660131e310f89d732557a34a58ee988355ed4317d";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__term.term_0_2 all__sha1.sha1_0_2 all__rand.rand_0_3 all__filetime.filetime_0_1 all__chrono.chrono_0_2 all__time.time_0_1 all__tiny_http.tiny_http_0_5 all__url.url_1_2 all__multipart.multipart_0_5 ];
+  };
   "rouille_0_3" = rouille_0_3_3;
-  "rouille_0" = rouille_0_3_3;}
+  rouille_0_4_1 = buildCratesLib {
+    name = "rouille";
+    version = "0.4.1";
+    hash = "08437fe02c5b1578ab11a9d9c8fe157ea2a69c368176ca2220f24ddc61b60db8";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__sha1.sha1_0_2 all__filetime.filetime_0_1 all__term.term_0_2 all__tiny_http.tiny_http_0_5 all__multipart.multipart_0_5 all__chrono.chrono_0_2 all__rand.rand_0_3 all__url.url_1_2 all__time.time_0_1 ];
+  };
+  "rouille_0_4" = rouille_0_4_1;
+  "rouille_0" = rouille_0_4_1;}

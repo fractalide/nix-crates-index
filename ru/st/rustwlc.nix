@@ -59,5 +59,11 @@ rec {
     hash = "2d6cc9a80df47c66196d445a0544dbd0de838280eb37bc4466537d43d82295cd";
     deps = with allCrates; [  all__libc.libc_0_2 all__bitflags.bitflags_0_7 ];
   };
-  "rustwlc_0_5" = rustwlc_0_5_2;
-  "rustwlc_0" = rustwlc_0_5_2;}
+  rustwlc_0_5_3 = buildCratesLib {
+    name = "rustwlc";
+    version = "0.5.3";
+    hash = "e158f2499b438b4204d1ca526835d9b73b04da908212d454f00e987d0ef59895";
+    deps = with allCrates; [  all__libc.libc_0_2 all__bitflags.bitflags_0_7 ];
+  };
+  "rustwlc_0_5" = rustwlc_0_5_3;
+  "rustwlc_0" = rustwlc_0_5_3;}

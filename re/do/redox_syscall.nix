@@ -73,5 +73,11 @@ rec {
     hash = "ef528e218b27f02a683696249dcdc66f567e6858cb51958b2f5e2669bb5b6c6c";
     deps = with allCrates; [  ];
   };
-  "redox_syscall_0_1" = redox_syscall_0_1_11;
-  "redox_syscall_0" = redox_syscall_0_1_11;}
+  redox_syscall_0_1_12 = buildCratesLib {
+    name = "redox_syscall";
+    version = "0.1.12";
+    hash = "8908f1cf753fcac0592d0cf6089ae02d70520e53dd2f2e90fd6de71ead2d467b";
+    deps = with allCrates; [  ];
+  };
+  "redox_syscall_0_1" = redox_syscall_0_1_12;
+  "redox_syscall_0" = redox_syscall_0_1_12;}

@@ -55,5 +55,11 @@ rec {
     hash = "4be50b418a1fc5d198588d9a4f682ef808a55db4084dce39d09bb0562525bb8c";
     deps = with allCrates; [  all__rayon.rayon_0_5 all__byteorder.byteorder_0_5 ];
   };
-  "jpeg-decoder_0_1" = jpeg-decoder_0_1_8;
-  "jpeg-decoder_0" = jpeg-decoder_0_1_8;}
+  jpeg-decoder_0_1_9 = buildCratesLib {
+    name = "jpeg-decoder";
+    version = "0.1.9";
+    hash = "d726303fa914eb8ee6f25b414f0a592ae9e2b7e0c169caea952dc6f30f076df6";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
+  };
+  "jpeg-decoder_0_1" = jpeg-decoder_0_1_9;
+  "jpeg-decoder_0" = jpeg-decoder_0_1_9;}

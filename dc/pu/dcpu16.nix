@@ -43,5 +43,12 @@ rec {
     hash = "d819ade84cfc65c770a8cf9bdfad64a19e96664d1a351904f1c0558f3ecc9202";
     deps = with allCrates; [  all__getopts.getopts_0_2 ];
   };
+  dcpu16_0_1_0 = buildCratesLib {
+    name = "dcpu16";
+    version = "0.1.0";
+    hash = "d3120159035cf8e7d56ca53ab78f7ce8af139c09731b9e22bbcda439ccd669af";
+    deps = with allCrates; [  all__getopts.getopts_0_2 ];
+  };
   "dcpu16_0_0" = dcpu16_0_0_7;
-  "dcpu16_0" = dcpu16_0_0_7;}
+  "dcpu16_0_1" = dcpu16_0_1_0;
+  "dcpu16_0" = dcpu16_0_1_0;}

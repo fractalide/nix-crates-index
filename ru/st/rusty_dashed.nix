@@ -7,5 +7,17 @@ rec {
     hash = "1c2e9fe3d0d34d9e28b72a6e035ab68eec36f3eb498c22ed03cd47af29bef3de";
     deps = with allCrates; [  all__hyper.hyper_0 all__includedir.includedir_0_2 all__phf.phf_0_7 all__env_logger.env_logger_0 all__log.log_0 lazy_static all__ws.ws_0_5 all__mio.mio_0_6 all__iron.iron_0 all__mount.mount_0 all__staticfile.staticfile_0 all__includedir_codegen.includedir_codegen_0_2 ];
   };
-  "rusty_dashed_0_1" = rusty_dashed_0_1_0;
-  "rusty_dashed_0" = rusty_dashed_0_1_0;}
+  rusty_dashed_0_1_1 = buildCratesLib {
+    name = "rusty_dashed";
+    version = "0.1.1";
+    hash = "5ccd2194242164149e92726e6f76d5c2b9c9b3a17a5273a698d2300d7cbf8912";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__phf.phf_0_7 all__mio.mio_0_6 all__includedir.includedir_0_2 all__rand.rand_0_3 all__iron.iron_0_4 all__staticfile.staticfile_0_3 all__mount.mount_0_2 all__ws.ws_0_5 all__lazy_static.lazy_static_0_1 all__includedir_codegen.includedir_codegen_0_2 ];
+  };
+  rusty_dashed_0_1_2 = buildCratesLib {
+    name = "rusty_dashed";
+    version = "0.1.2";
+    hash = "c0f60676b7c97d324ff7e9315b61c0f674919a6aade2426ee455234c8ec7abf0";
+    deps = with allCrates; [  all__staticfile.staticfile_0_3 all__mio.mio_0_6 all__ws.ws_0_5 all__hyper.hyper_0_9 all__mount.mount_0_2 all__iron.iron_0_4 all__includedir.includedir_0_2 all__lazy_static.lazy_static_0_1 all__rand.rand_0_3 all__phf.phf_0_7 all__includedir_codegen.includedir_codegen_0_2 ];
+  };
+  "rusty_dashed_0_1" = rusty_dashed_0_1_2;
+  "rusty_dashed_0" = rusty_dashed_0_1_2;}

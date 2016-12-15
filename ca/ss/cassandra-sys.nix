@@ -91,5 +91,17 @@ rec {
     hash = "302878594b39c7ad704ee525696bbe867e746ed86054563ae6da6eeb7921c82e";
     deps = with allCrates; [  all__log.log_0_3 all__num.num_0_1 all__error-chain.error-chain_0_7 all__env_logger.env_logger_0_3 all__libc.libc_0_2 ];
   };
-  "cassandra-sys_0_8" = cassandra-sys_0_8_5;
-  "cassandra-sys_0" = cassandra-sys_0_8_5;}
+  cassandra-sys_0_8_6 = buildCratesLib {
+    name = "cassandra-sys";
+    version = "0.8.6";
+    hash = "1e3cdf64ee54708af952584412c11dfd877dc959d1e5663f0031f1f18403722f";
+    deps = with allCrates; [  all__log.log_0_3 all__env_logger.env_logger_0_3 all__error-chain.error-chain_0_7 all__libc.libc_0_2 all__num.num_0_1 ];
+  };
+  cassandra-sys_0_8_7 = buildCratesLib {
+    name = "cassandra-sys";
+    version = "0.8.7";
+    hash = "699df2e011d1bd4d580236e7a9a44287cbcae41020cd8fea58d39822a691f307";
+    deps = with allCrates; [  all__libc.libc_0_2 all__log.log_0_3 all__env_logger.env_logger_0_3 all__num.num_0_1 all__error-chain.error-chain_0_7 ];
+  };
+  "cassandra-sys_0_8" = cassandra-sys_0_8_7;
+  "cassandra-sys_0" = cassandra-sys_0_8_7;}

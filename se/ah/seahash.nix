@@ -90,5 +90,11 @@ rec {
     hash = "a43359a944ddb3bbd5013fce227e7cc8911106e425752d135aabed4abca72534";
     deps = with allCrates; [  ];
   };
-  "seahash_3_0" = seahash_3_0_3;
-  "seahash_3" = seahash_3_0_3;}
+  seahash_3_0_4 = buildCratesLib {
+    name = "seahash";
+    version = "3.0.4";
+    hash = "875d20ef599023f423d26b4e0b21d03d44c2a929279039b5db2803f691e7080a";
+    deps = with allCrates; [  ];
+  };
+  "seahash_3_0" = seahash_3_0_4;
+  "seahash_3" = seahash_3_0_4;}

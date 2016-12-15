@@ -38,5 +38,12 @@ rec {
     deps = with allCrates; [  all__overflower_support.overflower_support_0_1 ];
   };
   "overflower_0_1" = overflower_0_1_5;
+  overflower_0_3_1 = buildCratesLib {
+    name = "overflower";
+    version = "0.3.1";
+    hash = "9a28a3640c2ca01d32b023013a6f7db69f6f4d5e8f6e5bc2423c179b6de075d0";
+    deps = with allCrates; [  all__overflower_support.overflower_support_0_1 ];
+  };
   "overflower_0_2" = overflower_0_2_0;
-  "overflower_0" = overflower_0_2_0;}
+  "overflower_0_3" = overflower_0_3_1;
+  "overflower_0" = overflower_0_3_1;}

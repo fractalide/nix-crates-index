@@ -20,5 +20,18 @@ rec {
     deps = with allCrates; [  all__termion.termion_1_1 all__libc.libc_0_2 ];
   };
   "output_0_1" = output_0_1_2;
+  output_0_3_0 = buildCratesLib {
+    name = "output";
+    version = "0.3.0";
+    hash = "339eda55185ffdb01cbb3f328e25f55b5a1370fc02a1e9cfdd0f4f25c0e0764c";
+    deps = with allCrates; [  all__termion.termion_1_1 all__libc.libc_0_2 ];
+  };
   "output_0_2" = output_0_2_0;
-  "output_0" = output_0_2_0;}
+  output_0_3_1 = buildCratesLib {
+    name = "output";
+    version = "0.3.1";
+    hash = "8cc46507fe524264c5d715ca16c5843df7d5b4e9e052d52bf23cd21866df5052";
+    deps = with allCrates; [  all__termion.termion_1_1 all__libc.libc_0_2 ];
+  };
+  "output_0_3" = output_0_3_1;
+  "output_0" = output_0_3_1;}

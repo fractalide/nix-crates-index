@@ -92,5 +92,30 @@ rec {
     hash = "05e5abe5992f24f23e0e7e7893d4993f64232a1d9cb02b841a33f5e6393e527a";
     deps = with allCrates; [  all__maplit.maplit_0_1 all__marksman_escape.marksman_escape_0_1 all__log.log_0_3 all__nom.nom_1_2 ];
   };
+  incrust_0_2_2 = buildCratesLib {
+    name = "incrust";
+    version = "0.2.2";
+    hash = "015fc4c48693455d10e1210366f428f238517119a234bc87d00bb28056ea91a9";
+    deps = with allCrates; [  all__log.log_0_3 all__maplit.maplit_0_1 all__nom.nom_2_0 all__marksman_escape.marksman_escape_0_1 ];
+  };
   "incrust_0_1" = incrust_0_1_4;
-  "incrust_0" = incrust_0_1_4;}
+  incrust_0_2_3 = buildCratesLib {
+    name = "incrust";
+    version = "0.2.3";
+    hash = "9f804a330e935a40ac49b4383f716d872e40364f9c5ec7a29cbcd3fae2831045";
+    deps = with allCrates; [  all__log.log_0_3 all__nom.nom_2_0 all__marksman_escape.marksman_escape_0_1 all__maplit.maplit_0_1 ];
+  };
+  incrust_0_2_4 = buildCratesLib {
+    name = "incrust";
+    version = "0.2.4";
+    hash = "9396321eaff05d1c6158dfccb4eccec4d7853fc1a6308c446e49bb43a0623d6c";
+    deps = with allCrates; [  all__marksman_escape.marksman_escape_0_1 all__log.log_0_3 all__nom.nom_2_0 all__maplit.maplit_0_1 ];
+  };
+  incrust_0_2_5 = buildCratesLib {
+    name = "incrust";
+    version = "0.2.5";
+    hash = "499b61648c856920047806186dbcab79c08755aabefe2beaa3d69c2750e9704a";
+    deps = with allCrates; [  all__maplit.maplit_0_1 all__marksman_escape.marksman_escape_0_1 all__nom.nom_2_0 all__log.log_0_3 ];
+  };
+  "incrust_0_2" = incrust_0_2_5;
+  "incrust_0" = incrust_0_2_5;}

@@ -13,5 +13,12 @@ rec {
     hash = "9d58ac9fb5c97510a6cee26ff2b7530ac9893bff241ef268a892577a0272b2fb";
     deps = with allCrates; [  all__error-chain.error-chain_0_7 all__libusb.libusb_0_3 all__aw-fel.aw-fel_0_1 all__ansi_term.ansi_term_0_9 all__clap.clap_2_19 ];
   };
+  fel-cli_0_2_0 = buildCratesLib {
+    name = "fel-cli";
+    version = "0.2.0";
+    hash = "1d7e3c9b7449ca9c0c6b2ce8df94efbdee1cd360e311aed5d36120fa99fd3efa";
+    deps = with allCrates; [  all__clap.clap_2_19 all__aw-fel.aw-fel_0_2 all__error-chain.error-chain_0_7 all__ansi_term.ansi_term_0_9 ];
+  };
   "fel-cli_0_1" = fel-cli_0_1_1;
-  "fel-cli_0" = fel-cli_0_1_1;}
+  "fel-cli_0_2" = fel-cli_0_2_0;
+  "fel-cli_0" = fel-cli_0_2_0;}

@@ -430,5 +430,11 @@ rec {
     hash = "c368aec980860439ea434b98dd622b1e09f720c6762308854ef4b9e2e82771ad";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__libc.libc_0_2 all__bitflags.bitflags_0_7 all__openssl-sys.openssl-sys_0_9 ];
   };
-  "openssl_0_9" = openssl_0_9_2;
-  "openssl_0" = openssl_0_9_2;}
+  openssl_0_9_3 = buildCratesLib {
+    name = "openssl";
+    version = "0.9.3";
+    hash = "12be61c7eaa23228316ff02c39807e4c1b1af84ba81420f19fd58dade304b25c";
+    deps = with allCrates; [  all__openssl-sys.openssl-sys_0_9 all__bitflags.bitflags_0_7 all__libc.libc_0_2 all__lazy_static.lazy_static_0_2 ];
+  };
+  "openssl_0_9" = openssl_0_9_3;
+  "openssl_0" = openssl_0_9_3;}

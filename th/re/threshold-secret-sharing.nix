@@ -13,5 +13,12 @@ rec {
     hash = "56454c418cead4031396a53ca52097f23163de50686453dc5b7dc7fcd4942341";
     deps = with allCrates; [  rand ];
   };
+  threshold-secret-sharing_0_2_0 = buildCratesLib {
+    name = "threshold-secret-sharing";
+    version = "0.2.0";
+    hash = "b0c7d3746197071f91356db39d18ba9986f3018912385c3f7e9d4c1241745703";
+    deps = with allCrates; [  rand ];
+  };
   "threshold-secret-sharing_0_1" = threshold-secret-sharing_0_1_1;
-  "threshold-secret-sharing_0" = threshold-secret-sharing_0_1_1;}
+  "threshold-secret-sharing_0_2" = threshold-secret-sharing_0_2_0;
+  "threshold-secret-sharing_0" = threshold-secret-sharing_0_2_0;}

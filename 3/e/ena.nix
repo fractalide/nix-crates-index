@@ -27,5 +27,12 @@ rec {
     deps = with allCrates; [  ];
   };
   "ena_0_2" = ena_0_2_0;
+  ena_0_4_0 = buildCratesLib {
+    name = "ena";
+    version = "0.4.0";
+    hash = "5c109645f12ca057044ef2ffa56670cf7e3fd1fa530d73cd185e8298b03380b5";
+    deps = with allCrates; [  ];
+  };
   "ena_0_3" = ena_0_3_0;
-  "ena_0" = ena_0_3_0;}
+  "ena_0_4" = ena_0_4_0;
+  "ena_0" = ena_0_4_0;}

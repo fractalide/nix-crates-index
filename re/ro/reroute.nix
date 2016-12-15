@@ -50,5 +50,12 @@ rec {
     hash = "defd5950794fc798d3c010ec75ce40e12e4e22c8219b4e002b5f4f7373d7322e";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__regex.regex_0_1 ];
   };
+  reroute_0_3_0 = buildCratesLib {
+    name = "reroute";
+    version = "0.3.0";
+    hash = "f9a06555566e73926d2e132190ca709e924fbfdfad2aa6a3020fba0d599e7949";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__regex.regex_0_1 ];
+  };
   "reroute_0_2" = reroute_0_2_4;
-  "reroute_0" = reroute_0_2_4;}
+  "reroute_0_3" = reroute_0_3_0;
+  "reroute_0" = reroute_0_3_0;}

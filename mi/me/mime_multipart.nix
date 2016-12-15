@@ -63,5 +63,11 @@ rec {
     hash = "4521957f3b6238552d345c1f51d833cc0e47a89a48f1d5db64403c1fffe7ce39";
     deps = with allCrates; [  all__log.log_0_3 all__mime.mime_0_2 all__hyper.hyper_0_9 all__tempdir.tempdir_0_3 all__encoding.encoding_0_2 all__buf-read-ext.buf-read-ext_0_2 all__httparse.httparse_1_1 all__textnonce.textnonce_0_4 ];
   };
-  "mime_multipart_0_3" = mime_multipart_0_3_3;
-  "mime_multipart_0" = mime_multipart_0_3_3;}
+  mime_multipart_0_3_4 = buildCratesLib {
+    name = "mime_multipart";
+    version = "0.3.4";
+    hash = "8f3eff7313ed4364abca5c5dfa24bf1c7ef5352fe42ff15b2b9c8cec5530db90";
+    deps = with allCrates; [  all__log.log_0_3 all__hyper.hyper_0_9 all__tempdir.tempdir_0_3 all__textnonce.textnonce_0_4 all__httparse.httparse_1_1 all__encoding.encoding_0_2 all__buf-read-ext.buf-read-ext_0_2 all__mime.mime_0_2 ];
+  };
+  "mime_multipart_0_3" = mime_multipart_0_3_4;
+  "mime_multipart_0" = mime_multipart_0_3_4;}

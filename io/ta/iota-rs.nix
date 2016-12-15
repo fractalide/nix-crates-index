@@ -13,5 +13,11 @@ rec {
     hash = "f031b6680b570e9ddeee609083ed31cb423fa0a1db514af179ee5b6bece6777e";
     deps = with allCrates; [  ];
   };
-  "iota-rs_0_1" = iota-rs_0_1_1;
-  "iota-rs_0" = iota-rs_0_1_1;}
+  iota-rs_0_1_2 = buildCratesLib {
+    name = "iota-rs";
+    version = "0.1.2";
+    hash = "ef7eb5aebe5a7c36163129a05a2e805f349b4c019be852974872114fa87971b1";
+    deps = with allCrates; [  ];
+  };
+  "iota-rs_0_1" = iota-rs_0_1_2;
+  "iota-rs_0" = iota-rs_0_1_2;}

@@ -19,5 +19,11 @@ rec {
     hash = "b78d20a3615b4f5ad335c172b4fb03895d682aa39cb67be3a88d92c486647880";
     deps = with allCrates; [  all__clap.clap_2_16 ];
   };
-  "clapcomp_0_1" = clapcomp_0_1_3;
-  "clapcomp_0" = clapcomp_0_1_3;}
+  clapcomp_0_1_4 = buildCratesLib {
+    name = "clapcomp";
+    version = "0.1.4";
+    hash = "e3677b2d5187c9abe386580f5b2a82c2c42ca8b2b7ca5fec8cc207f5611eb40c";
+    deps = with allCrates; [  all__clap.clap_2_19 ];
+  };
+  "clapcomp_0_1" = clapcomp_0_1_4;
+  "clapcomp_0" = clapcomp_0_1_4;}

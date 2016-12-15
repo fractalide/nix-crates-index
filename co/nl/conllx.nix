@@ -46,5 +46,11 @@ rec {
     hash = "3756621e3cfe3cd9dc3fd06f1b5b8275530de1ec37a037aa24a6c218397a791c";
     deps = with allCrates; [  ];
   };
-  "conllx_0_3" = conllx_0_3_1;
-  "conllx_0" = conllx_0_3_1;}
+  conllx_0_3_2 = buildCratesLib {
+    name = "conllx";
+    version = "0.3.2";
+    hash = "fbacde5ad7b4a97474ddc340d52869b83c5849992092ea375da3f8fa7f818d2b";
+    deps = with allCrates; [  ];
+  };
+  "conllx_0_3" = conllx_0_3_2;
+  "conllx_0" = conllx_0_3_2;}

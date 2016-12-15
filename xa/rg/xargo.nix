@@ -98,5 +98,11 @@ rec {
     hash = "d6bc1f54c1875af56bd69f70a8d1c05e1cf6fa2da7c4e35f194c9ce28e9c1521";
     deps = with allCrates; [  all__rustc_version.rustc_version_0_1 all__rustc-cfg.rustc-cfg_0_2 all__error-chain.error-chain_0_5 all__toml.toml_0_2 all__walkdir.walkdir_0_1 all__libc.libc_0_2 all__fs2.fs2_0_2 all__tempdir.tempdir_0_3 ];
   };
-  "xargo_0_2" = xargo_0_2_1;
-  "xargo_0" = xargo_0_2_1;}
+  xargo_0_2_2 = buildCratesLib {
+    name = "xargo";
+    version = "0.2.2";
+    hash = "f3fc2ac59a4fdf4eeb03923989c1dfe3e5ddaeff247d1119d554fd728fc2765e";
+    deps = with allCrates; [  all__rustc-cfg.rustc-cfg_0_2 all__fs2.fs2_0_2 all__toml.toml_0_2 all__serde_json.serde_json_0_8 all__daggy.daggy_0_4 all__tempdir.tempdir_0_3 all__rustc_version.rustc_version_0_1 all__error-chain.error-chain_0_5 all__libc.libc_0_2 all__walkdir.walkdir_0_1 ];
+  };
+  "xargo_0_2" = xargo_0_2_2;
+  "xargo_0" = xargo_0_2_2;}

@@ -26,5 +26,18 @@ rec {
     deps = with allCrates; [  ];
   };
   "scopeguard_0_1" = scopeguard_0_1_2;
+  scopeguard_0_3_0 = buildCratesLib {
+    name = "scopeguard";
+    version = "0.3.0";
+    hash = "ce108ea69fbd2c47dd2e75806bd7fc14bd58e73c7720544879449088f730716d";
+    deps = with allCrates; [  ];
+  };
   "scopeguard_0_2" = scopeguard_0_2_0;
-  "scopeguard_0" = scopeguard_0_2_0;}
+  scopeguard_0_3_1 = buildCratesLib {
+    name = "scopeguard";
+    version = "0.3.1";
+    hash = "7aa5d8d293df7346f1f69c9c8595febc2df7179d672b87619b33ce64dc0a30bb";
+    deps = with allCrates; [  ];
+  };
+  "scopeguard_0_3" = scopeguard_0_3_1;
+  "scopeguard_0" = scopeguard_0_3_1;}

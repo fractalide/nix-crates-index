@@ -26,5 +26,12 @@ rec {
     hash = "a328900eaecbf908fda8367a4461d306cb2cda0fbc4a33e6226c436e65c731bb";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
+  pledge_0_3_0 = buildCratesLib {
+    name = "pledge";
+    version = "0.3.0";
+    hash = "8ea2e6e3b0c0eff844de48aa0f815a7105f37c5b69cd634a7d1d11af70af1bbd";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
   "pledge_0_2" = pledge_0_2_2;
-  "pledge_0" = pledge_0_2_2;}
+  "pledge_0_3" = pledge_0_3_0;
+  "pledge_0" = pledge_0_3_0;}

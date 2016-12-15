@@ -47,5 +47,12 @@ rec {
     hash = "ad9056873a6a474f2ec709566834d5cc91c0661ecb15ae858a2c26d5e523eeba";
     deps = with allCrates; [  ];
   };
+  spectral_0_6_0 = buildCratesLib {
+    name = "spectral";
+    version = "0.6.0";
+    hash = "ae3c15181f4b14e52eeaac3efaeec4d2764716ce9c86da0c934c3e318649c5ba";
+    deps = with allCrates; [  ];
+  };
   "spectral_0_5" = spectral_0_5_2;
-  "spectral_0" = spectral_0_5_2;}
+  "spectral_0_6" = spectral_0_6_0;
+  "spectral_0" = spectral_0_6_0;}

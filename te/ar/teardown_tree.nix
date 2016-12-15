@@ -31,5 +31,17 @@ rec {
     hash = "7fffc41e1a64512301aadbd21f8d52318e6ec994a3274abd077e5c669781911b";
     deps = with allCrates; [  all__rand.rand_0_3 ];
   };
-  "teardown_tree_0_4" = teardown_tree_0_4_6;
-  "teardown_tree_0" = teardown_tree_0_4_6;}
+  teardown_tree_0_4_7 = buildCratesLib {
+    name = "teardown_tree";
+    version = "0.4.7";
+    hash = "181862bfb270099c63eb9e1b02a82611163c8a690074e13dae154a1609028492";
+    deps = with allCrates; [  all__rand.rand_0_3 all__teardown_tree___treap.teardown_tree___treap_0_0_1 ];
+  };
+  teardown_tree_0_4_8 = buildCratesLib {
+    name = "teardown_tree";
+    version = "0.4.8";
+    hash = "7222908f322b34f9325a4e6cd32aa49e914110ff9fd4aa956fa447029497dd60";
+    deps = with allCrates; [  all__teardown_tree___treap.teardown_tree___treap_0_0_1 all__rand.rand_0_3 ];
+  };
+  "teardown_tree_0_4" = teardown_tree_0_4_8;
+  "teardown_tree_0" = teardown_tree_0_4_8;}

@@ -157,5 +157,33 @@ rec {
     hash = "215fe8a65e17f6e5a09420526b3edff208e010d2680a65da1954a4fb227fbf7e";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__num_cpus.num_cpus_1_1 all__crossbeam.crossbeam_0_2 all__time.time_0_1 all__enum_primitive.enum_primitive_0_1 all__lazy_static.lazy_static_0_2 all__num.num_0_1 all__toml.toml_0_2 all__glob.glob_0_2 ];
   };
+  rawloader_0_14_0 = buildCratesLib {
+    name = "rawloader";
+    version = "0.14.0";
+    hash = "a3ce43b4574b6e150c9c678cd81020cb2d01def000b6494f056d4d818fef4026";
+    deps = with allCrates; [  all__time.time_0_1 all__toml.toml_0_2 all__itertools.itertools_0_5 all__num.num_0_1 all__rayon.rayon_0_5 all__lazy_static.lazy_static_0_2 all__enum_primitive.enum_primitive_0_1 all__byteorder.byteorder_0_5 all__glob.glob_0_2 ];
+  };
   "rawloader_0_13" = rawloader_0_13_1;
-  "rawloader_0" = rawloader_0_13_1;}
+  rawloader_0_15_0 = buildCratesLib {
+    name = "rawloader";
+    version = "0.15.0";
+    hash = "4f691b9d8ff1b45f9fa81072a1bf9d687e3cdee3f851ab997f16ac5a67a4a372";
+    deps = with allCrates; [  all__itertools.itertools_0_5 all__num.num_0_1 all__rayon.rayon_0_5 all__byteorder.byteorder_0_5 all__time.time_0_1 all__lazy_static.lazy_static_0_2 all__toml.toml_0_2 all__enum_primitive.enum_primitive_0_1 all__glob.glob_0_2 ];
+  };
+  "rawloader_0_14" = rawloader_0_14_0;
+  rawloader_0_16_0 = buildCratesLib {
+    name = "rawloader";
+    version = "0.16.0";
+    hash = "2a31833e08858310c96ae585fba7aac261f96dcc2d36e489b39d562b2bb9bf5f";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__num.num_0_1 all__enum_primitive.enum_primitive_0_1 all__time.time_0_1 all__itertools.itertools_0_5 all__rayon.rayon_0_5 all__toml.toml_0_2 all__lazy_static.lazy_static_0_2 all__glob.glob_0_2 ];
+  };
+  "rawloader_0_15" = rawloader_0_15_0;
+  rawloader_0_17_0 = buildCratesLib {
+    name = "rawloader";
+    version = "0.17.0";
+    hash = "04b142b87b76deee857bda01b2a0cd38e578a6e3c1b7c094e4af2015bde4695f";
+    deps = with allCrates; [  all__rayon.rayon_0_5 all__enum_primitive.enum_primitive_0_1 all__itertools.itertools_0_5 all__time.time_0_1 all__lazy_static.lazy_static_0_2 all__toml.toml_0_2 all__byteorder.byteorder_0_5 all__num.num_0_1 all__glob.glob_0_2 ];
+  };
+  "rawloader_0_16" = rawloader_0_16_0;
+  "rawloader_0_17" = rawloader_0_17_0;
+  "rawloader_0" = rawloader_0_17_0;}

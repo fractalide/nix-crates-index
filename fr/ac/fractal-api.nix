@@ -284,5 +284,18 @@ rec {
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__hyper.hyper_0_9 all__chrono.chrono_0_2 all__fractal-dto.fractal-dto_0_7 all__fractal-utils.fractal-utils_0_2 ];
   };
   "fractal-api_0_6" = fractal-api_0_6_0;
-  "fractal-api_0_7" = fractal-api_0_7_0;
-  "fractal-api_0" = fractal-api_0_7_0;}
+  fractal-api_0_7_1 = buildCratesLib {
+    name = "fractal-api";
+    version = "0.7.1";
+    hash = "9677101776946d89dc661027d5ff1f70adf60d98d4edde6ea3bbdc929831a390";
+    deps = with allCrates; [  all__fractal-utils.fractal-utils_0_2 all__fractal-dto.fractal-dto_0_7 all__chrono.chrono_0_2 all__rustc-serialize.rustc-serialize_0_3 all__hyper.hyper_0_9 ];
+  };
+  fractal-api_0_8_0 = buildCratesLib {
+    name = "fractal-api";
+    version = "0.8.0";
+    hash = "0a5540fa62563dc9884e4fa8ade84a7b6e8a041fc03c744943c692579be7f632";
+    deps = with allCrates; [  all__fractal-dto.fractal-dto_0_8 all__hyper.hyper_0_9 all__rustc-serialize.rustc-serialize_0_3 all__chrono.chrono_0_2 all__fractal-utils.fractal-utils_0_2 ];
+  };
+  "fractal-api_0_7" = fractal-api_0_7_1;
+  "fractal-api_0_8" = fractal-api_0_8_0;
+  "fractal-api_0" = fractal-api_0_8_0;}

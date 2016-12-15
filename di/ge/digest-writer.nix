@@ -13,5 +13,11 @@ rec {
     hash = "68fb0f658b5d713733782680d9c0bf42f38652299b7e633929ca20c6e6f72e76";
     deps = with allCrates; [  all__digest.digest_0_3 all__generic-array.generic-array_0_5 ];
   };
-  "digest-writer_0_1" = digest-writer_0_1_1;
-  "digest-writer_0" = digest-writer_0_1_1;}
+  digest-writer_0_1_2 = buildCratesLib {
+    name = "digest-writer";
+    version = "0.1.2";
+    hash = "8584c31eb1c21996908c5560d036798ee150955c8cc19f78cfeeef3277f811c1";
+    deps = with allCrates; [  all__digest.digest_0_3 all__generic-array.generic-array_0_5 ];
+  };
+  "digest-writer_0_1" = digest-writer_0_1_2;
+  "digest-writer_0" = digest-writer_0_1_2;}

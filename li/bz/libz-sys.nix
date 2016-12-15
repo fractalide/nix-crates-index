@@ -118,5 +118,23 @@ rec {
     hash = "283c2d162f78c5090522e13fc809820c33181570ae40de1bea84f3864c8759f9";
     deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 all__gcc.gcc_0_3 ];
   };
-  "libz-sys_1_0" = libz-sys_1_0_7;
-  "libz-sys_1" = libz-sys_1_0_7;}
+  libz-sys_1_0_8 = buildCratesLib {
+    name = "libz-sys";
+    version = "1.0.8";
+    hash = "c18b5826abbfafb0160b37e1991e2d327c1fe38c955e496ea306f72c06d7570c";
+    deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 all__pkg-config.pkg-config_0_3 ];
+  };
+  libz-sys_1_0_9 = buildCratesLib {
+    name = "libz-sys";
+    version = "1.0.9";
+    hash = "dd7d8a8266d97a39a94d94a47baf5bdb204835089cc8f8598a39e621449ce9d6";
+    deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 all__pkg-config.pkg-config_0_3 ];
+  };
+  libz-sys_1_0_10 = buildCratesLib {
+    name = "libz-sys";
+    version = "1.0.10";
+    hash = "905c72a0c260bcd89ddca5afa1c46bebd29b52878a3d58c86865ea42402f88e6";
+    deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 all__gcc.gcc_0_3 ];
+  };
+  "libz-sys_1_0" = libz-sys_1_0_10;
+  "libz-sys_1" = libz-sys_1_0_10;}

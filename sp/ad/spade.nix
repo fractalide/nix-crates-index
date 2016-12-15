@@ -26,5 +26,12 @@ rec {
     hash = "7dedf293ec093222ce71d92c0beff66088bff3f3b093181814a703952201f305";
     deps = with allCrates; [  nalgebra num clamp rand cgmath noise ];
   };
+  spade_0_3_0 = buildCratesLib {
+    name = "spade";
+    version = "0.3.0";
+    hash = "3723fe8a6c9f35e7a17e1a69fffbfd8733924ace8c7f6bb2fa6e30d1b8177bbd";
+    deps = with allCrates; [  num nalgebra cgmath clamp ];
+  };
   "spade_0_2" = spade_0_2_1;
-  "spade_0" = spade_0_2_1;}
+  "spade_0_3" = spade_0_3_0;
+  "spade_0" = spade_0_3_0;}

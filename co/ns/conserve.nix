@@ -7,5 +7,12 @@ rec {
     hash = "241a7e5f3aaaf71494be795524ee4da4f76412fc3d9bfdda7bd815fb17dfd1ed";
     deps = with allCrates; [  all__tempdir.tempdir_0_3 all__log.log_0_3 all__blake2-rfc.blake2-rfc_0_2 all__walkdir.walkdir_0_1 all__tempfile.tempfile_2_1 all__term.term_0_2 all__brotli2.brotli2_0_1 all__rustc-serialize.rustc-serialize_0_3 all__docopt.docopt_0_6 ];
   };
+  conserve_0_3_0 = buildCratesLib {
+    name = "conserve";
+    version = "0.3.0";
+    hash = "269f40908a1e360420ca0973c15598b41f0a0b8956b31b032349c4f4b86aeead";
+    deps = with allCrates; [  all__error-chain.error-chain_0_7 all__log.log_0 all__blake2-rfc.blake2-rfc_0 all__tempfile.tempfile_2 all__isatty.isatty_0_1 all__brotli2.brotli2_0 all__clap.clap_2_19 all__term.term_0_4 all__spectral.spectral_0_6 all__tempdir.tempdir_0 all__time.time_0 all__rustc-serialize.rustc-serialize_0 ];
+  };
   "conserve_0_2" = conserve_0_2_0;
-  "conserve_0" = conserve_0_2_0;}
+  "conserve_0_3" = conserve_0_3_0;
+  "conserve_0" = conserve_0_3_0;}

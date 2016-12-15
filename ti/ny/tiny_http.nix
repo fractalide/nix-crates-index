@@ -89,5 +89,11 @@ rec {
     hash = "6c2c84ec5213e5a782e75ad40f730c823638185345e75d26a1a587f1e96e7938";
     deps = with allCrates; [  all__ascii.ascii_0_7 all__log.log_0_3 all__encoding.encoding_0_2 all__chunked_transfer.chunked_transfer_0_3 all__url.url_0_2 all__chrono.chrono_0_2 all__rustc-serialize.rustc-serialize_0_3 ];
   };
-  "tiny_http_0_5" = tiny_http_0_5_6;
-  "tiny_http_0" = tiny_http_0_5_6;}
+  tiny_http_0_5_7 = buildCratesLib {
+    name = "tiny_http";
+    version = "0.5.7";
+    hash = "40cb03eda293527d079f389c22ce4877051981099347c083ac4732e7e3adf8c6";
+    deps = with allCrates; [  all__chunked_transfer.chunked_transfer_0_3 all__ascii.ascii_0_7 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__url.url_0_2 all__chrono.chrono_0_2 all__encoding.encoding_0_2 ];
+  };
+  "tiny_http_0_5" = tiny_http_0_5_7;
+  "tiny_http_0" = tiny_http_0_5_7;}

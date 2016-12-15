@@ -7,5 +7,12 @@ rec {
     hash = "315acc8577b473cadafe81c5594401c79e45d9fcfc72c4bb810adb2273ff6cca";
     deps = with allCrates; [  ];
   };
+  gcd_1_1_0 = buildCratesLib {
+    name = "gcd";
+    version = "1.1.0";
+    hash = "0896cb73353671dbe2b17312c97b55b7032831d28c809c703bece4a392b1df3a";
+    deps = with allCrates; [  ];
+  };
   "gcd_1_0" = gcd_1_0_0;
-  "gcd_1" = gcd_1_0_0;}
+  "gcd_1_1" = gcd_1_1_0;
+  "gcd_1" = gcd_1_1_0;}
