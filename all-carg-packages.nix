@@ -23,10 +23,11 @@ let
     # for now this is a convenience implementation
     # WARNING: this is also added in defualt.nix in the nix-crates-index using repo nixcrates
     rustcNightly = newpkgs.rustcNightlyBin.rustc;
-    newpkgs = import (fetchgit {
-       url = https://github.com/NixOS/nixpkgs;
-       rev = "1f811a67274e340d9e13987801fe726308e748ab";
-       sha256 = "0dhmh0fcjki8qnvy1fyw4jhi0m3kvabj9nfcd2nc4dcl2ljc84mg";
+    newpkgs = import (pkgs.fetchFromGitHub {
+      owner = "NixOS";
+      repo = "nixpkgs";
+      rev = "1f811a67274e340d9e13987801fe726308e748ab";
+      sha256 = "0dhmh0fcjki8qnvy1fyw4jhi0m3kvabj9nfcd2nc4dcl2ljc84mg";
      }) {};
 
   in
