@@ -37,5 +37,11 @@ rec {
     hash = "7c269b2fec1427f680e38e2644fed0116aa538aae43b57ef1a5b4698a6db4af3";
     deps = with allCrates; [  all__image.image_0_10 ];
   };
-  "raster_0_0" = raster_0_0_6;
-  "raster_0" = raster_0_0_6;}
+  raster_0_0_7 = buildCratesLib {
+    name = "raster";
+    version = "0.0.7";
+    hash = "9f7a3b806626f5b0f10b662c611ec47ed95970bf5514ccbe881280c7f5a58a9d";
+    deps = with allCrates; [  all__image.image_0_10 ];
+  };
+  "raster_0_0" = raster_0_0_7;
+  "raster_0" = raster_0_0_7;}

@@ -22,8 +22,8 @@ rec {
   google-monitoring3_1_0_0 = buildCratesLib {
     name = "google-monitoring3";
     version = "1.0.0";
-    hash = "704ef95d8515af5137471ab2205c149fc37084474125a0f742b5c6d3718a2c0e";
-    deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
+    hash = "0024a8e980569cc646bad0561482327b7b3996e11d7da8e8fd9e13cf1fe31d4c";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url ];
   };
   "google-monitoring3_0_1" = google-monitoring3_0_1_15;
   "google-monitoring3_0" = google-monitoring3_0_1_15;

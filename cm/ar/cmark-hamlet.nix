@@ -7,5 +7,11 @@ rec {
     hash = "8de8a5d1b7ca64ed7e44b3948ae663ca54b9e591941c2443175d1d022e293915";
     deps = with allCrates; [  ];
   };
-  "cmark-hamlet_0_0" = cmark-hamlet_0_0_1;
-  "cmark-hamlet_0" = cmark-hamlet_0_0_1;}
+  cmark-hamlet_0_0_2 = buildCratesLib {
+    name = "cmark-hamlet";
+    version = "0.0.2";
+    hash = "8f8c81a7179fda4726a7edfe38fd32d66c7dea85aecbb6c24092ef3182252c40";
+    deps = with allCrates; [  all__hamlet.hamlet_0_2 all__pulldown-cmark.pulldown-cmark_0_0_8 ];
+  };
+  "cmark-hamlet_0_0" = cmark-hamlet_0_0_2;
+  "cmark-hamlet_0" = cmark-hamlet_0_0_2;}

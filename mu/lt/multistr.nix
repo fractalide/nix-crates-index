@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  ];
   };
   "multistr_0_1" = multistr_0_1_0;
-  "multistr_0_2" = multistr_0_2_0;
-  "multistr_0" = multistr_0_2_0;}
+  multistr_0_2_1 = buildCratesLib {
+    name = "multistr";
+    version = "0.2.1";
+    hash = "948d1285dd39981f6a5b1a72624c323312d29e2121682a742a87a773dd723bef";
+    deps = with allCrates; [  ];
+  };
+  "multistr_0_2" = multistr_0_2_1;
+  "multistr_0" = multistr_0_2_1;}

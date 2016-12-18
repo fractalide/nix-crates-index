@@ -100,8 +100,8 @@ rec {
   google-appstate1_1_0_0 = buildCratesLib {
     name = "google-appstate1";
     version = "1.0.0";
-    hash = "d3d592a9bfe44e86d508ebe5a5387031238536171aff18897a2443e619ddeec7";
-    deps = with allCrates; [  all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 url ];
+    hash = "f207cf04324575ccb79ee716c4a54d83696c84b9df6c1c25fe9b5100e57f8ed6";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 url all__mime.mime_0_2 all__hyper.hyper_0_9 ];
   };
   "google-appstate1_0_1" = google-appstate1_0_1_15;
   "google-appstate1_0" = google-appstate1_0_1_15;

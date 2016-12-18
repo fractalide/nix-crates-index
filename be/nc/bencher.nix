@@ -13,5 +13,11 @@ rec {
     hash = "f8cebcc66a7c86de233f4c37873f258cb844bb2bf3632135c588d2ca348b384c";
     deps = with allCrates; [  ];
   };
-  "bencher_0_1" = bencher_0_1_1;
-  "bencher_0" = bencher_0_1_1;}
+  bencher_0_1_2 = buildCratesLib {
+    name = "bencher";
+    version = "0.1.2";
+    hash = "1938914a389928f8c2cc0aec747380e0b2b854094710e7d03f8eb3762aa7f7a2";
+    deps = with allCrates; [  ];
+  };
+  "bencher_0_1" = bencher_0_1_2;
+  "bencher_0" = bencher_0_1_2;}

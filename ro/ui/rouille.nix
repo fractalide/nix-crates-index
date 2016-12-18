@@ -106,5 +106,11 @@ rec {
     hash = "08437fe02c5b1578ab11a9d9c8fe157ea2a69c368176ca2220f24ddc61b60db8";
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__sha1.sha1_0_2 all__filetime.filetime_0_1 all__term.term_0_2 all__tiny_http.tiny_http_0_5 all__multipart.multipart_0_5 all__chrono.chrono_0_2 all__rand.rand_0_3 all__url.url_1_2 all__time.time_0_1 ];
   };
-  "rouille_0_4" = rouille_0_4_1;
-  "rouille_0" = rouille_0_4_1;}
+  rouille_0_4_2 = buildCratesLib {
+    name = "rouille";
+    version = "0.4.2";
+    hash = "02408841a8bf4cf660ae024e9e13fcc193dc1b4712ee3efd07070cc85294782a";
+    deps = with allCrates; [  all__rand.rand_0_3 all__term.term_0_2 all__chrono.chrono_0_2 all__time.time_0_1 all__tiny_http.tiny_http_0_5 all__multipart.multipart_0_5 all__rustc-serialize.rustc-serialize_0_3 all__filetime.filetime_0_1 all__sha1.sha1_0_2 all__url.url_1_2 ];
+  };
+  "rouille_0_4" = rouille_0_4_2;
+  "rouille_0" = rouille_0_4_2;}

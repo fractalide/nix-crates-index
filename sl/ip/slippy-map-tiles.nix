@@ -42,5 +42,12 @@ rec {
     deps = with allCrates; [  all__lazy_static.lazy_static_0_1 all__regex.regex_0_1 ];
   };
   "slippy-map-tiles_0_7" = slippy-map-tiles_0_7_0;
+  slippy-map-tiles_0_9_0 = buildCratesLib {
+    name = "slippy-map-tiles";
+    version = "0.9.0";
+    hash = "9d47ce9b7b5843f47cc2a3579704ab3e633ffb72e93fd6e6704493dd507b3794";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_1 all__regex.regex_0_1 ];
+  };
   "slippy-map-tiles_0_8" = slippy-map-tiles_0_8_0;
-  "slippy-map-tiles_0" = slippy-map-tiles_0_8_0;}
+  "slippy-map-tiles_0_9" = slippy-map-tiles_0_9_0;
+  "slippy-map-tiles_0" = slippy-map-tiles_0_9_0;}

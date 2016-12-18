@@ -7,5 +7,11 @@ rec {
     hash = "3a2296332a95c3b3740a7ea1d1d3a5cf2c25a6cc16fa9804bc3bca2f1b18ea9f";
     deps = with allCrates; [  ];
   };
-  "rlibcex_0_1" = rlibcex_0_1_0;
-  "rlibcex_0" = rlibcex_0_1_0;}
+  rlibcex_0_1_2 = buildCratesLib {
+    name = "rlibcex";
+    version = "0.1.2";
+    hash = "47432d025415600760124e962a0bb2f40a71720fedaa6343d9128b75e7ff4ace";
+    deps = with allCrates; [  ];
+  };
+  "rlibcex_0_1" = rlibcex_0_1_2;
+  "rlibcex_0" = rlibcex_0_1_2;}

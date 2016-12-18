@@ -100,8 +100,8 @@ rec {
   google-replicapoolupdater1_beta1_1_0_0 = buildCratesLib {
     name = "google-replicapoolupdater1_beta1";
     version = "1.0.0";
-    hash = "68fe6a697f65583209673f11379956eef3f4c4072643e5e73d7b03b7f29ecfd9";
-    deps = with allCrates; [  all__hyper.hyper_0_9 url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+    hash = "b197aeb2d6143c3e84bd611256eb1e01b0cfaed3f3fedc6977578e0768afc0ad";
+    deps = with allCrates; [  url all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 ];
   };
   "google-replicapoolupdater1_beta1_0_1" = google-replicapoolupdater1_beta1_0_1_15;
   "google-replicapoolupdater1_beta1_0" = google-replicapoolupdater1_beta1_0_1_15;

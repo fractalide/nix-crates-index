@@ -10,8 +10,8 @@ rec {
   google-calendar3-cli_1_0_0 = buildCratesLib {
     name = "google-calendar3-cli";
     version = "1.0.0";
-    hash = "83284edaffa73eb6b6c828a06e49ce5adeb1899a21a87c8707b1d31c745265f4";
-    deps = with allCrates; [  all__mime.mime_0_2 all__clap.clap_2_0 all__serde.serde_0_8 all__strsim.strsim_0_5 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
+    hash = "a1e418a9fb89ef3277f88e62a2545eebd5f3cb6f1bf703424525f1c79509bf2e";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 all__strsim.strsim_0_5 all__clap.clap_2_0 all__serde_json.serde_json_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 ];
   };
   "google-calendar3-cli_0_3" = google-calendar3-cli_0_3_6;
   "google-calendar3-cli_0" = google-calendar3-cli_0_3_6;

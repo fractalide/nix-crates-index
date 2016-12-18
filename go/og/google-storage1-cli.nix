@@ -10,8 +10,8 @@ rec {
   google-storage1-cli_1_0_0 = buildCratesLib {
     name = "google-storage1-cli";
     version = "1.0.0";
-    hash = "11a8ffa32e4316e93031078d246de7adc916d26b543dec1404582b8959717f3c";
-    deps = with allCrates; [  all__clap.clap_2_0 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__mime.mime_0_2 all__serde.serde_0_8 ];
+    hash = "9bca2d0d064abba15964b4e099ede758b5b92c40bc906bfd02879981b5cb637a";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__strsim.strsim_0_5 ];
   };
   "google-storage1-cli_0_3" = google-storage1-cli_0_3_6;
   "google-storage1-cli_0" = google-storage1-cli_0_3_6;

@@ -205,5 +205,11 @@ rec {
     hash = "ce96ec05bfe018a0d5d43da115e54850ea2217981ff0f2e462780ab9d594651a";
     deps = with allCrates; [  all__semver.semver_0_2 all__regex-syntax.regex-syntax_0_3 all__unicode-normalization.unicode-normalization_0_1 all__rustc-serialize.rustc-serialize_0_3 all__matches.matches_0_1 all__quine-mc_cluskey.quine-mc_cluskey_0_2 all__toml.toml_0_1 ];
   };
-  "clippy_lints_0_0" = clippy_lints_0_0_103;
-  "clippy_lints_0" = clippy_lints_0_0_103;}
+  clippy_lints_0_0_104 = buildCratesLib {
+    name = "clippy_lints";
+    version = "0.0.104";
+    hash = "70812027c1a8de9277d125557dce08262bc27508f2eb99592ad2d39a24a0b1c7";
+    deps = with allCrates; [  all__toml.toml_0_1 all__unicode-normalization.unicode-normalization_0_1 all__regex-syntax.regex-syntax_0_3 all__matches.matches_0_1 all__quine-mc_cluskey.quine-mc_cluskey_0_2 all__rustc-serialize.rustc-serialize_0_3 all__semver.semver_0_2 ];
+  };
+  "clippy_lints_0_0" = clippy_lints_0_0_104;
+  "clippy_lints_0" = clippy_lints_0_0_104;}

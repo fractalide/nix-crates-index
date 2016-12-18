@@ -25,5 +25,11 @@ rec {
     hash = "79de6a4e79f9a3ecc1e40688212b9c92b79bda03e29d8dc95970eb961c5aea7b";
     deps = with allCrates; [  all__snowflake.snowflake_1_2 ];
   };
-  "id_tree_0_2" = id_tree_0_2_6;
-  "id_tree_0" = id_tree_0_2_6;}
+  id_tree_0_2_7 = buildCratesLib {
+    name = "id_tree";
+    version = "0.2.7";
+    hash = "de84183ef3d525564b86cbdabe2b116a5a3f93ae440dd74bfc4a6a9ab6a162fe";
+    deps = with allCrates; [  all__snowflake.snowflake_1_2 ];
+  };
+  "id_tree_0_2" = id_tree_0_2_7;
+  "id_tree_0" = id_tree_0_2_7;}

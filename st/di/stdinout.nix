@@ -7,5 +7,12 @@ rec {
     hash = "5a91e1dda991bd5d6937e3f25e155faed4dd6db6a2e0804e3b7d4a0e2ef58dbb";
     deps = with allCrates; [  ];
   };
+  stdinout_0_2_0 = buildCratesLib {
+    name = "stdinout";
+    version = "0.2.0";
+    hash = "75ecb59df89115ef21e40a218b6cb78642e37654608a7fa6750eaf65c908d58d";
+    deps = with allCrates; [  ];
+  };
   "stdinout_0_1" = stdinout_0_1_0;
-  "stdinout_0" = stdinout_0_1_0;}
+  "stdinout_0_2" = stdinout_0_2_0;
+  "stdinout_0" = stdinout_0_2_0;}

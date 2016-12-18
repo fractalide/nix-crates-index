@@ -31,5 +31,11 @@ rec {
     hash = "20193d4d244b95e0cc3891f670ae21a429ea48f76d6f47546353674ab8ec93f6";
     deps = with allCrates; [  rustc-serialize ];
   };
-  "sqlib_0_1" = sqlib_0_1_4;
-  "sqlib_0" = sqlib_0_1_4;}
+  sqlib_0_1_5 = buildCratesLib {
+    name = "sqlib";
+    version = "0.1.5";
+    hash = "088f3d818acb75e3e3ad1360e1eb3b9761513359cef92e790d06f4e3fd979dcd";
+    deps = with allCrates; [  rustc-serialize ];
+  };
+  "sqlib_0_1" = sqlib_0_1_5;
+  "sqlib_0" = sqlib_0_1_5;}

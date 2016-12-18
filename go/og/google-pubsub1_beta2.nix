@@ -76,8 +76,8 @@ rec {
   google-pubsub1_beta2_1_0_0 = buildCratesLib {
     name = "google-pubsub1_beta2";
     version = "1.0.0";
-    hash = "941bcd0ffa8458c3806d8a30caeef45d4715e5e0d5e86478d38e0c3bb9d17213";
-    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+    hash = "cfb678a19abe7b71b6445d9b21a18cdcddf2b8ce3922f0ed555d355dfb46afbb";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__serde.serde_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
   };
   "google-pubsub1_beta2_0_1" = google-pubsub1_beta2_0_1_15;
   "google-pubsub1_beta2_0" = google-pubsub1_beta2_0_1_15;

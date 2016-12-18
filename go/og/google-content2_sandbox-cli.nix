@@ -10,8 +10,8 @@ rec {
   google-content2_sandbox-cli_1_0_0 = buildCratesLib {
     name = "google-content2_sandbox-cli";
     version = "1.0.0";
-    hash = "a3490dbdec28300b03f1c92efc6622d1a66b6a63b66a3559c3f7957eb21d0049";
-    deps = with allCrates; [  all__serde.serde_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__strsim.strsim_0_5 all__hyper.hyper_0_9 all__clap.clap_2_0 all__mime.mime_0_2 all__serde_json.serde_json_0_8 ];
+    hash = "fae198269912ad0ca3b82ca19861454082a63def04046844f99e601e29edffe3";
+    deps = with allCrates; [  all__clap.clap_2_0 all__mime.mime_0_2 all__yup-hyper-mock.yup-hyper-mock_1_0 all__strsim.strsim_0_5 all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
   };
   "google-content2_sandbox-cli_0_3" = google-content2_sandbox-cli_0_3_6;
   "google-content2_sandbox-cli_0" = google-content2_sandbox-cli_0_3_6;

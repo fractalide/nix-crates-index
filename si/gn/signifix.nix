@@ -7,5 +7,12 @@ rec {
     hash = "29050c8ab4a8875c5ed153c5f168f7bfedc0cd2275e666e616f239a93b447c7b";
     deps = with allCrates; [  ];
   };
+  signifix_0_2_0 = buildCratesLib {
+    name = "signifix";
+    version = "0.2.0";
+    hash = "e8d5ac9e59f6380ac9fd80f4099004c10b820696e732fd8bcf0cf9563e8c06f1";
+    deps = with allCrates; [  ];
+  };
   "signifix_0_1" = signifix_0_1_0;
-  "signifix_0" = signifix_0_1_0;}
+  "signifix_0_2" = signifix_0_2_0;
+  "signifix_0" = signifix_0_2_0;}

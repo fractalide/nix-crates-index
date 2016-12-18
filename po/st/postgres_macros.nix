@@ -122,5 +122,11 @@ rec {
     hash = "849632969f8603abe44ee0a091e73d15420ab8206a04f4394c8bc4a29525587a";
     deps = with allCrates; [  ];
   };
-  "postgres_macros_0_1" = postgres_macros_0_1_12;
-  "postgres_macros_0" = postgres_macros_0_1_12;}
+  postgres_macros_0_1_13 = buildCratesLib {
+    name = "postgres_macros";
+    version = "0.1.13";
+    hash = "c8f00997dc7ad253bebec11f8d672b5b847abfab1cfc7e160763049796765c79";
+    deps = with allCrates; [  ];
+  };
+  "postgres_macros_0_1" = postgres_macros_0_1_13;
+  "postgres_macros_0" = postgres_macros_0_1_13;}

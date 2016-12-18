@@ -40,5 +40,11 @@ rec {
     deps = with allCrates; [  all__threadpool.threadpool_1_3 all__mopa.mopa_0_2 all__fnv.fnv_1_0 all__pulse.pulse_0_5 all__atom.atom_0_3 all__tuple_utils.tuple_utils_0_2 ];
   };
   "specs_0_6" = specs_0_6_1;
-  "specs_0_7" = specs_0_7_0;
-  "specs_0" = specs_0_7_0;}
+  specs_0_7_1 = buildCratesLib {
+    name = "specs";
+    version = "0.7.1";
+    hash = "c619c7c11d119cf121cc174f50103337367f7770e74b816641c5a8efa56797f9";
+    deps = with allCrates; [  all__atom.atom_0_3 all__mopa.mopa_0_2 all__fnv.fnv_1_0 all__tuple_utils.tuple_utils_0_2 ];
+  };
+  "specs_0_7" = specs_0_7_1;
+  "specs_0" = specs_0_7_1;}

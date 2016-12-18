@@ -40,8 +40,8 @@ rec {
   google-cloudresourcemanager1_beta1_1_0_0 = buildCratesLib {
     name = "google-cloudresourcemanager1_beta1";
     version = "1.0.0";
-    hash = "893f6a1873e19ac42e82dffa69deb90d3edbc26ce4dc8b0d65bfb2f75a6fb30c";
-    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 url all__mime.mime_0_2 ];
+    hash = "0e1c77e0a80882a415eefa23131f660cc022a2a76dc9eea1604e87f8c049f537";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 url all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
   };
   "google-cloudresourcemanager1_beta1_0_1" = google-cloudresourcemanager1_beta1_0_1_15;
   "google-cloudresourcemanager1_beta1_0" = google-cloudresourcemanager1_beta1_0_1_15;

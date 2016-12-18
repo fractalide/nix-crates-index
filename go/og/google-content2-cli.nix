@@ -10,8 +10,8 @@ rec {
   google-content2-cli_1_0_0 = buildCratesLib {
     name = "google-content2-cli";
     version = "1.0.0";
-    hash = "8001fa72db7e19000728dfeb42e330c2521274facc8f87336f6f4a7c6fe2c729";
-    deps = with allCrates; [  all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__serde.serde_0_8 all__clap.clap_2_0 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__hyper.hyper_0_9 ];
+    hash = "718a712cbd6d6dde657325d2e7d300f09395bec94eb45e7c37125dcdf54c5ae6";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__mime.mime_0_2 all__strsim.strsim_0_5 ];
   };
   "google-content2-cli_0_3" = google-content2-cli_0_3_6;
   "google-content2-cli_0" = google-content2-cli_0_3_6;

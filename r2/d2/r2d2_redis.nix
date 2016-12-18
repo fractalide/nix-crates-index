@@ -48,5 +48,11 @@ rec {
     deps = with allCrates; [  all__redis.redis_0_7 all__r2d2.r2d2_0_7 ];
   };
   "r2d2_redis_0_4" = r2d2_redis_0_4_0;
-  "r2d2_redis_0_5" = r2d2_redis_0_5_0;
-  "r2d2_redis_0" = r2d2_redis_0_5_0;}
+  r2d2_redis_0_5_1 = buildCratesLib {
+    name = "r2d2_redis";
+    version = "0.5.1";
+    hash = "27db6447202f4fd5d61f0b8246ac295cacae1e4cc88d2503728ec8c8577124c3";
+    deps = with allCrates; [  all__r2d2.r2d2_0_7 all__redis.redis_0_7 ];
+  };
+  "r2d2_redis_0_5" = r2d2_redis_0_5_1;
+  "r2d2_redis_0" = r2d2_redis_0_5_1;}

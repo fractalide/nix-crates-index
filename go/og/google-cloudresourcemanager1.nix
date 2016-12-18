@@ -28,8 +28,8 @@ rec {
   google-cloudresourcemanager1_1_0_0 = buildCratesLib {
     name = "google-cloudresourcemanager1";
     version = "1.0.0";
-    hash = "8dede47740153f068c7330024d675d2fcb0757de944678a93ffc92909fb64718";
-    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde_json.serde_json_0_8 url all__serde.serde_0_8 ];
+    hash = "1c779ae5c4d0f8b78ba003ca15b2ebece6245c71bbb9fc14719a9fc23247c7aa";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
   };
   "google-cloudresourcemanager1_0_1" = google-cloudresourcemanager1_0_1_15;
   "google-cloudresourcemanager1_0" = google-cloudresourcemanager1_0_1_15;

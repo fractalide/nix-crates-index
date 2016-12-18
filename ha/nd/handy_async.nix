@@ -19,5 +19,23 @@ rec {
     hash = "a2d8510baf44d9b0d73cafa2c3c6b66f76a3e0d5f83166795e996af646110dde";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__futures.futures_0_1 ];
   };
-  "handy_async_0_2" = handy_async_0_2_2;
-  "handy_async_0" = handy_async_0_2_2;}
+  handy_async_0_2_3 = buildCratesLib {
+    name = "handy_async";
+    version = "0.2.3";
+    hash = "a28b1717d5876cca804ae930875743c2777c04f4e0ea1bfba0dd336c0a469aba";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__futures.futures_0_1 ];
+  };
+  handy_async_0_2_4 = buildCratesLib {
+    name = "handy_async";
+    version = "0.2.4";
+    hash = "b5debd4d94243ae4bdc6b4020d0d611501c056271d2853f2e7400b2b0599950c";
+    deps = with allCrates; [  all__futures.futures_0_1 all__byteorder.byteorder_0_5 ];
+  };
+  handy_async_0_2_5 = buildCratesLib {
+    name = "handy_async";
+    version = "0.2.5";
+    hash = "4a2b8bef84d340a1a57415a988d0011a00c61ccecddb0f7451fbaef3410bff2c";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__futures.futures_0_1 ];
+  };
+  "handy_async_0_2" = handy_async_0_2_5;
+  "handy_async_0" = handy_async_0_2_5;}

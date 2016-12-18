@@ -40,5 +40,11 @@ rec {
     deps = with allCrates; [  ];
   };
   "json-codec_0_3" = json-codec_0_3_0;
-  "json-codec_0_4" = json-codec_0_4_0;
-  "json-codec_0" = json-codec_0_4_0;}
+  json-codec_0_4_1 = buildCratesLib {
+    name = "json-codec";
+    version = "0.4.1";
+    hash = "95bf98d3da4b4858e174f708e1afc58c7b4c515b2ae9d96799fa6c611e2a2419";
+    deps = with allCrates; [  ];
+  };
+  "json-codec_0_4" = json-codec_0_4_1;
+  "json-codec_0" = json-codec_0_4_1;}

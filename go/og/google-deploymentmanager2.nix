@@ -40,8 +40,8 @@ rec {
   google-deploymentmanager2_1_0_0 = buildCratesLib {
     name = "google-deploymentmanager2";
     version = "1.0.0";
-    hash = "d841a4c93bbc9bc44996243706b17eaf1c081f55a4cc73cdd496b0506de8c1f4";
-    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 url all__hyper.hyper_0_9 ];
+    hash = "4b408fcee58eef3384c3e0c56dac3818ebb121ca8b886131ddc06ae3718fbd68";
+    deps = with allCrates; [  all__serde.serde_0_8 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
   };
   "google-deploymentmanager2_0_1" = google-deploymentmanager2_0_1_15;
   "google-deploymentmanager2_0" = google-deploymentmanager2_0_1_15;

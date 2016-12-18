@@ -47,5 +47,11 @@ rec {
     deps = with allCrates; [  all__redis.redis_0_6 all__serde.serde_0_8 all__serde_macros.serde_macros_0_8 ];
   };
   "serde-redis_0_4" = serde-redis_0_4_0;
-  "serde-redis_0_5" = serde-redis_0_5_0;
-  "serde-redis_0" = serde-redis_0_5_0;}
+  serde-redis_0_5_1 = buildCratesLib {
+    name = "serde-redis";
+    version = "0.5.1";
+    hash = "f3f72b28574aa55287926901b167f294cd3a7f4d23e4d5ee7d27161e83756672";
+    deps = with allCrates; [  all__serde.serde_0_8 all__redis.redis_0_6 ];
+  };
+  "serde-redis_0_5" = serde-redis_0_5_1;
+  "serde-redis_0" = serde-redis_0_5_1;}

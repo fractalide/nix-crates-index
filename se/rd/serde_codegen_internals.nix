@@ -89,5 +89,11 @@ rec {
     deps = with allCrates; [  all__syn.syn_0_10 ];
   };
   "serde_codegen_internals_0_10" = serde_codegen_internals_0_10_0;
-  "serde_codegen_internals_0_11" = serde_codegen_internals_0_11_1;
-  "serde_codegen_internals_0" = serde_codegen_internals_0_11_1;}
+  serde_codegen_internals_0_11_2 = buildCratesLib {
+    name = "serde_codegen_internals";
+    version = "0.11.2";
+    hash = "55224f713f022184a1c332dc5c8b1ac634d25a355d54836386771947f12585e0";
+    deps = with allCrates; [  all__syn.syn_0_10 ];
+  };
+  "serde_codegen_internals_0_11" = serde_codegen_internals_0_11_2;
+  "serde_codegen_internals_0" = serde_codegen_internals_0_11_2;}

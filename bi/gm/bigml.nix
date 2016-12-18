@@ -13,5 +13,29 @@ rec {
     hash = "98544c622d28838fe2aae7a9b1bd2eb97114dab2e9d3717aa5a9ca39f8fd0577";
     deps = with allCrates; [  all__log.log_0_3 all__chrono.chrono_0_2 all__error-chain.error-chain_0_5 all__reqwest.reqwest_0_1 all__serde_derive.serde_derive_0_8 all__url.url_1_2 all__mime.mime_0_2 all__lazy_static.lazy_static_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__uuid.uuid_0_2 ];
   };
-  "bigml_0_0" = bigml_0_0_2;
-  "bigml_0" = bigml_0_0_2;}
+  bigml_0_0_3 = buildCratesLib {
+    name = "bigml";
+    version = "0.0.3";
+    hash = "2bee82de5f2c8f9b7a45831eef131d73ede1f2a172f6dc241881f318af0842f0";
+    deps = with allCrates; [  all__serde_derive.serde_derive_0_8 all__mime.mime_0_2 all__url.url_1_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__chrono.chrono_0_2 all__lazy_static.lazy_static_0_2 all__reqwest.reqwest_0_1 all__log.log_0_3 all__error-chain.error-chain_0_5 all__uuid.uuid_0_2 ];
+  };
+  bigml_0_0_4 = buildCratesLib {
+    name = "bigml";
+    version = "0.0.4";
+    hash = "3a00f18429acae78c15fd5be73b8baac14e122e36d0d33ca925888f0fc274723";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde_derive.serde_derive_0_8 all__chrono.chrono_0_2 all__serde.serde_0_8 all__lazy_static.lazy_static_0_2 all__uuid.uuid_0_2 all__url.url_1_2 all__reqwest.reqwest_0_1 all__log.log_0_3 all__serde_json.serde_json_0_8 all__error-chain.error-chain_0_5 ];
+  };
+  bigml_0_0_5 = buildCratesLib {
+    name = "bigml";
+    version = "0.0.5";
+    hash = "26d4a70ecd3ffb2c3988445b8095b5e894ab91d9867bd14219ddef56dc1a353b";
+    deps = with allCrates; [  all__reqwest.reqwest_0_1 all__url.url_1_2 all__lazy_static.lazy_static_0_2 all__uuid.uuid_0_2 all__log.log_0_3 all__serde_derive.serde_derive_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 all__error-chain.error-chain_0_5 all__chrono.chrono_0_2 ];
+  };
+  bigml_0_0_6 = buildCratesLib {
+    name = "bigml";
+    version = "0.0.6";
+    hash = "505cc78a35f0c1a47b8425113c5f13b6792b46d6c00be225926706c43b7645b2";
+    deps = with allCrates; [  all__log.log_0_3 all__serde_json.serde_json_0_8 all__chrono.chrono_0_2 all__uuid.uuid_0_2 all__url.url_1_2 all__lazy_static.lazy_static_0_2 all__serde.serde_0_8 all__error-chain.error-chain_0_5 all__mime.mime_0_2 all__reqwest.reqwest_0_1 all__serde_derive.serde_derive_0_8 ];
+  };
+  "bigml_0_0" = bigml_0_0_6;
+  "bigml_0" = bigml_0_0_6;}

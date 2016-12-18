@@ -25,5 +25,11 @@ rec {
     hash = "d889233ac781f2403d336347b88c3fbc53accf682909d0549badf7a6bd434408";
     deps = with allCrates; [  all__tempfile.tempfile_2_1 all__cargo.cargo_0_14 all__error-chain.error-chain_0_5 all__log.log_0_3 all__regex.regex_0_1 all__libc.libc_0_2 all__plist.plist_0_0_14 all__env_logger.env_logger_0_3 all__tempdir.tempdir_0_3 all__clap.clap_2_18 ];
   };
-  "dinghy_0_1" = dinghy_0_1_3;
-  "dinghy_0" = dinghy_0_1_3;}
+  dinghy_0_1_4 = buildCratesLib {
+    name = "dinghy";
+    version = "0.1.4";
+    hash = "be751b2467fb098fbf60e5a260142c0ea8c645464b28d97348b083958e3a4319";
+    deps = with allCrates; [  all__regex.regex_0_1 all__clap.clap_2_18 all__env_logger.env_logger_0_3 all__tempfile.tempfile_2_1 all__cargo.cargo_0_14 all__error-chain.error-chain_0_5 all__libc.libc_0_2 all__tempdir.tempdir_0_3 all__plist.plist_0_0_14 all__log.log_0_3 ];
+  };
+  "dinghy_0_1" = dinghy_0_1_4;
+  "dinghy_0" = dinghy_0_1_4;}

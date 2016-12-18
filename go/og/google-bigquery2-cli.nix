@@ -10,8 +10,8 @@ rec {
   google-bigquery2-cli_1_0_0 = buildCratesLib {
     name = "google-bigquery2-cli";
     version = "1.0.0";
-    hash = "6de94a85bc65ef9cfbe4d7b70a2434101be9a119b8904de672eaab1d5226ee54";
-    deps = with allCrates; [  all__yup-hyper-mock.yup-hyper-mock_1_0 all__clap.clap_2_0 all__strsim.strsim_0_5 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+    hash = "de9ba36a10109a58db9dbdf3272898a7cb243900965d6b7229b50dc6d16b038b";
+    deps = with allCrates; [  all__serde.serde_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__clap.clap_2_0 all__mime.mime_0_2 all__strsim.strsim_0_5 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
   };
   "google-bigquery2-cli_0_3" = google-bigquery2-cli_0_3_6;
   "google-bigquery2-cli_0" = google-bigquery2-cli_0_3_6;

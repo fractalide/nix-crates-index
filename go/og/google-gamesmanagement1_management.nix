@@ -94,8 +94,8 @@ rec {
   google-gamesmanagement1_management_1_0_0 = buildCratesLib {
     name = "google-gamesmanagement1_management";
     version = "1.0.0";
-    hash = "55ef9556e071ea3a4b614838339e70b23b1e9db3d7d8e1f3c1b4893450fbe652";
-    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
+    hash = "59a9acdea7f5f3411464d52e17c0ea977cab38bc0833324805df578fba56fc04";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 url all__serde_json.serde_json_0_8 ];
   };
   "google-gamesmanagement1_management_0_1" = google-gamesmanagement1_management_0_1_15;
   "google-gamesmanagement1_management_0" = google-gamesmanagement1_management_0_1_15;

@@ -10,8 +10,8 @@ rec {
   google-dns1-cli_1_0_0 = buildCratesLib {
     name = "google-dns1-cli";
     version = "1.0.0";
-    hash = "aea42c4c527fbfb91199b5b1f881ed14878dcd5400c247332c49724dedff3697";
-    deps = with allCrates; [  all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__serde.serde_0_8 all__mime.mime_0_2 ];
+    hash = "0af551904c1b2991c9b6833ca98cac75665e13187fd8891211e2a5857c753410";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__clap.clap_2_0 all__mime.mime_0_2 all__hyper.hyper_0_9 ];
   };
   "google-dns1-cli_0_3" = google-dns1-cli_0_3_6;
   "google-dns1-cli_0" = google-dns1-cli_0_3_6;

@@ -28,8 +28,8 @@ rec {
   google-dataproc1_1_0_0 = buildCratesLib {
     name = "google-dataproc1";
     version = "1.0.0";
-    hash = "d3fd9dcf918680704423994293820224da80794411990292e4ff88f213ab53e7";
-    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 url all__mime.mime_0_2 all__serde_json.serde_json_0_8 ];
+    hash = "d0b642e1110a60c58ddb62efc6a619c0e9ba0856b40af4a390123eb7c987070b";
+    deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 all__mime.mime_0_2 ];
   };
   "google-dataproc1_0_1" = google-dataproc1_0_1_15;
   "google-dataproc1_0" = google-dataproc1_0_1_15;

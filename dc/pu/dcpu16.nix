@@ -50,5 +50,26 @@ rec {
     deps = with allCrates; [  all__getopts.getopts_0_2 ];
   };
   "dcpu16_0_0" = dcpu16_0_0_7;
+  dcpu16_0_2_0 = buildCratesLib {
+    name = "dcpu16";
+    version = "0.2.0";
+    hash = "50be6cf4b034d9cbe42f08ae36837a3689fe6de1747aaad1ee538080df2afa69";
+    deps = with allCrates; [  all__getopts.getopts_0_2 ];
+  };
   "dcpu16_0_1" = dcpu16_0_1_0;
-  "dcpu16_0" = dcpu16_0_1_0;}
+  dcpu16_0_3_0 = buildCratesLib {
+    name = "dcpu16";
+    version = "0.3.0";
+    hash = "550d0c0c52d7b31d116c84101a65bbe2c64773e4eebb0dec3d9cbbb5c35aa4d5";
+    deps = with allCrates; [  all__getopts.getopts_0_2 ];
+  };
+  "dcpu16_0_2" = dcpu16_0_2_0;
+  dcpu16_0_4_0 = buildCratesLib {
+    name = "dcpu16";
+    version = "0.4.0";
+    hash = "049608aff0709d1de1677ddbda204c0e6b263e4fcca622e75b8f9e1c76f7d82b";
+    deps = with allCrates; [  all__getopts.getopts_0_2 ];
+  };
+  "dcpu16_0_3" = dcpu16_0_3_0;
+  "dcpu16_0_4" = dcpu16_0_4_0;
+  "dcpu16_0" = dcpu16_0_4_0;}

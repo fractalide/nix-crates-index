@@ -94,8 +94,8 @@ rec {
   google-games1_1_0_0 = buildCratesLib {
     name = "google-games1";
     version = "1.0.0";
-    hash = "5fd3d7495b8f9c1633f793c327baa6fc51cab57cfd445a928e193c2da669206e";
-    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 ];
+    hash = "5eb4d08e7643663346dadc360fc5faa6ed55899f52274a10cd078fa5a20469b3";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
   };
   "google-games1_0_1" = google-games1_0_1_15;
   "google-games1_0" = google-games1_0_1_15;

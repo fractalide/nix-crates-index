@@ -34,5 +34,24 @@ rec {
     hash = "3e529e9504810f24364f807ceb1ca48cff57ae443e4a2d964432b73a68dd2ca9";
     deps = with allCrates; [  all__anymap.anymap_0_12 ];
   };
-  "yaecs_0_5" = yaecs_0_5_1;
-  "yaecs_0" = yaecs_0_5_1;}
+  yaecs_0_5_2 = buildCratesLib {
+    name = "yaecs";
+    version = "0.5.2";
+    hash = "d548db5399978e2b2cdf9d336231cc1cd845b4216a52c698a33865dbba8af5f2";
+    deps = with allCrates; [  all__anymap.anymap_0_12 ];
+  };
+  yaecs_0_5_3 = buildCratesLib {
+    name = "yaecs";
+    version = "0.5.3";
+    hash = "5050551b0b08f7a9d0b508893c195ec602357862385d5bd855f5d30bc9f05ab6";
+    deps = with allCrates; [  all__anymap.anymap_0_12 ];
+  };
+  yaecs_0_6_0 = buildCratesLib {
+    name = "yaecs";
+    version = "0.6.0";
+    hash = "d2d5dcd5c8a90bffbf522baaccb4b49780aea202fa40547cbebf52b462e4c4b7";
+    deps = with allCrates; [  all__anymap.anymap_0_12 ];
+  };
+  "yaecs_0_5" = yaecs_0_5_3;
+  "yaecs_0_6" = yaecs_0_6_0;
+  "yaecs_0" = yaecs_0_6_0;}

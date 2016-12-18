@@ -10,8 +10,8 @@ rec {
   google-adsensehost4d1-cli_1_0_0 = buildCratesLib {
     name = "google-adsensehost4d1-cli";
     version = "1.0.0";
-    hash = "9f5d7f1bd317fe9ae8acc686c4e63735851ef4be76c07253ab98bbd13fe473cb";
-    deps = with allCrates; [  all__clap.clap_2_0 all__serde.serde_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 all__strsim.strsim_0_5 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
+    hash = "31b3192a5addd9fb6452c11e798caa5682db7732895f8bcb44f08a687134fd0e";
+    deps = with allCrates; [  all__strsim.strsim_0_5 all__hyper.hyper_0_9 all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
   };
   "google-adsensehost4d1-cli_0_3" = google-adsensehost4d1-cli_0_3_6;
   "google-adsensehost4d1-cli_0" = google-adsensehost4d1-cli_0_3_6;

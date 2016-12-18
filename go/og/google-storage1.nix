@@ -94,8 +94,8 @@ rec {
   google-storage1_1_0_0 = buildCratesLib {
     name = "google-storage1";
     version = "1.0.0";
-    hash = "fcbc5fb57d4866ff52b7cf717e2c2cce74e5706d8c35e1f3716903a50321417c";
-    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 url all__hyper.hyper_0_9 ];
+    hash = "13653104d06ff724db261aac1e407cea6024285fa54e9b1c47c61d19250ea163";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 url ];
   };
   "google-storage1_0_1" = google-storage1_0_1_15;
   "google-storage1_0" = google-storage1_0_1_15;

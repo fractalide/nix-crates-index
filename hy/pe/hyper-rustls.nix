@@ -7,5 +7,11 @@ rec {
     hash = "358683701f6feace09c0f1e26aaeca3831b773fc9e91eaae231ddc9b7ebb57a7";
     deps = with allCrates; [  all__rustls.rustls_0_5 all__webpki-roots.webpki-roots_0_5 all__hyper.hyper_0_9 ];
   };
-  "hyper-rustls_0_2" = hyper-rustls_0_2_0;
-  "hyper-rustls_0" = hyper-rustls_0_2_0;}
+  hyper-rustls_0_2_1 = buildCratesLib {
+    name = "hyper-rustls";
+    version = "0.2.1";
+    hash = "aaa757ec75ba51b7dfeef94696ceb6b8b44be7775a524e1d7b64102481a7e43e";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__webpki-roots.webpki-roots_0_6 all__rustls.rustls_0_5 ];
+  };
+  "hyper-rustls_0_2" = hyper-rustls_0_2_1;
+  "hyper-rustls_0" = hyper-rustls_0_2_1;}

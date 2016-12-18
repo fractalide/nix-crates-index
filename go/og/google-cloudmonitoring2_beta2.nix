@@ -100,8 +100,8 @@ rec {
   google-cloudmonitoring2_beta2_1_0_0 = buildCratesLib {
     name = "google-cloudmonitoring2_beta2";
     version = "1.0.0";
-    hash = "3ffe080b6ce3417122204f1604668255b1db30bd6c99a13e0d35887fe9ec5e3d";
-    deps = with allCrates; [  url all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
+    hash = "3c4ba3de2b50140e0f06750ae68e322d9a895da008ab815ce8c8ac1e43e8d692";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 url ];
   };
   "google-cloudmonitoring2_beta2_0_1" = google-cloudmonitoring2_beta2_0_1_15;
   "google-cloudmonitoring2_beta2_0" = google-cloudmonitoring2_beta2_0_1_15;

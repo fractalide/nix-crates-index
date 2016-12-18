@@ -32,5 +32,11 @@ rec {
     hash = "a694b6e2051563bf428cd409d42b4737ae77832a58f5a9e3d8448760bcf50041";
     deps = with allCrates; [  ];
   };
-  "ransid_0_2" = ransid_0_2_2;
-  "ransid_0" = ransid_0_2_2;}
+  ransid_0_2_3 = buildCratesLib {
+    name = "ransid";
+    version = "0.2.3";
+    hash = "01efc3e6041aad724656cddb6680ba4ab89801dafaf1120d1a425d5424c7dd4e";
+    deps = with allCrates; [  ];
+  };
+  "ransid_0_2" = ransid_0_2_3;
+  "ransid_0" = ransid_0_2_3;}

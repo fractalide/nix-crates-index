@@ -105,5 +105,29 @@ rec {
     hash = "7b5428372abd6a02b4344ffe2766e81664d8dc7456c5ac71ef91cfcc4ede830d";
     deps = with allCrates; [  all__orbfont.orbfont_0_1 all__orbimage.orbimage_0_1 all__orbclient.orbclient_0_1 ];
   };
-  "orbtk_0_2" = orbtk_0_2_1;
-  "orbtk_0" = orbtk_0_2_1;}
+  orbtk_0_2_2 = buildCratesLib {
+    name = "orbtk";
+    version = "0.2.2";
+    hash = "6f263c40127dbecae0d88508ea47bab36201b526c094926be600bfc10305b14c";
+    deps = with allCrates; [  all__orbclient.orbclient_0_1 all__orbimage.orbimage_0_1 all__orbfont.orbfont_0_1 ];
+  };
+  orbtk_0_2_3 = buildCratesLib {
+    name = "orbtk";
+    version = "0.2.3";
+    hash = "d4b8e26a39f34e1d934b33f45584b8b3dd2fff96aeea10cf863816b11f71d5d1";
+    deps = with allCrates; [  all__orbimage.orbimage_0_1 all__orbclient.orbclient_0_1 all__orbfont.orbfont_0_1 ];
+  };
+  orbtk_0_2_4 = buildCratesLib {
+    name = "orbtk";
+    version = "0.2.4";
+    hash = "7c530d51f388197e3e320e797148b4405af2e629735db724d5e9b12d96ea5a18";
+    deps = with allCrates; [  all__orbclient.orbclient_0_2 all__orbfont.orbfont_0_1 all__orbimage.orbimage_0_1 ];
+  };
+  orbtk_0_2_5 = buildCratesLib {
+    name = "orbtk";
+    version = "0.2.5";
+    hash = "85f38c18f550ba80a809c408693646ede6b65d35cd9294fa1c898cade25f8dab";
+    deps = with allCrates; [  all__orbfont.orbfont_0_1 all__orbimage.orbimage_0_1 all__orbclient.orbclient_0_2 ];
+  };
+  "orbtk_0_2" = orbtk_0_2_5;
+  "orbtk_0" = orbtk_0_2_5;}

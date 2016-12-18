@@ -94,8 +94,8 @@ rec {
   google-bigquery2_1_0_0 = buildCratesLib {
     name = "google-bigquery2";
     version = "1.0.0";
-    hash = "0e068ac67be5713fd0e95e431362eff8007afeff7ba1c5b550a3d6ad66c443d6";
-    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 url ];
+    hash = "18873f331b5b28f1a7f7ea143fd84f3b7a4d71a6c49d666520c3de32c19099ad";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 url all__mime.mime_0_2 ];
   };
   "google-bigquery2_0_1" = google-bigquery2_0_1_15;
   "google-bigquery2_0" = google-bigquery2_0_1_15;

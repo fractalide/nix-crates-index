@@ -39,5 +39,11 @@ rec {
     deps = with allCrates; [  all__xml-rs.xml-rs_0_3 all__boolinator.boolinator_0_1 ];
   };
   "vk_generator_0_1" = vk_generator_0_1_3;
-  "vk_generator_0_2" = vk_generator_0_2_0;
-  "vk_generator_0" = vk_generator_0_2_0;}
+  vk_generator_0_2_1 = buildCratesLib {
+    name = "vk_generator";
+    version = "0.2.1";
+    hash = "31fd2981cb03573aa32fec39248d76966d0b0187526030e3ee3bd59b682b9c2d";
+    deps = with allCrates; [  all__xml-rs.xml-rs_0_3 all__boolinator.boolinator_0_1 ];
+  };
+  "vk_generator_0_2" = vk_generator_0_2_1;
+  "vk_generator_0" = vk_generator_0_2_1;}

@@ -26,5 +26,11 @@ rec {
     hash = "f6d9d456ae741b07c60ede84b0fa85bafad8275b1bb95bb42a93805d7475313b";
     deps = with allCrates; [  all__gcc.gcc_0_3 all__pkg-config.pkg-config_0_3 ];
   };
-  "sqlite3-src_0_2" = sqlite3-src_0_2_2;
-  "sqlite3-src_0" = sqlite3-src_0_2_2;}
+  sqlite3-src_0_2_3 = buildCratesLib {
+    name = "sqlite3-src";
+    version = "0.2.3";
+    hash = "14c1788dc1d6c272baca7d6c2d0ef2795f504868261270389a5d124db672fff0";
+    deps = with allCrates; [  all__gcc.gcc_0_3 all__pkg-config.pkg-config_0_3 ];
+  };
+  "sqlite3-src_0_2" = sqlite3-src_0_2_3;
+  "sqlite3-src_0" = sqlite3-src_0_2_3;}

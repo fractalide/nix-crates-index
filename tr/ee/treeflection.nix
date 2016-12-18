@@ -73,5 +73,17 @@ rec {
     hash = "efd637073e13c9bb4545dffd498a0d602bab75f961132b3dee3b14ae2b934a22";
     deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
   };
-  "treeflection_0_1" = treeflection_0_1_11;
-  "treeflection_0" = treeflection_0_1_11;}
+  treeflection_0_1_12 = buildCratesLib {
+    name = "treeflection";
+    version = "0.1.12";
+    hash = "2c5473f8fe63b95674c4d2e4d633f400868e43dc5ffbeae1a5e174259941ad66";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+  };
+  treeflection_0_1_13 = buildCratesLib {
+    name = "treeflection";
+    version = "0.1.13";
+    hash = "2b181fdb7917c6787b06ef056305a3dabf7d73d056b2f0adeda0d6264f79493b";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+  };
+  "treeflection_0_1" = treeflection_0_1_13;
+  "treeflection_0" = treeflection_0_1_13;}

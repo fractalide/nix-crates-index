@@ -19,5 +19,11 @@ rec {
     hash = "7c612ef0e4c335dcb94cdebfbb0ea0486b83d53a5ee038f4b4e98db34dd5070f";
     deps = with allCrates; [  all__libc.libc_0_2 all__regex.regex_0_1 ];
   };
-  "python3-sys_0_1" = python3-sys_0_1_2;
-  "python3-sys_0" = python3-sys_0_1_2;}
+  python3-sys_0_1_3 = buildCratesLib {
+    name = "python3-sys";
+    version = "0.1.3";
+    hash = "ac1c27b8327096c2ccfc614d2c2af1f5f2176ae876cc6c09bc14b529655ff39a";
+    deps = with allCrates; [  all__libc.libc_0_2 all__regex.regex_0_1 ];
+  };
+  "python3-sys_0_1" = python3-sys_0_1_3;
+  "python3-sys_0" = python3-sys_0_1_3;}

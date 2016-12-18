@@ -76,5 +76,12 @@ rec {
     deps = with allCrates; [  all__time.time_0_1 all__log.log_0_3 all__net2.net2_0_2 all__hyper.hyper_0_9 ];
   };
   "ssdp_0_3" = ssdp_0_3_2;
+  ssdp_0_5_0 = buildCratesLib {
+    name = "ssdp";
+    version = "0.5.0";
+    hash = "db201bcc109b114af308ed660ae6339b4096505249fc97347c1a5605b6171e7b";
+    deps = with allCrates; [  all__net2.net2_0_2 all__error-chain.error-chain_0_7 all__hyper.hyper_0_9 all__log.log_0_3 all__time.time_0_1 ];
+  };
   "ssdp_0_4" = ssdp_0_4_0;
-  "ssdp_0" = ssdp_0_4_0;}
+  "ssdp_0_5" = ssdp_0_5_0;
+  "ssdp_0" = ssdp_0_5_0;}

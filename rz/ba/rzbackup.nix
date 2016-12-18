@@ -77,5 +77,13 @@ rec {
     hash = "207518609e4845a652bd7e27088cfcd9b592594503fbad67d5bc5559eabb7774";
     deps = with allCrates; [  all__clap.clap_2_13 all__futures-cpupool.futures-cpupool_0_1 all__libc.libc_0_2 all__num_cpus.num_cpus_1_1 all__futures.futures_0_1 all__minilzo.minilzo_0_1 all__rustc-serialize.rustc-serialize_0_3 all__protobuf.protobuf_1_0 all__rust-crypto.rust-crypto_0_2 all__lru-cache.lru-cache_0_0 ];
   };
+  rzbackup_3_0_0 = buildCratesLib {
+    name = "rzbackup";
+    version = "3.0.0";
+    hash = "d9d597760ee91074ce6badcf7f7cba1c94aafed8c3d4d992092697213ab2965d";
+    deps = with allCrates; [  all__libc.libc_0_2 all__num_cpus.num_cpus_1_1 all__output.output_0_4 all__futures.futures_0_1 all__protobuf.protobuf_1_0 all__clap.clap_2_13 all__rustc-serialize.rustc-serialize_0_3 all__lru-cache.lru-cache_0_0 all__minilzo.minilzo_0_1 all__rust-crypto.rust-crypto_0_2 all__futures-cpupool.futures-cpupool_0_1 ];
+  };
   "rzbackup_2_0" = rzbackup_2_0_7;
-  "rzbackup_2" = rzbackup_2_0_7;}
+  "rzbackup_2" = rzbackup_2_0_7;
+  "rzbackup_3_0" = rzbackup_3_0_0;
+  "rzbackup_3" = rzbackup_3_0_0;}

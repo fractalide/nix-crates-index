@@ -100,8 +100,8 @@ rec {
   google-youtubeanalytics1_1_0_0 = buildCratesLib {
     name = "google-youtubeanalytics1";
     version = "1.0.0";
-    hash = "b2e084806839bf271175a664c6a37a9c2ae90b41a7eca5ab687061f07b302c50";
-    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 url ];
+    hash = "08eebaa2c019bbe0564e08b6ec21a7af9b72969ef271ba4deb5f8d15a8c4b797";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 url ];
   };
   "google-youtubeanalytics1_0_1" = google-youtubeanalytics1_0_1_15;
   "google-youtubeanalytics1_0" = google-youtubeanalytics1_0_1_15;

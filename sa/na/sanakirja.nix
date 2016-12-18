@@ -52,5 +52,12 @@ rec {
     hash = "aba108a5f6cf66195d78137f4499d2071c99984d55f19c80e5eb6805821141c5";
     deps = with allCrates; [  all__env_logger.env_logger_0_3 all__rustc-serialize.rustc-serialize_0_3 all__fs2.fs2_0_2 all__rand.rand_0_3 all__log.log_0_3 all__memmap.memmap_0_3 ];
   };
+  sanakirja_0_7_0 = buildCratesLib {
+    name = "sanakirja";
+    version = "0.7.0";
+    hash = "7366ebc3ae0b60545039fd297dc08feb760b7109202be7954d73c6ac142c6e8c";
+    deps = with allCrates; [  all__memmap.memmap_0_5 all__env_logger.env_logger_0_3 all__rand.rand_0_3 all__log.log_0_3 all__fs2.fs2_0_4 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
   "sanakirja_0_4" = sanakirja_0_4_4;
-  "sanakirja_0" = sanakirja_0_4_4;}
+  "sanakirja_0_7" = sanakirja_0_7_0;
+  "sanakirja_0" = sanakirja_0_7_0;}

@@ -31,5 +31,11 @@ rec {
     hash = "bd3020bd22b3bb0a28bd0e611f95829eea23ea5f0d7296d41ff1901cd7a37160";
     deps = with allCrates; [  all__jni-sys.jni-sys_0_2 ];
   };
-  "rucaja_0_1" = rucaja_0_1_4;
-  "rucaja_0" = rucaja_0_1_4;}
+  rucaja_0_1_5 = buildCratesLib {
+    name = "rucaja";
+    version = "0.1.5";
+    hash = "329841091e777a15caa4aa1b4e462e637a19cd8a58d2644e6f8e4fd01608cece";
+    deps = with allCrates; [  all__jni-sys.jni-sys_0_2 ];
+  };
+  "rucaja_0_1" = rucaja_0_1_5;
+  "rucaja_0" = rucaja_0_1_5;}

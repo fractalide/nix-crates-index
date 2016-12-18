@@ -116,5 +116,11 @@ rec {
     deps = with allCrates; [  all__url.url_1_1 all__sha1.sha1_0_2 ];
   };
   "redis_0_6" = redis_0_6_0;
-  "redis_0_7" = redis_0_7_0;
-  "redis_0" = redis_0_7_0;}
+  redis_0_7_1 = buildCratesLib {
+    name = "redis";
+    version = "0.7.1";
+    hash = "feba37ee5a3a2703f97dddf30edae24e0df0c0ed6310ef078b497f020e7c054b";
+    deps = with allCrates; [  all__sha1.sha1_0_2 all__url.url_1_2 ];
+  };
+  "redis_0_7" = redis_0_7_1;
+  "redis_0" = redis_0_7_1;}

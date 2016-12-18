@@ -38,5 +38,11 @@ rec {
     hash = "5c75894ea6c32a5f461540adfa7e8b1f93a438d75081f1e7cc4b6d655ed7b36d";
     deps = with allCrates; [  all__time.time_0_1 all__base64.base64_0_2 all__ring.ring_0_4 all__webpki.webpki_0_3 all__untrusted.untrusted_0_3 ];
   };
-  "rustls_0_5" = rustls_0_5_2;
-  "rustls_0" = rustls_0_5_2;}
+  rustls_0_5_3 = buildCratesLib {
+    name = "rustls";
+    version = "0.5.3";
+    hash = "340c03bcbc24e09a1fb49027a480c5dd2950edc2746e324ec684917ab84b56a0";
+    deps = with allCrates; [  all__ring.ring_0_6 all__time.time_0_1 all__base64.base64_0_2 all__untrusted.untrusted_0_3 all__webpki.webpki_0_8 ];
+  };
+  "rustls_0_5" = rustls_0_5_3;
+  "rustls_0" = rustls_0_5_3;}

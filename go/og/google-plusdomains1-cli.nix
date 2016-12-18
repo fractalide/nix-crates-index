@@ -10,8 +10,8 @@ rec {
   google-plusdomains1-cli_1_0_0 = buildCratesLib {
     name = "google-plusdomains1-cli";
     version = "1.0.0";
-    hash = "2a71d05fc62c5b60a21292d7a8248213f1ec0d0d890e07dc90526743711a2eb4";
-    deps = with allCrates; [  all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 all__clap.clap_2_0 all__serde.serde_0_8 all__mime.mime_0_2 all__strsim.strsim_0_5 all__serde_json.serde_json_0_8 ];
+    hash = "25d26ee6f7c0384fb774c6dc6ffd3a136a35491494facf33f3f92145151b2c1a";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__serde.serde_0_8 all__clap.clap_2_0 all__hyper.hyper_0_9 all__strsim.strsim_0_5 ];
   };
   "google-plusdomains1-cli_0_3" = google-plusdomains1-cli_0_3_6;
   "google-plusdomains1-cli_0" = google-plusdomains1-cli_0_3_6;

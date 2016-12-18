@@ -31,5 +31,12 @@ rec {
     hash = "33ce7d752c5a6ca15cc3e96392fa500caa29659c8ef9e836a9dddc72b1ef37ed";
     deps = with allCrates; [  all__time.time_0_1 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__curl.curl_0_3 all__url.url_1_1 all__openssl.openssl_0_7 ];
   };
+  rust-s3_0_3_2 = buildCratesLib {
+    name = "rust-s3";
+    version = "0.3.2";
+    hash = "0734e0dede30d18321439c3c7d0952369c3a7a8cc2b7e2c196740f5387d089af";
+    deps = with allCrates; [  all__openssl.openssl_0_7 all__rustc-serialize.rustc-serialize_0_3 all__log.log_0_3 all__url.url_1_2 all__curl.curl_0_3 all__time.time_0_1 ];
+  };
   "rust-s3_0_2" = rust-s3_0_2_5;
-  "rust-s3_0" = rust-s3_0_2_5;}
+  "rust-s3_0_3" = rust-s3_0_3_2;
+  "rust-s3_0" = rust-s3_0_3_2;}

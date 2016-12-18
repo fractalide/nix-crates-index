@@ -10,8 +10,8 @@ rec {
   google-doubleclicksearch2-cli_1_0_0 = buildCratesLib {
     name = "google-doubleclicksearch2-cli";
     version = "1.0.0";
-    hash = "a61cca1b833ebe6d7da0c2796a1d23b5b67d43df67b4fb06453933edd63bf924";
-    deps = with allCrates; [  all__hyper.hyper_0_9 all__clap.clap_2_0 all__serde.serde_0_8 all__strsim.strsim_0_5 all__serde_json.serde_json_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 ];
+    hash = "2fd8532eee38af4b2d94c03d0dbfa572798ee6bf89477de776c9465210b5be14";
+    deps = with allCrates; [  all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 ];
   };
   "google-doubleclicksearch2-cli_0_3" = google-doubleclicksearch2-cli_0_3_6;
   "google-doubleclicksearch2-cli_0" = google-doubleclicksearch2-cli_0_3_6;

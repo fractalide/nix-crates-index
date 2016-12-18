@@ -100,8 +100,8 @@ rec {
   google-doubleclicksearch2_1_0_0 = buildCratesLib {
     name = "google-doubleclicksearch2";
     version = "1.0.0";
-    hash = "d7824a36cd26e8cc4d49deba71fe2f830c715e3b76257b104a164fdc96a6e145";
-    deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__serde.serde_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 ];
+    hash = "4dbd28ecd162ef427a6a24cec7124da5be5a85c953d962234e54fe5172f8f542";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 url all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
   };
   "google-doubleclicksearch2_0_1" = google-doubleclicksearch2_0_1_15;
   "google-doubleclicksearch2_0" = google-doubleclicksearch2_0_1_15;

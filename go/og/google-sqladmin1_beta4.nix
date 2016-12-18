@@ -94,8 +94,8 @@ rec {
   google-sqladmin1_beta4_1_0_0 = buildCratesLib {
     name = "google-sqladmin1_beta4";
     version = "1.0.0";
-    hash = "2a95e4cbcbb84ab59b1ffa3545044cc545f9b78a44a6d6c7cf48a573549eca46";
-    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 ];
+    hash = "008b196fb69bb6d2f32a5767fb465df1659cd7c62751d59ef828919b2d03bcfa";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 url all__hyper.hyper_0_9 ];
   };
   "google-sqladmin1_beta4_0_1" = google-sqladmin1_beta4_0_1_15;
   "google-sqladmin1_beta4_0" = google-sqladmin1_beta4_0_1_15;

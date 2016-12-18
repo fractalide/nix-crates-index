@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__clap.clap_2_9 all__hyper.hyper_0_9 all__rusoto.rusoto_0_16 all__ansi_term.ansi_term_0_9 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__env_logger.env_logger_0_3 ];
   };
   "kaws_0_2" = kaws_0_2_0;
+  kaws_0_4_1 = buildCratesLib {
+    name = "kaws";
+    version = "0.4.1";
+    hash = "8ec05418881de20ae2c010efb63a1c53e8cb3ebd8ad6b316071e973e2812efca";
+    deps = with allCrates; [  all__log.log_0_3 all__clap.clap_2_19 all__rusoto.rusoto_0_20 all__ansi_term.ansi_term_0_9 all__hyper.hyper_0_9 all__rustc-serialize.rustc-serialize_0_3 all__env_logger.env_logger_0_3 ];
+  };
   "kaws_0_3" = kaws_0_3_0;
-  "kaws_0" = kaws_0_3_0;}
+  "kaws_0_4" = kaws_0_4_1;
+  "kaws_0" = kaws_0_4_1;}

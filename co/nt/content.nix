@@ -21,5 +21,12 @@ rec {
     deps = with allCrates; [  all__rand.rand_0_3 all__parking_lot.parking_lot_0_3 all__byteorder.byteorder_0_5 ];
   };
   "content_0_2" = content_0_2_0;
+  content_0_6_0 = buildCratesLib {
+    name = "content";
+    version = "0.6.0";
+    hash = "f81e83745d7cade3b13ccc7c17c651b4d5e54006a4e9fd4e6d2fe70aceed01a1";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__rand.rand_0_3 all__blake2-rfc.blake2-rfc_0_2 all__parking_lot.parking_lot_0_3 ];
+  };
   "content_0_3" = content_0_3_0;
-  "content_0" = content_0_3_0;}
+  "content_0_6" = content_0_6_0;
+  "content_0" = content_0_6_0;}

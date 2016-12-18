@@ -190,5 +190,12 @@ rec {
     hash = "23c6af2377205ad318dfbb89fbb628f285f4d526f56f0f8e3c6b4473d691bcf3";
     deps = with allCrates; [  all__smallvec.smallvec_0_2 all__nom.nom_2_0 ];
   };
+  control-code_0_5_0 = buildCratesLib {
+    name = "control-code";
+    version = "0.5.0";
+    hash = "92d1fda2b9290c0f78ccdcfcbee394ad7edb1f4bd7260e2120179631ef135594";
+    deps = with allCrates; [  all__nom.nom_2_0 all__smallvec.smallvec_0_2 ];
+  };
   "control-code_0_4" = control-code_0_4_10;
-  "control-code_0" = control-code_0_4_10;}
+  "control-code_0_5" = control-code_0_5_0;
+  "control-code_0" = control-code_0_5_0;}

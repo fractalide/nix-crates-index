@@ -40,8 +40,8 @@ rec {
   google-genomics1_1_0_0 = buildCratesLib {
     name = "google-genomics1";
     version = "1.0.0";
-    hash = "f9758fb805cb685e2f1a7b6f4f35ac7afaac1b32ec64ec389a05c6b24b559347";
-    deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url all__mime.mime_0_2 ];
+    hash = "65b7ed8a68ad40fc72bdbe86f1c03703240a7fa4ed02d34f8d603411ab569eb0";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 url ];
   };
   "google-genomics1_0_1" = google-genomics1_0_1_15;
   "google-genomics1_0" = google-genomics1_0_1_15;

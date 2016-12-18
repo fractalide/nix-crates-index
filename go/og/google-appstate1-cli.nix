@@ -10,8 +10,8 @@ rec {
   google-appstate1-cli_1_0_0 = buildCratesLib {
     name = "google-appstate1-cli";
     version = "1.0.0";
-    hash = "bd0fc30f62b89794137aef54cd613035d95f68a762f4a73e5cdc58dcd58d3c22";
-    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__strsim.strsim_0_5 all__clap.clap_2_0 all__serde.serde_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
+    hash = "1b648920d1fe5b98ea43753cb5e24976c0dc6fe2ab6b94d8a2157c82c88a71bc";
+    deps = with allCrates; [  all__clap.clap_2_0 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__hyper.hyper_0_9 all__strsim.strsim_0_5 ];
   };
   "google-appstate1-cli_0_3" = google-appstate1-cli_0_3_6;
   "google-appstate1-cli_0" = google-appstate1-cli_0_3_6;

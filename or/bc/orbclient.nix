@@ -164,5 +164,24 @@ rec {
     hash = "89c63250bfee658ab00c8984e7a761da94752c95f1eb21bab056ee607365a042";
     deps = with allCrates; [  all__sdl2.sdl2_0_9 all__redox_syscall.redox_syscall_0_1 ];
   };
-  "orbclient_0_1" = orbclient_0_1_25;
-  "orbclient_0" = orbclient_0_1_25;}
+  orbclient_0_1_26 = buildCratesLib {
+    name = "orbclient";
+    version = "0.1.26";
+    hash = "6e8e982388f410b93ce531c13aa6bf1203d9e806e8034d8cb91d65a570a413a5";
+    deps = with allCrates; [  all__sdl2.sdl2_0_9 all__redox_syscall.redox_syscall_0_1 ];
+  };
+  orbclient_0_2_0 = buildCratesLib {
+    name = "orbclient";
+    version = "0.2.0";
+    hash = "f4f99d3aa14879d8d7ffe4dc9d624952e5e2d06f7a7a55e302e9290786817dc0";
+    deps = with allCrates; [  all__sdl2.sdl2_0_9 all__redox_syscall.redox_syscall_0_1 ];
+  };
+  "orbclient_0_1" = orbclient_0_1_26;
+  orbclient_0_2_1 = buildCratesLib {
+    name = "orbclient";
+    version = "0.2.1";
+    hash = "4b8ff9b5ba988465f36bf129041fc5ab37ecde562711f07dd93cf4885df7e559";
+    deps = with allCrates; [  all__sdl2.sdl2_0_9 all__redox_syscall.redox_syscall_0_1 ];
+  };
+  "orbclient_0_2" = orbclient_0_2_1;
+  "orbclient_0" = orbclient_0_2_1;}

@@ -123,5 +123,11 @@ rec {
     hash = "28d60af0dbee4912f00dda79ac3b06d1ca44b641d69359e6f1d4df7c985521d2";
     deps = with allCrates; [  all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 ];
   };
-  "compiletest_rs_0_2" = compiletest_rs_0_2_4;
-  "compiletest_rs_0" = compiletest_rs_0_2_4;}
+  compiletest_rs_0_2_5 = buildCratesLib {
+    name = "compiletest_rs";
+    version = "0.2.5";
+    hash = "f3f344389765ad7bec166f64c1b39ed6dd2b54d81c4c5dd8af789169351d380c";
+    deps = with allCrates; [  all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "compiletest_rs_0_2" = compiletest_rs_0_2_5;
+  "compiletest_rs_0" = compiletest_rs_0_2_5;}

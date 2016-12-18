@@ -64,8 +64,8 @@ rec {
   google-dns1_1_0_0 = buildCratesLib {
     name = "google-dns1";
     version = "1.0.0";
-    hash = "edbfcc46023f17fa7dd04a7832a1dffa41cd24185a6a3b9b96e26efa8d6891d4";
-    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
+    hash = "8552ae6032547792592f3a452229c70c7b9e12c176158a8648f7e30da7d6ce5d";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 url all__hyper.hyper_0_9 ];
   };
   "google-dns1_0_1" = google-dns1_0_1_15;
   "google-dns1_0" = google-dns1_0_1_15;

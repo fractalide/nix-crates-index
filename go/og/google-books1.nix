@@ -94,8 +94,8 @@ rec {
   google-books1_1_0_0 = buildCratesLib {
     name = "google-books1";
     version = "1.0.0";
-    hash = "a34c4d9f5b5260f24389275081c02bcefac319a999ac39d4ecc759a7f1a0f588";
-    deps = with allCrates; [  url all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 ];
+    hash = "d434aea6cc9350fbfbc4a5e651b3889bd20510d1c8b35d5af708f8612afc809b";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 url ];
   };
   "google-books1_0_1" = google-books1_0_1_15;
   "google-books1_0" = google-books1_0_1_15;

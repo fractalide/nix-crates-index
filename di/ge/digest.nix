@@ -27,5 +27,11 @@ rec {
     deps = with allCrates; [  all__generic-array.generic-array_0_5 ];
   };
   "digest_0_2" = digest_0_2_1;
-  "digest_0_3" = digest_0_3_0;
-  "digest_0" = digest_0_3_0;}
+  digest_0_3_1 = buildCratesLib {
+    name = "digest";
+    version = "0.3.1";
+    hash = "867593eac3ccb902465375ee94401490009054da278d4bb2f11a6f8b5bfeca98";
+    deps = with allCrates; [  all__generic-array.generic-array_0_5 ];
+  };
+  "digest_0_3" = digest_0_3_1;
+  "digest_0" = digest_0_3_1;}

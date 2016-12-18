@@ -10,8 +10,8 @@ rec {
   google-cloudmonitoring2_beta2-cli_1_0_0 = buildCratesLib {
     name = "google-cloudmonitoring2_beta2-cli";
     version = "1.0.0";
-    hash = "0700b5a35890f29a508103e27c8a355642b95bbd49f33dfb0f131db3cb817429";
-    deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__mime.mime_0_2 all__strsim.strsim_0_5 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
+    hash = "a4f3a0cd3d3761dcf3c0c82ddfffb89415c4a3f1c4acd34968bd70ca5f33b4be";
+    deps = with allCrates; [  all__mime.mime_0_2 all__clap.clap_2_0 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 ];
   };
   "google-cloudmonitoring2_beta2-cli_0_3" = google-cloudmonitoring2_beta2-cli_0_3_6;
   "google-cloudmonitoring2_beta2-cli_0" = google-cloudmonitoring2_beta2-cli_0_3_6;

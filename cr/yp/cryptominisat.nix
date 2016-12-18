@@ -7,5 +7,13 @@ rec {
     hash = "cded220ade4f2b8db02a9ec9985a52af90bc96224b272a6745a538cbc927abaf";
     deps = with allCrates; [  all__libc.libc_0_2 all__cmake.cmake_0_1 ];
   };
+  cryptominisat_5_0_1 = buildCratesLib {
+    name = "cryptominisat";
+    version = "5.0.1";
+    hash = "33f56d679b98afff47f85a1b0b24f334898fb74dd8920e975e60d39d91e73045";
+    deps = with allCrates; [  all__libc.libc_0_2 all__cmake.cmake_0_1 ];
+  };
   "cryptominisat_0_1" = cryptominisat_0_1_0;
-  "cryptominisat_0" = cryptominisat_0_1_0;}
+  "cryptominisat_0" = cryptominisat_0_1_0;
+  "cryptominisat_5_0" = cryptominisat_5_0_1;
+  "cryptominisat_5" = cryptominisat_5_0_1;}

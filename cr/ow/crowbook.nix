@@ -106,5 +106,11 @@ rec {
     hash = "d0af810a633cebfe14b5b90af365e4eef31992556cb09eda4a232134808c7b56";
     deps = with allCrates; [  all__term.term_0_4 all__pulldown-cmark.pulldown-cmark_0_0_8 all__mustache.mustache_0_8 all__mime_guess.mime_guess_1 all__crowbook-text-processing.crowbook-text-processing_0_2 all__rustc-serialize.rustc-serialize_0_3 all__walkdir.walkdir_1_0 all__crossbeam.crossbeam_0_2 all__chrono.chrono_0_2 all__crowbook-intl-runtime.crowbook-intl-runtime_0_1 all__lazy_static.lazy_static_0_2 all__uuid.uuid_0_3 all__yaml-rust.yaml-rust_0_3 all__crowbook-intl.crowbook-intl_0_1 ];
   };
-  "crowbook_0_10" = crowbook_0_10_3;
-  "crowbook_0" = crowbook_0_10_3;}
+  crowbook_0_10_4 = buildCratesLib {
+    name = "crowbook";
+    version = "0.10.4";
+    hash = "c861a180c15d03d3a6266f93303f4ca146e8f8e42b676067ccf5db089d9ff2b1";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__mustache.mustache_0_8 all__term.term_0_4 all__walkdir.walkdir_1_0 all__rustc-serialize.rustc-serialize_0_3 all__crowbook-intl-runtime.crowbook-intl-runtime_0_1 all__chrono.chrono_0_2 all__uuid.uuid_0_3 all__yaml-rust.yaml-rust_0_3 all__mime_guess.mime_guess_1 all__pulldown-cmark.pulldown-cmark_0_0_8 all__crossbeam.crossbeam_0_2 all__crowbook-text-processing.crowbook-text-processing_0_2 all__crowbook-intl.crowbook-intl_0_1 ];
+  };
+  "crowbook_0_10" = crowbook_0_10_4;
+  "crowbook_0" = crowbook_0_10_4;}

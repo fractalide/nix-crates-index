@@ -94,8 +94,8 @@ rec {
   google-gmail1_1_0_0 = buildCratesLib {
     name = "google-gmail1";
     version = "1.0.0";
-    hash = "1a172fe667e3f6199d98b479086f32e165bc66dcaa2b126f46640ec72eddbd1b";
-    deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 ];
+    hash = "90e22d4cdf1d37ea491b74aa95eed3b29a8a014f2973be69b8d629e5b0095677";
+    deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 url ];
   };
   "google-gmail1_0_1" = google-gmail1_0_1_15;
   "google-gmail1_0" = google-gmail1_0_1_15;

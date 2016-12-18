@@ -363,5 +363,11 @@ rec {
     hash = "48ccf7bd87a81b769cf84ad556e034541fb90e1cd6d4bc375c822ed9500cd9d7";
     deps = with allCrates; [  all__idna.idna_0_1 all__matches.matches_0_1 ];
   };
-  "url_1_2" = url_1_2_3;
-  "url_1" = url_1_2_3;}
+  url_1_2_4 = buildCratesLib {
+    name = "url";
+    version = "1.2.4";
+    hash = "f024e241a55f5c88401595adc1d4af0c9649e91da82d0e190fe55950231ae575";
+    deps = with allCrates; [  all__idna.idna_0_1 all__matches.matches_0_1 ];
+  };
+  "url_1_2" = url_1_2_4;
+  "url_1" = url_1_2_4;}

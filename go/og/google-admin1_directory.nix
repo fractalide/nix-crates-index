@@ -94,8 +94,8 @@ rec {
   google-admin1_directory_1_0_0 = buildCratesLib {
     name = "google-admin1_directory";
     version = "1.0.0";
-    hash = "93bb4713249aeb684bdf2d2db93690753e04ce2f46347afe24dfd8a24928b66f";
-    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
+    hash = "7e82af3d4435a590cacf718ee6527648a6e3334f80fecfcde8ccb29b0ce8e85f";
+    deps = with allCrates; [  url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 ];
   };
   "google-admin1_directory_0_1" = google-admin1_directory_0_1_15;
   "google-admin1_directory_0" = google-admin1_directory_0_1_15;

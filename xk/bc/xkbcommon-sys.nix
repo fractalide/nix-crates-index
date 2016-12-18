@@ -25,5 +25,11 @@ rec {
     hash = "c575723dee5a0ecfc4a64d8ad4085df7e84aa63fd7115a5e57eadc698ed372a6";
     deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
   };
-  "xkbcommon-sys_0_7" = xkbcommon-sys_0_7_3;
-  "xkbcommon-sys_0" = xkbcommon-sys_0_7_3;}
+  xkbcommon-sys_0_7_4 = buildCratesLib {
+    name = "xkbcommon-sys";
+    version = "0.7.4";
+    hash = "fa434980dca02ebf28795d71e570dbb78316d095a228707efd6117bf8246d78b";
+    deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
+  };
+  "xkbcommon-sys_0_7" = xkbcommon-sys_0_7_4;
+  "xkbcommon-sys_0" = xkbcommon-sys_0_7_4;}

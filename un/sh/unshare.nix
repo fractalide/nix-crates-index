@@ -98,5 +98,11 @@ rec {
     hash = "83fef3d20ff287844b57e240859ca55a1f22a352f6b305e3e41bd956f3e043b6";
     deps = with allCrates; [  all__libc.libc_0_2 all__nix.nix_0_4 ];
   };
-  "unshare_0_1" = unshare_0_1_14;
-  "unshare_0" = unshare_0_1_14;}
+  unshare_0_1_15 = buildCratesLib {
+    name = "unshare";
+    version = "0.1.15";
+    hash = "636f13e1e5d315f9e23270839612b25d0486dff5e963f8d8456ad5489646d09c";
+    deps = with allCrates; [  all__nix.nix_0_4 all__libc.libc_0_2 ];
+  };
+  "unshare_0_1" = unshare_0_1_15;
+  "unshare_0" = unshare_0_1_15;}

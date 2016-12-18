@@ -10,8 +10,8 @@ rec {
   google-spectrum1_explorer-cli_1_0_0 = buildCratesLib {
     name = "google-spectrum1_explorer-cli";
     version = "1.0.0";
-    hash = "f514eb5ccdc1ccbbe16e01f51f1e0c40f220636da2a9470fe6b005f5236c6c1d";
-    deps = with allCrates; [  all__yup-hyper-mock.yup-hyper-mock_1_0 all__clap.clap_2_0 all__strsim.strsim_0_5 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 ];
+    hash = "8e441ec34f6faabeb21f7947192a56b8c1c3b37ae82a67c5e514df23798585e7";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__clap.clap_2_0 all__mime.mime_0_2 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 ];
   };
   "google-spectrum1_explorer-cli_0_3" = google-spectrum1_explorer-cli_0_3_6;
   "google-spectrum1_explorer-cli_0" = google-spectrum1_explorer-cli_0_3_6;

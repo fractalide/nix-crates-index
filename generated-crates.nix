@@ -144,9 +144,11 @@
     "all__karplus" = self.callPackage ./ka/rp/karplus.nix { };
     "karplus" = all__karplus."karplus_0_1_0";
     "all__kaws" = self.callPackage ./ka/ws/kaws.nix { };
-    "kaws" = all__kaws."kaws_0_3_0";
+    "kaws" = all__kaws."kaws_0_4_1";
     "all__kalman" = self.callPackage ./ka/lm/kalman.nix { };
     "kalman" = all__kalman."kalman_0_0_0";
+    "all__kalyna" = self.callPackage ./ka/ly/kalyna.nix { };
+    "kalyna" = all__kalyna."kalyna_0_0_0";
     "all__kairosdb" = self.callPackage ./ka/ir/kairosdb.nix { };
     "kairosdb" = all__kairosdb."kairosdb_0_2_3";
     "all__d2d1-sys" = self.callPackage ./d2/d1/d2d1-sys.nix { };
@@ -182,7 +184,7 @@
     "all__ssmtp" = self.callPackage ./ss/mt/ssmtp.nix { };
     "ssmtp" = all__ssmtp."ssmtp_1_0_1";
     "all__ssdp" = self.callPackage ./ss/dp/ssdp.nix { };
-    "ssdp" = all__ssdp."ssdp_0_4_0";
+    "ssdp" = all__ssdp."ssdp_0_5_0";
     "all__ssdpapi-sys" = self.callPackage ./ss/dp/ssdpapi-sys.nix { };
     "ssdpapi-sys" = all__ssdpapi-sys."ssdpapi-sys_0_0_1";
     "all__ssh2" = self.callPackage ./ss/h2/ssh2.nix { };
@@ -438,7 +440,7 @@
     "all__unchecked_mutable" = self.callPackage ./un/ch/unchecked_mutable.nix { };
     "unchecked_mutable" = all__unchecked_mutable."unchecked_mutable_0_1_0";
     "all__unshare" = self.callPackage ./un/sh/unshare.nix { };
-    "unshare" = all__unshare."unshare_0_1_14";
+    "unshare" = all__unshare."unshare_0_1_15";
     "all__uname" = self.callPackage ./un/am/uname.nix { };
     "uname" = all__uname."uname_0_1_1";
     "all__dnssd" = self.callPackage ./dn/ss/dnssd.nix { };
@@ -563,6 +565,8 @@
     "permission" = all__permission."permission_0_1_0";
     "all__peggler" = self.callPackage ./pe/gg/peggler.nix { };
     "peggler" = all__peggler."peggler_0_1_0";
+    "all__pegasus" = self.callPackage ./pe/ga/pegasus.nix { };
+    "pegasus" = all__pegasus."pegasus_0_2_0";
     "all__peerdist-sys" = self.callPackage ./pe/er/peerdist-sys.nix { };
     "peerdist-sys" = all__peerdist-sys."peerdist-sys_0_0_1";
     "all__miso" = self.callPackage ./mi/so/miso.nix { };
@@ -706,7 +710,7 @@
     "all__yaml-rust" = self.callPackage ./ya/ml/yaml-rust.nix { };
     "yaml-rust" = all__yaml-rust."yaml-rust_0_3_5";
     "all__yaecs" = self.callPackage ./ya/ec/yaecs.nix { };
-    "yaecs" = all__yaecs."yaecs_0_5_1";
+    "yaecs" = all__yaecs."yaecs_0_6_0";
     "all__yasna" = self.callPackage ./ya/sn/yasna.nix { };
     "yasna" = all__yasna."yasna_0_1_3";
     "all__modbus" = self.callPackage ./mo/db/modbus.nix { };
@@ -1106,7 +1110,7 @@
     "all__message_filter" = self.callPackage ./me/ss/message_filter.nix { };
     "message_filter" = all__message_filter."message_filter_0_6_0";
     "all__message_verifier" = self.callPackage ./me/ss/message_verifier.nix { };
-    "message_verifier" = all__message_verifier."message_verifier_0_1_1";
+    "message_verifier" = all__message_verifier."message_verifier_0_2_0";
     "all__message-format" = self.callPackage ./me/ss/message-format.nix { };
     "message-format" = all__message-format."message-format_0_0_1";
     "all__message_bus" = self.callPackage ./me/ss/message_bus.nix { };
@@ -1266,7 +1270,7 @@
     "all__json_io" = self.callPackage ./js/on/json_io.nix { };
     "json_io" = all__json_io."json_io_0_2_0";
     "all__json-codec" = self.callPackage ./js/on/json-codec.nix { };
-    "json-codec" = all__json-codec."json-codec_0_4_0";
+    "json-codec" = all__json-codec."json-codec_0_4_1";
     "all__json-request" = self.callPackage ./js/on/json-request.nix { };
     "json-request" = all__json-request."json-request_0_2_0";
     "all__jsonrpc-core" = self.callPackage ./js/on/jsonrpc-core.nix { };
@@ -1368,9 +1372,9 @@
     "all__sentinel" = self.callPackage ./se/nt/sentinel.nix { };
     "sentinel" = all__sentinel."sentinel_0_1_2";
     "all__serde_test" = self.callPackage ./se/rd/serde_test.nix { };
-    "serde_test" = all__serde_test."serde_test_0_8_19";
+    "serde_test" = all__serde_test."serde_test_0_8_20";
     "all__serde_codegen_internals" = self.callPackage ./se/rd/serde_codegen_internals.nix { };
-    "serde_codegen_internals" = all__serde_codegen_internals."serde_codegen_internals_0_11_1";
+    "serde_codegen_internals" = all__serde_codegen_internals."serde_codegen_internals_0_11_2";
     "all__serde-avro" = self.callPackage ./se/rd/serde-avro.nix { };
     "serde-avro" = all__serde-avro."serde-avro_0_4_0";
     "all__serde_yaml" = self.callPackage ./se/rd/serde_yaml.nix { };
@@ -1380,7 +1384,7 @@
     "all__serde_yaml_incomplete" = self.callPackage ./se/rd/serde_yaml_incomplete.nix { };
     "serde_yaml_incomplete" = all__serde_yaml_incomplete."serde_yaml_incomplete_0_0_0";
     "all__serde_derive" = self.callPackage ./se/rd/serde_derive.nix { };
-    "serde_derive" = all__serde_derive."serde_derive_0_8_19";
+    "serde_derive" = all__serde_derive."serde_derive_0_8_20";
     "all__serde-protobuf" = self.callPackage ./se/rd/serde-protobuf.nix { };
     "serde-protobuf" = all__serde-protobuf."serde-protobuf_0_4_0";
     "all__serde_utils" = self.callPackage ./se/rd/serde_utils.nix { };
@@ -1389,12 +1393,14 @@
     "serde-bench" = all__serde-bench."serde-bench_0_0_1";
     "all__serde_cbor" = self.callPackage ./se/rd/serde_cbor.nix { };
     "serde_cbor" = all__serde_cbor."serde_cbor_0_4_0";
+    "all__serde_bencode" = self.callPackage ./se/rd/serde_bencode.nix { };
+    "serde_bencode" = all__serde_bencode."serde_bencode_0_1_0";
     "all__serde_urlencoded" = self.callPackage ./se/rd/serde_urlencoded.nix { };
     "serde_urlencoded" = all__serde_urlencoded."serde_urlencoded_0_3_0";
     "all__serde_wat" = self.callPackage ./se/rd/serde_wat.nix { };
     "serde_wat" = all__serde_wat."serde_wat_0_1_0";
     "all__serde" = self.callPackage ./se/rd/serde.nix { };
-    "serde" = all__serde."serde_0_8_19";
+    "serde" = all__serde."serde_0_8_20";
     "all__serde-hjson" = self.callPackage ./se/rd/serde-hjson.nix { };
     "serde-hjson" = all__serde-hjson."serde-hjson_0_8_1";
     "all__serde_xml" = self.callPackage ./se/rd/serde_xml.nix { };
@@ -1408,13 +1414,13 @@
     "all__serde_json" = self.callPackage ./se/rd/serde_json.nix { };
     "serde_json" = all__serde_json."serde_json_0_8_4";
     "all__serde-redis" = self.callPackage ./se/rd/serde-redis.nix { };
-    "serde-redis" = all__serde-redis."serde-redis_0_5_0";
+    "serde-redis" = all__serde-redis."serde-redis_0_5_1";
     "all__serde_item" = self.callPackage ./se/rd/serde_item.nix { };
     "serde_item" = all__serde_item."serde_item_0_2_0";
     "all__serde_rustc_serialize_interop" = self.callPackage ./se/rd/serde_rustc_serialize_interop.nix { };
     "serde_rustc_serialize_interop" = all__serde_rustc_serialize_interop."serde_rustc_serialize_interop_1_0_0";
     "all__serde_codegen" = self.callPackage ./se/rd/serde_codegen.nix { };
-    "serde_codegen" = all__serde_codegen."serde_codegen_0_8_19";
+    "serde_codegen" = all__serde_codegen."serde_codegen_0_8_20";
     "all__select" = self.callPackage ./se/le/select.nix { };
     "select" = all__select."select_0_3_0";
     "all__selecta_score" = self.callPackage ./se/le/selecta_score.nix { };
@@ -1974,7 +1980,7 @@
     "all__postgis" = self.callPackage ./po/st/postgis.nix { };
     "postgis" = all__postgis."postgis_0_3_0";
     "all__postgres_macros" = self.callPackage ./po/st/postgres_macros.nix { };
-    "postgres_macros" = all__postgres_macros."postgres_macros_0_1_12";
+    "postgres_macros" = all__postgres_macros."postgres_macros_0_1_13";
     "all__postgres_range" = self.callPackage ./po/st/postgres_range.nix { };
     "postgres_range" = all__postgres_range."postgres_range_0_8_2";
     "all__postgres" = self.callPackage ./po/st/postgres.nix { };
@@ -2183,10 +2189,14 @@
     "s_app_dir" = all__s_app_dir."s_app_dir_0_0_0";
     "all__kuznyechik" = self.callPackage ./ku/zn/kuznyechik.nix { };
     "kuznyechik" = all__kuznyechik."kuznyechik_0_0_0";
+    "all__kupyna" = self.callPackage ./ku/py/kupyna.nix { };
+    "kupyna" = all__kupyna."kupyna_0_0_0";
     "all__kugel" = self.callPackage ./ku/ge/kugel.nix { };
     "kugel" = all__kugel."kugel_0_0_2";
     "all__kuchiki" = self.callPackage ./ku/ch/kuchiki.nix { };
     "kuchiki" = all__kuchiki."kuchiki_0_4_0";
+    "all__groestl" = self.callPackage ./gr/oe/groestl.nix { };
+    "groestl" = all__groestl."groestl_0_0_0";
     "all__grpc" = self.callPackage ./gr/pc/grpc.nix { };
     "grpc" = all__grpc."grpc_0_0_1";
     "all__grpc-rust" = self.callPackage ./gr/pc/grpc-rust.nix { };
@@ -2364,7 +2374,7 @@
     "all__ohmers" = self.callPackage ./oh/me/ohmers.nix { };
     "ohmers" = all__ohmers."ohmers_0_1_1";
     "all__rzbackup" = self.callPackage ./rz/ba/rzbackup.nix { };
-    "rzbackup" = all__rzbackup."rzbackup_2_0_7";
+    "rzbackup" = all__rzbackup."rzbackup_3_0_0";
     "all__rz80" = self.callPackage ./rz/80/rz80.nix { };
     "rz80" = all__rz80."rz80_0_1_1";
     "all__zdaemon" = self.callPackage ./zd/ae/zdaemon.nix { };
@@ -2560,7 +2570,7 @@
     "all__idea" = self.callPackage ./id/ea/idea.nix { };
     "idea" = all__idea."idea_0_0_0";
     "all__id_tree" = self.callPackage ./id/_t/id_tree.nix { };
-    "id_tree" = all__id_tree."id_tree_0_2_6";
+    "id_tree" = all__id_tree."id_tree_0_2_7";
     "all__idcontain" = self.callPackage ./id/co/idcontain.nix { };
     "idcontain" = all__idcontain."idcontain_0_6_0";
     "all__identify" = self.callPackage ./id/en/identify.nix { };
@@ -2660,7 +2670,7 @@
     "all__stdio_logger" = self.callPackage ./st/di/stdio_logger.nix { };
     "stdio_logger" = all__stdio_logger."stdio_logger_0_1_1";
     "all__stdinout" = self.callPackage ./st/di/stdinout.nix { };
-    "stdinout" = all__stdinout."stdinout_0_1_0";
+    "stdinout" = all__stdinout."stdinout_0_2_0";
     "all__stack_dst" = self.callPackage ./st/ac/stack_dst.nix { };
     "stack_dst" = all__stack_dst."stack_dst_0_3_1";
     "all__staccato" = self.callPackage ./st/ac/staccato.nix { };
@@ -2705,6 +2715,8 @@
     "string_to_expr" = all__string_to_expr."string_to_expr_0_0_2";
     "all__string-intern" = self.callPackage ./st/ri/string-intern.nix { };
     "string-intern" = all__string-intern."string-intern_0_1_3";
+    "all__stringmap" = self.callPackage ./st/ri/stringmap.nix { };
+    "stringmap" = all__stringmap."stringmap_0_1_0";
     "all__striple" = self.callPackage ./st/ri/striple.nix { };
     "striple" = all__striple."striple_0_0_1";
     "all__strided" = self.callPackage ./st/ri/strided.nix { };
@@ -2940,9 +2952,9 @@
     "all__python_rub" = self.callPackage ./py/th/python_rub.nix { };
     "python_rub" = all__python_rub."python_rub_0_0_3";
     "all__python3-sys" = self.callPackage ./py/th/python3-sys.nix { };
-    "python3-sys" = all__python3-sys."python3-sys_0_1_2";
+    "python3-sys" = all__python3-sys."python3-sys_0_1_3";
     "all__python27-sys" = self.callPackage ./py/th/python27-sys.nix { };
-    "python27-sys" = all__python27-sys."python27-sys_0_1_1";
+    "python27-sys" = all__python27-sys."python27-sys_0_1_2";
     "all__pythonic" = self.callPackage ./py/th/pythonic.nix { };
     "pythonic" = all__pythonic."pythonic_0_3_0";
     "all__cbox" = self.callPackage ./cb/ox/cbox.nix { };
@@ -3282,7 +3294,7 @@
     "all__libb2-sys" = self.callPackage ./li/bb/libb2-sys.nix { };
     "libb2-sys" = all__libb2-sys."libb2-sys_0_0_1";
     "all__libbindgen" = self.callPackage ./li/bb/libbindgen.nix { };
-    "libbindgen" = all__libbindgen."libbindgen_0_1_2";
+    "libbindgen" = all__libbindgen."libbindgen_0_1_3";
     "all__libblas-sys" = self.callPackage ./li/bb/libblas-sys.nix { };
     "libblas-sys" = all__libblas-sys."libblas-sys_0_1_0";
     "all__libbreakpad-client-sys" = self.callPackage ./li/bb/libbreakpad-client-sys.nix { };
@@ -3412,7 +3424,7 @@
     "all__multiset" = self.callPackage ./mu/lt/multiset.nix { };
     "multiset" = all__multiset."multiset_0_0_3";
     "all__multistr" = self.callPackage ./mu/lt/multistr.nix { };
-    "multistr" = all__multistr."multistr_0_2_0";
+    "multistr" = all__multistr."multistr_0_2_1";
     "all__multiboot" = self.callPackage ./mu/lt/multiboot.nix { };
     "multiboot" = all__multiboot."multiboot_0_2_0";
     "all__multirust-rs" = self.callPackage ./mu/lt/multirust-rs.nix { };
@@ -3605,6 +3617,10 @@
     "thread_isolated" = all__thread_isolated."thread_isolated_0_1_1";
     "all__thread-scoped" = self.callPackage ./th/re/thread-scoped.nix { };
     "thread-scoped" = all__thread-scoped."thread-scoped_1_0_1";
+    "all__threefish" = self.callPackage ./th/re/threefish.nix { };
+    "threefish" = all__threefish."threefish_0_0_0";
+    "all__threema-gateway" = self.callPackage ./th/re/threema-gateway.nix { };
+    "threema-gateway" = all__threema-gateway."threema-gateway_0_2_0";
     "all__threed-ice" = self.callPackage ./th/re/threed-ice.nix { };
     "threed-ice" = all__threed-ice."threed-ice_0_12_0";
     "all__threadpool" = self.callPackage ./th/re/threadpool.nix { };
@@ -3652,7 +3668,7 @@
     "all__philips_hue_client" = self.callPackage ./ph/il/philips_hue_client.nix { };
     "philips_hue_client" = all__philips_hue_client."philips_hue_client_0_4_3";
     "all__philipshue" = self.callPackage ./ph/il/philipshue.nix { };
-    "philipshue" = all__philipshue."philipshue_0_1_0";
+    "philipshue" = all__philipshue."philipshue_0_2_0";
     "all__Philosopher" = self.callPackage ./ph/il/philosopher.nix { };
     "Philosopher" = all__Philosopher."Philosopher_0_1_0";
     "all__qrcode" = self.callPackage ./qr/co/qrcode.nix { };
@@ -3671,6 +3687,8 @@
     "symbolic_polynomials" = all__symbolic_polynomials."symbolic_polynomials_0_0_2";
     "all__sysfs_gpio" = self.callPackage ./sy/sf/sysfs_gpio.nix { };
     "sysfs_gpio" = all__sysfs_gpio."sysfs_gpio_0_4_4";
+    "all__sysfs-pwm" = self.callPackage ./sy/sf/sysfs-pwm.nix { };
+    "sysfs-pwm" = all__sysfs-pwm."sysfs-pwm_0_1_0";
     "all__systemd-dbus" = self.callPackage ./sy/st/systemd-dbus.nix { };
     "systemd-dbus" = all__systemd-dbus."systemd-dbus_0_0_1";
     "all__systemd-crontab-generator" = self.callPackage ./sy/st/systemd-crontab-generator.nix { };
@@ -3772,7 +3790,7 @@
     "all__asynchronous" = self.callPackage ./as/yn/asynchronous.nix { };
     "asynchronous" = all__asynchronous."asynchronous_0_4_5";
     "all__async-http-client" = self.callPackage ./as/yn/async-http-client.nix { };
-    "async-http-client" = all__async-http-client."async-http-client_0_1_0";
+    "async-http-client" = all__async-http-client."async-http-client_0_2_0";
     "all__assimp" = self.callPackage ./as/si/assimp.nix { };
     "assimp" = all__assimp."assimp_0_2_0";
     "all__assimp-rs" = self.callPackage ./as/si/assimp-rs.nix { };
@@ -3860,7 +3878,7 @@
     "all__rlibc" = self.callPackage ./rl/ib/rlibc.nix { };
     "rlibc" = all__rlibc."rlibc_1_0_0";
     "all__rlibcex" = self.callPackage ./rl/ib/rlibcex.nix { };
-    "rlibcex" = all__rlibcex."rlibcex_0_1_0";
+    "rlibcex" = all__rlibcex."rlibcex_0_1_2";
     "all__rlite" = self.callPackage ./rl/it/rlite.nix { };
     "rlite" = all__rlite."rlite_0_0_1";
     "all__rlapack" = self.callPackage ./rl/ap/rlapack.nix { };
@@ -4004,7 +4022,7 @@
     "all__racer" = self.callPackage ./ra/ce/racer.nix { };
     "racer" = all__racer."racer_1_2_10";
     "all__raster" = self.callPackage ./ra/st/raster.nix { };
-    "raster" = all__raster."raster_0_0_6";
+    "raster" = all__raster."raster_0_0_7";
     "all__rarathon" = self.callPackage ./ra/ra/rarathon.nix { };
     "rarathon" = all__rarathon."rarathon_0_0_1";
     "all__raisin" = self.callPackage ./ra/is/raisin.nix { };
@@ -4034,7 +4052,7 @@
     "all__rabbot" = self.callPackage ./ra/bb/rabbot.nix { };
     "rabbot" = all__rabbot."rabbot_0_2_0";
     "all__rabble" = self.callPackage ./ra/bb/rabble.nix { };
-    "rabble" = all__rabble."rabble_0_1_0";
+    "rabble" = all__rabble."rabble_0_1_1";
     "all__rabbiteer" = self.callPackage ./ra/bb/rabbiteer.nix { };
     "rabbiteer" = all__rabbiteer."rabbiteer_0_2_0";
     "all__rabbot-plugin" = self.callPackage ./ra/bb/rabbot-plugin.nix { };
@@ -4046,13 +4064,13 @@
     "all__rawr" = self.callPackage ./ra/wr/rawr.nix { };
     "rawr" = all__rawr."rawr_0_1_1";
     "all__rawloader" = self.callPackage ./ra/wl/rawloader.nix { };
-    "rawloader" = all__rawloader."rawloader_0_17_0";
+    "rawloader" = all__rawloader."rawloader_0_18_0";
     "all__racc" = self.callPackage ./ra/cc/racc.nix { };
     "racc" = all__racc."racc_0_0_2";
     "all__ransidsole" = self.callPackage ./ra/ns/ransidsole.nix { };
     "ransidsole" = all__ransidsole."ransidsole_0_1_0";
     "all__ransid" = self.callPackage ./ra/ns/ransid.nix { };
-    "ransid" = all__ransid."ransid_0_2_2";
+    "ransid" = all__ransid."ransid_0_2_3";
     "all__rasputin" = self.callPackage ./ra/sp/rasputin.nix { };
     "rasputin" = all__rasputin."rasputin_0_2_0";
     "all__rawsql" = self.callPackage ./ra/ws/rawsql.nix { };
@@ -4295,6 +4313,8 @@
     "schannel" = all__schannel."schannel_0_1_1";
     "all__sctp-sys" = self.callPackage ./sc/tp/sctp-sys.nix { };
     "sctp-sys" = all__sctp-sys."sctp-sys_0_0_7";
+    "all__sccache" = self.callPackage ./sc/ca/sccache.nix { };
+    "sccache" = all__sccache."sccache_0_1_0";
     "all__scirust" = self.callPackage ./sc/ir/scirust.nix { };
     "scirust" = all__scirust."scirust_0_0_5";
     "all__pvoc" = self.callPackage ./pv/oc/pvoc.nix { };
@@ -4446,7 +4466,7 @@
     "all__vkrs" = self.callPackage ./vk/rs/vkrs.nix { };
     "vkrs" = all__vkrs."vkrs_0_6_3";
     "all__vk_generator" = self.callPackage ./vk/_g/vk_generator.nix { };
-    "vk_generator" = all__vk_generator."vk_generator_0_2_0";
+    "vk_generator" = all__vk_generator."vk_generator_0_2_1";
     "all__vk-sys" = self.callPackage ./vk/-s/vk-sys.nix { };
     "vk-sys" = all__vk-sys."vk-sys_0_2_1";
     "all__vk_api" = self.callPackage ./vk/_a/vk_api.nix { };
@@ -4532,7 +4552,7 @@
     "all__roman" = self.callPackage ./ro/ma/roman.nix { };
     "roman" = all__roman."roman_0_1_5";
     "all__rouille" = self.callPackage ./ro/ui/rouille.nix { };
-    "rouille" = all__rouille."rouille_0_4_1";
+    "rouille" = all__rouille."rouille_0_4_2";
     "all__roulette-wheel" = self.callPackage ./ro/ul/roulette-wheel.nix { };
     "roulette-wheel" = all__roulette-wheel."roulette-wheel_0_1_0";
     "all__rouler" = self.callPackage ./ro/ul/rouler.nix { };
@@ -4603,6 +4623,10 @@
     "mrusty" = all__mrusty."mrusty_0_5_1";
     "all__mri-sys" = self.callPackage ./mr/i-/mri-sys.nix { };
     "mri-sys" = all__mri-sys."mri-sys_0_1_9";
+    "all__ustulation-test1" = self.callPackage ./us/tu/ustulation-test1.nix { };
+    "ustulation-test1" = all__ustulation-test1."ustulation-test1_0_2_0";
+    "all__ustulation-test0" = self.callPackage ./us/tu/ustulation-test0.nix { };
+    "ustulation-test0" = all__ustulation-test0."ustulation-test0_0_1_0";
     "all__usp10-sys" = self.callPackage ./us/p1/usp10-sys.nix { };
     "usp10-sys" = all__usp10-sys."usp10-sys_0_0_1";
     "all__user" = self.callPackage ./us/er/user.nix { };
@@ -4953,6 +4977,8 @@
     "skia" = all__skia."skia_0_1_0";
     "all__skia-sys" = self.callPackage ./sk/ia/skia-sys.nix { };
     "skia-sys" = all__skia-sys."skia-sys_0_20130412_3";
+    "all__skein" = self.callPackage ./sk/ei/skein.nix { };
+    "skein" = all__skein."skein_0_0_0";
     "all__skew-heap" = self.callPackage ./sk/ew/skew-heap.nix { };
     "skew-heap" = all__skew-heap."skew-heap_0_2_0";
     "all__skill-rating" = self.callPackage ./sk/il/skill-rating.nix { };
@@ -5141,6 +5167,8 @@
     "c-path" = all__c-path."c-path_0_1_1";
     "all__dupcheck" = self.callPackage ./du/pc/dupcheck.nix { };
     "dupcheck" = all__dupcheck."dupcheck_0_1_0";
+    "all__dupchecker" = self.callPackage ./du/pc/dupchecker.nix { };
+    "dupchecker" = all__dupchecker."dupchecker_0_1_0";
     "all__dual_quaternion" = self.callPackage ./du/al/dual_quaternion.nix { };
     "dual_quaternion" = all__dual_quaternion."dual_quaternion_0_1_0";
     "all__dual" = self.callPackage ./du/al/dual.nix { };
@@ -5224,7 +5252,7 @@
     "all__wordnet_stemmer" = self.callPackage ./wo/rd/wordnet_stemmer.nix { };
     "wordnet_stemmer" = all__wordnet_stemmer."wordnet_stemmer_0_1_1";
     "all__wolfram_alpha" = self.callPackage ./wo/lf/wolfram_alpha.nix { };
-    "wolfram_alpha" = all__wolfram_alpha."wolfram_alpha_0_2_0";
+    "wolfram_alpha" = all__wolfram_alpha."wolfram_alpha_0_3_0";
     "all__wow32-sys" = self.callPackage ./wo/w3/wow32-sys.nix { };
     "wow32-sys" = all__wow32-sys."wow32-sys_0_0_1";
     "all__woot" = self.callPackage ./wo/ot/woot.nix { };
@@ -5306,9 +5334,9 @@
     "all__differential-geometry" = self.callPackage ./di/ff/differential-geometry.nix { };
     "differential-geometry" = all__differential-geometry."differential-geometry_0_1_0";
     "all__digest" = self.callPackage ./di/ge/digest.nix { };
-    "digest" = all__digest."digest_0_3_0";
+    "digest" = all__digest."digest_0_3_1";
     "all__digest-buffer" = self.callPackage ./di/ge/digest-buffer.nix { };
-    "digest-buffer" = all__digest-buffer."digest-buffer_0_1_1";
+    "digest-buffer" = all__digest-buffer."digest-buffer_0_1_2";
     "all__digest-writer" = self.callPackage ./di/ge/digest-writer.nix { };
     "digest-writer" = all__digest-writer."digest-writer_0_1_2";
     "all__disjoint-set" = self.callPackage ./di/sj/disjoint-set.nix { };
@@ -5344,7 +5372,7 @@
     "all__diecast" = self.callPackage ./di/ec/diecast.nix { };
     "diecast" = all__diecast."diecast_0_0_1";
     "all__dinghy" = self.callPackage ./di/ng/dinghy.nix { };
-    "dinghy" = all__dinghy."dinghy_0_1_3";
+    "dinghy" = all__dinghy."dinghy_0_1_4";
     "all__dizzy" = self.callPackage ./di/zz/dizzy.nix { };
     "dizzy" = all__dizzy."dizzy_0_0_1";
     "all__diagnostics" = self.callPackage ./di/ag/diagnostics.nix { };
@@ -5421,6 +5449,8 @@
     "futures-cpupool" = all__futures-cpupool."futures-cpupool_0_1_2";
     "all__furnace" = self.callPackage ./fu/rn/furnace.nix { };
     "furnace" = all__furnace."furnace_0_1_0";
+    "all__funfsm" = self.callPackage ./fu/nf/funfsm.nix { };
+    "funfsm" = all__funfsm."funfsm_0_1_0";
     "all__funky" = self.callPackage ./fu/nk/funky.nix { };
     "funky" = all__funky."funky_0_0_1";
     "all__funzzy" = self.callPackage ./fu/nz/funzzy.nix { };
@@ -5918,11 +5948,11 @@
     "all__clipboard" = self.callPackage ./cl/ip/clipboard.nix { };
     "clipboard" = all__clipboard."clipboard_0_1_2";
     "all__clippy_lints" = self.callPackage ./cl/ip/clippy_lints.nix { };
-    "clippy_lints" = all__clippy_lints."clippy_lints_0_0_103";
+    "clippy_lints" = all__clippy_lints."clippy_lints_0_0_104";
     "all__clipboard-win" = self.callPackage ./cl/ip/clipboard-win.nix { };
     "clipboard-win" = all__clipboard-win."clipboard-win_1_8_1";
     "all__clippy" = self.callPackage ./cl/ip/clippy.nix { };
-    "clippy" = all__clippy."clippy_0_0_103";
+    "clippy" = all__clippy."clippy_0_0_104";
     "all__clippy-mini-macro-test" = self.callPackage ./cl/ip/clippy-mini-macro-test.nix { };
     "clippy-mini-macro-test" = all__clippy-mini-macro-test."clippy-mini-macro-test_0_1_0";
     "all__claxon" = self.callPackage ./cl/ax/claxon.nix { };
@@ -6072,7 +6102,7 @@
     "all__signify" = self.callPackage ./si/gn/signify.nix { };
     "signify" = all__signify."signify_0_3_0";
     "all__signifix" = self.callPackage ./si/gn/signifix.nix { };
-    "signifix" = all__signifix."signifix_0_1_0";
+    "signifix" = all__signifix."signifix_0_2_0";
     "all__signal" = self.callPackage ./si/gn/signal.nix { };
     "signal" = all__signal."signal_0_3_2";
     "all__sisfft" = self.callPackage ./si/sf/sisfft.nix { };
@@ -6081,6 +6111,8 @@
     "sigrok" = all__sigrok."sigrok_0_3_1";
     "all__sigrok-sys" = self.callPackage ./si/gr/sigrok-sys.nix { };
     "sigrok-sys" = all__sigrok-sys."sigrok-sys_0_2_0";
+    "all__simmons_rooms" = self.callPackage ./si/mm/simmons_rooms.nix { };
+    "simmons_rooms" = all__simmons_rooms."simmons_rooms_0_1_1";
     "all__siphasher" = self.callPackage ./si/ph/siphasher.nix { };
     "siphasher" = all__siphasher."siphasher_0_2_0";
     "all__siphash" = self.callPackage ./si/ph/siphash.nix { };
@@ -6292,13 +6324,13 @@
     "all__context" = self.callPackage ./co/nt/context.nix { };
     "context" = all__context."context_1_0_0";
     "all__content" = self.callPackage ./co/nt/content.nix { };
-    "content" = all__content."content_0_3_0";
+    "content" = all__content."content_0_6_0";
     "all__containerof" = self.callPackage ./co/nt/containerof.nix { };
     "containerof" = all__containerof."containerof_0_2_2";
     "all__context_bind" = self.callPackage ./co/nt/context_bind.nix { };
     "context_bind" = all__context_bind."context_bind_0_0_2";
     "all__control-code" = self.callPackage ./co/nt/control-code.nix { };
-    "control-code" = all__control-code."control-code_0_4_10";
+    "control-code" = all__control-code."control-code_0_5_0";
     "all__containers" = self.callPackage ./co/nt/containers.nix { };
     "containers" = all__containers."containers_0_1_1";
     "all__content-blocker" = self.callPackage ./co/nt/content-blocker.nix { };
@@ -6334,7 +6366,7 @@
     "all__compactmap" = self.callPackage ./co/mp/compactmap.nix { };
     "compactmap" = all__compactmap."compactmap_0_1_0";
     "all__compiletest_rs" = self.callPackage ./co/mp/compiletest_rs.nix { };
-    "compiletest_rs" = all__compiletest_rs."compiletest_rs_0_2_4";
+    "compiletest_rs" = all__compiletest_rs."compiletest_rs_0_2_5";
     "all__compress" = self.callPackage ./co/mp/compress.nix { };
     "compress" = all__compress."compress_0_1_2";
     "all__compiler-builtins-snapshot" = self.callPackage ./co/mp/compiler-builtins-snapshot.nix { };
@@ -6444,7 +6476,7 @@
     "all__constant_time_eq" = self.callPackage ./co/ns/constant_time_eq.nix { };
     "constant_time_eq" = all__constant_time_eq."constant_time_eq_0_1_2";
     "all__conserve" = self.callPackage ./co/ns/conserve.nix { };
-    "conserve" = all__conserve."conserve_0_3_0";
+    "conserve" = all__conserve."conserve_0_3_1";
     "all__consul" = self.callPackage ./co/ns/consul.nix { };
     "consul" = all__consul."consul_0_0_6";
     "all__consistency" = self.callPackage ./co/ns/consistency.nix { };
@@ -6998,7 +7030,7 @@
     "all__uil" = self.callPackage ./3/u/uil.nix { };
     "uil" = all__uil."uil_0_0_3";
     "all__url" = self.callPackage ./3/u/url.nix { };
-    "url" = all__url."url_1_2_3";
+    "url" = all__url."url_1_2_4";
     "all__utm" = self.callPackage ./3/u/utm.nix { };
     "utm" = all__utm."utm_0_1_2";
     "all__udt" = self.callPackage ./3/u/udt.nix { };
@@ -7149,6 +7181,8 @@
     "ver" = all__ver."ver_0_1_0";
     "all__vnc" = self.callPackage ./3/v/vnc.nix { };
     "vnc" = all__vnc."vnc_0_4_0";
+    "all__vsh" = self.callPackage ./3/v/vsh.nix { };
+    "vsh" = all__vsh."vsh_0_0_0";
     "all__vfs" = self.callPackage ./3/v/vfs.nix { };
     "vfs" = all__vfs."vfs_0_2_0";
     "all__vat" = self.callPackage ./3/v/vat.nix { };
@@ -7247,6 +7281,8 @@
     "fst" = all__fst."fst_0_1_34";
     "all__fft" = self.callPackage ./3/f/fft.nix { };
     "fft" = all__fft."fft_0_4_0";
+    "all__fsb" = self.callPackage ./3/f/fsb.nix { };
+    "fsb" = all__fsb."fsb_0_0_0";
     "all__fun" = self.callPackage ./3/f/fun.nix { };
     "fun" = all__fun."fun_0_0_1";
     "all__ftp" = self.callPackage ./3/f/ftp.nix { };
@@ -7463,6 +7499,8 @@
     "google-content2_sandbox" = all__google-content2_sandbox."google-content2_sandbox_1_0_0";
     "all__google-reseller1_sandbox-cli" = self.callPackage ./go/og/google-reseller1_sandbox-cli.nix { };
     "google-reseller1_sandbox-cli" = all__google-reseller1_sandbox-cli."google-reseller1_sandbox-cli_1_0_0";
+    "all__google-slides1-cli" = self.callPackage ./go/og/google-slides1-cli.nix { };
+    "google-slides1-cli" = all__google-slides1-cli."google-slides1-cli_1_0_0";
     "all__google-webfonts1-cli" = self.callPackage ./go/og/google-webfonts1-cli.nix { };
     "google-webfonts1-cli" = all__google-webfonts1-cli."google-webfonts1-cli_1_0_0";
     "all__google-replicapool1_beta2" = self.callPackage ./go/og/google-replicapool1_beta2.nix { };
@@ -7493,6 +7531,8 @@
     "google-drive3-cli" = all__google-drive3-cli."google-drive3-cli_1_0_0";
     "all__google-adexchangebuyer1d4" = self.callPackage ./go/og/google-adexchangebuyer1d4.nix { };
     "google-adexchangebuyer1d4" = all__google-adexchangebuyer1d4."google-adexchangebuyer1d4_1_0_0";
+    "all__google-surveys2-cli" = self.callPackage ./go/og/google-surveys2-cli.nix { };
+    "google-surveys2-cli" = all__google-surveys2-cli."google-surveys2-cli_1_0_0";
     "all__google-cloudresourcemanager1_beta1" = self.callPackage ./go/og/google-cloudresourcemanager1_beta1.nix { };
     "google-cloudresourcemanager1_beta1" = all__google-cloudresourcemanager1_beta1."google-cloudresourcemanager1_beta1_1_0_0";
     "all__google-replicapool1_beta2-cli" = self.callPackage ./go/og/google-replicapool1_beta2-cli.nix { };
@@ -7555,6 +7595,8 @@
     "google-admin1_directory-cli" = all__google-admin1_directory-cli."google-admin1_directory-cli_1_0_0";
     "all__google-pagespeedonline2" = self.callPackage ./go/og/google-pagespeedonline2.nix { };
     "google-pagespeedonline2" = all__google-pagespeedonline2."google-pagespeedonline2_1_0_0";
+    "all__google-ml1_beta1-cli" = self.callPackage ./go/og/google-ml1_beta1-cli.nix { };
+    "google-ml1_beta1-cli" = all__google-ml1_beta1-cli."google-ml1_beta1-cli_1_0_0";
     "all__google-gmail1" = self.callPackage ./go/og/google-gmail1.nix { };
     "google-gmail1" = all__google-gmail1."google-gmail1_1_0_0";
     "all__google-dfareporting2d6" = self.callPackage ./go/og/google-dfareporting2d6.nix { };
@@ -7613,10 +7655,14 @@
     "google-adsense1d4-cli" = all__google-adsense1d4-cli."google-adsense1d4-cli_1_0_0";
     "all__google-cloudresourcemanager1" = self.callPackage ./go/og/google-cloudresourcemanager1.nix { };
     "google-cloudresourcemanager1" = all__google-cloudresourcemanager1."google-cloudresourcemanager1_1_0_0";
+    "all__google-logging2-cli" = self.callPackage ./go/og/google-logging2-cli.nix { };
+    "google-logging2-cli" = all__google-logging2-cli."google-logging2-cli_1_0_0";
     "all__google-blogger3" = self.callPackage ./go/og/google-blogger3.nix { };
     "google-blogger3" = all__google-blogger3."google-blogger3_1_0_0";
     "all__google-androidpublisher2" = self.callPackage ./go/og/google-androidpublisher2.nix { };
     "google-androidpublisher2" = all__google-androidpublisher2."google-androidpublisher2_1_0_0";
+    "all__google-manufacturers1-cli" = self.callPackage ./go/og/google-manufacturers1-cli.nix { };
+    "google-manufacturers1-cli" = all__google-manufacturers1-cli."google-manufacturers1-cli_1_0_0";
     "all__google-people1" = self.callPackage ./go/og/google-people1.nix { };
     "google-people1" = all__google-people1."google-people1_1_0_0";
     "all__google-bigquery2-cli" = self.callPackage ./go/og/google-bigquery2-cli.nix { };
@@ -7651,10 +7697,14 @@
     "google-webmasters3-cli" = all__google-webmasters3-cli."google-webmasters3-cli_1_0_0";
     "all__google-cloudmonitoring2_beta2" = self.callPackage ./go/og/google-cloudmonitoring2_beta2.nix { };
     "google-cloudmonitoring2_beta2" = all__google-cloudmonitoring2_beta2."google-cloudmonitoring2_beta2_1_0_0";
+    "all__google-dfareporting2d7-cli" = self.callPackage ./go/og/google-dfareporting2d7-cli.nix { };
+    "google-dfareporting2d7-cli" = all__google-dfareporting2d7-cli."google-dfareporting2d7-cli_1_0_0";
     "all__google-doubleclicksearch2-cli" = self.callPackage ./go/og/google-doubleclicksearch2-cli.nix { };
     "google-doubleclicksearch2-cli" = all__google-doubleclicksearch2-cli."google-doubleclicksearch2-cli_1_0_0";
     "all__google-pubsub1_beta2-cli" = self.callPackage ./go/og/google-pubsub1_beta2-cli.nix { };
     "google-pubsub1_beta2-cli" = all__google-pubsub1_beta2-cli."google-pubsub1_beta2-cli_1_0_0";
+    "all__google-firebasedynamiclinks1-cli" = self.callPackage ./go/og/google-firebasedynamiclinks1-cli.nix { };
+    "google-firebasedynamiclinks1-cli" = all__google-firebasedynamiclinks1-cli."google-firebasedynamiclinks1-cli_1_0_0";
     "all__google-deploymentmanager2_beta1" = self.callPackage ./go/og/google-deploymentmanager2_beta1.nix { };
     "google-deploymentmanager2_beta1" = all__google-deploymentmanager2_beta1."google-deploymentmanager2_beta1_0_1_8";
     "all__google-groupsmigration1-cli" = self.callPackage ./go/og/google-groupsmigration1-cli.nix { };
@@ -7683,12 +7733,16 @@
     "google-youtubeanalytics1" = all__google-youtubeanalytics1."google-youtubeanalytics1_1_0_0";
     "all__google-siteverification1" = self.callPackage ./go/og/google-siteverification1.nix { };
     "google-siteverification1" = all__google-siteverification1."google-siteverification1_1_0_0";
+    "all__google-firebasedynamiclinks1" = self.callPackage ./go/og/google-firebasedynamiclinks1.nix { };
+    "google-firebasedynamiclinks1" = all__google-firebasedynamiclinks1."google-firebasedynamiclinks1_1_0_0";
     "all__google-dfareporting2" = self.callPackage ./go/og/google-dfareporting2.nix { };
     "google-dfareporting2" = all__google-dfareporting2."google-dfareporting2_0_1_5";
     "all__google-appengine1-cli" = self.callPackage ./go/og/google-appengine1-cli.nix { };
     "google-appengine1-cli" = all__google-appengine1-cli."google-appengine1-cli_1_0_0";
     "all__google-adsensehost4d1-cli" = self.callPackage ./go/og/google-adsensehost4d1-cli.nix { };
     "google-adsensehost4d1-cli" = all__google-adsensehost4d1-cli."google-adsensehost4d1-cli_1_0_0";
+    "all__google-surveys2" = self.callPackage ./go/og/google-surveys2.nix { };
+    "google-surveys2" = all__google-surveys2."google-surveys2_1_0_0";
     "all__google-translate2-cli" = self.callPackage ./go/og/google-translate2-cli.nix { };
     "google-translate2-cli" = all__google-translate2-cli."google-translate2-cli_1_0_0";
     "all__google-bigquery2" = self.callPackage ./go/og/google-bigquery2.nix { };
@@ -7771,10 +7825,14 @@
     "google-storage1" = all__google-storage1."google-storage1_1_0_0";
     "all__google-appengine1" = self.callPackage ./go/og/google-appengine1.nix { };
     "google-appengine1" = all__google-appengine1."google-appengine1_1_0_0";
+    "all__google-dfareporting2d7" = self.callPackage ./go/og/google-dfareporting2d7.nix { };
+    "google-dfareporting2d7" = all__google-dfareporting2d7."google-dfareporting2d7_1_0_0";
     "all__google-dfareporting2d2-cli" = self.callPackage ./go/og/google-dfareporting2d2-cli.nix { };
     "google-dfareporting2d2-cli" = all__google-dfareporting2d2-cli."google-dfareporting2d2-cli_1_0_0";
     "all__google-autoscaler1_beta2" = self.callPackage ./go/og/google-autoscaler1_beta2.nix { };
     "google-autoscaler1_beta2" = all__google-autoscaler1_beta2."google-autoscaler1_beta2_1_0_0";
+    "all__google-ml1_beta1" = self.callPackage ./go/og/google-ml1_beta1.nix { };
+    "google-ml1_beta1" = all__google-ml1_beta1."google-ml1_beta1_1_0_0";
     "all__google-gan1_beta1-cli" = self.callPackage ./go/og/google-gan1_beta1-cli.nix { };
     "google-gan1_beta1-cli" = all__google-gan1_beta1-cli."google-gan1_beta1-cli_1_0_0";
     "all__google-civicinfo2" = self.callPackage ./go/og/google-civicinfo2.nix { };
@@ -7821,8 +7879,12 @@
     "google-cloudbilling1" = all__google-cloudbilling1."google-cloudbilling1_1_0_0";
     "all__google-appsactivity1-cli" = self.callPackage ./go/og/google-appsactivity1-cli.nix { };
     "google-appsactivity1-cli" = all__google-appsactivity1-cli."google-appsactivity1-cli_1_0_0";
+    "all__google-logging2" = self.callPackage ./go/og/google-logging2.nix { };
+    "google-logging2" = all__google-logging2."google-logging2_1_0_0";
     "all__google-clouddebugger2" = self.callPackage ./go/og/google-clouddebugger2.nix { };
     "google-clouddebugger2" = all__google-clouddebugger2."google-clouddebugger2_1_0_0";
+    "all__google-slides1" = self.callPackage ./go/og/google-slides1.nix { };
+    "google-slides1" = all__google-slides1."google-slides1_1_0_0";
     "all__google-discovery1" = self.callPackage ./go/og/google-discovery1.nix { };
     "google-discovery1" = all__google-discovery1."google-discovery1_1_0_0";
     "all__google-safebrowsing4" = self.callPackage ./go/og/google-safebrowsing4.nix { };
@@ -7869,6 +7931,8 @@
     "google-plusdomains1" = all__google-plusdomains1."google-plusdomains1_1_0_0";
     "all__google-cloudbilling1-cli" = self.callPackage ./go/og/google-cloudbilling1-cli.nix { };
     "google-cloudbilling1-cli" = all__google-cloudbilling1-cli."google-cloudbilling1-cli_1_0_0";
+    "all__google-manufacturers1" = self.callPackage ./go/og/google-manufacturers1.nix { };
+    "google-manufacturers1" = all__google-manufacturers1."google-manufacturers1_1_0_0";
     "all__google-games1-cli" = self.callPackage ./go/og/google-games1-cli.nix { };
     "google-games1-cli" = all__google-games1-cli."google-games1-cli_1_0_0";
     "all__google-tagmanager1" = self.callPackage ./go/og/google-tagmanager1.nix { };
@@ -7926,7 +7990,7 @@
     "all__cmail" = self.callPackage ./cm/ai/cmail.nix { };
     "cmail" = all__cmail."cmail_0_1_1";
     "all__cmark-hamlet" = self.callPackage ./cm/ar/cmark-hamlet.nix { };
-    "cmark-hamlet" = all__cmark-hamlet."cmark-hamlet_0_0_1";
+    "cmark-hamlet" = all__cmark-hamlet."cmark-hamlet_0_0_2";
     "all__cmp3" = self.callPackage ./cm/p3/cmp3.nix { };
     "cmp3" = all__cmp3."cmp3_1_0_1";
     "all__cmacros" = self.callPackage ./cm/ac/cmacros.nix { };
@@ -8054,7 +8118,7 @@
     "all__hotswap" = self.callPackage ./ho/ts/hotswap.nix { };
     "hotswap" = all__hotswap."hotswap_0_2_0";
     "all__how-do-i-escape" = self.callPackage ./ho/w-/how-do-i-escape.nix { };
-    "how-do-i-escape" = all__how-do-i-escape."how-do-i-escape_0_2_0";
+    "how-do-i-escape" = all__how-do-i-escape."how-do-i-escape_0_3_0";
     "all__hoare" = self.callPackage ./ho/ar/hoare.nix { };
     "hoare" = all__hoare."hoare_0_1_1";
     "all__hostname" = self.callPackage ./ho/st/hostname.nix { };
@@ -8073,6 +8137,8 @@
     "holdem" = all__holdem."holdem_0_1_2";
     "all__hoedown" = self.callPackage ./ho/ed/hoedown.nix { };
     "hoedown" = all__hoedown."hoedown_5_0_0";
+    "all__hopper" = self.callPackage ./ho/pp/hopper.nix { };
+    "hopper" = all__hopper."hopper_0_1_0";
     "all__lossyq" = self.callPackage ./lo/ss/lossyq.nix { };
     "lossyq" = all__lossyq."lossyq_0_1_19";
     "all__log4rs-routing-appender" = self.callPackage ./lo/g4/log4rs-routing-appender.nix { };
@@ -8150,7 +8216,7 @@
     "all__xkcd" = self.callPackage ./xk/cd/xkcd.nix { };
     "xkcd" = all__xkcd."xkcd_0_2_1";
     "all__xkbcommon-sys" = self.callPackage ./xk/bc/xkbcommon-sys.nix { };
-    "xkbcommon-sys" = all__xkbcommon-sys."xkbcommon-sys_0_7_3";
+    "xkbcommon-sys" = all__xkbcommon-sys."xkbcommon-sys_0_7_4";
     "all__xkbcommon" = self.callPackage ./xk/bc/xkbcommon.nix { };
     "xkbcommon" = all__xkbcommon."xkbcommon_0_2_1";
     "all__urbandictionary" = self.callPackage ./ur/ba/urbandictionary.nix { };
@@ -8245,6 +8311,8 @@
     "net-utils" = all__net-utils."net-utils_0_0_2";
     "all__newrelic" = self.callPackage ./ne/wr/newrelic.nix { };
     "newrelic" = all__newrelic."newrelic_0_0_2";
+    "all__netinfo-ffi" = self.callPackage ./ne/ti/netinfo-ffi.nix { };
+    "netinfo-ffi" = all__netinfo-ffi."netinfo-ffi_0_3_0";
     "all__netinfo" = self.callPackage ./ne/ti/netinfo.nix { };
     "netinfo" = all__netinfo."netinfo_0_3_0";
     "all__netio" = self.callPackage ./ne/ti/netio.nix { };
@@ -8289,6 +8357,8 @@
     "opusfile-rs" = all__opusfile-rs."opusfile-rs_0_1_3";
     "all__openvr" = self.callPackage ./op/en/openvr.nix { };
     "openvr" = all__openvr."openvr_0_1_1";
+    "all__openat" = self.callPackage ./op/en/openat.nix { };
+    "openat" = all__openat."openat_0_1_0";
     "all__opengles" = self.callPackage ./op/en/opengles.nix { };
     "opengles" = all__opengles."opengles_0_1_2";
     "all__openmpt-sys" = self.callPackage ./op/en/openmpt-sys.nix { };
@@ -8554,7 +8624,7 @@
     "all__bitpack" = self.callPackage ./bi/tp/bitpack.nix { };
     "bitpack" = all__bitpack."bitpack_0_1_0";
     "all__bigml" = self.callPackage ./bi/gm/bigml.nix { };
-    "bigml" = all__bigml."bigml_0_0_2";
+    "bigml" = all__bigml."bigml_0_0_6";
     "all__binary-tree" = self.callPackage ./bi/na/binary-tree.nix { };
     "binary-tree" = all__binary-tree."binary-tree_0_2_0";
     "all__binary_macros" = self.callPackage ./bi/na/binary_macros.nix { };
@@ -8582,17 +8652,17 @@
     "all__ordinal" = self.callPackage ./or/di/ordinal.nix { };
     "ordinal" = all__ordinal."ordinal_0_1_0";
     "all__orbimage" = self.callPackage ./or/bi/orbimage.nix { };
-    "orbimage" = all__orbimage."orbimage_0_1_7";
+    "orbimage" = all__orbimage."orbimage_0_1_9";
     "all__orbfont" = self.callPackage ./or/bf/orbfont.nix { };
-    "orbfont" = all__orbfont."orbfont_0_1_2";
+    "orbfont" = all__orbfont."orbfont_0_1_4";
     "all__origami" = self.callPackage ./or/ig/origami.nix { };
     "origami" = all__origami."origami_0_1_0";
     "all__origamigo" = self.callPackage ./or/ig/origamigo.nix { };
     "origamigo" = all__origamigo."origamigo_0_1_0";
     "all__orbtk" = self.callPackage ./or/bt/orbtk.nix { };
-    "orbtk" = all__orbtk."orbtk_0_2_1";
+    "orbtk" = all__orbtk."orbtk_0_2_5";
     "all__orbclient" = self.callPackage ./or/bc/orbclient.nix { };
-    "orbclient" = all__orbclient."orbclient_0_1_25";
+    "orbclient" = all__orbclient."orbclient_0_2_1";
     "all__orchestra" = self.callPackage ./or/ch/orchestra.nix { };
     "orchestra" = all__orchestra."orchestra_0_0_0";
     "all__wtf8" = self.callPackage ./wt/f8/wtf8.nix { };
@@ -8779,6 +8849,8 @@
     "tango" = all__tango."tango_0_5_0";
     "all__table" = self.callPackage ./ta/bl/table.nix { };
     "table" = all__table."table_0_1_1";
+    "all__tablegen" = self.callPackage ./ta/bl/tablegen.nix { };
+    "tablegen" = all__tablegen."tablegen_0_1_0";
     "all__target_info" = self.callPackage ./ta/rg/target_info.nix { };
     "target_info" = all__target_info."target_info_0_1_0";
     "all__target_build_utils" = self.callPackage ./ta/rg/target_build_utils.nix { };
@@ -8882,7 +8954,7 @@
     "all__apply" = self.callPackage ./ap/pl/apply.nix { };
     "apply" = all__apply."apply_0_2_2";
     "all__bencher" = self.callPackage ./be/nc/bencher.nix { };
-    "bencher" = all__bencher."bencher_0_1_1";
+    "bencher" = all__bencher."bencher_0_1_2";
     "all__bencode-decoder" = self.callPackage ./be/nc/bencode-decoder.nix { };
     "bencode-decoder" = all__bencode-decoder."bencode-decoder_0_0_3";
     "all__bencode" = self.callPackage ./be/nc/bencode.nix { };
@@ -8996,7 +9068,7 @@
     "all__sdl2_gfx" = self.callPackage ./sd/l2/sdl2_gfx.nix { };
     "sdl2_gfx" = all__sdl2_gfx."sdl2_gfx_0_24_0";
     "all__sass-sys" = self.callPackage ./sa/ss/sass-sys.nix { };
-    "sass-sys" = all__sass-sys."sass-sys_0_0_14";
+    "sass-sys" = all__sass-sys."sass-sys_0_1_0";
     "all__sass-rs" = self.callPackage ./sa/ss/sass-rs.nix { };
     "sass-rs" = all__sass-rs."sass-rs_0_0_18";
     "all__sassers" = self.callPackage ./sa/ss/sassers.nix { };
@@ -9044,7 +9116,7 @@
     "all__sacn" = self.callPackage ./sa/cn/sacn.nix { };
     "sacn" = all__sacn."sacn_0_1_1";
     "all__sanakirja" = self.callPackage ./sa/na/sanakirja.nix { };
-    "sanakirja" = all__sanakirja."sanakirja_0_4_4";
+    "sanakirja" = all__sanakirja."sanakirja_0_7_0";
     "all__sapling" = self.callPackage ./sa/pl/sapling.nix { };
     "sapling" = all__sapling."sapling_0_1_1";
     "all__tcod_window" = self.callPackage ./tc/od/tcod_window.nix { };
@@ -9110,7 +9182,7 @@
     "all__crypto" = self.callPackage ./cr/yp/crypto.nix { };
     "crypto" = all__crypto."crypto_0_0_2";
     "all__crypto-tests" = self.callPackage ./cr/yp/crypto-tests.nix { };
-    "crypto-tests" = all__crypto-tests."crypto-tests_0_2_1";
+    "crypto-tests" = all__crypto-tests."crypto-tests_0_2_4";
     "all__crypto_vault" = self.callPackage ./cr/yp/crypto_vault.nix { };
     "crypto_vault" = all__crypto_vault."crypto_vault_0_0_3";
     "all__crypt" = self.callPackage ./cr/yp/crypt.nix { };
@@ -9128,7 +9200,7 @@
     "all__cryptnet-sys" = self.callPackage ./cr/yp/cryptnet-sys.nix { };
     "cryptnet-sys" = all__cryptnet-sys."cryptnet-sys_0_0_1";
     "all__cryptominisat" = self.callPackage ./cr/yp/cryptominisat.nix { };
-    "cryptominisat" = all__cryptominisat."cryptominisat_0_1_0";
+    "cryptominisat" = all__cryptominisat."cryptominisat_5_0_1";
     "all__crypto-mac" = self.callPackage ./cr/yp/crypto-mac.nix { };
     "crypto-mac" = all__crypto-mac."crypto-mac_0_1_0";
     "all__crypt32-sys" = self.callPackage ./cr/yp/crypt32-sys.nix { };
@@ -9144,7 +9216,7 @@
     "all__crowbook-text-processing" = self.callPackage ./cr/ow/crowbook-text-processing.nix { };
     "crowbook-text-processing" = all__crowbook-text-processing."crowbook-text-processing_0_2_2";
     "all__crowbook" = self.callPackage ./cr/ow/crowbook.nix { };
-    "crowbook" = all__crowbook."crowbook_0_10_3";
+    "crowbook" = all__crowbook."crowbook_0_10_4";
     "all__crowbook-localize" = self.callPackage ./cr/ow/crowbook-localize.nix { };
     "crowbook-localize" = all__crowbook-localize."crowbook-localize_0_1_0";
     "all__crowbook-intl" = self.callPackage ./cr/ow/crowbook-intl.nix { };
@@ -9256,7 +9328,7 @@
     "all__oscpad" = self.callPackage ./os/cp/oscpad.nix { };
     "oscpad" = all__oscpad."oscpad_0_2_2";
     "all__rpgffi" = self.callPackage ./rp/gf/rpgffi.nix { };
-    "rpgffi" = all__rpgffi."rpgffi_0_1_1";
+    "rpgffi" = all__rpgffi."rpgffi_0_2_0";
     "all__rpcexts-sys" = self.callPackage ./rp/ce/rpcexts-sys.nix { };
     "rpcexts-sys" = all__rpcexts-sys."rpcexts-sys_0_0_1";
     "all__rpassword" = self.callPackage ./rp/as/rpassword.nix { };
@@ -9493,6 +9565,8 @@
     "mach_o" = all__mach_o."mach_o_0_1_2";
     "all__magma" = self.callPackage ./ma/gm/magma.nix { };
     "magma" = all__magma."magma_0_0_0";
+    "all__managed" = self.callPackage ./ma/na/managed.nix { };
+    "managed" = all__managed."managed_0_0_0";
     "all__mailstrom" = self.callPackage ./ma/il/mailstrom.nix { };
     "mailstrom" = all__mailstrom."mailstrom_0_2_0";
     "all__mailparse" = self.callPackage ./ma/il/mailparse.nix { };
@@ -9591,8 +9665,10 @@
     "trex" = all__trex."trex_0_2_0";
     "all__tristate" = self.callPackage ./tr/is/tristate.nix { };
     "tristate" = all__tristate."tristate_0_1_1";
+    "all__trust-dns-server" = self.callPackage ./tr/us/trust-dns-server.nix { };
+    "trust-dns-server" = all__trust-dns-server."trust-dns-server_0_9_0";
     "all__trust-dns" = self.callPackage ./tr/us/trust-dns.nix { };
-    "trust-dns" = all__trust-dns."trust-dns_0_8_1";
+    "trust-dns" = all__trust-dns."trust-dns_0_9_0";
     "all__tryte" = self.callPackage ./tr/yt/tryte.nix { };
     "tryte" = all__tryte."tryte_0_1_0";
     "all__treesize" = self.callPackage ./tr/ee/treesize.nix { };
@@ -9608,7 +9684,7 @@
     "all__treexml" = self.callPackage ./tr/ee/treexml.nix { };
     "treexml" = all__treexml."treexml_0_3_0";
     "all__treeflection" = self.callPackage ./tr/ee/treeflection.nix { };
-    "treeflection" = all__treeflection."treeflection_0_1_11";
+    "treeflection" = all__treeflection."treeflection_0_1_13";
     "all__traceroute" = self.callPackage ./tr/ac/traceroute.nix { };
     "traceroute" = all__traceroute."traceroute_0_1_1";
     "all__tracery" = self.callPackage ./tr/ac/tracery.nix { };
@@ -10203,6 +10279,8 @@
     "wren-rs" = all__wren-rs."wren-rs_0_1_0";
     "all__wren-sys" = self.callPackage ./wr/en/wren-sys.nix { };
     "wren-sys" = all__wren-sys."wren-sys_0_2_2";
+    "all__wrench" = self.callPackage ./wr/en/wrench.nix { };
+    "wrench" = all__wrench."wrench_0_0_0";
     "all__wren" = self.callPackage ./wr/en/wren.nix { };
     "wren" = all__wren."wren_0_1_3";
     "all__wrapped_enum" = self.callPackage ./wr/ap/wrapped_enum.nix { };
@@ -10211,6 +10289,8 @@
     "wrapping_macros" = all__wrapping_macros."wrapping_macros_0_4_11";
     "all__wrapped2d" = self.callPackage ./wr/ap/wrapped2d.nix { };
     "wrapped2d" = all__wrapped2d."wrapped2d_0_3_2";
+    "all__wrap-debug" = self.callPackage ./wr/ap/wrap-debug.nix { };
+    "wrap-debug" = all__wrap-debug."wrap-debug_0_1_1";
     "all__wrongname" = self.callPackage ./wr/on/wrongname.nix { };
     "wrongname" = all__wrongname."wrongname_0_1_0";
     "all__qdowncast" = self.callPackage ./qd/ow/qdowncast.nix { };
@@ -10246,7 +10326,7 @@
     "all__ldap" = self.callPackage ./ld/ap/ldap.nix { };
     "ldap" = all__ldap."ldap_0_0_5";
     "all__slippy-map-tiles" = self.callPackage ./sl/ip/slippy-map-tiles.nix { };
-    "slippy-map-tiles" = all__slippy-map-tiles."slippy-map-tiles_0_8_0";
+    "slippy-map-tiles" = all__slippy-map-tiles."slippy-map-tiles_0_9_0";
     "all__slow_primes" = self.callPackage ./sl/ow/slow_primes.nix { };
     "slow_primes" = all__slow_primes."slow_primes_0_1_14";
     "all__slice-cast" = self.callPackage ./sl/ic/slice-cast.nix { };
@@ -10389,6 +10469,8 @@
     "tilenet_ren" = all__tilenet_ren."tilenet_ren_0_3_0";
     "all__tile_net" = self.callPackage ./ti/le/tile_net.nix { };
     "tile_net" = all__tile_net."tile_net_2_0_4";
+    "all__tiger" = self.callPackage ./ti/ge/tiger.nix { };
+    "tiger" = all__tiger."tiger_0_0_0";
     "all__titanium" = self.callPackage ./ti/ta/titanium.nix { };
     "titanium" = all__titanium."titanium_0_1_0";
     "all__tiberius" = self.callPackage ./ti/be/tiberius.nix { };
@@ -10634,7 +10716,7 @@
     "all__rust-graph" = self.callPackage ./ru/st/rust-graph.nix { };
     "rust-graph" = all__rust-graph."rust-graph_0_0_3";
     "all__rustls" = self.callPackage ./ru/st/rustls.nix { };
-    "rustls" = all__rustls."rustls_0_5_2";
+    "rustls" = all__rustls."rustls_0_5_3";
     "all__rust-mdbm" = self.callPackage ./ru/st/rust-mdbm.nix { };
     "rust-mdbm" = all__rust-mdbm."rust-mdbm_0_0_1";
     "all__rust-paillier" = self.callPackage ./ru/st/rust-paillier.nix { };
@@ -10710,7 +10792,7 @@
     "all__rust-ini" = self.callPackage ./ru/st/rust-ini.nix { };
     "rust-ini" = all__rust-ini."rust-ini_0_9_12";
     "all__rust-s3" = self.callPackage ./ru/st/rust-s3.nix { };
-    "rust-s3" = all__rust-s3."rust-s3_0_2_5";
+    "rust-s3" = all__rust-s3."rust-s3_0_3_2";
     "all__rustclient" = self.callPackage ./ru/st/rustclient.nix { };
     "rustclient" = all__rustclient."rustclient_0_0_1";
     "all__rust-eze" = self.callPackage ./ru/st/rust-eze.nix { };
@@ -10744,13 +10826,13 @@
     "all__rustdt-json_rpc" = self.callPackage ./ru/st/rustdt-json_rpc.nix { };
     "rustdt-json_rpc" = all__rustdt-json_rpc."rustdt-json_rpc_0_2_0";
     "all__rust-webvr" = self.callPackage ./ru/st/rust-webvr.nix { };
-    "rust-webvr" = all__rust-webvr."rust-webvr_0_1_0";
+    "rust-webvr" = all__rust-webvr."rust-webvr_0_1_1";
     "all__rust-termios" = self.callPackage ./ru/st/rust-termios.nix { };
     "rust-termios" = all__rust-termios."rust-termios_0_0_2";
     "all__rust_events" = self.callPackage ./ru/st/rust_events.nix { };
     "rust_events" = all__rust_events."rust_events_0_9_0";
     "all__rustfbp" = self.callPackage ./ru/st/rustfbp.nix { };
-    "rustfbp" = all__rustfbp."rustfbp_0_3_22";
+    "rustfbp" = all__rustfbp."rustfbp_0_3_23";
     "all__rust-install" = self.callPackage ./ru/st/rust-install.nix { };
     "rust-install" = all__rust-install."rust-install_0_0_4";
     "all__rust-github" = self.callPackage ./ru/st/rust-github.nix { };
@@ -10776,7 +10858,7 @@
     "all__rusty-machine" = self.callPackage ./ru/st/rusty-machine.nix { };
     "rusty-machine" = all__rusty-machine."rusty-machine_0_5_2";
     "all__rustplotlib" = self.callPackage ./ru/st/rustplotlib.nix { };
-    "rustplotlib" = all__rustplotlib."rustplotlib_0_0_3";
+    "rustplotlib" = all__rustplotlib."rustplotlib_0_0_4";
     "all__rust-life" = self.callPackage ./ru/st/rust-life.nix { };
     "rust-life" = all__rust-life."rust-life_0_1_3";
     "all__rustc-serialize" = self.callPackage ./ru/st/rustc-serialize.nix { };
@@ -10898,7 +10980,7 @@
     "all__rusqlite" = self.callPackage ./ru/sq/rusqlite.nix { };
     "rusqlite" = all__rusqlite."rusqlite_0_7_3";
     "all__rucaja" = self.callPackage ./ru/ca/rucaja.nix { };
-    "rucaja" = all__rucaja."rucaja_0_1_4";
+    "rucaja" = all__rucaja."rucaja_0_1_5";
     "all__ruplicity-fuse" = self.callPackage ./ru/pl/ruplicity-fuse.nix { };
     "ruplicity-fuse" = all__ruplicity-fuse."ruplicity-fuse_0_0_1";
     "all__ruplicity" = self.callPackage ./ru/pl/ruplicity.nix { };
@@ -11063,8 +11145,10 @@
     "nss-hyper" = all__nss-hyper."nss-hyper_0_4_9";
     "all__ns-std-threaded" = self.callPackage ./ns/-s/ns-std-threaded.nix { };
     "ns-std-threaded" = all__ns-std-threaded."ns-std-threaded_0_1_0";
+    "all__jmespath-macros" = self.callPackage ./jm/es/jmespath-macros.nix { };
+    "jmespath-macros" = all__jmespath-macros."jmespath-macros_0_1_0";
     "all__jmespath" = self.callPackage ./jm/es/jmespath.nix { };
-    "jmespath" = all__jmespath."jmespath_0_0_1";
+    "jmespath" = all__jmespath."jmespath_0_1_0";
     "all__jmphash" = self.callPackage ./jm/ph/jmphash.nix { };
     "jmphash" = all__jmphash."jmphash_0_1_0";
     "all__jmap" = self.callPackage ./jm/ap/jmap.nix { };
@@ -11080,7 +11164,7 @@
     "all__hyperdex" = self.callPackage ./hy/pe/hyperdex.nix { };
     "hyperdex" = all__hyperdex."hyperdex_1_1_0";
     "all__hyper-rustls" = self.callPackage ./hy/pe/hyper-rustls.nix { };
-    "hyper-rustls" = all__hyper-rustls."hyper-rustls_0_2_0";
+    "hyper-rustls" = all__hyper-rustls."hyper-rustls_0_2_1";
     "all__hyperlocal" = self.callPackage ./hy/pe/hyperlocal.nix { };
     "hyperlocal" = all__hyperlocal."hyperlocal_0_2_0";
     "all__hyper_serde" = self.callPackage ./hy/pe/hyper_serde.nix { };
@@ -11146,7 +11230,7 @@
     "all__outoforderfs" = self.callPackage ./ou/to/outoforderfs.nix { };
     "outoforderfs" = all__outoforderfs."outoforderfs_0_1_1";
     "all__output" = self.callPackage ./ou/tp/output.nix { };
-    "output" = all__output."output_0_3_1";
+    "output" = all__output."output_0_4_0";
     "all__zfilexfer" = self.callPackage ./zf/il/zfilexfer.nix { };
     "zfilexfer" = all__zfilexfer."zfilexfer_0_0_2";
     "all__uenc" = self.callPackage ./ue/nc/uenc.nix { };
@@ -11250,7 +11334,7 @@
     "all__specs_engine" = self.callPackage ./sp/ec/specs_engine.nix { };
     "specs_engine" = all__specs_engine."specs_engine_0_0_3";
     "all__specs" = self.callPackage ./sp/ec/specs.nix { };
-    "specs" = all__specs."specs_0_7_0";
+    "specs" = all__specs."specs_0_7_1";
     "all__special-fun" = self.callPackage ./sp/ec/special-fun.nix { };
     "special-fun" = all__special-fun."special-fun_0_1_4";
     "all__spectrogram" = self.callPackage ./sp/ec/spectrogram.nix { };
@@ -11314,7 +11398,7 @@
     "all__r2d2_cypher" = self.callPackage ./r2/d2/r2d2_cypher.nix { };
     "r2d2_cypher" = all__r2d2_cypher."r2d2_cypher_0_0_2";
     "all__r2d2_redis" = self.callPackage ./r2/d2/r2d2_redis.nix { };
-    "r2d2_redis" = all__r2d2_redis."r2d2_redis_0_5_0";
+    "r2d2_redis" = all__r2d2_redis."r2d2_redis_0_5_1";
     "all__r2d2_sqlite" = self.callPackage ./r2/d2/r2d2_sqlite.nix { };
     "r2d2_sqlite" = all__r2d2_sqlite."r2d2_sqlite_0_1_0";
     "all__r2pipe" = self.callPackage ./r2/pi/r2pipe.nix { };
@@ -11353,6 +11437,8 @@
     "fake-simd" = all__fake-simd."fake-simd_0_1_1";
     "all__fake" = self.callPackage ./fa/ke/fake.nix { };
     "fake" = all__fake."fake_1_1_1";
+    "all__fallible-streaming-iterator" = self.callPackage ./fa/ll/fallible-streaming-iterator.nix { };
+    "fallible-streaming-iterator" = all__fallible-streaming-iterator."fallible-streaming-iterator_0_1_1";
     "all__fallible-iterator" = self.callPackage ./fa/ll/fallible-iterator.nix { };
     "fallible-iterator" = all__fallible-iterator."fallible-iterator_0_1_3";
     "all__fann-sys" = self.callPackage ./fa/nn/fann-sys.nix { };
@@ -11513,6 +11599,8 @@
     "readline-sys" = all__readline-sys."readline-sys_0_0_12";
     "all__real" = self.callPackage ./re/al/real.nix { };
     "real" = all__real."real_0_0_1";
+    "all__refraction" = self.callPackage ./re/fr/refraction.nix { };
+    "refraction" = all__refraction."refraction_0_1_2";
     "all__repos" = self.callPackage ./re/po/repos.nix { };
     "repos" = all__repos."repos_0_1_8";
     "all__return_if_ok" = self.callPackage ./re/tu/return_if_ok.nix { };
@@ -11566,7 +11654,7 @@
     "all__redispool" = self.callPackage ./re/di/redispool.nix { };
     "redispool" = all__redispool."redispool_0_1_0";
     "all__redis" = self.callPackage ./re/di/redis.nix { };
-    "redis" = all__redis."redis_0_7_0";
+    "redis" = all__redis."redis_0_7_1";
     "all__redis-cli" = self.callPackage ./re/di/redis-cli.nix { };
     "redis-cli" = all__redis-cli."redis-cli_0_3_1";
     "all__redis-client" = self.callPackage ./re/di/redis-client.nix { };
@@ -11839,6 +11927,8 @@
     "packed" = all__packed."packed_0_4_2";
     "all__packagemerge" = self.callPackage ./pa/ck/packagemerge.nix { };
     "packagemerge" = all__packagemerge."packagemerge_0_1_0";
+    "all__panty" = self.callPackage ./pa/nt/panty.nix { };
+    "panty" = all__panty."panty_0_2_0";
     "all__parapet" = self.callPackage ./pa/ra/parapet.nix { };
     "parapet" = all__parapet."parapet_0_1_1";
     "all__params" = self.callPackage ./pa/ra/params.nix { };
@@ -11974,7 +12064,7 @@
     "all__cpio" = self.callPackage ./cp/io/cpio.nix { };
     "cpio" = all__cpio."cpio_0_1_0";
     "all__cpython" = self.callPackage ./cp/yt/cpython.nix { };
-    "cpython" = all__cpython."cpython_0_0_5";
+    "cpython" = all__cpython."cpython_0_1_0";
     "all__cpp_demangle" = self.callPackage ./cp/p_/cpp_demangle.nix { };
     "cpp_demangle" = all__cpp_demangle."cpp_demangle_0_1_0";
     "all__cpp_utils" = self.callPackage ./cp/p_/cpp_utils.nix { };
@@ -12031,6 +12121,8 @@
     "rb" = all__rb."rb_0_2_0";
     "all__s3" = self.callPackage ./2/s3.nix { };
     "s3" = all__s3."s3_0_0_0";
+    "all__jh" = self.callPackage ./2/jh.nix { };
+    "jh" = all__jh."jh_0_0_0";
     "all__an" = self.callPackage ./2/an.nix { };
     "an" = all__an."an_0_0_2";
     "all__vx" = self.callPackage ./2/vx.nix { };
@@ -12166,7 +12258,7 @@
     "all__dcpu" = self.callPackage ./dc/pu/dcpu.nix { };
     "dcpu" = all__dcpu."dcpu_0_4_0";
     "all__dcpu16" = self.callPackage ./dc/pu/dcpu16.nix { };
-    "dcpu16" = all__dcpu16."dcpu16_0_1_0";
+    "dcpu16" = all__dcpu16."dcpu16_0_4_0";
     "all__dcomp-sys" = self.callPackage ./dc/om/dcomp-sys.nix { };
     "dcomp-sys" = all__dcomp-sys."dcomp-sys_0_0_1";
     "all__dciman32-sys" = self.callPackage ./dc/im/dciman32-sys.nix { };
@@ -12358,7 +12450,7 @@
     "all__fst-bin" = self.callPackage ./fs/t-/fst-bin.nix { };
     "fst-bin" = all__fst-bin."fst-bin_0_1_2";
     "all__fswatch-sys" = self.callPackage ./fs/wa/fswatch-sys.nix { };
-    "fswatch-sys" = all__fswatch-sys."fswatch-sys_0_1_4";
+    "fswatch-sys" = all__fswatch-sys."fswatch-sys_0_1_5";
     "all__fsuipc" = self.callPackage ./fs/ui/fsuipc.nix { };
     "fsuipc" = all__fsuipc."fsuipc_0_3_0";
     "all__fsevent-sys" = self.callPackage ./fs/ev/fsevent-sys.nix { };
@@ -12373,6 +12465,8 @@
     "block" = all__block."block_0_1_6";
     "all__block_allocator" = self.callPackage ./bl/oc/block_allocator.nix { };
     "block_allocator" = all__block_allocator."block_allocator_0_2_2";
+    "all__block-cipher-trait" = self.callPackage ./bl/oc/block-cipher-trait.nix { };
+    "block-cipher-trait" = all__block-cipher-trait."block-cipher-trait_0_2_0";
     "all__bloomfilter" = self.callPackage ./bl/oo/bloomfilter.nix { };
     "bloomfilter" = all__bloomfilter."bloomfilter_0_0_10";
     "all__bloom" = self.callPackage ./bl/oo/bloom.nix { };
@@ -12392,7 +12486,7 @@
     "all__blip_buf-sys" = self.callPackage ./bl/ip/blip_buf-sys.nix { };
     "blip_buf-sys" = all__blip_buf-sys."blip_buf-sys_0_1_3";
     "all__blowfish" = self.callPackage ./bl/ow/blowfish.nix { };
-    "blowfish" = all__blowfish."blowfish_0_0_0";
+    "blowfish" = all__blowfish."blowfish_0_2_1";
     "all__blkid-rs" = self.callPackage ./bl/ki/blkid-rs.nix { };
     "blkid-rs" = all__blkid-rs."blkid-rs_0_1_0";
     "all__bleach" = self.callPackage ./bl/ea/bleach.nix { };
@@ -12462,7 +12556,7 @@
     "all__victoria-dom" = self.callPackage ./vi/ct/victoria-dom.nix { };
     "victoria-dom" = all__victoria-dom."victoria-dom_0_1_0";
     "all__virgil" = self.callPackage ./vi/rg/virgil.nix { };
-    "virgil" = all__virgil."virgil_0_1_0";
+    "virgil" = all__virgil."virgil_0_2_1";
     "all__oath" = self.callPackage ./oa/th/oath.nix { };
     "oath" = all__oath."oath_0_1_4";
     "all__oatmeal_raisin" = self.callPackage ./oa/tm/oatmeal_raisin.nix { };
@@ -12550,7 +12644,7 @@
     "all__inquerest" = self.callPackage ./in/qu/inquerest.nix { };
     "inquerest" = all__inquerest."inquerest_0_1_5";
     "all__incrust" = self.callPackage ./in/cr/incrust.nix { };
-    "incrust" = all__incrust."incrust_0_2_5";
+    "incrust" = all__incrust."incrust_0_2_9";
     "all__intrusive" = self.callPackage ./in/tr/intrusive.nix { };
     "intrusive" = all__intrusive."intrusive_0_0_4";
     "all__intrusive-collections" = self.callPackage ./in/tr/intrusive-collections.nix { };
@@ -12667,6 +12761,8 @@
     "harfbuzz-sys" = all__harfbuzz-sys."harfbuzz-sys_0_1_7";
     "all__hazelcast_rest" = self.callPackage ./ha/ze/hazelcast_rest.nix { };
     "hazelcast_rest" = all__hazelcast_rest."hazelcast_rest_0_1_0";
+    "all__has160" = self.callPackage ./ha/s1/has160.nix { };
+    "has160" = all__has160."has160_0_0_0";
     "all__harbor" = self.callPackage ./ha/rb/harbor.nix { };
     "harbor" = all__harbor."harbor_0_1_0";
     "all__hamt" = self.callPackage ./ha/mt/hamt.nix { };
@@ -12718,7 +12814,7 @@
     "all__handlebars" = self.callPackage ./ha/nd/handlebars.nix { };
     "handlebars" = all__handlebars."handlebars_0_23_0";
     "all__handy_async" = self.callPackage ./ha/nd/handy_async.nix { };
-    "handy_async" = all__handy_async."handy_async_0_2_2";
+    "handy_async" = all__handy_async."handy_async_0_2_5";
     "all__handoff_counter" = self.callPackage ./ha/nd/handoff_counter.nix { };
     "handoff_counter" = all__handoff_counter."handoff_counter_0_8_5";
     "all__hamlet" = self.callPackage ./ha/ml/hamlet.nix { };
@@ -12875,6 +12971,8 @@
     "whiteread" = all__whiteread."whiteread_0_3_0";
     "all__whois" = self.callPackage ./wh/oi/whois.nix { };
     "whois" = all__whois."whois_0_1_0";
+    "all__whatlang" = self.callPackage ./wh/at/whatlang.nix { };
+    "whatlang" = all__whatlang."whatlang_0_1_1";
     "all__whereami" = self.callPackage ./wh/er/whereami.nix { };
     "whereami" = all__whereami."whereami_1_1_0";
     "all__whirlpool" = self.callPackage ./wh/ir/whirlpool.nix { };
@@ -13670,9 +13768,9 @@
     "all__sqlite3-sys" = self.callPackage ./sq/li/sqlite3-sys.nix { };
     "sqlite3-sys" = all__sqlite3-sys."sqlite3-sys_0_11_1";
     "all__sqlib" = self.callPackage ./sq/li/sqlib.nix { };
-    "sqlib" = all__sqlib."sqlib_0_1_4";
+    "sqlib" = all__sqlib."sqlib_0_1_5";
     "all__sqlite3-src" = self.callPackage ./sq/li/sqlite3-src.nix { };
-    "sqlite3-src" = all__sqlite3-src."sqlite3-src_0_2_2";
+    "sqlite3-src" = all__sqlite3-src."sqlite3-src_0_2_3";
     "all__sqlite3-provider" = self.callPackage ./sq/li/sqlite3-provider.nix { };
     "sqlite3-provider" = all__sqlite3-provider."sqlite3-provider_0_1_0";
     "all__sqlite3_tokenizer" = self.callPackage ./sq/li/sqlite3_tokenizer.nix { };
@@ -13795,6 +13893,8 @@
     "caroltestdisregard2" = all__caroltestdisregard2."caroltestdisregard2_0_3_0";
     "all__caroltestdisregard" = self.callPackage ./ca/ro/caroltestdisregard.nix { };
     "caroltestdisregard" = all__caroltestdisregard."caroltestdisregard_0_2_0";
+    "all__capstone3" = self.callPackage ./ca/ps/capstone3.nix { };
+    "capstone3" = all__capstone3."capstone3_0_1_0";
     "all__capsicum" = self.callPackage ./ca/ps/capsicum.nix { };
     "capsicum" = all__capsicum."capsicum_0_1_1";
     "all__capstone-sys" = self.callPackage ./ca/ps/capstone-sys.nix { };
@@ -13870,9 +13970,11 @@
     "all__cargo-clone" = self.callPackage ./ca/rg/cargo-clone.nix { };
     "cargo-clone" = all__cargo-clone."cargo-clone_0_1_0";
     "all__cargo-sym" = self.callPackage ./ca/rg/cargo-sym.nix { };
-    "cargo-sym" = all__cargo-sym."cargo-sym_0_0_2";
+    "cargo-sym" = all__cargo-sym."cargo-sym_0_0_4";
     "all__cargo-update" = self.callPackage ./ca/rg/cargo-update.nix { };
     "cargo-update" = all__cargo-update."cargo-update_0_6_2";
+    "all__cargo-doc-coverage" = self.callPackage ./ca/rg/cargo-doc-coverage.nix { };
+    "cargo-doc-coverage" = all__cargo-doc-coverage."cargo-doc-coverage_1_0_0";
     "all__cargo-open" = self.callPackage ./ca/rg/cargo-open.nix { };
     "cargo-open" = all__cargo-open."cargo-open_0_3_0";
     "all__cargo-lipo" = self.callPackage ./ca/rg/cargo-lipo.nix { };
@@ -13966,7 +14068,7 @@
     "all__cargotest" = self.callPackage ./ca/rg/cargotest.nix { };
     "cargotest" = all__cargotest."cargotest_0_1_0";
     "all__cargo-ebuild" = self.callPackage ./ca/rg/cargo-ebuild.nix { };
-    "cargo-ebuild" = all__cargo-ebuild."cargo-ebuild_0_1_2";
+    "cargo-ebuild" = all__cargo-ebuild."cargo-ebuild_0_1_3";
     "all__cargo-tidy" = self.callPackage ./ca/rg/cargo-tidy.nix { };
     "cargo-tidy" = all__cargo-tidy."cargo-tidy_0_1_0";
     "all__cargo-profiler" = self.callPackage ./ca/rg/cargo-profiler.nix { };
@@ -14001,6 +14103,8 @@
     "cargo-vendor" = all__cargo-vendor."cargo-vendor_0_1_3";
     "all__cargo-brew" = self.callPackage ./ca/rg/cargo-brew.nix { };
     "cargo-brew" = all__cargo-brew."cargo-brew_0_1_4";
+    "all__cachy" = self.callPackage ./ca/ch/cachy.nix { };
+    "cachy" = all__cachy."cachy_0_1_0";
     "all__calx-ecs" = self.callPackage ./ca/lx/calx-ecs.nix { };
     "calx-ecs" = all__calx-ecs."calx-ecs_0_3_0";
     "all__canal" = self.callPackage ./ca/na/canal.nix { };
@@ -14133,6 +14237,8 @@
     "test-project" = all__test-project."test-project_2_3_0";
     "all__test-logger" = self.callPackage ./te/st/test-logger.nix { };
     "test-logger" = all__test-logger."test-logger_0_1_0";
+    "all__test-to-vec" = self.callPackage ./te/st/test-to-vec.nix { };
+    "test-to-vec" = all__test-to-vec."test-to-vec_0_2_0";
     "all__test-assets" = self.callPackage ./te/st/test-assets.nix { };
     "test-assets" = all__test-assets."test-assets_0_1_0";
     "all__test-assembler" = self.callPackage ./te/st/test-assembler.nix { };
@@ -14189,6 +14295,8 @@
     "textnonce" = all__textnonce."textnonce_0_4_1";
     "all__text-diff" = self.callPackage ./te/xt/text-diff.nix { };
     "text-diff" = all__text-diff."text-diff_0_4_0";
+    "all__textwrap" = self.callPackage ./te/xt/textwrap.nix { };
+    "textwrap" = all__textwrap."textwrap_0_1_0";
     "all__text_io" = self.callPackage ./te/xt/text_io.nix { };
     "text_io" = all__text_io."text_io_0_1_5";
     "all__text_writer" = self.callPackage ./te/xt/text_writer.nix { };

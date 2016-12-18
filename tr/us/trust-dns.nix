@@ -104,5 +104,12 @@ rec {
     hash = "b256a72f8d6c080a6738930f13b16eb96d2508660d8cfbf3736c18cd934dbe0c";
     deps = with allCrates; [  all__backtrace.backtrace_0_2 all__tokio-core.tokio-core_0_1 all__rustc-serialize.rustc-serialize_0_3 all__lazy_static.lazy_static_0_2 all__rusqlite.rusqlite_0_7 all__time.time_0_1 all__docopt.docopt_0_6 all__log.log_0_3 all__chrono.chrono_0_2 all__error-chain.error-chain_0_1 all__openssl.openssl_0_8 all__toml.toml_0_1 all__mio.mio_0_5 all__rand.rand_0_3 all__futures.futures_0_1 all__data-encoding.data-encoding_1_1 ];
   };
+  trust-dns_0_9_0 = buildCratesLib {
+    name = "trust-dns";
+    version = "0.9.0";
+    hash = "1a40e79529158ec45087ec467b39bbd578c5c795402ff586e8c2c995b070121b";
+    deps = with allCrates; [  all__error-chain.error-chain_0_1 all__chrono.chrono_0_2 all__mio.mio_0_5 all__log.log_0_3 all__tokio-core.tokio-core_0_1 all__rustc-serialize.rustc-serialize_0_3 all__rand.rand_0_3 all__backtrace.backtrace_0_2 all__data-encoding.data-encoding_1_1 all__lazy_static.lazy_static_0_2 all__time.time_0_1 all__futures.futures_0_1 all__openssl.openssl_0_8 ];
+  };
   "trust-dns_0_8" = trust-dns_0_8_1;
-  "trust-dns_0" = trust-dns_0_8_1;}
+  "trust-dns_0_9" = trust-dns_0_9_0;
+  "trust-dns_0" = trust-dns_0_9_0;}

@@ -10,8 +10,8 @@ rec {
   google-plus1-cli_1_0_0 = buildCratesLib {
     name = "google-plus1-cli";
     version = "1.0.0";
-    hash = "1496d5df76d7539b81d660ed756bfac80547b4d9907994a6f51f27e5f8e317c3";
-    deps = with allCrates; [  all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 all__clap.clap_2_0 all__hyper.hyper_0_9 all__serde.serde_0_8 ];
+    hash = "4caa5942fdef096f63aad44402ff7083d4eef0fbfce971f9ba06571be4bb57b7";
+    deps = with allCrates; [  all__clap.clap_2_0 all__mime.mime_0_2 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__strsim.strsim_0_5 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
   };
   "google-plus1-cli_0_3" = google-plus1-cli_0_3_6;
   "google-plus1-cli_0" = google-plus1-cli_0_3_6;

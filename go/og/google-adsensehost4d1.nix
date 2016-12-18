@@ -94,8 +94,8 @@ rec {
   google-adsensehost4d1_1_0_0 = buildCratesLib {
     name = "google-adsensehost4d1";
     version = "1.0.0";
-    hash = "968a70a4f51e23cc61a7653baf6d69fea6a35a27e4165d232ca815af7d2fd60c";
-    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 url all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+    hash = "59d3390b9d980b6ccaf45f897800873e1e209a269f7d324f9952523efbb5f870";
+    deps = with allCrates; [  url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__hyper.hyper_0_9 ];
   };
   "google-adsensehost4d1_0_1" = google-adsensehost4d1_0_1_15;
   "google-adsensehost4d1_0" = google-adsensehost4d1_0_1_15;

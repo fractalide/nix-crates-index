@@ -114,8 +114,8 @@ rec {
   multipart_0_9_0 = buildCratesLib {
     name = "multipart";
     version = "0.9.0";
-    hash = "7c677d5956cd722a59a71e9915a7d82e14c1a6dc9540d105d69b6c084283af5f";
-    deps = with allCrates; [  all__log.log_0_3 tempdir all__mime_guess.mime_guess_1_8 all__rand.rand_0_3 all__mime.mime_0_2 ];
+    hash = "227ca67d0888fcaa91265b5632d2d2a2aab7807e18347095b32f0c73c10a6d05";
+    deps = with allCrates; [  all__log.log_0_3 all__mime.mime_0_2 all__mime_guess.mime_guess_1_8 all__rand.rand_0_3 tempdir ];
   };
   "multipart_0_8" = multipart_0_8_1;
   "multipart_0_9" = multipart_0_9_0;

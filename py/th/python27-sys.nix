@@ -50,5 +50,11 @@ rec {
     hash = "3fd37521fda642a67685990aa22f69411a3852a6aa73be20c2e3a158926544c4";
     deps = with allCrates; [  all__libc.libc_0_2 all__regex.regex_0_1 ];
   };
-  "python27-sys_0_1" = python27-sys_0_1_1;
-  "python27-sys_0" = python27-sys_0_1_1;}
+  python27-sys_0_1_2 = buildCratesLib {
+    name = "python27-sys";
+    version = "0.1.2";
+    hash = "f0db3a33c866948a86d6672fa9d7479686f9bb3b514b17e66491f474bf389c7f";
+    deps = with allCrates; [  all__libc.libc_0_2 all__regex.regex_0_1 ];
+  };
+  "python27-sys_0_1" = python27-sys_0_1_2;
+  "python27-sys_0" = python27-sys_0_1_2;}

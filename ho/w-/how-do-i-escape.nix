@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__docopt.docopt_0_6 all__entities.entities_0_3 ];
   };
   "how-do-i-escape_0_1" = how-do-i-escape_0_1_0;
+  how-do-i-escape_0_3_0 = buildCratesLib {
+    name = "how-do-i-escape";
+    version = "0.3.0";
+    hash = "9e8574bce91d035a23b1d7870274a87e3fa4c9e5bf56556cf774722a742f00ed";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__ansi_term.ansi_term_0_9 all__docopt.docopt_0_6 all__entities.entities_1_0_0 ];
+  };
   "how-do-i-escape_0_2" = how-do-i-escape_0_2_0;
-  "how-do-i-escape_0" = how-do-i-escape_0_2_0;}
+  "how-do-i-escape_0_3" = how-do-i-escape_0_3_0;
+  "how-do-i-escape_0" = how-do-i-escape_0_3_0;}

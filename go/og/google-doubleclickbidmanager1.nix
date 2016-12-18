@@ -82,8 +82,8 @@ rec {
   google-doubleclickbidmanager1_1_0_0 = buildCratesLib {
     name = "google-doubleclickbidmanager1";
     version = "1.0.0";
-    hash = "a764b932006d4bbf72da3606dded4099c25cf3326e7622d5f579c195b53ba45a";
-    deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 ];
+    hash = "010a4fb0207a39edab0d4d62d6b561b047bece7eb5ce34dff15126392df9a01b";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 url all__hyper.hyper_0_9 all__serde.serde_0_8 ];
   };
   "google-doubleclickbidmanager1_0_1" = google-doubleclickbidmanager1_0_1_15;
   "google-doubleclickbidmanager1_0" = google-doubleclickbidmanager1_0_1_15;

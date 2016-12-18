@@ -94,8 +94,8 @@ rec {
   google-youtube3_1_0_0 = buildCratesLib {
     name = "google-youtube3";
     version = "1.0.0";
-    hash = "a2667583dc597a3a7436369772dda0d9ba2272bf0c8cd8c11e4ad9b74f6f9b9f";
-    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 url all__serde.serde_0_8 all__hyper.hyper_0_9 ];
+    hash = "2f928787542fd8f25b06c0442e0ce6988eb07eb81cd65f3f2eb2a198c2512d19";
+    deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url ];
   };
   "google-youtube3_0_1" = google-youtube3_0_1_15;
   "google-youtube3_0" = google-youtube3_0_1_15;

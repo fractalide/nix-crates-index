@@ -13,5 +13,12 @@ rec {
     hash = "23ee467d5207365928c2e2fdbbb3a412548e64e8632c249a08794bceae8340e1";
     deps = with allCrates; [  all__rust-crypto.rust-crypto_0_2 all__rand.rand_0_3 all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  message_verifier_0_2_0 = buildCratesLib {
+    name = "message_verifier";
+    version = "0.2.0";
+    hash = "ec9e583cf1ce723d0cf855bb9e3aebd4e0e86b3720b28cb32c789848af63c755";
+    deps = with allCrates; [  all__error-chain.error-chain_0_7 all__rust-crypto.rust-crypto_0_2 all__rustc-serialize.rustc-serialize_0_3 all__rand.rand_0_3 ];
+  };
   "message_verifier_0_1" = message_verifier_0_1_1;
-  "message_verifier_0" = message_verifier_0_1_1;}
+  "message_verifier_0_2" = message_verifier_0_2_0;
+  "message_verifier_0" = message_verifier_0_2_0;}

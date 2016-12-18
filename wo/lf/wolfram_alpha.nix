@@ -20,5 +20,18 @@ rec {
     deps = with allCrates; [  all__serde.serde_0_8 all__url.url_1_1 all__log.log_0_3 all__serde_xml.serde_xml_0_8 ];
   };
   "wolfram_alpha_0_1" = wolfram_alpha_0_1_1;
-  "wolfram_alpha_0_2" = wolfram_alpha_0_2_0;
-  "wolfram_alpha_0" = wolfram_alpha_0_2_0;}
+  wolfram_alpha_0_2_1 = buildCratesLib {
+    name = "wolfram_alpha";
+    version = "0.2.1";
+    hash = "18eab4279b2e98f9e68f75fb27c631655f14ba84063321400cf5f0ab0801f2b1";
+    deps = with allCrates; [  all__serde_xml.serde_xml_0_8 all__url.url_1_1 all__serde.serde_0_8 all__log.log_0_3 ];
+  };
+  wolfram_alpha_0_3_0 = buildCratesLib {
+    name = "wolfram_alpha";
+    version = "0.3.0";
+    hash = "1627a5d00bfff3f102146ff132fad0c982bbdadb62d63eb91c68f72766d190a2";
+    deps = with allCrates; [  all__log.log_0_3 all__url.url_1_1 all__serde.serde_0_8 all__serde_xml.serde_xml_0_8 ];
+  };
+  "wolfram_alpha_0_2" = wolfram_alpha_0_2_1;
+  "wolfram_alpha_0_3" = wolfram_alpha_0_3_0;
+  "wolfram_alpha_0" = wolfram_alpha_0_3_0;}

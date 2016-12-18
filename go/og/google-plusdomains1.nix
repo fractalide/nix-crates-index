@@ -94,8 +94,8 @@ rec {
   google-plusdomains1_1_0_0 = buildCratesLib {
     name = "google-plusdomains1";
     version = "1.0.0";
-    hash = "0479710b4335e2aa9cc4ef42de8093b51ba38dd8a67fe2b77025b158ec57d8b3";
-    deps = with allCrates; [  url all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+    hash = "027ea084a9f6eed6e161fd4687ad9f2ecef27c310831a9ac727a44d2936bd94e";
+    deps = with allCrates; [  all__mime.mime_0_2 url all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
   };
   "google-plusdomains1_0_1" = google-plusdomains1_0_1_15;
   "google-plusdomains1_0" = google-plusdomains1_0_1_15;

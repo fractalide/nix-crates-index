@@ -185,5 +185,12 @@ rec {
     deps = with allCrates; [  all__rayon.rayon_0_5 all__enum_primitive.enum_primitive_0_1 all__itertools.itertools_0_5 all__time.time_0_1 all__lazy_static.lazy_static_0_2 all__toml.toml_0_2 all__byteorder.byteorder_0_5 all__num.num_0_1 all__glob.glob_0_2 ];
   };
   "rawloader_0_16" = rawloader_0_16_0;
+  rawloader_0_18_0 = buildCratesLib {
+    name = "rawloader";
+    version = "0.18.0";
+    hash = "78dc2a807bc478b304005b6c60a8412dc2882c01bcd1f5fccfa7a0d32661a56f";
+    deps = with allCrates; [  all__toml.toml_0_2 all__lazy_static.lazy_static_0_2 all__rayon.rayon_0_5 all__itertools.itertools_0_5 all__enum_primitive.enum_primitive_0_1 all__byteorder.byteorder_0_5 all__num.num_0_1 all__time.time_0_1 all__glob.glob_0_2 ];
+  };
   "rawloader_0_17" = rawloader_0_17_0;
-  "rawloader_0" = rawloader_0_17_0;}
+  "rawloader_0_18" = rawloader_0_18_0;
+  "rawloader_0" = rawloader_0_18_0;}

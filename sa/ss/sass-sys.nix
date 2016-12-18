@@ -79,5 +79,12 @@ rec {
     hash = "87571886fa04f9a959602861b5b45e54dfbf0b9a85e741a0f8bc700e90914866";
     deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
   };
+  sass-sys_0_1_0 = buildCratesLib {
+    name = "sass-sys";
+    version = "0.1.0";
+    hash = "8a243aaa2ca9f52b55fdf0ac6b169cbe3e98ec45b0180fced467d4d090f52c0e";
+    deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
+  };
   "sass-sys_0_0" = sass-sys_0_0_14;
-  "sass-sys_0" = sass-sys_0_0_14;}
+  "sass-sys_0_1" = sass-sys_0_1_0;
+  "sass-sys_0" = sass-sys_0_1_0;}

@@ -94,8 +94,8 @@ rec {
   google-identitytoolkit3_1_0_0 = buildCratesLib {
     name = "google-identitytoolkit3";
     version = "1.0.0";
-    hash = "b6ddcace5f92c25debfd16caf15f18ee417c6607ecfa007a9efff9f21b52b6d0";
-    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 ];
+    hash = "ccf7069b4b39709c220b431fb3c1e2389812904278d906eb39df5668115f4c31";
+    deps = with allCrates; [  url all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
   };
   "google-identitytoolkit3_0_1" = google-identitytoolkit3_0_1_15;
   "google-identitytoolkit3_0" = google-identitytoolkit3_0_1_15;

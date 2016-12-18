@@ -94,8 +94,8 @@ rec {
   google-analytics3_1_0_0 = buildCratesLib {
     name = "google-analytics3";
     version = "1.0.0";
-    hash = "6c2582a21901f3853037f60641f0a05d4a5d0c751659504ec14c71928ad4aebf";
-    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 url ];
+    hash = "ef49955f2c25c49b959c09c460e49be984de17b83179041f02a30d5df949b574";
+    deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url ];
   };
   "google-analytics3_0_1" = google-analytics3_0_1_15;
   "google-analytics3_0" = google-analytics3_0_1_15;

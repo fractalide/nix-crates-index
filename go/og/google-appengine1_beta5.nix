@@ -28,8 +28,8 @@ rec {
   google-appengine1_beta5_1_0_0 = buildCratesLib {
     name = "google-appengine1_beta5";
     version = "1.0.0";
-    hash = "ea7ffcf9e36af3a126cffa63e0ffb9426088ae538173c1046a2de3ed38e48d53";
-    deps = with allCrates; [  url all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 ];
+    hash = "afd7c1fe41d31e3c7410f93b826f01ed5939d0f8ea6ef569f449e962984d0508";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__serde_json.serde_json_0_8 url all__mime.mime_0_2 ];
   };
   "google-appengine1_beta5_0_1" = google-appengine1_beta5_0_1_15;
   "google-appengine1_beta5_0" = google-appengine1_beta5_0_1_15;

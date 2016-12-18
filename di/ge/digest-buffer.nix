@@ -13,5 +13,11 @@ rec {
     hash = "8e4e8e55a2338a0e4ee3fa44e20c56b26fafe3544a608b4d233bba36ae938ff8";
     deps = with allCrates; [  all__byte-tools.byte-tools_0_1 all__generic-array.generic-array_0_5 ];
   };
-  "digest-buffer_0_1" = digest-buffer_0_1_1;
-  "digest-buffer_0" = digest-buffer_0_1_1;}
+  digest-buffer_0_1_2 = buildCratesLib {
+    name = "digest-buffer";
+    version = "0.1.2";
+    hash = "59789dfde9b5461a582b55d721698169a5ad27927b5d8fb07cdfecc013b63f28";
+    deps = with allCrates; [  all__generic-array.generic-array_0_5 all__byte-tools.byte-tools_0_1 ];
+  };
+  "digest-buffer_0_1" = digest-buffer_0_1_2;
+  "digest-buffer_0" = digest-buffer_0_1_2;}

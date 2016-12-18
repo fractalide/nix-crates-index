@@ -26,5 +26,23 @@ rec {
     hash = "0f756c0c47718442b8c4117d6d7a7dab3bff698356bd286ad84bf0513d37b339";
     deps = with allCrates; [  all__digest.digest_0_3 ];
   };
-  "crypto-tests_0_2" = crypto-tests_0_2_1;
-  "crypto-tests_0" = crypto-tests_0_2_1;}
+  crypto-tests_0_2_2 = buildCratesLib {
+    name = "crypto-tests";
+    version = "0.2.2";
+    hash = "ed9c7a04581bde03dc07c88b52840cbb0bc807e2eaf0850a8405fb8de1a2f2e1";
+    deps = with allCrates; [  all__digest.digest_0_3 all__block-cipher-trait.block-cipher-trait_0_1 all__generic-array.generic-array_0_5 ];
+  };
+  crypto-tests_0_2_3 = buildCratesLib {
+    name = "crypto-tests";
+    version = "0.2.3";
+    hash = "f7427d85943d6d86a4893ae8e706aeaffefc82f15757d7b1187fa11943121f21";
+    deps = with allCrates; [  all__generic-array.generic-array_0_5 all__block-cipher-trait.block-cipher-trait_0_2 all__digest.digest_0_3 ];
+  };
+  crypto-tests_0_2_4 = buildCratesLib {
+    name = "crypto-tests";
+    version = "0.2.4";
+    hash = "b50286000757919cb6d9c2a48fd31f18c0d569baeed74d815a866d0ff311dd6c";
+    deps = with allCrates; [  all__block-cipher-trait.block-cipher-trait_0_2 all__digest.digest_0_3 all__generic-array.generic-array_0_5 ];
+  };
+  "crypto-tests_0_2" = crypto-tests_0_2_4;
+  "crypto-tests_0" = crypto-tests_0_2_4;}

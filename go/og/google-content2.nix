@@ -94,8 +94,8 @@ rec {
   google-content2_1_0_0 = buildCratesLib {
     name = "google-content2";
     version = "1.0.0";
-    hash = "d948d444cf3c6fb0bd6f6bebfea16c64d56c9415f21cffe69831c104981840f3";
-    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 url all__serde.serde_0_8 ];
+    hash = "98141707f30c4d824c6ef30015adf7fa6d72242d876cba1dc55c9a3a2d9a3b2a";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url all__serde.serde_0_8 all__mime.mime_0_2 ];
   };
   "google-content2_0_1" = google-content2_0_1_15;
   "google-content2_0" = google-content2_0_1_15;

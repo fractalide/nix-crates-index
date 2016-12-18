@@ -82,8 +82,8 @@ rec {
   google-plus1_1_0_0 = buildCratesLib {
     name = "google-plus1";
     version = "1.0.0";
-    hash = "a4790251be1a8cc8b204f9586a1d3f069138399bb69de940215cbbac8520ba1e";
-    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 url ];
+    hash = "0cf0258a54f565d4433f03c604a001d40aa0e773062ae93e2f7f303debb21876";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 url all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
   };
   "google-plus1_0_1" = google-plus1_0_1_15;
   "google-plus1_0" = google-plus1_0_1_15;

@@ -100,8 +100,8 @@ rec {
   google-pagespeedonline2_1_0_0 = buildCratesLib {
     name = "google-pagespeedonline2";
     version = "1.0.0";
-    hash = "1aba2fa28f358f7ba54c7e231d104ec560300c95dd180556b3d486c10b1272b1";
-    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
+    hash = "4edd1c7f3c8324deccf8da372e25f840d4865e749711866fac66b47b84000c42";
+    deps = with allCrates; [  all__serde.serde_0_8 url all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
   };
   "google-pagespeedonline2_0_1" = google-pagespeedonline2_0_1_15;
   "google-pagespeedonline2_0" = google-pagespeedonline2_0_1_15;

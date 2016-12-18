@@ -7,5 +7,12 @@ rec {
     hash = "5e179916917095dfc5c5a5e74ac4149322074e1600b2e2bb0b686119926814b5";
     deps = with allCrates; [  all__serde.serde_0_6 all__serde_json.serde_json_0_6 all__serde_json.serde_json_0_6 all__slug.slug_0_1 ];
   };
+  jmespath_0_1_0 = buildCratesLib {
+    name = "jmespath";
+    version = "0.1.0";
+    hash = "7c884bf23440f80c608c90359d96588482062027570f8dd26de0bda7ce7f361a";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__slug.slug_0_1 all__serde_json.serde_json_0_8 ];
+  };
   "jmespath_0_0" = jmespath_0_0_1;
-  "jmespath_0" = jmespath_0_0_1;}
+  "jmespath_0_1" = jmespath_0_1_0;
+  "jmespath_0" = jmespath_0_1_0;}

@@ -16,8 +16,8 @@ rec {
   google-dfareporting2d5_1_0_0 = buildCratesLib {
     name = "google-dfareporting2d5";
     version = "1.0.0";
-    hash = "77807abc256d35af7ed1db0c5500958bec59aeb5a763e9c3b08d5d3267e9ff9b";
-    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 url all__serde.serde_0_8 all__hyper.hyper_0_9 ];
+    hash = "a9c4cfb8a710bcacb9f82437f1f529652095bfaaaf82eeecdf22af09a8611b49";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 ];
   };
   "google-dfareporting2d5_0_1" = google-dfareporting2d5_0_1_15;
   "google-dfareporting2d5_0" = google-dfareporting2d5_0_1_15;

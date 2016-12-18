@@ -10,8 +10,8 @@ rec {
   google-gamesconfiguration1_configuration-cli_1_0_0 = buildCratesLib {
     name = "google-gamesconfiguration1_configuration-cli";
     version = "1.0.0";
-    hash = "5ddf6ffe7eb52ade7e9271c7d2d481461a9d50cc1ecc01b8b708e35da821235a";
-    deps = with allCrates; [  all__strsim.strsim_0_5 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__clap.clap_2_0 ];
+    hash = "c09dcb53f5e800de4c82173a79ad7bee811b6b2b9b85d2cd4bb5f3fb06ecd739";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__mime.mime_0_2 all__serde.serde_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 all__strsim.strsim_0_5 ];
   };
   "google-gamesconfiguration1_configuration-cli_0_3" = google-gamesconfiguration1_configuration-cli_0_3_6;
   "google-gamesconfiguration1_configuration-cli_0" = google-gamesconfiguration1_configuration-cli_0_3_6;

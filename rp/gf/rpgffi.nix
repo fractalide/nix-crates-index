@@ -20,5 +20,12 @@ rec {
     hash = "f3992f29cf4f3a0e688fe54d8d69944f70934b257351535de2f79525c1109583";
     deps = with allCrates; [  ];
   };
+  rpgffi_0_2_0 = buildCratesLib {
+    name = "rpgffi";
+    version = "0.2.0";
+    hash = "13d876357f80a6be4e68619b5f6a8fb7a46274d77d4aade848628a21f9da5e8c";
+    deps = with allCrates; [  ];
+  };
   "rpgffi_0_1" = rpgffi_0_1_1;
-  "rpgffi_0" = rpgffi_0_1_1;}
+  "rpgffi_0_2" = rpgffi_0_2_0;
+  "rpgffi_0" = rpgffi_0_2_0;}
