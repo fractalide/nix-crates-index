@@ -31,5 +31,11 @@ rec {
     hash = "58aa939942b5b926eb033ecbe18323bbaa38147d39c5e946247a8cb77be5abc5";
     deps = with allCrates; [  all__rusttype.rusttype_0_2 all__orbclient.orbclient_0_2 ];
   };
-  "orbfont_0_1" = orbfont_0_1_4;
-  "orbfont_0" = orbfont_0_1_4;}
+  orbfont_0_1_5 = buildCratesLib {
+    name = "orbfont";
+    version = "0.1.5";
+    hash = "16de17c6c7ecf998de688c0bef537a2aa9ec41b71ca42ceb9a0c0a865b300379";
+    deps = with allCrates; [  all__orbclient.orbclient_0_2 all__rusttype.rusttype_0_2 ];
+  };
+  "orbfont_0_1" = orbfont_0_1_5;
+  "orbfont_0" = orbfont_0_1_5;}

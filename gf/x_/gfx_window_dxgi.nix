@@ -28,5 +28,12 @@ rec {
     deps = with allCrates; [  all__user32-sys.user32-sys_0_1 all__kernel32-sys.kernel32-sys_0_2 all__log.log_0_3 all__winit.winit_0_5 all__gfx_core.gfx_core_0_4 all__winapi.winapi_0_2 all__gfx_device_dx11.gfx_device_dx11_0_3 ];
   };
   "gfx_window_dxgi_0_3" = gfx_window_dxgi_0_3_0;
+  gfx_window_dxgi_0_5_0 = buildCratesLib {
+    name = "gfx_window_dxgi";
+    version = "0.5.0";
+    hash = "ef27fdbaa759b0a8ca192e6217638ba99fb42c86b3dbf0a735ff8aa8f32c643d";
+    deps = with allCrates; [  all__kernel32-sys.kernel32-sys_0_2 all__user32-sys.user32-sys_0_1 all__winapi.winapi_0_2 all__log.log_0_3 all__gfx_device_dx11.gfx_device_dx11_0_4 all__gfx_core.gfx_core_0_5 all__winit.winit_0_5 ];
+  };
   "gfx_window_dxgi_0_4" = gfx_window_dxgi_0_4_0;
-  "gfx_window_dxgi_0" = gfx_window_dxgi_0_4_0;}
+  "gfx_window_dxgi_0_5" = gfx_window_dxgi_0_5_0;
+  "gfx_window_dxgi_0" = gfx_window_dxgi_0_5_0;}

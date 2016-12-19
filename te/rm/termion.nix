@@ -80,5 +80,11 @@ rec {
     hash = "d94a5aea537a27dd9412585d7d77f2c382a2361f2b6a7cf0a6a56ea04aa5b71a";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
-  "termion_1_1" = termion_1_1_3;
-  "termion_1" = termion_1_1_3;}
+  termion_1_1_4 = buildCratesLib {
+    name = "termion";
+    version = "1.1.4";
+    hash = "9a90df1ede85b25f0bbb50b6313f8fab00e30b3b251f1cc2165faa40924e1417";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "termion_1_1" = termion_1_1_4;
+  "termion_1" = termion_1_1_4;}

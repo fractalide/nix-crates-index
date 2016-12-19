@@ -82,5 +82,12 @@ rec {
     hash = "8989bee295b32c1c5aeb6cbb7a0a44fd981a614084271df7be637734d82c0590";
     deps = with allCrates; [  all__nix.nix_0_6 all__regex.regex_0_1 ];
   };
+  sysfs_gpio_0_5_0 = buildCratesLib {
+    name = "sysfs_gpio";
+    version = "0.5.0";
+    hash = "90fc056b3e1a0f1cd10de67b14b62b85dfe450134e87bd9af2f066981c6ebb75";
+    deps = with allCrates; [  all__regex.regex_0_1 all__nix.nix_0_6 ];
+  };
   "sysfs_gpio_0_4" = sysfs_gpio_0_4_4;
-  "sysfs_gpio_0" = sysfs_gpio_0_4_4;}
+  "sysfs_gpio_0_5" = sysfs_gpio_0_5_0;
+  "sysfs_gpio_0" = sysfs_gpio_0_5_0;}

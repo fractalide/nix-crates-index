@@ -19,5 +19,11 @@ rec {
     hash = "03c071b1c56b9a5cfe2bd9165e088ebaf6cfd71a04792d3598255d7e11d8660a";
     deps = with allCrates; [  all__quick-error.quick-error_1_0 all__url.url_1_2 all__hyper.hyper_0_9 all__syndication.syndication_0_3 all__mime.mime_0_2 all__serde_yaml.serde_yaml_0_4 all__clap.clap_2_5 all__serde_json.serde_json_0_8 all__yaml-rust.yaml-rust_0_3 all__serde.serde_0_8 ];
   };
-  "feeds-to-pocket_0_1" = feeds-to-pocket_0_1_2;
-  "feeds-to-pocket_0" = feeds-to-pocket_0_1_2;}
+  feeds-to-pocket_0_1_3 = buildCratesLib {
+    name = "feeds-to-pocket";
+    version = "0.1.3";
+    hash = "846f87fb16a1f8fafebe5d682a5a977491c2c493edf41aa9c761ecb8ca25b100";
+    deps = with allCrates; [  all__yaml-rust.yaml-rust_0_3 all__serde_yaml.serde_yaml_0_5 all__clap.clap_2_5 all__syndication.syndication_0_4 all__serde_json.serde_json_0_8 all__quick-error.quick-error_1_0 all__mime.mime_0_2 all__url.url_1_2 all__hyper.hyper_0_9 all__serde.serde_0_8 ];
+  };
+  "feeds-to-pocket_0_1" = feeds-to-pocket_0_1_3;
+  "feeds-to-pocket_0" = feeds-to-pocket_0_1_3;}

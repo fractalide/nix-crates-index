@@ -7,5 +7,12 @@ rec {
     hash = "aaed947b9417267ce401655067a6c03224fe349b0dc420d892da2ef50a5a971a";
     deps = with allCrates; [  ];
   };
+  cachy_0_2_0 = buildCratesLib {
+    name = "cachy";
+    version = "0.2.0";
+    hash = "8389eb6526dabc08aff72f4761e2c62b1de32506523fd34222247f55f6035f05";
+    deps = with allCrates; [  all__bus.bus_1_1 all__futures.futures_0_1 ];
+  };
   "cachy_0_1" = cachy_0_1_0;
-  "cachy_0" = cachy_0_1_0;}
+  "cachy_0_2" = cachy_0_2_0;
+  "cachy_0" = cachy_0_2_0;}

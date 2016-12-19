@@ -85,5 +85,11 @@ rec {
     hash = "24d4106866ab6dcb61a1b7baa95ffaf2e83e89a9532edf9e278b7f6293c9dae8";
     deps = with allCrates; [  slr_parser ];
   };
-  "slr_config_0_0" = slr_config_0_0_14;
-  "slr_config_0" = slr_config_0_0_14;}
+  slr_config_0_0_15 = buildCratesLib {
+    name = "slr_config";
+    version = "0.0.15";
+    hash = "97143234f0b65bae19f6f3db4ef6dc274c3995c0d523e6b036dabde48bc51ef8";
+    deps = with allCrates; [  slr_parser ];
+  };
+  "slr_config_0_0" = slr_config_0_0_15;
+  "slr_config_0" = slr_config_0_0_15;}

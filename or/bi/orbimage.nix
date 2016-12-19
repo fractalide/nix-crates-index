@@ -49,5 +49,17 @@ rec {
     hash = "4ba81bca0b82490402af5f50fe3ef91895399901078f3e00050a4471422c4a32";
     deps = with allCrates; [  all__orbclient.orbclient_0_2 ];
   };
-  "orbimage_0_1" = orbimage_0_1_9;
-  "orbimage_0" = orbimage_0_1_9;}
+  orbimage_0_1_10 = buildCratesLib {
+    name = "orbimage";
+    version = "0.1.10";
+    hash = "42177a9da372ef43b6832fb3e35f96bdec0cd3060c4fb02addb217d155344c2b";
+    deps = with allCrates; [  all__orbclient.orbclient_0_2 ];
+  };
+  orbimage_0_1_11 = buildCratesLib {
+    name = "orbimage";
+    version = "0.1.11";
+    hash = "00d131475a6e30c8bbcbf3e9d11ccfb34a809d71f2da5548aa02ab6ac3fbde7c";
+    deps = with allCrates; [  all__orbclient.orbclient_0_2 ];
+  };
+  "orbimage_0_1" = orbimage_0_1_11;
+  "orbimage_0" = orbimage_0_1_11;}

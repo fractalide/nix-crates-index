@@ -168,5 +168,12 @@ rec {
     hash = "1600ec98e87a1efdf4d119766e59abf63b11da5ba4ff44be860ccdaed06841b8";
     deps = with allCrates; [  all__log.log_0_3 all__gfx_core.gfx_core_0_4 all__gfx_gl.gfx_gl_0_3 ];
   };
+  gfx_device_gl_0_12_0 = buildCratesLib {
+    name = "gfx_device_gl";
+    version = "0.12.0";
+    hash = "30627334572afb6628551197a291188f2d4d0b43e5474e268f9ee7a9966dc2ca";
+    deps = with allCrates; [  all__log.log_0_3 all__gfx_gl.gfx_gl_0_3 all__gfx_core.gfx_core_0_5 ];
+  };
   "gfx_device_gl_0_11" = gfx_device_gl_0_11_2;
-  "gfx_device_gl_0" = gfx_device_gl_0_11_2;}
+  "gfx_device_gl_0_12" = gfx_device_gl_0_12_0;
+  "gfx_device_gl_0" = gfx_device_gl_0_12_0;}

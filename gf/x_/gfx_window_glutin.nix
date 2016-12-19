@@ -103,5 +103,12 @@ rec {
     deps = with allCrates; [  all__glutin.glutin_0_6 all__gfx_core.gfx_core_0_4 all__gfx_device_gl.gfx_device_gl_0_11 ];
   };
   "gfx_window_glutin_0_11" = gfx_window_glutin_0_11_0;
+  gfx_window_glutin_0_13_1 = buildCratesLib {
+    name = "gfx_window_glutin";
+    version = "0.13.1";
+    hash = "db651e2e0cda2ade7d4e42fb62cb292c9760246f418af848db703a3fc6bb75a1";
+    deps = with allCrates; [  all__gfx_device_gl.gfx_device_gl_0_12 all__gfx_core.gfx_core_0_5 all__glutin.glutin_0_7 ];
+  };
   "gfx_window_glutin_0_12" = gfx_window_glutin_0_12_0;
-  "gfx_window_glutin_0" = gfx_window_glutin_0_12_0;}
+  "gfx_window_glutin_0_13" = gfx_window_glutin_0_13_1;
+  "gfx_window_glutin_0" = gfx_window_glutin_0_13_1;}

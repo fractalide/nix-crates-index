@@ -13,5 +13,12 @@ rec {
     hash = "8ba21a6309a3d518b151c6c3154a926f055b969898541ae9df3ac68309c07e9e";
     deps = with allCrates; [  all__hex.hex_0_2 all__md5.md5_0_2 all__byteorder.byteorder_0_5 all__fallible-iterator.fallible-iterator_0_1 ];
   };
+  postgres-protocol_0_2_0 = buildCratesLib {
+    name = "postgres-protocol";
+    version = "0.2.0";
+    hash = "283e27d237a5772ef00c9e3f97e632f9a565ff514761af3e88e129576af7077c";
+    deps = with allCrates; [  all__memchr.memchr_0_1 all__md5.md5_0_2 all__hex.hex_0_2 all__byteorder.byteorder_0_5 all__fallible-iterator.fallible-iterator_0_1 ];
+  };
   "postgres-protocol_0_1" = postgres-protocol_0_1_1;
-  "postgres-protocol_0" = postgres-protocol_0_1_1;}
+  "postgres-protocol_0_2" = postgres-protocol_0_2_0;
+  "postgres-protocol_0" = postgres-protocol_0_2_0;}

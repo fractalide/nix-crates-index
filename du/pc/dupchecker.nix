@@ -7,5 +7,18 @@ rec {
     hash = "74a94e2e5c19c79209725668fd1088f26f373b1f69f78c43724051c27981d24a";
     deps = with allCrates; [  ];
   };
+  dupchecker_0_2_0 = buildCratesLib {
+    name = "dupchecker";
+    version = "0.2.0";
+    hash = "5cc5eb96f2545fbfb697307a461578d271bb644c840e1e03360b1ec86f84b7b1";
+    deps = with allCrates; [  ];
+  };
   "dupchecker_0_1" = dupchecker_0_1_0;
-  "dupchecker_0" = dupchecker_0_1_0;}
+  dupchecker_0_2_1 = buildCratesLib {
+    name = "dupchecker";
+    version = "0.2.1";
+    hash = "44077bd5057002ccb6a55c11ae8ccdeadcd5c140e13de8ba363ff188ec1f28ec";
+    deps = with allCrates; [  ];
+  };
+  "dupchecker_0_2" = dupchecker_0_2_1;
+  "dupchecker_0" = dupchecker_0_2_1;}

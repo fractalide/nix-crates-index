@@ -235,5 +235,12 @@ rec {
     hash = "379c306eed37d3c55976d10b2aff119ebd640ba27afbe812fea6d3d4efbd5e16";
     deps = with allCrates; [  all__log.log_0_3 all__gfx_core.gfx_core_0_4 all__draw_state.draw_state_0_6 ];
   };
+  gfx_0_13_0 = buildCratesLib {
+    name = "gfx";
+    version = "0.13.0";
+    hash = "ddbd68082053947d17e212106ecabcc1c21d9ad577354db825fd512f4833d918";
+    deps = with allCrates; [  all__log.log_0_3 all__gfx_core.gfx_core_0_5 all__draw_state.draw_state_0_6 ];
+  };
   "gfx_0_12" = gfx_0_12_2;
-  "gfx_0" = gfx_0_12_2;}
+  "gfx_0_13" = gfx_0_13_0;
+  "gfx_0" = gfx_0_13_0;}

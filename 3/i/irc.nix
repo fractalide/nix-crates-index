@@ -353,5 +353,17 @@ rec {
     hash = "166537396bf8584da5b7f26ff20d279c8a64d5a3232ccd154fe0ec727ce4fb63";
     deps = with allCrates; [  all__time.time_0_1 all__rustc-serialize.rustc-serialize_0_3 ];
   };
-  "irc_0_11" = irc_0_11_4;
-  "irc_0" = irc_0_11_4;}
+  irc_0_11_5 = buildCratesLib {
+    name = "irc";
+    version = "0.11.5";
+    hash = "a9fa98bd96c589ec6a68002482748cc48e49b9de996a534d36772351669c1860";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__time.time_0_1 ];
+  };
+  irc_0_11_6 = buildCratesLib {
+    name = "irc";
+    version = "0.11.6";
+    hash = "e82e2279cc1b835d257056560031457819b45660f9afe92c314449f4d5b8cfc3";
+    deps = with allCrates; [  all__time.time_0_1 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "irc_0_11" = irc_0_11_6;
+  "irc_0" = irc_0_11_6;}

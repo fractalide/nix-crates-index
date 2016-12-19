@@ -58,5 +58,12 @@ rec {
     hash = "585756a5d597a0ecdf9c963be84c6eb0e25a3590b535ac6f27e98254266b4f4c";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_1 ];
   };
+  colored_1_4_0 = buildCratesLib {
+    name = "colored";
+    version = "1.4.0";
+    hash = "30e634d7d90e02beb7a2a51c7f7950ed2223d7e2c8667b1e9d6a521850aac132";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_1 ];
+  };
   "colored_1_3" = colored_1_3_2;
-  "colored_1" = colored_1_3_2;}
+  "colored_1_4" = colored_1_4_0;
+  "colored_1" = colored_1_4_0;}

@@ -52,5 +52,12 @@ rec {
     deps = with allCrates; [  all__bitflags.bitflags_0_7 all__log.log_0_3 all__draw_state.draw_state_0_6 ];
   };
   "gfx_core_0_3" = gfx_core_0_3_1;
+  gfx_core_0_5_0 = buildCratesLib {
+    name = "gfx_core";
+    version = "0.5.0";
+    hash = "502b182dc8778f6c84b1b22bb7e62dd1561d965397fa762bd70a3fd318498e9d";
+    deps = with allCrates; [  all__draw_state.draw_state_0_6 all__log.log_0_3 all__bitflags.bitflags_0_7 ];
+  };
   "gfx_core_0_4" = gfx_core_0_4_0;
-  "gfx_core_0" = gfx_core_0_4_0;}
+  "gfx_core_0_5" = gfx_core_0_5_0;
+  "gfx_core_0" = gfx_core_0_5_0;}

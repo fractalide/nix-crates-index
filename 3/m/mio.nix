@@ -120,5 +120,11 @@ rec {
     hash = "410a1a0ff76f5a226f1e4e3ff1756128e65cd30166e39c3892283e2ac09d5b67";
     deps = with allCrates; [  all__log.log_0_3 all__net2.net2_0_2 all__slab.slab_0_3 all__lazycell.lazycell_0_4 all__libc.libc_0_2 all__nix.nix_0_7 ];
   };
-  "mio_0_6" = mio_0_6_1;
-  "mio_0" = mio_0_6_1;}
+  mio_0_6_2 = buildCratesLib {
+    name = "mio";
+    version = "0.6.2";
+    hash = "5b493dc9fd96bd2077f2117f178172b0765db4dfda3ea4d8000401e6d65d3e80";
+    deps = with allCrates; [  all__lazycell.lazycell_0_4 all__log.log_0_3 all__slab.slab_0_3 all__net2.net2_0_2 all__nix.nix_0_7 all__libc.libc_0_2 ];
+  };
+  "mio_0_6" = mio_0_6_2;
+  "mio_0" = mio_0_6_2;}

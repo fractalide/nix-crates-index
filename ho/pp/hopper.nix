@@ -7,5 +7,11 @@ rec {
     hash = "0fb1426b1f2a94e2e923d306a0e76ed46a60a898f62b2d213ac5f2169c64c36f";
     deps = with allCrates; [  all__bincode.bincode_0_6 all__serde.serde_0_8 ];
   };
-  "hopper_0_1" = hopper_0_1_0;
-  "hopper_0" = hopper_0_1_0;}
+  hopper_0_1_1 = buildCratesLib {
+    name = "hopper";
+    version = "0.1.1";
+    hash = "95176830cccc7c72f69d4a1aa5da6b5dda6abb566b48337051a4d774c0bf6262";
+    deps = with allCrates; [  all__bincode.bincode_0_6 all__serde.serde_0_8 ];
+  };
+  "hopper_0_1" = hopper_0_1_1;
+  "hopper_0" = hopper_0_1_1;}

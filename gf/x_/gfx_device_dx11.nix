@@ -27,5 +27,12 @@ rec {
     deps = with allCrates; [  all__d3dcompiler-sys.d3dcompiler-sys_0_2 all__log.log_0_3 all__dxguid-sys.dxguid-sys_0_2 all__gfx_core.gfx_core_0_4 all__winapi.winapi_0_2 all__d3d11-sys.d3d11-sys_0_2 ];
   };
   "gfx_device_dx11_0_2" = gfx_device_dx11_0_2_1;
+  gfx_device_dx11_0_4_0 = buildCratesLib {
+    name = "gfx_device_dx11";
+    version = "0.4.0";
+    hash = "657e77d9cb52ce1c2ecc6198adb7945c73ffff32db8e2439b53c0d8807360e47";
+    deps = with allCrates; [  all__d3d11-sys.d3d11-sys_0_2 all__d3dcompiler-sys.d3dcompiler-sys_0_2 all__log.log_0_3 all__gfx_core.gfx_core_0_5 all__dxguid-sys.dxguid-sys_0_2 all__winapi.winapi_0_2 ];
+  };
   "gfx_device_dx11_0_3" = gfx_device_dx11_0_3_0;
-  "gfx_device_dx11_0" = gfx_device_dx11_0_3_0;}
+  "gfx_device_dx11_0_4" = gfx_device_dx11_0_4_0;
+  "gfx_device_dx11_0" = gfx_device_dx11_0_4_0;}

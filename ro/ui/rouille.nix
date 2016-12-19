@@ -112,5 +112,13 @@ rec {
     hash = "02408841a8bf4cf660ae024e9e13fcc193dc1b4712ee3efd07070cc85294782a";
     deps = with allCrates; [  all__rand.rand_0_3 all__term.term_0_2 all__chrono.chrono_0_2 all__time.time_0_1 all__tiny_http.tiny_http_0_5 all__multipart.multipart_0_5 all__rustc-serialize.rustc-serialize_0_3 all__filetime.filetime_0_1 all__sha1.sha1_0_2 all__url.url_1_2 ];
   };
+  rouille_1_0_0 = buildCratesLib {
+    name = "rouille";
+    version = "1.0.0";
+    hash = "57e538ee16a3d382d5bcbb2f971aa906977fbe1a12a2a08e900730a68a598738";
+    deps = with allCrates; [  all__tiny_http.tiny_http_0_5 all__multipart.multipart_0_5 all__term.term_0_2 all__chrono.chrono_0_2 all__rustc-serialize.rustc-serialize_0_3 all__time.time_0_1 all__sha1.sha1_0_2 all__filetime.filetime_0_1 all__url.url_1_2 all__rand.rand_0_3 ];
+  };
   "rouille_0_4" = rouille_0_4_2;
-  "rouille_0" = rouille_0_4_2;}
+  "rouille_0" = rouille_0_4_2;
+  "rouille_1_0" = rouille_1_0_0;
+  "rouille_1" = rouille_1_0_0;}

@@ -21,5 +21,12 @@ rec {
     deps = with allCrates; [  all__sdl2.sdl2_0_18 all__gfx_core.gfx_core_0_4 all__gfx_device_gl.gfx_device_gl_0_11 ];
   };
   "gfx_window_sdl_0_2" = gfx_window_sdl_0_2_0;
+  gfx_window_sdl_0_4_0 = buildCratesLib {
+    name = "gfx_window_sdl";
+    version = "0.4.0";
+    hash = "8ecfd816da16cb71d818f896584747e92da68ca12258dc83698504e704d71728";
+    deps = with allCrates; [  all__sdl2.sdl2_0_27 all__gfx_device_gl.gfx_device_gl_0_12 all__gfx_core.gfx_core_0_5 ];
+  };
   "gfx_window_sdl_0_3" = gfx_window_sdl_0_3_0;
-  "gfx_window_sdl_0" = gfx_window_sdl_0_3_0;}
+  "gfx_window_sdl_0_4" = gfx_window_sdl_0_4_0;
+  "gfx_window_sdl_0" = gfx_window_sdl_0_4_0;}

@@ -144,5 +144,18 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__librocksdb-sys.librocksdb-sys_0_4 ];
   };
   "rocksdb_0_4" = rocksdb_0_4_2;
-  "rocksdb_0_5" = rocksdb_0_5_0;
-  "rocksdb_0" = rocksdb_0_5_0;}
+  rocksdb_0_5_1 = buildCratesLib {
+    name = "rocksdb";
+    version = "0.5.1";
+    hash = "bb3d0936236c8cb0a25a4275159354b5f7099866f2f73b7637f16d7a5884ec31";
+    deps = with allCrates; [  all__librocksdb-sys.librocksdb-sys_0_4 all__libc.libc_0_2 ];
+  };
+  rocksdb_0_6_0 = buildCratesLib {
+    name = "rocksdb";
+    version = "0.6.0";
+    hash = "0fe915e43acca3217ca9a61a402002da1a5e3e57f1b0321a812a29b93662fdb9";
+    deps = with allCrates; [  all__librocksdb-sys.librocksdb-sys_0_4 all__libc.libc_0_2 ];
+  };
+  "rocksdb_0_5" = rocksdb_0_5_1;
+  "rocksdb_0_6" = rocksdb_0_6_0;
+  "rocksdb_0" = rocksdb_0_6_0;}

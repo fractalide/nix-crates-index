@@ -10,7 +10,7 @@ rec {
   rspec_1_0_0 = buildCratesLib {
     name = "rspec";
     version = "1.0.0";
-    hash = "08eed2b5c10f7842e891d44d44838b845053a8d42eea1a19363ad08c53ee6159";
+    hash = "292964ba6cf097dd3a1fc94c286c8eabf74a0afe709d059d2370e4f1fc766ae2";
     deps = with allCrates; [  ];
   };
   "rspec_0_1" = rspec_0_1_0;

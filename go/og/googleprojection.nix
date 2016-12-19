@@ -7,5 +7,12 @@ rec {
     hash = "f563172ef309bbf19ced0ff6dd29e6c6a1459d293db97d6552647cadad995040";
     deps = with allCrates; [  ];
   };
+  googleprojection_1_1_0 = buildCratesLib {
+    name = "googleprojection";
+    version = "1.1.0";
+    hash = "03a76f6facb1548412c2fe6c27539f37c25885dbfb83516fe323256a45cdfc7f";
+    deps = with allCrates; [  ];
+  };
   "googleprojection_1_0" = googleprojection_1_0_0;
-  "googleprojection_1" = googleprojection_1_0_0;}
+  "googleprojection_1_1" = googleprojection_1_1_0;
+  "googleprojection_1" = googleprojection_1_1_0;}

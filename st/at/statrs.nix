@@ -33,5 +33,12 @@ rec {
     hash = "4ee7be1776e79a83c893fd581ab7de0dd921de98b1962b41c87b9c5c82acd64a";
     deps = with allCrates; [  all__rand.rand_0_3 ];
   };
+  statrs_0_4_0 = buildCratesLib {
+    name = "statrs";
+    version = "0.4.0";
+    hash = "66f43129b94d6968d1966da70011c83ffe0e1ea864bd43a2cf1c6fbbb59598d9";
+    deps = with allCrates; [  all__rand.rand_0_3 ];
+  };
   "statrs_0_3" = statrs_0_3_2;
-  "statrs_0" = statrs_0_3_2;}
+  "statrs_0_4" = statrs_0_4_0;
+  "statrs_0" = statrs_0_4_0;}

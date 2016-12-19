@@ -7,5 +7,11 @@ rec {
     hash = "68993d7357262cab7d920520631ecab5ed97fd12c3bcece0383f5b6bc827c67c";
     deps = with allCrates; [  ];
   };
-  "slr_parser_0_0" = slr_parser_0_0_14;
-  "slr_parser_0" = slr_parser_0_0_14;}
+  slr_parser_0_0_15 = buildCratesLib {
+    name = "slr_parser";
+    version = "0.0.15";
+    hash = "10da06248d8e71b5772f5300376d67ae73d4a82699882333530c442293fc74cd";
+    deps = with allCrates; [  ];
+  };
+  "slr_parser_0_0" = slr_parser_0_0_15;
+  "slr_parser_0" = slr_parser_0_0_15;}

@@ -26,5 +26,11 @@ rec {
     hash = "ffae2d3313b47aed76c2069ca31928a528f4596ab169555c1136d04bae7ed5e2";
     deps = with allCrates; [  ];
   };
-  "fnconcat_0_2" = fnconcat_0_2_2;
-  "fnconcat_0" = fnconcat_0_2_2;}
+  fnconcat_0_2_3 = buildCratesLib {
+    name = "fnconcat";
+    version = "0.2.3";
+    hash = "4da29320b328e20562b225dcfb89bda7c2b83a04c8523a17f822acefdd942b41";
+    deps = with allCrates; [  ];
+  };
+  "fnconcat_0_2" = fnconcat_0_2_3;
+  "fnconcat_0" = fnconcat_0_2_3;}

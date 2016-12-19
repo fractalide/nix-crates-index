@@ -197,5 +197,11 @@ rec {
     deps = with allCrates; [  all__nom.nom_2_0 all__smallvec.smallvec_0_2 ];
   };
   "control-code_0_4" = control-code_0_4_10;
-  "control-code_0_5" = control-code_0_5_0;
-  "control-code_0" = control-code_0_5_0;}
+  control-code_0_5_1 = buildCratesLib {
+    name = "control-code";
+    version = "0.5.1";
+    hash = "572546fa89133cfef0c058b083169df378c8207ab44d08796bec2d46e7cb67b6";
+    deps = with allCrates; [  all__nom.nom_2_0 all__smallvec.smallvec_0_2 ];
+  };
+  "control-code_0_5" = control-code_0_5_1;
+  "control-code_0" = control-code_0_5_1;}
