@@ -7,5 +7,12 @@ rec {
     hash = "8d9607e89ce0b028c21c25e41e63aba8c85799ba0d9b918f161ab09caadfce8d";
     deps = with allCrates; [  all__tokio-core.tokio-core_0_1 all__futures.futures_0_1 all__libc.libc_0_2 all__tokio-signal.tokio-signal_0_1 ];
   };
+  tokio-process_0_2_0 = buildCratesLib {
+    name = "tokio-process";
+    version = "0.2.0";
+    hash = "dfe74a94d31d8aa61f313ebedd5219615eca080052bd323aeffa7ebb709526d3";
+    deps = with allCrates; [  all__log.log_0_3 all__futures.futures_0_1 all__tokio-core.tokio-core_0_1 all__mio.mio_0_6 all__libc.libc_0_2 all__tokio-signal.tokio-signal_0_1 ];
+  };
   "tokio-process_0_1" = tokio-process_0_1_0;
-  "tokio-process_0" = tokio-process_0_1_0;}
+  "tokio-process_0_2" = tokio-process_0_2_0;
+  "tokio-process_0" = tokio-process_0_2_0;}

@@ -952,7 +952,7 @@
     "all__tokio-cql" = self.callPackage ./to/ki/tokio-cql.nix { };
     "tokio-cql" = all__tokio-cql."tokio-cql_0_1_0";
     "all__tokio-core" = self.callPackage ./to/ki/tokio-core.nix { };
-    "tokio-core" = all__tokio-core."tokio-core_0_1_1";
+    "tokio-core" = all__tokio-core."tokio-core_0_1_2";
     "all__tokio-signal" = self.callPackage ./to/ki/tokio-signal.nix { };
     "tokio-signal" = all__tokio-signal."tokio-signal_0_1_0";
     "all__tokio-graphql" = self.callPackage ./to/ki/tokio-graphql.nix { };
@@ -962,7 +962,7 @@
     "all__tokio-http2" = self.callPackage ./to/ki/tokio-http2.nix { };
     "tokio-http2" = all__tokio-http2."tokio-http2_0_1_2";
     "all__tokio-process" = self.callPackage ./to/ki/tokio-process.nix { };
-    "tokio-process" = all__tokio-process."tokio-process_0_1_0";
+    "tokio-process" = all__tokio-process."tokio-process_0_2_0";
     "all__tokio-curl" = self.callPackage ./to/ki/tokio-curl.nix { };
     "tokio-curl" = all__tokio-curl."tokio-curl_0_1_4";
     "all__tokio-uds" = self.callPackage ./to/ki/tokio-uds.nix { };
@@ -6618,7 +6618,7 @@
     "all__llamadb" = self.callPackage ./ll/am/llamadb.nix { };
     "llamadb" = all__llamadb."llamadb_0_0_1";
     "all__either_n" = self.callPackage ./ei/th/either_n.nix { };
-    "either_n" = all__either_n."either_n_0_1_0";
+    "either_n" = all__either_n."either_n_0_1_1";
     "all__either" = self.callPackage ./ei/th/either.nix { };
     "either" = all__either."either_1_0_2";
     "all__eirc" = self.callPackage ./ei/rc/eirc.nix { };
@@ -10854,7 +10854,7 @@
     "all__rust_events" = self.callPackage ./ru/st/rust_events.nix { };
     "rust_events" = all__rust_events."rust_events_0_9_0";
     "all__rustfbp" = self.callPackage ./ru/st/rustfbp.nix { };
-    "rustfbp" = all__rustfbp."rustfbp_0_3_24";
+    "rustfbp" = all__rustfbp."rustfbp_0_3_25";
     "all__rust-install" = self.callPackage ./ru/st/rust-install.nix { };
     "rust-install" = all__rust-install."rust-install_0_0_4";
     "all__rust-github" = self.callPackage ./ru/st/rust-github.nix { };
