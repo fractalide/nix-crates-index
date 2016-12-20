@@ -89,5 +89,11 @@ rec {
     deps = with allCrates; [  all__glium.glium_0_15 all__image.image_0_10 all__quick-error.quick-error_1 ];
   };
   "korome_0_12" = korome_0_12_4;
-  "korome_0_13" = korome_0_13_0;
-  "korome_0" = korome_0_13_0;}
+  korome_0_13_1 = buildCratesLib {
+    name = "korome";
+    version = "0.13.1";
+    hash = "99d74a45572c88b77fd0fcdb0643ac7db45ee5cef5466cbab24af1903268a70b";
+    deps = with allCrates; [  all__glium.glium_0_15 all__image.image_0_10 all__quick-error.quick-error_1 ];
+  };
+  "korome_0_13" = korome_0_13_1;
+  "korome_0" = korome_0_13_1;}

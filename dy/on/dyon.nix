@@ -151,5 +151,11 @@ rec {
     deps = with allCrates; [  all__hyper.hyper_0_9 all__read_color.read_color_0_1 all__rand.rand_0_3 all__lazy_static.lazy_static_0_2 all__piston_meta.piston_meta_0_26 all__read_token.read_token_0_6 all__range.range_0_3 ];
   };
   "dyon_0_12" = dyon_0_12_1;
-  "dyon_0_13" = dyon_0_13_0;
-  "dyon_0" = dyon_0_13_0;}
+  dyon_0_13_1 = buildCratesLib {
+    name = "dyon";
+    version = "0.13.1";
+    hash = "96b3ad7b6f1d216dbc08ba12fe0d82ff117a76a2186a8c00d274ccbcc3026263";
+    deps = with allCrates; [  all__piston_meta.piston_meta_0_26 all__range.range_0_3 all__read_color.read_color_0_1 all__hyper.hyper_0_9 all__lazy_static.lazy_static_0_2 all__rand.rand_0_3 all__read_token.read_token_0_6 ];
+  };
+  "dyon_0_13" = dyon_0_13_1;
+  "dyon_0" = dyon_0_13_1;}

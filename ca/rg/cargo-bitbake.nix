@@ -33,5 +33,11 @@ rec {
     deps = with allCrates; [  all__cargo.cargo_0_10 all__rustc-serialize.rustc-serialize_0_3 all__itertools.itertools_0_5 ];
   };
   "cargo-bitbake_0_2" = cargo-bitbake_0_2_2;
-  "cargo-bitbake_0_3" = cargo-bitbake_0_3_0;
-  "cargo-bitbake_0" = cargo-bitbake_0_3_0;}
+  cargo-bitbake_0_3_1 = buildCratesLib {
+    name = "cargo-bitbake";
+    version = "0.3.1";
+    hash = "4dbd9baf1f7cd0102afe84506fc204bb7ffc263ae5dfb43fd478015fd08e098e";
+    deps = with allCrates; [  all__md5.md5_0_3 all__itertools.itertools_0_5 all__rustc-serialize.rustc-serialize_0_3 all__cargo.cargo_0_10 ];
+  };
+  "cargo-bitbake_0_3" = cargo-bitbake_0_3_1;
+  "cargo-bitbake_0" = cargo-bitbake_0_3_1;}

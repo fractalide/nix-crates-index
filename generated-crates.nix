@@ -4348,7 +4348,7 @@
     "all__kontex" = self.callPackage ./ko/nt/kontex.nix { };
     "kontex" = all__kontex."kontex_0_2_0";
     "all__korome" = self.callPackage ./ko/ro/korome.nix { };
-    "korome" = all__korome."korome_0_13_0";
+    "korome" = all__korome."korome_0_13_1";
     "all__koukku" = self.callPackage ./ko/uk/koukku.nix { };
     "koukku" = all__koukku."koukku_0_1_1";
     "all__kolmogorov_smirnov" = self.callPackage ./ko/lm/kolmogorov_smirnov.nix { };
@@ -9348,7 +9348,7 @@
     "all__osmesa-sys" = self.callPackage ./os/me/osmesa-sys.nix { };
     "osmesa-sys" = all__osmesa-sys."osmesa-sys_0_1_2";
     "all__os_pipe" = self.callPackage ./os/_p/os_pipe.nix { };
-    "os_pipe" = all__os_pipe."os_pipe_0_2_0";
+    "os_pipe" = all__os_pipe."os_pipe_0_2_1";
     "all__osmpbfreader" = self.callPackage ./os/mp/osmpbfreader.nix { };
     "osmpbfreader" = all__osmpbfreader."osmpbfreader_0_5_0";
     "all__ostn02_phf" = self.callPackage ./os/tn/ostn02_phf.nix { };
@@ -10868,13 +10868,13 @@
     "all__rustdt-json_rpc" = self.callPackage ./ru/st/rustdt-json_rpc.nix { };
     "rustdt-json_rpc" = all__rustdt-json_rpc."rustdt-json_rpc_0_2_0";
     "all__rust-webvr" = self.callPackage ./ru/st/rust-webvr.nix { };
-    "rust-webvr" = all__rust-webvr."rust-webvr_0_1_1";
+    "rust-webvr" = all__rust-webvr."rust-webvr_0_1_4";
     "all__rust-termios" = self.callPackage ./ru/st/rust-termios.nix { };
     "rust-termios" = all__rust-termios."rust-termios_0_0_2";
     "all__rust_events" = self.callPackage ./ru/st/rust_events.nix { };
     "rust_events" = all__rust_events."rust_events_0_9_0";
     "all__rustfbp" = self.callPackage ./ru/st/rustfbp.nix { };
-    "rustfbp" = all__rustfbp."rustfbp_0_3_27";
+    "rustfbp" = all__rustfbp."rustfbp_0_3_28";
     "all__rust-install" = self.callPackage ./ru/st/rust-install.nix { };
     "rust-install" = all__rust-install."rust-install_0_0_4";
     "all__rust-github" = self.callPackage ./ru/st/rust-github.nix { };
@@ -12314,7 +12314,7 @@
     "all__dynlib" = self.callPackage ./dy/nl/dynlib.nix { };
     "dynlib" = all__dynlib."dynlib_0_1_0";
     "all__dyon" = self.callPackage ./dy/on/dyon.nix { };
-    "dyon" = all__dyon."dyon_0_13_0";
+    "dyon" = all__dyon."dyon_0_13_1";
     "all__dynamic" = self.callPackage ./dy/na/dynamic.nix { };
     "dynamic" = all__dynamic."dynamic_0_2_1";
     "all__dynalist" = self.callPackage ./dy/na/dynalist.nix { };
@@ -12608,7 +12608,7 @@
     "all__oatmeal_raisin" = self.callPackage ./oa/tm/oatmeal_raisin.nix { };
     "oatmeal_raisin" = all__oatmeal_raisin."oatmeal_raisin_0_0_1";
     "all__oauthcli" = self.callPackage ./oa/ut/oauthcli.nix { };
-    "oauthcli" = all__oauthcli."oauthcli_1_0_1";
+    "oauthcli" = all__oauthcli."oauthcli_1_0_2";
     "all__oauth2" = self.callPackage ./oa/ut/oauth2.nix { };
     "oauth2" = all__oauth2."oauth2_0_2_0";
     "all__oauth2-lib" = self.callPackage ./oa/ut/oauth2-lib.nix { };
@@ -12663,6 +12663,8 @@
     "inlinevec" = all__inlinevec."inlinevec_0_0_0";
     "all__inth-oauth2" = self.callPackage ./in/th/inth-oauth2.nix { };
     "inth-oauth2" = all__inth-oauth2."inth-oauth2_0_10_0";
+    "all__indextree" = self.callPackage ./in/de/indextree.nix { };
+    "indextree" = all__indextree."indextree_0_1_0";
     "all__indexed-line-reader" = self.callPackage ./in/de/indexed-line-reader.nix { };
     "indexed-line-reader" = all__indexed-line-reader."indexed-line-reader_0_2_0";
     "all__indexing" = self.callPackage ./in/de/indexing.nix { };
@@ -13861,6 +13863,8 @@
     "erguotou" = all__erguotou."erguotou_0_0_3";
     "all__erty" = self.callPackage ./er/ty/erty.nix { };
     "erty" = all__erty."erty_0_0_2";
+    "all__erl_dist" = self.callPackage ./er/l_/erl_dist.nix { };
+    "erl_dist" = all__erl_dist."erl_dist_0_1_0";
     "all__erl_ast" = self.callPackage ./er/l_/erl_ast.nix { };
     "erl_ast" = all__erl_ast."erl_ast_0_0_6";
     "all__cassandra-sys" = self.callPackage ./ca/ss/cassandra-sys.nix { };
@@ -14146,7 +14150,7 @@
     "all__cargo-tree" = self.callPackage ./ca/rg/cargo-tree.nix { };
     "cargo-tree" = all__cargo-tree."cargo-tree_0_8_0";
     "all__cargo-bitbake" = self.callPackage ./ca/rg/cargo-bitbake.nix { };
-    "cargo-bitbake" = all__cargo-bitbake."cargo-bitbake_0_3_0";
+    "cargo-bitbake" = all__cargo-bitbake."cargo-bitbake_0_3_1";
     "all__cargo-yaml" = self.callPackage ./ca/rg/cargo-yaml.nix { };
     "cargo-yaml" = all__cargo-yaml."cargo-yaml_3_0_0";
     "all__cargo-graph" = self.callPackage ./ca/rg/cargo-graph.nix { };

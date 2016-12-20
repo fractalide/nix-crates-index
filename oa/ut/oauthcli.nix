@@ -76,5 +76,11 @@ rec {
     hash = "63c1793c32ab242e26b86d530da1b08a50a66b1e19c2028e47fe7d0fc500c9a7";
     deps = with allCrates; [  all__rust-crypto.rust-crypto_0_2 all__rustc-serialize.rustc-serialize_0_3 all__time.time_0_1 all__rand.rand_0_3 all__url.url_1_2 ];
   };
-  "oauthcli_1_0" = oauthcli_1_0_1;
-  "oauthcli_1" = oauthcli_1_0_1;}
+  oauthcli_1_0_2 = buildCratesLib {
+    name = "oauthcli";
+    version = "1.0.2";
+    hash = "427ba44b13f79f4f06fe35b720b4a2baa376b4345af52a5ffa4e538881718641";
+    deps = with allCrates; [  all__url.url_1_2 all__rand.rand_0_3 all__time.time_0_1 all__rust-crypto.rust-crypto_0_2 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "oauthcli_1_0" = oauthcli_1_0_2;
+  "oauthcli_1" = oauthcli_1_0_2;}
