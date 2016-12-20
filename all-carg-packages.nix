@@ -88,7 +88,7 @@ let
         # if a rust build script is around we do strange things!
         if [ -f "build.rs" ]; then
           echo "------- build.rs found: $name ----------"
-          ${rustcNightly}/bin/rustc build.rs --crate-name build_script_build --crate-type "bin" ${depsString} --cap-lints "allow"  -L dependency=mylibs -o build-script-build
+          ${rustcNightly}/bin/rustc build.rs --crate-name build_script_build --crate-type "bin" ${depsString} --cap-lints "allow" -L dependency=mylibs -o build-script-build
 #           du -ha
 #           du -ha $OUT_DIR/
 
@@ -104,7 +104,7 @@ let
           echo "About to use rustc to compile some lib - $name"
 
           # FIXME maybe different crates want different compiler features like --cfg "feature=\"default\"" --cfg "feature=\"std\""'  but this isn't implemented yet in nixcrates
-          ${rustcNightly}/bin/rustc --crate-type=lib -g ''${S}lib.rs  ${depsString} --crate-name ${nameFix} -L dependency=mylibs -L dependency=${rustcNightly}/   --out-dir $OUT_DIR/ --cfg "feature=\"default\"" --cfg "feature=\"std\""
+          ${rustcNightly}/bin/rustc --crate-type=lib -g ''${S}lib.rs  ${depsString} --crate-name ${nameFix} --cap-lints "allow" -L dependency=mylibs -L dependency=${rustcNightly}/   --out-dir $OUT_DIR/ --cfg "feature=\"default\"" --cfg "feature=\"std\""
         else
           # HACK this might be a serious issue but so far it seems to work nonetheless
           echo "ERROR: not found lib.rs, just skipping which is wrong. I'm not exiting now but this won't work!"
