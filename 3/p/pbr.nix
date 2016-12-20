@@ -79,8 +79,8 @@ rec {
   pbr_1_0_0 = buildCratesLib {
     name = "pbr";
     version = "1.0.0";
-    hash = "6d3fcb8e30746b855c834a4ec60229c08f4279bbec6fc2ad29215bffc44e1bd6";
-    deps = with allCrates; [  all__kernel32-sys.kernel32-sys_0_2 all__winapi.winapi_0_2 all__time.time_0_1 all__libc.libc_0_2 ];
+    hash = "5b2863afb7ac4372d578cafbeca1e10435e56d5d57acf63b54bc7b376c6b809b";
+    deps = with allCrates; [  all__kernel32-sys.kernel32-sys_0_2 all__time.time_0_1 all__winapi.winapi_0_2 all__libc.libc_0_2 ];
   };
   "pbr_0_3" = pbr_0_3_1;
   "pbr_0" = pbr_0_3_1;

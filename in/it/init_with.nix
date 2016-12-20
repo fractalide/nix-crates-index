@@ -13,5 +13,11 @@ rec {
     hash = "e4e6c97ff4d325dfe17eb0f0c0cd3daf7437ceb859c75880172b84514c17e62c";
     deps = with allCrates; [  all__nodrop.nodrop_0_1 ];
   };
-  "init_with_0_1" = init_with_0_1_1;
-  "init_with_0" = init_with_0_1_1;}
+  init_with_0_1_2 = buildCratesLib {
+    name = "init_with";
+    version = "0.1.2";
+    hash = "01c1a4084c64e04f94429717ce111028081e976d1544c0b209a1d983e4db428d";
+    deps = with allCrates; [  ];
+  };
+  "init_with_0_1" = init_with_0_1_2;
+  "init_with_0" = init_with_0_1_2;}

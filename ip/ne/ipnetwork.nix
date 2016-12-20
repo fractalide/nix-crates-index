@@ -154,5 +154,12 @@ rec {
     deps = with allCrates; [  ];
   };
   "ipnetwork_0_9" = ipnetwork_0_9_0;
+  ipnetwork_0_11_0 = buildCratesLib {
+    name = "ipnetwork";
+    version = "0.11.0";
+    hash = "59100e8253e13f648dd5d9a0323000e422b46463c62968f9f3137257898c120c";
+    deps = with allCrates; [  ];
+  };
   "ipnetwork_0_10" = ipnetwork_0_10_0;
-  "ipnetwork_0" = ipnetwork_0_10_0;}
+  "ipnetwork_0_11" = ipnetwork_0_11_0;
+  "ipnetwork_0" = ipnetwork_0_11_0;}

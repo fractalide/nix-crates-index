@@ -37,5 +37,11 @@ rec {
     hash = "4959acfbb3c1415bdf1d5b398326c0c7128cdc0710e882487be4763a7b65ccc2";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
-  "fswatch-sys_0_1" = fswatch-sys_0_1_5;
-  "fswatch-sys_0" = fswatch-sys_0_1_5;}
+  fswatch-sys_0_1_6 = buildCratesLib {
+    name = "fswatch-sys";
+    version = "0.1.6";
+    hash = "cfe43a20ae9066bd4832f8353520b8ca21eeae6526df16bc2ca04b8e6f206bb8";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "fswatch-sys_0_1" = fswatch-sys_0_1_6;
+  "fswatch-sys_0" = fswatch-sys_0_1_6;}

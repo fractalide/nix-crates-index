@@ -38,5 +38,11 @@ rec {
     hash = "26643a2f83bac55f1976fb716c10234485f9202dcd65cfbdf9da49867b271172";
     deps = with allCrates; [  ];
   };
-  "unicode-normalization_0_1" = unicode-normalization_0_1_2;
-  "unicode-normalization_0" = unicode-normalization_0_1_2;}
+  unicode-normalization_0_1_3 = buildCratesLib {
+    name = "unicode-normalization";
+    version = "0.1.3";
+    hash = "5e94e9f6961090fcc75180629c4ef33e5310d6ed2c0dd173f4ca63c9043b669e";
+    deps = with allCrates; [  ];
+  };
+  "unicode-normalization_0_1" = unicode-normalization_0_1_3;
+  "unicode-normalization_0" = unicode-normalization_0_1_3;}

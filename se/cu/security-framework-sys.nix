@@ -61,5 +61,11 @@ rec {
     hash = "c84067e6297c1f09514a8666d8bbc1268817ec4a6c0f30f12f6201e1f34bd2a1";
     deps = with allCrates; [  all__libc.libc_0_2 all__core-foundation-sys.core-foundation-sys_0_2 ];
   };
-  "security-framework-sys_0_1" = security-framework-sys_0_1_9;
-  "security-framework-sys_0" = security-framework-sys_0_1_9;}
+  security-framework-sys_0_1_10 = buildCratesLib {
+    name = "security-framework-sys";
+    version = "0.1.10";
+    hash = "5103c988054803538fe4d85333abf4c633f069510ab687dc71a50572104216d0";
+    deps = with allCrates; [  all__core-foundation-sys.core-foundation-sys_0_2 all__libc.libc_0_2 ];
+  };
+  "security-framework-sys_0_1" = security-framework-sys_0_1_10;
+  "security-framework-sys_0" = security-framework-sys_0_1_10;}

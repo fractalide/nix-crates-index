@@ -51,5 +51,11 @@ rec {
     hash = "996c906a9149fc1bb07134b0a13d095646275cd7ab7173984255c9f53ecd3832";
     deps = with allCrates; [  all__libflate.libflate_0_1 all__byteorder.byteorder_0_5 all__num.num_0_1 ];
   };
-  "eetf_0_3" = eetf_0_3_5;
-  "eetf_0" = eetf_0_3_5;}
+  eetf_0_3_6 = buildCratesLib {
+    name = "eetf";
+    version = "0.3.6";
+    hash = "6a7dd0e421cfa1696b8f6f4e4bf77248fbf71df005153011b24bbf9a0b8a679d";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__libflate.libflate_0_1 all__num.num_0_1 ];
+  };
+  "eetf_0_3" = eetf_0_3_6;
+  "eetf_0" = eetf_0_3_6;}

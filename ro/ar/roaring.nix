@@ -101,5 +101,11 @@ rec {
     deps = with allCrates; [  num ];
   };
   "roaring_0_3" = roaring_0_3_2;
-  "roaring_0_4" = roaring_0_4_0;
-  "roaring_0" = roaring_0_4_0;}
+  roaring_0_4_2 = buildCratesLib {
+    name = "roaring";
+    version = "0.4.2";
+    hash = "49f087f5cff16d9cf1dda4ead1751b9f376717e857ac3137985cf0342eb24bad";
+    deps = with allCrates; [  all__num.num_0_1 ];
+  };
+  "roaring_0_4" = roaring_0_4_2;
+  "roaring_0" = roaring_0_4_2;}

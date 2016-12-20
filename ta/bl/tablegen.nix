@@ -13,5 +13,11 @@ rec {
     hash = "4cb4614d398dd6fd9c0eb847b92b1c77dc7ce7d7f792a53497860debbb34e78f";
     deps = with allCrates; [  all__cmake.cmake_0_1 ];
   };
-  "tablegen_0_1" = tablegen_0_1_1;
-  "tablegen_0" = tablegen_0_1_1;}
+  tablegen_0_1_2 = buildCratesLib {
+    name = "tablegen";
+    version = "0.1.2";
+    hash = "2126e192a3d185ac70d4301b2e24783a3d635fc365e7e8505da6eab525085580";
+    deps = with allCrates; [  all__error-chain.error-chain_0_7 all__cmake.cmake_0_1 ];
+  };
+  "tablegen_0_1" = tablegen_0_1_2;
+  "tablegen_0" = tablegen_0_1_2;}

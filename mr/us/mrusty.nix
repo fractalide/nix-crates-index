@@ -125,5 +125,13 @@ rec {
     hash = "0b04a86df4bc3a774945e5fd80a275303dd19c1af4efe54ad41169f287a9ada3";
     deps = with allCrates; [  all__gcc.gcc_0_3 all__walkdir.walkdir_0_1 all__tar.tar_0_4 ];
   };
+  mrusty_1_0_0 = buildCratesLib {
+    name = "mrusty";
+    version = "1.0.0";
+    hash = "f04d73bd310c21376b2dbfc0473c08a9e9f602e245e3de9a3ed02a46b8c31988";
+    deps = with allCrates; [  all__tar.tar_0_4 all__walkdir.walkdir_0_1 all__gcc.gcc_0_3 ];
+  };
   "mrusty_0_5" = mrusty_0_5_1;
-  "mrusty_0" = mrusty_0_5_1;}
+  "mrusty_0" = mrusty_0_5_1;
+  "mrusty_1_0" = mrusty_1_0_0;
+  "mrusty_1" = mrusty_1_0_0;}

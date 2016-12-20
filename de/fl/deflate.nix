@@ -48,5 +48,12 @@ rec {
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__adler32.adler32_0_3 ];
   };
   "deflate_0_5" = deflate_0_5_1;
+  deflate_0_7_0 = buildCratesLib {
+    name = "deflate";
+    version = "0.7.0";
+    hash = "f89afa414c2e62ca4b122b88268746a08fcfb0cdf11075f476f000736a16e51f";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__adler32.adler32_0_3 ];
+  };
   "deflate_0_6" = deflate_0_6_0;
-  "deflate_0" = deflate_0_6_0;}
+  "deflate_0_7" = deflate_0_7_0;
+  "deflate_0" = deflate_0_7_0;}

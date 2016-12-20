@@ -7,5 +7,11 @@ rec {
     hash = "6be46826e014074f3819417fcbaa81b4470a8d371fd06ed4e647e91a6cc80566";
     deps = with allCrates; [  all__osm4routing.osm4routing_0_2 all__docopt.docopt_0_6 all__pdf.pdf_0_5 ];
   };
-  "roads-from-nd_0_1" = roads-from-nd_0_1_0;
-  "roads-from-nd_0" = roads-from-nd_0_1_0;}
+  roads-from-nd_0_1_1 = buildCratesLib {
+    name = "roads-from-nd";
+    version = "0.1.1";
+    hash = "e9dc96d694f86b995acfd5f2c645672f92c364aece190b86ced0f8fbf224ed64";
+    deps = with allCrates; [  all__osm4routing.osm4routing_0_2 all__docopt.docopt_0_6 all__pdf.pdf_0_5 ];
+  };
+  "roads-from-nd_0_1" = roads-from-nd_0_1_1;
+  "roads-from-nd_0" = roads-from-nd_0_1_1;}

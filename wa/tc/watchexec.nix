@@ -60,5 +60,12 @@ rec {
     deps = with allCrates; [  all__env_logger.env_logger_0_3 all__lazy_static.lazy_static_0_2 all__libc.libc_0_2 all__notify.notify_3_0_0 all__glob.glob_0_2 all__log.log_0_3 all__globset.globset_0_1 all__clap.clap_2_14 all__nix.nix_0_7 ];
   };
   "watchexec_1_4" = watchexec_1_4_0;
+  watchexec_1_6_0 = buildCratesLib {
+    name = "watchexec";
+    version = "1.6.0";
+    hash = "31949260606b1114d5f6a4da319b32add801c767a605f63e07c6bd0f0a404464";
+    deps = with allCrates; [  all__libc.libc_0_2 all__globset.globset_0_1 all__notify.notify_3_0_0 all__clap.clap_2_14 all__env_logger.env_logger_0_3 all__log.log_0_3 all__lazy_static.lazy_static_0_2 all__glob.glob_0_2 all__nix.nix_0_7 ];
+  };
   "watchexec_1_5" = watchexec_1_5_0;
-  "watchexec_1" = watchexec_1_5_0;}
+  "watchexec_1_6" = watchexec_1_6_0;
+  "watchexec_1" = watchexec_1_6_0;}

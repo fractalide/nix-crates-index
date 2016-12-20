@@ -297,5 +297,12 @@ rec {
     deps = with allCrates; [  all__fractal-dto.fractal-dto_0_8 all__hyper.hyper_0_9 all__rustc-serialize.rustc-serialize_0_3 all__chrono.chrono_0_2 all__fractal-utils.fractal-utils_0_2 ];
   };
   "fractal-api_0_7" = fractal-api_0_7_1;
+  fractal-api_0_9_0 = buildCratesLib {
+    name = "fractal-api";
+    version = "0.9.0";
+    hash = "2209787a3b526fc4ea60548b4bc845d325e44128a8021c876241fcd626d1cca4";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__chrono.chrono_0_2 all__fractal-utils.fractal-utils_0_2 all__fractal-dto.fractal-dto_0_8 all__hyper.hyper_0_9 ];
+  };
   "fractal-api_0_8" = fractal-api_0_8_0;
-  "fractal-api_0" = fractal-api_0_8_0;}
+  "fractal-api_0_9" = fractal-api_0_9_0;
+  "fractal-api_0" = fractal-api_0_9_0;}

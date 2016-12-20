@@ -79,5 +79,11 @@ rec {
     hash = "38a17dc95fa4f06de342594b225b0822762506c43ca7b58486d778204bd76228";
     deps = with allCrates; [  ];
   };
-  "matrixmultiply_0_1" = matrixmultiply_0_1_12;
-  "matrixmultiply_0" = matrixmultiply_0_1_12;}
+  matrixmultiply_0_1_13 = buildCratesLib {
+    name = "matrixmultiply";
+    version = "0.1.13";
+    hash = "7ce012d2c43046267a74283eaa7e9a51941479901e2b86702be10f27e2779158";
+    deps = with allCrates; [  all__rawpointer.rawpointer_0_1 ];
+  };
+  "matrixmultiply_0_1" = matrixmultiply_0_1_13;
+  "matrixmultiply_0" = matrixmultiply_0_1_13;}

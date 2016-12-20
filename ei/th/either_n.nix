@@ -13,5 +13,12 @@ rec {
     hash = "e4938af289744b2a260ecf8074274425b0aaa7c2ebc85fd487d7e5579e5f7c7f";
     deps = with allCrates; [  ];
   };
+  either_n_0_2_0 = buildCratesLib {
+    name = "either_n";
+    version = "0.2.0";
+    hash = "4c91ae510829160d5cfb19eb4ae7b6e01d44b767ca8f727c6cee936e53cc9ae5";
+    deps = with allCrates; [  ];
+  };
   "either_n_0_1" = either_n_0_1_1;
-  "either_n_0" = either_n_0_1_1;}
+  "either_n_0_2" = either_n_0_2_0;
+  "either_n_0" = either_n_0_2_0;}

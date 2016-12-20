@@ -451,5 +451,11 @@ rec {
     hash = "04c6a463beab1af24d3c541bc876290bbdc42c91ef5ffb4f2010b428b0afcd73";
     deps = with allCrates; [  all__log.log_0_3 all__bufstream.bufstream_0_1 all__fallible-iterator.fallible-iterator_0_1 all__hex.hex_0_2 phf all__postgres-protocol.postgres-protocol_0_1 ];
   };
-  "postgres_0_13" = postgres_0_13_3;
-  "postgres_0" = postgres_0_13_3;}
+  postgres_0_13_4 = buildCratesLib {
+    name = "postgres";
+    version = "0.13.4";
+    hash = "484a6e73fea94103030d284b71d70182fd804d3e18026b43869f8b1e2b766a56";
+    deps = with allCrates; [  phf all__bufstream.bufstream_0_1 all__fallible-iterator.fallible-iterator_0_1 all__postgres-protocol.postgres-protocol_0_2 all__hex.hex_0_2 all__log.log_0_3 ];
+  };
+  "postgres_0_13" = postgres_0_13_4;
+  "postgres_0" = postgres_0_13_4;}

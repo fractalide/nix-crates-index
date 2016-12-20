@@ -62,5 +62,11 @@ rec {
     hash = "c1f7ceb96afdfeedee42bade65a0d585a6a0106f681b6749c8ff4daa8df30b3f";
     deps = with allCrates; [  all__matches.matches_0_1 ];
   };
-  "unicode-bidi_0_2" = unicode-bidi_0_2_3;
-  "unicode-bidi_0" = unicode-bidi_0_2_3;}
+  unicode-bidi_0_2_4 = buildCratesLib {
+    name = "unicode-bidi";
+    version = "0.2.4";
+    hash = "b61814f3e7fd0e0f15370f767c7c943e08bc2e3214233ae8f88522b334ceb778";
+    deps = with allCrates; [  all__matches.matches_0_1 ];
+  };
+  "unicode-bidi_0_2" = unicode-bidi_0_2_4;
+  "unicode-bidi_0" = unicode-bidi_0_2_4;}

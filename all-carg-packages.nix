@@ -11,7 +11,7 @@ let
     allCrates = self;
     inherit buildCratesLib;
   };
-  buildCratesLib = {name, version, hash, deps}:  
+  buildCratesLib = {name, version, hash, deps}:
   let
     normalizeName = builtins.replaceStrings [ "-"] ["_"];
     nameFix = normalizeName name;
@@ -52,7 +52,7 @@ let
       buildInputs = [ pkgs.openssl pkgs.pkgconfig pkgs.sqlite ];
 
       # init env variable
-      OUT_DIR="OUT_DIR is not set properly, please fix the nix expression in question..."; 
+      OUT_DIR="OUT_DIR is not set properly, please fix the nix expression in question...";
 
       # if not set crates simply fail to build
       CARGO_PKG_NAME=nameFix;
@@ -91,7 +91,7 @@ let
           ${rustcNightly}/bin/rustc build.rs --crate-name build_script_build --crate-type "bin" ${depsString} --cap-lints "allow"  -L dependency=mylibs -o build-script-build
 #           du -ha
 #           du -ha $OUT_DIR/
-        
+
           export PATH=''$PATH:${rustcNightly}/bin/
           ./build-script-build
           echo "------- build.rs found: $name after build-script-build ----------"
@@ -106,7 +106,7 @@ let
           # FIXME maybe different crates want different compiler features like --cfg "feature=\"default\"" --cfg "feature=\"std\""'  but this isn't implemented yet in nixcrates
           ${rustcNightly}/bin/rustc --crate-type=lib -g ''${S}lib.rs  ${depsString} --crate-name ${nameFix} -L dependency=mylibs -L dependency=${rustcNightly}/   --out-dir $OUT_DIR/ --cfg "feature=\"default\"" --cfg "feature=\"std\""
         else
-          # HACK this might be a serious issue but so far it seems to work nonetheless 
+          # HACK this might be a serious issue but so far it seems to work nonetheless
           echo "ERROR: not found lib.rs, just skipping which is wrong. I'm not exiting now but this won't work!"
         fi
       '';
@@ -137,6 +137,18 @@ let
         version = "0.7.3";
         hash = "e9b3854687228334d8a579cd2f666ddd7fb46a5f68ac0460da2898394c4679d2";
         deps = with self; [  all__time.time_0_1 all__lru-cache.lru-cache_0_0_7 all__bitflags.bitflags_0_7 all__libc.libc_0_2 all__libsqlite3-sys.libsqlite3-sys_0_5 pkg-config];
+      };
+      nanomsg-sys = buildCratesLib {
+        name = "nanomsg-sys";
+        version = "0.6.0";
+        hash = "44f0dd0805c1da25ef1153c7abc64bc628858114798ce3dfef013533623cbdda";
+        deps = with self; [  all__libc.libc_0_2 pkg-config gcc cmake ];
+      };
+      nanomsg = buildCratesLib {
+        name = "nanomsg";
+        version = "0.6.0";
+        hash = "92acc729e5eeccdbda9305770f4de493640be1c7645234b2d786684bbe3724e8";
+        deps = with self; [  all__libc.libc_0_2 nanomsg-sys];
       };
     };
 

@@ -31,5 +31,11 @@ rec {
     hash = "de84183ef3d525564b86cbdabe2b116a5a3f93ae440dd74bfc4a6a9ab6a162fe";
     deps = with allCrates; [  all__snowflake.snowflake_1_2 ];
   };
-  "id_tree_0_2" = id_tree_0_2_7;
-  "id_tree_0" = id_tree_0_2_7;}
+  id_tree_0_2_8 = buildCratesLib {
+    name = "id_tree";
+    version = "0.2.8";
+    hash = "26ea63cee13322f4906a39ad96d308d200a1ab7e9d0df8982217788dbdaed202";
+    deps = with allCrates; [  all__snowflake.snowflake_1_2 ];
+  };
+  "id_tree_0_2" = id_tree_0_2_8;
+  "id_tree_0" = id_tree_0_2_8;}

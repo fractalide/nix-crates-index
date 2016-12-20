@@ -26,5 +26,11 @@ rec {
     hash = "167852e03fcd0029c3ddebb5afb0715b2996f6e262b2c2aceaa7cd84edd4b158";
     deps = with allCrates; [  all__advapi32-sys.advapi32-sys_0_2 all__winapi.winapi_0_2 all__secur32-sys.secur32-sys_0_2 all__kernel32-sys.kernel32-sys_0_2 all__lazy_static.lazy_static_0_2 all__crypt32-sys.crypt32-sys_0_2 all__winapi-build.winapi-build_0_1 ];
   };
-  "schannel_0_1" = schannel_0_1_1;
-  "schannel_0" = schannel_0_1_1;}
+  schannel_0_1_2 = buildCratesLib {
+    name = "schannel";
+    version = "0.1.2";
+    hash = "0168331892e26bcd763535c1edd4b850708d0288b0e73942c116bbbf8e903c7f";
+    deps = with allCrates; [  all__winapi.winapi_0_2 all__secur32-sys.secur32-sys_0_2 all__crypt32-sys.crypt32-sys_0_2 all__lazy_static.lazy_static_0_2 all__kernel32-sys.kernel32-sys_0_2 all__advapi32-sys.advapi32-sys_0_2 all__winapi-build.winapi-build_0_1 ];
+  };
+  "schannel_0_1" = schannel_0_1_2;
+  "schannel_0" = schannel_0_1_2;}

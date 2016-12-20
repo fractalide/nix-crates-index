@@ -203,5 +203,17 @@ rec {
     hash = "572546fa89133cfef0c058b083169df378c8207ab44d08796bec2d46e7cb67b6";
     deps = with allCrates; [  all__nom.nom_2_0 all__smallvec.smallvec_0_2 ];
   };
-  "control-code_0_5" = control-code_0_5_1;
-  "control-code_0" = control-code_0_5_1;}
+  control-code_0_5_2 = buildCratesLib {
+    name = "control-code";
+    version = "0.5.2";
+    hash = "9a87b4c25f4836cdd4eeba565556a08bf6ac7739b3f25040e488227fc1248ea8";
+    deps = with allCrates; [  all__smallvec.smallvec_0_2 all__nom.nom_2_0 ];
+  };
+  control-code_0_5_3 = buildCratesLib {
+    name = "control-code";
+    version = "0.5.3";
+    hash = "40058f8ac267a1d679ab16825b0a343bb0188c7b8b45e617155efa2425d6bb9a";
+    deps = with allCrates; [  all__nom.nom_2_0 all__smallvec.smallvec_0_2 ];
+  };
+  "control-code_0_5" = control-code_0_5_3;
+  "control-code_0" = control-code_0_5_3;}

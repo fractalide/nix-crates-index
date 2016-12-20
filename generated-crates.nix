@@ -48,7 +48,7 @@
     "all__softprimes" = self.callPackage ./so/ft/softprimes.nix { };
     "softprimes" = all__softprimes."softprimes_0_1_0";
     "all__sourcemap" = self.callPackage ./so/ur/sourcemap.nix { };
-    "sourcemap" = all__sourcemap."sourcemap_0_9_1";
+    "sourcemap" = all__sourcemap."sourcemap_0_10_0";
     "all__sotassl-sys-extras" = self.callPackage ./so/ta/sotassl-sys-extras.nix { };
     "sotassl-sys-extras" = all__sotassl-sys-extras."sotassl-sys-extras_0_7_1400";
     "all__sotassl-sys" = self.callPackage ./so/ta/sotassl-sys.nix { };
@@ -356,7 +356,7 @@
     "all__unicorn-messages" = self.callPackage ./un/ic/unicorn-messages.nix { };
     "unicorn-messages" = all__unicorn-messages."unicorn-messages_0_0_1";
     "all__unicode-bidi" = self.callPackage ./un/ic/unicode-bidi.nix { };
-    "unicode-bidi" = all__unicode-bidi."unicode-bidi_0_2_3";
+    "unicode-bidi" = all__unicode-bidi."unicode-bidi_0_2_4";
     "all__unicode-reverse" = self.callPackage ./un/ic/unicode-reverse.nix { };
     "unicode-reverse" = all__unicode-reverse."unicode-reverse_1_0_1";
     "all__unicorn-rpc" = self.callPackage ./un/ic/unicorn-rpc.nix { };
@@ -364,7 +364,7 @@
     "all__unicode-brackets" = self.callPackage ./un/ic/unicode-brackets.nix { };
     "unicode-brackets" = all__unicode-brackets."unicode-brackets_0_1_1";
     "all__unicode-normalization" = self.callPackage ./un/ic/unicode-normalization.nix { };
-    "unicode-normalization" = all__unicode-normalization."unicode-normalization_0_1_2";
+    "unicode-normalization" = all__unicode-normalization."unicode-normalization_0_1_3";
     "all__unicode_hfwidth" = self.callPackage ./un/ic/unicode_hfwidth.nix { };
     "unicode_hfwidth" = all__unicode_hfwidth."unicode_hfwidth_0_2_0";
     "all__unicode-script" = self.callPackage ./un/ic/unicode-script.nix { };
@@ -957,6 +957,8 @@
     "tokio-signal" = all__tokio-signal."tokio-signal_0_1_0";
     "all__tokio-graphql" = self.callPackage ./to/ki/tokio-graphql.nix { };
     "tokio-graphql" = all__tokio-graphql."tokio-graphql_0_1_0";
+    "all__tokio-dns-unofficial" = self.callPackage ./to/ki/tokio-dns-unofficial.nix { };
+    "tokio-dns-unofficial" = all__tokio-dns-unofficial."tokio-dns-unofficial_0_1_1";
     "all__tokio-inotify" = self.callPackage ./to/ki/tokio-inotify.nix { };
     "tokio-inotify" = all__tokio-inotify."tokio-inotify_0_3_0";
     "all__tokio-http2" = self.callPackage ./to/ki/tokio-http2.nix { };
@@ -1468,13 +1470,13 @@
     "all__security-sys" = self.callPackage ./se/cu/security-sys.nix { };
     "security-sys" = all__security-sys."security-sys_0_0_1";
     "all__security-framework" = self.callPackage ./se/cu/security-framework.nix { };
-    "security-framework" = all__security-framework."security-framework_0_1_9";
+    "security-framework" = all__security-framework."security-framework_0_1_10";
     "all__secur32-sys" = self.callPackage ./se/cu/secur32-sys.nix { };
     "secur32-sys" = all__secur32-sys."secur32-sys_0_2_0";
     "all__secure_serialisation" = self.callPackage ./se/cu/secure_serialisation.nix { };
     "secure_serialisation" = all__secure_serialisation."secure_serialisation_0_3_0";
     "all__security-framework-sys" = self.callPackage ./se/cu/security-framework-sys.nix { };
-    "security-framework-sys" = all__security-framework-sys."security-framework-sys_0_1_9";
+    "security-framework-sys" = all__security-framework-sys."security-framework-sys_0_1_10";
     "all__secret" = self.callPackage ./se/cr/secret.nix { };
     "secret" = all__secret."secret_0_2_0";
     "all__secrets" = self.callPackage ./se/cr/secrets.nix { };
@@ -1620,7 +1622,7 @@
     "all__iploc" = self.callPackage ./ip/lo/iploc.nix { };
     "iploc" = all__iploc."iploc_0_1_0";
     "all__ipnetwork" = self.callPackage ./ip/ne/ipnetwork.nix { };
-    "ipnetwork" = all__ipnetwork."ipnetwork_0_10_0";
+    "ipnetwork" = all__ipnetwork."ipnetwork_0_11_0";
     "all__iptrap" = self.callPackage ./ip/tr/iptrap.nix { };
     "iptrap" = all__iptrap."iptrap_1_0_4";
     "all__ipslim" = self.callPackage ./ip/sl/ipslim.nix { };
@@ -1860,7 +1862,7 @@
     "all__fraction" = self.callPackage ./fr/ac/fraction.nix { };
     "fraction" = all__fraction."fraction_0_3_4";
     "all__fractal-api" = self.callPackage ./fr/ac/fractal-api.nix { };
-    "fractal-api" = all__fractal-api."fractal-api_0_8_0";
+    "fractal-api" = all__fractal-api."fractal-api_0_9_0";
     "all__fractal-dto" = self.callPackage ./fr/ac/fractal-dto.nix { };
     "fractal-dto" = all__fractal-dto."fractal-dto_0_8_0";
     "all__fractal" = self.callPackage ./fr/ac/fractal.nix { };
@@ -1941,6 +1943,8 @@
     "http-range" = all__http-range."http-range_0_1_1";
     "all__httpdate" = self.callPackage ./ht/tp/httpdate.nix { };
     "httpdate" = all__httpdate."httpdate_0_1_0";
+    "all__https" = self.callPackage ./ht/tp/https.nix { };
+    "https" = all__https."https_0_1_0";
     "all__http_handler" = self.callPackage ./ht/tp/http_handler.nix { };
     "http_handler" = all__http_handler."http_handler_0_0_0";
     "all__http_parser" = self.callPackage ./ht/tp/http_parser.nix { };
@@ -1988,7 +1992,7 @@
     "all__postgres_range" = self.callPackage ./po/st/postgres_range.nix { };
     "postgres_range" = all__postgres_range."postgres_range_0_8_2";
     "all__postgres" = self.callPackage ./po/st/postgres.nix { };
-    "postgres" = all__postgres."postgres_0_13_3";
+    "postgres" = all__postgres."postgres_0_13_4";
     "all__postgres-derive-codegen" = self.callPackage ./po/st/postgres-derive-codegen.nix { };
     "postgres-derive-codegen" = all__postgres-derive-codegen."postgres-derive-codegen_0_2_2";
     "all__postgres-binary-copy" = self.callPackage ./po/st/postgres-binary-copy.nix { };
@@ -2395,6 +2399,8 @@
     "ares" = all__ares."ares_0_1_0";
     "all__arcball-cgmath" = self.callPackage ./ar/cb/arcball-cgmath.nix { };
     "arcball-cgmath" = all__arcball-cgmath."arcball-cgmath_0_4_0";
+    "all__arthas_plugin" = self.callPackage ./ar/th/arthas_plugin.nix { };
+    "arthas_plugin" = all__arthas_plugin."arthas_plugin_0_1_0";
     "all__arraymap" = self.callPackage ./ar/ra/arraymap.nix { };
     "arraymap" = all__arraymap."arraymap_0_1_0";
     "all__array" = self.callPackage ./ar/ra/array.nix { };
@@ -2478,7 +2484,7 @@
     "all__xaswitch-sys" = self.callPackage ./xa/sw/xaswitch-sys.nix { };
     "xaswitch-sys" = all__xaswitch-sys."xaswitch-sys_0_0_1";
     "all__xargo" = self.callPackage ./xa/rg/xargo.nix { };
-    "xargo" = all__xargo."xargo_0_2_2";
+    "xargo" = all__xargo."xargo_0_2_3";
     "all__fbxcel" = self.callPackage ./fb/xc/fbxcel.nix { };
     "fbxcel" = all__fbxcel."fbxcel_0_0_1";
     "all__fbx_direct" = self.callPackage ./fb/x_/fbx_direct.nix { };
@@ -2574,7 +2580,7 @@
     "all__idea" = self.callPackage ./id/ea/idea.nix { };
     "idea" = all__idea."idea_0_0_0";
     "all__id_tree" = self.callPackage ./id/_t/id_tree.nix { };
-    "id_tree" = all__id_tree."id_tree_0_2_7";
+    "id_tree" = all__id_tree."id_tree_0_2_8";
     "all__idcontain" = self.callPackage ./id/co/idcontain.nix { };
     "idcontain" = all__idcontain."idcontain_0_6_0";
     "all__identify" = self.callPackage ./id/en/identify.nix { };
@@ -3331,6 +3337,8 @@
     "libflo_event" = all__libflo_event."libflo_event_0_1_0";
     "all__libflo_func" = self.callPackage ./li/bf/libflo_func.nix { };
     "libflo_func" = all__libflo_func."libflo_func_0_1_0";
+    "all__libflo_dynamic_event" = self.callPackage ./li/bf/libflo_dynamic_event.nix { };
+    "libflo_dynamic_event" = all__libflo_dynamic_event."libflo_dynamic_event_0_1_0";
     "all__libflo_module" = self.callPackage ./li/bf/libflo_module.nix { };
     "libflo_module" = all__libflo_module."libflo_module_0_1_0";
     "all__libfa-sys" = self.callPackage ./li/bf/libfa-sys.nix { };
@@ -3609,6 +3617,8 @@
     "throw" = all__throw."throw_0_1_1";
     "all__this-should-be-deleted" = self.callPackage ./th/is/this-should-be-deleted.nix { };
     "this-should-be-deleted" = all__this-should-be-deleted."this-should-be-deleted_0_0_1";
+    "all__this" = self.callPackage ./th/is/this.nix { };
+    "this" = all__this."this_0_1_0";
     "all__thrussh_scp" = self.callPackage ./th/ru/thrussh_scp.nix { };
     "thrussh_scp" = all__thrussh_scp."thrussh_scp_0_5_0";
     "all__thrust" = self.callPackage ./th/ru/thrust.nix { };
@@ -4326,7 +4336,7 @@
     "all__schannel-sys" = self.callPackage ./sc/ha/schannel-sys.nix { };
     "schannel-sys" = all__schannel-sys."schannel-sys_0_0_1";
     "all__schannel" = self.callPackage ./sc/ha/schannel.nix { };
-    "schannel" = all__schannel."schannel_0_1_1";
+    "schannel" = all__schannel."schannel_0_1_2";
     "all__sctp-sys" = self.callPackage ./sc/tp/sctp-sys.nix { };
     "sctp-sys" = all__sctp-sys."sctp-sys_0_0_7";
     "all__sccache" = self.callPackage ./sc/ca/sccache.nix { };
@@ -4464,7 +4474,7 @@
     "all__default-editor" = self.callPackage ./de/fa/default-editor.nix { };
     "default-editor" = all__default-editor."default-editor_0_1_0";
     "all__deflate" = self.callPackage ./de/fl/deflate.nix { };
-    "deflate" = all__deflate."deflate_0_6_0";
+    "deflate" = all__deflate."deflate_0_7_0";
     "all__devicemapper" = self.callPackage ./de/vi/devicemapper.nix { };
     "devicemapper" = all__devicemapper."devicemapper_0_4_0";
     "all__device_tree" = self.callPackage ./de/vi/device_tree.nix { };
@@ -4514,9 +4524,9 @@
     "all__rose_tree" = self.callPackage ./ro/se/rose_tree.nix { };
     "rose_tree" = all__rose_tree."rose_tree_0_1_2";
     "all__roads-from-nd" = self.callPackage ./ro/ad/roads-from-nd.nix { };
-    "roads-from-nd" = all__roads-from-nd."roads-from-nd_0_1_0";
+    "roads-from-nd" = all__roads-from-nd."roads-from-nd_0_1_1";
     "all__roaring" = self.callPackage ./ro/ar/roaring.nix { };
-    "roaring" = all__roaring."roaring_0_4_0";
+    "roaring" = all__roaring."roaring_0_4_2";
     "all__rovr" = self.callPackage ./ro/vr/rovr.nix { };
     "rovr" = all__rovr."rovr_0_0_2";
     "all__rocksdb-sys" = self.callPackage ./ro/ck/rocksdb-sys.nix { };
@@ -4549,6 +4559,8 @@
     "roller" = all__roller."roller_0_1_0";
     "all__roots" = self.callPackage ./ro/ot/roots.nix { };
     "roots" = all__roots."roots_0_0_2";
+    "all__rotary-encoder" = self.callPackage ./ro/ta/rotary-encoder.nix { };
+    "rotary-encoder" = all__rotary-encoder."rotary-encoder_0_1_0";
     "all__routing" = self.callPackage ./ro/ut/routing.nix { };
     "routing" = all__routing."routing_0_27_1";
     "all__route-recognizer" = self.callPackage ./ro/ut/route-recognizer.nix { };
@@ -4636,7 +4648,7 @@
     "all__mraa" = self.callPackage ./mr/aa/mraa.nix { };
     "mraa" = all__mraa."mraa_0_0_1";
     "all__mrusty" = self.callPackage ./mr/us/mrusty.nix { };
-    "mrusty" = all__mrusty."mrusty_0_5_1";
+    "mrusty" = all__mrusty."mrusty_1_0_0";
     "all__mri-sys" = self.callPackage ./mr/i-/mri-sys.nix { };
     "mri-sys" = all__mri-sys."mri-sys_0_1_9";
     "all__ustulation-test1" = self.callPackage ./us/tu/ustulation-test1.nix { };
@@ -5081,6 +5093,8 @@
     "rspec" = all__rspec."rspec_1_0_0";
     "all__rs-auto-sync" = self.callPackage ./rs/-a/rs-auto-sync.nix { };
     "rs-auto-sync" = all__rs-auto-sync."rs-auto-sync_0_1_7";
+    "all__rs6502" = self.callPackage ./rs/65/rs6502.nix { };
+    "rs6502" = all__rs6502."rs6502_0_1_0";
     "all__rsmtp" = self.callPackage ./rs/mt/rsmtp.nix { };
     "rsmtp" = all__rsmtp."rsmtp_0_1_1";
     "all__rsmt2" = self.callPackage ./rs/mt/rsmt2.nix { };
@@ -5208,7 +5222,7 @@
     "all__dungen" = self.callPackage ./du/ng/dungen.nix { };
     "dungen" = all__dungen."dungen_0_1_2";
     "all__eetf" = self.callPackage ./ee/tf/eetf.nix { };
-    "eetf" = all__eetf."eetf_0_3_5";
+    "eetf" = all__eetf."eetf_0_3_6";
     "all__g-k-crates-io-client" = self.callPackage ./g-/k-/g-k-crates-io-client.nix { };
     "g-k-crates-io-client" = all__g-k-crates-io-client."g-k-crates-io-client_0_4_0";
     "all__gdiplus-sys" = self.callPackage ./gd/ip/gdiplus-sys.nix { };
@@ -5925,6 +5939,8 @@
     "human_name" = all__human_name."human_name_0_6_2";
     "all__humanbool" = self.callPackage ./hu/ma/humanbool.nix { };
     "humanbool" = all__humanbool."humanbool_1_0_0";
+    "all__human-hash" = self.callPackage ./hu/ma/human-hash.nix { };
+    "human-hash" = all__human-hash."human-hash_0_1_1";
     "all__humantime" = self.callPackage ./hu/ma/humantime.nix { };
     "humantime" = all__humantime."humantime_1_0_0";
     "all__humanize" = self.callPackage ./hu/ma/humanize.nix { };
@@ -6346,7 +6362,7 @@
     "all__context_bind" = self.callPackage ./co/nt/context_bind.nix { };
     "context_bind" = all__context_bind."context_bind_0_0_2";
     "all__control-code" = self.callPackage ./co/nt/control-code.nix { };
-    "control-code" = all__control-code."control-code_0_5_1";
+    "control-code" = all__control-code."control-code_0_5_3";
     "all__containers" = self.callPackage ./co/nt/containers.nix { };
     "containers" = all__containers."containers_0_1_1";
     "all__content-blocker" = self.callPackage ./co/nt/content-blocker.nix { };
@@ -6618,7 +6634,7 @@
     "all__llamadb" = self.callPackage ./ll/am/llamadb.nix { };
     "llamadb" = all__llamadb."llamadb_0_0_1";
     "all__either_n" = self.callPackage ./ei/th/either_n.nix { };
-    "either_n" = all__either_n."either_n_0_1_1";
+    "either_n" = all__either_n."either_n_0_2_0";
     "all__either" = self.callPackage ./ei/th/either.nix { };
     "either" = all__either."either_1_0_2";
     "all__eirc" = self.callPackage ./ei/rc/eirc.nix { };
@@ -8016,7 +8032,7 @@
     "all__cmacros" = self.callPackage ./cm/ac/cmacros.nix { };
     "cmacros" = all__cmacros."cmacros_0_1_0";
     "all__cmake" = self.callPackage ./cm/ak/cmake.nix { };
-    "cmake" = all__cmake."cmake_0_1_19";
+    "cmake" = all__cmake."cmake_0_1_20";
     "all__cmdline_words_parser" = self.callPackage ./cm/dl/cmdline_words_parser.nix { };
     "cmdline_words_parser" = all__cmdline_words_parser."cmdline_words_parser_0_0_2";
     "all__cmd-pandoc" = self.callPackage ./cm/d-/cmd-pandoc.nix { };
@@ -8064,7 +8080,7 @@
     "all__encoding" = self.callPackage ./en/co/encoding.nix { };
     "encoding" = all__encoding."encoding_0_2_33";
     "all__encoding_rs" = self.callPackage ./en/co/encoding_rs.nix { };
-    "encoding_rs" = all__encoding_rs."encoding_rs_0_3_0";
+    "encoding_rs" = all__encoding_rs."encoding_rs_0_3_1";
     "all__encode" = self.callPackage ./en/co/encode.nix { };
     "encode" = all__encode."encode_0_0_2";
     "all__encoding_index_tests" = self.callPackage ./en/co/encoding_index_tests.nix { };
@@ -8870,7 +8886,7 @@
     "all__table" = self.callPackage ./ta/bl/table.nix { };
     "table" = all__table."table_0_1_1";
     "all__tablegen" = self.callPackage ./ta/bl/tablegen.nix { };
-    "tablegen" = all__tablegen."tablegen_0_1_1";
+    "tablegen" = all__tablegen."tablegen_0_1_2";
     "all__target_info" = self.callPackage ./ta/rg/target_info.nix { };
     "target_info" = all__target_info."target_info_0_1_0";
     "all__target_build_utils" = self.callPackage ./ta/rg/target_build_utils.nix { };
@@ -9554,7 +9570,7 @@
     "all__matrixgraph" = self.callPackage ./ma/tr/matrixgraph.nix { };
     "matrixgraph" = all__matrixgraph."matrixgraph_0_1_0";
     "all__matrixmultiply" = self.callPackage ./ma/tr/matrixmultiply.nix { };
-    "matrixmultiply" = all__matrixmultiply."matrixmultiply_0_1_12";
+    "matrixmultiply" = all__matrixmultiply."matrixmultiply_0_1_13";
     "all__matrices" = self.callPackage ./ma/tr/matrices.nix { };
     "matrices" = all__matrices."matrices_0_1_0";
     "all__marvin" = self.callPackage ./ma/rv/marvin.nix { };
@@ -9811,6 +9827,8 @@
     "tylar" = all__tylar."tylar_0_2_2";
     "all__fountaincode" = self.callPackage ./fo/un/fountaincode.nix { };
     "fountaincode" = all__fountaincode."fountaincode_0_0_8";
+    "all__fountain_codes" = self.callPackage ./fo/un/fountain_codes.nix { };
+    "fountain_codes" = all__fountain_codes."fountain_codes_0_1_0";
     "all__forklift" = self.callPackage ./fo/rk/forklift.nix { };
     "forklift" = all__forklift."forklift_0_1_0";
     "all__forkjoin" = self.callPackage ./fo/rk/forkjoin.nix { };
@@ -10211,6 +10229,8 @@
     "fitsio-sys" = all__fitsio-sys."fitsio-sys_0_2_3";
     "all__fitsio" = self.callPackage ./fi/ts/fitsio.nix { };
     "fitsio" = all__fitsio."fitsio_0_3_1";
+    "all__fitsio-sys-bindgen" = self.callPackage ./fi/ts/fitsio-sys-bindgen.nix { };
+    "fitsio-sys-bindgen" = all__fitsio-sys-bindgen."fitsio-sys-bindgen_0_0_1";
     "all__field-offset" = self.callPackage ./fi/el/field-offset.nix { };
     "field-offset" = all__field-offset."field-offset_0_1_1";
     "all__fiz-math" = self.callPackage ./fi/z-/fiz-math.nix { };
@@ -10854,7 +10874,7 @@
     "all__rust_events" = self.callPackage ./ru/st/rust_events.nix { };
     "rust_events" = all__rust_events."rust_events_0_9_0";
     "all__rustfbp" = self.callPackage ./ru/st/rustfbp.nix { };
-    "rustfbp" = all__rustfbp."rustfbp_0_3_25";
+    "rustfbp" = all__rustfbp."rustfbp_0_3_26";
     "all__rust-install" = self.callPackage ./ru/st/rust-install.nix { };
     "rust-install" = all__rust-install."rust-install_0_0_4";
     "all__rust-github" = self.callPackage ./ru/st/rust-github.nix { };
@@ -11080,7 +11100,7 @@
     "all__walker" = self.callPackage ./wa/lk/walker.nix { };
     "walker" = all__walker."walker_1_0_0";
     "all__watchexec" = self.callPackage ./wa/tc/watchexec.nix { };
-    "watchexec" = all__watchexec."watchexec_1_5_0";
+    "watchexec" = all__watchexec."watchexec_1_6_0";
     "all__warp10" = self.callPackage ./wa/rp/warp10.nix { };
     "warp10" = all__warp10."warp10_0_4_1";
     "all__wavelet" = self.callPackage ./wa/ve/wavelet.nix { };
@@ -11950,7 +11970,7 @@
     "all__packagemerge" = self.callPackage ./pa/ck/packagemerge.nix { };
     "packagemerge" = all__packagemerge."packagemerge_0_1_0";
     "all__panty" = self.callPackage ./pa/nt/panty.nix { };
-    "panty" = all__panty."panty_0_2_0";
+    "panty" = all__panty."panty_0_3_0";
     "all__parapet" = self.callPackage ./pa/ra/parapet.nix { };
     "parapet" = all__parapet."parapet_0_1_1";
     "all__params" = self.callPackage ./pa/ra/params.nix { };
@@ -12055,6 +12075,8 @@
     "pair_stack" = all__pair_stack."pair_stack_0_1_0";
     "all__lbfgsb-sys" = self.callPackage ./lb/fg/lbfgsb-sys.nix { };
     "lbfgsb-sys" = all__lbfgsb-sys."lbfgsb-sys_0_1_0";
+    "all__ndarray-odeint" = self.callPackage ./nd/ar/ndarray-odeint.nix { };
+    "ndarray-odeint" = all__ndarray-odeint."ndarray-odeint_0_1_0";
     "all__ndarray-rand" = self.callPackage ./nd/ar/ndarray-rand.nix { };
     "ndarray-rand" = all__ndarray-rand."ndarray-rand_0_3_1";
     "all__ndarray" = self.callPackage ./nd/ar/ndarray.nix { };
@@ -12259,6 +12281,8 @@
     "swf-headers" = all__swf-headers."swf-headers_0_2_0";
     "all__swdevice-sys" = self.callPackage ./sw/de/swdevice-sys.nix { };
     "swdevice-sys" = all__swdevice-sys."swdevice-sys_0_0_1";
+    "all__swc-hosts" = self.callPackage ./sw/c-/swc-hosts.nix { };
+    "swc-hosts" = all__swc-hosts."swc-hosts_0_1_1";
     "all__switchboard" = self.callPackage ./sw/it/switchboard.nix { };
     "switchboard" = all__switchboard."switchboard_0_1_0";
     "all__swapi" = self.callPackage ./sw/ap/swapi.nix { };
@@ -12472,7 +12496,7 @@
     "all__fst-bin" = self.callPackage ./fs/t-/fst-bin.nix { };
     "fst-bin" = all__fst-bin."fst-bin_0_1_2";
     "all__fswatch-sys" = self.callPackage ./fs/wa/fswatch-sys.nix { };
-    "fswatch-sys" = all__fswatch-sys."fswatch-sys_0_1_5";
+    "fswatch-sys" = all__fswatch-sys."fswatch-sys_0_1_6";
     "all__fsuipc" = self.callPackage ./fs/ui/fsuipc.nix { };
     "fsuipc" = all__fsuipc."fsuipc_0_3_0";
     "all__fsevent-sys" = self.callPackage ./fs/ev/fsevent-sys.nix { };
@@ -12658,7 +12682,7 @@
     "all__inconel" = self.callPackage ./in/co/inconel.nix { };
     "inconel" = all__inconel."inconel_0_1_0";
     "all__init_with" = self.callPackage ./in/it/init_with.nix { };
-    "init_with" = all__init_with."init_with_0_1_1";
+    "init_with" = all__init_with."init_with_0_1_2";
     "all__inotify" = self.callPackage ./in/ot/inotify.nix { };
     "inotify" = all__inotify."inotify_0_3_0";
     "all__inner" = self.callPackage ./in/ne/inner.nix { };
@@ -13078,7 +13102,7 @@
     "all__chipmunk" = self.callPackage ./ch/ip/chipmunk.nix { };
     "chipmunk" = all__chipmunk."chipmunk_0_0_2";
     "all__chip-gpio" = self.callPackage ./ch/ip/chip-gpio.nix { };
-    "chip-gpio" = all__chip-gpio."chip-gpio_0_1_0";
+    "chip-gpio" = all__chip-gpio."chip-gpio_0_1_1";
     "all__challonge" = self.callPackage ./ch/al/challonge.nix { };
     "challonge" = all__challonge."challonge_0_4_0";
     "all__chalk" = self.callPackage ./ch/al/chalk.nix { };
@@ -14003,6 +14027,8 @@
     "cargo-doc-coverage" = all__cargo-doc-coverage."cargo-doc-coverage_1_0_0";
     "all__cargo-open" = self.callPackage ./ca/rg/cargo-open.nix { };
     "cargo-open" = all__cargo-open."cargo-open_0_3_0";
+    "all__cargo-cult" = self.callPackage ./ca/rg/cargo-cult.nix { };
+    "cargo-cult" = all__cargo-cult."cargo-cult_0_1_0";
     "all__cargo-lipo" = self.callPackage ./ca/rg/cargo-lipo.nix { };
     "cargo-lipo" = all__cargo-lipo."cargo-lipo_1_0_1";
     "all__cargo-erlangapp" = self.callPackage ./ca/rg/cargo-erlangapp.nix { };

@@ -7,5 +7,11 @@ rec {
     hash = "2f5d2282c7c55f51ff9e5ceda27e3b7570e2c53121a3ea61d39d807481a944d6";
     deps = with allCrates; [  all__sysfs_gpio.sysfs_gpio_0_4 all__lazy_static.lazy_static_0_2 all__glob.glob_0_2 ];
   };
-  "chip-gpio_0_1" = chip-gpio_0_1_0;
-  "chip-gpio_0" = chip-gpio_0_1_0;}
+  chip-gpio_0_1_1 = buildCratesLib {
+    name = "chip-gpio";
+    version = "0.1.1";
+    hash = "f171be3ab4450d8bca8786593895a2eeeb19d9563e97c14203c3d4874081dbc0";
+    deps = with allCrates; [  all__glob.glob_0_2 all__sysfs_gpio.sysfs_gpio_0_5 all__lazy_static.lazy_static_0_2 ];
+  };
+  "chip-gpio_0_1" = chip-gpio_0_1_1;
+  "chip-gpio_0" = chip-gpio_0_1_1;}

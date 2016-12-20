@@ -121,5 +121,11 @@ rec {
     hash = "8ebde6558caa6cf9bffe5750c66c517e7f9d470d59fcd48b0acbc0a02d62a82a";
     deps = with allCrates; [  all__gcc.gcc_0_3 ];
   };
-  "cmake_0_1" = cmake_0_1_19;
-  "cmake_0" = cmake_0_1_19;}
+  cmake_0_1_20 = buildCratesLib {
+    name = "cmake";
+    version = "0.1.20";
+    hash = "a3a6805df695087e7c1bcd9a82e03ad6fb864c8e67ac41b1348229ce5b7f0407";
+    deps = with allCrates; [  all__gcc.gcc_0_3 ];
+  };
+  "cmake_0_1" = cmake_0_1_20;
+  "cmake_0" = cmake_0_1_20;}
