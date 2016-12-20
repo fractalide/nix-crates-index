@@ -6696,7 +6696,7 @@
     "all__itoa" = self.callPackage ./it/oa/itoa.nix { };
     "itoa" = all__itoa."itoa_0_1_1";
     "all__itertools" = self.callPackage ./it/er/itertools.nix { };
-    "itertools" = all__itertools."itertools_0_5_7";
+    "itertools" = all__itertools."itertools_0_5_8";
     "all__iter-progress" = self.callPackage ./it/er/iter-progress.nix { };
     "iter-progress" = all__iter-progress."iter-progress_0_3_0";
     "all__iter-read" = self.callPackage ./it/er/iter-read.nix { };
@@ -9816,7 +9816,7 @@
     "all__type-level" = self.callPackage ./ty/pe/type-level.nix { };
     "type-level" = all__type-level."type-level_0_0_1";
     "all__typenum_loops" = self.callPackage ./ty/pe/typenum_loops.nix { };
-    "typenum_loops" = all__typenum_loops."typenum_loops_0_1_1";
+    "typenum_loops" = all__typenum_loops."typenum_loops_0_1_2";
     "all__typeable" = self.callPackage ./ty/pe/typeable.nix { };
     "typeable" = all__typeable."typeable_0_1_2";
     "all__typeinfo" = self.callPackage ./ty/pe/typeinfo.nix { };
@@ -10874,7 +10874,7 @@
     "all__rust_events" = self.callPackage ./ru/st/rust_events.nix { };
     "rust_events" = all__rust_events."rust_events_0_9_0";
     "all__rustfbp" = self.callPackage ./ru/st/rustfbp.nix { };
-    "rustfbp" = all__rustfbp."rustfbp_0_3_26";
+    "rustfbp" = all__rustfbp."rustfbp_0_3_27";
     "all__rust-install" = self.callPackage ./ru/st/rust-install.nix { };
     "rust-install" = all__rust-install."rust-install_0_0_4";
     "all__rust-github" = self.callPackage ./ru/st/rust-github.nix { };
@@ -10898,7 +10898,7 @@
     "all__rust-portaudio" = self.callPackage ./ru/st/rust-portaudio.nix { };
     "rust-portaudio" = all__rust-portaudio."rust-portaudio_0_3_1";
     "all__rusty-machine" = self.callPackage ./ru/st/rusty-machine.nix { };
-    "rusty-machine" = all__rusty-machine."rusty-machine_0_5_2";
+    "rusty-machine" = all__rusty-machine."rusty-machine_0_5_3";
     "all__rustplotlib" = self.callPackage ./ru/st/rustplotlib.nix { };
     "rustplotlib" = all__rustplotlib."rustplotlib_0_0_4";
     "all__rust-life" = self.callPackage ./ru/st/rust-life.nix { };
@@ -11970,7 +11970,7 @@
     "all__packagemerge" = self.callPackage ./pa/ck/packagemerge.nix { };
     "packagemerge" = all__packagemerge."packagemerge_0_1_0";
     "all__panty" = self.callPackage ./pa/nt/panty.nix { };
-    "panty" = all__panty."panty_0_3_0";
+    "panty" = all__panty."panty_0_4_0";
     "all__parapet" = self.callPackage ./pa/ra/parapet.nix { };
     "parapet" = all__parapet."parapet_0_1_1";
     "all__params" = self.callPackage ./pa/ra/params.nix { };

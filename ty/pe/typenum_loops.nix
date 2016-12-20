@@ -13,5 +13,11 @@ rec {
     hash = "5ef83fd5ed1b7c15e843255f2bc9819f63a1193764bdc1d67db1428e3629a72f";
     deps = with allCrates; [  all__typenum.typenum_1_5 ];
   };
-  "typenum_loops_0_1" = typenum_loops_0_1_1;
-  "typenum_loops_0" = typenum_loops_0_1_1;}
+  typenum_loops_0_1_2 = buildCratesLib {
+    name = "typenum_loops";
+    version = "0.1.2";
+    hash = "4f8f64c04eac6c6dd05b7f23ac51e8f06478cc4575b7f26eb3d81b698cd6db98";
+    deps = with allCrates; [  all__typenum.typenum_1_5 ];
+  };
+  "typenum_loops_0_1" = typenum_loops_0_1_2;
+  "typenum_loops_0" = typenum_loops_0_1_2;}

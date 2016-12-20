@@ -27,5 +27,12 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__unix_socket.unix_socket_0_5 all__argparse.argparse_0_2 all__inotify.inotify_0_3 all__lazy_static.lazy_static_0_2 all__walkdir.walkdir_1_0_3 all__rustc-serialize.rustc-serialize_0_3 all__ctrlc.ctrlc_2_0 all__x11.x11_2_11 all__env_logger.env_logger_0_3 all__log.log_0_3 ];
   };
   "panty_0_2" = panty_0_2_0;
+  panty_0_4_0 = buildCratesLib {
+    name = "panty";
+    version = "0.4.0";
+    hash = "d9308f5a98bc5930f36d25a4c2d8872bf3125cf44af66b3c4b90f975a0b5222a";
+    deps = with allCrates; [  all__env_logger.env_logger_0_3 all__lazy_static.lazy_static_0_2 all__rustc-serialize.rustc-serialize_0_3 all__rand.rand_0_3 all__x11.x11_2_11 all__unix_socket.unix_socket_0_5 all__ctrlc.ctrlc_2_0 all__walkdir.walkdir_1_0_3 all__inotify.inotify_0_3 all__log.log_0_3 all__argparse.argparse_0_2 all__libc.libc_0_2 ];
+  };
   "panty_0_3" = panty_0_3_0;
-  "panty_0" = panty_0_3_0;}
+  "panty_0_4" = panty_0_4_0;
+  "panty_0" = panty_0_4_0;}

@@ -234,5 +234,11 @@ rec {
     hash = "88479f307acf62eea3abd7161c7cabf2dc460d190d0e8bcc0657d379d48808cb";
     deps = with allCrates; [  all__rand.rand_0_3 all__rulinalg.rulinalg_0_3 all__num.num_0_1 ];
   };
-  "rusty-machine_0_5" = rusty-machine_0_5_2;
-  "rusty-machine_0" = rusty-machine_0_5_2;}
+  rusty-machine_0_5_3 = buildCratesLib {
+    name = "rusty-machine";
+    version = "0.5.3";
+    hash = "bac3669f19c5ff981ab7304cde9e6642fdc87fd29eb5093de216854c01953d8f";
+    deps = with allCrates; [  all__rand.rand_0_3 all__num.num_0_1 all__rulinalg.rulinalg_0_3 ];
+  };
+  "rusty-machine_0_5" = rusty-machine_0_5_3;
+  "rusty-machine_0" = rusty-machine_0_5_3;}
