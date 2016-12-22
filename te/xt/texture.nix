@@ -25,5 +25,12 @@ rec {
     hash = "d2810a457799a2f8d215cf20ab3f06a3ef8b2d550f11a55206660890b3164b03";
     deps = with allCrates; [  all__linenoise-rust.linenoise-rust_0_2 ];
   };
+  texture_0_1_0 = buildCratesLib {
+    name = "texture";
+    version = "0.1.0";
+    hash = "a3774126e1c1999bc2b5a502528fb92e8a96bc06353d396e6027b34e7732daa8";
+    deps = with allCrates; [  all__linenoise-rust.linenoise-rust_0_2 ];
+  };
   "texture_0_0" = texture_0_0_4;
-  "texture_0" = texture_0_0_4;}
+  "texture_0_1" = texture_0_1_0;
+  "texture_0" = texture_0_1_0;}

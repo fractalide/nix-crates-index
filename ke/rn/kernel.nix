@@ -20,5 +20,12 @@ rec {
     deps = with allCrates; [  all__num.num_0_1 all__bitflags.bitflags_0_4 all__log.log_0_3 all__net2.net2_0_2 all__byteorder.byteorder_0_5 all__rand.rand_0_3 all__hwloc.hwloc_0_3 all__nix.nix_0_6 all__libc.libc_0_2 ];
   };
   "kernel_0_1" = kernel_0_1_1;
+  kernel_0_12_0 = buildCratesLib {
+    name = "kernel";
+    version = "0.12.0";
+    hash = "9ba2229643a3a24f5f8bc66cdf5c7cd1ccc7c66443171648cdcc6a3b55729996";
+    deps = with allCrates; [  all__lalrpop-util.lalrpop-util_0_12 all__num_cpus.num_cpus_1_0 all__log.log_0_3 all__deque.deque_0_3 all__net2.net2_0_2 all__bitflags.bitflags_0_4 all__time.time_0_1 all__byteorder.byteorder_0_5 all__hwloc.hwloc_0_3 all__fnv.fnv_1_0_5 all__rand.rand_0_3 all__env_logger.env_logger_0_3 all__num.num_0_1 all__lalrpop.lalrpop_0_12 all__libc.libc_0_2 all__nix.nix_0_6 ];
+  };
   "kernel_0_11" = kernel_0_11_0;
-  "kernel_0" = kernel_0_11_0;}
+  "kernel_0_12" = kernel_0_12_0;
+  "kernel_0" = kernel_0_12_0;}

@@ -85,5 +85,12 @@ rec {
     hash = "cb0c17968587e21d3fec90bd67dc2b7c956189a9e81ce4f8910172a787b66556";
     deps = with allCrates; [  tempdir ];
   };
+  atomicwrites_0_1_0 = buildCratesLib {
+    name = "atomicwrites";
+    version = "0.1.0";
+    hash = "8edec62589cb3dd13151771d9bc9bc52908c31f63fd7ed7d00822eb105665ff0";
+    deps = with allCrates; [  all__tempdir.tempdir_0_3 all__nix.nix_0_6 ];
+  };
   "atomicwrites_0_0" = atomicwrites_0_0_14;
-  "atomicwrites_0" = atomicwrites_0_0_14;}
+  "atomicwrites_0_1" = atomicwrites_0_1_0;
+  "atomicwrites_0" = atomicwrites_0_1_0;}

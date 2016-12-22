@@ -7,5 +7,11 @@ rec {
     hash = "0c9d08a565d475599dfea0734ee78fd93422c516fb3d639f253c3be7cc15ec35";
     deps = with allCrates; [  all__error-chain.error-chain_0_7 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
   };
-  "libflo_module_0_1" = libflo_module_0_1_0;
-  "libflo_module_0" = libflo_module_0_1_0;}
+  libflo_module_0_1_1 = buildCratesLib {
+    name = "libflo_module";
+    version = "0.1.1";
+    hash = "0f514c867ebf63c8eff655256a69833a6fcc9e95c039070aab83d0ff30c21dc0";
+    deps = with allCrates; [  all__error-chain.error-chain_0_7 all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
+  };
+  "libflo_module_0_1" = libflo_module_0_1_1;
+  "libflo_module_0" = libflo_module_0_1_1;}

@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  ];
   };
   "blh_0_1" = blh_0_1_0;
+  blh_0_3_0 = buildCratesLib {
+    name = "blh";
+    version = "0.3.0";
+    hash = "379493c6974e23be15cba02e8431706f84ec1bd6c334da7c32d5297812acde1d";
+    deps = with allCrates; [  all__approx.approx_0_1 all__euclid.euclid_0_10 ];
+  };
   "blh_0_2" = blh_0_2_0;
-  "blh_0" = blh_0_2_0;}
+  "blh_0_3" = blh_0_3_0;
+  "blh_0" = blh_0_3_0;}

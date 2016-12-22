@@ -133,5 +133,11 @@ rec {
     hash = "437be5fbc81e697accd688df7ef771a2a4d315e86003dc4f3cf794fd1bf5241a";
     deps = with allCrates; [  all__clap.clap_2 all__walkdir.walkdir_0_1 all__time.time_0_1 ];
   };
-  "rm-improved_0_11" = rm-improved_0_11_1;
-  "rm-improved_0" = rm-improved_0_11_1;}
+  rm-improved_0_11_2 = buildCratesLib {
+    name = "rm-improved";
+    version = "0.11.2";
+    hash = "157c83c5f0455df3dc7c77ecf98d4be52ccf529ef4aafcba56347ef99e2169b0";
+    deps = with allCrates; [  all__walkdir.walkdir_0_1 all__clap.clap_2 all__time.time_0_1 all__error-chain.error-chain_0_7 ];
+  };
+  "rm-improved_0_11" = rm-improved_0_11_2;
+  "rm-improved_0" = rm-improved_0_11_2;}

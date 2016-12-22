@@ -7,5 +7,12 @@ rec {
     hash = "2d9aaaab53d466cdcd7a8451399977ccb12f48dfbe07b9b26ee61d0176b721fa";
     deps = with allCrates; [  ];
   };
+  yaccas_0_2_1 = buildCratesLib {
+    name = "yaccas";
+    version = "0.2.1";
+    hash = "141190c0def2b1dd546df3f2ae0037de708d7ddd2b38ba1434c614b15fcb4b71";
+    deps = with allCrates; [  ];
+  };
   "yaccas_0_1" = yaccas_0_1_0;
-  "yaccas_0" = yaccas_0_1_0;}
+  "yaccas_0_2" = yaccas_0_2_1;
+  "yaccas_0" = yaccas_0_2_1;}

@@ -19,5 +19,11 @@ rec {
     hash = "6a89563eaf185762cf495c56cb16277549d2aaa7b1240d93338e8429fa33acd1";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
-  "freetype_0_1" = freetype_0_1_2;
-  "freetype_0" = freetype_0_1_2;}
+  freetype_0_1_3 = buildCratesLib {
+    name = "freetype";
+    version = "0.1.3";
+    hash = "812b23abc34a2cd1e1a0635a8d65e9bc83f2dd6e7879b92683ed0b9faaa629e5";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "freetype_0_1" = freetype_0_1_3;
+  "freetype_0" = freetype_0_1_3;}

@@ -7,5 +7,11 @@ rec {
     hash = "8febecf30a73f60fc82eb8fbaf876059bd6b59bc9ab5a3658780d1f1e004496b";
     deps = with allCrates; [  all__serde.serde_0_8 all__serde_derive.serde_derive_0_8 ];
   };
-  "serde_bencode_0_1" = serde_bencode_0_1_0;
-  "serde_bencode_0" = serde_bencode_0_1_0;}
+  serde_bencode_0_1_1 = buildCratesLib {
+    name = "serde_bencode";
+    version = "0.1.1";
+    hash = "b2646e8041765d34715a0726e9445ce1b27b2b6d9f5e85422d2cdc6a71b79d19";
+    deps = with allCrates; [  all__serde_derive.serde_derive_0_8 all__serde.serde_0_8 ];
+  };
+  "serde_bencode_0_1" = serde_bencode_0_1_1;
+  "serde_bencode_0" = serde_bencode_0_1_1;}

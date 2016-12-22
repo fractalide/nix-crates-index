@@ -7,5 +7,11 @@ rec {
     hash = "f0f1b76a9531c9b5faf3ccbaf9576f1d6daf6c207755b91d374756e3038e0dcb";
     deps = with allCrates; [  all__error-chain.error-chain_0_7 ];
   };
-  "libflo_error_0_1" = libflo_error_0_1_0;
-  "libflo_error_0" = libflo_error_0_1_0;}
+  libflo_error_0_1_1 = buildCratesLib {
+    name = "libflo_error";
+    version = "0.1.1";
+    hash = "acd1b8fc9c052139a61de9e202cf7f0924ac0c70ba0a0f5a13e4f5a57e757ecb";
+    deps = with allCrates; [  all__error-chain.error-chain_0_7 ];
+  };
+  "libflo_error_0_1" = libflo_error_0_1_1;
+  "libflo_error_0" = libflo_error_0_1_1;}

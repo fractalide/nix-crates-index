@@ -88,5 +88,12 @@ rec {
     hash = "cd00fb2e99c0dde9ca839751a3df53eda1bd4182d53c56493854cc77354309ad";
     deps = with allCrates; [  all__num-traits.num-traits_0_1 all__ndarray.ndarray_0_6 ];
   };
+  sprs_0_5_0 = buildCratesLib {
+    name = "sprs";
+    version = "0.5.0";
+    hash = "93ea0556f70a02332ddcf93789e3ab8abc40ff58bae6785116ba6a2e3a471cdf";
+    deps = with allCrates; [  all__ndarray.ndarray_0_7 all__num-traits.num-traits_0_1 ];
+  };
   "sprs_0_4" = sprs_0_4_1;
-  "sprs_0" = sprs_0_4_1;}
+  "sprs_0_5" = sprs_0_5_0;
+  "sprs_0" = sprs_0_5_0;}

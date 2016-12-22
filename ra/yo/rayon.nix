@@ -59,5 +59,12 @@ rec {
     deps = with allCrates; [  all__rand.rand_0_3 all__num_cpus.num_cpus_1_0 all__deque.deque_0_3 all__libc.libc_0_2 ];
   };
   "rayon_0_4" = rayon_0_4_3;
+  rayon_0_6_0 = buildCratesLib {
+    name = "rayon";
+    version = "0.6.0";
+    hash = "50c575b58c2b109e2fbc181820cbe177474f35610ff9e357dc75f6bac854ffbf";
+    deps = with allCrates; [  all__libc.libc_0_2 all__num_cpus.num_cpus_1_0 all__rand.rand_0_3 all__deque.deque_0_3 ];
+  };
   "rayon_0_5" = rayon_0_5_0;
-  "rayon_0" = rayon_0_5_0;}
+  "rayon_0_6" = rayon_0_6_0;
+  "rayon_0" = rayon_0_6_0;}

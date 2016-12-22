@@ -91,7 +91,7 @@ rec {
   ring_0_6_0 = buildCratesLib {
     name = "ring";
     version = "0.6.0";
-    hash = "0c9d14fdd6779c80311183b64598d57e640993fd1732119ce2cedb3234217532";
+    hash = "5b73d72b8e8ca10c9fea60eff2ca22dd0e45ec574a3cd5b7573b62a6a0ffa2ad";
     deps = with allCrates; [  all__untrusted.untrusted_0_3 all__lazy_static.lazy_static_0_2 ];
   };
   "ring_0_5" = ring_0_5_3;

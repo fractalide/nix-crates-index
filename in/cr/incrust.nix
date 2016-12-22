@@ -135,5 +135,11 @@ rec {
     hash = "2410db27fb67dd9376e2515dd5fcf3150498c46cf7e6a0a1be06da94184f640f";
     deps = with allCrates; [  all__nom.nom_2_0 all__maplit.maplit_0_1 all__marksman_escape.marksman_escape_0_1 all__log.log_0_3 ];
   };
-  "incrust_0_2" = incrust_0_2_9;
-  "incrust_0" = incrust_0_2_9;}
+  incrust_0_2_10 = buildCratesLib {
+    name = "incrust";
+    version = "0.2.10";
+    hash = "c1167bc651d9a4c69fad90a159b2e08657046c0bd1634cca38e35117face7aaa";
+    deps = with allCrates; [  all__marksman_escape.marksman_escape_0_1 all__log.log_0_3 all__maplit.maplit_0_1 all__nom.nom_2_0 ];
+  };
+  "incrust_0_2" = incrust_0_2_10;
+  "incrust_0" = incrust_0_2_10;}

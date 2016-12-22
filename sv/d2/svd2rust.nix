@@ -19,5 +19,11 @@ rec {
     hash = "c599d5a3b45459a277dea5325521164db270710dd9b250feaf8f326dba1df044";
     deps = with allCrates; [  all__quote.quote_0_3 all__inflections.inflections_1_0_0 all__svd-parser.svd-parser_0_1 all__clap.clap_2_14 all__syn.syn_0_9 ];
   };
-  "svd2rust_0_1" = svd2rust_0_1_2;
-  "svd2rust_0" = svd2rust_0_1_2;}
+  svd2rust_0_1_3 = buildCratesLib {
+    name = "svd2rust";
+    version = "0.1.3";
+    hash = "80f656df7f9e87714cbbc4dd87e51b873f17ea9028bb957e9d792094c04e102e";
+    deps = with allCrates; [  all__quote.quote_0_3 all__svd-parser.svd-parser_0_2 all__either.either_1_0_2 all__syn.syn_0_9 all__inflections.inflections_1_0_0 all__clap.clap_2_14 ];
+  };
+  "svd2rust_0_1" = svd2rust_0_1_3;
+  "svd2rust_0" = svd2rust_0_1_3;}

@@ -25,5 +25,11 @@ rec {
     hash = "caec6baccdd686cb9b7aac3775bb08bab9f732584d74f3a6c0071be60d250deb";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__libc.libc_0_2 all__winapi.winapi_0_2 all__gdi32-sys.gdi32-sys_0_2 all__serde.serde_0_8 all__kernel32-sys.kernel32-sys_0_2 ];
   };
-  "dwrote_0_1" = dwrote_0_1_3;
-  "dwrote_0" = dwrote_0_1_3;}
+  dwrote_0_1_4 = buildCratesLib {
+    name = "dwrote";
+    version = "0.1.4";
+    hash = "22f91bd605c96566d22699af63ad29a7417bd8a9493570450634858e80c27ff3";
+    deps = with allCrates; [  all__serde.serde_0_8 all__lazy_static.lazy_static_0_2 all__gdi32-sys.gdi32-sys_0_2 all__kernel32-sys.kernel32-sys_0_2 all__winapi.winapi_0_2 all__libc.libc_0_2 ];
+  };
+  "dwrote_0_1" = dwrote_0_1_4;
+  "dwrote_0" = dwrote_0_1_4;}

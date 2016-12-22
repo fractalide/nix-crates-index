@@ -158,5 +158,11 @@ rec {
     hash = "b523fa130b0bb6ad53303372c22e63debe7b7037b3ef96b0da0976adfbf72c8f";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
-  "ruby-sys_0_2" = ruby-sys_0_2_19;
-  "ruby-sys_0" = ruby-sys_0_2_19;}
+  ruby-sys_0_2_20 = buildCratesLib {
+    name = "ruby-sys";
+    version = "0.2.20";
+    hash = "e71509f17ce93733dc196258e168b58050490a156b04563816a8120a74ba04c7";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "ruby-sys_0_2" = ruby-sys_0_2_20;
+  "ruby-sys_0" = ruby-sys_0_2_20;}

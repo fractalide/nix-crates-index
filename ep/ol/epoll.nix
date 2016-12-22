@@ -92,5 +92,13 @@ rec {
   };
   "epoll_0_6" = epoll_0_6_0;
   "epoll_0" = epoll_0_6_0;
+  epoll_2_0_0 = buildCratesLib {
+    name = "epoll";
+    version = "2.0.0";
+    hash = "6b6e2ede32183b86999ff650d66fe9bcb34a7418ad62be3140141414be664066";
+    deps = with allCrates; [  all__bitflags.bitflags_0_7 all__libc.libc_0_2 ];
+  };
   "epoll_1_0" = epoll_1_0_0;
-  "epoll_1" = epoll_1_0_0;}
+  "epoll_1" = epoll_1_0_0;
+  "epoll_2_0" = epoll_2_0_0;
+  "epoll_2" = epoll_2_0_0;}

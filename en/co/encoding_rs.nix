@@ -44,5 +44,11 @@ rec {
     hash = "901290c6513df73d3b4f6698f8f80b87043cf2cadf70a51c45626f1af61281e8";
     deps = with allCrates; [  all__cfg-if.cfg-if_0_1 all__rusty-cheddar.rusty-cheddar_0_3 ];
   };
-  "encoding_rs_0_3" = encoding_rs_0_3_1;
-  "encoding_rs_0" = encoding_rs_0_3_1;}
+  encoding_rs_0_3_2 = buildCratesLib {
+    name = "encoding_rs";
+    version = "0.3.2";
+    hash = "4d211d2e2b0c3a8bddffd516b94b9b2394389bd4dd19136525203bc8038a76e9";
+    deps = with allCrates; [  all__cfg-if.cfg-if_0_1 all__rusty-cheddar.rusty-cheddar_0_3 ];
+  };
+  "encoding_rs_0_3" = encoding_rs_0_3_2;
+  "encoding_rs_0" = encoding_rs_0_3_2;}

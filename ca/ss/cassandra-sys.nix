@@ -103,5 +103,12 @@ rec {
     hash = "699df2e011d1bd4d580236e7a9a44287cbcae41020cd8fea58d39822a691f307";
     deps = with allCrates; [  all__libc.libc_0_2 all__log.log_0_3 all__env_logger.env_logger_0_3 all__num.num_0_1 all__error-chain.error-chain_0_7 ];
   };
+  cassandra-sys_0_9_0 = buildCratesLib {
+    name = "cassandra-sys";
+    version = "0.9.0";
+    hash = "3d43a92706a1e1ca7d79fe6d4570cedcc7b68de63f623168c813cd30102522cf";
+    deps = with allCrates; [  all__error-chain.error-chain_0_7 all__env_logger.env_logger_0_3 all__libc.libc_0_2 all__log.log_0_3 all__num.num_0_1 all__libbindgen.libbindgen_0_1 ];
+  };
   "cassandra-sys_0_8" = cassandra-sys_0_8_7;
-  "cassandra-sys_0" = cassandra-sys_0_8_7;}
+  "cassandra-sys_0_9" = cassandra-sys_0_9_0;
+  "cassandra-sys_0" = cassandra-sys_0_9_0;}

@@ -46,5 +46,12 @@ rec {
     deps = with allCrates; [  all__handlebars.handlebars_0_22 all__pulldown-cmark.pulldown-cmark_0_0_8 ];
   };
   "handlebars-markdown-helper_0_3" = handlebars-markdown-helper_0_3_0;
+  handlebars-markdown-helper_0_5_0 = buildCratesLib {
+    name = "handlebars-markdown-helper";
+    version = "0.5.0";
+    hash = "2d571e89075ddefd654e48960371dcb0b287fac6a1aea3768be92b9e02479c95";
+    deps = with allCrates; [  all__handlebars.handlebars_0_23 all__pulldown-cmark.pulldown-cmark_0_0_8 ];
+  };
   "handlebars-markdown-helper_0_4" = handlebars-markdown-helper_0_4_0;
-  "handlebars-markdown-helper_0" = handlebars-markdown-helper_0_4_0;}
+  "handlebars-markdown-helper_0_5" = handlebars-markdown-helper_0_5_0;
+  "handlebars-markdown-helper_0" = handlebars-markdown-helper_0_5_0;}

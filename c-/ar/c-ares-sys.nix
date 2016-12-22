@@ -96,5 +96,13 @@ rec {
     deps = with allCrates; [  all__c-types.c-types_0_1 all__libc.libc_0_2 all__gcc.gcc_0_3 all__pkg-config.pkg-config_0_3 ];
   };
   "c-ares-sys_0_12" = c-ares-sys_0_12_0;
+  c-ares-sys_1_0_0 = buildCratesLib {
+    name = "c-ares-sys";
+    version = "1.0.0";
+    hash = "64fad311a6c72fc372ffc3447004ecba5fb44a54ff5f2ba7b4545c8c27d9b000";
+    deps = with allCrates; [  all__libc.libc_0_2 all__c-types.c-types_1_0 all__gcc.gcc_0_3 all__pkg-config.pkg-config_0_3 ];
+  };
   "c-ares-sys_0_13" = c-ares-sys_0_13_0;
-  "c-ares-sys_0" = c-ares-sys_0_13_0;}
+  "c-ares-sys_0" = c-ares-sys_0_13_0;
+  "c-ares-sys_1_0" = c-ares-sys_1_0_0;
+  "c-ares-sys_1" = c-ares-sys_1_0_0;}

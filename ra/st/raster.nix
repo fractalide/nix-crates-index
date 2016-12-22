@@ -43,5 +43,18 @@ rec {
     hash = "9f7a3b806626f5b0f10b662c611ec47ed95970bf5514ccbe881280c7f5a58a9d";
     deps = with allCrates; [  all__image.image_0_10 ];
   };
-  "raster_0_0" = raster_0_0_7;
-  "raster_0" = raster_0_0_7;}
+  raster_0_0_8 = buildCratesLib {
+    name = "raster";
+    version = "0.0.8";
+    hash = "d8fdde65b0269ef8cb42d8b304f303aad64276073e5eb230940f700f1b6d2c73";
+    deps = with allCrates; [  all__image.image_0_10 ];
+  };
+  raster_0_1_0 = buildCratesLib {
+    name = "raster";
+    version = "0.1.0";
+    hash = "d4ca25494fbb7cad5a428c36b3d68d6e3e92da59b7b26226489942673b8c3c99";
+    deps = with allCrates; [  all__image.image_0_10 ];
+  };
+  "raster_0_0" = raster_0_0_8;
+  "raster_0_1" = raster_0_1_0;
+  "raster_0" = raster_0_1_0;}

@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__serde_derive.serde_derive_0_8 all__serde.serde_0_8 all__url.url_1_1 all__solicit.solicit_0_4 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
   };
   "github-rs_0_1" = github-rs_0_1_0;
+  github-rs_0_3_0 = buildCratesLib {
+    name = "github-rs";
+    version = "0.3.0";
+    hash = "d446ff419692984c1fb582ab545b661270fed71243f53bc025208572a579d23a";
+    deps = with allCrates; [  all__solicit.solicit_0_4 all__serde_derive.serde_derive_0_8 all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__url.url_1_1 ];
+  };
   "github-rs_0_2" = github-rs_0_2_0;
-  "github-rs_0" = github-rs_0_2_0;}
+  "github-rs_0_3" = github-rs_0_3_0;
+  "github-rs_0" = github-rs_0_3_0;}

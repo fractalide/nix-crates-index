@@ -170,5 +170,11 @@ rec {
     hash = "12ceb886836c94388a41dbe194128cc538d90b61939c0652646fc50695363728";
     deps = with allCrates; [  all__threadpool.threadpool_1_3 all__libloading.libloading_0_3 all__capnp.capnp_0_7 ];
   };
-  "rustfbp_0_3" = rustfbp_0_3_28;
-  "rustfbp_0" = rustfbp_0_3_28;}
+  rustfbp_0_3_29 = buildCratesLib {
+    name = "rustfbp";
+    version = "0.3.29";
+    hash = "150e5899091437a22591b0f9517dc5c7ed12b0bfeea010f9a102e6dd97d421cc";
+    deps = with allCrates; [  all__capnp.capnp_0_7 all__libloading.libloading_0_3 all__threadpool.threadpool_1_3 ];
+  };
+  "rustfbp_0_3" = rustfbp_0_3_29;
+  "rustfbp_0" = rustfbp_0_3_29;}

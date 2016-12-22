@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  all__ndarray.ndarray_0_6 all__sprs.sprs_0_4 all__num-traits.num-traits_0_1 ];
   };
   "sprs-ldl_0_1" = sprs-ldl_0_1_0;
-  "sprs-ldl_0_2" = sprs-ldl_0_2_0;
-  "sprs-ldl_0" = sprs-ldl_0_2_0;}
+  sprs-ldl_0_2_1 = buildCratesLib {
+    name = "sprs-ldl";
+    version = "0.2.1";
+    hash = "3dffaa2fe5bc8d3233bae1329ad187afdda6548233a948973d6b163b2b9942f9";
+    deps = with allCrates; [  all__num-traits.num-traits_0_1 all__sprs.sprs_0_5 ];
+  };
+  "sprs-ldl_0_2" = sprs-ldl_0_2_1;
+  "sprs-ldl_0" = sprs-ldl_0_2_1;}

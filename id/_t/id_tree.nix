@@ -37,5 +37,23 @@ rec {
     hash = "26ea63cee13322f4906a39ad96d308d200a1ab7e9d0df8982217788dbdaed202";
     deps = with allCrates; [  all__snowflake.snowflake_1_2 ];
   };
-  "id_tree_0_2" = id_tree_0_2_8;
-  "id_tree_0" = id_tree_0_2_8;}
+  id_tree_0_2_9 = buildCratesLib {
+    name = "id_tree";
+    version = "0.2.9";
+    hash = "99b6dac91c8cb0477e0e014ff7d4c56597287142998f3cca93d3b36258612d65";
+    deps = with allCrates; [  all__snowflake.snowflake_1_2 ];
+  };
+  id_tree_0_2_10 = buildCratesLib {
+    name = "id_tree";
+    version = "0.2.10";
+    hash = "4bcf0d002926d8e74529f696941f69ce2b3667cc993a289235ca1db4d7bf0afc";
+    deps = with allCrates; [  all__snowflake.snowflake_1_2 ];
+  };
+  id_tree_0_2_11 = buildCratesLib {
+    name = "id_tree";
+    version = "0.2.11";
+    hash = "416a1f1f744bb5fb0c05946a5931399e9bc49f170967a40a4585c1fafaee844a";
+    deps = with allCrates; [  all__snowflake.snowflake_1_2 ];
+  };
+  "id_tree_0_2" = id_tree_0_2_11;
+  "id_tree_0" = id_tree_0_2_11;}

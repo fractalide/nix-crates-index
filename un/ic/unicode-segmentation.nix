@@ -32,5 +32,13 @@ rec {
     hash = "c3bc443ded17b11305ffffe6b37e2076f328a5a8cb6aa877b1b98f77699e98b5";
     deps = with allCrates; [  ];
   };
+  unicode-segmentation_1_0_0 = buildCratesLib {
+    name = "unicode-segmentation";
+    version = "1.0.0";
+    hash = "70fba625c17936d0b811ccacb19c4e31186c82db42d9b670bcab830b2ddcde08";
+    deps = with allCrates; [  ];
+  };
   "unicode-segmentation_0_1" = unicode-segmentation_0_1_3;
-  "unicode-segmentation_0" = unicode-segmentation_0_1_3;}
+  "unicode-segmentation_0" = unicode-segmentation_0_1_3;
+  "unicode-segmentation_1_0" = unicode-segmentation_1_0_0;
+  "unicode-segmentation_1" = unicode-segmentation_1_0_0;}

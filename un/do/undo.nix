@@ -7,5 +7,12 @@ rec {
     hash = "1bc10277d3953f33ae67fd7a375af852c419c3e8128a806aa08fcb935676dfd0";
     deps = with allCrates; [  ];
   };
+  undo_0_2_0 = buildCratesLib {
+    name = "undo";
+    version = "0.2.0";
+    hash = "d4a9281e14935225f9ff75529d2c79ab804532254b9a05f23a6ff3f3d202ec62";
+    deps = with allCrates; [  all__fnv.fnv_1_0_5 ];
+  };
   "undo_0_1" = undo_0_1_0;
-  "undo_0" = undo_0_1_0;}
+  "undo_0_2" = undo_0_2_0;
+  "undo_0" = undo_0_2_0;}

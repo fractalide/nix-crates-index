@@ -228,5 +228,11 @@ rec {
     deps = with allCrates; [  all__toml.toml_0_2 all__tempdir.tempdir_0_3 all__clap.clap_2_10 all__lazy_static.lazy_static_0_2 all__rustc-serialize.rustc-serialize_0_3 all__glob.glob_0_2 ];
   };
   "rusty-tags_1_0" = rusty-tags_1_0_1;
-  "rusty-tags_1_1" = rusty-tags_1_1_0;
-  "rusty-tags_1" = rusty-tags_1_1_0;}
+  rusty-tags_1_1_1 = buildCratesLib {
+    name = "rusty-tags";
+    version = "1.1.1";
+    hash = "3581960dc800028859c12906389ffb0b6623f477e7ca2bcbd7a2bd5631b0fbfb";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__clap.clap_2_10 all__tempdir.tempdir_0_3 all__rustc-serialize.rustc-serialize_0_3 all__toml.toml_0_2 all__glob.glob_0_2 ];
+  };
+  "rusty-tags_1_1" = rusty-tags_1_1_1;
+  "rusty-tags_1" = rusty-tags_1_1_1;}

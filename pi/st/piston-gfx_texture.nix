@@ -145,5 +145,12 @@ rec {
     deps = with allCrates; [  all__piston-texture.piston-texture_0_5 all__gfx_core.gfx_core_0_4 all__image.image_0_10 all__gfx.gfx_0_12 ];
   };
   "piston-gfx_texture_0_17" = piston-gfx_texture_0_17_0;
+  piston-gfx_texture_0_19_0 = buildCratesLib {
+    name = "piston-gfx_texture";
+    version = "0.19.0";
+    hash = "55a6c8a9b314a37dfe4659d9af3e4d502fd5a37f5020109f38ab4ebbef231955";
+    deps = with allCrates; [  all__gfx.gfx_0_13 all__piston-texture.piston-texture_0_5 all__image.image_0_10 ];
+  };
   "piston-gfx_texture_0_18" = piston-gfx_texture_0_18_0;
-  "piston-gfx_texture_0" = piston-gfx_texture_0_18_0;}
+  "piston-gfx_texture_0_19" = piston-gfx_texture_0_19_0;
+  "piston-gfx_texture_0" = piston-gfx_texture_0_19_0;}

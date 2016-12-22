@@ -7,5 +7,12 @@ rec {
     hash = "74d614d14578130fb31d9ed62ca6442968a3a0e81216ebd2b67d924eb6aaf45d";
     deps = with allCrates; [  ];
   };
+  quicksort_1_1_0 = buildCratesLib {
+    name = "quicksort";
+    version = "1.1.0";
+    hash = "22128d5c185eef35844bb5d13a1454ce06280b18d3f1b481d516054a0c0f1918";
+    deps = with allCrates; [  ];
+  };
   "quicksort_1_0" = quicksort_1_0_0;
-  "quicksort_1" = quicksort_1_0_0;}
+  "quicksort_1_1" = quicksort_1_1_0;
+  "quicksort_1" = quicksort_1_1_0;}

@@ -64,5 +64,11 @@ rec {
     deps = with allCrates; [  all__palette.palette_0_2 all__num.num_0_1 all__byteorder.byteorder_0_5 ];
   };
   "picto_0_3" = picto_0_3_2;
-  "picto_0_4" = picto_0_4_0;
-  "picto_0" = picto_0_4_0;}
+  picto_0_4_1 = buildCratesLib {
+    name = "picto";
+    version = "0.4.1";
+    hash = "3e465b4e46b209ba7642f352c7dcb22e426a01c738aa3df95c518b6c38fff078";
+    deps = with allCrates; [  all__palette.palette_0_2 all__num.num_0_1 all__byteorder.byteorder_0_5 ];
+  };
+  "picto_0_4" = picto_0_4_1;
+  "picto_0" = picto_0_4_1;}

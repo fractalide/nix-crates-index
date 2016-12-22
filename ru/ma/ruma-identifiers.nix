@@ -53,5 +53,12 @@ rec {
     deps = with allCrates; [  all__url.url_1_2 all__regex.regex_0_1 all__rand.rand_0_3 all__serde.serde_0_8 all__lazy_static.lazy_static_0_2 ];
   };
   "ruma-identifiers_0_4" = ruma-identifiers_0_4_3;
+  ruma-identifiers_0_6_0 = buildCratesLib {
+    name = "ruma-identifiers";
+    version = "0.6.0";
+    hash = "2c4f56d6c5372a78da0764ccf54de0d34cd36dc1f97b5d6b27bd46b9c6529ce5";
+    deps = with allCrates; [  all__rand.rand_0_3 all__serde.serde_0_8 all__url.url_1_2 all__regex.regex_0_1 all__lazy_static.lazy_static_0_2 ];
+  };
   "ruma-identifiers_0_5" = ruma-identifiers_0_5_0;
-  "ruma-identifiers_0" = ruma-identifiers_0_5_0;}
+  "ruma-identifiers_0_6" = ruma-identifiers_0_6_0;
+  "ruma-identifiers_0" = ruma-identifiers_0_6_0;}

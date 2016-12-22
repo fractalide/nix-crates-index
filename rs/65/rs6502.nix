@@ -7,5 +7,12 @@ rec {
     hash = "8ca82d061870d5750778184dd538fcaa6ea598b9d4df1fa5a8a2b127c8c3913d";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
   };
+  rs6502_0_2_0 = buildCratesLib {
+    name = "rs6502";
+    version = "0.2.0";
+    hash = "1c552811fa872dd5360d86227474178e443a17e591d4ea5fee7162f0bc13c9e9";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
+  };
   "rs6502_0_1" = rs6502_0_1_0;
-  "rs6502_0" = rs6502_0_1_0;}
+  "rs6502_0_2" = rs6502_0_2_0;
+  "rs6502_0" = rs6502_0_2_0;}

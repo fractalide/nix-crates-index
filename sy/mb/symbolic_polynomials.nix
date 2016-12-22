@@ -13,5 +13,12 @@ rec {
     hash = "b33282525d10acfeccd21f645b0eb9c2478aa562c41513619be10b76ebce2409";
     deps = with allCrates; [  ];
   };
+  symbolic_polynomials_0_1_0 = buildCratesLib {
+    name = "symbolic_polynomials";
+    version = "0.1.0";
+    hash = "8941c7296ac3ec01ea4ac20f927aefd954b47765ddcae3572f17a7482b1be790";
+    deps = with allCrates; [  all__num.num_0_1 ];
+  };
   "symbolic_polynomials_0_0" = symbolic_polynomials_0_0_2;
-  "symbolic_polynomials_0" = symbolic_polynomials_0_0_2;}
+  "symbolic_polynomials_0_1" = symbolic_polynomials_0_1_0;
+  "symbolic_polynomials_0" = symbolic_polynomials_0_1_0;}

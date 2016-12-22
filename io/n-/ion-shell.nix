@@ -50,5 +50,11 @@ rec {
     hash = "3e7b7058e79744049ea67b6554ff49d482e917d585b870545a22c4abcb2f9835";
     deps = with allCrates; [  all__glob.glob_0_2 all__liner.liner_0_1 all__peg.peg_0_3 ];
   };
-  "ion-shell_0_1" = ion-shell_0_1_5;
-  "ion-shell_0" = ion-shell_0_1_5;}
+  ion-shell_0_1_6 = buildCratesLib {
+    name = "ion-shell";
+    version = "0.1.6";
+    hash = "a899603e02d6502d9d23336c5ff5335f76a2c88d164506ff39ee35b33c318b06";
+    deps = with allCrates; [  all__glob.glob_0_2 all__peg-syntax-ext.peg-syntax-ext_0_4 all__permutate.permutate_0_1 all__liner.liner_0_1 ];
+  };
+  "ion-shell_0_1" = ion-shell_0_1_6;
+  "ion-shell_0" = ion-shell_0_1_6;}

@@ -105,5 +105,12 @@ rec {
     hash = "c40288e556974ac8410da176050766b7cdd5ccbd949d8c10c8c7c95d888d2c22";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__url.url_1_1 ];
   };
+  elastic_hyper_0_4_0 = buildCratesLib {
+    name = "elastic_hyper";
+    version = "0.4.0";
+    hash = "a6abf6a922fcc3c58f16cdd9218c9e04c96dfebadb99926114e2cf437e82ddf2";
+    deps = with allCrates; [  all__elastic_requests.elastic_requests_0_1 all__url.url_1_1 all__hyper.hyper_0_9 ];
+  };
   "elastic_hyper_0_3" = elastic_hyper_0_3_2;
-  "elastic_hyper_0" = elastic_hyper_0_3_2;}
+  "elastic_hyper_0_4" = elastic_hyper_0_4_0;
+  "elastic_hyper_0" = elastic_hyper_0_4_0;}

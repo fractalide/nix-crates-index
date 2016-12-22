@@ -40,5 +40,12 @@ rec {
     hash = "e98eb85f2ef54d586967144db3af5990558d8f9e04f41cf2662fe258d755f349";
     deps = with allCrates; [  all__unreachable.unreachable_0_1 ];
   };
+  quickersort_2_2_0 = buildCratesLib {
+    name = "quickersort";
+    version = "2.2.0";
+    hash = "14ae8f367c38c78abd03114e524b55a817885446662413fbca951f42848450c5";
+    deps = with allCrates; [  all__nodrop.nodrop_0_1 all__unreachable.unreachable_0_1 ];
+  };
   "quickersort_2_1" = quickersort_2_1_1;
-  "quickersort_2" = quickersort_2_1_1;}
+  "quickersort_2_2" = quickersort_2_2_0;
+  "quickersort_2" = quickersort_2_2_0;}

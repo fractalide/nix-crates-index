@@ -79,5 +79,11 @@ rec {
     hash = "8bb53174e97d4fe05fa0214a64bf464963bba93fad66d3b855e252ddb3771ecb";
     deps = with allCrates; [  all__git2.git2_0_4 all__env_logger.env_logger_0_3 all__libgit2-sys.libgit2-sys_0_4 all__regex.regex_0_1 all__docopt.docopt_0_6 all__rustc-serialize.rustc-serialize_0_3 all__log.log_0_3 all__toml.toml_0_2 all__progress.progress_0_2 ];
   };
-  "cargo-incremental_0_1" = cargo-incremental_0_1_12;
-  "cargo-incremental_0" = cargo-incremental_0_1_12;}
+  cargo-incremental_0_1_13 = buildCratesLib {
+    name = "cargo-incremental";
+    version = "0.1.13";
+    hash = "02db5e959dd12a670d7f5e928ae208a78e4d6edebe7387d67155d4a064f9ce7b";
+    deps = with allCrates; [  all__docopt.docopt_0_6 all__progress.progress_0_2 all__git2.git2_0_4 all__toml.toml_0_2 all__libgit2-sys.libgit2-sys_0_4 all__log.log_0_3 all__regex.regex_0_1 all__env_logger.env_logger_0_3 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "cargo-incremental_0_1" = cargo-incremental_0_1_13;
+  "cargo-incremental_0" = cargo-incremental_0_1_13;}

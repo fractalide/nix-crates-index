@@ -67,5 +67,12 @@ rec {
     deps = with allCrates; [  all__time.time_0_1 all__untrusted.untrusted_0_3 all__ring.ring_0_6 all__rustc-serialize.rustc-serialize_0_3 ];
   };
   "webpki_0_7" = webpki_0_7_0;
+  webpki_0_9_0 = buildCratesLib {
+    name = "webpki";
+    version = "0.9.0";
+    hash = "191d60d9c7884a38ed6450cf8540e667eed8cd1fd45875f59c0477352a7df5b4";
+    deps = with allCrates; [  all__time.time_0_1 all__ring.ring_0_6 all__rustc-serialize.rustc-serialize_0_3 all__untrusted.untrusted_0_3 ];
+  };
   "webpki_0_8" = webpki_0_8_0;
-  "webpki_0" = webpki_0_8_0;}
+  "webpki_0_9" = webpki_0_9_0;
+  "webpki_0" = webpki_0_9_0;}

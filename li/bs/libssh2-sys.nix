@@ -291,5 +291,11 @@ rec {
     hash = "ed089186abb468a78f7170177304751805e33c20e7aef4b8298884ce2080b5de";
     deps = with allCrates; [  libz-sys all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 all__cmake.cmake_0_1 all__openssl-sys.openssl-sys_0_9 ];
   };
-  "libssh2-sys_0_2" = libssh2-sys_0_2_4;
-  "libssh2-sys_0" = libssh2-sys_0_2_4;}
+  libssh2-sys_0_2_5 = buildCratesLib {
+    name = "libssh2-sys";
+    version = "0.2.5";
+    hash = "91e135645c2e198a39552c8c7686bb5b83b1b99f64831c040a6c2798a1195934";
+    deps = with allCrates; [  libz-sys all__libc.libc_0_2 all__cmake.cmake_0_1 all__pkg-config.pkg-config_0_3 all__openssl-sys.openssl-sys_0_9 ];
+  };
+  "libssh2-sys_0_2" = libssh2-sys_0_2_5;
+  "libssh2-sys_0" = libssh2-sys_0_2_5;}

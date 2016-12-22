@@ -19,5 +19,12 @@ rec {
     hash = "3df0243577c33a443b179ada44360e1ed5786a99e2c0c47ed1a97f1c2b296d63";
     deps = with allCrates; [  all__xmltree.xmltree_0_3 ];
   };
+  svd-parser_0_2_0 = buildCratesLib {
+    name = "svd-parser";
+    version = "0.2.0";
+    hash = "b40488b057aa79b7134dfe50fb81d98553c59de6996be2a1fd62b929697a26e4";
+    deps = with allCrates; [  all__xmltree.xmltree_0_3 ];
+  };
   "svd-parser_0_1" = svd-parser_0_1_2;
-  "svd-parser_0" = svd-parser_0_1_2;}
+  "svd-parser_0_2" = svd-parser_0_2_0;
+  "svd-parser_0" = svd-parser_0_2_0;}

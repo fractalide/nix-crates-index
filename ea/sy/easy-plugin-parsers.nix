@@ -44,5 +44,11 @@ rec {
     hash = "a7e39fa27a4b4a06c60832d8bf26b1fc21934b52f80c2e5a9455f8e9c8c8df40";
     deps = with allCrates; [  all__toml.toml_0_2 ];
   };
-  "easy-plugin-parsers_0_11" = easy-plugin-parsers_0_11_5;
-  "easy-plugin-parsers_0" = easy-plugin-parsers_0_11_5;}
+  easy-plugin-parsers_0_11_6 = buildCratesLib {
+    name = "easy-plugin-parsers";
+    version = "0.11.6";
+    hash = "62048111f2580f35188a9daa3392bf1f2a11b7e5c82f7b6215e2bc79abe80d03";
+    deps = with allCrates; [  all__toml.toml_0_2 ];
+  };
+  "easy-plugin-parsers_0_11" = easy-plugin-parsers_0_11_6;
+  "easy-plugin-parsers_0" = easy-plugin-parsers_0_11_6;}
