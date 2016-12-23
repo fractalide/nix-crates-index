@@ -10934,7 +10934,7 @@
     "all__rust_events" = self.callPackage ./ru/st/rust_events.nix { };
     "rust_events" = all__rust_events."rust_events_0_9_0";
     "all__rustfbp" = self.callPackage ./ru/st/rustfbp.nix { };
-    "rustfbp" = all__rustfbp."rustfbp_0_3_30";
+    "rustfbp" = all__rustfbp."rustfbp_0_3_31";
     "all__rust-install" = self.callPackage ./ru/st/rust-install.nix { };
     "rust-install" = all__rust-install."rust-install_0_0_4";
     "all__rust-github" = self.callPackage ./ru/st/rust-github.nix { };
