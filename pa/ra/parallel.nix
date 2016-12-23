@@ -90,5 +90,11 @@ rec {
     hash = "db8c4b142784b0a67c5ce5dc02b7ea757399f114cf59ff0dcf74f82542ab8a05";
     deps = with allCrates; [  all__num_cpus.num_cpus_1_0 all__permutate.permutate_0_1 ];
   };
-  "parallel_0_6" = parallel_0_6_3;
-  "parallel_0" = parallel_0_6_3;}
+  parallel_0_6_4 = buildCratesLib {
+    name = "parallel";
+    version = "0.6.4";
+    hash = "c616e8b81abd1c8db561f5f27b8661094d8757df84c74a90ebe15d624dfb4c75";
+    deps = with allCrates; [  all__arrayvec.arrayvec_0_3 all__permutate.permutate_0_1 all__num_cpus.num_cpus_1_0 ];
+  };
+  "parallel_0_6" = parallel_0_6_4;
+  "parallel_0" = parallel_0_6_4;}

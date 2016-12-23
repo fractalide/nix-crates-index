@@ -38,5 +38,12 @@ rec {
     deps = with allCrates; [  all__openssl.openssl_0_7 all__rustc-serialize.rustc-serialize_0_3 all__log.log_0_3 all__url.url_1_2 all__curl.curl_0_3 all__time.time_0_1 ];
   };
   "rust-s3_0_2" = rust-s3_0_2_5;
+  rust-s3_0_4_0 = buildCratesLib {
+    name = "rust-s3";
+    version = "0.4.0";
+    hash = "1cc41218aad4d11d5a7f490230e14c63214e71086445d2a0f0dfca966c58db3e";
+    deps = with allCrates; [  all__chrono.chrono_0_2 all__hex.hex_0_2 all__rust-crypto.rust-crypto_0_2 all__curl.curl_0_4 all__log.log_0_3 all__url.url_1_2 ];
+  };
   "rust-s3_0_3" = rust-s3_0_3_2;
-  "rust-s3_0" = rust-s3_0_3_2;}
+  "rust-s3_0_4" = rust-s3_0_4_0;
+  "rust-s3_0" = rust-s3_0_4_0;}

@@ -7,5 +7,12 @@ rec {
     hash = "06129f96df76a21f322658252a5ef10eea2dd8db17d9b23977b017a8db273275";
     deps = with allCrates; [  all__libc.libc_0_2 all__error-chain.error-chain_0_7 all__log.log_0_3 ];
   };
+  smartcard_0_2_0 = buildCratesLib {
+    name = "smartcard";
+    version = "0.2.0";
+    hash = "0444b6e3213dab98e06d02e4950ed0012f3dcdc3b083dc259910afa45db110a8";
+    deps = with allCrates; [  all__log.log_0_3 all__error-chain.error-chain_0_7 ];
+  };
   "smartcard_0_1" = smartcard_0_1_0;
-  "smartcard_0" = smartcard_0_1_0;}
+  "smartcard_0_2" = smartcard_0_2_0;
+  "smartcard_0" = smartcard_0_2_0;}

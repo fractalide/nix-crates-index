@@ -227,5 +227,11 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
   "sdl2-sys_0_26" = sdl2-sys_0_26_0;
-  "sdl2-sys_0_27" = sdl2-sys_0_27_0;
-  "sdl2-sys_0" = sdl2-sys_0_27_0;}
+  sdl2-sys_0_27_2 = buildCratesLib {
+    name = "sdl2-sys";
+    version = "0.27.2";
+    hash = "37cfe343db4cd2159cab098096fff52e92d513c2a5b1ee06abbfd5db5323a64d";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "sdl2-sys_0_27" = sdl2-sys_0_27_2;
+  "sdl2-sys_0" = sdl2-sys_0_27_2;}

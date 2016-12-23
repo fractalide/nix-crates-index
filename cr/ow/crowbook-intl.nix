@@ -7,5 +7,12 @@ rec {
     hash = "6d3c9752f5664c4d0a7fe17de969b590fcf81ee30af677bcacefc9578c7fe7ca";
     deps = with allCrates; [  all__regex.regex_0_1 all__walkdir.walkdir_0_1 all__lazy_static.lazy_static_0_2 ];
   };
+  crowbook-intl_0_2_0 = buildCratesLib {
+    name = "crowbook-intl";
+    version = "0.2.0";
+    hash = "994c6e61a7cca35b414634460402590ecb51e3eba5bde0acf132391d42177db9";
+    deps = with allCrates; [  all__regex.regex_0_1 all__walkdir.walkdir_1 all__lazy_static.lazy_static_0_2 ];
+  };
   "crowbook-intl_0_1" = crowbook-intl_0_1_0;
-  "crowbook-intl_0" = crowbook-intl_0_1_0;}
+  "crowbook-intl_0_2" = crowbook-intl_0_2_0;
+  "crowbook-intl_0" = crowbook-intl_0_2_0;}

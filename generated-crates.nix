@@ -48,7 +48,7 @@
     "all__softprimes" = self.callPackage ./so/ft/softprimes.nix { };
     "softprimes" = all__softprimes."softprimes_0_1_0";
     "all__sourcemap" = self.callPackage ./so/ur/sourcemap.nix { };
-    "sourcemap" = all__sourcemap."sourcemap_0_10_1";
+    "sourcemap" = all__sourcemap."sourcemap_0_11_0";
     "all__sotassl-sys-extras" = self.callPackage ./so/ta/sotassl-sys-extras.nix { };
     "sotassl-sys-extras" = all__sotassl-sys-extras."sotassl-sys-extras_0_7_1400";
     "all__sotassl-sys" = self.callPackage ./so/ta/sotassl-sys.nix { };
@@ -1952,7 +1952,7 @@
     "all__html5ever_test_util" = self.callPackage ./ht/ml/html5ever_test_util.nix { };
     "html5ever_test_util" = all__html5ever_test_util."html5ever_test_util_0_1_0";
     "all__http-muncher" = self.callPackage ./ht/tp/http-muncher.nix { };
-    "http-muncher" = all__http-muncher."http-muncher_0_3_0";
+    "http-muncher" = all__http-muncher."http-muncher_0_3_1";
     "all__http_stub" = self.callPackage ./ht/tp/http_stub.nix { };
     "http_stub" = all__http_stub."http_stub_0_1_3";
     "all__http2parse" = self.callPackage ./ht/tp/http2parse.nix { };
@@ -2411,6 +2411,10 @@
     "fmod" = all__fmod."fmod_0_9_22";
     "all__fmt-extra" = self.callPackage ./fm/t-/fmt-extra.nix { };
     "fmt-extra" = all__fmt-extra."fmt-extra_0_1_2";
+    "all__rncryptor" = self.callPackage ./rn/cr/rncryptor.nix { };
+    "rncryptor" = all__rncryptor."rncryptor_0_1_0";
+    "all__argf" = self.callPackage ./ar/gf/argf.nix { };
+    "argf" = all__argf."argf_0_1_0";
     "all__armv4t" = self.callPackage ./ar/mv/armv4t.nix { };
     "armv4t" = all__armv4t."armv4t_0_1_0";
     "all__args" = self.callPackage ./ar/gs/args.nix { };
@@ -2467,6 +2471,8 @@
     "argparse" = all__argparse."argparse_0_2_1";
     "all__artifact" = self.callPackage ./ar/ti/artifact.nix { };
     "artifact" = all__artifact."artifact_0_2_4";
+    "all__arrutil" = self.callPackage ./ar/ru/arrutil.nix { };
+    "arrutil" = all__arrutil."arrutil_0_1_0";
     "all__arch-audit" = self.callPackage ./ar/ch/arch-audit.nix { };
     "arch-audit" = all__arch-audit."arch-audit_0_1_6";
     "all__aries" = self.callPackage ./ar/ie/aries.nix { };
@@ -3443,6 +3449,8 @@
     "linux-stats" = all__linux-stats."linux-stats_0_1_0";
     "all__lion" = self.callPackage ./li/on/lion.nix { };
     "lion" = all__lion."lion_0_0_0";
+    "all__lioness" = self.callPackage ./li/on/lioness.nix { };
+    "lioness" = all__lioness."lioness_0_1_0";
     "all__linal" = self.callPackage ./li/na/linal.nix { };
     "linal" = all__linal."linal_0_2_0";
     "all__linalg" = self.callPackage ./li/na/linalg.nix { };
@@ -4571,6 +4579,12 @@
     "rocky" = all__rocky."rocky_0_2_3";
     "all__rocksdb" = self.callPackage ./ro/ck/rocksdb.nix { };
     "rocksdb" = all__rocksdb."rocksdb_0_6_0";
+    "all__rocket" = self.callPackage ./ro/ck/rocket.nix { };
+    "rocket" = all__rocket."rocket_0_1_0";
+    "all__rocket_codegen" = self.callPackage ./ro/ck/rocket_codegen.nix { };
+    "rocket_codegen" = all__rocket_codegen."rocket_codegen_0_1_0";
+    "all__rocket_contrib" = self.callPackage ./ro/ck/rocket_contrib.nix { };
+    "rocket_contrib" = all__rocket_contrib."rocket_contrib_0_1_0";
     "all__rot13" = self.callPackage ./ro/t1/rot13.nix { };
     "rot13" = all__rot13."rot13_0_1_1";
     "all__rosc" = self.callPackage ./ro/sc/rosc.nix { };
@@ -4867,6 +4881,8 @@
     "pipeliner" = all__pipeliner."pipeliner_0_1_1";
     "all__pipefile" = self.callPackage ./pi/pe/pipefile.nix { };
     "pipefile" = all__pipefile."pipefile_0_1_1";
+    "all__pipers" = self.callPackage ./pi/pe/pipers.nix { };
+    "pipers" = all__pipers."pipers_1_0_1";
     "all__pipe-channel" = self.callPackage ./pi/pe/pipe-channel.nix { };
     "pipe-channel" = all__pipe-channel."pipe-channel_1_1_0";
     "all__pipeline" = self.callPackage ./pi/pe/pipeline.nix { };
@@ -5265,6 +5281,8 @@
     "gdiplus-sys" = all__gdiplus-sys."gdiplus-sys_0_0_1";
     "all__gdal" = self.callPackage ./gd/al/gdal.nix { };
     "gdal" = all__gdal."gdal_0_2_1";
+    "all__gdax-client" = self.callPackage ./gd/ax/gdax-client.nix { };
+    "gdax-client" = all__gdax-client."gdax-client_1_0_1";
     "all__gdl-parser" = self.callPackage ./gd/l-/gdl-parser.nix { };
     "gdl-parser" = all__gdl-parser."gdl-parser_0_0_8";
     "all__gdk-pixbuf" = self.callPackage ./gd/k-/gdk-pixbuf.nix { };
@@ -6421,6 +6439,8 @@
     "coroutine" = all__coroutine."coroutine_0_6_0";
     "all__coroutine-rs" = self.callPackage ./co/ro/coroutine-rs.nix { };
     "coroutine-rs" = all__coroutine-rs."coroutine-rs_0_0_1";
+    "all__compiler_error" = self.callPackage ./co/mp/compiler_error.nix { };
+    "compiler_error" = all__compiler_error."compiler_error_0_1_0";
     "all__computus" = self.callPackage ./co/mp/computus.nix { };
     "computus" = all__computus."computus_0_1_1";
     "all__compile_msg" = self.callPackage ./co/mp/compile_msg.nix { };
@@ -9150,9 +9170,9 @@
     "all__sdl2_net" = self.callPackage ./sd/l2/sdl2_net.nix { };
     "sdl2_net" = all__sdl2_net."sdl2_net_0_0_2";
     "all__sdl2" = self.callPackage ./sd/l2/sdl2.nix { };
-    "sdl2" = all__sdl2."sdl2_0_27_1";
+    "sdl2" = all__sdl2."sdl2_0_27_2";
     "all__sdl2-sys" = self.callPackage ./sd/l2/sdl2-sys.nix { };
-    "sdl2-sys" = all__sdl2-sys."sdl2-sys_0_27_0";
+    "sdl2-sys" = all__sdl2-sys."sdl2-sys_0_27_2";
     "all__sdl2_image" = self.callPackage ./sd/l2/sdl2_image.nix { };
     "sdl2_image" = all__sdl2_image."sdl2_image_1_1_0";
     "all__sdl2_ttf" = self.callPackage ./sd/l2/sdl2_ttf.nix { };
@@ -9314,7 +9334,7 @@
     "all__crowbook-localize" = self.callPackage ./cr/ow/crowbook-localize.nix { };
     "crowbook-localize" = all__crowbook-localize."crowbook-localize_0_1_0";
     "all__crowbook-intl" = self.callPackage ./cr/ow/crowbook-intl.nix { };
-    "crowbook-intl" = all__crowbook-intl."crowbook-intl_0_1_0";
+    "crowbook-intl" = all__crowbook-intl."crowbook-intl_0_2_0";
     "all__crest" = self.callPackage ./cr/es/crest.nix { };
     "crest" = all__crest."crest_0_3_3";
     "all__crank" = self.callPackage ./cr/an/crank.nix { };
@@ -9482,7 +9502,7 @@
     "all__smelter" = self.callPackage ./sm/el/smelter.nix { };
     "smelter" = all__smelter."smelter_0_0_1";
     "all__smartcard" = self.callPackage ./sm/ar/smartcard.nix { };
-    "smartcard" = all__smartcard."smartcard_0_1_0";
+    "smartcard" = all__smartcard."smartcard_0_2_0";
     "all__smetamath" = self.callPackage ./sm/et/smetamath.nix { };
     "smetamath" = all__smetamath."smetamath_3_0_0";
     "all__smith" = self.callPackage ./sm/it/smith.nix { };
@@ -10894,7 +10914,7 @@
     "all__rust-ini" = self.callPackage ./ru/st/rust-ini.nix { };
     "rust-ini" = all__rust-ini."rust-ini_0_9_12";
     "all__rust-s3" = self.callPackage ./ru/st/rust-s3.nix { };
-    "rust-s3" = all__rust-s3."rust-s3_0_3_2";
+    "rust-s3" = all__rust-s3."rust-s3_0_4_0";
     "all__rustclient" = self.callPackage ./ru/st/rustclient.nix { };
     "rustclient" = all__rustclient."rustclient_0_0_1";
     "all__rust-eze" = self.callPackage ./ru/st/rust-eze.nix { };
@@ -10934,7 +10954,7 @@
     "all__rust_events" = self.callPackage ./ru/st/rust_events.nix { };
     "rust_events" = all__rust_events."rust_events_0_9_0";
     "all__rustfbp" = self.callPackage ./ru/st/rustfbp.nix { };
-    "rustfbp" = all__rustfbp."rustfbp_0_3_31";
+    "rustfbp" = all__rustfbp."rustfbp_0_3_32";
     "all__rust-install" = self.callPackage ./ru/st/rust-install.nix { };
     "rust-install" = all__rust-install."rust-install_0_0_4";
     "all__rust-github" = self.callPackage ./ru/st/rust-github.nix { };
@@ -12042,7 +12062,7 @@
     "all__params" = self.callPackage ./pa/ra/params.nix { };
     "params" = all__params."params_0_5_1";
     "all__parallel" = self.callPackage ./pa/ra/parallel.nix { };
-    "parallel" = all__parallel."parallel_0_6_3";
+    "parallel" = all__parallel."parallel_0_6_4";
     "all__paragraph" = self.callPackage ./pa/ra/paragraph.nix { };
     "paragraph" = all__paragraph."paragraph_0_0_2";
     "all__parasailors" = self.callPackage ./pa/ra/parasailors.nix { };

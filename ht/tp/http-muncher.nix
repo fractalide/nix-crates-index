@@ -51,5 +51,11 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
   };
   "http-muncher_0_2" = http-muncher_0_2_5;
-  "http-muncher_0_3" = http-muncher_0_3_0;
-  "http-muncher_0" = http-muncher_0_3_0;}
+  http-muncher_0_3_1 = buildCratesLib {
+    name = "http-muncher";
+    version = "0.3.1";
+    hash = "0f0d8b98946459faf4fdfdf6d90e9aac08967b9b9ffe67005d2b1f99115da741";
+    deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
+  };
+  "http-muncher_0_3" = http-muncher_0_3_1;
+  "http-muncher_0" = http-muncher_0_3_1;}

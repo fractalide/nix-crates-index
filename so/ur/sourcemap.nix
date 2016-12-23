@@ -130,5 +130,12 @@ rec {
     hash = "ea0379269c0e4f7f5088b5c234bf5ea79a23285a192491769e40146c77db6550";
     deps = with allCrates; [  all__serde.serde_0_8 all__base64.base64_0_1 all__serde_json.serde_json_0_8 all__url.url_1_2 ];
   };
+  sourcemap_0_11_0 = buildCratesLib {
+    name = "sourcemap";
+    version = "0.11.0";
+    hash = "964b971811956badd29470de50d5d71c16849bdebd973052b0f808d5523131ed";
+    deps = with allCrates; [  all__serde.serde_0_8 all__base64.base64_0_1 all__serde_json.serde_json_0_8 all__url.url_1_2 ];
+  };
   "sourcemap_0_10" = sourcemap_0_10_1;
-  "sourcemap_0" = sourcemap_0_10_1;}
+  "sourcemap_0_11" = sourcemap_0_11_0;
+  "sourcemap_0" = sourcemap_0_11_0;}
