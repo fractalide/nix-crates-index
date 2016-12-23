@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__nom.nom_2_0_1 ];
   };
   "test-to-vec_0_1" = test-to-vec_0_1_0;
+  test-to-vec_0_3_0 = buildCratesLib {
+    name = "test-to-vec";
+    version = "0.3.0";
+    hash = "802aaf0552513fe38c6b2e0de29dba73d60f719db5fe78839178e80cf54214a2";
+    deps = with allCrates; [  all__nom.nom_2_0_1 ];
+  };
   "test-to-vec_0_2" = test-to-vec_0_2_0;
-  "test-to-vec_0" = test-to-vec_0_2_0;}
+  "test-to-vec_0_3" = test-to-vec_0_3_0;
+  "test-to-vec_0" = test-to-vec_0_3_0;}

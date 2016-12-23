@@ -43,5 +43,11 @@ rec {
     hash = "9c3e1728a9b0b82e3e38ce7092270a015c3421683c3654cfb6bb99b47e48e54b";
     deps = with allCrates; [  all__libc.libc_0_2 all__xcb.xcb_0_7 ];
   };
-  "xcb-util_0_1" = xcb-util_0_1_6;
-  "xcb-util_0" = xcb-util_0_1_6;}
+  xcb-util_0_1_7 = buildCratesLib {
+    name = "xcb-util";
+    version = "0.1.7";
+    hash = "b7131910a1030867101fdbd7610352203f976fda35eed362be65d16b7151d87f";
+    deps = with allCrates; [  all__libc.libc_0_2 all__xcb.xcb_0_7 ];
+  };
+  "xcb-util_0_1" = xcb-util_0_1_7;
+  "xcb-util_0" = xcb-util_0_1_7;}

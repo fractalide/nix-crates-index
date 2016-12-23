@@ -62,5 +62,11 @@ rec {
     deps = with allCrates; [  all__router.router_0_2 all__handlebars.handlebars_0_20 all__clap.clap_2_14 all__kafka.kafka_0_5 all__lazy_static.lazy_static_0_2 all__openssl.openssl_0_7 all__handlebars-iron.handlebars-iron_0_18 all__jfs.jfs_0_2 all__bodyparser.bodyparser_0_4 all__env_logger.env_logger_0_3 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__iron.iron_0_4 ];
   };
   "kafka-proxy_0_9" = kafka-proxy_0_9_0;
-  "kafka-proxy_0_10" = kafka-proxy_0_10_0;
-  "kafka-proxy_0" = kafka-proxy_0_10_0;}
+  kafka-proxy_0_10_1 = buildCratesLib {
+    name = "kafka-proxy";
+    version = "0.10.1";
+    hash = "d88f631c0740f0241ed7e5163d60cce885000af83224a9387164b6b2534e1e21";
+    deps = with allCrates; [  all__jfs.jfs_0_2 all__handlebars.handlebars_0_20 all__kafka.kafka_0_5 all__log.log_0_3 all__openssl.openssl_0_7 all__router.router_0_2 all__lazy_static.lazy_static_0_2 all__bodyparser.bodyparser_0_4 all__iron.iron_0_4 all__env_logger.env_logger_0_3 all__handlebars-iron.handlebars-iron_0_18 all__clap.clap_2_14 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "kafka-proxy_0_10" = kafka-proxy_0_10_1;
+  "kafka-proxy_0" = kafka-proxy_0_10_1;}

@@ -44,5 +44,11 @@ rec {
     hash = "ceda3a81e7b686c0aecbe90e838f1c12da2492e3ab08ed1a6c05a812d6c37ed9";
     deps = with allCrates; [  all__protobuf.protobuf_1_0 all__fnv.fnv_1_0_3 all__quick-error.quick-error_0_2 all__hyper.hyper_0_9 all__libc.libc_0_2 all__regex.regex_0_1 all__lazy_static.lazy_static_0_2 ];
   };
-  "prometheus_0_2" = prometheus_0_2_6;
-  "prometheus_0" = prometheus_0_2_6;}
+  prometheus_0_2_8 = buildCratesLib {
+    name = "prometheus";
+    version = "0.2.8";
+    hash = "e1a4c5d63fb87824169dee5286dbb880d4b0a3ce0aad74dca1ac4afdad83b267";
+    deps = with allCrates; [  all__cfg-if.cfg-if_0_1 all__lazy_static.lazy_static_0_2 all__fnv.fnv_1_0_3 all__quick-error.quick-error_0_2 all__protobuf.protobuf_1_0 ];
+  };
+  "prometheus_0_2" = prometheus_0_2_8;
+  "prometheus_0" = prometheus_0_2_8;}

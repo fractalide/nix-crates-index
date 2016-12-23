@@ -19,5 +19,11 @@ rec {
     hash = "84c32ac085068076fd13dddcee0f8d7dd7365fc0d87f6450790ae82b26f80c28";
     deps = with allCrates; [  all__nodrop.nodrop_0_1 all__futures.futures_0_1 all__log.log_0_3 all__either.either_1_0 all__tokio-core.tokio-core_0_1 all__url.url_1_2 all__spin.spin_0_4 ];
   };
-  "tk-redis_0_1" = tk-redis_0_1_2;
-  "tk-redis_0" = tk-redis_0_1_2;}
+  tk-redis_0_1_3 = buildCratesLib {
+    name = "tk-redis";
+    version = "0.1.3";
+    hash = "29c8f00141b11167d6f792da51fe0d131fef21939c2880644f48c3f4a7d5e27d";
+    deps = with allCrates; [  all__url.url_1_2 all__nodrop.nodrop_0_1 all__either.either_1_0 all__spin.spin_0_4 all__log.log_0_3 all__tokio-core.tokio-core_0_1 all__futures.futures_0_1 ];
+  };
+  "tk-redis_0_1" = tk-redis_0_1_3;
+  "tk-redis_0" = tk-redis_0_1_3;}

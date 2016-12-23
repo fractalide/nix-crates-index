@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  ];
   };
   "volatile_0_1" = volatile_0_1_0;
-  "volatile_0_2" = volatile_0_2_0;
-  "volatile_0" = volatile_0_2_0;}
+  volatile_0_2_1 = buildCratesLib {
+    name = "volatile";
+    version = "0.2.1";
+    hash = "a7ce286110f2585da4cb753affdc8b6addbab52d0e104442649237451c53cf92";
+    deps = with allCrates; [  ];
+  };
+  "volatile_0_2" = volatile_0_2_1;
+  "volatile_0" = volatile_0_2_1;}

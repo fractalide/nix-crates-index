@@ -49,5 +49,11 @@ rec {
     hash = "0dac7444b819b0b8e5dcfc9c9d9709a0370559605e5892c8b92eeb438bb76823";
     deps = with allCrates; [  all__rust-crypto.rust-crypto_0_2 all__url.url_1_2 all__xml-rs.xml-rs_0_3 all__time.time_0_1 all__log.log_0_3 all__env_logger.env_logger_0_3 all__hyper.hyper_0_9 all__clap.clap_1_5 ];
   };
-  "speedtest-rs_0_0" = speedtest-rs_0_0_8;
-  "speedtest-rs_0" = speedtest-rs_0_0_8;}
+  speedtest-rs_0_0_9 = buildCratesLib {
+    name = "speedtest-rs";
+    version = "0.0.9";
+    hash = "4c596d3ba27ca270c56750c159e730230e10b51c48e18629c0795bbf50d62ba2";
+    deps = with allCrates; [  all__xml-rs.xml-rs_0_3 all__log.log_0_3 all__rust-crypto.rust-crypto_0_2 all__time.time_0_1 all__reqwest.reqwest_0_2 all__env_logger.env_logger_0_3 all__clap.clap_1_5 all__url.url_1_2 ];
+  };
+  "speedtest-rs_0_0" = speedtest-rs_0_0_9;
+  "speedtest-rs_0" = speedtest-rs_0_0_9;}

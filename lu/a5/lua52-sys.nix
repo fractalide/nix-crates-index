@@ -25,5 +25,12 @@ rec {
     hash = "bb32f267c555c38517c56ae28a84838ebb484ed2ac0d3c724245c95e9dfd871e";
     deps = with allCrates; [  libc all__gcc.gcc_0_3 all__pkg-config.pkg-config_0_3 ];
   };
+  lua52-sys_0_1_0 = buildCratesLib {
+    name = "lua52-sys";
+    version = "0.1.0";
+    hash = "82e9a651ce2bf8cd1ab278740442a4b6b7e03cd212621cadb309eeeda7dec0be";
+    deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 all__gcc.gcc_0_3 ];
+  };
   "lua52-sys_0_0" = lua52-sys_0_0_4;
-  "lua52-sys_0" = lua52-sys_0_0_4;}
+  "lua52-sys_0_1" = lua52-sys_0_1_0;
+  "lua52-sys_0" = lua52-sys_0_1_0;}

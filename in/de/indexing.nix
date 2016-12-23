@@ -26,5 +26,12 @@ rec {
     deps = with allCrates; [  ];
   };
   "indexing_0_1" = indexing_0_1_2;
+  indexing_0_3_0 = buildCratesLib {
+    name = "indexing";
+    version = "0.3.0";
+    hash = "2c3ebff103706de9bf4da8ce991e2bc4d59d7fe7b95b16aad8f91d669123889c";
+    deps = with allCrates; [  ];
+  };
   "indexing_0_2" = indexing_0_2_0;
-  "indexing_0" = indexing_0_2_0;}
+  "indexing_0_3" = indexing_0_3_0;
+  "indexing_0" = indexing_0_3_0;}

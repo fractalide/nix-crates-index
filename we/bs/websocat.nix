@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__log.log_0_3 all__websocket.websocket_0_17 all__error-chain.error-chain_0_6 all__clap.clap_2_18 all__url.url_1_2 all__env_logger.env_logger_0_3 ];
   };
   "websocat_0_1" = websocat_0_1_0;
+  websocat_0_3_0 = buildCratesLib {
+    name = "websocat";
+    version = "0.3.0";
+    hash = "52588c8497b65ac8284947d475e888906102f84ab040f37e673e58fe7bccf87e";
+    deps = with allCrates; [  all__url.url_1_2 all__websocket.websocket_0_17 all__env_logger.env_logger_0_3 all__error-chain.error-chain_0_6 all__log.log_0_3 all__clap.clap_2_18 ];
+  };
   "websocat_0_2" = websocat_0_2_0;
-  "websocat_0" = websocat_0_2_0;}
+  "websocat_0_3" = websocat_0_3_0;
+  "websocat_0" = websocat_0_3_0;}

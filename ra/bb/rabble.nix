@@ -13,5 +13,11 @@ rec {
     hash = "8a80ea505c755aa47b64e8194e6c992b602b0311eada2e237decf3962cd0f2f3";
     deps = with allCrates; [  all__libc.libc_0_2 all__time.time_0_1 all__error-chain.error-chain_0_5 all__amy.amy_0_6 all__rustc-serialize.rustc-serialize_0_3 all__slog.slog_1 all__orset.orset_0_1 all__slog-envlogger.slog-envlogger_0_5 all__slog-stdlog.slog-stdlog_1 all__rmp-serialize.rmp-serialize_0_7 all__net2.net2_0_2 all__ferris.ferris_0_1 all__log.log_0_3 all__slog-term.slog-term_1_1 ];
   };
-  "rabble_0_1" = rabble_0_1_1;
-  "rabble_0" = rabble_0_1_1;}
+  rabble_0_1_2 = buildCratesLib {
+    name = "rabble";
+    version = "0.1.2";
+    hash = "4c005129e4cc47d8d625c02bc49098b2b4ce16b8674137897915dd545cbd9af9";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__protobuf.protobuf_1_0_24 all__slog.slog_1 all__net2.net2_0_2 all__orset.orset_0_1 all__error-chain.error-chain_0_5 all__slog-stdlog.slog-stdlog_1 all__slog-term.slog-term_1_1 all__ferris.ferris_0_1 all__libc.libc_0_2 all__amy.amy_0_6 all__slog-envlogger.slog-envlogger_0_5 all__log.log_0_3 all__time.time_0_1 all__rmp-serialize.rmp-serialize_0_7 ];
+  };
+  "rabble_0_1" = rabble_0_1_2;
+  "rabble_0" = rabble_0_1_2;}

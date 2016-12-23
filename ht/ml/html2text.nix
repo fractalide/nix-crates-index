@@ -7,5 +7,11 @@ rec {
     hash = "bab85030db17012bc35f360450101edde9624379e9a953069263743bc2de1d82";
     deps = with allCrates; [  all__html5ever-atoms.html5ever-atoms_0_1 all__html5ever.html5ever_0_9 all__backtrace.backtrace_0_2 all__string_cache.string_cache_0_2 all__unicode-width.unicode-width_0_1 ];
   };
-  "html2text_0_1" = html2text_0_1_0;
-  "html2text_0" = html2text_0_1_0;}
+  html2text_0_1_1 = buildCratesLib {
+    name = "html2text";
+    version = "0.1.1";
+    hash = "dce4aae4f94d7353ed2e8799f855b25b60d065b42090991e4063ee4765f6a60b";
+    deps = with allCrates; [  all__html5ever-atoms.html5ever-atoms_0_1 all__unicode-width.unicode-width_0_1 all__backtrace.backtrace_0_2 all__string_cache.string_cache_0_2 all__html5ever.html5ever_0_9 ];
+  };
+  "html2text_0_1" = html2text_0_1_1;
+  "html2text_0" = html2text_0_1_1;}

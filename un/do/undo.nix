@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  all__fnv.fnv_1_0_5 ];
   };
   "undo_0_1" = undo_0_1_0;
-  "undo_0_2" = undo_0_2_0;
-  "undo_0" = undo_0_2_0;}
+  undo_0_2_1 = buildCratesLib {
+    name = "undo";
+    version = "0.2.1";
+    hash = "7223a80d416f50e5d34ee3795ad4c467963e5b156d327199f8e0889136305be2";
+    deps = with allCrates; [  all__fnv.fnv_1_0_5 ];
+  };
+  "undo_0_2" = undo_0_2_1;
+  "undo_0" = undo_0_2_1;}

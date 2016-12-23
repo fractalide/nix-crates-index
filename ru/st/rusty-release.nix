@@ -37,5 +37,11 @@ rec {
     hash = "2667a8ccebfdc3a9ce1f1228b495e8454646512070d6c7cc1f653885ca12fb06";
     deps = with allCrates; [  all__tempfile.tempfile_2_1 all__toml.toml_0_1 all__rustc-serialize.rustc-serialize_0_3 all__semver.semver_0_2 all__clap.clap_2_2 all__term.term_0_4 ];
   };
-  "rusty-release_0_3" = rusty-release_0_3_6;
-  "rusty-release_0" = rusty-release_0_3_6;}
+  rusty-release_0_3_7 = buildCratesLib {
+    name = "rusty-release";
+    version = "0.3.7";
+    hash = "63349881f245f138893dd33cb1c518b31202a9ed432671fce7c802e804bec367";
+    deps = with allCrates; [  all__term.term_0_4 all__toml.toml_0_1 all__semver.semver_0_2 all__clap.clap_2_2 all__rustc-serialize.rustc-serialize_0_3 all__tempfile.tempfile_2_1 ];
+  };
+  "rusty-release_0_3" = rusty-release_0_3_7;
+  "rusty-release_0" = rusty-release_0_3_7;}

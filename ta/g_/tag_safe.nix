@@ -63,5 +63,11 @@ rec {
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 ];
   };
   "tag_safe_0_1" = tag_safe_0_1_1;
-  "tag_safe_0_2" = tag_safe_0_2_0;
-  "tag_safe_0" = tag_safe_0_2_0;}
+  tag_safe_0_2_1 = buildCratesLib {
+    name = "tag_safe";
+    version = "0.2.1";
+    hash = "1917b64743bfffdafcd63b04e0117930a901e88e3a3e08c15f6742bfae657f6a";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 ];
+  };
+  "tag_safe_0_2" = tag_safe_0_2_1;
+  "tag_safe_0" = tag_safe_0_2_1;}

@@ -95,5 +95,11 @@ rec {
     deps = with allCrates; [  all__untrusted.untrusted_0_3 all__lazy_static.lazy_static_0_2 ];
   };
   "ring_0_5" = ring_0_5_3;
-  "ring_0_6" = ring_0_6_0;
-  "ring_0" = ring_0_6_0;}
+  ring_0_6_1 = buildCratesLib {
+    name = "ring";
+    version = "0.6.1";
+    hash = "5b7609de2b0dbc70eb7b27a1c2508aff1af9be7c05265ce19d98631b91281ee4";
+    deps = with allCrates; [  all__untrusted.untrusted_0_3 all__lazy_static.lazy_static_0_2 ];
+  };
+  "ring_0_6" = ring_0_6_1;
+  "ring_0" = ring_0_6_1;}

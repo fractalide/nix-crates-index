@@ -96,5 +96,12 @@ rec {
     hash = "5a3fb8dffe3fbf0fc95cd4f0b441cbf3ca81adfc988566bc28ee80291335ac5e";
     deps = with allCrates; [  all__nodrop.nodrop_0_1 all__typenum.typenum_1_3 ];
   };
+  generic-array_0_6_0 = buildCratesLib {
+    name = "generic-array";
+    version = "0.6.0";
+    hash = "7229d82657e79be00d5f2a110a973ab5340681b945cf1bc022be7cfebf2dc00c";
+    deps = with allCrates; [  all__nodrop.nodrop_0_1 all__typenum.typenum_1_3 ];
+  };
   "generic-array_0_5" = generic-array_0_5_1;
-  "generic-array_0" = generic-array_0_5_1;}
+  "generic-array_0_6" = generic-array_0_6_0;
+  "generic-array_0" = generic-array_0_6_0;}

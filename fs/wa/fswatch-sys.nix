@@ -43,5 +43,23 @@ rec {
     hash = "cfe43a20ae9066bd4832f8353520b8ca21eeae6526df16bc2ca04b8e6f206bb8";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
-  "fswatch-sys_0_1" = fswatch-sys_0_1_6;
-  "fswatch-sys_0" = fswatch-sys_0_1_6;}
+  fswatch-sys_0_1_8 = buildCratesLib {
+    name = "fswatch-sys";
+    version = "0.1.8";
+    hash = "2dbcd93a46fffd24e86c7825a5e8a14ef840b805b828fcb429bf3b761eae8468";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  fswatch-sys_0_1_9 = buildCratesLib {
+    name = "fswatch-sys";
+    version = "0.1.9";
+    hash = "95794799723994afbe430b0e5fe72b1bdbfe3acc63a2bc066d62558374619a55";
+    deps = with allCrates; [  all__cfg-if.cfg-if_0_1 all__libc.libc_0_2 ];
+  };
+  fswatch-sys_0_1_10 = buildCratesLib {
+    name = "fswatch-sys";
+    version = "0.1.10";
+    hash = "724f2430af867b6f24cb98180fea5401fb23201e28734273b96ce5f0cd6df0e6";
+    deps = with allCrates; [  all__libc.libc_0_2 all__cfg-if.cfg-if_0_1 ];
+  };
+  "fswatch-sys_0_1" = fswatch-sys_0_1_10;
+  "fswatch-sys_0" = fswatch-sys_0_1_10;}

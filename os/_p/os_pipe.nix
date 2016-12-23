@@ -26,5 +26,12 @@ rec {
     hash = "1ecfb1292dfafe07b2d203a137529a93145fed38ff1a11e12afb11dd93fb09c8";
     deps = with allCrates; [  ];
   };
+  os_pipe_0_3_0 = buildCratesLib {
+    name = "os_pipe";
+    version = "0.3.0";
+    hash = "569ec8593c74fafcc7841b6707c9a7308b75186eb801ee8d5057399e50b7a02b";
+    deps = with allCrates; [  ];
+  };
   "os_pipe_0_2" = os_pipe_0_2_1;
-  "os_pipe_0" = os_pipe_0_2_1;}
+  "os_pipe_0_3" = os_pipe_0_3_0;
+  "os_pipe_0" = os_pipe_0_3_0;}

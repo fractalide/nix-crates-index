@@ -13,5 +13,11 @@ rec {
     hash = "01c1620c8a645ffbac31d62939d682af4cfc9c8838bf561c437cd413a682d8da";
     deps = with allCrates; [  ];
   };
-  "mio-named-pipes_0_1" = mio-named-pipes_0_1_1;
-  "mio-named-pipes_0" = mio-named-pipes_0_1_1;}
+  mio-named-pipes_0_1_2 = buildCratesLib {
+    name = "mio-named-pipes";
+    version = "0.1.2";
+    hash = "f768afdeb5f54dc2702965b67810741b7a0e489e74ce66fab56c74356e6d5384";
+    deps = with allCrates; [  ];
+  };
+  "mio-named-pipes_0_1" = mio-named-pipes_0_1_2;
+  "mio-named-pipes_0" = mio-named-pipes_0_1_2;}

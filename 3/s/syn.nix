@@ -139,5 +139,17 @@ rec {
     hash = "94e7d81ecd16d39f16193af05b8d5a0111b9d8d2f3f78f31760f327a247da777";
     deps = with allCrates; [  ];
   };
-  "syn_0_10" = syn_0_10_3;
-  "syn_0" = syn_0_10_3;}
+  syn_0_10_4 = buildCratesLib {
+    name = "syn";
+    version = "0.10.4";
+    hash = "cda03df4ece3ebf08a913cb0131be7cf41a8ad342a2bf29f7218f310e8cf1064";
+    deps = with allCrates; [  ];
+  };
+  syn_0_10_5 = buildCratesLib {
+    name = "syn";
+    version = "0.10.5";
+    hash = "1a437f8b4353179418870f014113876cd4cd4f642e42dbc5ed4f328d5f808246";
+    deps = with allCrates; [  ];
+  };
+  "syn_0_10" = syn_0_10_5;
+  "syn_0" = syn_0_10_5;}

@@ -130,7 +130,7 @@
     "all__lru_time_cache" = self.callPackage ./lr/u_/lru_time_cache.nix { };
     "lru_time_cache" = all__lru_time_cache."lru_time_cache_0_5_0";
     "all__kafka-proxy" = self.callPackage ./ka/fk/kafka-proxy.nix { };
-    "kafka-proxy" = all__kafka-proxy."kafka-proxy_0_10_0";
+    "kafka-proxy" = all__kafka-proxy."kafka-proxy_0_10_1";
     "all__kafka" = self.callPackage ./ka/fk/kafka.nix { };
     "kafka" = all__kafka."kafka_0_5_0";
     "all__karaorust" = self.callPackage ./ka/ra/karaorust.nix { };
@@ -424,7 +424,7 @@
     "all__untrusted" = self.callPackage ./un/tr/untrusted.nix { };
     "untrusted" = all__untrusted."untrusted_0_3_2";
     "all__undo" = self.callPackage ./un/do/undo.nix { };
-    "undo" = all__undo."undo_0_2_0";
+    "undo" = all__undo."undo_0_2_1";
     "all__unum" = self.callPackage ./un/um/unum.nix { };
     "unum" = all__unum."unum_0_0_0";
     "all__unwrap" = self.callPackage ./un/wr/unwrap.nix { };
@@ -578,7 +578,7 @@
     "all__mincore-sys" = self.callPackage ./mi/nc/mincore-sys.nix { };
     "mincore-sys" = all__mincore-sys."mincore-sys_0_0_1";
     "all__mio-named-pipes" = self.callPackage ./mi/o-/mio-named-pipes.nix { };
-    "mio-named-pipes" = all__mio-named-pipes."mio-named-pipes_0_1_1";
+    "mio-named-pipes" = all__mio-named-pipes."mio-named-pipes_0_1_2";
     "all__mio-uds" = self.callPackage ./mi/o-/mio-uds.nix { };
     "mio-uds" = all__mio-uds."mio-uds_0_6_0";
     "all__mio-serial" = self.callPackage ./mi/o-/mio-serial.nix { };
@@ -789,6 +789,8 @@
     "mold2d" = all__mold2d."mold2d_0_0_2";
     "all__motivations" = self.callPackage ./mo/ti/motivations.nix { };
     "motivations" = all__motivations."motivations_1_1_2";
+    "all__mowl" = self.callPackage ./mo/wl/mowl.nix { };
+    "mowl" = all__mowl."mowl_1_0_0";
     "all__monstrio" = self.callPackage ./mo/ns/monstrio.nix { };
     "monstrio" = all__monstrio."monstrio_0_1_2";
     "all__monster" = self.callPackage ./mo/ns/monster.nix { };
@@ -976,7 +978,9 @@
     "all__tokio-process" = self.callPackage ./to/ki/tokio-process.nix { };
     "tokio-process" = all__tokio-process."tokio-process_0_2_0";
     "all__tokio-curl" = self.callPackage ./to/ki/tokio-curl.nix { };
-    "tokio-curl" = all__tokio-curl."tokio-curl_0_1_4";
+    "tokio-curl" = all__tokio-curl."tokio-curl_0_1_5";
+    "all__tokio-openssl" = self.callPackage ./to/ki/tokio-openssl.nix { };
+    "tokio-openssl" = all__tokio-openssl."tokio-openssl_0_1_0";
     "all__tokio-uds" = self.callPackage ./to/ki/tokio-uds.nix { };
     "tokio-uds" = all__tokio-uds."tokio-uds_0_1_1";
     "all__tokio" = self.callPackage ./to/ki/tokio.nix { };
@@ -1054,7 +1058,7 @@
     "all__ufloat8" = self.callPackage ./uf/lo/ufloat8.nix { };
     "ufloat8" = all__ufloat8."ufloat8_0_1_0";
     "all__xcb-util" = self.callPackage ./xc/b-/xcb-util.nix { };
-    "xcb-util" = all__xcb-util."xcb-util_0_1_6";
+    "xcb-util" = all__xcb-util."xcb-util_0_1_7";
     "all__xcur" = self.callPackage ./xc/ur/xcur.nix { };
     "xcur" = all__xcur."xcur_0_1_3";
     "all__xcore" = self.callPackage ./xc/or/xcore.nix { };
@@ -1471,6 +1475,8 @@
     "serial" = all__serial."serial_0_3_4";
     "all__serial-win" = self.callPackage ./se/ri/serial-win.nix { };
     "serial-win" = all__serial-win."serial-win_0_2_0";
+    "all__serialport" = self.callPackage ./se/ri/serialport.nix { };
+    "serialport" = all__serialport."serialport_0_1_0";
     "all__sequence_trie" = self.callPackage ./se/qu/sequence_trie.nix { };
     "sequence_trie" = all__sequence_trie."sequence_trie_0_2_1";
     "all__sequel" = self.callPackage ./se/qu/sequel.nix { };
@@ -1928,7 +1934,7 @@
     "all__html5ever-atoms" = self.callPackage ./ht/ml/html5ever-atoms.nix { };
     "html5ever-atoms" = all__html5ever-atoms."html5ever-atoms_0_1_2";
     "all__html2text" = self.callPackage ./ht/ml/html2text.nix { };
-    "html2text" = all__html2text."html2text_0_1_0";
+    "html2text" = all__html2text."html2text_0_1_1";
     "all__html5ever_macros" = self.callPackage ./ht/ml/html5ever_macros.nix { };
     "html5ever_macros" = all__html5ever_macros."html5ever_macros_0_2_7";
     "all__html5ever_dom_sink" = self.callPackage ./ht/ml/html5ever_dom_sink.nix { };
@@ -2862,7 +2868,7 @@
     "all__luajit-sys" = self.callPackage ./lu/aj/luajit-sys.nix { };
     "luajit-sys" = all__luajit-sys."luajit-sys_0_0_5";
     "all__lua52-sys" = self.callPackage ./lu/a5/lua52-sys.nix { };
-    "lua52-sys" = all__lua52-sys."lua52-sys_0_0_4";
+    "lua52-sys" = all__lua52-sys."lua52-sys_0_1_0";
     "all__luthor" = self.callPackage ./lu/th/luthor.nix { };
     "luthor" = all__luthor."luthor_0_2_0";
     "all__ludum" = self.callPackage ./lu/du/ludum.nix { };
@@ -3756,7 +3762,7 @@
     "all__syntex_bitflags" = self.callPackage ./sy/nt/syntex_bitflags.nix { };
     "syntex_bitflags" = all__syntex_bitflags."syntex_bitflags_0_1_0";
     "all__syntect" = self.callPackage ./sy/nt/syntect.nix { };
-    "syntect" = all__syntect."syntect_1_0_1";
+    "syntect" = all__syntect."syntect_1_0_2";
     "all__synth" = self.callPackage ./sy/nt/synth.nix { };
     "synth" = all__synth."synth_0_10_0";
     "all__syntaxext_lint" = self.callPackage ./sy/nt/syntaxext_lint.nix { };
@@ -4106,7 +4112,7 @@
     "all__rabbot" = self.callPackage ./ra/bb/rabbot.nix { };
     "rabbot" = all__rabbot."rabbot_0_2_0";
     "all__rabble" = self.callPackage ./ra/bb/rabble.nix { };
-    "rabble" = all__rabble."rabble_0_1_1";
+    "rabble" = all__rabble."rabble_0_1_2";
     "all__rabbiteer" = self.callPackage ./ra/bb/rabbiteer.nix { };
     "rabbiteer" = all__rabbiteer."rabbiteer_0_2_0";
     "all__rabbot-plugin" = self.callPackage ./ra/bb/rabbot-plugin.nix { };
@@ -4343,6 +4349,8 @@
     "schedule_recv" = all__schedule_recv."schedule_recv_0_1_0";
     "all__scrutch" = self.callPackage ./sc/ru/scrutch.nix { };
     "scrutch" = all__scrutch."scrutch_0_0_4";
+    "all__scrubcsv" = self.callPackage ./sc/ru/scrubcsv.nix { };
+    "scrubcsv" = all__scrubcsv."scrubcsv_0_1_0";
     "all__screenshot" = self.callPackage ./sc/re/screenshot.nix { };
     "screenshot" = all__screenshot."screenshot_0_0_7";
     "all__screenruster" = self.callPackage ./sc/re/screenruster.nix { };
@@ -4964,7 +4972,7 @@
     "all__pijul" = self.callPackage ./pi/ju/pijul.nix { };
     "pijul" = all__pijul."pijul_0_1_0";
     "all__picto" = self.callPackage ./pi/ct/picto.nix { };
-    "picto" = all__picto."picto_0_4_1";
+    "picto" = all__picto."picto_0_4_2";
     "all__pippin" = self.callPackage ./pi/pp/pippin.nix { };
     "pippin" = all__pippin."pippin_0_1_0";
     "all__pihash" = self.callPackage ./pi/ha/pihash.nix { };
@@ -5286,7 +5294,7 @@
     "all__tk-sendfile" = self.callPackage ./tk/-s/tk-sendfile.nix { };
     "tk-sendfile" = all__tk-sendfile."tk-sendfile_0_3_0";
     "all__tk-redis" = self.callPackage ./tk/-r/tk-redis.nix { };
-    "tk-redis" = all__tk-redis."tk-redis_0_1_2";
+    "tk-redis" = all__tk-redis."tk-redis_0_1_3";
     "all__tmp_mio" = self.callPackage ./tm/p_/tmp_mio.nix { };
     "tmp_mio" = all__tmp_mio."tmp_mio_0_5_2";
     "all__tmp_vec" = self.callPackage ./tm/p_/tmp_vec.nix { };
@@ -5872,7 +5880,7 @@
     "all__epoxy" = self.callPackage ./ep/ox/epoxy.nix { };
     "epoxy" = all__epoxy."epoxy_0_0_2";
     "all__epoll" = self.callPackage ./ep/ol/epoll.nix { };
-    "epoll" = all__epoll."epoll_2_0_0";
+    "epoll" = all__epoll."epoll_2_1_0";
     "all__epaste" = self.callPackage ./ep/as/epaste.nix { };
     "epaste" = all__epaste."epaste_1_0_2";
     "all__epsilonz" = self.callPackage ./ep/si/epsilonz.nix { };
@@ -5924,7 +5932,7 @@
     "all__genetic" = self.callPackage ./ge/ne/genetic.nix { };
     "genetic" = all__genetic."genetic_0_2_1";
     "all__generic-array" = self.callPackage ./ge/ne/generic-array.nix { };
-    "generic-array" = all__generic-array."generic-array_0_5_1";
+    "generic-array" = all__generic-array."generic-array_0_6_0";
     "all__gexiv2-sys" = self.callPackage ./ge/xi/gexiv2-sys.nix { };
     "gexiv2-sys" = all__gexiv2-sys."gexiv2-sys_0_6_1";
     "all__getch" = self.callPackage ./ge/tc/getch.nix { };
@@ -6102,7 +6110,7 @@
     "all__webpki-roots" = self.callPackage ./we/bp/webpki-roots.nix { };
     "webpki-roots" = all__webpki-roots."webpki-roots_0_6_0";
     "all__webpki" = self.callPackage ./we/bp/webpki.nix { };
-    "webpki" = all__webpki."webpki_0_9_0";
+    "webpki" = all__webpki."webpki_0_9_1";
     "all__wevtapi-sys" = self.callPackage ./we/vt/wevtapi-sys.nix { };
     "wevtapi-sys" = all__wevtapi-sys."wevtapi-sys_0_0_1";
     "all__weakjson" = self.callPackage ./we/ak/weakjson.nix { };
@@ -6124,7 +6132,7 @@
     "all__webservices-sys" = self.callPackage ./we/bs/webservices-sys.nix { };
     "webservices-sys" = all__webservices-sys."webservices-sys_0_0_1";
     "all__websocat" = self.callPackage ./we/bs/websocat.nix { };
-    "websocat" = all__websocat."websocat_0_2_0";
+    "websocat" = all__websocat."websocat_0_3_0";
     "all__webbrowser" = self.callPackage ./we/bb/webbrowser.nix { };
     "webbrowser" = all__webbrowser."webbrowser_0_1_3";
     "all__webdriver" = self.callPackage ./we/bd/webdriver.nix { };
@@ -6535,6 +6543,8 @@
     "constrained" = all__constrained."constrained_0_1_0";
     "all__cons-list" = self.callPackage ./co/ns/cons-list.nix { };
     "cons-list" = all__cons-list."cons-list_0_0_2";
+    "all__consist" = self.callPackage ./co/ns/consist.nix { };
+    "consist" = all__consist."consist_0_1_1";
     "all__consecutive-vecmap" = self.callPackage ./co/ns/consecutive-vecmap.nix { };
     "consecutive-vecmap" = all__consecutive-vecmap."consecutive-vecmap_0_1_1";
     "all__constant_time_eq" = self.callPackage ./co/ns/constant_time_eq.nix { };
@@ -6642,7 +6652,7 @@
     "all__hlist" = self.callPackage ./hl/is/hlist.nix { };
     "hlist" = all__hlist."hlist_0_1_0";
     "all__hlua" = self.callPackage ./hl/ua/hlua.nix { };
-    "hlua" = all__hlua."hlua_0_1_9";
+    "hlua" = all__hlua."hlua_0_2_0";
     "all__hlua_master" = self.callPackage ./hl/ua/hlua_master.nix { };
     "hlua_master" = all__hlua_master."hlua_master_0_1_8";
     "all__hllvm-sys" = self.callPackage ./hl/lv/hllvm-sys.nix { };
@@ -6718,7 +6728,7 @@
     "all__rispcrt" = self.callPackage ./ri/sp/rispcrt.nix { };
     "rispcrt" = all__rispcrt."rispcrt_0_1_0";
     "all__ring" = self.callPackage ./ri/ng/ring.nix { };
-    "ring" = all__ring."ring_0_6_0";
+    "ring" = all__ring."ring_0_6_1";
     "all__ring-pwhash" = self.callPackage ./ri/ng/ring-pwhash.nix { };
     "ring-pwhash" = all__ring-pwhash."ring-pwhash_0_1_1";
     "all__rivlib" = self.callPackage ./ri/vl/rivlib.nix { };
@@ -7332,7 +7342,7 @@
     "all__fnd" = self.callPackage ./3/f/fnd.nix { };
     "fnd" = all__fnd."fnd_0_1_0";
     "all__flx" = self.callPackage ./3/f/flx.nix { };
-    "flx" = all__flx."flx_0_1_0";
+    "flx" = all__flx."flx_0_1_1";
     "all__fnv" = self.callPackage ./3/f/fnv.nix { };
     "fnv" = all__fnv."fnv_1_0_5";
     "all__fcm" = self.callPackage ./3/f/fcm.nix { };
@@ -7434,7 +7444,7 @@
     "all__raw" = self.callPackage ./3/r/raw.nix { };
     "raw" = all__raw."raw_0_0_6";
     "all__syn" = self.callPackage ./3/s/syn.nix { };
-    "syn" = all__syn."syn_0_10_3";
+    "syn" = all__syn."syn_0_10_5";
     "all__ssh" = self.callPackage ./3/s/ssh.nix { };
     "ssh" = all__ssh."ssh_0_1_4";
     "all__sem" = self.callPackage ./3/s/sem.nix { };
@@ -8243,6 +8253,8 @@
     "log-mdc" = all__log-mdc."log-mdc_0_1_0";
     "all__logd" = self.callPackage ./lo/gd/logd.nix { };
     "logd" = all__logd."logd_0_0_1";
+    "all__lopdf" = self.callPackage ./lo/pd/lopdf.nix { };
+    "lopdf" = all__lopdf."lopdf_0_1_0";
     "all__lolog" = self.callPackage ./lo/lo/lolog.nix { };
     "lolog" = all__lolog."lolog_0_1_2";
     "all__loopdev" = self.callPackage ./lo/op/loopdev.nix { };
@@ -8619,6 +8631,8 @@
     "bitstream" = all__bitstream."bitstream_0_1_1";
     "all__bits" = self.callPackage ./bi/ts/bits.nix { };
     "bits" = all__bits."bits_0_0_4";
+    "all__bip39" = self.callPackage ./bi/p3/bip39.nix { };
+    "bip39" = all__bip39."bip39_0_1_0";
     "all__bittorrent" = self.callPackage ./bi/tt/bittorrent.nix { };
     "bittorrent" = all__bittorrent."bittorrent_0_1_0";
     "all__bigint" = self.callPackage ./bi/gi/bigint.nix { };
@@ -8740,7 +8754,7 @@
     "all__orbtk" = self.callPackage ./or/bt/orbtk.nix { };
     "orbtk" = all__orbtk."orbtk_0_2_7";
     "all__orbclient" = self.callPackage ./or/bc/orbclient.nix { };
-    "orbclient" = all__orbclient."orbclient_0_2_2";
+    "orbclient" = all__orbclient."orbclient_0_2_3";
     "all__orchestra" = self.callPackage ./or/ch/orchestra.nix { };
     "orchestra" = all__orchestra."orchestra_0_0_0";
     "all__wtf8" = self.callPackage ./wt/f8/wtf8.nix { };
@@ -8890,7 +8904,7 @@
     "all__take_mut" = self.callPackage ./ta/ke/take_mut.nix { };
     "take_mut" = all__take_mut."take_mut_0_1_3";
     "all__tag_safe" = self.callPackage ./ta/g_/tag_safe.nix { };
-    "tag_safe" = all__tag_safe."tag_safe_0_2_0";
+    "tag_safe" = all__tag_safe."tag_safe_0_2_1";
     "all__tapi32l-sys" = self.callPackage ./ta/pi/tapi32l-sys.nix { };
     "tapi32l-sys" = all__tapi32l-sys."tapi32l-sys_0_0_1";
     "all__tapi32-sys" = self.callPackage ./ta/pi/tapi32-sys.nix { };
@@ -9392,7 +9406,7 @@
     "all__osmesa-sys" = self.callPackage ./os/me/osmesa-sys.nix { };
     "osmesa-sys" = all__osmesa-sys."osmesa-sys_0_1_2";
     "all__os_pipe" = self.callPackage ./os/_p/os_pipe.nix { };
-    "os_pipe" = all__os_pipe."os_pipe_0_2_1";
+    "os_pipe" = all__os_pipe."os_pipe_0_3_0";
     "all__osmpbfreader" = self.callPackage ./os/mp/osmpbfreader.nix { };
     "osmpbfreader" = all__osmpbfreader."osmpbfreader_0_5_0";
     "all__ostn02_phf" = self.callPackage ./os/tn/ostn02_phf.nix { };
@@ -9467,6 +9481,8 @@
     "small-deployer" = all__small-deployer."small-deployer_0_1_2";
     "all__smelter" = self.callPackage ./sm/el/smelter.nix { };
     "smelter" = all__smelter."smelter_0_0_1";
+    "all__smartcard" = self.callPackage ./sm/ar/smartcard.nix { };
+    "smartcard" = all__smartcard."smartcard_0_1_0";
     "all__smetamath" = self.callPackage ./sm/et/smetamath.nix { };
     "smetamath" = all__smetamath."smetamath_3_0_0";
     "all__smith" = self.callPackage ./sm/it/smith.nix { };
@@ -10666,7 +10682,7 @@
     "all__RustyEmitter" = self.callPackage ./ru/st/rustyemitter.nix { };
     "RustyEmitter" = all__RustyEmitter."RustyEmitter_2_2_0";
     "all__rusty-release" = self.callPackage ./ru/st/rusty-release.nix { };
-    "rusty-release" = all__rusty-release."rusty-release_0_3_6";
+    "rusty-release" = all__rusty-release."rusty-release_0_3_7";
     "all__rust_erl_ext" = self.callPackage ./ru/st/rust_erl_ext.nix { };
     "rust_erl_ext" = all__rust_erl_ext."rust_erl_ext_0_2_1";
     "all__rustcov" = self.callPackage ./ru/st/rustcov.nix { };
@@ -10918,7 +10934,7 @@
     "all__rust_events" = self.callPackage ./ru/st/rust_events.nix { };
     "rust_events" = all__rust_events."rust_events_0_9_0";
     "all__rustfbp" = self.callPackage ./ru/st/rustfbp.nix { };
-    "rustfbp" = all__rustfbp."rustfbp_0_3_29";
+    "rustfbp" = all__rustfbp."rustfbp_0_3_30";
     "all__rust-install" = self.callPackage ./ru/st/rust-install.nix { };
     "rust-install" = all__rust-install."rust-install_0_0_4";
     "all__rust-github" = self.callPackage ./ru/st/rust-github.nix { };
@@ -11388,7 +11404,7 @@
     "all__sphinxad" = self.callPackage ./sp/hi/sphinxad.nix { };
     "sphinxad" = all__sphinxad."sphinxad_0_1_1";
     "all__speedtest-rs" = self.callPackage ./sp/ee/speedtest-rs.nix { };
-    "speedtest-rs" = all__speedtest-rs."speedtest-rs_0_0_8";
+    "speedtest-rs" = all__speedtest-rs."speedtest-rs_0_0_9";
     "all__spaceapi-server" = self.callPackage ./sp/ac/spaceapi-server.nix { };
     "spaceapi-server" = all__spaceapi-server."spaceapi-server_0_3_1";
     "all__spaceslugs" = self.callPackage ./sp/ac/spaceslugs.nix { };
@@ -12013,6 +12029,8 @@
     "path-glob" = all__path-glob."path-glob_1_0_0";
     "all__pathcch-sys" = self.callPackage ./pa/th/pathcch-sys.nix { };
     "pathcch-sys" = all__pathcch-sys."pathcch-sys_0_0_1";
+    "all__path" = self.callPackage ./pa/th/path.nix { };
+    "path" = all__path."path_0_3_0";
     "all__packed" = self.callPackage ./pa/ck/packed.nix { };
     "packed" = all__packed."packed_0_4_2";
     "all__packagemerge" = self.callPackage ./pa/ck/packagemerge.nix { };
@@ -12024,7 +12042,7 @@
     "all__params" = self.callPackage ./pa/ra/params.nix { };
     "params" = all__params."params_0_5_1";
     "all__parallel" = self.callPackage ./pa/ra/parallel.nix { };
-    "parallel" = all__parallel."parallel_0_6_2";
+    "parallel" = all__parallel."parallel_0_6_3";
     "all__paragraph" = self.callPackage ./pa/ra/paragraph.nix { };
     "paragraph" = all__paragraph."paragraph_0_0_2";
     "all__parasailors" = self.callPackage ./pa/ra/parasailors.nix { };
@@ -12453,6 +12471,8 @@
     "flaker" = all__flaker."flaker_0_1_3";
     "all__fluorine" = self.callPackage ./fl/uo/fluorine.nix { };
     "fluorine" = all__fluorine."fluorine_0_1_0";
+    "all__fluxcap" = self.callPackage ./fl/ux/fluxcap.nix { };
+    "fluxcap" = all__fluxcap."fluxcap_0_0_1";
     "all__flux" = self.callPackage ./fl/ux/flux.nix { };
     "flux" = all__flux."flux_3_0_1";
     "all__float" = self.callPackage ./fl/oa/float.nix { };
@@ -12548,7 +12568,9 @@
     "all__fst-bin" = self.callPackage ./fs/t-/fst-bin.nix { };
     "fst-bin" = all__fst-bin."fst-bin_0_1_2";
     "all__fswatch-sys" = self.callPackage ./fs/wa/fswatch-sys.nix { };
-    "fswatch-sys" = all__fswatch-sys."fswatch-sys_0_1_6";
+    "fswatch-sys" = all__fswatch-sys."fswatch-sys_0_1_10";
+    "all__fswatch" = self.callPackage ./fs/wa/fswatch.nix { };
+    "fswatch" = all__fswatch."fswatch_0_1_10";
     "all__fsuipc" = self.callPackage ./fs/ui/fsuipc.nix { };
     "fsuipc" = all__fsuipc."fsuipc_0_3_0";
     "all__fsevent-sys" = self.callPackage ./fs/ev/fsevent-sys.nix { };
@@ -12720,7 +12742,7 @@
     "all__indexed-line-reader" = self.callPackage ./in/de/indexed-line-reader.nix { };
     "indexed-line-reader" = all__indexed-line-reader."indexed-line-reader_0_2_0";
     "all__indexing" = self.callPackage ./in/de/indexing.nix { };
-    "indexing" = all__indexing."indexing_0_2_0";
+    "indexing" = all__indexing."indexing_0_3_0";
     "all__index_multi" = self.callPackage ./in/de/index_multi.nix { };
     "index_multi" = all__index_multi."index_multi_0_0_0";
     "all__index-fixed" = self.callPackage ./in/de/index-fixed.nix { };
@@ -13131,6 +13153,8 @@
     "game" = all__game."game_0_0_2";
     "all__gaol" = self.callPackage ./ga/ol/gaol.nix { };
     "gaol" = all__gaol."gaol_0_1_0";
+    "all__gattii" = self.callPackage ./ga/tt/gattii.nix { };
+    "gattii" = all__gattii."gattii_0_1_0";
     "all__gauss" = self.callPackage ./ga/us/gauss.nix { };
     "gauss" = all__gauss."gauss_0_5_0";
     "all__gaussian" = self.callPackage ./ga/us/gaussian.nix { };
@@ -13310,7 +13334,7 @@
     "all__promise" = self.callPackage ./pr/om/promise.nix { };
     "promise" = all__promise."promise_0_0_4";
     "all__prometheus" = self.callPackage ./pr/om/prometheus.nix { };
-    "prometheus" = all__prometheus."prometheus_0_2_6";
+    "prometheus" = all__prometheus."prometheus_0_2_8";
     "all__profit" = self.callPackage ./pr/of/profit.nix { };
     "profit" = all__profit."profit_0_0_0";
     "all__prll-ri" = self.callPackage ./pr/ll/prll-ri.nix { };
@@ -13891,6 +13915,8 @@
     "sql_lexer" = all__sql_lexer."sql_lexer_0_9_1";
     "all__squirrel" = self.callPackage ./sq/ui/squirrel.nix { };
     "squirrel" = all__squirrel."squirrel_0_1_0";
+    "all__sqa-jack" = self.callPackage ./sq/a-/sqa-jack.nix { };
+    "sqa-jack" = all__sqa-jack."sqa-jack_0_1_0";
     "all__sqlpop" = self.callPackage ./sq/lp/sqlpop.nix { };
     "sqlpop" = all__sqlpop."sqlpop_0_1_0";
     "all__errno" = self.callPackage ./er/rn/errno.nix { };
@@ -14260,7 +14286,7 @@
     "all__volatile-register" = self.callPackage ./vo/la/volatile-register.nix { };
     "volatile-register" = all__volatile-register."volatile-register_0_1_2";
     "all__volatile" = self.callPackage ./vo/la/volatile.nix { };
-    "volatile" = all__volatile."volatile_0_2_0";
+    "volatile" = all__volatile."volatile_0_2_1";
     "all__vobject" = self.callPackage ./vo/bj/vobject.nix { };
     "vobject" = all__vobject."vobject_0_1_1";
     "all__vox_box" = self.callPackage ./vo/x_/vox_box.nix { };
@@ -14350,7 +14376,7 @@
     "all__test-logger" = self.callPackage ./te/st/test-logger.nix { };
     "test-logger" = all__test-logger."test-logger_0_1_0";
     "all__test-to-vec" = self.callPackage ./te/st/test-to-vec.nix { };
-    "test-to-vec" = all__test-to-vec."test-to-vec_0_2_0";
+    "test-to-vec" = all__test-to-vec."test-to-vec_0_3_0";
     "all__test-assets" = self.callPackage ./te/st/test-assets.nix { };
     "test-assets" = all__test-assets."test-assets_0_1_0";
     "all__test-assembler" = self.callPackage ./te/st/test-assembler.nix { };
@@ -14537,5 +14563,7 @@
     "lpsolve" = all__lpsolve."lpsolve_0_1_0";
     "all__lpsolve-sys" = self.callPackage ./lp/so/lpsolve-sys.nix { };
     "lpsolve-sys" = all__lpsolve-sys."lpsolve-sys_5_5_0";
+    "all__lpc43xx" = self.callPackage ./lp/c4/lpc43xx.nix { };
+    "lpc43xx" = all__lpc43xx."lpc43xx_0_0_0";
  };
  }
