@@ -20,5 +20,17 @@ rec {
     hash = "39abb3e251f4288bbfb7a5406cda17874402f147a138ac807bc105bb7731dd26";
     deps = with allCrates; [  all__netbuf.netbuf_0_3 all__futures.futures_0_1 all__tokio-core.tokio-core_0_1 all__quick-error.quick-error_1_1 ];
   };
-  "tk-bufstream_0_2" = tk-bufstream_0_2_1;
-  "tk-bufstream_0" = tk-bufstream_0_2_1;}
+  tk-bufstream_0_2_2 = buildCratesLib {
+    name = "tk-bufstream";
+    version = "0.2.2";
+    hash = "5c8e284b4331945eb5570a42d5cc1b88335f1b6e26186ca58e1929491d351099";
+    deps = with allCrates; [  all__futures.futures_0_1 all__quick-error.quick-error_1_1 all__netbuf.netbuf_0_3 all__tokio-core.tokio-core_0_1 ];
+  };
+  tk-bufstream_0_2_3 = buildCratesLib {
+    name = "tk-bufstream";
+    version = "0.2.3";
+    hash = "01cc0d5ca95cb381845f90d4755e9b965321624075346cc3fea98efda960b8df";
+    deps = with allCrates; [  all__quick-error.quick-error_1_1 all__futures.futures_0_1 all__netbuf.netbuf_0_3 all__tokio-core.tokio-core_0_1 ];
+  };
+  "tk-bufstream_0_2" = tk-bufstream_0_2_3;
+  "tk-bufstream_0" = tk-bufstream_0_2_3;}

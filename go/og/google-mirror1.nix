@@ -99,5 +99,17 @@ rec {
   };
   "google-mirror1_0_1" = google-mirror1_0_1_15;
   "google-mirror1_0" = google-mirror1_0_1_15;
-  "google-mirror1_1_0" = google-mirror1_1_0_0;
-  "google-mirror1_1" = google-mirror1_1_0_0;}
+  google-mirror1_1_0_1 = buildCratesLib {
+    name = "google-mirror1";
+    version = "1.0.1";
+    hash = "055a7d8930110b90f5023320ecc331a64a6b30b0cc4eb2ff200a9bee04e7ced5";
+    deps = with allCrates; [  all__serde.serde_0_8 url all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+  };
+  google-mirror1_1_0_2 = buildCratesLib {
+    name = "google-mirror1";
+    version = "1.0.2";
+    hash = "c2bb1970f9522722ffa5eb1a0c17cce8c96cdc37a623ed3d59507db05a80e63b";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 url all__hyper.hyper_0_9 ];
+  };
+  "google-mirror1_1_0" = google-mirror1_1_0_2;
+  "google-mirror1_1" = google-mirror1_1_0_2;}

@@ -63,5 +63,17 @@ rec {
     deps = with allCrates; [  all__thread-id.thread-id_3_0 all__unreachable.unreachable_0_1 ];
   };
   "thread_local_0_2" = thread_local_0_2_7;
-  "thread_local_0_3" = thread_local_0_3_0;
-  "thread_local_0" = thread_local_0_3_0;}
+  thread_local_0_3_1 = buildCratesLib {
+    name = "thread_local";
+    version = "0.3.1";
+    hash = "aea251e0d1d7318176cd615b5dce31e7bb19e160015520deb0da6c8cd50d0ca0";
+    deps = with allCrates; [  all__unreachable.unreachable_0_1 all__thread-id.thread-id_3_0 ];
+  };
+  thread_local_0_3_2 = buildCratesLib {
+    name = "thread_local";
+    version = "0.3.2";
+    hash = "7793b722f0f77ce716e7f1acf416359ca32ff24d04ffbac4269f44a4a83be05d";
+    deps = with allCrates; [  all__unreachable.unreachable_0_1 all__thread-id.thread-id_3_0 ];
+  };
+  "thread_local_0_3" = thread_local_0_3_2;
+  "thread_local_0" = thread_local_0_3_2;}

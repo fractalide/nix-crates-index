@@ -25,5 +25,11 @@ rec {
     hash = "64db84005b89ead4d7643049e43368bc1c796bde52d6b18986a5fb49c85e5db6";
     deps = with allCrates; [  ];
   };
-  "overflower_support_0_1" = overflower_support_0_1_4;
-  "overflower_support_0" = overflower_support_0_1_4;}
+  overflower_support_0_1_5 = buildCratesLib {
+    name = "overflower_support";
+    version = "0.1.5";
+    hash = "5bcd627e14a417c7f38e8e599cfd95811da7a320be9d052e56a877b0e78edfb4";
+    deps = with allCrates; [  ];
+  };
+  "overflower_support_0_1" = overflower_support_0_1_5;
+  "overflower_support_0" = overflower_support_0_1_5;}

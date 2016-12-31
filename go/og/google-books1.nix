@@ -99,5 +99,17 @@ rec {
   };
   "google-books1_0_1" = google-books1_0_1_15;
   "google-books1_0" = google-books1_0_1_15;
-  "google-books1_1_0" = google-books1_1_0_0;
-  "google-books1_1" = google-books1_1_0_0;}
+  google-books1_1_0_1 = buildCratesLib {
+    name = "google-books1";
+    version = "1.0.1";
+    hash = "bf7b9e39aef93eb8142ee7d8deb273f887e6f762863dfbb07090c2925b4545eb";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 url ];
+  };
+  google-books1_1_0_2 = buildCratesLib {
+    name = "google-books1";
+    version = "1.0.2";
+    hash = "db89951716be8d5879fbfa3619e7980567449d4e55b4debb66c8b86d788ed4ff";
+    deps = with allCrates; [  url all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 ];
+  };
+  "google-books1_1_0" = google-books1_1_0_2;
+  "google-books1_1" = google-books1_1_0_2;}

@@ -26,5 +26,11 @@ rec {
     hash = "0cf190414f4045811a997c4863174243badd239c81e5ab790c77b96bb96ab3f4";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
   };
-  "socks_0_2" = socks_0_2_2;
-  "socks_0" = socks_0_2_2;}
+  socks_0_2_3 = buildCratesLib {
+    name = "socks";
+    version = "0.2.3";
+    hash = "8b09d9e16fe88f743086187ce6b233861f2458c9cb6a836e96b93cf362551299";
+    deps = with allCrates; [  all__byteorder.byteorder_1_0 ];
+  };
+  "socks_0_2" = socks_0_2_3;
+  "socks_0" = socks_0_2_3;}

@@ -25,5 +25,11 @@ rec {
     hash = "e2aa6efdc412a57fe03b19e2e6ac0bdb8e10f15ecef56bcf2006e15cff5cd764";
     deps = with allCrates; [  all__docopt.docopt_0_6 all__pad.pad_0_1 all__quick-error.quick-error_1_0_0 all__regex.regex_0_1 all__curl.curl_0_2 all__rustc-serialize.rustc-serialize_0_3 all__semver.semver_0_2 all__toml.toml_0_1 ];
   };
-  "cargo-edit_0_1" = cargo-edit_0_1_3;
-  "cargo-edit_0" = cargo-edit_0_1_3;}
+  cargo-edit_0_1_4 = buildCratesLib {
+    name = "cargo-edit";
+    version = "0.1.4";
+    hash = "a7db97e572363d8e19e66e098beb6444bc9c05cdbf5d1196b11f795dd333d47e";
+    deps = with allCrates; [  all__quick-error.quick-error_1_0_0 all__curl.curl_0_2 all__rustc-serialize.rustc-serialize_0_3 all__toml.toml_0_1 all__docopt.docopt_0_6 all__pad.pad_0_1 all__regex.regex_0_1 all__semver.semver_0_2 ];
+  };
+  "cargo-edit_0_1" = cargo-edit_0_1_4;
+  "cargo-edit_0" = cargo-edit_0_1_4;}

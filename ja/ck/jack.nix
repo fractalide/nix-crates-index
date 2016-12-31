@@ -25,5 +25,18 @@ rec {
     hash = "8b6142d48e37ff08f3f9a489f1097e78e4687ac1030add72ce003f337d2529c6";
     deps = with allCrates; [  all__bitflags.bitflags_0_7 all__libc.libc_0_2 all__lazy_static.lazy_static_0_2 all__jack-sys.jack-sys_0_1 ];
   };
+  jack_0_2_0 = buildCratesLib {
+    name = "jack";
+    version = "0.2.0";
+    hash = "61e57f83f37be77c3d55a70d3275755eac3087cbd20e29a51ebead99a7945e18";
+    deps = with allCrates; [  all__jack-sys.jack-sys_0_1 all__libc.libc_0_2 all__lazy_static.lazy_static_0_2 all__bitflags.bitflags_0_7 ];
+  };
   "jack_0_1" = jack_0_1_4;
-  "jack_0" = jack_0_1_4;}
+  jack_0_2_1 = buildCratesLib {
+    name = "jack";
+    version = "0.2.1";
+    hash = "f640ccb635aa51abc15477e0d9abc7693f219c8a6bdabd1007cb9d4272eabad8";
+    deps = with allCrates; [  all__jack-sys.jack-sys_0_1 all__libc.libc_0_2 all__bitflags.bitflags_0_7 all__lazy_static.lazy_static_0_2 ];
+  };
+  "jack_0_2" = jack_0_2_1;
+  "jack_0" = jack_0_2_1;}

@@ -99,5 +99,17 @@ rec {
   };
   "google-tagmanager1_0_1" = google-tagmanager1_0_1_15;
   "google-tagmanager1_0" = google-tagmanager1_0_1_15;
-  "google-tagmanager1_1_0" = google-tagmanager1_1_0_0;
-  "google-tagmanager1_1" = google-tagmanager1_1_0_0;}
+  google-tagmanager1_1_0_1 = buildCratesLib {
+    name = "google-tagmanager1";
+    version = "1.0.1";
+    hash = "07cf6db329bccac713e51de0d2618ab96c2368cdb6706076eb62462b99c81269";
+    deps = with allCrates; [  url all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 ];
+  };
+  google-tagmanager1_1_0_2 = buildCratesLib {
+    name = "google-tagmanager1";
+    version = "1.0.2";
+    hash = "1c9816a673cb04ce1da29af09c7c3189372f2a4ff845cc0e8ed37c34d4893a88";
+    deps = with allCrates; [  all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url all__mime.mime_0_2 ];
+  };
+  "google-tagmanager1_1_0" = google-tagmanager1_1_0_2;
+  "google-tagmanager1_1" = google-tagmanager1_1_0_2;}

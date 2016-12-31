@@ -68,5 +68,11 @@ rec {
     hash = "26f3e8b2e18043b47713bd27a01656077ddd2d903e8653285fd6b25140d73007";
     deps = with allCrates; [  all__slog.slog_1_2 all__slog-stream.slog-stream_1_2 all__isatty.isatty_0_1 all__chrono.chrono_0_2 ];
   };
-  "slog-term_1_3" = slog-term_1_3_3;
-  "slog-term_1" = slog-term_1_3_3;}
+  slog-term_1_3_4 = buildCratesLib {
+    name = "slog-term";
+    version = "1.3.4";
+    hash = "4ef262766bb3fde54206171c7dc006676e6d3640300cb5261c6fda39ff5ffd4e";
+    deps = with allCrates; [  all__slog.slog_1_2 all__thread_local.thread_local_0_3 all__chrono.chrono_0_2 all__slog-stream.slog-stream_1_2 all__isatty.isatty_0_1 ];
+  };
+  "slog-term_1_3" = slog-term_1_3_4;
+  "slog-term_1" = slog-term_1_3_4;}

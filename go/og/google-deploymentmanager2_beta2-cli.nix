@@ -15,5 +15,17 @@ rec {
   };
   "google-deploymentmanager2_beta2-cli_0_3" = google-deploymentmanager2_beta2-cli_0_3_6;
   "google-deploymentmanager2_beta2-cli_0" = google-deploymentmanager2_beta2-cli_0_3_6;
-  "google-deploymentmanager2_beta2-cli_1_0" = google-deploymentmanager2_beta2-cli_1_0_0;
-  "google-deploymentmanager2_beta2-cli_1" = google-deploymentmanager2_beta2-cli_1_0_0;}
+  google-deploymentmanager2_beta2-cli_1_0_1 = buildCratesLib {
+    name = "google-deploymentmanager2_beta2-cli";
+    version = "1.0.1";
+    hash = "2d2b3757d904c1f1b2cad43a6eb8168e2569add96efd6e5cb2a3cdef78cb4905";
+    deps = with allCrates; [  all__serde.serde_0_8 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__strsim.strsim_0_5 ];
+  };
+  google-deploymentmanager2_beta2-cli_1_0_2 = buildCratesLib {
+    name = "google-deploymentmanager2_beta2-cli";
+    version = "1.0.2";
+    hash = "e8f4cb3a61b38eb32bff5cb9b88bea8d6de5ccfa9e30ebbe2343dea4d4f9b580";
+    deps = with allCrates; [  all__clap.clap_2_0 all__serde.serde_0_8 all__hyper.hyper_0_9 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
+  };
+  "google-deploymentmanager2_beta2-cli_1_0" = google-deploymentmanager2_beta2-cli_1_0_2;
+  "google-deploymentmanager2_beta2-cli_1" = google-deploymentmanager2_beta2-cli_1_0_2;}

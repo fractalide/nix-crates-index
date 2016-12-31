@@ -105,5 +105,17 @@ rec {
   };
   "google-prediction1d6_0_1" = google-prediction1d6_0_1_15;
   "google-prediction1d6_0" = google-prediction1d6_0_1_15;
-  "google-prediction1d6_1_0" = google-prediction1d6_1_0_0;
-  "google-prediction1d6_1" = google-prediction1d6_1_0_0;}
+  google-prediction1d6_1_0_1 = buildCratesLib {
+    name = "google-prediction1d6";
+    version = "1.0.1";
+    hash = "b4df64ae0f86ac129904406d74f8a873724ae08d633e7659c92c3d234860283c";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 url ];
+  };
+  google-prediction1d6_1_0_2 = buildCratesLib {
+    name = "google-prediction1d6";
+    version = "1.0.2";
+    hash = "ee8e440f641379caf9fbcfc453e5bd5deb6f330aa9af6cce8b11737efd903b54";
+    deps = with allCrates; [  url all__serde.serde_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
+  };
+  "google-prediction1d6_1_0" = google-prediction1d6_1_0_2;
+  "google-prediction1d6_1" = google-prediction1d6_1_0_2;}

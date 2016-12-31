@@ -157,5 +157,18 @@ rec {
     hash = "96b3ad7b6f1d216dbc08ba12fe0d82ff117a76a2186a8c00d274ccbcc3026263";
     deps = with allCrates; [  all__piston_meta.piston_meta_0_26 all__range.range_0_3 all__read_color.read_color_0_1 all__hyper.hyper_0_9 all__lazy_static.lazy_static_0_2 all__rand.rand_0_3 all__read_token.read_token_0_6 ];
   };
-  "dyon_0_13" = dyon_0_13_1;
-  "dyon_0" = dyon_0_13_1;}
+  dyon_0_13_2 = buildCratesLib {
+    name = "dyon";
+    version = "0.13.2";
+    hash = "0c3ed0bb6db035ac9dfe0919aca728cfee54c8605959071a80657d0f9acec4b8";
+    deps = with allCrates; [  all__piston_meta.piston_meta_0_26 all__rand.rand_0_3 all__read_token.read_token_0_6 all__hyper.hyper_0_9 all__read_color.read_color_0_1 all__lazy_static.lazy_static_0_2 all__range.range_0_3 ];
+  };
+  dyon_0_14_0 = buildCratesLib {
+    name = "dyon";
+    version = "0.14.0";
+    hash = "2157df5d66630f852d554551af36ad78c5aba49c6cea9b66e660cd2df6e0591d";
+    deps = with allCrates; [  all__read_token.read_token_0_6 all__rand.rand_0_3 all__lazy_static.lazy_static_0_2 all__piston_meta.piston_meta_0_26 all__hyper.hyper_0_9 all__range.range_0_3 all__read_color.read_color_0_1 ];
+  };
+  "dyon_0_13" = dyon_0_13_2;
+  "dyon_0_14" = dyon_0_14_0;
+  "dyon_0" = dyon_0_14_0;}

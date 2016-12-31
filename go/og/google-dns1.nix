@@ -69,5 +69,17 @@ rec {
   };
   "google-dns1_0_1" = google-dns1_0_1_15;
   "google-dns1_0" = google-dns1_0_1_15;
-  "google-dns1_1_0" = google-dns1_1_0_0;
-  "google-dns1_1" = google-dns1_1_0_0;}
+  google-dns1_1_0_1 = buildCratesLib {
+    name = "google-dns1";
+    version = "1.0.1";
+    hash = "1422db12b4bf5824f434b19a606f40e6806b12c53470ec20f15ee1845963c224";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 url all__mime.mime_0_2 all__serde_json.serde_json_0_8 ];
+  };
+  google-dns1_1_0_2 = buildCratesLib {
+    name = "google-dns1";
+    version = "1.0.2";
+    hash = "d8771948eade172d56848a974d4a142ce00fdccc4df22013b42c99e9db894fa7";
+    deps = with allCrates; [  all__mime.mime_0_2 url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+  };
+  "google-dns1_1_0" = google-dns1_1_0_2;
+  "google-dns1_1" = google-dns1_1_0_2;}

@@ -40,5 +40,12 @@ rec {
     hash = "a9ba3af8ab80b3868d4d314d5cd8d21a707338d506350ebb24c27aa48c388b65";
     deps = with allCrates; [  all__quoted_printable.quoted_printable_0_3 all__encoding.encoding_0_2 all__base64.base64_0_1 ];
   };
+  mailparse_0_5_0 = buildCratesLib {
+    name = "mailparse";
+    version = "0.5.0";
+    hash = "af0635be7b50c70f4a2bbb8f966e3ca39202bce5ae3a381366426590a47f5b64";
+    deps = with allCrates; [  all__quoted_printable.quoted_printable_0_3 all__base64.base64_0_1 all__encoding.encoding_0_2 ];
+  };
   "mailparse_0_4" = mailparse_0_4_2;
-  "mailparse_0" = mailparse_0_4_2;}
+  "mailparse_0_5" = mailparse_0_5_0;
+  "mailparse_0" = mailparse_0_5_0;}

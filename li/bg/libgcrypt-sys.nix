@@ -28,5 +28,12 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__libgpg-error-sys.libgpg-error-sys_0_1 ];
   };
   "libgcrypt-sys_0_3" = libgcrypt-sys_0_3_0;
+  libgcrypt-sys_0_5_0 = buildCratesLib {
+    name = "libgcrypt-sys";
+    version = "0.5.0";
+    hash = "c58a1dcd17e36db54e4210774ac5c065a9e2875ba4a830495c7d9cd510163732";
+    deps = with allCrates; [  all__libc.libc_0_2 all__libgpg-error-sys.libgpg-error-sys_0_2 all__cfg-if.cfg-if_0_1 all__gcc.gcc_0_3 ];
+  };
   "libgcrypt-sys_0_4" = libgcrypt-sys_0_4_0;
-  "libgcrypt-sys_0" = libgcrypt-sys_0_4_0;}
+  "libgcrypt-sys_0_5" = libgcrypt-sys_0_5_0;
+  "libgcrypt-sys_0" = libgcrypt-sys_0_5_0;}

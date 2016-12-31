@@ -118,5 +118,12 @@ rec {
     deps = with allCrates; [  all__current.current_0_1 all__sdl2_mixer.sdl2_mixer_0_24 all__sdl2.sdl2_0_24 ];
   };
   "piston-music_0_15" = piston-music_0_15_0;
+  piston-music_0_17_0 = buildCratesLib {
+    name = "piston-music";
+    version = "0.17.0";
+    hash = "1da1547ba17da273fd5017d57f9c2e81ee1546b36b0eb8953bbc832500d3bc58";
+    deps = with allCrates; [  all__sdl2.sdl2_0_27 all__current.current_0_1 ];
+  };
   "piston-music_0_16" = piston-music_0_16_0;
-  "piston-music_0" = piston-music_0_16_0;}
+  "piston-music_0_17" = piston-music_0_17_0;
+  "piston-music_0" = piston-music_0_17_0;}

@@ -88,5 +88,18 @@ rec {
     hash = "5670ce3717deb2d4436bdb29f07c549b56595f1fd8af1ca4682f1c1b1ac57f86";
     deps = with allCrates; [  all__num.num_0_1 all__matrixmultiply.matrixmultiply_0_1 ];
   };
+  rulinalg_0_4_0 = buildCratesLib {
+    name = "rulinalg";
+    version = "0.4.0";
+    hash = "bdc2294b49ec1e7ed21fc5bf4ea27253db77cf4fa79784a5bf4421400544bbfc";
+    deps = with allCrates; [  all__matrixmultiply.matrixmultiply_0_1 all__num.num_0_1 ];
+  };
   "rulinalg_0_3" = rulinalg_0_3_7;
-  "rulinalg_0" = rulinalg_0_3_7;}
+  rulinalg_0_4_1 = buildCratesLib {
+    name = "rulinalg";
+    version = "0.4.1";
+    hash = "99b059bd5c1dfc1b3e969c766e94dfcad8243ab8d30b90a58489aa4ff4f7e137";
+    deps = with allCrates; [  all__num.num_0_1 all__matrixmultiply.matrixmultiply_0_1 ];
+  };
+  "rulinalg_0_4" = rulinalg_0_4_1;
+  "rulinalg_0" = rulinalg_0_4_1;}

@@ -34,5 +34,19 @@ rec {
     deps = with allCrates; [  all__env_logger.env_logger_0_3 all__lazy_static.lazy_static_0_2 all__rustc-serialize.rustc-serialize_0_3 all__rand.rand_0_3 all__x11.x11_2_11 all__unix_socket.unix_socket_0_5 all__ctrlc.ctrlc_2_0 all__walkdir.walkdir_1_0_3 all__inotify.inotify_0_3 all__log.log_0_3 all__argparse.argparse_0_2 all__libc.libc_0_2 ];
   };
   "panty_0_3" = panty_0_3_0;
+  panty_0_5_0 = buildCratesLib {
+    name = "panty";
+    version = "0.5.0";
+    hash = "3ee91f1b9b436bd128d658917c81ab91a43bf1732bccd9a3e8a09a438130e58f";
+    deps = with allCrates; [  all__argparse.argparse_0_2 all__unix_socket.unix_socket_0_5 all__inotify.inotify_0_3 all__libc.libc_0_2 all__log.log_0_3 all__x11.x11_2_11 all__env_logger.env_logger_0_3 all__lazy_static.lazy_static_0_2 all__walkdir.walkdir_1_0_3 all__rand.rand_0_3 all__ctrlc.ctrlc_2_0 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
   "panty_0_4" = panty_0_4_0;
-  "panty_0" = panty_0_4_0;}
+  panty_0_6_0 = buildCratesLib {
+    name = "panty";
+    version = "0.6.0";
+    hash = "fead9ae1062c07c320d843ae5e2becaad5b6e53f6be7a89e2e2c06758134c773";
+    deps = with allCrates; [  all__inotify.inotify_0_3 all__rustc-serialize.rustc-serialize_0_3 all__rand.rand_0_3 all__libc.libc_0_2 all__log.log_0_3 all__ctrlc.ctrlc_2_0 all__argparse.argparse_0_2 all__x11.x11_2_11 all__env_logger.env_logger_0_3 all__walkdir.walkdir_1_0_3 all__lazy_static.lazy_static_0_2 all__unix_socket.unix_socket_0_5 ];
+  };
+  "panty_0_5" = panty_0_5_0;
+  "panty_0_6" = panty_0_6_0;
+  "panty_0" = panty_0_6_0;}

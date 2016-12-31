@@ -7,5 +7,23 @@ rec {
     hash = "fde816bd0ca692c38e64c53584ee6c17ce691955655e0527df6f68275be97746";
     deps = with allCrates; [  all__url.url_1 all__toml.toml_0_2 all__term-painter.term-painter_0_2 all__log.log_0_3 all__hyper.hyper_0_9 ];
   };
-  "rocket_0_1" = rocket_0_1_0;
-  "rocket_0" = rocket_0_1_0;}
+  rocket_0_1_1 = buildCratesLib {
+    name = "rocket";
+    version = "0.1.1";
+    hash = "905fceb8e5bb16c4709cffa6290b83e04cd0e4df1712ff8a2e6c10ceaf22c104";
+    deps = with allCrates; [  all__url.url_1 all__term-painter.term-painter_0_2 all__log.log_0_3 all__hyper.hyper_0_9 all__toml.toml_0_2 ];
+  };
+  rocket_0_1_2 = buildCratesLib {
+    name = "rocket";
+    version = "0.1.2";
+    hash = "cffd870788d2d959624a48e1b34dccbbc07d97fec8ed835854035f12b063bdbc";
+    deps = with allCrates; [  all__log.log_0_3 all__toml.toml_0_2 all__url.url_1 all__term-painter.term-painter_0_2 all__hyper.hyper_0_9 ];
+  };
+  rocket_0_1_3 = buildCratesLib {
+    name = "rocket";
+    version = "0.1.3";
+    hash = "2700c05d446bfd778f936a72318b608ddeac7fbdc1011b2843795f2ab1d84f04";
+    deps = with allCrates; [  all__log.log_0_3 all__toml.toml_0_2 all__url.url_1 all__hyper.hyper_0_9 all__term-painter.term-painter_0_2 ];
+  };
+  "rocket_0_1" = rocket_0_1_3;
+  "rocket_0" = rocket_0_1_3;}

@@ -15,5 +15,17 @@ rec {
   };
   "google-dns1-cli_0_3" = google-dns1-cli_0_3_6;
   "google-dns1-cli_0" = google-dns1-cli_0_3_6;
-  "google-dns1-cli_1_0" = google-dns1-cli_1_0_0;
-  "google-dns1-cli_1" = google-dns1-cli_1_0_0;}
+  google-dns1-cli_1_0_1 = buildCratesLib {
+    name = "google-dns1-cli";
+    version = "1.0.1";
+    hash = "b27754b10930d9f0d14d77d93bbedb77b63a0bd6b27c8b495acb6860be206be4";
+    deps = with allCrates; [  all__strsim.strsim_0_5 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__clap.clap_2_0 ];
+  };
+  google-dns1-cli_1_0_2 = buildCratesLib {
+    name = "google-dns1-cli";
+    version = "1.0.2";
+    hash = "911584d29e9ca607f8cfc66043f2181a78adf5a879517c7b9880a9d329f6021b";
+    deps = with allCrates; [  all__yup-hyper-mock.yup-hyper-mock_1_0 all__strsim.strsim_0_5 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__serde.serde_0_8 all__mime.mime_0_2 ];
+  };
+  "google-dns1-cli_1_0" = google-dns1-cli_1_0_2;
+  "google-dns1-cli_1" = google-dns1-cli_1_0_2;}

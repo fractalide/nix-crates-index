@@ -139,5 +139,25 @@ rec {
     hash = "85dbf563da2891d55ef4b00ef08c5b5f160143f67691ff1f97ad89e77824ed3b";
     deps = with allCrates; [  all__unicode-width.unicode-width_0_1 ];
   };
+  tabwriter_1_0_0 = buildCratesLib {
+    name = "tabwriter";
+    version = "1.0.0";
+    hash = "30127025e236e35ae07cf3ad244e17a0034d759deda0c0495eb1498ae7457153";
+    deps = with allCrates; [  all__unicode-width.unicode-width_0_1 ];
+  };
   "tabwriter_0_1" = tabwriter_0_1_25;
-  "tabwriter_0" = tabwriter_0_1_25;}
+  "tabwriter_0" = tabwriter_0_1_25;
+  tabwriter_1_0_1 = buildCratesLib {
+    name = "tabwriter";
+    version = "1.0.1";
+    hash = "b2243780fa0167024a784090f63b6f2a5d0b949878df12922244ef57cddd8d23";
+    deps = with allCrates; [  all__unicode-width.unicode-width_0_1 ];
+  };
+  tabwriter_1_0_2 = buildCratesLib {
+    name = "tabwriter";
+    version = "1.0.2";
+    hash = "1ead277bf2480fee24fcdf19ec975eae8fff3cfe6db40a9ee208492213399340";
+    deps = with allCrates; [  all__unicode-width.unicode-width_0_1 ];
+  };
+  "tabwriter_1_0" = tabwriter_1_0_2;
+  "tabwriter_1" = tabwriter_1_0_2;}

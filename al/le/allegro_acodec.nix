@@ -157,5 +157,17 @@ rec {
     hash = "b4dba8d495b6b9d95d18d9958e7b668febd4299e35d8ea7db0a09344ceeda3dd";
     deps = with allCrates; [  allegro_acodec-sys allegro_audio allegro ];
   };
-  "allegro_acodec_0_0" = allegro_acodec_0_0_27;
-  "allegro_acodec_0" = allegro_acodec_0_0_27;}
+  allegro_acodec_0_0_28 = buildCratesLib {
+    name = "allegro_acodec";
+    version = "0.0.28";
+    hash = "e988f013e24cc6fe505ad97c9dbb1bb7d047ae862eb50e607e799d294fd26b17";
+    deps = with allCrates; [  allegro_audio allegro allegro_acodec-sys ];
+  };
+  allegro_acodec_0_0_29 = buildCratesLib {
+    name = "allegro_acodec";
+    version = "0.0.29";
+    hash = "7c633379dcaea38c11dc36e433d7744f69bfd9ef195dcf1fa5110792c5b2274a";
+    deps = with allCrates; [  allegro_acodec-sys allegro allegro_audio ];
+  };
+  "allegro_acodec_0_0" = allegro_acodec_0_0_29;
+  "allegro_acodec_0" = allegro_acodec_0_0_29;}

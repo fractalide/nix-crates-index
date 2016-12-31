@@ -105,5 +105,17 @@ rec {
   };
   "google-siteverification1_0_1" = google-siteverification1_0_1_15;
   "google-siteverification1_0" = google-siteverification1_0_1_15;
-  "google-siteverification1_1_0" = google-siteverification1_1_0_0;
-  "google-siteverification1_1" = google-siteverification1_1_0_0;}
+  google-siteverification1_1_0_1 = buildCratesLib {
+    name = "google-siteverification1";
+    version = "1.0.1";
+    hash = "b44f60ee8bb5cf27658e8322ff8efa77efb3c20de927550cf5202a1b709a8a86";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url all__serde.serde_0_8 all__mime.mime_0_2 ];
+  };
+  google-siteverification1_1_0_2 = buildCratesLib {
+    name = "google-siteverification1";
+    version = "1.0.2";
+    hash = "d6e789bc7997d69408a46df8dbaf6ff1797b0b16620032edb5d7eccab753f788";
+    deps = with allCrates; [  all__serde.serde_0_8 url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
+  };
+  "google-siteverification1_1_0" = google-siteverification1_1_0_2;
+  "google-siteverification1_1" = google-siteverification1_1_0_2;}

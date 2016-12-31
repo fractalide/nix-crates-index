@@ -33,5 +33,17 @@ rec {
   };
   "google-iam1_0_1" = google-iam1_0_1_15;
   "google-iam1_0" = google-iam1_0_1_15;
-  "google-iam1_1_0" = google-iam1_1_0_0;
-  "google-iam1_1" = google-iam1_1_0_0;}
+  google-iam1_1_0_1 = buildCratesLib {
+    name = "google-iam1";
+    version = "1.0.1";
+    hash = "48fa7982bdae2ea04b8857ce76b3b2f95a6a6f0a335f5ff0482ad5380ae5d459";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 url all__serde_json.serde_json_0_8 ];
+  };
+  google-iam1_1_0_2 = buildCratesLib {
+    name = "google-iam1";
+    version = "1.0.2";
+    hash = "6a8578dd1756cfc41b2a72a0859ee7c717d7700af9d5c8d667af17a360b414e5";
+    deps = with allCrates; [  url all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 ];
+  };
+  "google-iam1_1_0" = google-iam1_1_0_2;
+  "google-iam1_1" = google-iam1_1_0_2;}

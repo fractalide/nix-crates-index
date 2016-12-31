@@ -13,5 +13,11 @@ rec {
     hash = "742304e40c19c876b1546af6e5fa55e1e24293cf16f0fec3419da34a839518b2";
     deps = with allCrates; [  ];
   };
-  "byte-tools_0_1" = byte-tools_0_1_1;
-  "byte-tools_0" = byte-tools_0_1_1;}
+  byte-tools_0_1_2 = buildCratesLib {
+    name = "byte-tools";
+    version = "0.1.2";
+    hash = "974792df7c06743ecc47412bc2b0ff63f6b60813ed3bc52fabe0ee1b2b785bec";
+    deps = with allCrates; [  ];
+  };
+  "byte-tools_0_1" = byte-tools_0_1_2;
+  "byte-tools_0" = byte-tools_0_1_2;}

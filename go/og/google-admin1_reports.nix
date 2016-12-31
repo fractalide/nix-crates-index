@@ -105,5 +105,17 @@ rec {
   };
   "google-admin1_reports_0_1" = google-admin1_reports_0_1_15;
   "google-admin1_reports_0" = google-admin1_reports_0_1_15;
-  "google-admin1_reports_1_0" = google-admin1_reports_1_0_0;
-  "google-admin1_reports_1" = google-admin1_reports_1_0_0;}
+  google-admin1_reports_1_0_1 = buildCratesLib {
+    name = "google-admin1_reports";
+    version = "1.0.1";
+    hash = "04896347d26d6b289191228f932ee8b14eb46ba656be0537f07249c5c46dfb79";
+    deps = with allCrates; [  all__serde.serde_0_8 url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
+  };
+  google-admin1_reports_1_0_2 = buildCratesLib {
+    name = "google-admin1_reports";
+    version = "1.0.2";
+    hash = "bc2dc1ed352dc9f28231cf891945c23ba3fdd891c6e38ab7dfc44c1924effb1d";
+    deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url ];
+  };
+  "google-admin1_reports_1_0" = google-admin1_reports_1_0_2;
+  "google-admin1_reports_1" = google-admin1_reports_1_0_2;}

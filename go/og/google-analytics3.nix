@@ -99,5 +99,17 @@ rec {
   };
   "google-analytics3_0_1" = google-analytics3_0_1_15;
   "google-analytics3_0" = google-analytics3_0_1_15;
-  "google-analytics3_1_0" = google-analytics3_1_0_0;
-  "google-analytics3_1" = google-analytics3_1_0_0;}
+  google-analytics3_1_0_1 = buildCratesLib {
+    name = "google-analytics3";
+    version = "1.0.1";
+    hash = "8549e66be85aeb99e22d9dfcf29803ae7924fdbdd880b454f03ddc29f91142a0";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
+  };
+  google-analytics3_1_0_2 = buildCratesLib {
+    name = "google-analytics3";
+    version = "1.0.2";
+    hash = "b2c13a8e2d320ff64aaa7424c0a7a9493087ef6a4875f25a08da45bf270e4e21";
+    deps = with allCrates; [  all__mime.mime_0_2 url all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
+  };
+  "google-analytics3_1_0" = google-analytics3_1_0_2;
+  "google-analytics3_1" = google-analytics3_1_0_2;}

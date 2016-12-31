@@ -64,5 +64,12 @@ rec {
     deps = with allCrates; [  all__crossbeam.crossbeam_0_2 all__walkdir.walkdir_0_1 all__bip_bencode.bip_bencode_0_1 all__bip_util.bip_util_0_3 all__chrono.chrono_0_2 ];
   };
   "bip_metainfo_0_2" = bip_metainfo_0_2_1;
+  bip_metainfo_0_5_0 = buildCratesLib {
+    name = "bip_metainfo";
+    version = "0.5.0";
+    hash = "66bead6a82cff2687570d8e17c7ea1ce431cc9687f6e610ff5aee35659bbea5e";
+    deps = with allCrates; [  all__crossbeam.crossbeam_0_2 all__walkdir.walkdir_0_1 all__bip_bencode.bip_bencode_0_2 all__error-chain.error-chain_0_7 all__bip_util.bip_util_0_4 all__chrono.chrono_0_2 ];
+  };
   "bip_metainfo_0_4" = bip_metainfo_0_4_0;
-  "bip_metainfo_0" = bip_metainfo_0_4_0;}
+  "bip_metainfo_0_5" = bip_metainfo_0_5_0;
+  "bip_metainfo_0" = bip_metainfo_0_5_0;}

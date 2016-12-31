@@ -33,5 +33,17 @@ rec {
   };
   "google-dataproc1_0_1" = google-dataproc1_0_1_15;
   "google-dataproc1_0" = google-dataproc1_0_1_15;
-  "google-dataproc1_1_0" = google-dataproc1_1_0_0;
-  "google-dataproc1_1" = google-dataproc1_1_0_0;}
+  google-dataproc1_1_0_1 = buildCratesLib {
+    name = "google-dataproc1";
+    version = "1.0.1";
+    hash = "aa1c915e50a536a71645fcfc96703ff20342968db6f8fa208ab3644a539d3826";
+    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
+  };
+  google-dataproc1_1_0_2 = buildCratesLib {
+    name = "google-dataproc1";
+    version = "1.0.2";
+    hash = "26e420afaf5f58977eefbe86d0daa9c034f0d29a67a354c24773c03cbbfb85a9";
+    deps = with allCrates; [  url all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
+  };
+  "google-dataproc1_1_0" = google-dataproc1_1_0_2;
+  "google-dataproc1_1" = google-dataproc1_1_0_2;}

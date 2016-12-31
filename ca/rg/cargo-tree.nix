@@ -98,5 +98,18 @@ rec {
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__petgraph.petgraph_0_3 all__cargo.cargo_0_14 ];
   };
   "cargo-tree_0_7" = cargo-tree_0_7_0;
+  cargo-tree_0_9_0 = buildCratesLib {
+    name = "cargo-tree";
+    version = "0.9.0";
+    hash = "814ba980e9a5f2037399618bba7bd25504f958a0658629a82598a3741c94ac88";
+    deps = with allCrates; [  all__cargo.cargo_0_15 all__rustc-serialize.rustc-serialize_0_3 all__petgraph.petgraph_0_4 ];
+  };
   "cargo-tree_0_8" = cargo-tree_0_8_0;
-  "cargo-tree_0" = cargo-tree_0_8_0;}
+  cargo-tree_0_9_1 = buildCratesLib {
+    name = "cargo-tree";
+    version = "0.9.1";
+    hash = "73bbcdd769f400309840097ca282a82e8c34ad8a4ab74eb2ba4c1bbe124e72b3";
+    deps = with allCrates; [  all__cargo.cargo_0_15 all__petgraph.petgraph_0_4 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "cargo-tree_0_9" = cargo-tree_0_9_1;
+  "cargo-tree_0" = cargo-tree_0_9_1;}

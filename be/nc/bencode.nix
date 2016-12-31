@@ -79,5 +79,11 @@ rec {
     hash = "f633889ed53d69888b4f5b58c7526092283bd084e158837fb5e9b085fe9c08d7";
     deps = with allCrates; [  all__num.num_0_1 all__byteorder.byteorder_0_5 all__rustc-serialize.rustc-serialize_0_3 ];
   };
-  "bencode_0_1" = bencode_0_1_14;
-  "bencode_0" = bencode_0_1_14;}
+  bencode_0_1_15 = buildCratesLib {
+    name = "bencode";
+    version = "0.1.15";
+    hash = "52b7b437cef7554c4a1e9bcb8e5981a7adc077cb4d75ba308504c3e1bdc8fb8b";
+    deps = with allCrates; [  all__num.num_0_1 all__byteorder.byteorder_0_5 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "bencode_0_1" = bencode_0_1_15;
+  "bencode_0" = bencode_0_1_15;}

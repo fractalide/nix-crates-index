@@ -122,5 +122,12 @@ rec {
     hash = "feba37ee5a3a2703f97dddf30edae24e0df0c0ed6310ef078b497f020e7c054b";
     deps = with allCrates; [  all__sha1.sha1_0_2 all__url.url_1_2 ];
   };
+  redis_0_8_0 = buildCratesLib {
+    name = "redis";
+    version = "0.8.0";
+    hash = "02a92e223490cc63d9230c4cdf132a48ce154ab1e063558e3841e219c2ea3f91";
+    deps = with allCrates; [  all__sha1.sha1_0_2 all__url.url_1_2 ];
+  };
   "redis_0_7" = redis_0_7_1;
-  "redis_0" = redis_0_7_1;}
+  "redis_0_8" = redis_0_8_0;
+  "redis_0" = redis_0_8_0;}

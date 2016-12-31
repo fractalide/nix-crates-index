@@ -15,5 +15,17 @@ rec {
   };
   "google-playmoviespartner1-cli_0_3" = google-playmoviespartner1-cli_0_3_6;
   "google-playmoviespartner1-cli_0" = google-playmoviespartner1-cli_0_3_6;
-  "google-playmoviespartner1-cli_1_0" = google-playmoviespartner1-cli_1_0_0;
-  "google-playmoviespartner1-cli_1" = google-playmoviespartner1-cli_1_0_0;}
+  google-playmoviespartner1-cli_1_0_1 = buildCratesLib {
+    name = "google-playmoviespartner1-cli";
+    version = "1.0.1";
+    hash = "4e8631d88afce46289ea3466bb811d3afb2db1e01a0bae27095a0f2d51af1d6a";
+    deps = with allCrates; [  all__strsim.strsim_0_5 all__mime.mime_0_2 all__clap.clap_2_0 all__hyper.hyper_0_9 all__serde.serde_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde_json.serde_json_0_8 ];
+  };
+  google-playmoviespartner1-cli_1_0_2 = buildCratesLib {
+    name = "google-playmoviespartner1-cli";
+    version = "1.0.2";
+    hash = "01a2d3cc1f266578fbcd846c3b85ea802dd16bdfeb0ac3cb1b0d5c9e31a9bb74";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 all__mime.mime_0_2 all__clap.clap_2_0 ];
+  };
+  "google-playmoviespartner1-cli_1_0" = google-playmoviespartner1-cli_1_0_2;
+  "google-playmoviespartner1-cli_1" = google-playmoviespartner1-cli_1_0_2;}

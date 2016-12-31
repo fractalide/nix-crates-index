@@ -38,5 +38,12 @@ rec {
     deps = with allCrates; [  all__serde.serde_0_8 all__serde_codegen.serde_codegen_0_8 ];
   };
   "quantiles_0_1" = quantiles_0_1_5;
+  quantiles_0_3_0 = buildCratesLib {
+    name = "quantiles";
+    version = "0.3.0";
+    hash = "5251a372a4b167ca70d1a66363617f348a86b9c9d4bc36ffdea2f11a88287612";
+    deps = with allCrates; [  all__serde.serde_0_8 all__serde_codegen.serde_codegen_0_8 ];
+  };
   "quantiles_0_2" = quantiles_0_2_0;
-  "quantiles_0" = quantiles_0_2_0;}
+  "quantiles_0_3" = quantiles_0_3_0;
+  "quantiles_0" = quantiles_0_3_0;}

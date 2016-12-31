@@ -99,5 +99,17 @@ rec {
   };
   "google-adsense1d4_0_1" = google-adsense1d4_0_1_15;
   "google-adsense1d4_0" = google-adsense1d4_0_1_15;
-  "google-adsense1d4_1_0" = google-adsense1d4_1_0_0;
-  "google-adsense1d4_1" = google-adsense1d4_1_0_0;}
+  google-adsense1d4_1_0_1 = buildCratesLib {
+    name = "google-adsense1d4";
+    version = "1.0.1";
+    hash = "66e30cc37a10336a06e052c115a1645ac06d705ae05a4883cbd54cb7dbf3fbf5";
+    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 ];
+  };
+  google-adsense1d4_1_0_2 = buildCratesLib {
+    name = "google-adsense1d4";
+    version = "1.0.2";
+    hash = "c73c46204c7e9a21b2827a91a840cd22bd6b36b44bc1b37d79312abb76c19521";
+    deps = with allCrates; [  all__serde.serde_0_8 url all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
+  };
+  "google-adsense1d4_1_0" = google-adsense1d4_1_0_2;
+  "google-adsense1d4_1" = google-adsense1d4_1_0_2;}

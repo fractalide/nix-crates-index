@@ -69,5 +69,12 @@ rec {
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 ];
   };
   "crc_1_2" = crc_1_2_0;
+  crc_1_4_0 = buildCratesLib {
+    name = "crc";
+    version = "1.4.0";
+    hash = "bc1914fae6f18ae347320f0ba5e4fc270e17c037ea621fe41ec7e8adf67d11b0";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 ];
+  };
   "crc_1_3" = crc_1_3_0;
-  "crc_1" = crc_1_3_0;}
+  "crc_1_4" = crc_1_4_0;
+  "crc_1" = crc_1_4_0;}

@@ -13,5 +13,11 @@ rec {
     hash = "10d45a6a56a9b1e3a2866e5c5aca678ee1f49bf4e465d76121ad50697d566c54";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__rand.rand_0_3 ];
   };
-  "combid_0_5" = combid_0_5_1;
-  "combid_0" = combid_0_5_1;}
+  combid_0_5_2 = buildCratesLib {
+    name = "combid";
+    version = "0.5.2";
+    hash = "105730188907c7f56d2521d4cb24461956aca2cce30c8d2f629acd89dd4d3c06";
+    deps = with allCrates; [  all__rand.rand_0 all__byteorder.byteorder_0 ];
+  };
+  "combid_0_5" = combid_0_5_2;
+  "combid_0" = combid_0_5_2;}

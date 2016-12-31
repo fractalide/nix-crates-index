@@ -7,5 +7,12 @@ rec {
     hash = "e484fb0eaf5641a833c79cec7c73ef885c627326483005b5251bf61cfbe08691";
     deps = with allCrates; [  ];
   };
+  jec_0_2_0 = buildCratesLib {
+    name = "jec";
+    version = "0.2.0";
+    hash = "91953a46e98f698236b3040b972bce98b271c499f6afad8f3590e7569ce9d6c4";
+    deps = with allCrates; [  all__jec-rccow.jec-rccow_0_1 ];
+  };
   "jec_0_1" = jec_0_1_0;
-  "jec_0" = jec_0_1_0;}
+  "jec_0_2" = jec_0_2_0;
+  "jec_0" = jec_0_2_0;}

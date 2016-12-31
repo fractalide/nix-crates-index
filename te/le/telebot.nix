@@ -7,5 +7,17 @@ rec {
     hash = "bfe0f25f46c47b4aa6c22a5d0ade45ca1d98bbbcf22b3b8a4ee68314cd27cda9";
     deps = with allCrates; [  all__tokio-curl.tokio-curl_0_1 all__serde.serde_0_8 all__curl.curl_0_3 all__serde_json.serde_json_0_8 all__telebot-derive.telebot-derive_0_0_1 all__futures.futures_0_1 all__serde_derive.serde_derive_0_8 all__tokio-core.tokio-core_0_1 ];
   };
-  "telebot_0_0" = telebot_0_0_1;
-  "telebot_0" = telebot_0_0_1;}
+  telebot_0_0_2 = buildCratesLib {
+    name = "telebot";
+    version = "0.0.2";
+    hash = "83a4e7ae78551bba7a39c3ce1828c5730654cfd70fc0d004e5e01b12d32d8e5a";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__tokio-curl.tokio-curl_0_1 all__curl.curl_0_4 all__telebot-derive.telebot-derive_0_0_1 all__futures.futures_0_1 all__tokio-core.tokio-core_0_1 all__serde_derive.serde_derive_0_8 all__serde.serde_0_8 ];
+  };
+  telebot_0_0_3 = buildCratesLib {
+    name = "telebot";
+    version = "0.0.3";
+    hash = "8840e48c899520264d499a0b40840dba62dbbaf8ecda604ed83021a2124d770d";
+    deps = with allCrates; [  all__serde_derive.serde_derive_0_8 all__futures.futures_0_1 all__tokio-curl.tokio-curl_0_1 all__tokio-core.tokio-core_0_1 all__curl.curl_0_4 all__serde.serde_0_8 all__telebot-derive.telebot-derive_0_0_2 all__serde_json.serde_json_0_8 ];
+  };
+  "telebot_0_0" = telebot_0_0_3;
+  "telebot_0" = telebot_0_0_3;}

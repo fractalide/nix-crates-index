@@ -298,5 +298,13 @@ rec {
     hash = "304be07ebbdf04be421d946aff559ebe61d59e4a43f22944323cf58520eb8001";
     deps = with allCrates; [  ];
   };
+  suffix_1_0_0 = buildCratesLib {
+    name = "suffix";
+    version = "1.0.0";
+    hash = "0470b43441e191806438afae7c017a9da03e3724ecc16f70b0d6201a4034f939";
+    deps = with allCrates; [  ];
+  };
   "suffix_0_4" = suffix_0_4_1;
-  "suffix_0" = suffix_0_4_1;}
+  "suffix_0" = suffix_0_4_1;
+  "suffix_1_0" = suffix_1_0_0;
+  "suffix_1" = suffix_1_0_0;}

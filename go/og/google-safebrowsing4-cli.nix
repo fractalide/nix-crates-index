@@ -15,5 +15,17 @@ rec {
   };
   "google-safebrowsing4-cli_0_3" = google-safebrowsing4-cli_0_3_6;
   "google-safebrowsing4-cli_0" = google-safebrowsing4-cli_0_3_6;
-  "google-safebrowsing4-cli_1_0" = google-safebrowsing4-cli_1_0_0;
-  "google-safebrowsing4-cli_1" = google-safebrowsing4-cli_1_0_0;}
+  google-safebrowsing4-cli_1_0_1 = buildCratesLib {
+    name = "google-safebrowsing4-cli";
+    version = "1.0.1";
+    hash = "748b0ca9be1a69c724a91f9ff25628145fd8446f4bc3d9d2d8cb0a26e196b9f5";
+    deps = with allCrates; [  all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__serde.serde_0_8 all__hyper.hyper_0_9 all__clap.clap_2_0 ];
+  };
+  google-safebrowsing4-cli_1_0_2 = buildCratesLib {
+    name = "google-safebrowsing4-cli";
+    version = "1.0.2";
+    hash = "9f668b95a19360c79b2dc7e80e3b6aaa9a722236446916d07e2f8b54fdcc1542";
+    deps = with allCrates; [  all__clap.clap_2_0 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__hyper.hyper_0_9 ];
+  };
+  "google-safebrowsing4-cli_1_0" = google-safebrowsing4-cli_1_0_2;
+  "google-safebrowsing4-cli_1" = google-safebrowsing4-cli_1_0_2;}

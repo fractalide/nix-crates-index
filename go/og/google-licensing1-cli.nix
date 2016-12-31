@@ -15,5 +15,17 @@ rec {
   };
   "google-licensing1-cli_0_3" = google-licensing1-cli_0_3_6;
   "google-licensing1-cli_0" = google-licensing1-cli_0_3_6;
-  "google-licensing1-cli_1_0" = google-licensing1-cli_1_0_0;
-  "google-licensing1-cli_1" = google-licensing1-cli_1_0_0;}
+  google-licensing1-cli_1_0_1 = buildCratesLib {
+    name = "google-licensing1-cli";
+    version = "1.0.1";
+    hash = "1fd87a86dd0590ce2edbc43e87437225341ab37c7a9aeedff80bf5f94bd68289";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__clap.clap_2_0 all__hyper.hyper_0_9 all__serde.serde_0_8 all__strsim.strsim_0_5 ];
+  };
+  google-licensing1-cli_1_0_2 = buildCratesLib {
+    name = "google-licensing1-cli";
+    version = "1.0.2";
+    hash = "3257dd7eca1b3a810930da90b85d078e530213c5eb9776bc035af161cea221e8";
+    deps = with allCrates; [  all__clap.clap_2_0 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__strsim.strsim_0_5 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
+  };
+  "google-licensing1-cli_1_0" = google-licensing1-cli_1_0_2;
+  "google-licensing1-cli_1" = google-licensing1-cli_1_0_2;}

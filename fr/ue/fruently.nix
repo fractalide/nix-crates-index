@@ -67,5 +67,11 @@ rec {
     deps = with allCrates; [  all__rmp-serialize.rmp-serialize_0_7 all__rustc-serialize.rustc-serialize_0_3 all__time.time_0_1 all__retry.retry_0_4 all__skeptic.skeptic_0_4 ];
   };
   "fruently_0_6" = fruently_0_6_0;
-  "fruently_0_7" = fruently_0_7_0;
-  "fruently_0" = fruently_0_7_0;}
+  fruently_0_7_1 = buildCratesLib {
+    name = "fruently";
+    version = "0.7.1";
+    hash = "82a763eb1f8c2c6c8c0021f21111dbcb8d81ce865cdd1f24c8b6448c4c2354dc";
+    deps = with allCrates; [  all__retry.retry_0_4 all__time.time_0_1 all__rmp-serialize.rmp-serialize_0_7 all__rustc-serialize.rustc-serialize_0_3 all__skeptic.skeptic_0_4 ];
+  };
+  "fruently_0_7" = fruently_0_7_1;
+  "fruently_0" = fruently_0_7_1;}

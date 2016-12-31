@@ -20,5 +20,11 @@ rec {
     deps = with allCrates; [  rand ];
   };
   "threshold-secret-sharing_0_1" = threshold-secret-sharing_0_1_1;
-  "threshold-secret-sharing_0_2" = threshold-secret-sharing_0_2_0;
-  "threshold-secret-sharing_0" = threshold-secret-sharing_0_2_0;}
+  threshold-secret-sharing_0_2_1 = buildCratesLib {
+    name = "threshold-secret-sharing";
+    version = "0.2.1";
+    hash = "5922616aec2bbb08595ad9eac0b70bfb5927e0bd843fa1deb5c84f99c2df760a";
+    deps = with allCrates; [  rand ];
+  };
+  "threshold-secret-sharing_0_2" = threshold-secret-sharing_0_2_1;
+  "threshold-secret-sharing_0" = threshold-secret-sharing_0_2_1;}

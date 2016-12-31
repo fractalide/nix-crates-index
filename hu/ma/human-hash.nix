@@ -13,5 +13,18 @@ rec {
     hash = "6b0ce626a6adbf800846a57f6f264f3f69fe57ac50ba2510265fe7449c7dff1e";
     deps = with allCrates; [  all__uuid.uuid_0_2 ];
   };
+  human-hash_0_2_0 = buildCratesLib {
+    name = "human-hash";
+    version = "0.2.0";
+    hash = "dbdb2e89cbbd6d0e12ed5339e5c79e89b1447fb0e02e3c77dfc200d87e01dd2d";
+    deps = with allCrates; [  all__uuid.uuid_0_2 ];
+  };
   "human-hash_0_1" = human-hash_0_1_1;
-  "human-hash_0" = human-hash_0_1_1;}
+  human-hash_0_2_1 = buildCratesLib {
+    name = "human-hash";
+    version = "0.2.1";
+    hash = "50e4bed77edefe87b744b615e9b84659cb56c512ad64f6e746482fe5b2dd2904";
+    deps = with allCrates; [  all__uuid.uuid_0_2 ];
+  };
+  "human-hash_0_2" = human-hash_0_2_1;
+  "human-hash_0" = human-hash_0_2_1;}

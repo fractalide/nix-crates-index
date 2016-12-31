@@ -7,5 +7,12 @@ rec {
     hash = "999d98bcc230f149729a0c7c7689960a0fbdba70c099f54c478fb6caf9af14e3";
     deps = with allCrates; [  ];
   };
+  case_0_1_0 = buildCratesLib {
+    name = "case";
+    version = "0.1.0";
+    hash = "e88b166b48e29667f5443df64df3c61dc07dc2b1a0b0d231800e07f09a33ecc1";
+    deps = with allCrates; [  ];
+  };
   "case_0_0" = case_0_0_1;
-  "case_0" = case_0_0_1;}
+  "case_0_1" = case_0_1_0;
+  "case_0" = case_0_1_0;}

@@ -7,5 +7,11 @@ rec {
     hash = "fddd82a38b14aaae89d4b12a437e4539b5e2adc5f5bc9abf61113963e8ce06d1";
     deps = with allCrates; [  all__i2cdev.i2cdev_0_3 ];
   };
-  "bmp085_0_1" = bmp085_0_1_0;
-  "bmp085_0" = bmp085_0_1_0;}
+  bmp085_0_1_1 = buildCratesLib {
+    name = "bmp085";
+    version = "0.1.1";
+    hash = "46e4395d2c0aefaab52657f90afd4ca39354d059294e62c25f43e4f0028ad3bb";
+    deps = with allCrates; [  all__i2cdev.i2cdev_0_3 ];
+  };
+  "bmp085_0_1" = bmp085_0_1_1;
+  "bmp085_0" = bmp085_0_1_1;}

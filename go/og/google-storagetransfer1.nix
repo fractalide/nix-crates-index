@@ -45,5 +45,17 @@ rec {
   };
   "google-storagetransfer1_0_1" = google-storagetransfer1_0_1_15;
   "google-storagetransfer1_0" = google-storagetransfer1_0_1_15;
-  "google-storagetransfer1_1_0" = google-storagetransfer1_1_0_0;
-  "google-storagetransfer1_1" = google-storagetransfer1_1_0_0;}
+  google-storagetransfer1_1_0_1 = buildCratesLib {
+    name = "google-storagetransfer1";
+    version = "1.0.1";
+    hash = "fecac035f6749986c048ec3bcd0b45c42aa8bedea9d1fec99d4f4845de475b65";
+    deps = with allCrates; [  all__mime.mime_0_2 url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+  };
+  google-storagetransfer1_1_0_2 = buildCratesLib {
+    name = "google-storagetransfer1";
+    version = "1.0.2";
+    hash = "79249d61c6f615fe30216083eeb9d0670dceb56049e2afa374ccd7120b6b6767";
+    deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url ];
+  };
+  "google-storagetransfer1_1_0" = google-storagetransfer1_1_0_2;
+  "google-storagetransfer1_1" = google-storagetransfer1_1_0_2;}

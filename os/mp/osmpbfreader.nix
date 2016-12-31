@@ -39,5 +39,12 @@ rec {
     deps = with allCrates; [  all__flate2.flate2_0_2 all__byteorder.byteorder_0_5 all__protobuf.protobuf_1_0_22 ];
   };
   "osmpbfreader_0_4" = osmpbfreader_0_4_1;
+  osmpbfreader_0_6_0 = buildCratesLib {
+    name = "osmpbfreader";
+    version = "0.6.0";
+    hash = "8f5ee56436c099be3e89ba3a7602238bff65eeba80dd1ca7259d5c45ee276bbf";
+    deps = with allCrates; [  all__flate2.flate2_0_2 all__byteorder.byteorder_1_0_0 all__flat_map.flat_map_0_0_3 all__protobuf.protobuf_1_0_24 ];
+  };
   "osmpbfreader_0_5" = osmpbfreader_0_5_0;
-  "osmpbfreader_0" = osmpbfreader_0_5_0;}
+  "osmpbfreader_0_6" = osmpbfreader_0_6_0;
+  "osmpbfreader_0" = osmpbfreader_0_6_0;}

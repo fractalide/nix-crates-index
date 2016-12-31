@@ -68,5 +68,12 @@ rec {
     hash = "4cd7d57377b309a73f69e164109203aa9ab3fee6ea68ac5fb76e2edb50662e9b";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
+  rust-gmp_0_4_0 = buildCratesLib {
+    name = "rust-gmp";
+    version = "0.4.0";
+    hash = "998b3dab4e4719e13a3dbb61365cfb2e10410138d1e319ecbc79fa9627df112f";
+    deps = with allCrates; [  all__libc.libc_0_2 all__num-traits.num-traits_0_1 ];
+  };
   "rust-gmp_0_3" = rust-gmp_0_3_2;
-  "rust-gmp_0" = rust-gmp_0_3_2;}
+  "rust-gmp_0_4" = rust-gmp_0_4_0;
+  "rust-gmp_0" = rust-gmp_0_4_0;}

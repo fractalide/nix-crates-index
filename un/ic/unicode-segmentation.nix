@@ -40,5 +40,11 @@ rec {
   };
   "unicode-segmentation_0_1" = unicode-segmentation_0_1_3;
   "unicode-segmentation_0" = unicode-segmentation_0_1_3;
-  "unicode-segmentation_1_0" = unicode-segmentation_1_0_0;
-  "unicode-segmentation_1" = unicode-segmentation_1_0_0;}
+  unicode-segmentation_1_0_1 = buildCratesLib {
+    name = "unicode-segmentation";
+    version = "1.0.1";
+    hash = "7baebdc1df1363fa66161fca2fe047e4f4209011cc7e045948298996afdf85df";
+    deps = with allCrates; [  ];
+  };
+  "unicode-segmentation_1_0" = unicode-segmentation_1_0_1;
+  "unicode-segmentation_1" = unicode-segmentation_1_0_1;}

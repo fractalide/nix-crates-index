@@ -15,5 +15,17 @@ rec {
   };
   "google-groupssettings1-cli_0_3" = google-groupssettings1-cli_0_3_6;
   "google-groupssettings1-cli_0" = google-groupssettings1-cli_0_3_6;
-  "google-groupssettings1-cli_1_0" = google-groupssettings1-cli_1_0_0;
-  "google-groupssettings1-cli_1" = google-groupssettings1-cli_1_0_0;}
+  google-groupssettings1-cli_1_0_1 = buildCratesLib {
+    name = "google-groupssettings1-cli";
+    version = "1.0.1";
+    hash = "0859719f341950166ace29d42ac9180baa3a1697b78ddf3037049cf9fb060140";
+    deps = with allCrates; [  all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__strsim.strsim_0_5 all__hyper.hyper_0_9 all__clap.clap_2_0 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+  };
+  google-groupssettings1-cli_1_0_2 = buildCratesLib {
+    name = "google-groupssettings1-cli";
+    version = "1.0.2";
+    hash = "4f18ff1fedb6abb2da42993738740d0e2a28ea5155dfe9bda87f4862cfdc970b";
+    deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__strsim.strsim_0_5 ];
+  };
+  "google-groupssettings1-cli_1_0" = google-groupssettings1-cli_1_0_2;
+  "google-groupssettings1-cli_1" = google-groupssettings1-cli_1_0_2;}

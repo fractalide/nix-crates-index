@@ -51,5 +51,17 @@ rec {
   };
   "google-youtubereporting1_0_1" = google-youtubereporting1_0_1_15;
   "google-youtubereporting1_0" = google-youtubereporting1_0_1_15;
-  "google-youtubereporting1_1_0" = google-youtubereporting1_1_0_0;
-  "google-youtubereporting1_1" = google-youtubereporting1_1_0_0;}
+  google-youtubereporting1_1_0_1 = buildCratesLib {
+    name = "google-youtubereporting1";
+    version = "1.0.1";
+    hash = "6a28c5ebe02d961f3155feac5b04ef5459f6b3bb065c994e7b56610415ec1c7a";
+    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 ];
+  };
+  google-youtubereporting1_1_0_2 = buildCratesLib {
+    name = "google-youtubereporting1";
+    version = "1.0.2";
+    hash = "3cbbfa0d5f757d8c8bdd8cca4c5134bc185ad5339b3e60adb6588a325eef51b5";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 url ];
+  };
+  "google-youtubereporting1_1_0" = google-youtubereporting1_1_0_2;
+  "google-youtubereporting1_1" = google-youtubereporting1_1_0_2;}

@@ -86,5 +86,17 @@ rec {
     hash = "d2e857f61a815673caafa68d542432a7a8c126fede6508d10d029c691b781273";
     deps = with allCrates; [  all__clap.clap_2_0_0 all__atty.atty_0_2 all__unicode-width.unicode-width_0_1 all__lazy_static.lazy_static_0_2 all__ansi_term.ansi_term_0_9 all__regex.regex_0_1 all__itertools.itertools_0_5 all__edit-distance.edit-distance_1_0_0 all__brev.brev_0_1 all__tempdir.tempdir_0_3 ];
   };
-  "just_0_2" = just_0_2_23;
-  "just_0" = just_0_2_23;}
+  just_0_2_24 = buildCratesLib {
+    name = "just";
+    version = "0.2.24";
+    hash = "e33492b2c23a7737a02d3e3ae516a86aaf5f1c3d85668dd465aa896d63d7225a";
+    deps = with allCrates; [  all__atty.atty_0_2 all__unicode-width.unicode-width_0_1 all__tempdir.tempdir_0_3 all__clap.clap_2_0_0 all__edit-distance.edit-distance_1_0_0 all__lazy_static.lazy_static_0_2 all__brev.brev_0_1 all__itertools.itertools_0_5 all__ansi_term.ansi_term_0_9 all__regex.regex_0_1 ];
+  };
+  just_0_2_25 = buildCratesLib {
+    name = "just";
+    version = "0.2.25";
+    hash = "8fe37744413b27b1a151d9eec9f9d265bd311ce7da53e63e17807c30a1b11244";
+    deps = with allCrates; [  all__tempdir.tempdir_0_3 all__itertools.itertools_0_5 all__ansi_term.ansi_term_0_9 all__atty.atty_0_2 all__clap.clap_2_0_0 all__edit-distance.edit-distance_1_0_0 all__unicode-width.unicode-width_0_1 all__regex.regex_0_1 all__lazy_static.lazy_static_0_2 all__brev.brev_0_1 ];
+  };
+  "just_0_2" = just_0_2_25;
+  "just_0" = just_0_2_25;}

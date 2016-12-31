@@ -33,5 +33,12 @@ rec {
     deps = with allCrates; [  ];
   };
   "os_pipe_0_2" = os_pipe_0_2_1;
+  os_pipe_0_4_0 = buildCratesLib {
+    name = "os_pipe";
+    version = "0.4.0";
+    hash = "a23435a036d84543cc465f67d9e688d7f2e5667a564869bdb43f5d4b0c6defc9";
+    deps = with allCrates; [  ];
+  };
   "os_pipe_0_3" = os_pipe_0_3_0;
-  "os_pipe_0" = os_pipe_0_3_0;}
+  "os_pipe_0_4" = os_pipe_0_4_0;
+  "os_pipe_0" = os_pipe_0_4_0;}

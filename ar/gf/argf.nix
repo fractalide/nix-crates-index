@@ -7,5 +7,12 @@ rec {
     hash = "71e1e6017488f33860ffaaf1693eac5b6741fdf4db6a9d115e932429939f9f1d";
     deps = with allCrates; [  ];
   };
+  argf_0_2_0 = buildCratesLib {
+    name = "argf";
+    version = "0.2.0";
+    hash = "09fec7fb9bf22fbb4f32af746dc3dab7c0479df1169cb4b43a71341f0abdc7dd";
+    deps = with allCrates; [  ];
+  };
   "argf_0_1" = argf_0_1_0;
-  "argf_0" = argf_0_1_0;}
+  "argf_0_2" = argf_0_2_0;
+  "argf_0" = argf_0_2_0;}

@@ -40,5 +40,12 @@ rec {
     deps = with allCrates; [  all__nom.nom_1_2 all__num.num_0_1 all__docopt.docopt_0_6 all__enum_primitive.enum_primitive_0_1 all__byteorder.byteorder_0_5 all__simplelog.simplelog_0_2 all__rustc-serialize.rustc-serialize_0_3 all__error-chain.error-chain_0_5 all__log.log_0_3 all__glium.glium_0_15 all__rustyline.rustyline_1_0 ];
   };
   "dcpu_0_3" = dcpu_0_3_0;
+  dcpu_0_5_0 = buildCratesLib {
+    name = "dcpu";
+    version = "0.5.0";
+    hash = "d0d956a6a2c15e0fa4f39c2cdca7dac749e0f6e47c93000a52d0339787d2e2fa";
+    deps = with allCrates; [  all__enum_primitive.enum_primitive_0_1 all__nom.nom_2_0 all__error-chain.error-chain_0_7 all__log.log_0_3 all__time.time_0_1 ];
+  };
   "dcpu_0_4" = dcpu_0_4_0;
-  "dcpu_0" = dcpu_0_4_0;}
+  "dcpu_0_5" = dcpu_0_5_0;
+  "dcpu_0" = dcpu_0_5_0;}

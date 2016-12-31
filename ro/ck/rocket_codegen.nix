@@ -7,5 +7,23 @@ rec {
     hash = "046da3558e77af5a6758dda43aa2a407c6e5208e4b40eb9a624f28766e4ea3b6";
     deps = with allCrates; [  all__rocket.rocket_0_1 all__log.log_0_3 ];
   };
-  "rocket_codegen_0_1" = rocket_codegen_0_1_0;
-  "rocket_codegen_0" = rocket_codegen_0_1_0;}
+  rocket_codegen_0_1_1 = buildCratesLib {
+    name = "rocket_codegen";
+    version = "0.1.1";
+    hash = "8faf8fda712c61c81416b0e3c1ef13a9799fcf2d56ad4af1cf5450518a80026c";
+    deps = with allCrates; [  all__rocket.rocket_0_1 all__log.log_0_3 ];
+  };
+  rocket_codegen_0_1_2 = buildCratesLib {
+    name = "rocket_codegen";
+    version = "0.1.2";
+    hash = "6b9c3049f79cb27e4393aea3752de5fb3e560d2506a152c80e38295c3ab2ca73";
+    deps = with allCrates; [  all__log.log_0_3 all__rocket.rocket_0_1 ];
+  };
+  rocket_codegen_0_1_3 = buildCratesLib {
+    name = "rocket_codegen";
+    version = "0.1.3";
+    hash = "f9dd28f881509734b0aba63af235ff0d9ab0b9d3aca1c44da7cc04f6ab87760f";
+    deps = with allCrates; [  all__rocket.rocket_0_1 all__log.log_0_3 all__ansi_term.ansi_term_0_9 ];
+  };
+  "rocket_codegen_0_1" = rocket_codegen_0_1_3;
+  "rocket_codegen_0" = rocket_codegen_0_1_3;}

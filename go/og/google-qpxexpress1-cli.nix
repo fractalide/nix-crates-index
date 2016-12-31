@@ -15,5 +15,17 @@ rec {
   };
   "google-qpxexpress1-cli_0_3" = google-qpxexpress1-cli_0_3_6;
   "google-qpxexpress1-cli_0" = google-qpxexpress1-cli_0_3_6;
-  "google-qpxexpress1-cli_1_0" = google-qpxexpress1-cli_1_0_0;
-  "google-qpxexpress1-cli_1" = google-qpxexpress1-cli_1_0_0;}
+  google-qpxexpress1-cli_1_0_1 = buildCratesLib {
+    name = "google-qpxexpress1-cli";
+    version = "1.0.1";
+    hash = "0e73e508d5c3cd9566518595aad41c877a4c4a20a9b0069c46e77a7b28fad193";
+    deps = with allCrates; [  all__strsim.strsim_0_5 all__clap.clap_2_0 all__serde.serde_0_8 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
+  };
+  google-qpxexpress1-cli_1_0_2 = buildCratesLib {
+    name = "google-qpxexpress1-cli";
+    version = "1.0.2";
+    hash = "bd7d5e1b6530615389d335693cedac93bd9325f20873395d67815bfbca751b23";
+    deps = with allCrates; [  all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__strsim.strsim_0_5 ];
+  };
+  "google-qpxexpress1-cli_1_0" = google-qpxexpress1-cli_1_0_2;
+  "google-qpxexpress1-cli_1" = google-qpxexpress1-cli_1_0_2;}

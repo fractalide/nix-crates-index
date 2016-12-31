@@ -105,5 +105,17 @@ rec {
   };
   "google-cloudmonitoring2_beta2_0_1" = google-cloudmonitoring2_beta2_0_1_15;
   "google-cloudmonitoring2_beta2_0" = google-cloudmonitoring2_beta2_0_1_15;
-  "google-cloudmonitoring2_beta2_1_0" = google-cloudmonitoring2_beta2_1_0_0;
-  "google-cloudmonitoring2_beta2_1" = google-cloudmonitoring2_beta2_1_0_0;}
+  google-cloudmonitoring2_beta2_1_0_1 = buildCratesLib {
+    name = "google-cloudmonitoring2_beta2";
+    version = "1.0.1";
+    hash = "653e0c0c10a5fb082dd6eae6ef5754fd905011cb70c702b97021db4898018fd3";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 url ];
+  };
+  google-cloudmonitoring2_beta2_1_0_2 = buildCratesLib {
+    name = "google-cloudmonitoring2_beta2";
+    version = "1.0.2";
+    hash = "057945d2d556f0482c5d5a3f582ce9e2e45794069b21d33a58e9cd0a21c090af";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 url ];
+  };
+  "google-cloudmonitoring2_beta2_1_0" = google-cloudmonitoring2_beta2_1_0_2;
+  "google-cloudmonitoring2_beta2_1" = google-cloudmonitoring2_beta2_1_0_2;}

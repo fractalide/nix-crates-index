@@ -33,5 +33,12 @@ rec {
     hash = "867593eac3ccb902465375ee94401490009054da278d4bb2f11a6f8b5bfeca98";
     deps = with allCrates; [  all__generic-array.generic-array_0_5 ];
   };
+  digest_0_4_0 = buildCratesLib {
+    name = "digest";
+    version = "0.4.0";
+    hash = "41a0f307b67d9f0e57edc00804d3146f9f889fe8b2422825566c8e8dd2b5733c";
+    deps = with allCrates; [  all__generic-array.generic-array_0_6 ];
+  };
   "digest_0_3" = digest_0_3_1;
-  "digest_0" = digest_0_3_1;}
+  "digest_0_4" = digest_0_4_0;
+  "digest_0" = digest_0_4_0;}

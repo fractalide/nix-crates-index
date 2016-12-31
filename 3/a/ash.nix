@@ -7,5 +7,32 @@ rec {
     hash = "190561bbb4a03ab05400e6e87635ebff5fefff70892950bf347dedd0f15cc50c";
     deps = with allCrates; [  all__shared_library.shared_library_0_1 ];
   };
+  ash_0_2_0 = buildCratesLib {
+    name = "ash";
+    version = "0.2.0";
+    hash = "7554f816746a36080608d8c1e4bc43b6afe981f34f13c1e96d56d678b2edbcc6";
+    deps = with allCrates; [  all__sharedlib.sharedlib_6_0_0 all__shared_library.shared_library_0_1 ];
+  };
   "ash_0_1" = ash_0_1_0;
-  "ash_0" = ash_0_1_0;}
+  ash_0_3_0 = buildCratesLib {
+    name = "ash";
+    version = "0.3.0";
+    hash = "e59a05ff791f246c563a9abc81d648de382e5a376a3a57270b82937b28652f39";
+    deps = with allCrates; [  all__shared_library.shared_library_0_1 all__lazy_static.lazy_static_0_2 ];
+  };
+  "ash_0_2" = ash_0_2_0;
+  ash_0_3_1 = buildCratesLib {
+    name = "ash";
+    version = "0.3.1";
+    hash = "eb53fe9ad280c019be5cf2ec6ac17c2c5fc3c8a3b13959771c54ab55638c6c4c";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__shared_library.shared_library_0_1 ];
+  };
+  ash_0_9_0 = buildCratesLib {
+    name = "ash";
+    version = "0.9.0";
+    hash = "d7ccac569c641fb168c0f7088cd950a0751192d88530eafc65f1545f5d6d785c";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__shared_library.shared_library_0_1 ];
+  };
+  "ash_0_3" = ash_0_3_1;
+  "ash_0_9" = ash_0_9_0;
+  "ash_0" = ash_0_9_0;}

@@ -99,5 +99,17 @@ rec {
   };
   "google-sqladmin1_beta4_0_1" = google-sqladmin1_beta4_0_1_15;
   "google-sqladmin1_beta4_0" = google-sqladmin1_beta4_0_1_15;
-  "google-sqladmin1_beta4_1_0" = google-sqladmin1_beta4_1_0_0;
-  "google-sqladmin1_beta4_1" = google-sqladmin1_beta4_1_0_0;}
+  google-sqladmin1_beta4_1_0_1 = buildCratesLib {
+    name = "google-sqladmin1_beta4";
+    version = "1.0.1";
+    hash = "ef9cefb7e5f33adbb3ddaf7b79d9162ff5f8e4c0a837f7575610a574428246e8";
+    deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
+  };
+  google-sqladmin1_beta4_1_0_2 = buildCratesLib {
+    name = "google-sqladmin1_beta4";
+    version = "1.0.2";
+    hash = "19655d61417866b39ccb55a375f0d857fa2b2bc7e35c0cfee4b6fc2fd655c146";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 url all__hyper.hyper_0_9 ];
+  };
+  "google-sqladmin1_beta4_1_0" = google-sqladmin1_beta4_1_0_2;
+  "google-sqladmin1_beta4_1" = google-sqladmin1_beta4_1_0_2;}

@@ -74,5 +74,12 @@ rec {
     deps = with allCrates; [  ];
   };
   "unidecode_0_1" = unidecode_0_1_10;
+  unidecode_0_3_0 = buildCratesLib {
+    name = "unidecode";
+    version = "0.3.0";
+    hash = "402bb19d8e03f1d1a7450e2bd613980869438e0666331be3e073089124aa1adc";
+    deps = with allCrates; [  ];
+  };
   "unidecode_0_2" = unidecode_0_2_0;
-  "unidecode_0" = unidecode_0_2_0;}
+  "unidecode_0_3" = unidecode_0_3_0;
+  "unidecode_0" = unidecode_0_3_0;}

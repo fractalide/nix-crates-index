@@ -127,5 +127,11 @@ rec {
     hash = "46d691842f49d59aa046e42d8d9bdc83df85d7f3984163ad074e76700817b1bc";
     deps = with allCrates; [  all__rlibc.rlibc_1_0_0 all__bitflags.bitflags_0_7 ];
   };
-  "sel4-sys_0_0" = sel4-sys_0_0_22;
-  "sel4-sys_0" = sel4-sys_0_0_22;}
+  sel4-sys_0_0_23 = buildCratesLib {
+    name = "sel4-sys";
+    version = "0.0.23";
+    hash = "1dc581635facead7b56a1a56decc226a09b661c8f7dc3685e73bfa3ff5666088";
+    deps = with allCrates; [  all__bitflags.bitflags_0_7 all__rlibc.rlibc_1_0_0 ];
+  };
+  "sel4-sys_0_0" = sel4-sys_0_0_23;
+  "sel4-sys_0" = sel4-sys_0_0_23;}

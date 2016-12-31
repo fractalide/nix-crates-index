@@ -99,5 +99,17 @@ rec {
   };
   "google-fusiontables2_0_1" = google-fusiontables2_0_1_15;
   "google-fusiontables2_0" = google-fusiontables2_0_1_15;
-  "google-fusiontables2_1_0" = google-fusiontables2_1_0_0;
-  "google-fusiontables2_1" = google-fusiontables2_1_0_0;}
+  google-fusiontables2_1_0_1 = buildCratesLib {
+    name = "google-fusiontables2";
+    version = "1.0.1";
+    hash = "282bf6c410f4ecd83a0d6801228875a31d072b114c27778d31d20fc5509bb59b";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 all__serde_json.serde_json_0_8 url ];
+  };
+  google-fusiontables2_1_0_2 = buildCratesLib {
+    name = "google-fusiontables2";
+    version = "1.0.2";
+    hash = "455617c4b748943ccd99cad8787425d8eca5c108072ca31d70f0d2d2da2be075";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 ];
+  };
+  "google-fusiontables2_1_0" = google-fusiontables2_1_0_2;
+  "google-fusiontables2_1" = google-fusiontables2_1_0_2;}

@@ -7,5 +7,17 @@ rec {
     hash = "cd191318478dfad105021e63d7c588cc1a3b1290c36b95d68e99092e8c891dea";
     deps = with allCrates; [  all__clap.clap_2_0 all__strsim.strsim_0_5 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 ];
   };
-  "google-surveys2-cli_1_0" = google-surveys2-cli_1_0_0;
-  "google-surveys2-cli_1" = google-surveys2-cli_1_0_0;}
+  google-surveys2-cli_1_0_1 = buildCratesLib {
+    name = "google-surveys2-cli";
+    version = "1.0.1";
+    hash = "8f688d0b941ae1d315733cd9b365c86dc429a709df43250914053b4ad0fcf79c";
+    deps = with allCrates; [  all__strsim.strsim_0_5 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
+  };
+  google-surveys2-cli_1_0_2 = buildCratesLib {
+    name = "google-surveys2-cli";
+    version = "1.0.2";
+    hash = "410af05e36b938990af3b0d7a5a6ddc86c65e12a2fe529427eab93eb91bae176";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__clap.clap_2_0 all__mime.mime_0_2 all__serde.serde_0_8 all__strsim.strsim_0_5 all__hyper.hyper_0_9 ];
+  };
+  "google-surveys2-cli_1_0" = google-surveys2-cli_1_0_2;
+  "google-surveys2-cli_1" = google-surveys2-cli_1_0_2;}

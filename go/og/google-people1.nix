@@ -33,5 +33,17 @@ rec {
   };
   "google-people1_0_1" = google-people1_0_1_15;
   "google-people1_0" = google-people1_0_1_15;
-  "google-people1_1_0" = google-people1_1_0_0;
-  "google-people1_1" = google-people1_1_0_0;}
+  google-people1_1_0_1 = buildCratesLib {
+    name = "google-people1";
+    version = "1.0.1";
+    hash = "507986f38dd8f2de7bd584f2ed0ca45dda5159a1b1f70c47a09c89fabd57fa5f";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 url ];
+  };
+  google-people1_1_0_2 = buildCratesLib {
+    name = "google-people1";
+    version = "1.0.2";
+    hash = "e001c47398d86fd8d8820b4c8473f83b71dfb4b2400c40ee4866d972838f39a2";
+    deps = with allCrates; [  url all__hyper.hyper_0_9 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
+  };
+  "google-people1_1_0" = google-people1_1_0_2;
+  "google-people1_1" = google-people1_1_0_2;}

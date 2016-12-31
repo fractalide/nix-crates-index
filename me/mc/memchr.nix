@@ -67,5 +67,13 @@ rec {
     hash = "d8b629fb514376c675b98c1421e80b151d3817ac42d7c667717d282761418d20";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
+  memchr_1_0_0 = buildCratesLib {
+    name = "memchr";
+    version = "1.0.0";
+    hash = "7492849298f0731c393b1f34ce03a7c84c00bead2e7057db9342907c8fdcae28";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
   "memchr_0_1" = memchr_0_1_11;
-  "memchr_0" = memchr_0_1_11;}
+  "memchr_0" = memchr_0_1_11;
+  "memchr_1_0" = memchr_1_0_0;
+  "memchr_1" = memchr_1_0_0;}

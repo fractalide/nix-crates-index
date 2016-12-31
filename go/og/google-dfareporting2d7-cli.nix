@@ -7,5 +7,17 @@ rec {
     hash = "a0e0ba07ac81434e933e6818d363afcc4f6345b9e46ac70d67e90024ccb057dc";
     deps = with allCrates; [  all__strsim.strsim_0_5 all__serde.serde_0_8 all__clap.clap_2_0 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
   };
-  "google-dfareporting2d7-cli_1_0" = google-dfareporting2d7-cli_1_0_0;
-  "google-dfareporting2d7-cli_1" = google-dfareporting2d7-cli_1_0_0;}
+  google-dfareporting2d7-cli_1_0_1 = buildCratesLib {
+    name = "google-dfareporting2d7-cli";
+    version = "1.0.1";
+    hash = "d07b804323716fc14eba2c06a40bd5538d63ea14759dc2a858a7ce206b18f677";
+    deps = with allCrates; [  all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__serde.serde_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 ];
+  };
+  google-dfareporting2d7-cli_1_0_2 = buildCratesLib {
+    name = "google-dfareporting2d7-cli";
+    version = "1.0.2";
+    hash = "21d0a04a147951e4e4cd2873f787e697ab55c40f06347124b3328c72e1a07a81";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 all__strsim.strsim_0_5 all__serde.serde_0_8 all__clap.clap_2_0 ];
+  };
+  "google-dfareporting2d7-cli_1_0" = google-dfareporting2d7-cli_1_0_2;
+  "google-dfareporting2d7-cli_1" = google-dfareporting2d7-cli_1_0_2;}

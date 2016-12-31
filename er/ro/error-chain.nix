@@ -97,5 +97,11 @@ rec {
     hash = "1cd681735364a04cd5d69f01a4f6768e70473941f8d86d8c224faf6955a75799";
     deps = with allCrates; [  ];
   };
-  "error-chain_0_7" = error-chain_0_7_1;
-  "error-chain_0" = error-chain_0_7_1;}
+  error-chain_0_7_2 = buildCratesLib {
+    name = "error-chain";
+    version = "0.7.2";
+    hash = "318cb3c71ee4cdea69fdc9e15c173b245ed6063e1709029e8fd32525a881120f";
+    deps = with allCrates; [  ];
+  };
+  "error-chain_0_7" = error-chain_0_7_2;
+  "error-chain_0" = error-chain_0_7_2;}

@@ -99,5 +99,17 @@ rec {
   };
   "google-coordinate1_0_1" = google-coordinate1_0_1_15;
   "google-coordinate1_0" = google-coordinate1_0_1_15;
-  "google-coordinate1_1_0" = google-coordinate1_1_0_0;
-  "google-coordinate1_1" = google-coordinate1_1_0_0;}
+  google-coordinate1_1_0_1 = buildCratesLib {
+    name = "google-coordinate1";
+    version = "1.0.1";
+    hash = "2ff42bb854b52dd5cb1891c97f5d66d157e37b272d630f184b7d254eea6e38dd";
+    deps = with allCrates; [  url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 ];
+  };
+  google-coordinate1_1_0_2 = buildCratesLib {
+    name = "google-coordinate1";
+    version = "1.0.2";
+    hash = "f0d059b64f77d978f9cbbcb41cd393cd7f8f2af5ce3058aa1546a92238db4a60";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url ];
+  };
+  "google-coordinate1_1_0" = google-coordinate1_1_0_2;
+  "google-coordinate1_1" = google-coordinate1_1_0_2;}

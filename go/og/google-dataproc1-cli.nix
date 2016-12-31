@@ -15,5 +15,17 @@ rec {
   };
   "google-dataproc1-cli_0_3" = google-dataproc1-cli_0_3_6;
   "google-dataproc1-cli_0" = google-dataproc1-cli_0_3_6;
-  "google-dataproc1-cli_1_0" = google-dataproc1-cli_1_0_0;
-  "google-dataproc1-cli_1" = google-dataproc1-cli_1_0_0;}
+  google-dataproc1-cli_1_0_1 = buildCratesLib {
+    name = "google-dataproc1-cli";
+    version = "1.0.1";
+    hash = "2fe35bf954b2e926d6a8dad67c0552b2fa27e1e0cf24847fe693d63ff1b52b9b";
+    deps = with allCrates; [  all__strsim.strsim_0_5 all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 ];
+  };
+  google-dataproc1-cli_1_0_2 = buildCratesLib {
+    name = "google-dataproc1-cli";
+    version = "1.0.2";
+    hash = "6969ae3f81f43ff0beeb872fb66084fb1a0f8e9f146829306d2a54f4c8ddd620";
+    deps = with allCrates; [  all__serde.serde_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__hyper.hyper_0_9 all__mime.mime_0_2 all__strsim.strsim_0_5 ];
+  };
+  "google-dataproc1-cli_1_0" = google-dataproc1-cli_1_0_2;
+  "google-dataproc1-cli_1" = google-dataproc1-cli_1_0_2;}

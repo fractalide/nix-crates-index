@@ -51,5 +51,17 @@ rec {
   };
   "google-playmoviespartner1_0_1" = google-playmoviespartner1_0_1_15;
   "google-playmoviespartner1_0" = google-playmoviespartner1_0_1_15;
-  "google-playmoviespartner1_1_0" = google-playmoviespartner1_1_0_0;
-  "google-playmoviespartner1_1" = google-playmoviespartner1_1_0_0;}
+  google-playmoviespartner1_1_0_1 = buildCratesLib {
+    name = "google-playmoviespartner1";
+    version = "1.0.1";
+    hash = "704cfd1e34892046d2ed294df42bf5549b1ba932b4c082c38378869b343bef0a";
+    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 ];
+  };
+  google-playmoviespartner1_1_0_2 = buildCratesLib {
+    name = "google-playmoviespartner1";
+    version = "1.0.2";
+    hash = "1b96769e0372226556503eb07ff7d05f73e150ae4c356475c63815b83a50bd1f";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 ];
+  };
+  "google-playmoviespartner1_1_0" = google-playmoviespartner1_1_0_2;
+  "google-playmoviespartner1_1" = google-playmoviespartner1_1_0_2;}

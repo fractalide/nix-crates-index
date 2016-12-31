@@ -105,5 +105,17 @@ rec {
   };
   "google-pagespeedonline2_0_1" = google-pagespeedonline2_0_1_15;
   "google-pagespeedonline2_0" = google-pagespeedonline2_0_1_15;
-  "google-pagespeedonline2_1_0" = google-pagespeedonline2_1_0_0;
-  "google-pagespeedonline2_1" = google-pagespeedonline2_1_0_0;}
+  google-pagespeedonline2_1_0_1 = buildCratesLib {
+    name = "google-pagespeedonline2";
+    version = "1.0.1";
+    hash = "05c416f7efa2de26e4f00b5f534556a8be8d3397b7e84731f769b848b8d2f626";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 ];
+  };
+  google-pagespeedonline2_1_0_2 = buildCratesLib {
+    name = "google-pagespeedonline2";
+    version = "1.0.2";
+    hash = "ac176cefde784df238da342807c90960827f1a3fbf1343f7375f79198e08e2df";
+    deps = with allCrates; [  url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__hyper.hyper_0_9 ];
+  };
+  "google-pagespeedonline2_1_0" = google-pagespeedonline2_1_0_2;
+  "google-pagespeedonline2_1" = google-pagespeedonline2_1_0_2;}

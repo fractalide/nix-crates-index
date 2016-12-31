@@ -170,5 +170,12 @@ rec {
     hash = "e9b3854687228334d8a579cd2f666ddd7fb46a5f68ac0460da2898394c4679d2";
     deps = with allCrates; [  all__time.time_0_1 all__lru-cache.lru-cache_0_0_7 all__bitflags.bitflags_0_7 all__libc.libc_0_2 all__libsqlite3-sys.libsqlite3-sys_0_5 ];
   };
+  rusqlite_0_8_0 = buildCratesLib {
+    name = "rusqlite";
+    version = "0.8.0";
+    hash = "b2cc26323ab8cdf180bf97baf5df2f0c77601e038012cb7bdb2dfc405d87ea57";
+    deps = with allCrates; [  all__libc.libc_0_2 all__bitflags.bitflags_0_7 all__time.time_0_1 all__lru-cache.lru-cache_0_1 all__libsqlite3-sys.libsqlite3-sys_0_6 ];
+  };
   "rusqlite_0_7" = rusqlite_0_7_3;
-  "rusqlite_0" = rusqlite_0_7_3;}
+  "rusqlite_0_8" = rusqlite_0_8_0;
+  "rusqlite_0" = rusqlite_0_8_0;}

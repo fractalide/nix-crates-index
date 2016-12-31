@@ -71,5 +71,11 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__nanomsg-sys.nanomsg-sys_0_6 ];
   };
   "nanomsg_0_5" = nanomsg_0_5_0;
-  "nanomsg_0_6" = nanomsg_0_6_0;
-  "nanomsg_0" = nanomsg_0_6_0;}
+  nanomsg_0_6_1 = buildCratesLib {
+    name = "nanomsg";
+    version = "0.6.1";
+    hash = "c46c5adafebb843ce1aff28250857209b62ff97affac907841baf6e745a594cc";
+    deps = with allCrates; [  all__libc.libc_0_2 all__nanomsg-sys.nanomsg-sys_0_6 ];
+  };
+  "nanomsg_0_6" = nanomsg_0_6_1;
+  "nanomsg_0" = nanomsg_0_6_1;}

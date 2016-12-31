@@ -100,5 +100,17 @@ rec {
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__conduit-middleware.conduit-middleware_0_8 all__cookie.cookie_0_3 all__conduit.conduit_0_8 ];
   };
   "conduit-cookie_0_7" = conduit-cookie_0_7_6;
-  "conduit-cookie_0_8" = conduit-cookie_0_8_0;
-  "conduit-cookie_0" = conduit-cookie_0_8_0;}
+  conduit-cookie_0_8_1 = buildCratesLib {
+    name = "conduit-cookie";
+    version = "0.8.1";
+    hash = "d15f5160a1d701027ee59361634b91d49fed337d6798795132d08c21a6f6950a";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__cookie.cookie_0_4 all__conduit.conduit_0_8 all__conduit-middleware.conduit-middleware_0_8 ];
+  };
+  conduit-cookie_0_8_2 = buildCratesLib {
+    name = "conduit-cookie";
+    version = "0.8.2";
+    hash = "035bb76edb3006275e935a12c51e606fc99cef76b7012f52ad6d1b529e6a22c7";
+    deps = with allCrates; [  all__conduit.conduit_0_8 all__conduit-middleware.conduit-middleware_0_8 all__cookie.cookie_0_5 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "conduit-cookie_0_8" = conduit-cookie_0_8_2;
+  "conduit-cookie_0" = conduit-cookie_0_8_2;}

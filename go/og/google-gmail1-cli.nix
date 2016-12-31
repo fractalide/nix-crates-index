@@ -15,5 +15,17 @@ rec {
   };
   "google-gmail1-cli_0_3" = google-gmail1-cli_0_3_6;
   "google-gmail1-cli_0" = google-gmail1-cli_0_3_6;
-  "google-gmail1-cli_1_0" = google-gmail1-cli_1_0_0;
-  "google-gmail1-cli_1" = google-gmail1-cli_1_0_0;}
+  google-gmail1-cli_1_0_1 = buildCratesLib {
+    name = "google-gmail1-cli";
+    version = "1.0.1";
+    hash = "d528f53ff7c39c88da26c6133038abedbbde87d467782fc296f3d0cc8dff0437";
+    deps = with allCrates; [  all__mime.mime_0_2 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__hyper.hyper_0_9 ];
+  };
+  google-gmail1-cli_1_0_2 = buildCratesLib {
+    name = "google-gmail1-cli";
+    version = "1.0.2";
+    hash = "d8d5c481b5d1cde55e1073ef71aef5711d7584a01e5c5f15d50fc6959fee6e7f";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__clap.clap_2_0 all__hyper.hyper_0_9 ];
+  };
+  "google-gmail1-cli_1_0" = google-gmail1-cli_1_0_2;
+  "google-gmail1-cli_1" = google-gmail1-cli_1_0_2;}

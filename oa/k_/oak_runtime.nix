@@ -82,5 +82,11 @@ rec {
     hash = "9e457777c97e45f054fb754e9cab2d74114b04606cb3ff2489b6cd59dbbd8e61";
     deps = with allCrates; [  ];
   };
-  "oak_runtime_0_4" = oak_runtime_0_4_1;
-  "oak_runtime_0" = oak_runtime_0_4_1;}
+  oak_runtime_0_4_2 = buildCratesLib {
+    name = "oak_runtime";
+    version = "0.4.2";
+    hash = "88b778aa255ae4612a342d2df15a7f6cd133954984842dcd91ff95284bf6a07c";
+    deps = with allCrates; [  ];
+  };
+  "oak_runtime_0_4" = oak_runtime_0_4_2;
+  "oak_runtime_0" = oak_runtime_0_4_2;}

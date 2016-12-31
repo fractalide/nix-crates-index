@@ -19,5 +19,11 @@ rec {
     hash = "36dff09cafb4ec7c8cf0023eb0b686cb6ce65499116a12201c9e11840ca01beb";
     deps = with allCrates; [  ];
   };
-  "unicode-xid_0_0" = unicode-xid_0_0_3;
-  "unicode-xid_0" = unicode-xid_0_0_3;}
+  unicode-xid_0_0_4 = buildCratesLib {
+    name = "unicode-xid";
+    version = "0.0.4";
+    hash = "8c1f860d7d29cf02cb2f3f359fd35991af3d30bac52c57d265a3c461074cb4dc";
+    deps = with allCrates; [  ];
+  };
+  "unicode-xid_0_0" = unicode-xid_0_0_4;
+  "unicode-xid_0" = unicode-xid_0_0_4;}

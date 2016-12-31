@@ -40,5 +40,11 @@ rec {
     deps = with allCrates; [  all__termion.termion_1_1 all__lazy_static.lazy_static_0_2 all__libc.libc_0_2 ];
   };
   "output_0_3" = output_0_3_1;
-  "output_0_4" = output_0_4_0;
-  "output_0" = output_0_4_0;}
+  output_0_4_1 = buildCratesLib {
+    name = "output";
+    version = "0.4.1";
+    hash = "fa48553a7b3daf627fb657b93589c7ec94ec2048dc8c1445eba00f6d21676772";
+    deps = with allCrates; [  all__libc.libc_0_2 all__termion.termion_1_1 all__lazy_static.lazy_static_0_2 ];
+  };
+  "output_0_4" = output_0_4_1;
+  "output_0" = output_0_4_1;}

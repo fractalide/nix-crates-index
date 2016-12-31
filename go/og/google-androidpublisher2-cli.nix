@@ -15,5 +15,17 @@ rec {
   };
   "google-androidpublisher2-cli_0_3" = google-androidpublisher2-cli_0_3_6;
   "google-androidpublisher2-cli_0" = google-androidpublisher2-cli_0_3_6;
-  "google-androidpublisher2-cli_1_0" = google-androidpublisher2-cli_1_0_0;
-  "google-androidpublisher2-cli_1" = google-androidpublisher2-cli_1_0_0;}
+  google-androidpublisher2-cli_1_0_1 = buildCratesLib {
+    name = "google-androidpublisher2-cli";
+    version = "1.0.1";
+    hash = "c9f27b80b13efac1d35f07cf175ab35b397f834068e14950010612ea10745054";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 all__clap.clap_2_0 all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
+  };
+  google-androidpublisher2-cli_1_0_2 = buildCratesLib {
+    name = "google-androidpublisher2-cli";
+    version = "1.0.2";
+    hash = "e61441d5545d57dbb5af7fdde83b229d4d78c512dffdeeba61c5ae4186c0ea4d";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 all__clap.clap_2_0 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__strsim.strsim_0_5 ];
+  };
+  "google-androidpublisher2-cli_1_0" = google-androidpublisher2-cli_1_0_2;
+  "google-androidpublisher2-cli_1" = google-androidpublisher2-cli_1_0_2;}

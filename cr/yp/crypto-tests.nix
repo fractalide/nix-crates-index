@@ -44,5 +44,18 @@ rec {
     hash = "b50286000757919cb6d9c2a48fd31f18c0d569baeed74d815a866d0ff311dd6c";
     deps = with allCrates; [  all__block-cipher-trait.block-cipher-trait_0_2 all__digest.digest_0_3 all__generic-array.generic-array_0_5 ];
   };
+  crypto-tests_0_3_0 = buildCratesLib {
+    name = "crypto-tests";
+    version = "0.3.0";
+    hash = "92ab9f13390bd63f8ac42ea501de1b989315068de33ac4259381726b13d22238";
+    deps = with allCrates; [  all__digest.digest_0_4 all__generic-array.generic-array_0_6 all__block-cipher-trait.block-cipher-trait_0_3 ];
+  };
   "crypto-tests_0_2" = crypto-tests_0_2_4;
-  "crypto-tests_0" = crypto-tests_0_2_4;}
+  crypto-tests_0_3_1 = buildCratesLib {
+    name = "crypto-tests";
+    version = "0.3.1";
+    hash = "0b1429bd4bf4790f82edf3148857a56e4fa715a79ba4080cef108f635cde011a";
+    deps = with allCrates; [  all__block-cipher-trait.block-cipher-trait_0_3 all__digest.digest_0_4 all__generic-array.generic-array_0_6 ];
+  };
+  "crypto-tests_0_3" = crypto-tests_0_3_1;
+  "crypto-tests_0" = crypto-tests_0_3_1;}

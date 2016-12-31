@@ -60,5 +60,12 @@ rec {
     hash = "843851c9a1b451b66cbc53a08774ce1f94728fb0818ddd9f3ef1d6dc89abe2b9";
     deps = with allCrates; [  all__rulinalg.rulinalg_0_3 all__num.num_0_1 ];
   };
+  electro_0_7_0 = buildCratesLib {
+    name = "electro";
+    version = "0.7.0";
+    hash = "f12c201fb6754270c456e7da7ebddceb619d4b2612e0864509ca511b9d0e0e49";
+    deps = with allCrates; [  all__num.num_0_1 all__rulinalg.rulinalg_0_3 ];
+  };
   "electro_0_6" = electro_0_6_2;
-  "electro_0" = electro_0_6_2;}
+  "electro_0_7" = electro_0_7_0;
+  "electro_0" = electro_0_7_0;}

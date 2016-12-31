@@ -192,5 +192,46 @@ rec {
     deps = with allCrates; [  all__toml.toml_0_2 all__lazy_static.lazy_static_0_2 all__rayon.rayon_0_5 all__itertools.itertools_0_5 all__enum_primitive.enum_primitive_0_1 all__byteorder.byteorder_0_5 all__num.num_0_1 all__time.time_0_1 all__glob.glob_0_2 ];
   };
   "rawloader_0_17" = rawloader_0_17_0;
+  rawloader_0_19_0 = buildCratesLib {
+    name = "rawloader";
+    version = "0.19.0";
+    hash = "94df5f4af6f9779532a744aa0a447805c8a3009beaee4801c10616287a7fd0cf";
+    deps = with allCrates; [  all__num.num_0_1 all__itertools.itertools_0_5 all__lazy_static.lazy_static_0_2 all__byteorder.byteorder_0_5 all__enum_primitive.enum_primitive_0_1 all__rayon.rayon_0_5 all__toml.toml_0_2 all__time.time_0_1 all__glob.glob_0_2 ];
+  };
   "rawloader_0_18" = rawloader_0_18_0;
-  "rawloader_0" = rawloader_0_18_0;}
+  rawloader_0_20_0 = buildCratesLib {
+    name = "rawloader";
+    version = "0.20.0";
+    hash = "4da193de1509199d66f54b18f73ec6e66c53db681a84b6967dfece3d0037dac8";
+    deps = with allCrates; [  all__toml.toml_0_2 all__byteorder.byteorder_0_5 all__time.time_0_1 all__enum_primitive.enum_primitive_0_1 all__lazy_static.lazy_static_0_2 all__itertools.itertools_0_5 all__rayon.rayon_0_5 all__num.num_0_1 all__glob.glob_0_2 ];
+  };
+  "rawloader_0_19" = rawloader_0_19_0;
+  rawloader_0_21_0 = buildCratesLib {
+    name = "rawloader";
+    version = "0.21.0";
+    hash = "2bd20243ab8556add0b0647b5f4b7f064c787e45791e6ac11276569d8f24cf29";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__rayon.rayon_0_6 all__enum_primitive.enum_primitive_0_1 all__byteorder.byteorder_0_5 all__time.time_0_1 all__itertools.itertools_0_5 all__toml.toml_0_2 all__num.num_0_1 all__glob.glob_0_2 ];
+  };
+  "rawloader_0_20" = rawloader_0_20_0;
+  rawloader_0_22_0 = buildCratesLib {
+    name = "rawloader";
+    version = "0.22.0";
+    hash = "c87eb334d1bef37f443ef31ec46162511a502ef343a9d120dcd55060eea8f1b0";
+    deps = with allCrates; [  all__itertools.itertools_0_5 all__rayon.rayon_0_6 all__time.time_0_1 all__byteorder.byteorder_0_5 all__lazy_static.lazy_static_0_2 all__enum_primitive.enum_primitive_0_1 all__num.num_0_1 all__toml.toml_0_2 all__glob.glob_0_2 ];
+  };
+  "rawloader_0_21" = rawloader_0_21_0;
+  rawloader_0_23_0 = buildCratesLib {
+    name = "rawloader";
+    version = "0.23.0";
+    hash = "a34ecb1074bec0262d319d172acf6e7f553bd5ed3b7ec1502bf379f92cfea695";
+    deps = with allCrates; [  all__time.time_0_1 all__enum_primitive.enum_primitive_0_1 all__itertools.itertools_0_5 all__rayon.rayon_0_6 all__byteorder.byteorder_0_5 all__num.num_0_1 all__lazy_static.lazy_static_0_2 all__toml.toml_0_2 all__glob.glob_0_2 ];
+  };
+  "rawloader_0_22" = rawloader_0_22_0;
+  rawloader_0_23_1 = buildCratesLib {
+    name = "rawloader";
+    version = "0.23.1";
+    hash = "8c45e71672faebba435d8a9a703cbf3cf8a1fdf5f7c1b18054ba9bf8a5a5262c";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__byteorder.byteorder_0_5 all__enum_primitive.enum_primitive_0_1 all__num.num_0_1 all__itertools.itertools_0_5 all__toml.toml_0_2 all__rayon.rayon_0_6 all__time.time_0_1 all__glob.glob_0_2 ];
+  };
+  "rawloader_0_23" = rawloader_0_23_1;
+  "rawloader_0" = rawloader_0_23_1;}

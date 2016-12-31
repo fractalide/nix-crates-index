@@ -31,5 +31,18 @@ rec {
     hash = "3bb64fba126a92f112f2c707b2721d177c40dd916ccacda4b8f62446813b5142";
     deps = with allCrates; [  ];
   };
-  "libgpg-error-sys_0_1" = libgpg-error-sys_0_1_5;
-  "libgpg-error-sys_0" = libgpg-error-sys_0_1_5;}
+  libgpg-error-sys_0_1_6 = buildCratesLib {
+    name = "libgpg-error-sys";
+    version = "0.1.6";
+    hash = "0fc7973a5e24a8cdb02a3d519102ae3b3a97efe63d6716a21590fdbd9a2d0772";
+    deps = with allCrates; [  all__gcc.gcc_0_3 ];
+  };
+  libgpg-error-sys_0_2_0 = buildCratesLib {
+    name = "libgpg-error-sys";
+    version = "0.2.0";
+    hash = "c7eeca3abfe83d8832fd5caf90a5f07ad03a540dddd7774b6757a92fe8ef9b4f";
+    deps = with allCrates; [  all__gcc.gcc_0_3 ];
+  };
+  "libgpg-error-sys_0_1" = libgpg-error-sys_0_1_6;
+  "libgpg-error-sys_0_2" = libgpg-error-sys_0_2_0;
+  "libgpg-error-sys_0" = libgpg-error-sys_0_2_0;}

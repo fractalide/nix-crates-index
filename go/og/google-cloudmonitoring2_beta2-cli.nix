@@ -15,5 +15,17 @@ rec {
   };
   "google-cloudmonitoring2_beta2-cli_0_3" = google-cloudmonitoring2_beta2-cli_0_3_6;
   "google-cloudmonitoring2_beta2-cli_0" = google-cloudmonitoring2_beta2-cli_0_3_6;
-  "google-cloudmonitoring2_beta2-cli_1_0" = google-cloudmonitoring2_beta2-cli_1_0_0;
-  "google-cloudmonitoring2_beta2-cli_1" = google-cloudmonitoring2_beta2-cli_1_0_0;}
+  google-cloudmonitoring2_beta2-cli_1_0_1 = buildCratesLib {
+    name = "google-cloudmonitoring2_beta2-cli";
+    version = "1.0.1";
+    hash = "01f11f8c8a61ad5d0e10cf13bd25e337853c41ddd5d3aa3685a2d626e04ea80c";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 all__clap.clap_2_0 all__mime.mime_0_2 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
+  };
+  google-cloudmonitoring2_beta2-cli_1_0_2 = buildCratesLib {
+    name = "google-cloudmonitoring2_beta2-cli";
+    version = "1.0.2";
+    hash = "77e7d47675772a08e706836ecc84a9f185b2ad62b757221565a80e32e2a9d303";
+    deps = with allCrates; [  all__serde.serde_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__clap.clap_2_0 all__strsim.strsim_0_5 ];
+  };
+  "google-cloudmonitoring2_beta2-cli_1_0" = google-cloudmonitoring2_beta2-cli_1_0_2;
+  "google-cloudmonitoring2_beta2-cli_1" = google-cloudmonitoring2_beta2-cli_1_0_2;}

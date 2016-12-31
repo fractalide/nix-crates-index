@@ -26,5 +26,11 @@ rec {
     hash = "c714223992fb749c9f710c203983bdfede4097e68fb7d970ac3611904a8c854a";
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__serde_json.serde_json_0_8 all__rust-crypto.rust-crypto_0_2 all__serde.serde_0_8 ];
   };
-  "rwt_0_2" = rwt_0_2_2;
-  "rwt_0" = rwt_0_2_2;}
+  rwt_0_2_3 = buildCratesLib {
+    name = "rwt";
+    version = "0.2.3";
+    hash = "cc723c35cdd12c19d06edc49825001fcab08a1393bbc640c0c6473600c0425b7";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__rust-crypto.rust-crypto_0_2 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "rwt_0_2" = rwt_0_2_3;
+  "rwt_0" = rwt_0_2_3;}

@@ -21,5 +21,17 @@ rec {
   };
   "google-safebrowsing4_0_1" = google-safebrowsing4_0_1_15;
   "google-safebrowsing4_0" = google-safebrowsing4_0_1_15;
-  "google-safebrowsing4_1_0" = google-safebrowsing4_1_0_0;
-  "google-safebrowsing4_1" = google-safebrowsing4_1_0_0;}
+  google-safebrowsing4_1_0_1 = buildCratesLib {
+    name = "google-safebrowsing4";
+    version = "1.0.1";
+    hash = "fd1bf1e5b01bc07d775058f8627b0693e4f2555c24a62993060296d619cb3b84";
+    deps = with allCrates; [  all__hyper.hyper_0_9 url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+  };
+  google-safebrowsing4_1_0_2 = buildCratesLib {
+    name = "google-safebrowsing4";
+    version = "1.0.2";
+    hash = "97222b30d69b4e8274376c57aafe1125e7f1989e224100cfb808b1219da1e937";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 url ];
+  };
+  "google-safebrowsing4_1_0" = google-safebrowsing4_1_0_2;
+  "google-safebrowsing4_1" = google-safebrowsing4_1_0_2;}

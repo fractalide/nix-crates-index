@@ -7,5 +7,17 @@ rec {
     hash = "8ef687f39df9eb471ee6cf2553756aec2475995bfb77d874d4ab6bddf15ef98d";
     deps = with allCrates; [  all__float-cmp.float-cmp_0_2 all__ndarray.ndarray_0_7 all__rand.rand_0_3 all__num-complex.num-complex_0_1 ];
   };
-  "ndarray-numtest_0_1" = ndarray-numtest_0_1_0;
-  "ndarray-numtest_0" = ndarray-numtest_0_1_0;}
+  ndarray-numtest_0_1_1 = buildCratesLib {
+    name = "ndarray-numtest";
+    version = "0.1.1";
+    hash = "551ac1a7e35e63e3345a18220ad174e10db6a4d9f9aab984087333b11d97c99e";
+    deps = with allCrates; [  all__float-cmp.float-cmp_0_2 all__rand.rand_0_3 all__ndarray.ndarray_0_7 all__num-complex.num-complex_0_1 ];
+  };
+  ndarray-numtest_0_1_2 = buildCratesLib {
+    name = "ndarray-numtest";
+    version = "0.1.2";
+    hash = "d62775de3ef664b61d6db92b2766aad1facdabb6a70b339d2dbc8c9f57b3c415";
+    deps = with allCrates; [  all__rand.rand_0_3 all__ndarray.ndarray_0_7 all__float-cmp.float-cmp_0_2 all__num-complex.num-complex_0_1 ];
+  };
+  "ndarray-numtest_0_1" = ndarray-numtest_0_1_2;
+  "ndarray-numtest_0" = ndarray-numtest_0_1_2;}

@@ -31,5 +31,12 @@ rec {
     hash = "ce9493eae9b94f6faea126e8282621dc13931bcd3ca48a152a068e03ea251a9b";
     deps = with allCrates; [  all__pulldown-cmark.pulldown-cmark_0_0_8 all__gazetta-core.gazetta-core_0_1 all__horrorshow.horrorshow_0_5 ];
   };
+  gazetta-render-ext_0_2_0 = buildCratesLib {
+    name = "gazetta-render-ext";
+    version = "0.2.0";
+    hash = "e4a332360f045e550fbc996c64b4eb868fffa420602de0b40708846d7febcc32";
+    deps = with allCrates; [  all__pulldown-cmark.pulldown-cmark_0_0_8 all__gazetta-core.gazetta-core_0_2 all__horrorshow.horrorshow_0_6 ];
+  };
   "gazetta-render-ext_0_1" = gazetta-render-ext_0_1_4;
-  "gazetta-render-ext_0" = gazetta-render-ext_0_1_4;}
+  "gazetta-render-ext_0_2" = gazetta-render-ext_0_2_0;
+  "gazetta-render-ext_0" = gazetta-render-ext_0_2_0;}

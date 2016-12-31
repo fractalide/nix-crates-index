@@ -99,5 +99,17 @@ rec {
   };
   "google-calendar3_0_1" = google-calendar3_0_1_15;
   "google-calendar3_0" = google-calendar3_0_1_15;
-  "google-calendar3_1_0" = google-calendar3_1_0_0;
-  "google-calendar3_1" = google-calendar3_1_0_0;}
+  google-calendar3_1_0_1 = buildCratesLib {
+    name = "google-calendar3";
+    version = "1.0.1";
+    hash = "91f84ed3416924f647d6cff2652cecb0391294f95858d6f5a1bd172889ac9c8c";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 url ];
+  };
+  google-calendar3_1_0_2 = buildCratesLib {
+    name = "google-calendar3";
+    version = "1.0.2";
+    hash = "cb6d2ff9995da36709d3173cda543bb2698c23528be561e7a7a1de90ccc4bc80";
+    deps = with allCrates; [  all__hyper.hyper_0_9 url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+  };
+  "google-calendar3_1_0" = google-calendar3_1_0_2;
+  "google-calendar3_1" = google-calendar3_1_0_2;}

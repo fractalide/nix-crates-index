@@ -7,5 +7,11 @@ rec {
     hash = "4e76d2616d1daf29af404632c033daa3bdad43a142a0133b0e77109be5480f75";
     deps = with allCrates; [  all__error-chain.error-chain_0_7 all__libflo.libflo_0_1 all__libflo_dynamic_event.libflo_dynamic_event_0_1 all__libflo_module.libflo_module_0_1 all__libflo_func.libflo_func_0_1 all__libflo_event.libflo_event_0_1 ];
   };
-  "libflo_cmdline_host_0_1" = libflo_cmdline_host_0_1_1;
-  "libflo_cmdline_host_0" = libflo_cmdline_host_0_1_1;}
+  libflo_cmdline_host_0_1_2 = buildCratesLib {
+    name = "libflo_cmdline_host";
+    version = "0.1.2";
+    hash = "4f8dd7262e1cbd1b78befcb8dfd6ecf80908a51f6b2d9b6216e51c2e22e0b4e5";
+    deps = with allCrates; [  all__libflo.libflo_0_1 all__libflo_event.libflo_event_0_1 all__libflo_func.libflo_func_0_1 all__error-chain.error-chain_0_7 all__libflo_dynamic_event.libflo_dynamic_event_0_1 all__libflo_module.libflo_module_0_1 ];
+  };
+  "libflo_cmdline_host_0_1" = libflo_cmdline_host_0_1_2;
+  "libflo_cmdline_host_0" = libflo_cmdline_host_0_1_2;}

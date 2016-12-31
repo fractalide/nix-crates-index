@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__generic-array.generic-array_0_5 ];
   };
   "block-cipher-trait_0_1" = block-cipher-trait_0_1_0;
+  block-cipher-trait_0_3_0 = buildCratesLib {
+    name = "block-cipher-trait";
+    version = "0.3.0";
+    hash = "a1dc8a6d88bfdefdd3c27d35f53e882dfff58d64caa21f14e759b27a99397c8f";
+    deps = with allCrates; [  all__generic-array.generic-array_0_6 ];
+  };
   "block-cipher-trait_0_2" = block-cipher-trait_0_2_0;
-  "block-cipher-trait_0" = block-cipher-trait_0_2_0;}
+  "block-cipher-trait_0_3" = block-cipher-trait_0_3_0;
+  "block-cipher-trait_0" = block-cipher-trait_0_3_0;}

@@ -7,5 +7,17 @@ rec {
     hash = "cb0453252d131460509f5a0e0632c974e86d0c0f43a491f17a38426da4dbf1c3";
     deps = with allCrates; [  multipart all__futures.futures_0_1 all__hyper.hyper_0_9 all__url.url_1_0 mime all__quick-error.quick-error_1_1 ];
   };
-  "anterofit_0_0" = anterofit_0_0_1;
-  "anterofit_0" = anterofit_0_0_1;}
+  anterofit_0_0_2 = buildCratesLib {
+    name = "anterofit";
+    version = "0.0.2";
+    hash = "255fce220fafcdcd9dc1dcc5d50764c5a1c67cb8f6886901ffd601b0f0deae32";
+    deps = with allCrates; [  all__futures.futures_0_1 mime all__url.url_1_0 all__quick-error.quick-error_1_1 all__hyper.hyper_0_9 multipart ];
+  };
+  anterofit_0_0_3 = buildCratesLib {
+    name = "anterofit";
+    version = "0.0.3";
+    hash = "49de407203c8dbd06021b79a245f61c92ead2453d2a26a3603fbdb95dccae7d2";
+    deps = with allCrates; [  all__futures.futures_0_1 all__hyper.hyper_0_9 multipart mime all__url.url_1_0 all__quick-error.quick-error_1_1 ];
+  };
+  "anterofit_0_0" = anterofit_0_0_3;
+  "anterofit_0" = anterofit_0_0_3;}

@@ -7,5 +7,26 @@ rec {
     hash = "1d2ef653e59e674b50df35b45149934cc3f0530a6841f35f5370929d54c22924";
     deps = with allCrates; [  all__try_from.try_from_0_2 all__byteorder.byteorder_0_5 all__log.log_0_3 ];
   };
+  rift_0_2_0 = buildCratesLib {
+    name = "rift";
+    version = "0.2.0";
+    hash = "59342e9cf1a0f0965fd66af87060b53d1925222ffe784a946a41d97f891c713e";
+    deps = with allCrates; [  all__try_from.try_from_0_2 all__byteorder.byteorder_0_5 all__log.log_0_3 all__integer-encoding.integer-encoding_1_0_3 ];
+  };
   "rift_0_1" = rift_0_1_0;
-  "rift_0" = rift_0_1_0;}
+  rift_0_4_0 = buildCratesLib {
+    name = "rift";
+    version = "0.4.0";
+    hash = "99bd92208e85547d3a51d622c4eac63aff0ab24166a5e8b7d3ab7e71978a7605";
+    deps = with allCrates; [  all__integer-encoding.integer-encoding_1_0_3 all__byteorder.byteorder_0_5 all__try_from.try_from_0_2 all__log.log_0_3 ];
+  };
+  "rift_0_2" = rift_0_2_0;
+  rift_0_5_0 = buildCratesLib {
+    name = "rift";
+    version = "0.5.0";
+    hash = "d68708b89799391c03f8ae22ae616af1dd1b70958b4aeb8e8790b194da1714e1";
+    deps = with allCrates; [  all__log.log_0_3 all__byteorder.byteorder_0_5 all__try_from.try_from_0_2 all__integer-encoding.integer-encoding_1_0_3 ];
+  };
+  "rift_0_4" = rift_0_4_0;
+  "rift_0_5" = rift_0_5_0;
+  "rift_0" = rift_0_5_0;}

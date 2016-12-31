@@ -28,5 +28,12 @@ rec {
     deps = with allCrates; [  all__gpg-error.gpg-error_0_1 all__lazy_static.lazy_static_0_2 all__bitflags.bitflags_0_7 all__libgcrypt-sys.libgcrypt-sys_0_4 all__libc.libc_0_2 ];
   };
   "gcrypt_0_3" = gcrypt_0_3_0;
+  gcrypt_0_5_0 = buildCratesLib {
+    name = "gcrypt";
+    version = "0.5.0";
+    hash = "3234cfcc4a8fd47488ef293d434e5d121522d77a28944579f042d0f22411641b";
+    deps = with allCrates; [  all__libgcrypt-sys.libgcrypt-sys_0_5 all__bitflags.bitflags_0_7 all__libc.libc_0_2 all__cfg-if.cfg-if_0_1 all__gpg-error.gpg-error_0_2 all__lazy_static.lazy_static_0_2 ];
+  };
   "gcrypt_0_4" = gcrypt_0_4_0;
-  "gcrypt_0" = gcrypt_0_4_0;}
+  "gcrypt_0_5" = gcrypt_0_5_0;
+  "gcrypt_0" = gcrypt_0_5_0;}

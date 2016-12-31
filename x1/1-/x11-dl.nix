@@ -135,5 +135,12 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__lazy_static.lazy_static_0_2 all__pkg-config.pkg-config_0_3 ];
   };
   "x11-dl_2_10" = x11-dl_2_10_0;
+  x11-dl_2_12_0 = buildCratesLib {
+    name = "x11-dl";
+    version = "2.12.0";
+    hash = "bf1f9986368c9bbdd8191a783a7ceb42e0c9c6d3348616c873f829b3288a139c";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
+  };
   "x11-dl_2_11" = x11-dl_2_11_0;
-  "x11-dl_2" = x11-dl_2_11_0;}
+  "x11-dl_2_12" = x11-dl_2_12_0;
+  "x11-dl_2" = x11-dl_2_12_0;}

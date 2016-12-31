@@ -62,5 +62,17 @@ rec {
     hash = "904b2069d1f5858346023c1783932f648e8c38125e030cf1392563f10d6c2c00";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__regex.regex_0_1 ];
   };
-  "crowbook-text-processing_0_2" = crowbook-text-processing_0_2_2;
-  "crowbook-text-processing_0" = crowbook-text-processing_0_2_2;}
+  crowbook-text-processing_0_2_3 = buildCratesLib {
+    name = "crowbook-text-processing";
+    version = "0.2.3";
+    hash = "f9759c4bf6f73887bec35d906bd6c2de568049fb83275a6a2141689f77e060f7";
+    deps = with allCrates; [  all__regex.regex_0_1 all__lazy_static.lazy_static_0_2 ];
+  };
+  crowbook-text-processing_0_2_4 = buildCratesLib {
+    name = "crowbook-text-processing";
+    version = "0.2.4";
+    hash = "19b36c133a7bfba2e67109078222033b0bfb083bcc0a67b67a2bb7000254798e";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__regex.regex_0_1 ];
+  };
+  "crowbook-text-processing_0_2" = crowbook-text-processing_0_2_4;
+  "crowbook-text-processing_0" = crowbook-text-processing_0_2_4;}

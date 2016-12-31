@@ -31,5 +31,17 @@ rec {
     hash = "91a29fbef15f27d2e86511b07d4f4d80966b547b6471010a990b12a1b5e20d7c";
     deps = with allCrates; [  allegro-sys allegro_util all__libc.libc_0_1 ];
   };
-  "allegro_color-sys_0_0" = allegro_color-sys_0_0_27;
-  "allegro_color-sys_0" = allegro_color-sys_0_0_27;}
+  allegro_color-sys_0_0_28 = buildCratesLib {
+    name = "allegro_color-sys";
+    version = "0.0.28";
+    hash = "7673d872dfdbc3a5ae99c325b851d9097efd30ef5a9f511fd0cc121ed8a252a8";
+    deps = with allCrates; [  allegro-sys allegro_util all__libc.libc_0_1 ];
+  };
+  allegro_color-sys_0_0_29 = buildCratesLib {
+    name = "allegro_color-sys";
+    version = "0.0.29";
+    hash = "c888f2b850f8eeca954764089219b75189343be056648825ee2646f4bfdfa26d";
+    deps = with allCrates; [  all__libc.libc_0_1 allegro-sys allegro_util ];
+  };
+  "allegro_color-sys_0_0" = allegro_color-sys_0_0_29;
+  "allegro_color-sys_0" = allegro_color-sys_0_0_29;}

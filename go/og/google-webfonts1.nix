@@ -105,5 +105,17 @@ rec {
   };
   "google-webfonts1_0_1" = google-webfonts1_0_1_15;
   "google-webfonts1_0" = google-webfonts1_0_1_15;
-  "google-webfonts1_1_0" = google-webfonts1_1_0_0;
-  "google-webfonts1_1" = google-webfonts1_1_0_0;}
+  google-webfonts1_1_0_1 = buildCratesLib {
+    name = "google-webfonts1";
+    version = "1.0.1";
+    hash = "de87ce213e7cb87812c0b6bea2e603c462677a73d2f7be55f2c4c4153f50bec5";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde.serde_0_8 ];
+  };
+  google-webfonts1_1_0_2 = buildCratesLib {
+    name = "google-webfonts1";
+    version = "1.0.2";
+    hash = "c9212077037b61aa85047122803734682d2f94e7a4b240499b8d620f60a3de6a";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 all__serde.serde_0_8 ];
+  };
+  "google-webfonts1_1_0" = google-webfonts1_1_0_2;
+  "google-webfonts1_1" = google-webfonts1_1_0_2;}

@@ -45,5 +45,17 @@ rec {
   };
   "google-genomics1_0_1" = google-genomics1_0_1_15;
   "google-genomics1_0" = google-genomics1_0_1_15;
-  "google-genomics1_1_0" = google-genomics1_1_0_0;
-  "google-genomics1_1" = google-genomics1_1_0_0;}
+  google-genomics1_1_0_1 = buildCratesLib {
+    name = "google-genomics1";
+    version = "1.0.1";
+    hash = "79aa753ec4de6c394c020c718fe840a73c26d524809dc229beab33a0e01b7e75";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 ];
+  };
+  google-genomics1_1_0_2 = buildCratesLib {
+    name = "google-genomics1";
+    version = "1.0.2";
+    hash = "76572dbe0e655b5d5e26b344fe94c4d8caddd1b459afb06f17c488054fb7264c";
+    deps = with allCrates; [  all__mime.mime_0_2 url all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
+  };
+  "google-genomics1_1_0" = google-genomics1_1_0_2;
+  "google-genomics1_1" = google-genomics1_1_0_2;}

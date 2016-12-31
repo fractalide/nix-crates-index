@@ -99,5 +99,17 @@ rec {
   };
   "google-androidpublisher2_0_1" = google-androidpublisher2_0_1_15;
   "google-androidpublisher2_0" = google-androidpublisher2_0_1_15;
-  "google-androidpublisher2_1_0" = google-androidpublisher2_1_0_0;
-  "google-androidpublisher2_1" = google-androidpublisher2_1_0_0;}
+  google-androidpublisher2_1_0_1 = buildCratesLib {
+    name = "google-androidpublisher2";
+    version = "1.0.1";
+    hash = "5b3569a9e15e189f7c68df472a8a77d8727fe0e457883131484e3a3da4b6cdb5";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 url ];
+  };
+  google-androidpublisher2_1_0_2 = buildCratesLib {
+    name = "google-androidpublisher2";
+    version = "1.0.2";
+    hash = "17b33053446ee6b2a8b8149006e5fc147b072bdb558c215c07d5d3661295c053";
+    deps = with allCrates; [  url all__hyper.hyper_0_9 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
+  };
+  "google-androidpublisher2_1_0" = google-androidpublisher2_1_0_2;
+  "google-androidpublisher2_1" = google-androidpublisher2_1_0_2;}

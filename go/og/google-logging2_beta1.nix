@@ -45,5 +45,17 @@ rec {
   };
   "google-logging2_beta1_0_1" = google-logging2_beta1_0_1_15;
   "google-logging2_beta1_0" = google-logging2_beta1_0_1_15;
-  "google-logging2_beta1_1_0" = google-logging2_beta1_1_0_0;
-  "google-logging2_beta1_1" = google-logging2_beta1_1_0_0;}
+  google-logging2_beta1_1_0_1 = buildCratesLib {
+    name = "google-logging2_beta1";
+    version = "1.0.1";
+    hash = "8d1d0e4fb378362c2fa9dc4690373e6f731e05f34b2357309459160b59373d62";
+    deps = with allCrates; [  url all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 ];
+  };
+  google-logging2_beta1_1_0_2 = buildCratesLib {
+    name = "google-logging2_beta1";
+    version = "1.0.2";
+    hash = "3ef40ec00ca439f2ad6029b56eb2c729e585bcfe517543e8b7b7a986e96f2f1d";
+    deps = with allCrates; [  url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 ];
+  };
+  "google-logging2_beta1_1_0" = google-logging2_beta1_1_0_2;
+  "google-logging2_beta1_1" = google-logging2_beta1_1_0_2;}

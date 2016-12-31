@@ -37,5 +37,12 @@ rec {
     hash = "a3f8464abd69d8a701cf7dacb9af19bb325f61316713d91f0ee3862697a5229f";
     deps = with allCrates; [  all__horrorshow.horrorshow_0_5 all__gazetta.gazetta_0_1 all__gazetta.gazetta_0_1 ];
   };
+  gazetta-bin_0_2_0 = buildCratesLib {
+    name = "gazetta-bin";
+    version = "0.2.0";
+    hash = "c66f939e7d10ea3fdc5d1d454ddfb0e74ca2077f3e1ac62dca560dedea2ad1f7";
+    deps = with allCrates; [  all__horrorshow.horrorshow_0_6 all__gazetta.gazetta_0_2 all__gazetta.gazetta_0_2 ];
+  };
   "gazetta-bin_0_1" = gazetta-bin_0_1_6;
-  "gazetta-bin_0" = gazetta-bin_0_1_6;}
+  "gazetta-bin_0_2" = gazetta-bin_0_2_0;
+  "gazetta-bin_0" = gazetta-bin_0_2_0;}

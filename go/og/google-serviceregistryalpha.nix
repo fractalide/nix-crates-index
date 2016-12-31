@@ -39,5 +39,17 @@ rec {
   };
   "google-serviceregistryalpha_0_1" = google-serviceregistryalpha_0_1_15;
   "google-serviceregistryalpha_0" = google-serviceregistryalpha_0_1_15;
-  "google-serviceregistryalpha_1_0" = google-serviceregistryalpha_1_0_0;
-  "google-serviceregistryalpha_1" = google-serviceregistryalpha_1_0_0;}
+  google-serviceregistryalpha_1_0_1 = buildCratesLib {
+    name = "google-serviceregistryalpha";
+    version = "1.0.1";
+    hash = "d81f3332f26e391faa1af7655afa1d32907b162ecfdb90cec1d5cb37bfee9be9";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 url ];
+  };
+  google-serviceregistryalpha_1_0_2 = buildCratesLib {
+    name = "google-serviceregistryalpha";
+    version = "1.0.2";
+    hash = "18b813faf063011cc4b342c72c00ff28a81b0e4dac70bc4a28e5752e776444a0";
+    deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 url ];
+  };
+  "google-serviceregistryalpha_1_0" = google-serviceregistryalpha_1_0_2;
+  "google-serviceregistryalpha_1" = google-serviceregistryalpha_1_0_2;}

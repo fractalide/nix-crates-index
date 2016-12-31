@@ -15,5 +15,17 @@ rec {
   };
   "google-tasks1-cli_0_3" = google-tasks1-cli_0_3_6;
   "google-tasks1-cli_0" = google-tasks1-cli_0_3_6;
-  "google-tasks1-cli_1_0" = google-tasks1-cli_1_0_0;
-  "google-tasks1-cli_1" = google-tasks1-cli_1_0_0;}
+  google-tasks1-cli_1_0_1 = buildCratesLib {
+    name = "google-tasks1-cli";
+    version = "1.0.1";
+    hash = "9fd9c7f1540115f5c859aafcb54c80e9d5b5e14c0cf1abd50e67916c853e93c1";
+    deps = with allCrates; [  all__strsim.strsim_0_5 all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde_json.serde_json_0_8 all__clap.clap_2_0 ];
+  };
+  google-tasks1-cli_1_0_2 = buildCratesLib {
+    name = "google-tasks1-cli";
+    version = "1.0.2";
+    hash = "ce243c6ff51606fe4654d01bbd9aeb58bd9ad8f309b1e866a42893e416f408f5";
+    deps = with allCrates; [  all__strsim.strsim_0_5 all__clap.clap_2_0 all__mime.mime_0_2 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
+  };
+  "google-tasks1-cli_1_0" = google-tasks1-cli_1_0_2;
+  "google-tasks1-cli_1" = google-tasks1-cli_1_0_2;}

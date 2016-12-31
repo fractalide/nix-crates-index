@@ -498,5 +498,13 @@ rec {
     hash = "ea0f022eac5d590b32c6594be7a62722fb4a1783c2ecaa35598841ddf1d26b4a";
     deps = with allCrates; [  all__bufstream.bufstream_0_1 all__time.time_0_1 all__byteorder.byteorder_0_5 all__fnv.fnv_1_0 all__bitflags.bitflags_0_7 all__url.url_1_1 all__lazy_static.lazy_static_0_2 all__nom.nom_1_2 all__chrono.chrono_0_2 all__regex.regex_0_1 all__twox-hash.twox-hash_1_0 ];
   };
+  mysql_8_0_0 = buildCratesLib {
+    name = "mysql";
+    version = "8.0.0";
+    hash = "e708d271d8b9164fe0c445f2d65686cab3b7f3c1d86aa1c9d5b48aa691b25fe2";
+    deps = with allCrates; [  all__nom.nom_1_2 all__uuid.uuid_0_3 all__time.time_0_1 all__url.url_1_1 all__twox-hash.twox-hash_1_0 all__bitflags.bitflags_0_7 all__regex.regex_0_1 all__lazy_static.lazy_static_0_2 all__chrono.chrono_0_2 all__fnv.fnv_1_0 all__byteorder.byteorder_0_5 all__bufstream.bufstream_0_1 ];
+  };
   "mysql_7_1" = mysql_7_1_2;
-  "mysql_7" = mysql_7_1_2;}
+  "mysql_7" = mysql_7_1_2;
+  "mysql_8_0" = mysql_8_0_0;
+  "mysql_8" = mysql_8_0_0;}

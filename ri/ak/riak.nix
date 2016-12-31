@@ -13,5 +13,12 @@ rec {
     hash = "2c07bfeb525a000fe2b65f15512567194b569f289cc5854a45532acb5a96de2c";
     deps = with allCrates; [  all__protobuf.protobuf_1_0_24 all__log.log_0_3 ];
   };
+  riak_0_2_4 = buildCratesLib {
+    name = "riak";
+    version = "0.2.4";
+    hash = "c972bb7636b6746e39b5068ae5c103c92c5cf5f80ed2518b24c21bdeb47bbd5b";
+    deps = with allCrates; [  all__log.log_0_3 all__protobuf.protobuf_1_0_24 ];
+  };
   "riak_0_1" = riak_0_1_7;
-  "riak_0" = riak_0_1_7;}
+  "riak_0_2" = riak_0_2_4;
+  "riak_0" = riak_0_2_4;}

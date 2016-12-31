@@ -67,5 +67,11 @@ rec {
     hash = "4680ec1b2ede72fa559bfb4388edb02cd2db8465930512aac6a6b65ece8377ba";
     deps = with allCrates; [  algebloat_macros ];
   };
-  "algebloat_0_0" = algebloat_0_0_11;
-  "algebloat_0" = algebloat_0_0_11;}
+  algebloat_0_0_12 = buildCratesLib {
+    name = "algebloat";
+    version = "0.0.12";
+    hash = "4c215ba29a61423bdbabf884af115c4e7254e0a6eabbfd1fac01605f80ebbdd5";
+    deps = with allCrates; [  algebloat_macros ];
+  };
+  "algebloat_0_0" = algebloat_0_0_12;
+  "algebloat_0" = algebloat_0_0_12;}

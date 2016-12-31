@@ -15,5 +15,17 @@ rec {
   };
   "google-tagmanager1-cli_0_3" = google-tagmanager1-cli_0_3_6;
   "google-tagmanager1-cli_0" = google-tagmanager1-cli_0_3_6;
-  "google-tagmanager1-cli_1_0" = google-tagmanager1-cli_1_0_0;
-  "google-tagmanager1-cli_1" = google-tagmanager1-cli_1_0_0;}
+  google-tagmanager1-cli_1_0_1 = buildCratesLib {
+    name = "google-tagmanager1-cli";
+    version = "1.0.1";
+    hash = "f86d00cc40b795e97510083e13b0ddefc1ae03e0385c38cb5b2904555bdba61d";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__strsim.strsim_0_5 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__serde.serde_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
+  };
+  google-tagmanager1-cli_1_0_2 = buildCratesLib {
+    name = "google-tagmanager1-cli";
+    version = "1.0.2";
+    hash = "e35c7b285aedb164c93593ad77ad95e1034a2a72dc5af5aa8aa28dd0f3a2a906";
+    deps = with allCrates; [  all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__serde.serde_0_8 all__strsim.strsim_0_5 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
+  };
+  "google-tagmanager1-cli_1_0" = google-tagmanager1-cli_1_0_2;
+  "google-tagmanager1-cli_1" = google-tagmanager1-cli_1_0_2;}

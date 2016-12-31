@@ -45,5 +45,17 @@ rec {
   };
   "google-content2_sandbox_0_1" = google-content2_sandbox_0_1_15;
   "google-content2_sandbox_0" = google-content2_sandbox_0_1_15;
-  "google-content2_sandbox_1_0" = google-content2_sandbox_1_0_0;
-  "google-content2_sandbox_1" = google-content2_sandbox_1_0_0;}
+  google-content2_sandbox_1_0_1 = buildCratesLib {
+    name = "google-content2_sandbox";
+    version = "1.0.1";
+    hash = "28a21053c62e39a9ff3476b688a4ec8ed1fc570ccf113681d099c62646a33273";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__serde_json.serde_json_0_8 url all__mime.mime_0_2 ];
+  };
+  google-content2_sandbox_1_0_2 = buildCratesLib {
+    name = "google-content2_sandbox";
+    version = "1.0.2";
+    hash = "96c3cfd264ca39fc82bac251cb26bc04cf0e0b946508cecdb9fea31863943d8e";
+    deps = with allCrates; [  all__mime.mime_0_2 url all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__hyper.hyper_0_9 ];
+  };
+  "google-content2_sandbox_1_0" = google-content2_sandbox_1_0_2;
+  "google-content2_sandbox_1" = google-content2_sandbox_1_0_2;}

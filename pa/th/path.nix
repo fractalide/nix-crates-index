@@ -21,5 +21,12 @@ rec {
     deps = with allCrates; [  all__linked-hash-map.linked-hash-map_0 all__fnv.fnv_1 all__log.log_0 all__time.time_0 all__mowl.mowl_1 ];
   };
   "path_0_2" = path_0_2_0;
+  path_0_4_0 = buildCratesLib {
+    name = "path";
+    version = "0.4.0";
+    hash = "21f8afd81366fcfe843ce1be2ed9fbf601680f2d677a9b22d3c176e741b6c57b";
+    deps = with allCrates; [  all__mowl.mowl_1 all__time.time_0 all__log.log_0 all__fnv.fnv_1 all__linked-hash-map.linked-hash-map_0 ];
+  };
   "path_0_3" = path_0_3_0;
-  "path_0" = path_0_3_0;}
+  "path_0_4" = path_0_4_0;
+  "path_0" = path_0_4_0;}

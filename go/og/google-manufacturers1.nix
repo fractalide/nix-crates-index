@@ -7,5 +7,17 @@ rec {
     hash = "d86345c3f8d5313e94e3e5624aaa003ce67b90927403ffbe0a78844d8a535152";
     deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 url ];
   };
-  "google-manufacturers1_1_0" = google-manufacturers1_1_0_0;
-  "google-manufacturers1_1" = google-manufacturers1_1_0_0;}
+  google-manufacturers1_1_0_1 = buildCratesLib {
+    name = "google-manufacturers1";
+    version = "1.0.1";
+    hash = "799e0794204a8e1dc0da62221dd2caa9c07aeca6007b1b92f729bcc104141547";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde.serde_0_8 ];
+  };
+  google-manufacturers1_1_0_2 = buildCratesLib {
+    name = "google-manufacturers1";
+    version = "1.0.2";
+    hash = "f47b1f5cea345651b959cb49ca2e410da945f78cbe10373d39260dfd7235de1c";
+    deps = with allCrates; [  all__serde.serde_0_8 url all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
+  };
+  "google-manufacturers1_1_0" = google-manufacturers1_1_0_2;
+  "google-manufacturers1_1" = google-manufacturers1_1_0_2;}

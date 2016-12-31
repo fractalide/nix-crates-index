@@ -37,5 +37,12 @@ rec {
     hash = "b65fa8809dc62c09758e6bfa870b414108c88ed942e4583c6f1fdba87ad89861";
     deps = with allCrates; [  all__term.term_0_4 all__libc.libc_0_2 all__lazy_static.lazy_static_0_2 all__term_size.term_size_0_2 ];
   };
+  gstuff_0_2_0 = buildCratesLib {
+    name = "gstuff";
+    version = "0.2.0";
+    hash = "b7d3e88fb059c2853512a438c4f3138e4c30c3d753ded438c84adb6eea6adc5b";
+    deps = with allCrates; [  all__libc.libc_0_2 all__term.term_0_4 all__term_size.term_size_0_2 all__lazy_static.lazy_static_0_2 ];
+  };
   "gstuff_0_1" = gstuff_0_1_5;
-  "gstuff_0" = gstuff_0_1_5;}
+  "gstuff_0_2" = gstuff_0_2_0;
+  "gstuff_0" = gstuff_0_2_0;}

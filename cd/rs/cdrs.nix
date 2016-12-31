@@ -21,5 +21,12 @@ rec {
     deps = with allCrates; [  all__uuid.uuid_0_2 all__lz4-compress.lz4-compress_0_1 all__byteorder.byteorder_0_5 all__log.log_0_3 all__snap.snap_0_1 ];
   };
   "cdrs_0_2" = cdrs_0_2_0;
+  cdrs_0_4_0 = buildCratesLib {
+    name = "cdrs";
+    version = "0.4.0";
+    hash = "b56e30c1162a8c97fb5fa0f3296d27d6d5af5798c379d4ab9b18e7e9a9142359";
+    deps = with allCrates; [  all__uuid.uuid_0_2 all__log.log_0_3 all__snap.snap_0_1 all__byteorder.byteorder_0_5 all__lz4-compress.lz4-compress_0_1 ];
+  };
   "cdrs_0_3" = cdrs_0_3_0;
-  "cdrs_0" = cdrs_0_3_0;}
+  "cdrs_0_4" = cdrs_0_4_0;
+  "cdrs_0" = cdrs_0_4_0;}

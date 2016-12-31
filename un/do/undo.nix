@@ -20,5 +20,23 @@ rec {
     hash = "7223a80d416f50e5d34ee3795ad4c467963e5b156d327199f8e0889136305be2";
     deps = with allCrates; [  all__fnv.fnv_1_0_5 ];
   };
-  "undo_0_2" = undo_0_2_1;
-  "undo_0" = undo_0_2_1;}
+  undo_0_2_2 = buildCratesLib {
+    name = "undo";
+    version = "0.2.2";
+    hash = "20422a47dac6c6e017632549f92f342fbb2c21ce0101384a6ddded7cdb91781e";
+    deps = with allCrates; [  all__fnv.fnv_1_0_5 ];
+  };
+  undo_0_2_3 = buildCratesLib {
+    name = "undo";
+    version = "0.2.3";
+    hash = "0e56a8f7919eeced99045dce384833e274c29da4595cea0ce29261ede88ee5ce";
+    deps = with allCrates; [  all__fnv.fnv_1_0_5 ];
+  };
+  undo_0_2_4 = buildCratesLib {
+    name = "undo";
+    version = "0.2.4";
+    hash = "0194575a371bfb60f604bac2186a502e1756896e54f25899bca9cf2b3288f80a";
+    deps = with allCrates; [  all__fnv.fnv_1_0_5 ];
+  };
+  "undo_0_2" = undo_0_2_4;
+  "undo_0" = undo_0_2_4;}

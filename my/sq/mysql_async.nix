@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__either.either_1_0 all__futures.futures_0_1 all__sha1.sha1_0_2 all__chrono.chrono_0_2 all__url.url_1_2 all__fnv.fnv_1_0 all__error-chain.error-chain_0_5 all__log.log_0_3 all__time.time_0_1 all__bitflags.bitflags_0_7 all__lazy_static.lazy_static_0_2 all__regex.regex_0_1 all__byteorder.byteorder_0_5 all__tokio-core.tokio-core_0_1 ];
   };
   "mysql_async_0_1" = mysql_async_0_1_0;
+  mysql_async_0_3_0 = buildCratesLib {
+    name = "mysql_async";
+    version = "0.3.0";
+    hash = "98734bbd1b422baa951f22de976c3bd92906fa39f9fd0b5ae0a0ab90156b4b1f";
+    deps = with allCrates; [  all__twox-hash.twox-hash_1_0 all__error-chain.error-chain_0_7 all__bitflags.bitflags_0_7 all__either.either_1_0 all__tokio-core.tokio-core_0_1 all__byteorder.byteorder_0_5 all__sha1.sha1_0_2 all__fnv.fnv_1_0 all__futures.futures_0_1 all__chrono.chrono_0_2 all__log.log_0_3 all__time.time_0_1 all__lazy_static.lazy_static_0_2 all__regex.regex_0_1 all__url.url_1_2 ];
+  };
   "mysql_async_0_2" = mysql_async_0_2_0;
-  "mysql_async_0" = mysql_async_0_2_0;}
+  "mysql_async_0_3" = mysql_async_0_3_0;
+  "mysql_async_0" = mysql_async_0_3_0;}

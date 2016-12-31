@@ -105,5 +105,17 @@ rec {
   };
   "google-youtubeanalytics1_0_1" = google-youtubeanalytics1_0_1_15;
   "google-youtubeanalytics1_0" = google-youtubeanalytics1_0_1_15;
-  "google-youtubeanalytics1_1_0" = google-youtubeanalytics1_1_0_0;
-  "google-youtubeanalytics1_1" = google-youtubeanalytics1_1_0_0;}
+  google-youtubeanalytics1_1_0_1 = buildCratesLib {
+    name = "google-youtubeanalytics1";
+    version = "1.0.1";
+    hash = "a63831d3bccc57a39f0bdcb1bc1a1b6803f8642e26762e642a4e5af33fccfa92";
+    deps = with allCrates; [  url all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
+  };
+  google-youtubeanalytics1_1_0_2 = buildCratesLib {
+    name = "google-youtubeanalytics1";
+    version = "1.0.2";
+    hash = "7bcca342a23376d450f489a686c6fe7203e2880f1d1ca6720d4d7cba53a4d718";
+    deps = with allCrates; [  all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 url ];
+  };
+  "google-youtubeanalytics1_1_0" = google-youtubeanalytics1_1_0_2;
+  "google-youtubeanalytics1_1" = google-youtubeanalytics1_1_0_2;}

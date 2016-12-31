@@ -347,5 +347,11 @@ rec {
     hash = "460354e47fffa7cf0c96fcf9a040fd170e957f43dd8032531083866eb4a51c11";
     deps = with allCrates; [  all__quote.quote_0_3 all__syn.syn_0_10 serde_codegen_internals ];
   };
-  "serde_codegen_0_8" = serde_codegen_0_8_20;
-  "serde_codegen_0" = serde_codegen_0_8_20;}
+  serde_codegen_0_8_21 = buildCratesLib {
+    name = "serde_codegen";
+    version = "0.8.21";
+    hash = "64e0d87d19ec28bf431ffa9bad1f1e4ea3b381cd616c6cc56dca9eedbc7f6ab8";
+    deps = with allCrates; [  serde_codegen_internals all__syn.syn_0_10 all__quote.quote_0_3 ];
+  };
+  "serde_codegen_0_8" = serde_codegen_0_8_21;
+  "serde_codegen_0" = serde_codegen_0_8_21;}

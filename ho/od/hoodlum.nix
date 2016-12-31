@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__hoodlum-parser.hoodlum-parser_0_2 all__lalrpop-util.lalrpop-util_0_11 all__regex.regex_0_1 ];
   };
   "hoodlum_0_1" = hoodlum_0_1_0;
+  hoodlum_0_4_0 = buildCratesLib {
+    name = "hoodlum";
+    version = "0.4.0";
+    hash = "85a75026e4406cac5c7b9f27aab89f8e9beaf3e29fde0a1c87872f4b41d58fe1";
+    deps = with allCrates; [  all__matches.matches_0_1 all__hoodlum-parser.hoodlum-parser_0_4 all__itertools.itertools_0_5 lazy_static all__lalrpop-util.lalrpop-util_0_11 all__maplit.maplit_0_1 all__clap.clap_2_19 all__regex.regex_0_1 ];
+  };
   "hoodlum_0_2" = hoodlum_0_2_0;
-  "hoodlum_0" = hoodlum_0_2_0;}
+  "hoodlum_0_4" = hoodlum_0_4_0;
+  "hoodlum_0" = hoodlum_0_4_0;}

@@ -362,5 +362,11 @@ rec {
     hash = "793aa8d4a777e46a68bbf88998cd957e638427ba5bfb0de22c92ff277b65bd21";
     deps = with allCrates; [  ];
   };
-  "serde_0_8" = serde_0_8_20;
-  "serde_0" = serde_0_8_20;}
+  serde_0_8_21 = buildCratesLib {
+    name = "serde";
+    version = "0.8.21";
+    hash = "7b7c6bf11cf766473ea1d53eb4e3bc4e80f31f50082fc24077cf06f600279a66";
+    deps = with allCrates; [  ];
+  };
+  "serde_0_8" = serde_0_8_21;
+  "serde_0" = serde_0_8_21;}

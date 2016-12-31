@@ -45,5 +45,17 @@ rec {
   };
   "google-clouduseraccountsvm_beta_0_1" = google-clouduseraccountsvm_beta_0_1_15;
   "google-clouduseraccountsvm_beta_0" = google-clouduseraccountsvm_beta_0_1_15;
-  "google-clouduseraccountsvm_beta_1_0" = google-clouduseraccountsvm_beta_1_0_0;
-  "google-clouduseraccountsvm_beta_1" = google-clouduseraccountsvm_beta_1_0_0;}
+  google-clouduseraccountsvm_beta_1_0_1 = buildCratesLib {
+    name = "google-clouduseraccountsvm_beta";
+    version = "1.0.1";
+    hash = "2c4f621399fc6821f66c804911dcd3d1de22313448d9b4600518cd8044996d68";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 ];
+  };
+  google-clouduseraccountsvm_beta_1_0_2 = buildCratesLib {
+    name = "google-clouduseraccountsvm_beta";
+    version = "1.0.2";
+    hash = "b5c15de7d141a58ab55a6aaa6e1655371f8de25cc5540955c156b066a6d24b9b";
+    deps = with allCrates; [  all__serde.serde_0_8 url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
+  };
+  "google-clouduseraccountsvm_beta_1_0" = google-clouduseraccountsvm_beta_1_0_2;
+  "google-clouduseraccountsvm_beta_1" = google-clouduseraccountsvm_beta_1_0_2;}

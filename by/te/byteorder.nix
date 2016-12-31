@@ -233,5 +233,13 @@ rec {
     hash = "0fc10e8cc6b2580fda3f36eb6dc5316657f812a3df879a44a66fc9f0fdbc4855";
     deps = with allCrates; [  ];
   };
+  byteorder_1_0_0 = buildCratesLib {
+    name = "byteorder";
+    version = "1.0.0";
+    hash = "c40977b0ee6b9885c9013cd41d9feffdd22deb3bb4dc3a71d901cc7a77de18c8";
+    deps = with allCrates; [  ];
+  };
   "byteorder_0_5" = byteorder_0_5_3;
-  "byteorder_0" = byteorder_0_5_3;}
+  "byteorder_0" = byteorder_0_5_3;
+  "byteorder_1_0" = byteorder_1_0_0;
+  "byteorder_1" = byteorder_1_0_0;}

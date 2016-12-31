@@ -105,5 +105,17 @@ rec {
   };
   "google-autoscaler1_beta2_0_1" = google-autoscaler1_beta2_0_1_15;
   "google-autoscaler1_beta2_0" = google-autoscaler1_beta2_0_1_15;
-  "google-autoscaler1_beta2_1_0" = google-autoscaler1_beta2_1_0_0;
-  "google-autoscaler1_beta2_1" = google-autoscaler1_beta2_1_0_0;}
+  google-autoscaler1_beta2_1_0_1 = buildCratesLib {
+    name = "google-autoscaler1_beta2";
+    version = "1.0.1";
+    hash = "806d9a0f6fa92e552dc4eedd0876959e8fdf6e8af89fcc2fd51de4b48f59dd42";
+    deps = with allCrates; [  all__serde.serde_0_8 url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
+  };
+  google-autoscaler1_beta2_1_0_2 = buildCratesLib {
+    name = "google-autoscaler1_beta2";
+    version = "1.0.2";
+    hash = "aad25f95533181a4ed6f948355925100dd1727925e03d2df696902a6d1a53957";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 ];
+  };
+  "google-autoscaler1_beta2_1_0" = google-autoscaler1_beta2_1_0_2;
+  "google-autoscaler1_beta2_1" = google-autoscaler1_beta2_1_0_2;}

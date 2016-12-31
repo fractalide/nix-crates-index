@@ -65,5 +65,18 @@ rec {
     deps = with allCrates; [  all__slug.slug_0_1 all__url.url_1_2 all__error-chain.error-chain_0_7 all__pest.pest_0_4 all__glob.glob_0_2 all__regex.regex_0_1 all__lazy_static.lazy_static_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__humansize.humansize_0_1 ];
   };
   "tera_0_4" = tera_0_4_1;
+  tera_0_6_0 = buildCratesLib {
+    name = "tera";
+    version = "0.6.0";
+    hash = "2be6f29ac121735c8cf7ee6c723dddfe2ad6be2e4aa77db54ecb01f91fc30f02";
+    deps = with allCrates; [  all__humansize.humansize_0_1 all__serde_json.serde_json_0_8 all__glob.glob_0_2 all__regex.regex_0_1 all__serde.serde_0_8 all__lazy_static.lazy_static_0_2 all__error-chain.error-chain_0_7 all__slug.slug_0_1 all__chrono.chrono_0_2 all__pest.pest_0_4 all__url.url_1_2 ];
+  };
   "tera_0_5" = tera_0_5_0;
-  "tera_0" = tera_0_5_0;}
+  tera_0_6_1 = buildCratesLib {
+    name = "tera";
+    version = "0.6.1";
+    hash = "7575315dec0d7dd548f039f8afd9c31fcfa4e8bc02432a0887b3f0e47d6ac2e6";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__pest.pest_0_4 all__glob.glob_0_2 all__regex.regex_0_1 all__chrono.chrono_0_2 all__error-chain.error-chain_0_7 all__serde.serde_0_8 all__lazy_static.lazy_static_0_2 all__humansize.humansize_0_1 all__url.url_1_2 all__slug.slug_0_1 ];
+  };
+  "tera_0_6" = tera_0_6_1;
+  "tera_0" = tera_0_6_1;}

@@ -37,5 +37,17 @@ rec {
     hash = "2405cf84a1b7ced3c31d84e303f9412f528c703fc1f3d1a902ef42e6791527bf";
     deps = with allCrates; [  all__log.log_0_3 all__tokio-core.tokio-core_0_1 all__curl.curl_0_4 all__futures.futures_0_1 all__scoped-tls.scoped-tls_0_1 all__libc.libc_0_2 all__mio.mio_0_6 all__slab.slab_0_3 ];
   };
-  "tokio-curl_0_1" = tokio-curl_0_1_5;
-  "tokio-curl_0" = tokio-curl_0_1_5;}
+  tokio-curl_0_1_6 = buildCratesLib {
+    name = "tokio-curl";
+    version = "0.1.6";
+    hash = "4581b3be5927b805889d9d74ac95542bc178f3e4911c50024ba649d633ba2b74";
+    deps = with allCrates; [  all__log.log_0_3 all__curl.curl_0_4 all__tokio-core.tokio-core_0_1 all__futures.futures_0_1 all__scoped-tls.scoped-tls_0_1 all__slab.slab_0_3 all__mio.mio_0_6 all__libc.libc_0_2 ];
+  };
+  tokio-curl_0_1_7 = buildCratesLib {
+    name = "tokio-curl";
+    version = "0.1.7";
+    hash = "f263f9c3a86b70d19fc0cc86a70192cb7702856ff1916750cdb201de42b050f7";
+    deps = with allCrates; [  all__tokio-core.tokio-core_0_1 all__curl.curl_0_4 all__log.log_0_3 all__futures.futures_0_1 all__libc.libc_0_2 all__scoped-tls.scoped-tls_0_1 all__mio.mio_0_6 all__slab.slab_0_3 ];
+  };
+  "tokio-curl_0_1" = tokio-curl_0_1_7;
+  "tokio-curl_0" = tokio-curl_0_1_7;}

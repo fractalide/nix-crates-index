@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__unbound-sys.unbound-sys_0_2 ];
   };
   "unbound_0_1" = unbound_0_1_0;
+  unbound_0_3_0 = buildCratesLib {
+    name = "unbound";
+    version = "0.3.0";
+    hash = "0de9ce21cec8d382b6b393e71c0c1e378bb70698cca8a16ecedd8456548f150d";
+    deps = with allCrates; [  all__libc.libc_0_2 all__unbound-sys.unbound-sys_0_3 ];
+  };
   "unbound_0_2" = unbound_0_2_0;
-  "unbound_0" = unbound_0_2_0;}
+  "unbound_0_3" = unbound_0_3_0;
+  "unbound_0" = unbound_0_3_0;}

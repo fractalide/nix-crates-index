@@ -31,5 +31,11 @@ rec {
     hash = "276c479418846f1a2d83a9f5a222f220200107330d0c0ba5bedcd26a86b381ea";
     deps = with allCrates; [  all__itertools.itertools_0_4 ];
   };
-  "mockers_codegen_0_5" = mockers_codegen_0_5_5;
-  "mockers_codegen_0" = mockers_codegen_0_5_5;}
+  mockers_codegen_0_5_6 = buildCratesLib {
+    name = "mockers_codegen";
+    version = "0.5.6";
+    hash = "70a89dbef7d040f32ac0f6432596c196754b87699b7e59cc995ce7923d996a24";
+    deps = with allCrates; [  all__itertools.itertools_0_4 ];
+  };
+  "mockers_codegen_0_5" = mockers_codegen_0_5_6;
+  "mockers_codegen_0" = mockers_codegen_0_5_6;}

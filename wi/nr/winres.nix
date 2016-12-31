@@ -7,5 +7,11 @@ rec {
     hash = "82b153c4696edc73666d54519d32b21cd8855e265b4375fd6cb090e54b94e46a";
     deps = with allCrates; [  all__toml.toml_0_1 ];
   };
-  "winres_0_1" = winres_0_1_0;
-  "winres_0" = winres_0_1_0;}
+  winres_0_1_1 = buildCratesLib {
+    name = "winres";
+    version = "0.1.1";
+    hash = "d8e52aa6651c27ff46c2e1c507013d2236d11233d1d69ff7eba45d26c506fcde";
+    deps = with allCrates; [  all__toml.toml_0_1 ];
+  };
+  "winres_0_1" = winres_0_1_1;
+  "winres_0" = winres_0_1_1;}

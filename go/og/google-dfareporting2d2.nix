@@ -45,5 +45,17 @@ rec {
   };
   "google-dfareporting2d2_0_1" = google-dfareporting2d2_0_1_15;
   "google-dfareporting2d2_0" = google-dfareporting2d2_0_1_15;
-  "google-dfareporting2d2_1_0" = google-dfareporting2d2_1_0_0;
-  "google-dfareporting2d2_1" = google-dfareporting2d2_1_0_0;}
+  google-dfareporting2d2_1_0_1 = buildCratesLib {
+    name = "google-dfareporting2d2";
+    version = "1.0.1";
+    hash = "73668499fc7b596b9c1209c74838fd32c7ba306fe6d693f62e64d30fb45376e3";
+    deps = with allCrates; [  url all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 ];
+  };
+  google-dfareporting2d2_1_0_2 = buildCratesLib {
+    name = "google-dfareporting2d2";
+    version = "1.0.2";
+    hash = "1646d89fbde3a5a93e1cb966d6ebfbe48a1c0563fd6e3e6607cde62207cbbce4";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 ];
+  };
+  "google-dfareporting2d2_1_0" = google-dfareporting2d2_1_0_2;
+  "google-dfareporting2d2_1" = google-dfareporting2d2_1_0_2;}

@@ -25,5 +25,12 @@ rec {
     hash = "f64da01779065e75a0967355b07f2235ec4df089446b0830f6bc5b4263aef577";
     deps = with allCrates; [  all__str_stack.str_stack_0_1 all__glob.glob_0_2 all__lazy_static.lazy_static_0_2 all__yaml-rust.yaml-rust_0_2 all__url.url_0_2 all__horrorshow.horrorshow_0_5 all__chrono.chrono_0_2 ];
   };
+  gazetta-core_0_2_0 = buildCratesLib {
+    name = "gazetta-core";
+    version = "0.2.0";
+    hash = "f6e4aef84f59bbfb32afaa07121c1dcd08dfc913012bd3248a54eed686c14ffd";
+    deps = with allCrates; [  all__chrono.chrono_0_2 all__horrorshow.horrorshow_0_6 all__str_stack.str_stack_0_1 all__glob.glob_0_2 all__lazy_static.lazy_static_0_2 all__yaml-rust.yaml-rust_0_2 all__url.url_0_2 ];
+  };
   "gazetta-core_0_1" = gazetta-core_0_1_3;
-  "gazetta-core_0" = gazetta-core_0_1_3;}
+  "gazetta-core_0_2" = gazetta-core_0_2_0;
+  "gazetta-core_0" = gazetta-core_0_2_0;}

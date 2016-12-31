@@ -7,5 +7,11 @@ rec {
     hash = "c2eaf9bae72d1d94500cdec34622cae809a409509324b50851ada136b8d6f58f";
     deps = with allCrates; [  all__log.log_0 all__term.term_0 ];
   };
-  "mowl_1_0" = mowl_1_0_0;
-  "mowl_1" = mowl_1_0_0;}
+  mowl_1_0_1 = buildCratesLib {
+    name = "mowl";
+    version = "1.0.1";
+    hash = "5bcc01039a46cb0348ee8c3ab1a058565fd6aeee3f46fcf33f25a6b7039ec14f";
+    deps = with allCrates; [  all__term.term_0 all__log.log_0 ];
+  };
+  "mowl_1_0" = mowl_1_0_1;
+  "mowl_1" = mowl_1_0_1;}

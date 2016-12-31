@@ -15,5 +15,17 @@ rec {
   };
   "google-analytics3-cli_0_3" = google-analytics3-cli_0_3_6;
   "google-analytics3-cli_0" = google-analytics3-cli_0_3_6;
-  "google-analytics3-cli_1_0" = google-analytics3-cli_1_0_0;
-  "google-analytics3-cli_1" = google-analytics3-cli_1_0_0;}
+  google-analytics3-cli_1_0_1 = buildCratesLib {
+    name = "google-analytics3-cli";
+    version = "1.0.1";
+    hash = "cdb0bf77505c1ed62c5d9a58707d02c202487bc1283dcfcd2bdcc2fa5f12729f";
+    deps = with allCrates; [  all__yup-hyper-mock.yup-hyper-mock_1_0 all__strsim.strsim_0_5 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+  };
+  google-analytics3-cli_1_0_2 = buildCratesLib {
+    name = "google-analytics3-cli";
+    version = "1.0.2";
+    hash = "ac6fbf71446dbfe4c1ed2b4b554cdf39a37b08436a8015b5401a408b13911434";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 all__strsim.strsim_0_5 all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
+  };
+  "google-analytics3-cli_1_0" = google-analytics3-cli_1_0_2;
+  "google-analytics3-cli_1" = google-analytics3-cli_1_0_2;}

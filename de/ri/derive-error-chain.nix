@@ -26,5 +26,17 @@ rec {
     deps = with allCrates; [  syn quote ];
   };
   "derive-error-chain_0_1" = derive-error-chain_0_1_2;
-  "derive-error-chain_0_7" = derive-error-chain_0_7_0;
-  "derive-error-chain_0" = derive-error-chain_0_7_0;}
+  derive-error-chain_0_7_1 = buildCratesLib {
+    name = "derive-error-chain";
+    version = "0.7.1";
+    hash = "d074739bb2bd76ca90be8c4c3b7892df9ff8ea03fdd8c788f87f65129327caed";
+    deps = with allCrates; [  quote all__syn.syn_0_10 ];
+  };
+  derive-error-chain_0_7_2 = buildCratesLib {
+    name = "derive-error-chain";
+    version = "0.7.2";
+    hash = "21d2bca8cffbc32032d0890e9f889e493080aeaee32f093d6152e9e94ae0da4f";
+    deps = with allCrates; [  all__syn.syn_0_10 quote ];
+  };
+  "derive-error-chain_0_7" = derive-error-chain_0_7_2;
+  "derive-error-chain_0" = derive-error-chain_0_7_2;}

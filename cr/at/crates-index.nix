@@ -59,5 +59,11 @@ rec {
     deps = with allCrates; [  all__git2.git2_0_5 all__glob.glob_0_2 all__rustc-serialize.rustc-serialize_0_3 ];
   };
   "crates-index_0_4" = crates-index_0_4_0;
-  "crates-index_0_5" = crates-index_0_5_0;
-  "crates-index_0" = crates-index_0_5_0;}
+  crates-index_0_5_1 = buildCratesLib {
+    name = "crates-index";
+    version = "0.5.1";
+    hash = "8fd60171f1ab79ee1f84af7942bd903a2897b30e46ceb901a0e7b7bd3f0b53bd";
+    deps = with allCrates; [  all__glob.glob_0_2 all__git2.git2_0_6 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "crates-index_0_5" = crates-index_0_5_1;
+  "crates-index_0" = crates-index_0_5_1;}

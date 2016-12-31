@@ -99,5 +99,17 @@ rec {
   };
   "google-tasks1_0_1" = google-tasks1_0_1_15;
   "google-tasks1_0" = google-tasks1_0_1_15;
-  "google-tasks1_1_0" = google-tasks1_1_0_0;
-  "google-tasks1_1" = google-tasks1_1_0_0;}
+  google-tasks1_1_0_1 = buildCratesLib {
+    name = "google-tasks1";
+    version = "1.0.1";
+    hash = "95913371a7c8cfe83ed957be95adfe373dcb8a858ff9ea8ee20b9aa29d3dc9ad";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+  };
+  google-tasks1_1_0_2 = buildCratesLib {
+    name = "google-tasks1";
+    version = "1.0.2";
+    hash = "81033db7ea560c5a5cdc081487300c7db1cb39bf7506ef41d9a5b236d2e4f335";
+    deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+  };
+  "google-tasks1_1_0" = google-tasks1_1_0_2;
+  "google-tasks1_1" = google-tasks1_1_0_2;}

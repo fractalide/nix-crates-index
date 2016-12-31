@@ -57,5 +57,12 @@ rec {
     hash = "9f41415039fc0995de60392d35dbd0549489a02b8cd23c9921e2ab393a6c322d";
     deps = with allCrates; [  all__num.num_0_1 all__rand.rand_0_3 all__chrono.chrono_0_2 all__rust-crypto.rust-crypto_0_2 ];
   };
+  bip_util_0_4_0 = buildCratesLib {
+    name = "bip_util";
+    version = "0.4.0";
+    hash = "3e5cc26599b105edf570c5354033a312a53a4d924df3ab31ec09587aedd4d305";
+    deps = with allCrates; [  all__num.num_0_1 all__chrono.chrono_0_2 all__rand.rand_0_3 all__rust-crypto.rust-crypto_0_2 ];
+  };
   "bip_util_0_3" = bip_util_0_3_5;
-  "bip_util_0" = bip_util_0_3_5;}
+  "bip_util_0_4" = bip_util_0_4_0;
+  "bip_util_0" = bip_util_0_4_0;}

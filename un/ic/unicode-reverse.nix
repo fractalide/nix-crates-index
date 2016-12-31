@@ -19,5 +19,11 @@ rec {
     hash = "3127ca6f6a4eeeea0e85a1468ad1b1aed7f88bc7b1e576c824c126159e6ffe92";
     deps = with allCrates; [  all__unicode-segmentation.unicode-segmentation_0_1 ];
   };
-  "unicode-reverse_1_0" = unicode-reverse_1_0_2;
-  "unicode-reverse_1" = unicode-reverse_1_0_2;}
+  unicode-reverse_1_0_3 = buildCratesLib {
+    name = "unicode-reverse";
+    version = "1.0.3";
+    hash = "0e8ef94eb82304b49d911752a3ddcb98e73556a3af168810bf33759b30d37f7d";
+    deps = with allCrates; [  all__unicode-segmentation.unicode-segmentation_1_0 ];
+  };
+  "unicode-reverse_1_0" = unicode-reverse_1_0_3;
+  "unicode-reverse_1" = unicode-reverse_1_0_3;}

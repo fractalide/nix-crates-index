@@ -119,5 +119,11 @@ rec {
     hash = "c199af6733da26fcee25d89608b525d896ce963f8f700f681554a04a18852e0f";
     deps = with allCrates; [  all__mockers_codegen.mockers_codegen_0_5 ];
   };
-  "mockers_macros_0_5" = mockers_macros_0_5_5;
-  "mockers_macros_0" = mockers_macros_0_5_5;}
+  mockers_macros_0_5_6 = buildCratesLib {
+    name = "mockers_macros";
+    version = "0.5.6";
+    hash = "30273978194e4599227b9954d7fe219d87056f86dcfdca779970b09fb90c85a1";
+    deps = with allCrates; [  all__mockers_codegen.mockers_codegen_0_5 ];
+  };
+  "mockers_macros_0_5" = mockers_macros_0_5_6;
+  "mockers_macros_0" = mockers_macros_0_5_6;}

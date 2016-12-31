@@ -87,5 +87,17 @@ rec {
   };
   "google-cloudlatencytest2_0_1" = google-cloudlatencytest2_0_1_15;
   "google-cloudlatencytest2_0" = google-cloudlatencytest2_0_1_15;
-  "google-cloudlatencytest2_1_0" = google-cloudlatencytest2_1_0_0;
-  "google-cloudlatencytest2_1" = google-cloudlatencytest2_1_0_0;}
+  google-cloudlatencytest2_1_0_1 = buildCratesLib {
+    name = "google-cloudlatencytest2";
+    version = "1.0.1";
+    hash = "aeba5a254f10375b91ed369fb638a5b01c42380ed771683c6055bacdf31fb99b";
+    deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url ];
+  };
+  google-cloudlatencytest2_1_0_2 = buildCratesLib {
+    name = "google-cloudlatencytest2";
+    version = "1.0.2";
+    hash = "2d26591e4f82cdf4af5c164dd21415b2eaae4964260d80dc7eb0e068dcc48150";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde.serde_0_8 ];
+  };
+  "google-cloudlatencytest2_1_0" = google-cloudlatencytest2_1_0_2;
+  "google-cloudlatencytest2_1" = google-cloudlatencytest2_1_0_2;}

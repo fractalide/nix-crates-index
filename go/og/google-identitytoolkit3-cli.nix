@@ -15,5 +15,17 @@ rec {
   };
   "google-identitytoolkit3-cli_0_3" = google-identitytoolkit3-cli_0_3_6;
   "google-identitytoolkit3-cli_0" = google-identitytoolkit3-cli_0_3_6;
-  "google-identitytoolkit3-cli_1_0" = google-identitytoolkit3-cli_1_0_0;
-  "google-identitytoolkit3-cli_1" = google-identitytoolkit3-cli_1_0_0;}
+  google-identitytoolkit3-cli_1_0_1 = buildCratesLib {
+    name = "google-identitytoolkit3-cli";
+    version = "1.0.1";
+    hash = "d559b20a4ab9537ebdd3644d9b059073a8e3d30b09430b156bbeb46cc493a357";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 ];
+  };
+  google-identitytoolkit3-cli_1_0_2 = buildCratesLib {
+    name = "google-identitytoolkit3-cli";
+    version = "1.0.2";
+    hash = "e0858d46ce7dd240ff96f37c9ae3012832a8c1f181be278b9196c5be9527733d";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__clap.clap_2_0 all__mime.mime_0_2 all__serde.serde_0_8 all__strsim.strsim_0_5 all__serde_json.serde_json_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
+  };
+  "google-identitytoolkit3-cli_1_0" = google-identitytoolkit3-cli_1_0_2;
+  "google-identitytoolkit3-cli_1" = google-identitytoolkit3-cli_1_0_2;}

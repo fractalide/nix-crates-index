@@ -359,5 +359,12 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
   };
   "x11_2_10" = x11_2_10_0;
+  x11_2_12_0 = buildCratesLib {
+    name = "x11";
+    version = "2.12.0";
+    hash = "a4f82ca6895c7dcac581106c706586e4776eeab731c65dae39499d88a9c7432b";
+    deps = with allCrates; [  all__libc.libc_0_2 all__metadeps.metadeps_1_1 ];
+  };
   "x11_2_11" = x11_2_11_0;
-  "x11_2" = x11_2_11_0;}
+  "x11_2_12" = x11_2_12_0;
+  "x11_2" = x11_2_12_0;}

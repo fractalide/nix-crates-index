@@ -429,5 +429,11 @@ rec {
     hash = "d2845e841700e7b04282ceaa115407ea84e0db918ae689ad9ceb6f06fa6046bd";
     deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
   };
-  "openssl-sys_0_9" = openssl-sys_0_9_3;
-  "openssl-sys_0" = openssl-sys_0_9_3;}
+  openssl-sys_0_9_4 = buildCratesLib {
+    name = "openssl-sys";
+    version = "0.9.4";
+    hash = "5e23374cdaca202b655937ff6d1ad6887edc391d9ff371f3f48350c3e9fad001";
+    deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
+  };
+  "openssl-sys_0_9" = openssl-sys_0_9_4;
+  "openssl-sys_0" = openssl-sys_0_9_4;}

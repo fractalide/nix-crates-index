@@ -13,5 +13,11 @@ rec {
     hash = "dce4aae4f94d7353ed2e8799f855b25b60d065b42090991e4063ee4765f6a60b";
     deps = with allCrates; [  all__html5ever-atoms.html5ever-atoms_0_1 all__unicode-width.unicode-width_0_1 all__backtrace.backtrace_0_2 all__string_cache.string_cache_0_2 all__html5ever.html5ever_0_9 ];
   };
-  "html2text_0_1" = html2text_0_1_1;
-  "html2text_0" = html2text_0_1_1;}
+  html2text_0_1_2 = buildCratesLib {
+    name = "html2text";
+    version = "0.1.2";
+    hash = "0090fe35587d5daa1d3ccecd27e5246c8a728c913de74d90b298e670437d4f86";
+    deps = with allCrates; [  all__backtrace.backtrace_0_2 all__string_cache.string_cache_0_2 all__html5ever-atoms.html5ever-atoms_0_1 all__unicode-width.unicode-width_0_1 all__html5ever.html5ever_0_9 ];
+  };
+  "html2text_0_1" = html2text_0_1_2;
+  "html2text_0" = html2text_0_1_2;}

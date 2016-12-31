@@ -33,5 +33,12 @@ rec {
     hash = "f2b8267447a70d3e56c0548ed7af8fd6e7370de92c4ceba68cb5ab29191bf73f";
     deps = with allCrates; [  all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  spaceapi_0_4_0 = buildCratesLib {
+    name = "spaceapi";
+    version = "0.4.0";
+    hash = "a888d07273daab26c6b9cf03ff19ab4e69cf0c60a2ba5d0af60349177dc1f47f";
+    deps = with allCrates; [  all__serde_derive.serde_derive_0_8 all__serde_json.serde_json_0_8 all__log.log_0_3 all__serde.serde_0_8 ];
+  };
   "spaceapi_0_3" = spaceapi_0_3_1;
-  "spaceapi_0" = spaceapi_0_3_1;}
+  "spaceapi_0_4" = spaceapi_0_4_0;
+  "spaceapi_0" = spaceapi_0_4_0;}

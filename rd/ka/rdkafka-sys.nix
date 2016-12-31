@@ -4,8 +4,8 @@ rec {
   rdkafka-sys_0_9_2 = buildCratesLib {
     name = "rdkafka-sys";
     version = "0.9.2";
-    hash = "88f358ed73f7f2d9b6bfafa004ae0b40cca8d35f8daa92ca903d36231c186a59";
-    deps = with allCrates; [  all__openssl-sys.openssl-sys_0_9 all__lz4-sys.lz4-sys_1_0 all__libz-sys.libz-sys_1_0 all__num_cpus.num_cpus_0_2 ];
+    hash = "897acc9fe276ecd45d3a29e83163bde690d65895cb02e8d84160a3b366c2b951";
+    deps = with allCrates; [  all__libz-sys.libz-sys_1_0 all__openssl-sys.openssl-sys_0_9 all__lz4-sys.lz4-sys_1_0 all__num_cpus.num_cpus_0_2 ];
   };
   "rdkafka-sys_0_9" = rdkafka-sys_0_9_2;
   "rdkafka-sys_0" = rdkafka-sys_0_9_2;}

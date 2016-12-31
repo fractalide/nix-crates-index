@@ -7,5 +7,17 @@ rec {
     hash = "8c54e2f439015132723a6b10b24f20feac7f0feda2055d7e9cfd01c0b55b5ca8";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__protobuf.protobuf_1_0_22 ];
   };
-  "pbuf_0_3" = pbuf_0_3_2;
-  "pbuf_0" = pbuf_0_3_2;}
+  pbuf_0_3_3 = buildCratesLib {
+    name = "pbuf";
+    version = "0.3.3";
+    hash = "30bc5bce92bdd3d9af311f264dc1a87c68074c67e5c814803e0dba68cf6b2022";
+    deps = with allCrates; [  all__protobuf.protobuf_1_0_22 all__byteorder.byteorder_0_5 ];
+  };
+  pbuf_0_3_31 = buildCratesLib {
+    name = "pbuf";
+    version = "0.3.31";
+    hash = "d7fb3386197fc013d10bd040a1f1bebd079bfeceeb11f8e85488216f5e15ab44";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__protobuf.protobuf_1_0_22 ];
+  };
+  "pbuf_0_3" = pbuf_0_3_31;
+  "pbuf_0" = pbuf_0_3_31;}

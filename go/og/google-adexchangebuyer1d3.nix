@@ -99,5 +99,17 @@ rec {
   };
   "google-adexchangebuyer1d3_0_1" = google-adexchangebuyer1d3_0_1_15;
   "google-adexchangebuyer1d3_0" = google-adexchangebuyer1d3_0_1_15;
-  "google-adexchangebuyer1d3_1_0" = google-adexchangebuyer1d3_1_0_0;
-  "google-adexchangebuyer1d3_1" = google-adexchangebuyer1d3_1_0_0;}
+  google-adexchangebuyer1d3_1_0_1 = buildCratesLib {
+    name = "google-adexchangebuyer1d3";
+    version = "1.0.1";
+    hash = "a84be871253f8863b0217f61b5c4afdd2fefa6ca54f29531e0e2a4797f46023e";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 url all__hyper.hyper_0_9 ];
+  };
+  google-adexchangebuyer1d3_1_0_2 = buildCratesLib {
+    name = "google-adexchangebuyer1d3";
+    version = "1.0.2";
+    hash = "80a0d9100434ad58dbfeaebd768971d79049b2456885c1e2b5f82aabb4224917";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 url ];
+  };
+  "google-adexchangebuyer1d3_1_0" = google-adexchangebuyer1d3_1_0_2;
+  "google-adexchangebuyer1d3_1" = google-adexchangebuyer1d3_1_0_2;}

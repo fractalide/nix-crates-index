@@ -51,5 +51,17 @@ rec {
   };
   "google-clouddebugger2_0_1" = google-clouddebugger2_0_1_15;
   "google-clouddebugger2_0" = google-clouddebugger2_0_1_15;
-  "google-clouddebugger2_1_0" = google-clouddebugger2_1_0_0;
-  "google-clouddebugger2_1" = google-clouddebugger2_1_0_0;}
+  google-clouddebugger2_1_0_1 = buildCratesLib {
+    name = "google-clouddebugger2";
+    version = "1.0.1";
+    hash = "33f427574b11c0bef22753b3e4a17be61fc73ee08e9c9d2e128d3eba06bf7060";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde_json.serde_json_0_8 url all__serde.serde_0_8 all__hyper.hyper_0_9 ];
+  };
+  google-clouddebugger2_1_0_2 = buildCratesLib {
+    name = "google-clouddebugger2";
+    version = "1.0.2";
+    hash = "6b60b859d72148cf8c8b462cb067892075190606bbd7448c23ecb4391fc4ac21";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 url all__mime.mime_0_2 ];
+  };
+  "google-clouddebugger2_1_0" = google-clouddebugger2_1_0_2;
+  "google-clouddebugger2_1" = google-clouddebugger2_1_0_2;}

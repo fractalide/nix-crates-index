@@ -15,5 +15,17 @@ rec {
   };
   "google-dfareporting2d2-cli_0_3" = google-dfareporting2d2-cli_0_3_6;
   "google-dfareporting2d2-cli_0" = google-dfareporting2d2-cli_0_3_6;
-  "google-dfareporting2d2-cli_1_0" = google-dfareporting2d2-cli_1_0_0;
-  "google-dfareporting2d2-cli_1" = google-dfareporting2d2-cli_1_0_0;}
+  google-dfareporting2d2-cli_1_0_1 = buildCratesLib {
+    name = "google-dfareporting2d2-cli";
+    version = "1.0.1";
+    hash = "402546d7ed5ca2061f50f14b3b63f6de73248c28092e5a4ad7b4d83e2a3f5dfe";
+    deps = with allCrates; [  all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 all__clap.clap_2_0 ];
+  };
+  google-dfareporting2d2-cli_1_0_2 = buildCratesLib {
+    name = "google-dfareporting2d2-cli";
+    version = "1.0.2";
+    hash = "671d9b71884c5e782d409c9bf54634d8c3a58bb50a4b0b1eefbc3cbae392992a";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__strsim.strsim_0_5 all__mime.mime_0_2 ];
+  };
+  "google-dfareporting2d2-cli_1_0" = google-dfareporting2d2-cli_1_0_2;
+  "google-dfareporting2d2-cli_1" = google-dfareporting2d2-cli_1_0_2;}

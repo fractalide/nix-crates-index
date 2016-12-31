@@ -38,5 +38,11 @@ rec {
     hash = "b07af0ad2f914cc10cd62b06142357250d0d310951a72f5f7b4c109699bbf692";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
-  "jack-sys_0_1" = jack-sys_0_1_3;
-  "jack-sys_0" = jack-sys_0_1_3;}
+  jack-sys_0_1_4 = buildCratesLib {
+    name = "jack-sys";
+    version = "0.1.4";
+    hash = "ab378485c0fa5dbd219dcaca940c0e0e98d354ba0965af12eb988c255724d087";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "jack-sys_0_1" = jack-sys_0_1_4;
+  "jack-sys_0" = jack-sys_0_1_4;}

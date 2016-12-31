@@ -99,5 +99,17 @@ rec {
   };
   "google-gamesconfiguration1_configuration_0_1" = google-gamesconfiguration1_configuration_0_1_15;
   "google-gamesconfiguration1_configuration_0" = google-gamesconfiguration1_configuration_0_1_15;
-  "google-gamesconfiguration1_configuration_1_0" = google-gamesconfiguration1_configuration_1_0_0;
-  "google-gamesconfiguration1_configuration_1" = google-gamesconfiguration1_configuration_1_0_0;}
+  google-gamesconfiguration1_configuration_1_0_1 = buildCratesLib {
+    name = "google-gamesconfiguration1_configuration";
+    version = "1.0.1";
+    hash = "fcd8b45f7dd627a644143dee13bfd54020c6104d8c4215c017bca02fdd8b137e";
+    deps = with allCrates; [  all__serde.serde_0_8 url all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde_json.serde_json_0_8 ];
+  };
+  google-gamesconfiguration1_configuration_1_0_2 = buildCratesLib {
+    name = "google-gamesconfiguration1_configuration";
+    version = "1.0.2";
+    hash = "ff921a2c11a1a757aa8e505aa9d2c513573c908cc697bd391f363f2abee31b9f";
+    deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 ];
+  };
+  "google-gamesconfiguration1_configuration_1_0" = google-gamesconfiguration1_configuration_1_0_2;
+  "google-gamesconfiguration1_configuration_1" = google-gamesconfiguration1_configuration_1_0_2;}

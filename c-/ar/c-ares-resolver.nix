@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__futures.futures_0_1 all__mio.mio_0_6 all__c-ares.c-ares_0_21 ];
   };
   "c-ares-resolver_0_1" = c-ares-resolver_0_1_0;
+  c-ares-resolver_0_3_0 = buildCratesLib {
+    name = "c-ares-resolver";
+    version = "0.3.0";
+    hash = "dcee8909a0fc12d54879b0f56b43dfe79850a3dcc877e068b6a361ce84947f04";
+    deps = with allCrates; [  all__c-ares.c-ares_1 all__futures.futures_0_1 all__mio.mio_0_6 ];
+  };
   "c-ares-resolver_0_2" = c-ares-resolver_0_2_0;
-  "c-ares-resolver_0" = c-ares-resolver_0_2_0;}
+  "c-ares-resolver_0_3" = c-ares-resolver_0_3_0;
+  "c-ares-resolver_0" = c-ares-resolver_0_3_0;}

@@ -33,5 +33,17 @@ rec {
   };
   "google-appengine1_beta5_0_1" = google-appengine1_beta5_0_1_15;
   "google-appengine1_beta5_0" = google-appengine1_beta5_0_1_15;
-  "google-appengine1_beta5_1_0" = google-appengine1_beta5_1_0_0;
-  "google-appengine1_beta5_1" = google-appengine1_beta5_1_0_0;}
+  google-appengine1_beta5_1_0_1 = buildCratesLib {
+    name = "google-appengine1_beta5";
+    version = "1.0.1";
+    hash = "5b54bf86f7ec22a4ee13ae4abd8afbb78fa49939b82d7867e85ef6518f849c72";
+    deps = with allCrates; [  all__serde.serde_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde_json.serde_json_0_8 ];
+  };
+  google-appengine1_beta5_1_0_2 = buildCratesLib {
+    name = "google-appengine1_beta5";
+    version = "1.0.2";
+    hash = "b0fd46e98a2b238140375cdd1e10c0c847c7599fa894038c4dd67b682d85a6f7";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 url all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+  };
+  "google-appengine1_beta5_1_0" = google-appengine1_beta5_1_0_2;
+  "google-appengine1_beta5_1" = google-appengine1_beta5_1_0_2;}

@@ -157,5 +157,17 @@ rec {
     hash = "10df5792d1613207fb75ae344cd5ef91a4b24a670d11bdb4a7d8df5dc6e29ab0";
     deps = with allCrates; [  all__libc.libc_0_1 allegro allegro_util allegro_dialog-sys ];
   };
-  "allegro_dialog_0_0" = allegro_dialog_0_0_27;
-  "allegro_dialog_0" = allegro_dialog_0_0_27;}
+  allegro_dialog_0_0_28 = buildCratesLib {
+    name = "allegro_dialog";
+    version = "0.0.28";
+    hash = "f7ef20935ab27985b5829d1e62797c24853129f7810cd1fe86fcedb91692b075";
+    deps = with allCrates; [  all__libc.libc_0_1 allegro allegro_dialog-sys allegro_util ];
+  };
+  allegro_dialog_0_0_29 = buildCratesLib {
+    name = "allegro_dialog";
+    version = "0.0.29";
+    hash = "75672ece449b47297627208675a73a5280ed016147d53b0acc08f46187479b8d";
+    deps = with allCrates; [  allegro_util allegro allegro_dialog-sys all__libc.libc_0_1 ];
+  };
+  "allegro_dialog_0_0" = allegro_dialog_0_0_29;
+  "allegro_dialog_0" = allegro_dialog_0_0_29;}

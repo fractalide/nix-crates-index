@@ -7,5 +7,50 @@ rec {
     hash = "e166362563828e3803d0a1ace75d3a49dc7e3f7cafe1fca9e7c618f200ac997e";
     deps = with allCrates; [  all__term.term_0 all__log.log_0 all__nom.nom_2 all__indextree.indextree_0 ];
   };
-  "peel_0_0" = peel_0_0_1;
-  "peel_0" = peel_0_0_1;}
+  peel_0_0_2 = buildCratesLib {
+    name = "peel";
+    version = "0.0.2";
+    hash = "b8a73f6d7d6f4f8eaefce6c011a58b28fefc01ec37068ba99573343875b5e5ca";
+    deps = with allCrates; [  all__nom.nom_2 all__indextree.indextree_0 all__mowl.mowl_1 all__log.log_0 ];
+  };
+  peel_0_0_3 = buildCratesLib {
+    name = "peel";
+    version = "0.0.3";
+    hash = "cf609b48f38b2494e1b8c71ad51d03bba3be64366fd80a0f821ecb65bab95835";
+    deps = with allCrates; [  all__log.log_0 all__indextree.indextree_0 all__nom.nom_2 all__mowl.mowl_1 ];
+  };
+  peel_0_1_0 = buildCratesLib {
+    name = "peel";
+    version = "0.1.0";
+    hash = "d8c0eea0caf08eeb4d7b51272bad7679144fba0009c46d47d2f20727c0bc7ad0";
+    deps = with allCrates; [  all__mowl.mowl_1 all__log.log_0 all__nom.nom_2 all__indextree.indextree_0 ];
+  };
+  "peel_0_0" = peel_0_0_3;
+  peel_0_1_1 = buildCratesLib {
+    name = "peel";
+    version = "0.1.1";
+    hash = "f286aff26be44d210d0df520f3c5741089a266f4363801d872939162bf96169c";
+    deps = with allCrates; [  all__nom.nom_2 all__mowl.mowl_1 all__indextree.indextree_0 all__log.log_0 ];
+  };
+  peel_0_1_2 = buildCratesLib {
+    name = "peel";
+    version = "0.1.2";
+    hash = "4ab89d9efaceafc77df9ec7932a346dc25451ef45d4ebd35222193a8f72dfd8b";
+    deps = with allCrates; [  all__nom.nom_2 all__log.log_0 all__indextree.indextree_0 all__mowl.mowl_1 ];
+  };
+  peel_0_2_0 = buildCratesLib {
+    name = "peel";
+    version = "0.2.0";
+    hash = "2262593415bcde1da3f2c32f9b6b5308837d36649000ac2c63dcc3a23030db66";
+    deps = with allCrates; [  all__mowl.mowl_1 all__log.log_0 all__petgraph.petgraph_0 all__nom.nom_2 ];
+  };
+  "peel_0_1" = peel_0_1_2;
+  peel_0_3_0 = buildCratesLib {
+    name = "peel";
+    version = "0.3.0";
+    hash = "178edc58afaee7a73bab226e07b5722151bbae8817f6b6fb273a7dd6b60831bd";
+    deps = with allCrates; [  all__nom.nom_2 all__mowl.mowl_1 all__petgraph.petgraph_0 all__log.log_0 ];
+  };
+  "peel_0_2" = peel_0_2_0;
+  "peel_0_3" = peel_0_3_0;
+  "peel_0" = peel_0_3_0;}

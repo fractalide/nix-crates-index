@@ -86,5 +86,12 @@ rec {
     deps = with allCrates; [  ];
   };
   "c_vec_1_0" = c_vec_1_0_12;
+  c_vec_1_2_0 = buildCratesLib {
+    name = "c_vec";
+    version = "1.2.0";
+    hash = "0059f5a658f62a4bd3937a7addc52ccfda144b75cce7a92b187e528629cdc507";
+    deps = with allCrates; [  ];
+  };
   "c_vec_1_1" = c_vec_1_1_0;
-  "c_vec_1" = c_vec_1_1_0;}
+  "c_vec_1_2" = c_vec_1_2_0;
+  "c_vec_1" = c_vec_1_2_0;}

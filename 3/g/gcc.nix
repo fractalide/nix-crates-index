@@ -316,5 +316,11 @@ rec {
     hash = "872db9e59486ef2b14f8e8c10e9ef02de2bccef6363d7f34835dedb386b3d950";
     deps = with allCrates; [  ];
   };
-  "gcc_0_3" = gcc_0_3_40;
-  "gcc_0" = gcc_0_3_40;}
+  gcc_0_3_41 = buildCratesLib {
+    name = "gcc";
+    version = "0.3.41";
+    hash = "3689e1982a563af74960ae3a4758aa632bb8fd984cfc3cc3b60ee6109477ab6e";
+    deps = with allCrates; [  ];
+  };
+  "gcc_0_3" = gcc_0_3_41;
+  "gcc_0" = gcc_0_3_41;}

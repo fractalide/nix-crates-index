@@ -105,5 +105,17 @@ rec {
   };
   "google-groupssettings1_0_1" = google-groupssettings1_0_1_15;
   "google-groupssettings1_0" = google-groupssettings1_0_1_15;
-  "google-groupssettings1_1_0" = google-groupssettings1_1_0_0;
-  "google-groupssettings1_1" = google-groupssettings1_1_0_0;}
+  google-groupssettings1_1_0_1 = buildCratesLib {
+    name = "google-groupssettings1";
+    version = "1.0.1";
+    hash = "0433ad3c1f779c5eb8da5a5b74f382dc55fa299aaaf67fac256cd82f318dbba5";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url all__serde.serde_0_8 ];
+  };
+  google-groupssettings1_1_0_2 = buildCratesLib {
+    name = "google-groupssettings1";
+    version = "1.0.2";
+    hash = "687819c1f9a1f0f7d9a7a0fe8930c7b887187804417e73fe917f999b917fe8c2";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 url ];
+  };
+  "google-groupssettings1_1_0" = google-groupssettings1_1_0_2;
+  "google-groupssettings1_1" = google-groupssettings1_1_0_2;}

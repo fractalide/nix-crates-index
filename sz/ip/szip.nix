@@ -7,5 +7,11 @@ rec {
     hash = "904b14b75555a916768669f7b0d4032848557d224f8725f55077490d5d3d263b";
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__docopt.docopt_0_6 all__snap.snap_0_1 all__filetime.filetime_0_1 ];
   };
-  "szip_0_1" = szip_0_1_0;
-  "szip_0" = szip_0_1_0;}
+  szip_0_1_1 = buildCratesLib {
+    name = "szip";
+    version = "0.1.1";
+    hash = "11ece79f6fb252f3c8b19f9340f32d0976f473eec3c7fb97daee597cb6d31c80";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__snap.snap_0_2 all__filetime.filetime_0_1 all__docopt.docopt_0_6 ];
+  };
+  "szip_0_1" = szip_0_1_1;
+  "szip_0" = szip_0_1_1;}

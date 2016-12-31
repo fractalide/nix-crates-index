@@ -316,5 +316,11 @@ rec {
     hash = "8fd5a1fdcebdb1a59578c5583e66ffed2d13850eac4f51ff730edf6dd6111eac";
     deps = with allCrates; [  all__curl-sys.curl-sys_0_3 all__libc.libc_0_2 ];
   };
-  "curl_0_4" = curl_0_4_1;
-  "curl_0" = curl_0_4_1;}
+  curl_0_4_2 = buildCratesLib {
+    name = "curl";
+    version = "0.4.2";
+    hash = "29390ee54dfd5acfcc4b0d2acc96da64060e704324a5fe314799c192fe039f76";
+    deps = with allCrates; [  all__libc.libc_0_2 all__curl-sys.curl-sys_0_3 ];
+  };
+  "curl_0_4" = curl_0_4_2;
+  "curl_0" = curl_0_4_2;}

@@ -7,5 +7,11 @@ rec {
     hash = "6efaed1272461b7f6edd3da3523bdd95b567dad60d69a6399e826a5d06bf227b";
     deps = with allCrates; [  all__log.log_0_3 all__quote.quote_0_3 all__syn.syn_0_9 ];
   };
-  "telebot-derive_0_0" = telebot-derive_0_0_1;
-  "telebot-derive_0" = telebot-derive_0_0_1;}
+  telebot-derive_0_0_2 = buildCratesLib {
+    name = "telebot-derive";
+    version = "0.0.2";
+    hash = "7e6f4825b2d1868b8f3e320631efe384b0b0d26291b34e0326a42f16942eba26";
+    deps = with allCrates; [  all__syn.syn_0_9 all__log.log_0_3 all__quote.quote_0_3 ];
+  };
+  "telebot-derive_0_0" = telebot-derive_0_0_2;
+  "telebot-derive_0" = telebot-derive_0_0_2;}

@@ -197,5 +197,18 @@ rec {
     deps = with allCrates; [  all__time.time_0_1 all__url.url_1_0 ];
   };
   "cookie_0_3" = cookie_0_3_1;
+  cookie_0_5_0 = buildCratesLib {
+    name = "cookie";
+    version = "0.5.0";
+    hash = "a4213d4f6b89bc73a5fcb98ccaa68c59ecb8204bf3f242e969a8a4150ead1e11";
+    deps = with allCrates; [  all__time.time_0_1 all__url.url_1_0 ];
+  };
   "cookie_0_4" = cookie_0_4_0;
-  "cookie_0" = cookie_0_4_0;}
+  cookie_0_5_1 = buildCratesLib {
+    name = "cookie";
+    version = "0.5.1";
+    hash = "8d12191219481eb202e05529f646f9af8d1ecfcd53bbf3997d4a4b15ca095cf8";
+    deps = with allCrates; [  all__time.time_0_1 all__url.url_1_0 ];
+  };
+  "cookie_0_5" = cookie_0_5_1;
+  "cookie_0" = cookie_0_5_1;}

@@ -13,5 +13,12 @@ rec {
     hash = "25d0f872b62e2d2bf8879f162c380fefb9552e7636c933b7911be0ef4d1bbe35";
     deps = with allCrates; [  all__parse-hosts.parse-hosts_0_3 all__hyper.hyper_0_9 ];
   };
+  swc-hosts_0_2_0 = buildCratesLib {
+    name = "swc-hosts";
+    version = "0.2.0";
+    hash = "de6e7ad95c6ab676ea1dfc120af57adfc75dffdc104882d7d7822699825a5f60";
+    deps = with allCrates; [  all__parse-hosts.parse-hosts_0_3 all__hyper.hyper_0_9 ];
+  };
   "swc-hosts_0_1" = swc-hosts_0_1_1;
-  "swc-hosts_0" = swc-hosts_0_1_1;}
+  "swc-hosts_0_2" = swc-hosts_0_2_0;
+  "swc-hosts_0" = swc-hosts_0_2_0;}

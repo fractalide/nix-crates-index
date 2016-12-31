@@ -145,5 +145,17 @@ rec {
     hash = "c08bb484bae2b069dc2b9215503f6ca1c66dd84b68367c1fd65bb4acd5fac56c";
     deps = with allCrates; [  allegro-sys allegro_util all__libc.libc_0_1 ];
   };
-  "allegro_audio-sys_0_0" = allegro_audio-sys_0_0_27;
-  "allegro_audio-sys_0" = allegro_audio-sys_0_0_27;}
+  allegro_audio-sys_0_0_28 = buildCratesLib {
+    name = "allegro_audio-sys";
+    version = "0.0.28";
+    hash = "054f0234898f2072450a17301e739099a9f66e0fa36e336ee08e701a7e77de30";
+    deps = with allCrates; [  allegro-sys all__libc.libc_0_1 allegro_util ];
+  };
+  allegro_audio-sys_0_0_29 = buildCratesLib {
+    name = "allegro_audio-sys";
+    version = "0.0.29";
+    hash = "1eae288c705c5402994a7108f6946df0308cbb39b1ed658279eb4411ba25dc1a";
+    deps = with allCrates; [  all__libc.libc_0_1 allegro-sys allegro_util ];
+  };
+  "allegro_audio-sys_0_0" = allegro_audio-sys_0_0_29;
+  "allegro_audio-sys_0" = allegro_audio-sys_0_0_29;}

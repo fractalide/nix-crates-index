@@ -105,5 +105,17 @@ rec {
   };
   "google-appstate1_0_1" = google-appstate1_0_1_15;
   "google-appstate1_0" = google-appstate1_0_1_15;
-  "google-appstate1_1_0" = google-appstate1_1_0_0;
-  "google-appstate1_1" = google-appstate1_1_0_0;}
+  google-appstate1_1_0_1 = buildCratesLib {
+    name = "google-appstate1";
+    version = "1.0.1";
+    hash = "fb3972a153162da97eccd3581e189acbc586c06fec9372f2d44c83990c08c14e";
+    deps = with allCrates; [  url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 ];
+  };
+  google-appstate1_1_0_2 = buildCratesLib {
+    name = "google-appstate1";
+    version = "1.0.2";
+    hash = "b50d4378ab67541a3c640e3565cedf6d83fe22fc0c8bec4c3d8370c418db8492";
+    deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url all__mime.mime_0_2 ];
+  };
+  "google-appstate1_1_0" = google-appstate1_1_0_2;
+  "google-appstate1_1" = google-appstate1_1_0_2;}

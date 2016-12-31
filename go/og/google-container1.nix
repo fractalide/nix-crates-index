@@ -51,5 +51,17 @@ rec {
   };
   "google-container1_0_1" = google-container1_0_1_15;
   "google-container1_0" = google-container1_0_1_15;
-  "google-container1_1_0" = google-container1_1_0_0;
-  "google-container1_1" = google-container1_1_0_0;}
+  google-container1_1_0_1 = buildCratesLib {
+    name = "google-container1";
+    version = "1.0.1";
+    hash = "710d5caa3b9f1e2081a8d4d4ea52991a4dbbc8d67f99ac1a3d28c0f861e9b2c1";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 url ];
+  };
+  google-container1_1_0_2 = buildCratesLib {
+    name = "google-container1";
+    version = "1.0.2";
+    hash = "3c4d9a6f018a9845cb00faba1b7f9214664e5a97767fe54864c15bd1776050ec";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url all__mime.mime_0_2 all__serde.serde_0_8 ];
+  };
+  "google-container1_1_0" = google-container1_1_0_2;
+  "google-container1_1" = google-container1_1_0_2;}

@@ -99,5 +99,17 @@ rec {
   };
   "google-bigquery2_0_1" = google-bigquery2_0_1_15;
   "google-bigquery2_0" = google-bigquery2_0_1_15;
-  "google-bigquery2_1_0" = google-bigquery2_1_0_0;
-  "google-bigquery2_1" = google-bigquery2_1_0_0;}
+  google-bigquery2_1_0_1 = buildCratesLib {
+    name = "google-bigquery2";
+    version = "1.0.1";
+    hash = "49c8bf1ca23f9c59361f1d793e3f2e8f9401ca471181bfcf8c8a5e2eb3b078b8";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url all__serde.serde_0_8 all__mime.mime_0_2 ];
+  };
+  google-bigquery2_1_0_2 = buildCratesLib {
+    name = "google-bigquery2";
+    version = "1.0.2";
+    hash = "dfb819ac9ac764df8a782c5bf1d72b5fe0f5ebd91cd691d46a7a0d007ac88099";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde.serde_0_8 ];
+  };
+  "google-bigquery2_1_0" = google-bigquery2_1_0_2;
+  "google-bigquery2_1" = google-bigquery2_1_0_2;}

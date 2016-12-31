@@ -13,5 +13,11 @@ rec {
     hash = "5fc411a6c928f7696b282ae8843de771868aa508a3df5101b2345feb49ef38bc";
     deps = with allCrates; [  ];
   };
-  "ascii_utils_0_8" = ascii_utils_0_8_2;
-  "ascii_utils_0" = ascii_utils_0_8_2;}
+  ascii_utils_0_8_3 = buildCratesLib {
+    name = "ascii_utils";
+    version = "0.8.3";
+    hash = "34f0557cb0688e67a452b44687d59d5c7ca095f2c73740817324de9304a0ac8a";
+    deps = with allCrates; [  ];
+  };
+  "ascii_utils_0_8" = ascii_utils_0_8_3;
+  "ascii_utils_0" = ascii_utils_0_8_3;}

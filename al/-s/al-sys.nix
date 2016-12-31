@@ -27,5 +27,11 @@ rec {
     deps = with allCrates; [  all__rental.rental_0_3 all__libloading.libloading_0_3 all__pkg-config.pkg-config_0_3 ];
   };
   "al-sys_0_2" = al-sys_0_2_1;
-  "al-sys_0_3" = al-sys_0_3_0;
-  "al-sys_0" = al-sys_0_3_0;}
+  al-sys_0_3_1 = buildCratesLib {
+    name = "al-sys";
+    version = "0.3.1";
+    hash = "f1b746a154e436c0a511940850aef9682561e297d9a6100ae7c6e12823e02641";
+    deps = with allCrates; [  all__libloading.libloading_0_3 all__rental.rental_0_3 all__pkg-config.pkg-config_0_3 ];
+  };
+  "al-sys_0_3" = al-sys_0_3_1;
+  "al-sys_0" = al-sys_0_3_1;}

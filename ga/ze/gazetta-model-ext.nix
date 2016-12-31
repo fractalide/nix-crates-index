@@ -13,5 +13,12 @@ rec {
     hash = "d96b23576690044745ceed0d48bf6fe4175841c162f216c28503fa31a88faa20";
     deps = with allCrates; [  all__gazetta-core.gazetta-core_0_1 all__lazy_static.lazy_static_0_2 ];
   };
+  gazetta-model-ext_0_2_0 = buildCratesLib {
+    name = "gazetta-model-ext";
+    version = "0.2.0";
+    hash = "0fe8eb896ffa4f71df1dfa6352dbbb1f473e23cdf415be8a28dd6cdd325a6a35";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__gazetta-core.gazetta-core_0_2 ];
+  };
   "gazetta-model-ext_0_1" = gazetta-model-ext_0_1_1;
-  "gazetta-model-ext_0" = gazetta-model-ext_0_1_1;}
+  "gazetta-model-ext_0_2" = gazetta-model-ext_0_2_0;
+  "gazetta-model-ext_0" = gazetta-model-ext_0_2_0;}

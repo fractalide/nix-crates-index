@@ -105,5 +105,17 @@ rec {
   };
   "google-replicapoolupdater1_beta1_0_1" = google-replicapoolupdater1_beta1_0_1_15;
   "google-replicapoolupdater1_beta1_0" = google-replicapoolupdater1_beta1_0_1_15;
-  "google-replicapoolupdater1_beta1_1_0" = google-replicapoolupdater1_beta1_1_0_0;
-  "google-replicapoolupdater1_beta1_1" = google-replicapoolupdater1_beta1_1_0_0;}
+  google-replicapoolupdater1_beta1_1_0_1 = buildCratesLib {
+    name = "google-replicapoolupdater1_beta1";
+    version = "1.0.1";
+    hash = "21979a1264cfe7073c106a010d15f93b4556eb41ca90d37f8bbc8fe4fac74820";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__serde.serde_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+  };
+  google-replicapoolupdater1_beta1_1_0_2 = buildCratesLib {
+    name = "google-replicapoolupdater1_beta1";
+    version = "1.0.2";
+    hash = "0da7a726afb157f3b4b613ec4100897edca86271219f5351c03ebbf4e5164222";
+    deps = with allCrates; [  all__hyper.hyper_0_9 url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+  };
+  "google-replicapoolupdater1_beta1_1_0" = google-replicapoolupdater1_beta1_1_0_2;
+  "google-replicapoolupdater1_beta1_1" = google-replicapoolupdater1_beta1_1_0_2;}

@@ -110,5 +110,18 @@ rec {
     hash = "b1c62e919208b5253438af127df956e2afaba67ee2e0a098700d2e99b08ac2ef";
     deps = with allCrates; [  all__tempdir.tempdir_0_3 all__fs2.fs2_0_2 all__libc.libc_0_2 all__daggy.daggy_0_4 all__toml.toml_0_2 all__rustc_version.rustc_version_0_1 all__error-chain.error-chain_0_5 all__walkdir.walkdir_0_1 all__rustc-cfg.rustc-cfg_0_2 all__serde_json.serde_json_0_8 ];
   };
+  xargo_0_3_0 = buildCratesLib {
+    name = "xargo";
+    version = "0.3.0";
+    hash = "0c88288cf989adf3a7ec228fb43f0d6c48d507616fd52218b10584410f3209f3";
+    deps = with allCrates; [  all__tempdir.tempdir_0_3 all__toml.toml_0_2 all__serde_json.serde_json_0_8 all__error-chain.error-chain_0_7 all__libc.libc_0_2 all__walkdir.walkdir_1_0_3 all__rustc_version.rustc_version_0_1 all__fs2.fs2_0_4 ];
+  };
   "xargo_0_2" = xargo_0_2_3;
-  "xargo_0" = xargo_0_2_3;}
+  xargo_0_3_1 = buildCratesLib {
+    name = "xargo";
+    version = "0.3.1";
+    hash = "98fe73ff169d00f45dc43257a73487e9ac5ca2deb24dc51ca1df665b44d62b4b";
+    deps = with allCrates; [  all__walkdir.walkdir_1_0_3 all__serde_json.serde_json_0_8 all__toml.toml_0_2 all__tempdir.tempdir_0_3 all__rustc_version.rustc_version_0_1 all__fs2.fs2_0_4 all__error-chain.error-chain_0_7 all__libc.libc_0_2 ];
+  };
+  "xargo_0_3" = xargo_0_3_1;
+  "xargo_0" = xargo_0_3_1;}

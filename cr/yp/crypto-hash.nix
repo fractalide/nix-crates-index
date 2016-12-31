@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  all__hex.hex_0_2 ];
   };
   "crypto-hash_0_1" = crypto-hash_0_1_0;
-  "crypto-hash_0_2" = crypto-hash_0_2_0;
-  "crypto-hash_0" = crypto-hash_0_2_0;}
+  crypto-hash_0_2_1 = buildCratesLib {
+    name = "crypto-hash";
+    version = "0.2.1";
+    hash = "a663acd6405e29214879f51860db259f9ca013e79af6ebc9b8153faf2a135aae";
+    deps = with allCrates; [  all__hex.hex_0_2 ];
+  };
+  "crypto-hash_0_2" = crypto-hash_0_2_1;
+  "crypto-hash_0" = crypto-hash_0_2_1;}

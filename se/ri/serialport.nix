@@ -7,5 +7,11 @@ rec {
     hash = "71a9059e2be5979d6e9b0fe9227c06b7cf8b27795909a6ad6a7d928265c51782";
     deps = with allCrates; [  all__libc.libc_0_2 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__libudev.libudev_0_2 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__libudev.libudev_0_2 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__libudev.libudev_0_2 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__libudev.libudev_0_2 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__libudev.libudev_0_2 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 ];
   };
-  "serialport_0_1" = serialport_0_1_0;
-  "serialport_0" = serialport_0_1_0;}
+  serialport_0_1_1 = buildCratesLib {
+    name = "serialport";
+    version = "0.1.1";
+    hash = "235362c27cf62075c44c6f95c798cc578a5a892c64ff505e1d7453c2ce269004";
+    deps = with allCrates; [  all__libc.libc_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__libudev.libudev_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__libudev.libudev_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__libudev.libudev_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__libudev.libudev_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__ioctl-rs.ioctl-rs_0_1 all__termios.termios_0_2 all__libudev.libudev_0_2 ];
+  };
+  "serialport_0_1" = serialport_0_1_1;
+  "serialport_0" = serialport_0_1_1;}

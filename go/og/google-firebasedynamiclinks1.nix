@@ -7,5 +7,17 @@ rec {
     hash = "9dc0b7d51fe240593139cbd494f93787a813c6ea2fb28f4d5e704dfb5017510e";
     deps = with allCrates; [  all__serde.serde_0_8 url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
   };
-  "google-firebasedynamiclinks1_1_0" = google-firebasedynamiclinks1_1_0_0;
-  "google-firebasedynamiclinks1_1" = google-firebasedynamiclinks1_1_0_0;}
+  google-firebasedynamiclinks1_1_0_1 = buildCratesLib {
+    name = "google-firebasedynamiclinks1";
+    version = "1.0.1";
+    hash = "fb6de60d79657b8d55ab58e8785db8121ca60534933f19bc002aa9bf796eee42";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 ];
+  };
+  google-firebasedynamiclinks1_1_0_2 = buildCratesLib {
+    name = "google-firebasedynamiclinks1";
+    version = "1.0.2";
+    hash = "92f2950eafef331826248b56f76c78f35d8f671bb71917e2937fa4123a285f5a";
+    deps = with allCrates; [  url all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+  };
+  "google-firebasedynamiclinks1_1_0" = google-firebasedynamiclinks1_1_0_2;
+  "google-firebasedynamiclinks1_1" = google-firebasedynamiclinks1_1_0_2;}

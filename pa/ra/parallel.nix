@@ -96,5 +96,25 @@ rec {
     hash = "c616e8b81abd1c8db561f5f27b8661094d8757df84c74a90ebe15d624dfb4c75";
     deps = with allCrates; [  all__arrayvec.arrayvec_0_3 all__permutate.permutate_0_1 all__num_cpus.num_cpus_1_0 ];
   };
-  "parallel_0_6" = parallel_0_6_4;
-  "parallel_0" = parallel_0_6_4;}
+  parallel_0_6_5 = buildCratesLib {
+    name = "parallel";
+    version = "0.6.5";
+    hash = "683822f040e5e98ce2030f59ccb5fc20df6887b2f1d8b816fcacd71252de6ee4";
+    deps = with allCrates; [  all__num_cpus.num_cpus_1_0 all__arrayvec.arrayvec_0_3 all__permutate.permutate_0_1 ];
+  };
+  parallel_0_7_0 = buildCratesLib {
+    name = "parallel";
+    version = "0.7.0";
+    hash = "902b2a77f27185619f2b9abb03710d226de45771a3df7ec807c90a139874d5ec";
+    deps = with allCrates; [  all__permutate.permutate_0_2 all__arrayvec.arrayvec_0_3 all__num_cpus.num_cpus_1_2 ];
+  };
+  "parallel_0_6" = parallel_0_6_5;
+  parallel_0_8_0 = buildCratesLib {
+    name = "parallel";
+    version = "0.8.0";
+    hash = "9f9cf6d8f0d7cd1e1ca345c5cec67595f1a2d3ef5fad815a294d2ae963bc8d18";
+    deps = with allCrates; [  all__permutate.permutate_0_2 all__arrayvec.arrayvec_0_3 all__num_cpus.num_cpus_1_2 ];
+  };
+  "parallel_0_7" = parallel_0_7_0;
+  "parallel_0_8" = parallel_0_8_0;
+  "parallel_0" = parallel_0_8_0;}

@@ -68,5 +68,18 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__lua52-sys.lua52-sys_0_1 ];
   };
   "hlua_0_1" = hlua_0_1_9;
+  hlua_0_3_0 = buildCratesLib {
+    name = "hlua";
+    version = "0.3.0";
+    hash = "855eba78016aa8580a62f91fbf3eeab67b93b521a8fe8de80600e2db62f45e11";
+    deps = with allCrates; [  all__libc.libc_0_2 all__lua52-sys.lua52-sys_0_1 ];
+  };
   "hlua_0_2" = hlua_0_2_0;
-  "hlua_0" = hlua_0_2_0;}
+  hlua_0_3_1 = buildCratesLib {
+    name = "hlua";
+    version = "0.3.1";
+    hash = "943be6896e8b77886a45a0fbb823efa6550a17cf01a8745a8a24435c117144ea";
+    deps = with allCrates; [  all__libc.libc_0_2 all__lua52-sys.lua52-sys_0_1 ];
+  };
+  "hlua_0_3" = hlua_0_3_1;
+  "hlua_0" = hlua_0_3_1;}

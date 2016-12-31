@@ -82,5 +82,19 @@ rec {
     hash = "73887d937ae9a27aa5dcc0b071fe90708c3dcf3d67b57193b037238dfb9c0592";
     deps = with allCrates; [  all__env_logger.env_logger_0_3 all__clap.clap_2_2 all__toml.toml_0_1 all__log.log_0_3 all__syntex_syntax.syntex_syntax_0_32 all__typed-arena.typed-arena_1_1 ];
   };
+  racer_2_0_2 = buildCratesLib {
+    name = "racer";
+    version = "2.0.2";
+    hash = "291368b7668ffc05fefe3d4d752cfbe3de716de1334987ad030a916ca28a7dd3";
+    deps = with allCrates; [  all__syntex_syntax.syntex_syntax_0_52 all__typed-arena.typed-arena_1_2 all__syntex_errors.syntex_errors_0_52 all__clap.clap_2_19 all__toml.toml_0_2 all__log.log_0_3 all__env_logger.env_logger_0_3 ];
+  };
   "racer_1_2" = racer_1_2_10;
-  "racer_1" = racer_1_2_10;}
+  "racer_1" = racer_1_2_10;
+  racer_2_0_3 = buildCratesLib {
+    name = "racer";
+    version = "2.0.3";
+    hash = "825a162a05af56cbae36c8c925b4b3babf858aa85eae23911f6a7f18143a61a9";
+    deps = with allCrates; [  all__env_logger.env_logger_0_3 all__syntex_syntax.syntex_syntax_0_52 all__typed-arena.typed-arena_1_2 all__toml.toml_0_2 all__syntex_errors.syntex_errors_0_52 all__log.log_0_3 all__clap.clap_2_19 ];
+  };
+  "racer_2_0" = racer_2_0_3;
+  "racer_2" = racer_2_0_3;}

@@ -99,5 +99,17 @@ rec {
   };
   "google-plusdomains1_0_1" = google-plusdomains1_0_1_15;
   "google-plusdomains1_0" = google-plusdomains1_0_1_15;
-  "google-plusdomains1_1_0" = google-plusdomains1_1_0_0;
-  "google-plusdomains1_1" = google-plusdomains1_1_0_0;}
+  google-plusdomains1_1_0_1 = buildCratesLib {
+    name = "google-plusdomains1";
+    version = "1.0.1";
+    hash = "b6f149569f1bd34778ef87e6a003062b8a469ecfdc97db31ab980af90dc4e711";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 url ];
+  };
+  google-plusdomains1_1_0_2 = buildCratesLib {
+    name = "google-plusdomains1";
+    version = "1.0.2";
+    hash = "75a39032e8b7aa2bd03204b5a8ca1e4f95e3199db3233e4be4c90668a9f90d37";
+    deps = with allCrates; [  all__serde.serde_0_8 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
+  };
+  "google-plusdomains1_1_0" = google-plusdomains1_1_0_2;
+  "google-plusdomains1_1" = google-plusdomains1_1_0_2;}

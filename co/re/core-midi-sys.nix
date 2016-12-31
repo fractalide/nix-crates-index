@@ -7,5 +7,11 @@ rec {
     hash = "a70ae7209ec8a5458710fb6e52a474e845c0f072af93eed7990838c5d27d913b";
     deps = with allCrates; [  all__core-foundation-sys.core-foundation-sys_0_2 ];
   };
-  "core-midi-sys_0_1" = core-midi-sys_0_1_0;
-  "core-midi-sys_0" = core-midi-sys_0_1_0;}
+  core-midi-sys_0_1_1 = buildCratesLib {
+    name = "core-midi-sys";
+    version = "0.1.1";
+    hash = "80b9c70d61e7b1440e731fbbfef9f0c8d8d4bc93e7e12174af7c06b4e0dd45c9";
+    deps = with allCrates; [  all__core-foundation-sys.core-foundation-sys_0_2 ];
+  };
+  "core-midi-sys_0_1" = core-midi-sys_0_1_1;
+  "core-midi-sys_0" = core-midi-sys_0_1_1;}

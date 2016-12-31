@@ -102,5 +102,12 @@ rec {
     hash = "19138575064905f49832ef72c856d614a78c5b25881f93b48954bf593464b7f5";
     deps = with allCrates; [  ];
   };
+  slog_1_4_0 = buildCratesLib {
+    name = "slog";
+    version = "1.4.0";
+    hash = "1c50e68d632333299b405ede531f7595b8b796c0dc86003c0554f79d9c3454f9";
+    deps = with allCrates; [  ];
+  };
   "slog_1_3" = slog_1_3_2;
-  "slog_1" = slog_1_3_2;}
+  "slog_1_4" = slog_1_4_0;
+  "slog_1" = slog_1_4_0;}

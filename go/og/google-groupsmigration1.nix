@@ -112,5 +112,17 @@ rec {
   };
   "google-groupsmigration1_0_1" = google-groupsmigration1_0_1_15;
   "google-groupsmigration1_0" = google-groupsmigration1_0_1_15;
-  "google-groupsmigration1_1_0" = google-groupsmigration1_1_0_0;
-  "google-groupsmigration1_1" = google-groupsmigration1_1_0_0;}
+  google-groupsmigration1_1_0_1 = buildCratesLib {
+    name = "google-groupsmigration1";
+    version = "1.0.1";
+    hash = "196f456f277be50877e1ecac72641c0d9a5c2b75b702759cebba7b183925d971";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url all__serde.serde_0_8 all__mime.mime_0_2 ];
+  };
+  google-groupsmigration1_1_0_2 = buildCratesLib {
+    name = "google-groupsmigration1";
+    version = "1.0.2";
+    hash = "4b074ffe42fa5cec7233aa5bd2936520e443bbb7da54b96804d1bc0966fe76b8";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 url all__hyper.hyper_0_9 ];
+  };
+  "google-groupsmigration1_1_0" = google-groupsmigration1_1_0_2;
+  "google-groupsmigration1_1" = google-groupsmigration1_1_0_2;}

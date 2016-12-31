@@ -15,5 +15,17 @@ rec {
   };
   "google-youtubereporting1-cli_0_3" = google-youtubereporting1-cli_0_3_6;
   "google-youtubereporting1-cli_0" = google-youtubereporting1-cli_0_3_6;
-  "google-youtubereporting1-cli_1_0" = google-youtubereporting1-cli_1_0_0;
-  "google-youtubereporting1-cli_1" = google-youtubereporting1-cli_1_0_0;}
+  google-youtubereporting1-cli_1_0_1 = buildCratesLib {
+    name = "google-youtubereporting1-cli";
+    version = "1.0.1";
+    hash = "6a5a4ecbce8bf0e48cf00bb2fa05ee482c83891d789d129095cdf83e52a43558";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__strsim.strsim_0_5 all__clap.clap_2_0 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+  };
+  google-youtubereporting1-cli_1_0_2 = buildCratesLib {
+    name = "google-youtubereporting1-cli";
+    version = "1.0.2";
+    hash = "21d77f91dc9b5f12b764ef94aecbe72970626067284b33c3f814f5a415de92c1";
+    deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__mime.mime_0_2 all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 ];
+  };
+  "google-youtubereporting1-cli_1_0" = google-youtubereporting1-cli_1_0_2;
+  "google-youtubereporting1-cli_1" = google-youtubereporting1-cli_1_0_2;}

@@ -85,5 +85,11 @@ rec {
     hash = "29f7f7deddf1244a97e2771e47edb01e5b5603d133bd4a0e516ea0e6817adc64";
     deps = with allCrates; [  all__chrono.chrono_0_2 all__xml-rs.xml-rs_0_3 all__serde.serde_0_7 all__rustc-serialize.rustc-serialize_0_3 all__byteorder.byteorder_0_5 ];
   };
-  "plist_0_0" = plist_0_0_14;
-  "plist_0" = plist_0_0_14;}
+  plist_0_0_15 = buildCratesLib {
+    name = "plist";
+    version = "0.0.15";
+    hash = "0f84118c10f7a828302114cabcbe02094e57c96da29ef91e4a7ccbae2b24ec54";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__serde.serde_0_7 all__xml-rs.xml-rs_0_3 all__byteorder.byteorder_0_5 all__chrono.chrono_0_2 ];
+  };
+  "plist_0_0" = plist_0_0_15;
+  "plist_0" = plist_0_0_15;}

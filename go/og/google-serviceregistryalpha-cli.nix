@@ -15,5 +15,17 @@ rec {
   };
   "google-serviceregistryalpha-cli_0_3" = google-serviceregistryalpha-cli_0_3_6;
   "google-serviceregistryalpha-cli_0" = google-serviceregistryalpha-cli_0_3_6;
-  "google-serviceregistryalpha-cli_1_0" = google-serviceregistryalpha-cli_1_0_0;
-  "google-serviceregistryalpha-cli_1" = google-serviceregistryalpha-cli_1_0_0;}
+  google-serviceregistryalpha-cli_1_0_1 = buildCratesLib {
+    name = "google-serviceregistryalpha-cli";
+    version = "1.0.1";
+    hash = "a317f450134843978c2287c8026054ae190f3c2ef38d457191fb6bf2059ef156";
+    deps = with allCrates; [  all__clap.clap_2_0 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+  };
+  google-serviceregistryalpha-cli_1_0_2 = buildCratesLib {
+    name = "google-serviceregistryalpha-cli";
+    version = "1.0.2";
+    hash = "4065dc05186ea7b494733ef91d3af61311d5fdb7cb6e164879b1aed927897745";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__strsim.strsim_0_5 all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__mime.mime_0_2 ];
+  };
+  "google-serviceregistryalpha-cli_1_0" = google-serviceregistryalpha-cli_1_0_2;
+  "google-serviceregistryalpha-cli_1" = google-serviceregistryalpha-cli_1_0_2;}

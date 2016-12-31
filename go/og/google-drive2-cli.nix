@@ -15,5 +15,17 @@ rec {
   };
   "google-drive2-cli_0_3" = google-drive2-cli_0_3_6;
   "google-drive2-cli_0" = google-drive2-cli_0_3_6;
-  "google-drive2-cli_1_0" = google-drive2-cli_1_0_0;
-  "google-drive2-cli_1" = google-drive2-cli_1_0_0;}
+  google-drive2-cli_1_0_1 = buildCratesLib {
+    name = "google-drive2-cli";
+    version = "1.0.1";
+    hash = "1cf6d6eb1d337dbd7a4b24ae8e875f7dafe1d95836ea1ac7164a1ea80691b49d";
+    deps = with allCrates; [  all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__strsim.strsim_0_5 all__serde.serde_0_8 ];
+  };
+  google-drive2-cli_1_0_2 = buildCratesLib {
+    name = "google-drive2-cli";
+    version = "1.0.2";
+    hash = "d9a19ee8aa447b639014396c9a0845bcbbca88646894e5f8fdae1ef0d35d240b";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 all__clap.clap_2_0 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__serde.serde_0_8 ];
+  };
+  "google-drive2-cli_1_0" = google-drive2-cli_1_0_2;
+  "google-drive2-cli_1" = google-drive2-cli_1_0_2;}

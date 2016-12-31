@@ -7,5 +7,17 @@ rec {
     hash = "ffa33c5d36e38180de86ccd7fea5ee0a15c4d17fedeaab954a09f0cad9c5ecd6";
     deps = with allCrates; [  all__serde.serde_0_8 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
   };
-  "google-logging2_1_0" = google-logging2_1_0_0;
-  "google-logging2_1" = google-logging2_1_0_0;}
+  google-logging2_1_0_1 = buildCratesLib {
+    name = "google-logging2";
+    version = "1.0.1";
+    hash = "1fa18d687fd7bae5e0f8b42917ae1667ec24998dad9a709d270da7181a044649";
+    deps = with allCrates; [  url all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 ];
+  };
+  google-logging2_1_0_2 = buildCratesLib {
+    name = "google-logging2";
+    version = "1.0.2";
+    hash = "a3340c97b3989715d91939827a8c393305e22a78efd17cf00625527a857545b3";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 url ];
+  };
+  "google-logging2_1_0" = google-logging2_1_0_2;
+  "google-logging2_1" = google-logging2_1_0_2;}

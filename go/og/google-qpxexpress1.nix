@@ -105,5 +105,17 @@ rec {
   };
   "google-qpxexpress1_0_1" = google-qpxexpress1_0_1_15;
   "google-qpxexpress1_0" = google-qpxexpress1_0_1_15;
-  "google-qpxexpress1_1_0" = google-qpxexpress1_1_0_0;
-  "google-qpxexpress1_1" = google-qpxexpress1_1_0_0;}
+  google-qpxexpress1_1_0_1 = buildCratesLib {
+    name = "google-qpxexpress1";
+    version = "1.0.1";
+    hash = "19f94aa9a2d8b144524fdcafc54b7f7e3ee10da107785a6125ed3bf8b295c922";
+    deps = with allCrates; [  url all__serde.serde_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde_json.serde_json_0_8 ];
+  };
+  google-qpxexpress1_1_0_2 = buildCratesLib {
+    name = "google-qpxexpress1";
+    version = "1.0.2";
+    hash = "74b9ac085cbf8c34daf2b74699c401002a6a2c77b386b0dafee4963403ad23b9";
+    deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 url ];
+  };
+  "google-qpxexpress1_1_0" = google-qpxexpress1_1_0_2;
+  "google-qpxexpress1_1" = google-qpxexpress1_1_0_2;}

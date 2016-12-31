@@ -32,5 +32,11 @@ rec {
     hash = "2d6722facc10989f63ee0e20a83cd4e1714a9ae11529403ac7e0afd069abc39e";
     deps = with allCrates; [  ];
   };
-  "unicode-width_0_1" = unicode-width_0_1_3;
-  "unicode-width_0" = unicode-width_0_1_3;}
+  unicode-width_0_1_4 = buildCratesLib {
+    name = "unicode-width";
+    version = "0.1.4";
+    hash = "bf3a113775714a22dcb774d8ea3655c53a32debae63a063acc00a91cc586245f";
+    deps = with allCrates; [  ];
+  };
+  "unicode-width_0_1" = unicode-width_0_1_4;
+  "unicode-width_0" = unicode-width_0_1_4;}

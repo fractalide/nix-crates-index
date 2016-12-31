@@ -99,5 +99,17 @@ rec {
   };
   "google-resourceviews1_beta2_0_1" = google-resourceviews1_beta2_0_1_15;
   "google-resourceviews1_beta2_0" = google-resourceviews1_beta2_0_1_15;
-  "google-resourceviews1_beta2_1_0" = google-resourceviews1_beta2_1_0_0;
-  "google-resourceviews1_beta2_1" = google-resourceviews1_beta2_1_0_0;}
+  google-resourceviews1_beta2_1_0_1 = buildCratesLib {
+    name = "google-resourceviews1_beta2";
+    version = "1.0.1";
+    hash = "3f108b38c9215759ea272c4709e0fc33ccbd096fa43639d70c21b65edd4aaeb5";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 url ];
+  };
+  google-resourceviews1_beta2_1_0_2 = buildCratesLib {
+    name = "google-resourceviews1_beta2";
+    version = "1.0.2";
+    hash = "7e7649c54401f9edc608432980c25a19f29ca6d3a606db00eed0fbff8ad54bed";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 url all__serde.serde_0_8 ];
+  };
+  "google-resourceviews1_beta2_1_0" = google-resourceviews1_beta2_1_0_2;
+  "google-resourceviews1_beta2_1" = google-resourceviews1_beta2_1_0_2;}

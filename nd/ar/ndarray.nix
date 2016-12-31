@@ -180,5 +180,11 @@ rec {
     hash = "815cf9579e036af6c40226d91e553bea02782c312618aa5ce12df1c040a7f1a0";
     deps = with allCrates; [  all__num-traits.num-traits_0_1 all__itertools.itertools_0_5 all__matrixmultiply.matrixmultiply_0_1 all__num-complex.num-complex_0_1 ];
   };
-  "ndarray_0_7" = ndarray_0_7_1;
-  "ndarray_0" = ndarray_0_7_1;}
+  ndarray_0_7_2 = buildCratesLib {
+    name = "ndarray";
+    version = "0.7.2";
+    hash = "ba8ce24a846aafcbd62356b816199fad41892903716b222106980f2cb04bb4db";
+    deps = with allCrates; [  all__num-complex.num-complex_0_1 all__num-traits.num-traits_0_1 all__matrixmultiply.matrixmultiply_0_1 all__itertools.itertools_0_5 ];
+  };
+  "ndarray_0_7" = ndarray_0_7_2;
+  "ndarray_0" = ndarray_0_7_2;}

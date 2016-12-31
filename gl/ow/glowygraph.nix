@@ -90,5 +90,11 @@ rec {
     hash = "6e33ea1ba0eabbdb1099505a5cc3c9ff0fd80711385088a1b475a592d456871e";
     deps = with allCrates; [  all__glium.glium_0_15 all__num.num_0_1 all__rand.rand_0_3 all__nalgebra.nalgebra_0_8 all__rustc-serialize.rustc-serialize_0_3 ];
   };
-  "glowygraph_0_7" = glowygraph_0_7_2;
-  "glowygraph_0" = glowygraph_0_7_2;}
+  glowygraph_0_7_3 = buildCratesLib {
+    name = "glowygraph";
+    version = "0.7.3";
+    hash = "9d8c1beeab4a41d22bd8898a32374c026ea9b511d18f146c61e1ef395b601286";
+    deps = with allCrates; [  all__nalgebra.nalgebra_0_10 all__glium.glium_0_15 all__rustc-serialize.rustc-serialize_0_3 all__num.num_0_1 all__rand.rand_0_3 ];
+  };
+  "glowygraph_0_7" = glowygraph_0_7_3;
+  "glowygraph_0" = glowygraph_0_7_3;}

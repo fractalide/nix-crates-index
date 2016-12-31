@@ -27,5 +27,12 @@ rec {
     hash = "cbb876854d735b332c9391398006f9b576affe0d8bc91fcac0bb48ce6add0242";
     deps = with allCrates; [  all__digest-buffer.digest-buffer_0_1 all__fake-simd.fake-simd_0_1 all__digest.digest_0_3 all__byte-tools.byte-tools_0_1 all__generic-array.generic-array_0_5 ];
   };
+  md4_0_4_0 = buildCratesLib {
+    name = "md4";
+    version = "0.4.0";
+    hash = "b5e219a443060a89724819b08d51091a4797a26a859176400f4c337b18fbcb11";
+    deps = with allCrates; [  all__digest.digest_0_4 all__fake-simd.fake-simd_0_1 all__digest-buffer.digest-buffer_0_2 all__byte-tools.byte-tools_0_1 all__generic-array.generic-array_0_6 ];
+  };
   "md4_0_3" = md4_0_3_1;
-  "md4_0" = md4_0_3_1;}
+  "md4_0_4" = md4_0_4_0;
+  "md4_0" = md4_0_4_0;}

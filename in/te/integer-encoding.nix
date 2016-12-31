@@ -60,5 +60,11 @@ rec {
     hash = "ca4b771d813ab0ef43a7057cae9280265fcfa3384cbdf003d89f54ca0ab2c90c";
     deps = with allCrates; [  ];
   };
-  "integer-encoding_1_0" = integer-encoding_1_0_2;
-  "integer-encoding_1" = integer-encoding_1_0_2;}
+  integer-encoding_1_0_3 = buildCratesLib {
+    name = "integer-encoding";
+    version = "1.0.3";
+    hash = "a053c9c7dcb7db1f2aa012c37dc176c62e4cdf14898dee0eecc606de835b8acb";
+    deps = with allCrates; [  ];
+  };
+  "integer-encoding_1_0" = integer-encoding_1_0_3;
+  "integer-encoding_1" = integer-encoding_1_0_3;}

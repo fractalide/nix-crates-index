@@ -195,5 +195,47 @@ rec {
     hash = "023f97347099e4c7a684f0749c3872a697528ea8b2272bf2d506069ac2e49df8";
     deps = with allCrates; [  all__redox_syscall.redox_syscall_0_1 all__sdl2.sdl2_0_9 ];
   };
-  "orbclient_0_2" = orbclient_0_2_3;
-  "orbclient_0" = orbclient_0_2_3;}
+  orbclient_0_2_4 = buildCratesLib {
+    name = "orbclient";
+    version = "0.2.4";
+    hash = "921daab526513301b5cc598139aea09881a1af3299f8c828551dbfde22692447";
+    deps = with allCrates; [  all__sdl2.sdl2_0_9 all__redox_syscall.redox_syscall_0_1 ];
+  };
+  orbclient_0_2_5 = buildCratesLib {
+    name = "orbclient";
+    version = "0.2.5";
+    hash = "125fd20969490c61ad9cd76cc63151ce24a96530976ee8880b1f263e16215be5";
+    deps = with allCrates; [  all__redox_syscall.redox_syscall_0_1 all__sdl2.sdl2_0_9 ];
+  };
+  orbclient_0_2_7 = buildCratesLib {
+    name = "orbclient";
+    version = "0.2.7";
+    hash = "9a501450c2a707a14ac88a46f0984dfed96eff9ca13cd5c1f2d5eb4adc5f6943";
+    deps = with allCrates; [  all__sdl2.sdl2_0_9 all__redox_syscall.redox_syscall_0_1 ];
+  };
+  orbclient_0_2_8 = buildCratesLib {
+    name = "orbclient";
+    version = "0.2.8";
+    hash = "990a90d6dc9109abef61ee2907561dde2ea3f603eefc5458a7623ff312f60530";
+    deps = with allCrates; [  all__redox_syscall.redox_syscall_0_1 all__sdl2.sdl2_0_27 ];
+  };
+  orbclient_0_2_9 = buildCratesLib {
+    name = "orbclient";
+    version = "0.2.9";
+    hash = "6510f973434621f88b7a2e0be1cc4e9ccc7bfb98fa279430cdc607b635777d36";
+    deps = with allCrates; [  all__redox_syscall.redox_syscall_0_1 all__sdl2.sdl2_0_27 ];
+  };
+  orbclient_0_2_10 = buildCratesLib {
+    name = "orbclient";
+    version = "0.2.10";
+    hash = "a8922c80cf6e574e12588f18d81a3b1dc6c0b05576c8dc3063fb49a2def0ace9";
+    deps = with allCrates; [  all__sdl2.sdl2_0_27 all__redox_syscall.redox_syscall_0_1 ];
+  };
+  orbclient_0_2_11 = buildCratesLib {
+    name = "orbclient";
+    version = "0.2.11";
+    hash = "c23f84e10051a9dcd2e32e42f19f0acaa2a87a4a8b59d365deae08003a910831";
+    deps = with allCrates; [  all__sdl2.sdl2_0_27 all__redox_syscall.redox_syscall_0_1 ];
+  };
+  "orbclient_0_2" = orbclient_0_2_11;
+  "orbclient_0" = orbclient_0_2_11;}

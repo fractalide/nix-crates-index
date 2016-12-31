@@ -21,5 +21,12 @@ rec {
     deps = with allCrates; [  all__digest.digest_0_3 all__digest-buffer.digest-buffer_0_1 all__byte-tools.byte-tools_0_1 all__generic-array.generic-array_0_5 ];
   };
   "ripemd160_0_2" = ripemd160_0_2_0;
+  ripemd160_0_4_0 = buildCratesLib {
+    name = "ripemd160";
+    version = "0.4.0";
+    hash = "861828e8bc9704389052858c3733951555e53baccbc5a3a480417fbaa91ef674";
+    deps = with allCrates; [  all__digest-buffer.digest-buffer_0_2 all__digest.digest_0_4 all__generic-array.generic-array_0_6 all__byte-tools.byte-tools_0_1 ];
+  };
   "ripemd160_0_3" = ripemd160_0_3_0;
-  "ripemd160_0" = ripemd160_0_3_0;}
+  "ripemd160_0_4" = ripemd160_0_4_0;
+  "ripemd160_0" = ripemd160_0_4_0;}

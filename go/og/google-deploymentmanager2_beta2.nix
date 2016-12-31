@@ -39,5 +39,17 @@ rec {
   };
   "google-deploymentmanager2_beta2_0_1" = google-deploymentmanager2_beta2_0_1_15;
   "google-deploymentmanager2_beta2_0" = google-deploymentmanager2_beta2_0_1_15;
-  "google-deploymentmanager2_beta2_1_0" = google-deploymentmanager2_beta2_1_0_0;
-  "google-deploymentmanager2_beta2_1" = google-deploymentmanager2_beta2_1_0_0;}
+  google-deploymentmanager2_beta2_1_0_1 = buildCratesLib {
+    name = "google-deploymentmanager2_beta2";
+    version = "1.0.1";
+    hash = "4c95031392a5b65c0733279b92dcd16855b5a20370875b77faeb8c17353000c3";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde_json.serde_json_0_8 url all__serde.serde_0_8 all__hyper.hyper_0_9 ];
+  };
+  google-deploymentmanager2_beta2_1_0_2 = buildCratesLib {
+    name = "google-deploymentmanager2_beta2";
+    version = "1.0.2";
+    hash = "bbb7e519b14f586fff228a4d8b872edf1e2a160c96c9325bd00afbf1a3da2caa";
+    deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url ];
+  };
+  "google-deploymentmanager2_beta2_1_0" = google-deploymentmanager2_beta2_1_0_2;
+  "google-deploymentmanager2_beta2_1" = google-deploymentmanager2_beta2_1_0_2;}

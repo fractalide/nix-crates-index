@@ -51,5 +51,11 @@ rec {
     hash = "3d1a6efad9f7dd4f5571c635aaa25b2ae9def3ecedd33ebd5027226c8858ac80";
     deps = with allCrates; [  all__enum_primitive.enum_primitive_0_1 all__num.num_0_1 all__libc.libc_0_2 all__cl-sys.cl-sys_0_2 all__bitflags.bitflags_0_5 ];
   };
-  "ocl-core_0_3" = ocl-core_0_3_1;
-  "ocl-core_0" = ocl-core_0_3_1;}
+  ocl-core_0_3_2 = buildCratesLib {
+    name = "ocl-core";
+    version = "0.3.2";
+    hash = "8364129ea06b7905727d2a31a2db2b72dc692b9d8d85a5b835afeff64690a1d2";
+    deps = with allCrates; [  all__bitflags.bitflags_0_5 all__num.num_0_1 all__libc.libc_0_2 all__cl-sys.cl-sys_0_2 all__enum_primitive.enum_primitive_0_1 ];
+  };
+  "ocl-core_0_3" = ocl-core_0_3_2;
+  "ocl-core_0" = ocl-core_0_3_2;}

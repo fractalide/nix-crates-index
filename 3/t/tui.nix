@@ -13,5 +13,11 @@ rec {
     hash = "4833857dcef47b37fdf4f5837e6b9e9cbcac02f6f8857c16637ac22231798724";
     deps = with allCrates; [  all__unicode-width.unicode-width_0_1 all__bitflags.bitflags_0_7 all__unicode-segmentation.unicode-segmentation_0_1 all__cassowary.cassowary_0_2 all__log.log_0_3 ];
   };
-  "tui_0_1" = tui_0_1_1;
-  "tui_0" = tui_0_1_1;}
+  tui_0_1_2 = buildCratesLib {
+    name = "tui";
+    version = "0.1.2";
+    hash = "5b66c37cc9955dec4add5119325c495609ecf69036154d55fa7d70be367f2cf8";
+    deps = with allCrates; [  all__bitflags.bitflags_0_7 all__unicode-segmentation.unicode-segmentation_0_1 all__unicode-width.unicode-width_0_1 all__cassowary.cassowary_0_2 all__log.log_0_3 ];
+  };
+  "tui_0_1" = tui_0_1_2;
+  "tui_0" = tui_0_1_2;}

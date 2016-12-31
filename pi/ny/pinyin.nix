@@ -25,5 +25,11 @@ rec {
     hash = "83e5f8b174b5a4d3735ab1ad23dbef0eb229d3c396fc6112d4d1c7fc3371fe61";
     deps = with allCrates; [  all__phf.phf_0_7 all__regex.regex_0_1 all__phf_codegen.phf_codegen_0_7 ];
   };
-  "pinyin_0_0" = pinyin_0_0_5;
-  "pinyin_0" = pinyin_0_0_5;}
+  pinyin_0_0_6 = buildCratesLib {
+    name = "pinyin";
+    version = "0.0.6";
+    hash = "6e1b1608d5e0dbd1272d27e6b43ad1cfccee61e8b3407ad801d8384ba746db0c";
+    deps = with allCrates; [  all__phf.phf_0_7 all__regex.regex_0_1 all__phf_codegen.phf_codegen_0_7 ];
+  };
+  "pinyin_0_0" = pinyin_0_0_6;
+  "pinyin_0" = pinyin_0_0_6;}

@@ -172,5 +172,11 @@ rec {
     hash = "485c1c27e90c7db3183b9d9133eb9c885e660030d7524b3389aa229da95d8702";
     deps = with allCrates; [  all__partial.partial_0_1 ];
   };
-  "oak_0_4" = oak_0_4_5;
-  "oak_0" = oak_0_4_5;}
+  oak_0_4_6 = buildCratesLib {
+    name = "oak";
+    version = "0.4.6";
+    hash = "2ef30ac62153d28876b60eafcad5f2084b61018da9e963a3ff72bbb1ea469c21";
+    deps = with allCrates; [  all__partial.partial_0_1 ];
+  };
+  "oak_0_4" = oak_0_4_6;
+  "oak_0" = oak_0_4_6;}

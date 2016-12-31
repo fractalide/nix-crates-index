@@ -25,5 +25,17 @@ rec {
     hash = "398d7148c9a542aeb0a21440ac05beb0317107121e48bc34f6f4c7173f51d0dd";
     deps = with allCrates; [  all__clang-sys.clang-sys_0_12 all__cexpr.cexpr_0_2 all__quasi.quasi_0_26 all__regex.regex_0_1 all__cfg-if.cfg-if_0_1 all__syntex_syntax.syntex_syntax_0_50 all__rustc-serialize.rustc-serialize_0_3 all__aster.aster_0_34 all__libc.libc_0_2 all__lazy_static.lazy_static_0_2 all__quasi_codegen.quasi_codegen_0_26 ];
   };
-  "libbindgen_0_1" = libbindgen_0_1_3;
-  "libbindgen_0" = libbindgen_0_1_3;}
+  libbindgen_0_1_4 = buildCratesLib {
+    name = "libbindgen";
+    version = "0.1.4";
+    hash = "b08a166f5cce21f217bcf61f73f166bb9fb5618b8db893c1bc5d24912f2b4988";
+    deps = with allCrates; [  all__quasi.quasi_0_26 all__cfg-if.cfg-if_0_1 all__aster.aster_0_34 all__regex.regex_0_1 all__syntex_syntax.syntex_syntax_0_50 all__clang-sys.clang-sys_0_12 all__cexpr.cexpr_0_2 all__lazy_static.lazy_static_0_2 all__rustc-serialize.rustc-serialize_0_3 all__quasi_codegen.quasi_codegen_0_26 ];
+  };
+  libbindgen_0_1_5 = buildCratesLib {
+    name = "libbindgen";
+    version = "0.1.5";
+    hash = "03fc3da1bbd6aac5068e7b8464e494352a587f57ec8986974d42216e0c88e58c";
+    deps = with allCrates; [  all__quasi.quasi_0_26 all__rustc-serialize.rustc-serialize_0_3 all__cfg-if.cfg-if_0_1 all__clang-sys.clang-sys_0_12 all__regex.regex_0_1 all__syntex_syntax.syntex_syntax_0_50 all__cexpr.cexpr_0_2 all__aster.aster_0_34 all__lazy_static.lazy_static_0_2 all__quasi_codegen.quasi_codegen_0_26 ];
+  };
+  "libbindgen_0_1" = libbindgen_0_1_5;
+  "libbindgen_0" = libbindgen_0_1_5;}

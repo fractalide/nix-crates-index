@@ -144,5 +144,23 @@ rec {
     deps = with allCrates; [  all__gcollections.gcollections_0_3 all__bit-set.bit-set_0_2 all__num.num_0_1 ];
   };
   "intervallum_0_5" = intervallum_0_5_5;
-  "intervallum_0_6" = intervallum_0_6_0;
-  "intervallum_0" = intervallum_0_6_0;}
+  intervallum_0_6_1 = buildCratesLib {
+    name = "intervallum";
+    version = "0.6.1";
+    hash = "a81138ecd23192663d84b08cfb7054eb289d9e1c88c09a257235572d99540509";
+    deps = with allCrates; [  all__gcollections.gcollections_0_3 all__bit-set.bit-set_0_2 all__num.num_0_1 ];
+  };
+  intervallum_0_6_2 = buildCratesLib {
+    name = "intervallum";
+    version = "0.6.2";
+    hash = "b9d055a8bffbc1c476e0aed48a7abe3146a67a8d40f18f2fc2e68ace6b6a61b3";
+    deps = with allCrates; [  all__gcollections.gcollections_0_3 all__bit-set.bit-set_0_2 all__num.num_0_1 ];
+  };
+  intervallum_0_6_3 = buildCratesLib {
+    name = "intervallum";
+    version = "0.6.3";
+    hash = "45e634cbc86b6b88aa639d3e02eaa0b88e69c268113204a2916cc2be703d3a11";
+    deps = with allCrates; [  all__bit-set.bit-set_0_2 all__gcollections.gcollections_0_3 all__num.num_0_1 ];
+  };
+  "intervallum_0_6" = intervallum_0_6_3;
+  "intervallum_0" = intervallum_0_6_3;}

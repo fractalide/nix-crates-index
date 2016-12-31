@@ -13,5 +13,11 @@ rec {
     hash = "b52aea8838e96fb8d19325611f9824ec355d8320bd8033685cca2b690fc77db7";
     deps = with allCrates; [  ];
   };
-  "fake-simd_0_1" = fake-simd_0_1_1;
-  "fake-simd_0" = fake-simd_0_1_1;}
+  fake-simd_0_1_2 = buildCratesLib {
+    name = "fake-simd";
+    version = "0.1.2";
+    hash = "e88a8acf291dafb59c2d96e8f59828f3838bb1a70398823ade51a84de6a6deed";
+    deps = with allCrates; [  ];
+  };
+  "fake-simd_0_1" = fake-simd_0_1_2;
+  "fake-simd_0" = fake-simd_0_1_2;}

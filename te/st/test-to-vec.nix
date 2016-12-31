@@ -21,5 +21,18 @@ rec {
     deps = with allCrates; [  all__nom.nom_2_0_1 ];
   };
   "test-to-vec_0_2" = test-to-vec_0_2_0;
+  test-to-vec_0_4_0 = buildCratesLib {
+    name = "test-to-vec";
+    version = "0.4.0";
+    hash = "a79a462990f5a6e4649c3c29d56ee139b355c6ebf8607910e04fee2d6396728f";
+    deps = with allCrates; [  all__nom.nom_2_0_1 ];
+  };
   "test-to-vec_0_3" = test-to-vec_0_3_0;
-  "test-to-vec_0" = test-to-vec_0_3_0;}
+  test-to-vec_0_4_1 = buildCratesLib {
+    name = "test-to-vec";
+    version = "0.4.1";
+    hash = "8692459b06db816fedfda93e7ff2331d8e54b325d270c16f9d404a6c3e1b4749";
+    deps = with allCrates; [  all__nom.nom_2_0_1 ];
+  };
+  "test-to-vec_0_4" = test-to-vec_0_4_1;
+  "test-to-vec_0" = test-to-vec_0_4_1;}

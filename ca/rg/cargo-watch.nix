@@ -83,5 +83,11 @@ rec {
     deps = with allCrates; [  all__docopt.docopt_0_6 all__notify.notify_2_5 all__wait-timeout.wait-timeout_0_1 all__rustc-serialize.rustc-serialize_0_3 all__lazy_static.lazy_static_0_1 all__regex.regex_0_1 all__log.log_0_3 all__libc.libc_0_2 all__env_logger.env_logger_0_3 ];
   };
   "cargo-watch_3_0" = cargo-watch_3_0_4;
-  "cargo-watch_3_1" = cargo-watch_3_1_0;
-  "cargo-watch_3" = cargo-watch_3_1_0;}
+  cargo-watch_3_1_1 = buildCratesLib {
+    name = "cargo-watch";
+    version = "3.1.1";
+    hash = "7ec91f9fe23d12fc2cefa592ecfcbb98f53728d8ee2ace58c3d385ebe0857679";
+    deps = with allCrates; [  all__log.log_0_3 all__notify.notify_3_0_1 all__docopt.docopt_0_6 all__wait-timeout.wait-timeout_0_1 all__libc.libc_0_2 all__rustc-serialize.rustc-serialize_0_3 all__env_logger.env_logger_0_3 all__regex.regex_0_1 all__lazy_static.lazy_static_0_2 ];
+  };
+  "cargo-watch_3_1" = cargo-watch_3_1_1;
+  "cargo-watch_3" = cargo-watch_3_1_1;}

@@ -157,5 +157,17 @@ rec {
     hash = "9168a150d6641b8b81b76f258c683ad3cacabe01db1ae6117327357cde470dd2";
     deps = with allCrates; [  all__libc.libc_0_1 allegro allegro-sys allegro_util allegro_font-sys ];
   };
-  "allegro_font_0_0" = allegro_font_0_0_27;
-  "allegro_font_0" = allegro_font_0_0_27;}
+  allegro_font_0_0_28 = buildCratesLib {
+    name = "allegro_font";
+    version = "0.0.28";
+    hash = "fed6d85c5cacb1516137cd5313f7255c9410f63f9b8a8393e7f6832eb3beba37";
+    deps = with allCrates; [  allegro-sys all__libc.libc_0_1 allegro_util allegro_font-sys allegro ];
+  };
+  allegro_font_0_0_29 = buildCratesLib {
+    name = "allegro_font";
+    version = "0.0.29";
+    hash = "04b8caf6078ba4d41042290515b09512a54c696861e6cd476725bf4b28ad1575";
+    deps = with allCrates; [  allegro_util allegro_font-sys allegro allegro-sys all__libc.libc_0_1 ];
+  };
+  "allegro_font_0_0" = allegro_font_0_0_29;
+  "allegro_font_0" = allegro_font_0_0_29;}

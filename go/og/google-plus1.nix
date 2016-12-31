@@ -87,5 +87,17 @@ rec {
   };
   "google-plus1_0_1" = google-plus1_0_1_15;
   "google-plus1_0" = google-plus1_0_1_15;
-  "google-plus1_1_0" = google-plus1_1_0_0;
-  "google-plus1_1" = google-plus1_1_0_0;}
+  google-plus1_1_0_1 = buildCratesLib {
+    name = "google-plus1";
+    version = "1.0.1";
+    hash = "1c1a4d982cdf27b8e04f1d5bc749279f87d448b14fe9f80ef64a420602c2ef8e";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 url all__hyper.hyper_0_9 ];
+  };
+  google-plus1_1_0_2 = buildCratesLib {
+    name = "google-plus1";
+    version = "1.0.2";
+    hash = "c57885426f02284d98b72db12439261aa2826b06c7b46bba9bb821aa0c4dfc31";
+    deps = with allCrates; [  url all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+  };
+  "google-plus1_1_0" = google-plus1_1_0_2;
+  "google-plus1_1" = google-plus1_1_0_2;}

@@ -99,5 +99,17 @@ rec {
   };
   "google-admin1_directory_0_1" = google-admin1_directory_0_1_15;
   "google-admin1_directory_0" = google-admin1_directory_0_1_15;
-  "google-admin1_directory_1_0" = google-admin1_directory_1_0_0;
-  "google-admin1_directory_1" = google-admin1_directory_1_0_0;}
+  google-admin1_directory_1_0_1 = buildCratesLib {
+    name = "google-admin1_directory";
+    version = "1.0.1";
+    hash = "2eb9718f74bd115bb6047c5e010d13127a6a4108feb53107101fc826167cc041";
+    deps = with allCrates; [  url all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
+  };
+  google-admin1_directory_1_0_2 = buildCratesLib {
+    name = "google-admin1_directory";
+    version = "1.0.2";
+    hash = "04d40917e1130b37ba4e8f4295112a44a1ac945f5a2a284e6a9c63a6652db511";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url all__serde.serde_0_8 ];
+  };
+  "google-admin1_directory_1_0" = google-admin1_directory_1_0_2;
+  "google-admin1_directory_1" = google-admin1_directory_1_0_2;}

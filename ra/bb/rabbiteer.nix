@@ -26,5 +26,20 @@ rec {
     deps = with allCrates; [  all__rand.rand_0_3 all__clap.clap_2 all__conduit-mime-types.conduit-mime-types_0_7 all__rustc-serialize.rustc-serialize_0_3 all__url.url_1_2 all__amqp.amqp_0_0_20 ];
   };
   "rabbiteer_0_1" = rabbiteer_0_1_2;
+  rabbiteer_1_0_0 = buildCratesLib {
+    name = "rabbiteer";
+    version = "1.0.0";
+    hash = "f5bf1798c48da04d170d296b5e715b793258439ab8accdc0fa04c6172423d80b";
+    deps = with allCrates; [  all__url.url_1_2 all__amqp.amqp_0_0_20 all__rand.rand_0_3 all__clap.clap_2 all__conduit-mime-types.conduit-mime-types_0_7 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
   "rabbiteer_0_2" = rabbiteer_0_2_0;
-  "rabbiteer_0" = rabbiteer_0_2_0;}
+  "rabbiteer_0" = rabbiteer_0_2_0;
+  rabbiteer_1_1_0 = buildCratesLib {
+    name = "rabbiteer";
+    version = "1.1.0";
+    hash = "30b73604407a717e1595404cde6f6a5e21fe08da555efacd3011b500d66a2cde";
+    deps = with allCrates; [  all__amqp.amqp_0_0_20 all__rand.rand_0_3 all__rustc-serialize.rustc-serialize_0_3 all__url.url_1_2 all__clap.clap_2 all__conduit-mime-types.conduit-mime-types_0_7 ];
+  };
+  "rabbiteer_1_0" = rabbiteer_1_0_0;
+  "rabbiteer_1_1" = rabbiteer_1_1_0;
+  "rabbiteer_1" = rabbiteer_1_1_0;}

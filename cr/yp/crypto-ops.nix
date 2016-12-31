@@ -7,5 +7,11 @@ rec {
     hash = "2826e281ced6ba243a5471476892718a156966f6d5328676b28698b658e8428c";
     deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
   };
-  "crypto-ops_0_1" = crypto-ops_0_1_0;
-  "crypto-ops_0" = crypto-ops_0_1_0;}
+  crypto-ops_0_1_1 = buildCratesLib {
+    name = "crypto-ops";
+    version = "0.1.1";
+    hash = "a863ab067e5cb1e44c4b8430ba0df65c9778e86ca7017bcd8120fafeda18816f";
+    deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
+  };
+  "crypto-ops_0_1" = crypto-ops_0_1_1;
+  "crypto-ops_0" = crypto-ops_0_1_1;}

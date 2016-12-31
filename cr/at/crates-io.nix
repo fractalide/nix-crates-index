@@ -28,5 +28,12 @@ rec {
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__url.url_1_0 all__curl.curl_0_3 ];
   };
   "crates-io_0_3" = crates-io_0_3_0;
+  crates-io_0_5_0 = buildCratesLib {
+    name = "crates-io";
+    version = "0.5.0";
+    hash = "1739d2ca574588a526454009739f0f188ebe2df2db27c4669e3c3f252b0a962c";
+    deps = with allCrates; [  all__curl.curl_0_4 all__rustc-serialize.rustc-serialize_0_3 all__url.url_1_0 ];
+  };
   "crates-io_0_4" = crates-io_0_4_0;
-  "crates-io_0" = crates-io_0_4_0;}
+  "crates-io_0_5" = crates-io_0_5_0;
+  "crates-io_0" = crates-io_0_5_0;}

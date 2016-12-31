@@ -7,5 +7,17 @@ rec {
     hash = "3d49013c16e165a7c451c46e66d84dd48ef5dbdbced6ad0795a3b87c34bf5268";
     deps = with allCrates; [  ];
   };
-  "arrutil_0_1" = arrutil_0_1_0;
-  "arrutil_0" = arrutil_0_1_0;}
+  arrutil_0_1_1 = buildCratesLib {
+    name = "arrutil";
+    version = "0.1.1";
+    hash = "2cd208a615b3d825826dce9ecfe3dc706ded74704b74369c8ea79614da7327d0";
+    deps = with allCrates; [  ];
+  };
+  arrutil_0_1_2 = buildCratesLib {
+    name = "arrutil";
+    version = "0.1.2";
+    hash = "161cf650099ca1a49d30f8f27efba93ec4239a0370f81f64a5095fbb0ec4e1a8";
+    deps = with allCrates; [  ];
+  };
+  "arrutil_0_1" = arrutil_0_1_2;
+  "arrutil_0" = arrutil_0_1_2;}

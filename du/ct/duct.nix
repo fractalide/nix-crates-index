@@ -21,5 +21,18 @@ rec {
     deps = with allCrates; [  crossbeam libc ];
   };
   "duct_0_2" = duct_0_2_0;
+  duct_0_5_0 = buildCratesLib {
+    name = "duct";
+    version = "0.5.0";
+    hash = "e44ba5cafcd47b37703a3c27b91294ba88f0c8970b7773b24aecab5d920ebb0d";
+    deps = with allCrates; [  all__crossbeam.crossbeam_0_2 all__os_pipe.os_pipe_0_3 ];
+  };
   "duct_0_4" = duct_0_4_0;
-  "duct_0" = duct_0_4_0;}
+  duct_0_5_1 = buildCratesLib {
+    name = "duct";
+    version = "0.5.1";
+    hash = "54d8472f78165a1553734d6d0deac13b72d1f3e20ded8b109a91c9bd95d2af89";
+    deps = with allCrates; [  all__os_pipe.os_pipe_0_4 ];
+  };
+  "duct_0_5" = duct_0_5_1;
+  "duct_0" = duct_0_5_1;}

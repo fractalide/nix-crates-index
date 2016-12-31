@@ -45,5 +45,17 @@ rec {
   };
   "google-proximitybeacon1_beta1_0_1" = google-proximitybeacon1_beta1_0_1_15;
   "google-proximitybeacon1_beta1_0" = google-proximitybeacon1_beta1_0_1_15;
-  "google-proximitybeacon1_beta1_1_0" = google-proximitybeacon1_beta1_1_0_0;
-  "google-proximitybeacon1_beta1_1" = google-proximitybeacon1_beta1_1_0_0;}
+  google-proximitybeacon1_beta1_1_0_1 = buildCratesLib {
+    name = "google-proximitybeacon1_beta1";
+    version = "1.0.1";
+    hash = "e9b8d51d657abe38c199608e30da4b0ec8a77d258cee86ae6188fac8ba982b51";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 ];
+  };
+  google-proximitybeacon1_beta1_1_0_2 = buildCratesLib {
+    name = "google-proximitybeacon1_beta1";
+    version = "1.0.2";
+    hash = "5a409e53e964083f92c3fd6b0ab9e87ae9088ad6752677362a2fb1daea59ca22";
+    deps = with allCrates; [  all__serde.serde_0_8 url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
+  };
+  "google-proximitybeacon1_beta1_1_0" = google-proximitybeacon1_beta1_1_0_2;
+  "google-proximitybeacon1_beta1_1" = google-proximitybeacon1_beta1_1_0_2;}

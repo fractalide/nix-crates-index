@@ -51,5 +51,17 @@ rec {
   };
   "google-cloudbilling1_0_1" = google-cloudbilling1_0_1_15;
   "google-cloudbilling1_0" = google-cloudbilling1_0_1_15;
-  "google-cloudbilling1_1_0" = google-cloudbilling1_1_0_0;
-  "google-cloudbilling1_1" = google-cloudbilling1_1_0_0;}
+  google-cloudbilling1_1_0_1 = buildCratesLib {
+    name = "google-cloudbilling1";
+    version = "1.0.1";
+    hash = "a0de55efb4c75827a6a0e9bbcb84d593ff784370c6fb76f681973679ef6f2e5d";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde.serde_0_8 ];
+  };
+  google-cloudbilling1_1_0_2 = buildCratesLib {
+    name = "google-cloudbilling1";
+    version = "1.0.2";
+    hash = "0af0bf690bf08354b2020352cf8d7954dcad3edf223305d434a938f5c828dfc3";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 all__serde.serde_0_8 ];
+  };
+  "google-cloudbilling1_1_0" = google-cloudbilling1_1_0_2;
+  "google-cloudbilling1_1" = google-cloudbilling1_1_0_2;}

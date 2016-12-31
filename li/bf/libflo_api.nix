@@ -7,5 +7,11 @@ rec {
     hash = "8db1c39bb0afc5c298a1630f331bd9c6022dcb5d6c17825af6f6dd5a5db4053e";
     deps = with allCrates; [  all__libflo.libflo_0_1 all__serde.serde_0_8 all__error-chain.error-chain_0_7 all__libflo_func.libflo_func_0_1 all__lazy_static.lazy_static_0_2 all__mut_static.mut_static_0_1 all__serde_json.serde_json_0_8 all__libflo_dynamic_event.libflo_dynamic_event_0_1 all__libflo_module.libflo_module_0_1 all__libflo_error.libflo_error_0_1 ];
   };
-  "libflo_api_0_1" = libflo_api_0_1_1;
-  "libflo_api_0" = libflo_api_0_1_1;}
+  libflo_api_0_1_2 = buildCratesLib {
+    name = "libflo_api";
+    version = "0.1.2";
+    hash = "d4edcbdf2665ef0ffb64e693b43790ee2ec700fbd4debc24c6e056f3e224cddf";
+    deps = with allCrates; [  all__libflo_func.libflo_func_0_1 all__lazy_static.lazy_static_0_2 all__libflo_module.libflo_module_0_1 all__libflo_dynamic_event.libflo_dynamic_event_0_1 all__libflo.libflo_0_1 all__serde_json.serde_json_0_8 all__mut_static.mut_static_0_1 all__error-chain.error-chain_0_7 all__libflo_error.libflo_error_0_1 all__serde.serde_0_8 ];
+  };
+  "libflo_api_0_1" = libflo_api_0_1_2;
+  "libflo_api_0" = libflo_api_0_1_2;}

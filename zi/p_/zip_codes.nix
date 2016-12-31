@@ -7,5 +7,12 @@ rec {
     hash = "8d76ea5284f3c8ca1ab8a573f0de4d9d244f6d794d7b949733df57ca4c9179c2";
     deps = with allCrates; [  phf rustc-serialize phf_codegen csv ];
   };
+  zip_codes_0_1_0 = buildCratesLib {
+    name = "zip_codes";
+    version = "0.1.0";
+    hash = "644e0abaaee62c021b95c20b2fd1fb4f005f7d102c2a9891705f72371d9a5244";
+    deps = with allCrates; [  all__phf.phf_0_7 all__csv.csv_0_14 all__rustc-serialize.rustc-serialize_0_3 all__phf_codegen.phf_codegen_0_7 ];
+  };
   "zip_codes_0_0" = zip_codes_0_0_1;
-  "zip_codes_0" = zip_codes_0_0_1;}
+  "zip_codes_0_1" = zip_codes_0_1_0;
+  "zip_codes_0" = zip_codes_0_1_0;}

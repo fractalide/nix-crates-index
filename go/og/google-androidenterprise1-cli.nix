@@ -15,5 +15,17 @@ rec {
   };
   "google-androidenterprise1-cli_0_3" = google-androidenterprise1-cli_0_3_6;
   "google-androidenterprise1-cli_0" = google-androidenterprise1-cli_0_3_6;
-  "google-androidenterprise1-cli_1_0" = google-androidenterprise1-cli_1_0_0;
-  "google-androidenterprise1-cli_1" = google-androidenterprise1-cli_1_0_0;}
+  google-androidenterprise1-cli_1_0_1 = buildCratesLib {
+    name = "google-androidenterprise1-cli";
+    version = "1.0.1";
+    hash = "42762a41475af66741fee948db742a29f752c0f328239bc04b7b4b705050b26e";
+    deps = with allCrates; [  all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__clap.clap_2_0 all__mime.mime_0_2 ];
+  };
+  google-androidenterprise1-cli_1_0_2 = buildCratesLib {
+    name = "google-androidenterprise1-cli";
+    version = "1.0.2";
+    hash = "2360225bee1a580cafeadc11833a01e6f2097047d54707cc19384c9a6a44a8fa";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__strsim.strsim_0_5 all__serde.serde_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__clap.clap_2_0 ];
+  };
+  "google-androidenterprise1-cli_1_0" = google-androidenterprise1-cli_1_0_2;
+  "google-androidenterprise1-cli_1" = google-androidenterprise1-cli_1_0_2;}

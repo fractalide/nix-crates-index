@@ -91,5 +91,11 @@ rec {
     hash = "16c3e3945335626897852479099b16812307aed325893391d5bbdf4848fbe017";
     deps = with allCrates; [  ];
   };
-  "redox_syscall_0_1" = redox_syscall_0_1_14;
-  "redox_syscall_0" = redox_syscall_0_1_14;}
+  redox_syscall_0_1_15 = buildCratesLib {
+    name = "redox_syscall";
+    version = "0.1.15";
+    hash = "e7eb2b82792e682a12c47be5d1a968caeff8419473abc886cd9b7ff928300206";
+    deps = with allCrates; [  ];
+  };
+  "redox_syscall_0_1" = redox_syscall_0_1_15;
+  "redox_syscall_0" = redox_syscall_0_1_15;}

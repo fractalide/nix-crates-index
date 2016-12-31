@@ -99,5 +99,17 @@ rec {
   };
   "google-storage1_0_1" = google-storage1_0_1_15;
   "google-storage1_0" = google-storage1_0_1_15;
-  "google-storage1_1_0" = google-storage1_1_0_0;
-  "google-storage1_1" = google-storage1_1_0_0;}
+  google-storage1_1_0_1 = buildCratesLib {
+    name = "google-storage1";
+    version = "1.0.1";
+    hash = "a38b86dea52505c64488276c657604feff17bae357fa22fae3d95314e4f5d5a6";
+    deps = with allCrates; [  all__mime.mime_0_2 url all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
+  };
+  google-storage1_1_0_2 = buildCratesLib {
+    name = "google-storage1";
+    version = "1.0.2";
+    hash = "9126f1d9348a1ca0a0bf102f5aaa900e02d1941626e2d9d69012096484628e7a";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 url ];
+  };
+  "google-storage1_1_0" = google-storage1_1_0_2;
+  "google-storage1_1" = google-storage1_1_0_2;}

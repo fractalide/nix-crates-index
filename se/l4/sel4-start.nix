@@ -49,5 +49,11 @@ rec {
     hash = "fb5d7eb866899a0d81d4f3e0e9bcb75d007d83c9af1c3528d16830a4051ab029";
     deps = with allCrates; [  all__sel4-sys.sel4-sys_0_0_20 all__sel4.sel4_0_0_2 all__maplit.maplit_0_1 ];
   };
-  "sel4-start_0_0" = sel4-start_0_0_21;
-  "sel4-start_0" = sel4-start_0_0_21;}
+  sel4-start_0_0_23 = buildCratesLib {
+    name = "sel4-start";
+    version = "0.0.23";
+    hash = "05c9a0f115230c83a411bfd4e0202d8ea93b3b2e4f85372dfcd6af6d0f6a8842";
+    deps = with allCrates; [  all__sel4.sel4_0_0_7 all__sel4-sys.sel4-sys_0_0_23 all__maplit.maplit_0_1 ];
+  };
+  "sel4-start_0_0" = sel4-start_0_0_23;
+  "sel4-start_0" = sel4-start_0_0_23;}

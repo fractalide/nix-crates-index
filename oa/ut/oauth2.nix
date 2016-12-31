@@ -81,5 +81,12 @@ rec {
     deps = with allCrates; [  all__curl.curl_0_3 all__url.url_1_0 all__log.log_0_3 ];
   };
   "oauth2_0_1" = oauth2_0_1_10;
+  oauth2_0_3_0 = buildCratesLib {
+    name = "oauth2";
+    version = "0.3.0";
+    hash = "f4fcd990d45681b9eba5f4f3fa7d0371ec277f4e4380a94104d26aa4fae386fc";
+    deps = with allCrates; [  all__log.log_0_3 all__curl.curl_0_4 all__url.url_1_0 ];
+  };
   "oauth2_0_2" = oauth2_0_2_0;
-  "oauth2_0" = oauth2_0_2_0;}
+  "oauth2_0_3" = oauth2_0_3_0;
+  "oauth2_0" = oauth2_0_3_0;}

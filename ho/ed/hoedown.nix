@@ -144,5 +144,13 @@ rec {
   };
   "hoedown_4_0" = hoedown_4_0_0;
   "hoedown_4" = hoedown_4_0_0;
+  hoedown_6_0_0 = buildCratesLib {
+    name = "hoedown";
+    version = "6.0.0";
+    hash = "e5bde173f287441e7c95cf9f32b7b68f6e5fc1bbed35085be68216cf6cc955d5";
+    deps = with allCrates; [  all__bitflags.bitflags_0_5 all__libc.libc_0_2 all__gcc.gcc_0_3 ];
+  };
   "hoedown_5_0" = hoedown_5_0_0;
-  "hoedown_5" = hoedown_5_0_0;}
+  "hoedown_5" = hoedown_5_0_0;
+  "hoedown_6_0" = hoedown_6_0_0;
+  "hoedown_6" = hoedown_6_0_0;}

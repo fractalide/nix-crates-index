@@ -28,5 +28,18 @@ rec {
     deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde_derive.serde_derive_0_8 all__serde.serde_0_8 all__url.url_1_1 all__enum_primitive.enum_primitive_0_1 ];
   };
   "languageserver-types_0_4" = languageserver-types_0_4_0;
+  languageserver-types_0_6_0 = buildCratesLib {
+    name = "languageserver-types";
+    version = "0.6.0";
+    hash = "486133a0f97645c1bf9c7a2bf6780f6b5021a130d55f2d70fe57a7c3c846a651";
+    deps = with allCrates; [  all__enum_primitive.enum_primitive_0_1 all__serde_derive.serde_derive_0_8 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__url.url_1_1 ];
+  };
   "languageserver-types_0_5" = languageserver-types_0_5_0;
-  "languageserver-types_0" = languageserver-types_0_5_0;}
+  languageserver-types_0_6_1 = buildCratesLib {
+    name = "languageserver-types";
+    version = "0.6.1";
+    hash = "40501f7ff85a6b1f8435f5e4c99d3890662872678edc9249b88415e31523bfed";
+    deps = with allCrates; [  all__url.url_1_1 all__enum_primitive.enum_primitive_0_1 all__serde_json.serde_json_0_8 all__serde_derive.serde_derive_0_8 all__serde.serde_0_8 ];
+  };
+  "languageserver-types_0_6" = languageserver-types_0_6_1;
+  "languageserver-types_0" = languageserver-types_0_6_1;}

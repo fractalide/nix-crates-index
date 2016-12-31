@@ -99,5 +99,17 @@ rec {
   };
   "google-games1_0_1" = google-games1_0_1_15;
   "google-games1_0" = google-games1_0_1_15;
-  "google-games1_1_0" = google-games1_1_0_0;
-  "google-games1_1" = google-games1_1_0_0;}
+  google-games1_1_0_1 = buildCratesLib {
+    name = "google-games1";
+    version = "1.0.1";
+    hash = "30f3697af2b6c93afde10697d885010405eeba30fbb669f94f531f6e5848860c";
+    deps = with allCrates; [  url all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 ];
+  };
+  google-games1_1_0_2 = buildCratesLib {
+    name = "google-games1";
+    version = "1.0.2";
+    hash = "e4e26bbb16180169fbae2cf37df164962998c4fa172405654921cbf8bb15185c";
+    deps = with allCrates; [  url all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 ];
+  };
+  "google-games1_1_0" = google-games1_1_0_2;
+  "google-games1_1" = google-games1_1_0_2;}

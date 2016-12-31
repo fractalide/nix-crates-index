@@ -15,5 +15,17 @@ rec {
   };
   "google-gamesmanagement1_management-cli_0_3" = google-gamesmanagement1_management-cli_0_3_6;
   "google-gamesmanagement1_management-cli_0" = google-gamesmanagement1_management-cli_0_3_6;
-  "google-gamesmanagement1_management-cli_1_0" = google-gamesmanagement1_management-cli_1_0_0;
-  "google-gamesmanagement1_management-cli_1" = google-gamesmanagement1_management-cli_1_0_0;}
+  google-gamesmanagement1_management-cli_1_0_1 = buildCratesLib {
+    name = "google-gamesmanagement1_management-cli";
+    version = "1.0.1";
+    hash = "604b2b34a5007b0f6c3272cf83d9e3d5989e20bc572d2dec82b368a38fabddc9";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__clap.clap_2_0 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
+  };
+  google-gamesmanagement1_management-cli_1_0_2 = buildCratesLib {
+    name = "google-gamesmanagement1_management-cli";
+    version = "1.0.2";
+    hash = "0379e8dbe379920ecf10b2e026b558a754bb6657ce2f0e18759e398f54cdc9df";
+    deps = with allCrates; [  all__clap.clap_2_0 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__serde.serde_0_8 ];
+  };
+  "google-gamesmanagement1_management-cli_1_0" = google-gamesmanagement1_management-cli_1_0_2;
+  "google-gamesmanagement1_management-cli_1" = google-gamesmanagement1_management-cli_1_0_2;}

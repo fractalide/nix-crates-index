@@ -58,5 +58,11 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
   "fs2_0_3" = fs2_0_3_0;
-  "fs2_0_4" = fs2_0_4_0;
-  "fs2_0" = fs2_0_4_0;}
+  fs2_0_4_1 = buildCratesLib {
+    name = "fs2";
+    version = "0.4.1";
+    hash = "34edaee07555859dc13ca387e6ae05686bb4d0364c95d649b6dab959511f4baf";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "fs2_0_4" = fs2_0_4_1;
+  "fs2_0" = fs2_0_4_1;}

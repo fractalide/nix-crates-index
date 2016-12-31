@@ -7,5 +7,11 @@ rec {
     hash = "a1163bed52394b7f848c12e8f5e52e4911fe85bbdc69bf997021b439d5c9a919";
     deps = with allCrates; [  all__primal-sieve.primal-sieve_0_2 all__num.num_0_1 ];
   };
-  "NULL_1_0" = NULL_1_0_0;
-  "NULL_1" = NULL_1_0_0;}
+  NULL_1_0_1 = buildCratesLib {
+    name = "NULL";
+    version = "1.0.1";
+    hash = "e8694af24cd20a736d7e9d3fee40890a00e2c2325aedbf0a71f64feee976759e";
+    deps = with allCrates; [  all__num-integer.num-integer_0_1 all__num-bigint.num-bigint_0_1 all__num-traits.num-traits_0_1 all__primal-sieve.primal-sieve_0_2 ];
+  };
+  "NULL_1_0" = NULL_1_0_1;
+  "NULL_1" = NULL_1_0_1;}

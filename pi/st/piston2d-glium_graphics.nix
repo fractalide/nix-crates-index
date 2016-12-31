@@ -262,5 +262,11 @@ rec {
     deps = with allCrates; [  all__piston.piston_0_27 all__glium.glium_0_15 all__piston-texture.piston-texture_0_5 all__piston-shaders_graphics2d.piston-shaders_graphics2d_0_2 all__shader_version.shader_version_0_2 all__pistoncore-glutin_window.pistoncore-glutin_window_0_33 all__image.image_0_10 all__rusttype.rusttype_0_2 all__piston2d-graphics.piston2d-graphics_0_19 ];
   };
   "piston2d-glium_graphics_0_32" = piston2d-glium_graphics_0_32_1;
-  "piston2d-glium_graphics_0_33" = piston2d-glium_graphics_0_33_0;
-  "piston2d-glium_graphics_0" = piston2d-glium_graphics_0_33_0;}
+  piston2d-glium_graphics_0_33_1 = buildCratesLib {
+    name = "piston2d-glium_graphics";
+    version = "0.33.1";
+    hash = "6f9595d0b31f9f734c917b193a0e31f947172febc0fba2b2b3d6a5707bcde1a0";
+    deps = with allCrates; [  all__pistoncore-glutin_window.pistoncore-glutin_window_0_33 all__piston-shaders_graphics2d.piston-shaders_graphics2d_0_2 all__piston-texture.piston-texture_0_5 all__shader_version.shader_version_0_2 all__piston.piston_0_27 all__piston2d-graphics.piston2d-graphics_0_19 all__rusttype.rusttype_0_2 all__glium.glium_0_15 all__image.image_0_10 ];
+  };
+  "piston2d-glium_graphics_0_33" = piston2d-glium_graphics_0_33_1;
+  "piston2d-glium_graphics_0" = piston2d-glium_graphics_0_33_1;}

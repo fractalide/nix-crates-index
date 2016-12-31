@@ -105,5 +105,17 @@ rec {
   };
   "google-licensing1_0_1" = google-licensing1_0_1_15;
   "google-licensing1_0" = google-licensing1_0_1_15;
-  "google-licensing1_1_0" = google-licensing1_1_0_0;
-  "google-licensing1_1" = google-licensing1_1_0_0;}
+  google-licensing1_1_0_1 = buildCratesLib {
+    name = "google-licensing1";
+    version = "1.0.1";
+    hash = "0ef7f501c9e72292c410ce3ff50ca6aa918dfc772aede1e47759ce4569502df3";
+    deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+  };
+  google-licensing1_1_0_2 = buildCratesLib {
+    name = "google-licensing1";
+    version = "1.0.2";
+    hash = "eeded8ca1ccef0ff908a19bf0ef6020c37b146aae03cb360b006f53c2a8a09d6";
+    deps = with allCrates; [  all__mime.mime_0_2 url all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 ];
+  };
+  "google-licensing1_1_0" = google-licensing1_1_0_2;
+  "google-licensing1_1" = google-licensing1_1_0_2;}

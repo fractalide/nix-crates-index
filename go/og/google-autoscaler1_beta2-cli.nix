@@ -15,5 +15,17 @@ rec {
   };
   "google-autoscaler1_beta2-cli_0_3" = google-autoscaler1_beta2-cli_0_3_6;
   "google-autoscaler1_beta2-cli_0" = google-autoscaler1_beta2-cli_0_3_6;
-  "google-autoscaler1_beta2-cli_1_0" = google-autoscaler1_beta2-cli_1_0_0;
-  "google-autoscaler1_beta2-cli_1" = google-autoscaler1_beta2-cli_1_0_0;}
+  google-autoscaler1_beta2-cli_1_0_1 = buildCratesLib {
+    name = "google-autoscaler1_beta2-cli";
+    version = "1.0.1";
+    hash = "457e80e1c6fbfc35fe8935d560c583768a32e6789333fcb3924ce64ee742378e";
+    deps = with allCrates; [  all__serde.serde_0_8 all__clap.clap_2_0 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
+  };
+  google-autoscaler1_beta2-cli_1_0_2 = buildCratesLib {
+    name = "google-autoscaler1_beta2-cli";
+    version = "1.0.2";
+    hash = "d9aaa7f33234f7833bbac07286fff43cf9eb7e82dab030a1b3ec441957ab04c0";
+    deps = with allCrates; [  all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 all__clap.clap_2_0 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__strsim.strsim_0_5 ];
+  };
+  "google-autoscaler1_beta2-cli_1_0" = google-autoscaler1_beta2-cli_1_0_2;
+  "google-autoscaler1_beta2-cli_1" = google-autoscaler1_beta2-cli_1_0_2;}

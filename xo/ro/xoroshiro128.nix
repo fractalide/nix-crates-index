@@ -7,5 +7,12 @@ rec {
     hash = "8426417ae3d30073afc47e829dc7731388b8d86e653685c67368ee7cdb4eaf01";
     deps = with allCrates; [  all__rand.rand_0_3 ];
   };
+  xoroshiro128_0_2_0 = buildCratesLib {
+    name = "xoroshiro128";
+    version = "0.2.0";
+    hash = "eeb6b46a22f8418965c27c1ad5060ba5caa9618db3f76a5b6b9f2645909b7479";
+    deps = with allCrates; [  all__rand.rand_0_3 ];
+  };
   "xoroshiro128_0_1" = xoroshiro128_0_1_0;
-  "xoroshiro128_0" = xoroshiro128_0_1_0;}
+  "xoroshiro128_0_2" = xoroshiro128_0_2_0;
+  "xoroshiro128_0" = xoroshiro128_0_2_0;}

@@ -32,5 +32,12 @@ rec {
     hash = "b7dd5e2c23b4865c0a18458233337f66225a07ba8a67b74a70add29644eb377d";
     deps = with allCrates; [  all__getopts.getopts_0_2 all__sxd-document.sxd-document_0_2 all__peresil.peresil_0_3 ];
   };
+  sxd-xpath_0_3_0 = buildCratesLib {
+    name = "sxd-xpath";
+    version = "0.3.0";
+    hash = "dadb6ec6e1a26abcaeb038512dea9ac6de79b2546516af8cf694525a587e9b63";
+    deps = with allCrates; [  all__quick-error.quick-error_1_1 all__getopts.getopts_0_2 all__sxd-document.sxd-document_0_2 all__peresil.peresil_0_3 ];
+  };
   "sxd-xpath_0_2" = sxd-xpath_0_2_1;
-  "sxd-xpath_0" = sxd-xpath_0_2_1;}
+  "sxd-xpath_0_3" = sxd-xpath_0_3_0;
+  "sxd-xpath_0" = sxd-xpath_0_3_0;}

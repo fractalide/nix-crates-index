@@ -43,5 +43,11 @@ rec {
     hash = "5e373d6a84d97a92335c93cc0374b9cd2702eaf0a4fc1e8fb43b374d868b4937";
     deps = with allCrates; [  all__itertools.itertools_0_5 all__alpm.alpm_0_4 all__curl.curl_0_4 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__env_logger.env_logger_0_3 all__clap.clap_2 ];
   };
-  "arch-audit_0_1" = arch-audit_0_1_6;
-  "arch-audit_0" = arch-audit_0_1_6;}
+  arch-audit_0_1_7 = buildCratesLib {
+    name = "arch-audit";
+    version = "0.1.7";
+    hash = "ccf830268e5e6a5584a4b95384d5565eb5fb32323856433f68eb8a79137c0f7b";
+    deps = with allCrates; [  all__clap.clap_2 all__itertools.itertools_0_5 all__log.log_0_3 all__alpm.alpm_0_4 all__rustc-serialize.rustc-serialize_0_3 all__curl.curl_0_4 all__env_logger.env_logger_0_3 ];
+  };
+  "arch-audit_0_1" = arch-audit_0_1_7;
+  "arch-audit_0" = arch-audit_0_1_7;}

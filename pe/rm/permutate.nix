@@ -25,5 +25,12 @@ rec {
     hash = "a96a584a2502ad54ee0be4911b8ca1392a2825f8f976e464c6fd07116ef0e6b9";
     deps = with allCrates; [  ];
   };
+  permutate_0_2_0 = buildCratesLib {
+    name = "permutate";
+    version = "0.2.0";
+    hash = "1b4ba980af238a6d6fcc0df53fe0d7920376bc4ce2c6ce298992891a230b47a8";
+    deps = with allCrates; [  ];
+  };
   "permutate_0_1" = permutate_0_1_3;
-  "permutate_0" = permutate_0_1_3;}
+  "permutate_0_2" = permutate_0_2_0;
+  "permutate_0" = permutate_0_2_0;}

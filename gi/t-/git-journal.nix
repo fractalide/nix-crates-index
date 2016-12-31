@@ -91,5 +91,11 @@ rec {
     deps = with allCrates; [  all__nom.nom_2 all__rustc-serialize.rustc-serialize_0 all__clap.clap_2 all__chrono.chrono_0 all__lazy_static.lazy_static_0 all__rayon.rayon_0 all__toml.toml_0 all__log.log_0 all__git2.git2_0 all__term.term_0 all__regex.regex_0 ];
   };
   "git-journal_1_2" = git-journal_1_2_0;
-  "git-journal_1_3" = git-journal_1_3_0;
-  "git-journal_1" = git-journal_1_3_0;}
+  git-journal_1_3_1 = buildCratesLib {
+    name = "git-journal";
+    version = "1.3.1";
+    hash = "4d6dd2f12bff94e0d4cd04f1a6d740dc4b4597ae972466971e2f0aff8ddcf63f";
+    deps = with allCrates; [  all__toml.toml_0 all__rustc-serialize.rustc-serialize_0 all__lazy_static.lazy_static_0 all__regex.regex_0 all__mowl.mowl_1 all__git2.git2_0 all__rayon.rayon_0 all__nom.nom_2 all__chrono.chrono_0 all__log.log_0 all__clap.clap_2 all__term.term_0 ];
+  };
+  "git-journal_1_3" = git-journal_1_3_1;
+  "git-journal_1" = git-journal_1_3_1;}

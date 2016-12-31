@@ -7,5 +7,17 @@ rec {
     hash = "d5f741b1bd6449943cffe2cedb3d869bee0a8f5015c5dd433044a8d293c6f756";
     deps = with allCrates; [  all__yup-hyper-mock.yup-hyper-mock_1_0 all__strsim.strsim_0_5 all__clap.clap_2_0 all__hyper.hyper_0_9 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
   };
-  "google-firebasedynamiclinks1-cli_1_0" = google-firebasedynamiclinks1-cli_1_0_0;
-  "google-firebasedynamiclinks1-cli_1" = google-firebasedynamiclinks1-cli_1_0_0;}
+  google-firebasedynamiclinks1-cli_1_0_1 = buildCratesLib {
+    name = "google-firebasedynamiclinks1-cli";
+    version = "1.0.1";
+    hash = "c8e5c09e55e26c3d67985717e20f8afaa610e7dd7a34f17700bbe6e4a9892d38";
+    deps = with allCrates; [  all__clap.clap_2_0 all__serde_json.serde_json_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde.serde_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 all__strsim.strsim_0_5 ];
+  };
+  google-firebasedynamiclinks1-cli_1_0_2 = buildCratesLib {
+    name = "google-firebasedynamiclinks1-cli";
+    version = "1.0.2";
+    hash = "4133c3e84634f3845feafc922b62530e75904c0975da7e8bdcb13252308ec309";
+    deps = with allCrates; [  all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 all__clap.clap_2_0 all__serde_json.serde_json_0_8 ];
+  };
+  "google-firebasedynamiclinks1-cli_1_0" = google-firebasedynamiclinks1-cli_1_0_2;
+  "google-firebasedynamiclinks1-cli_1" = google-firebasedynamiclinks1-cli_1_0_2;}

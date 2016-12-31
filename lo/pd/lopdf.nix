@@ -7,5 +7,11 @@ rec {
     hash = "df8bda2bc6bcfea416141cd68af09fd6741a4457bd7667795e047114c08f4ef2";
     deps = with allCrates; [  all__nom.nom_2_0_1 ];
   };
-  "lopdf_0_1" = lopdf_0_1_0;
-  "lopdf_0" = lopdf_0_1_0;}
+  lopdf_0_1_1 = buildCratesLib {
+    name = "lopdf";
+    version = "0.1.1";
+    hash = "396de58ee9eea9a92444892d3c2c85bbb0a29d160901fff1e043089747fcb862";
+    deps = with allCrates; [  all__nom.nom_2_0_1 ];
+  };
+  "lopdf_0_1" = lopdf_0_1_1;
+  "lopdf_0" = lopdf_0_1_1;}

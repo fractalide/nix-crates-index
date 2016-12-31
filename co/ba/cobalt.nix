@@ -93,5 +93,12 @@ rec {
     deps = with allCrates; [  all__rand.rand_0_3 all__clock_ticks.clock_ticks_0_1 ];
   };
   "cobalt_0_10" = cobalt_0_10_0;
+  cobalt_0_13_0 = buildCratesLib {
+    name = "cobalt";
+    version = "0.13.0";
+    hash = "f7609ef6127035a38160cb6bc3dc5fe1b507668824f3e08874ac315802bf5645";
+    deps = with allCrates; [  all__clock_ticks.clock_ticks_0_1 all__rand.rand_0_3 ];
+  };
   "cobalt_0_11" = cobalt_0_11_0;
-  "cobalt_0" = cobalt_0_11_0;}
+  "cobalt_0_13" = cobalt_0_13_0;
+  "cobalt_0" = cobalt_0_13_0;}

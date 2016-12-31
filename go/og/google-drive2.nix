@@ -99,5 +99,17 @@ rec {
   };
   "google-drive2_0_1" = google-drive2_0_1_15;
   "google-drive2_0" = google-drive2_0_1_15;
-  "google-drive2_1_0" = google-drive2_1_0_0;
-  "google-drive2_1" = google-drive2_1_0_0;}
+  google-drive2_1_0_1 = buildCratesLib {
+    name = "google-drive2";
+    version = "1.0.1";
+    hash = "a3618a74c54572f31f73e3e6dee59b2e3bc4d1758ca9c47724b46035d716de6f";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 url ];
+  };
+  google-drive2_1_0_2 = buildCratesLib {
+    name = "google-drive2";
+    version = "1.0.2";
+    hash = "05fa45a1ef306994f1a6e6fee04c798eea2953b99436cd5f05c0ab8a9816285f";
+    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 ];
+  };
+  "google-drive2_1_0" = google-drive2_1_0_2;
+  "google-drive2_1" = google-drive2_1_0_2;}

@@ -151,5 +151,13 @@ rec {
   };
   "jsonrpc-core_3_0" = jsonrpc-core_3_0_2;
   "jsonrpc-core_3" = jsonrpc-core_3_0_2;
+  jsonrpc-core_5_0_0 = buildCratesLib {
+    name = "jsonrpc-core";
+    version = "5.0.0";
+    hash = "9fca8340a33a72bb3063b961f1c19afc4d7fd4f6be2db6861900bf9132f43010";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__log.log_0_3 all__futures.futures_0_1 ];
+  };
   "jsonrpc-core_4_0" = jsonrpc-core_4_0_0;
-  "jsonrpc-core_4" = jsonrpc-core_4_0_0;}
+  "jsonrpc-core_4" = jsonrpc-core_4_0_0;
+  "jsonrpc-core_5_0" = jsonrpc-core_5_0_0;
+  "jsonrpc-core_5" = jsonrpc-core_5_0_0;}

@@ -32,5 +32,12 @@ rec {
     hash = "a95cdad7c132487d60fe61581db7fd7e2fa91519f7a9ef7d41e42e0b8dcac2cc";
     deps = with allCrates; [  all__digest.digest_0_3 all__byte-tools.byte-tools_0_1 all__generic-array.generic-array_0_5 all__digest-buffer.digest-buffer_0_1 ];
   };
+  streebog_0_3_0 = buildCratesLib {
+    name = "streebog";
+    version = "0.3.0";
+    hash = "0e5c6eef5124d0fd452c3391c38dd9f6ce851a656341826cd846608d4aedb6e2";
+    deps = with allCrates; [  all__generic-array.generic-array_0_6 all__digest.digest_0_4 all__byte-tools.byte-tools_0_1 all__digest-buffer.digest-buffer_0_2 ];
+  };
   "streebog_0_2" = streebog_0_2_2;
-  "streebog_0" = streebog_0_2_2;}
+  "streebog_0_3" = streebog_0_3_0;
+  "streebog_0" = streebog_0_3_0;}

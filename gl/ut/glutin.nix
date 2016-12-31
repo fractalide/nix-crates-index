@@ -416,5 +416,11 @@ rec {
     deps = with allCrates; [  all__shared_library.shared_library_0_1 all__winit.winit_0_5 all__lazy_static.lazy_static_0_2 all__libc.libc_0_2 all__gl_generator.gl_generator_0_5 all__wayland-client.wayland-client_0_7 all__x11-dl.x11-dl_2_4 all__osmesa-sys.osmesa-sys_0_1 all__objc.objc_0_2 all__android_glue.android_glue_0_2 ];
   };
   "glutin_0_6" = glutin_0_6_2;
-  "glutin_0_7" = glutin_0_7_0;
-  "glutin_0" = glutin_0_7_0;}
+  glutin_0_7_1 = buildCratesLib {
+    name = "glutin";
+    version = "0.7.1";
+    hash = "2e9ccb9cbbf1bc2599688293030c51a51aa9c860c37989179c3ed1f9fc51a11c";
+    deps = with allCrates; [  all__winit.winit_0_5 all__shared_library.shared_library_0_1 all__lazy_static.lazy_static_0_2 all__libc.libc_0_2 all__gl_generator.gl_generator_0_5 all__android_glue.android_glue_0_2 all__wayland-client.wayland-client_0_7 all__x11-dl.x11-dl_2_4 all__osmesa-sys.osmesa-sys_0_1 all__objc.objc_0_2 ];
+  };
+  "glutin_0_7" = glutin_0_7_1;
+  "glutin_0" = glutin_0_7_1;}

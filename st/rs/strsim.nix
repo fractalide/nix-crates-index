@@ -89,5 +89,12 @@ rec {
     hash = "67f84c44fbb2f91db7fef94554e6b2ac05909c9c0b0bc23bb98d3a1aebfe7f7c";
     deps = with allCrates; [  ];
   };
+  strsim_0_6_0 = buildCratesLib {
+    name = "strsim";
+    version = "0.6.0";
+    hash = "b4d15c810519a91cf877e7e36e63fe068815c678181439f2f29e2562147c3694";
+    deps = with allCrates; [  ];
+  };
   "strsim_0_5" = strsim_0_5_2;
-  "strsim_0" = strsim_0_5_2;}
+  "strsim_0_6" = strsim_0_6_0;
+  "strsim_0" = strsim_0_6_0;}

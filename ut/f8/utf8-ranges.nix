@@ -25,5 +25,13 @@ rec {
     hash = "a1ca13c08c41c9c3e04224ed9ff80461d97e121589ff27c753a16cb10830ae0f";
     deps = with allCrates; [  ];
   };
+  utf8-ranges_1_0_0 = buildCratesLib {
+    name = "utf8-ranges";
+    version = "1.0.0";
+    hash = "662fab6525a98beff2921d7f61a39e7d59e0b425ebc7d0d9e66d316e55124122";
+    deps = with allCrates; [  ];
+  };
   "utf8-ranges_0_1" = utf8-ranges_0_1_3;
-  "utf8-ranges_0" = utf8-ranges_0_1_3;}
+  "utf8-ranges_0" = utf8-ranges_0_1_3;
+  "utf8-ranges_1_0" = utf8-ranges_1_0_0;
+  "utf8-ranges_1" = utf8-ranges_1_0_0;}

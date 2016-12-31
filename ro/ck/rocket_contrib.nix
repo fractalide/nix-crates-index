@@ -7,5 +7,23 @@ rec {
     hash = "7bc36e044d02db3a8bba2473c32304f5bd5abf416fe0ffcc38d1ac8cd0185306";
     deps = with allCrates; [  all__rocket.rocket_0_1 all__log.log_0_3 ];
   };
-  "rocket_contrib_0_1" = rocket_contrib_0_1_0;
-  "rocket_contrib_0" = rocket_contrib_0_1_0;}
+  rocket_contrib_0_1_1 = buildCratesLib {
+    name = "rocket_contrib";
+    version = "0.1.1";
+    hash = "cbebc8cc636604ca03d7b256f3b93462aa9af0d5934420ece94582ee134da89d";
+    deps = with allCrates; [  all__rocket.rocket_0_1 all__log.log_0_3 ];
+  };
+  rocket_contrib_0_1_2 = buildCratesLib {
+    name = "rocket_contrib";
+    version = "0.1.2";
+    hash = "3668c11ace6322021e4ceb093f51b679815a9fc5418c76f27308483f22158f67";
+    deps = with allCrates; [  all__log.log_0_3 all__rocket.rocket_0_1 ];
+  };
+  rocket_contrib_0_1_3 = buildCratesLib {
+    name = "rocket_contrib";
+    version = "0.1.3";
+    hash = "9891116215a591e15daa755af0004e8ede19ce725e2eec08778cafbcc95bde71";
+    deps = with allCrates; [  all__log.log_0_3 all__rocket.rocket_0_1 ];
+  };
+  "rocket_contrib_0_1" = rocket_contrib_0_1_3;
+  "rocket_contrib_0" = rocket_contrib_0_1_3;}

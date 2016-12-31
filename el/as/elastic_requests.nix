@@ -13,5 +13,23 @@ rec {
     hash = "fea2f28fb4c93816a9655108d8c6c360c8df883e5cbaeae5eb837448ec7f8521";
     deps = with allCrates; [  ];
   };
-  "elastic_requests_0_1" = elastic_requests_0_1_1;
-  "elastic_requests_0" = elastic_requests_0_1_1;}
+  elastic_requests_0_1_2 = buildCratesLib {
+    name = "elastic_requests";
+    version = "0.1.2";
+    hash = "3b78c0cb4b768f24720eb930a92317fb4433b94cc9aa59854dc1d09516887802";
+    deps = with allCrates; [  ];
+  };
+  elastic_requests_0_1_3 = buildCratesLib {
+    name = "elastic_requests";
+    version = "0.1.3";
+    hash = "0ab81482c63381fc24ec5654a9c54be04ddef7c5c23366f06a08b3f055e11fbc";
+    deps = with allCrates; [  ];
+  };
+  elastic_requests_0_1_4 = buildCratesLib {
+    name = "elastic_requests";
+    version = "0.1.4";
+    hash = "6a40a0aefb130d04e163c9925daa1eab9a7bc71d3e846b393520850e74116cd4";
+    deps = with allCrates; [  ];
+  };
+  "elastic_requests_0_1" = elastic_requests_0_1_4;
+  "elastic_requests_0" = elastic_requests_0_1_4;}

@@ -7,5 +7,17 @@ rec {
     hash = "8d6d4c901a4ab84dcb1eda5f2f957302c7ea269a8e4e3c09faed0691cd6d356a";
     deps = with allCrates; [  all__serde.serde_0_8 url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
   };
-  "google-dfareporting2d7_1_0" = google-dfareporting2d7_1_0_0;
-  "google-dfareporting2d7_1" = google-dfareporting2d7_1_0_0;}
+  google-dfareporting2d7_1_0_1 = buildCratesLib {
+    name = "google-dfareporting2d7";
+    version = "1.0.1";
+    hash = "0bca4382fddfa854e00d61ac1421e200d8ab4c3dae3fde66c5b35c4515582c23";
+    deps = with allCrates; [  url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 ];
+  };
+  google-dfareporting2d7_1_0_2 = buildCratesLib {
+    name = "google-dfareporting2d7";
+    version = "1.0.2";
+    hash = "b0b5ba975de32bca8532da3f14c3dc2b48b9869cf42b4e9ca97c644f457f9f3c";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url ];
+  };
+  "google-dfareporting2d7_1_0" = google-dfareporting2d7_1_0_2;
+  "google-dfareporting2d7_1" = google-dfareporting2d7_1_0_2;}

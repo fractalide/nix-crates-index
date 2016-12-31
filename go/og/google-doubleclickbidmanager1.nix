@@ -87,5 +87,17 @@ rec {
   };
   "google-doubleclickbidmanager1_0_1" = google-doubleclickbidmanager1_0_1_15;
   "google-doubleclickbidmanager1_0" = google-doubleclickbidmanager1_0_1_15;
-  "google-doubleclickbidmanager1_1_0" = google-doubleclickbidmanager1_1_0_0;
-  "google-doubleclickbidmanager1_1" = google-doubleclickbidmanager1_1_0_0;}
+  google-doubleclickbidmanager1_1_0_1 = buildCratesLib {
+    name = "google-doubleclickbidmanager1";
+    version = "1.0.1";
+    hash = "b1b04721585c5f572aa18cdbad8069015772546601fa9ddd48725a240959570b";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 url all__serde_json.serde_json_0_8 ];
+  };
+  google-doubleclickbidmanager1_1_0_2 = buildCratesLib {
+    name = "google-doubleclickbidmanager1";
+    version = "1.0.2";
+    hash = "982ade1804072e26ae9cd558908e647dbd2cda695e8f52fca798bed849207d5c";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url all__serde.serde_0_8 ];
+  };
+  "google-doubleclickbidmanager1_1_0" = google-doubleclickbidmanager1_1_0_2;
+  "google-doubleclickbidmanager1_1" = google-doubleclickbidmanager1_1_0_2;}

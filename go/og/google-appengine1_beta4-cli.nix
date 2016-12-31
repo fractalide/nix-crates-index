@@ -15,5 +15,17 @@ rec {
   };
   "google-appengine1_beta4-cli_0_3" = google-appengine1_beta4-cli_0_3_6;
   "google-appengine1_beta4-cli_0" = google-appengine1_beta4-cli_0_3_6;
-  "google-appengine1_beta4-cli_1_0" = google-appengine1_beta4-cli_1_0_0;
-  "google-appengine1_beta4-cli_1" = google-appengine1_beta4-cli_1_0_0;}
+  google-appengine1_beta4-cli_1_0_1 = buildCratesLib {
+    name = "google-appengine1_beta4-cli";
+    version = "1.0.1";
+    hash = "469af16110b5e5ab73af524b78ab3ca0c1e8c2c631e278ff222329bb6c45621e";
+    deps = with allCrates; [  all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__strsim.strsim_0_5 all__clap.clap_2_0 all__serde.serde_0_8 all__hyper.hyper_0_9 ];
+  };
+  google-appengine1_beta4-cli_1_0_2 = buildCratesLib {
+    name = "google-appengine1_beta4-cli";
+    version = "1.0.2";
+    hash = "f1efa8e765887fb28b4ccc6ca257ebf5c5a2dec296ea041d9a27b5fecf76ead8";
+    deps = with allCrates; [  all__strsim.strsim_0_5 all__serde_json.serde_json_0_8 all__clap.clap_2_0 all__serde.serde_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 all__mime.mime_0_2 ];
+  };
+  "google-appengine1_beta4-cli_1_0" = google-appengine1_beta4-cli_1_0_2;
+  "google-appengine1_beta4-cli_1" = google-appengine1_beta4-cli_1_0_2;}

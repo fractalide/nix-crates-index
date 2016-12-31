@@ -25,5 +25,11 @@ rec {
     hash = "1a28e14e74f9a94d9b0f8613abd15eead6082d14633afb62f6eafac39ddd9ae3";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__rustc-serialize.rustc-serialize_0_3 all__quick-error.quick-error_1_1 ];
   };
-  "string-intern_0_1" = string-intern_0_1_3;
-  "string-intern_0" = string-intern_0_1_3;}
+  string-intern_0_1_4 = buildCratesLib {
+    name = "string-intern";
+    version = "0.1.4";
+    hash = "363dc49709e6da19a297e1cc3970f6105a333f36ddc903480a280be39985f30a";
+    deps = with allCrates; [  all__quick-error.quick-error_1_1 all__lazy_static.lazy_static_0_2 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "string-intern_0_1" = string-intern_0_1_4;
+  "string-intern_0" = string-intern_0_1_4;}

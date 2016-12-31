@@ -70,5 +70,11 @@ rec {
     hash = "a3046a8f3e7d24fba7ec83ffcb0e03f4825041ca270c78a63f2ce1049dc20e52";
     deps = with allCrates; [  all__wayland-client.wayland-client_0_7 all__byteorder.byteorder_0_5 all__tempfile.tempfile_2_0 ];
   };
-  "wayland-window_0_4" = wayland-window_0_4_2;
-  "wayland-window_0" = wayland-window_0_4_2;}
+  wayland-window_0_4_3 = buildCratesLib {
+    name = "wayland-window";
+    version = "0.4.3";
+    hash = "58f705c7b57886d3e708c02ba9b26924f6db6f869aa108bf621731a7d900799f";
+    deps = with allCrates; [  all__wayland-client.wayland-client_0_7 all__tempfile.tempfile_2_0 all__byteorder.byteorder_0_5 ];
+  };
+  "wayland-window_0_4" = wayland-window_0_4_3;
+  "wayland-window_0" = wayland-window_0_4_3;}

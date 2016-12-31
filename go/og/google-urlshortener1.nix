@@ -105,5 +105,17 @@ rec {
   };
   "google-urlshortener1_0_1" = google-urlshortener1_0_1_15;
   "google-urlshortener1_0" = google-urlshortener1_0_1_15;
-  "google-urlshortener1_1_0" = google-urlshortener1_1_0_0;
-  "google-urlshortener1_1" = google-urlshortener1_1_0_0;}
+  google-urlshortener1_1_0_1 = buildCratesLib {
+    name = "google-urlshortener1";
+    version = "1.0.1";
+    hash = "f11ad4b1b0445ba36905ae19d6a821d625c277ff33408c1a2a02e62e6756ca32";
+    deps = with allCrates; [  all__mime.mime_0_2 all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 all__serde.serde_0_8 ];
+  };
+  google-urlshortener1_1_0_2 = buildCratesLib {
+    name = "google-urlshortener1";
+    version = "1.0.2";
+    hash = "495ae280493df6b5b715cb5e567f928626a2c9bfe31086d42a766c27c2dd20c6";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 url ];
+  };
+  "google-urlshortener1_1_0" = google-urlshortener1_1_0_2;
+  "google-urlshortener1_1" = google-urlshortener1_1_0_2;}

@@ -51,5 +51,17 @@ rec {
   };
   "google-partners2_0_1" = google-partners2_0_1_15;
   "google-partners2_0" = google-partners2_0_1_15;
-  "google-partners2_1_0" = google-partners2_1_0_0;
-  "google-partners2_1" = google-partners2_1_0_0;}
+  google-partners2_1_0_1 = buildCratesLib {
+    name = "google-partners2";
+    version = "1.0.1";
+    hash = "d552a00febd961dfdd929dd79cd406c62a8b22917a89cd7ef2ebd7532ff6a621";
+    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 ];
+  };
+  google-partners2_1_0_2 = buildCratesLib {
+    name = "google-partners2";
+    version = "1.0.2";
+    hash = "b53b0378f5a109ee3b34d7cc3605e0d5b8e26d7126ed0ec9d70262cb064b145e";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 all__serde_json.serde_json_0_8 url ];
+  };
+  "google-partners2_1_0" = google-partners2_1_0_2;
+  "google-partners2_1" = google-partners2_1_0_2;}

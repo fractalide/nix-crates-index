@@ -13,5 +13,18 @@ rec {
     hash = "3219d6c7345467797c84082ccfa0d8cafec16c00fbdabf5d9a1584fc7564a147";
     deps = with allCrates; [  ];
   };
+  shelf_0_2_0 = buildCratesLib {
+    name = "shelf";
+    version = "0.2.0";
+    hash = "a28c4302258d3779e1d17ba9d68c9b4b2e60e43c9e384d4a1c8dece1cb987032";
+    deps = with allCrates; [  ];
+  };
   "shelf_0_1" = shelf_0_1_1;
-  "shelf_0" = shelf_0_1_1;}
+  shelf_0_2_1 = buildCratesLib {
+    name = "shelf";
+    version = "0.2.1";
+    hash = "0c7dde5a67ebb8f3c235dad2e27f746cde8019d058530627fec2846ef61b8f7d";
+    deps = with allCrates; [  ];
+  };
+  "shelf_0_2" = shelf_0_2_1;
+  "shelf_0" = shelf_0_2_1;}

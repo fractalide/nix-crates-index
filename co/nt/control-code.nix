@@ -215,5 +215,42 @@ rec {
     hash = "40058f8ac267a1d679ab16825b0a343bb0188c7b8b45e617155efa2425d6bb9a";
     deps = with allCrates; [  all__nom.nom_2_0 all__smallvec.smallvec_0_2 ];
   };
-  "control-code_0_5" = control-code_0_5_3;
-  "control-code_0" = control-code_0_5_3;}
+  control-code_0_5_4 = buildCratesLib {
+    name = "control-code";
+    version = "0.5.4";
+    hash = "6dec8d296f842f6146d54e94a23eaac202be834cc6bfa3a9ddba37f4adf6d9c6";
+    deps = with allCrates; [  all__smallvec.smallvec_0_2 all__nom.nom_2_0 ];
+  };
+  control-code_0_5_5 = buildCratesLib {
+    name = "control-code";
+    version = "0.5.5";
+    hash = "176a48f980bb976aabd33a2ff3c8b55c836fc258953983b32ec8c35b74e9fe4a";
+    deps = with allCrates; [  all__nom.nom_2_0 all__smallvec.smallvec_0_2 ];
+  };
+  control-code_0_5_6 = buildCratesLib {
+    name = "control-code";
+    version = "0.5.6";
+    hash = "1cebd548a2865dc1d4f29dc26ec7676d4816f62c1d39000e2345760e10246ec1";
+    deps = with allCrates; [  all__nom.nom_2_0 all__smallvec.smallvec_0_2 ];
+  };
+  control-code_0_5_7 = buildCratesLib {
+    name = "control-code";
+    version = "0.5.7";
+    hash = "05eae0f4b79894c055eba2cbab01e4c6c87802365b7543c6f590fef211196f3f";
+    deps = with allCrates; [  all__smallvec.smallvec_0_2 all__nom.nom_2_0 ];
+  };
+  control-code_0_6_0 = buildCratesLib {
+    name = "control-code";
+    version = "0.6.0";
+    hash = "7face4f79e406b54f908b07e94cbac09e93665e085c9cdeb2287dc2cafb77f38";
+    deps = with allCrates; [  all__smallvec.smallvec_0_2 all__nom.nom_2_0 ];
+  };
+  "control-code_0_5" = control-code_0_5_7;
+  control-code_0_6_1 = buildCratesLib {
+    name = "control-code";
+    version = "0.6.1";
+    hash = "d752ee466768d6d59a6d56ffce90df2c16630dab3c6fe406a6580489a1060dee";
+    deps = with allCrates; [  all__nom.nom_2_0 all__smallvec.smallvec_0_2 ];
+  };
+  "control-code_0_6" = control-code_0_6_1;
+  "control-code_0" = control-code_0_6_1;}

@@ -105,5 +105,17 @@ rec {
   };
   "google-spectrum1_explorer_0_1" = google-spectrum1_explorer_0_1_15;
   "google-spectrum1_explorer_0" = google-spectrum1_explorer_0_1_15;
-  "google-spectrum1_explorer_1_0" = google-spectrum1_explorer_1_0_0;
-  "google-spectrum1_explorer_1" = google-spectrum1_explorer_1_0_0;}
+  google-spectrum1_explorer_1_0_1 = buildCratesLib {
+    name = "google-spectrum1_explorer";
+    version = "1.0.1";
+    hash = "ee514e0703042bf2a11a11dd0ca1f0740cb9e0e15b459ac6b8bf94baa280692e";
+    deps = with allCrates; [  url all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__hyper.hyper_0_9 ];
+  };
+  google-spectrum1_explorer_1_0_2 = buildCratesLib {
+    name = "google-spectrum1_explorer";
+    version = "1.0.2";
+    hash = "1152d72c0f2e93c1d748f1a9b501bb0274019132792397a27a00a53a4376367c";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 url ];
+  };
+  "google-spectrum1_explorer_1_0" = google-spectrum1_explorer_1_0_2;
+  "google-spectrum1_explorer_1" = google-spectrum1_explorer_1_0_2;}

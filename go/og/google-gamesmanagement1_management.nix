@@ -99,5 +99,17 @@ rec {
   };
   "google-gamesmanagement1_management_0_1" = google-gamesmanagement1_management_0_1_15;
   "google-gamesmanagement1_management_0" = google-gamesmanagement1_management_0_1_15;
-  "google-gamesmanagement1_management_1_0" = google-gamesmanagement1_management_1_0_0;
-  "google-gamesmanagement1_management_1" = google-gamesmanagement1_management_1_0_0;}
+  google-gamesmanagement1_management_1_0_1 = buildCratesLib {
+    name = "google-gamesmanagement1_management";
+    version = "1.0.1";
+    hash = "f64364d66bb00616dc44182e26c134ee820e85df1866a6b877f47c13735c78ff";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__serde.serde_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 ];
+  };
+  google-gamesmanagement1_management_1_0_2 = buildCratesLib {
+    name = "google-gamesmanagement1_management";
+    version = "1.0.2";
+    hash = "353feb15135bac52da1760ec7b54141e9fb24029b1e0b1273648fc743db5b5c8";
+    deps = with allCrates; [  all__serde.serde_0_8 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
+  };
+  "google-gamesmanagement1_management_1_0" = google-gamesmanagement1_management_1_0_2;
+  "google-gamesmanagement1_management_1" = google-gamesmanagement1_management_1_0_2;}

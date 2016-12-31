@@ -105,5 +105,17 @@ rec {
   };
   "google-taskqueue1_beta2_0_1" = google-taskqueue1_beta2_0_1_15;
   "google-taskqueue1_beta2_0" = google-taskqueue1_beta2_0_1_15;
-  "google-taskqueue1_beta2_1_0" = google-taskqueue1_beta2_1_0_0;
-  "google-taskqueue1_beta2_1" = google-taskqueue1_beta2_1_0_0;}
+  google-taskqueue1_beta2_1_0_1 = buildCratesLib {
+    name = "google-taskqueue1_beta2";
+    version = "1.0.1";
+    hash = "cdd01d7e45503d3cdef3a672964a0cfb8e3da9d29bcd72c01bb0abdb60544880";
+    deps = with allCrates; [  all__hyper.hyper_0_9 url all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
+  };
+  google-taskqueue1_beta2_1_0_2 = buildCratesLib {
+    name = "google-taskqueue1_beta2";
+    version = "1.0.2";
+    hash = "bd962a7ec859d00d05335a3f2faea184c6e06415f469e09455c644b3d7e57d3a";
+    deps = with allCrates; [  url all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
+  };
+  "google-taskqueue1_beta2_1_0" = google-taskqueue1_beta2_1_0_2;
+  "google-taskqueue1_beta2_1" = google-taskqueue1_beta2_1_0_2;}

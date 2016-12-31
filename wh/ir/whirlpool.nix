@@ -21,5 +21,12 @@ rec {
     deps = with allCrates; [  all__generic-array.generic-array_0_5 all__byte-tools.byte-tools_0_1 all__digest-buffer.digest-buffer_0_1 all__digest.digest_0_3 ];
   };
   "whirlpool_0_2" = whirlpool_0_2_0;
+  whirlpool_0_4_0 = buildCratesLib {
+    name = "whirlpool";
+    version = "0.4.0";
+    hash = "b3911b8baf1042cd04168d97bc5c16a67cfbd1a34bf17cf256c3d1ea52959378";
+    deps = with allCrates; [  all__byte-tools.byte-tools_0_1 all__generic-array.generic-array_0_6 all__digest.digest_0_4 all__digest-buffer.digest-buffer_0_2 ];
+  };
   "whirlpool_0_3" = whirlpool_0_3_0;
-  "whirlpool_0" = whirlpool_0_3_0;}
+  "whirlpool_0_4" = whirlpool_0_4_0;
+  "whirlpool_0" = whirlpool_0_4_0;}

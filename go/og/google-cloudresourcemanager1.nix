@@ -33,5 +33,17 @@ rec {
   };
   "google-cloudresourcemanager1_0_1" = google-cloudresourcemanager1_0_1_15;
   "google-cloudresourcemanager1_0" = google-cloudresourcemanager1_0_1_15;
-  "google-cloudresourcemanager1_1_0" = google-cloudresourcemanager1_1_0_0;
-  "google-cloudresourcemanager1_1" = google-cloudresourcemanager1_1_0_0;}
+  google-cloudresourcemanager1_1_0_1 = buildCratesLib {
+    name = "google-cloudresourcemanager1";
+    version = "1.0.1";
+    hash = "5fc801d8948016d755c104e3f56cc2db2f32ace1cd30a901e82729cac2328b5b";
+    deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 url all__mime.mime_0_2 all__hyper.hyper_0_9 ];
+  };
+  google-cloudresourcemanager1_1_0_2 = buildCratesLib {
+    name = "google-cloudresourcemanager1";
+    version = "1.0.2";
+    hash = "c3129b3589a0963214d3101d3dde7ee4f52d4c72dd18bde884c79233a9b162be";
+    deps = with allCrates; [  url all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 ];
+  };
+  "google-cloudresourcemanager1_1_0" = google-cloudresourcemanager1_1_0_2;
+  "google-cloudresourcemanager1_1" = google-cloudresourcemanager1_1_0_2;}

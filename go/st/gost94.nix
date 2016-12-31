@@ -13,5 +13,12 @@ rec {
     hash = "2644be5f6d300609a8b4dad38129a2728de42cd02aaecf509e346bb89a162f3c";
     deps = with allCrates; [  all__digest-buffer.digest-buffer_0_1 all__digest.digest_0_3 all__generic-array.generic-array_0_5 all__byte-tools.byte-tools_0_1 ];
   };
+  gost94_0_2_0 = buildCratesLib {
+    name = "gost94";
+    version = "0.2.0";
+    hash = "92328d014359a96ebe352db771b25477a0c22efe6d8b5d6761c23842180da5c6";
+    deps = with allCrates; [  all__generic-array.generic-array_0_6 all__digest.digest_0_4 all__digest-buffer.digest-buffer_0_2 all__byte-tools.byte-tools_0_1 ];
+  };
   "gost94_0_1" = gost94_0_1_1;
-  "gost94_0" = gost94_0_1_1;}
+  "gost94_0_2" = gost94_0_2_0;
+  "gost94_0" = gost94_0_2_0;}

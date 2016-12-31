@@ -33,5 +33,17 @@ rec {
   };
   "google-drive3_0_1" = google-drive3_0_1_15;
   "google-drive3_0" = google-drive3_0_1_15;
-  "google-drive3_1_0" = google-drive3_1_0_0;
-  "google-drive3_1" = google-drive3_1_0_0;}
+  google-drive3_1_0_1 = buildCratesLib {
+    name = "google-drive3";
+    version = "1.0.1";
+    hash = "7ab3775f2f6c0d2944e3b0cdb0457bb989af5fe149effd9153b2aec8b190a353";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde.serde_0_8 ];
+  };
+  google-drive3_1_0_2 = buildCratesLib {
+    name = "google-drive3";
+    version = "1.0.2";
+    hash = "12ccf8898c47bbf1fce68d308e38d30bdb242fc3bf7d0e8f9535c987fad5cd2a";
+    deps = with allCrates; [  all__serde.serde_0_8 all__hyper.hyper_0_9 all__mime.mime_0_2 url all__serde_json.serde_json_0_8 ];
+  };
+  "google-drive3_1_0" = google-drive3_1_0_2;
+  "google-drive3_1" = google-drive3_1_0_2;}

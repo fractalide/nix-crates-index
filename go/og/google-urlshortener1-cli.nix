@@ -15,5 +15,17 @@ rec {
   };
   "google-urlshortener1-cli_0_3" = google-urlshortener1-cli_0_3_6;
   "google-urlshortener1-cli_0" = google-urlshortener1-cli_0_3_6;
-  "google-urlshortener1-cli_1_0" = google-urlshortener1-cli_1_0_0;
-  "google-urlshortener1-cli_1" = google-urlshortener1-cli_1_0_0;}
+  google-urlshortener1-cli_1_0_1 = buildCratesLib {
+    name = "google-urlshortener1-cli";
+    version = "1.0.1";
+    hash = "19e3927ed0eeedd307c056d26b6445541efc7799fa03e2e2f0fcbb659144e2d2";
+    deps = with allCrates; [  all__mime.mime_0_2 all__yup-hyper-mock.yup-hyper-mock_1_0 all__strsim.strsim_0_5 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 all__clap.clap_2_0 ];
+  };
+  google-urlshortener1-cli_1_0_2 = buildCratesLib {
+    name = "google-urlshortener1-cli";
+    version = "1.0.2";
+    hash = "7d71bb2bbe3c6f1148b0d1d122d7d46f695a604390b1b757b75a0d7cb6ba7f43";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__serde.serde_0_8 ];
+  };
+  "google-urlshortener1-cli_1_0" = google-urlshortener1-cli_1_0_2;
+  "google-urlshortener1-cli_1" = google-urlshortener1-cli_1_0_2;}

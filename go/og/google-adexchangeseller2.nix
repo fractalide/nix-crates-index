@@ -99,5 +99,17 @@ rec {
   };
   "google-adexchangeseller2_0_1" = google-adexchangeseller2_0_1_15;
   "google-adexchangeseller2_0" = google-adexchangeseller2_0_1_15;
-  "google-adexchangeseller2_1_0" = google-adexchangeseller2_1_0_0;
-  "google-adexchangeseller2_1" = google-adexchangeseller2_1_0_0;}
+  google-adexchangeseller2_1_0_1 = buildCratesLib {
+    name = "google-adexchangeseller2";
+    version = "1.0.1";
+    hash = "bdbd2babf11c14c2d8a65fff36b3c760099afba45283f32eec12a4aeb4b111be";
+    deps = with allCrates; [  all__serde.serde_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 url ];
+  };
+  google-adexchangeseller2_1_0_2 = buildCratesLib {
+    name = "google-adexchangeseller2";
+    version = "1.0.2";
+    hash = "3d1787814f3796e438123c433ff65fef0bf58ec9dccd632090ec59fad676c763";
+    deps = with allCrates; [  url all__serde.serde_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 ];
+  };
+  "google-adexchangeseller2_1_0" = google-adexchangeseller2_1_0_2;
+  "google-adexchangeseller2_1" = google-adexchangeseller2_1_0_2;}

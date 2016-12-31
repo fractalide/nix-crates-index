@@ -145,5 +145,17 @@ rec {
     hash = "07372b0c86f88fd67b1c8569ea88e5106572af9e6c37418cd4ce558cf439141f";
     deps = with allCrates; [  all__libc.libc_0_1 allegro_font-sys allegro_util ];
   };
-  "allegro_ttf-sys_0_0" = allegro_ttf-sys_0_0_27;
-  "allegro_ttf-sys_0" = allegro_ttf-sys_0_0_27;}
+  allegro_ttf-sys_0_0_28 = buildCratesLib {
+    name = "allegro_ttf-sys";
+    version = "0.0.28";
+    hash = "92be20ce04eb2c5cab1f7f291e2325863d9cf9dd316893d1a8a666fd431b7e1b";
+    deps = with allCrates; [  allegro_font-sys allegro_util all__libc.libc_0_1 ];
+  };
+  allegro_ttf-sys_0_0_29 = buildCratesLib {
+    name = "allegro_ttf-sys";
+    version = "0.0.29";
+    hash = "7f4f1c510e177ace1bda203e919c6724b6f4ebbce226326a3c71e0f9066d6aba";
+    deps = with allCrates; [  allegro_util allegro_font-sys all__libc.libc_0_1 ];
+  };
+  "allegro_ttf-sys_0_0" = allegro_ttf-sys_0_0_29;
+  "allegro_ttf-sys_0" = allegro_ttf-sys_0_0_29;}

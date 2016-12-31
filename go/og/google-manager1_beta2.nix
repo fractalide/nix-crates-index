@@ -105,5 +105,17 @@ rec {
   };
   "google-manager1_beta2_0_1" = google-manager1_beta2_0_1_15;
   "google-manager1_beta2_0" = google-manager1_beta2_0_1_15;
-  "google-manager1_beta2_1_0" = google-manager1_beta2_1_0_0;
-  "google-manager1_beta2_1" = google-manager1_beta2_1_0_0;}
+  google-manager1_beta2_1_0_1 = buildCratesLib {
+    name = "google-manager1_beta2";
+    version = "1.0.1";
+    hash = "747f1aca19b3f37ad4159dcbc7c2982b7173efb3c1139887afc35a4d72c05c88";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+  };
+  google-manager1_beta2_1_0_2 = buildCratesLib {
+    name = "google-manager1_beta2";
+    version = "1.0.2";
+    hash = "adf1e50d636fb526f1bdfb30126b6a77d4994091d65e471ea771db8493e908ec";
+    deps = with allCrates; [  url all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+  };
+  "google-manager1_beta2_1_0" = google-manager1_beta2_1_0_2;
+  "google-manager1_beta2_1" = google-manager1_beta2_1_0_2;}

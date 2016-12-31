@@ -25,5 +25,12 @@ rec {
     hash = "81a1f2c63cbf265fa0a40fd493898f60c0633cd8d819e42fc6748d1080f0e108";
     deps = with allCrates; [  ];
   };
+  bip_bencode_0_2_0 = buildCratesLib {
+    name = "bip_bencode";
+    version = "0.2.0";
+    hash = "53ab21b1f1623fd9fd520ac9f790c32af3e7ce5e95e813a3b3573cae20512591";
+    deps = with allCrates; [  all__error-chain.error-chain_0_7 ];
+  };
   "bip_bencode_0_1" = bip_bencode_0_1_3;
-  "bip_bencode_0" = bip_bencode_0_1_3;}
+  "bip_bencode_0_2" = bip_bencode_0_2_0;
+  "bip_bencode_0" = bip_bencode_0_2_0;}

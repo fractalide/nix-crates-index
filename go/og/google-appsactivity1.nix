@@ -105,5 +105,17 @@ rec {
   };
   "google-appsactivity1_0_1" = google-appsactivity1_0_1_15;
   "google-appsactivity1_0" = google-appsactivity1_0_1_15;
-  "google-appsactivity1_1_0" = google-appsactivity1_1_0_0;
-  "google-appsactivity1_1" = google-appsactivity1_1_0_0;}
+  google-appsactivity1_1_0_1 = buildCratesLib {
+    name = "google-appsactivity1";
+    version = "1.0.1";
+    hash = "9993dd04fc26003a613ea434e078755ac40d904038702764ccf67c11aaba97dd";
+    deps = with allCrates; [  url all__serde.serde_0_8 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 ];
+  };
+  google-appsactivity1_1_0_2 = buildCratesLib {
+    name = "google-appsactivity1";
+    version = "1.0.2";
+    hash = "b64b87cc505acc06d452199f4e3bccf8acb8ea96a7bf97ab19e3af9128fb691b";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 all__hyper.hyper_0_9 url ];
+  };
+  "google-appsactivity1_1_0" = google-appsactivity1_1_0_2;
+  "google-appsactivity1_1" = google-appsactivity1_1_0_2;}

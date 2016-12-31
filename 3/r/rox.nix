@@ -13,5 +13,11 @@ rec {
     hash = "d0da12893847c52bca5a79d19ead1f54bdb6f844ac28fbe58a35f3ef2c61eed4";
     deps = with allCrates; [  all__clap.clap_2 ];
   };
-  "rox_0_1" = rox_0_1_1;
-  "rox_0" = rox_0_1_1;}
+  rox_0_1_2 = buildCratesLib {
+    name = "rox";
+    version = "0.1.2";
+    hash = "a1fb082e032f73be57fbb2d514792f1ef6322cbb16adbc3dbccefb9f3ce1db02";
+    deps = with allCrates; [  all__clap.clap_2 ];
+  };
+  "rox_0_1" = rox_0_1_2;
+  "rox_0" = rox_0_1_2;}

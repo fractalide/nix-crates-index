@@ -99,5 +99,17 @@ rec {
   };
   "google-gmail1_0_1" = google-gmail1_0_1_15;
   "google-gmail1_0" = google-gmail1_0_1_15;
-  "google-gmail1_1_0" = google-gmail1_1_0_0;
-  "google-gmail1_1" = google-gmail1_1_0_0;}
+  google-gmail1_1_0_1 = buildCratesLib {
+    name = "google-gmail1";
+    version = "1.0.1";
+    hash = "e78d1173d5fdebd326236c6638a9544db141329f77b6433c03deff1f32b8a22f";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 url all__serde.serde_0_8 all__mime.mime_0_2 ];
+  };
+  google-gmail1_1_0_2 = buildCratesLib {
+    name = "google-gmail1";
+    version = "1.0.2";
+    hash = "d85e85e4e9a7c1f273fff49ab8b955c1970662c044ee6b4e6b2efc9a36e0576a";
+    deps = with allCrates; [  all__mime.mime_0_2 url all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+  };
+  "google-gmail1_1_0" = google-gmail1_1_0_2;
+  "google-gmail1_1" = google-gmail1_1_0_2;}

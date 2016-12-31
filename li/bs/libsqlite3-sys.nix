@@ -66,5 +66,12 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
   };
   "libsqlite3-sys_0_4" = libsqlite3-sys_0_4_0;
+  libsqlite3-sys_0_6_0 = buildCratesLib {
+    name = "libsqlite3-sys";
+    version = "0.6.0";
+    hash = "d1abdd4bf5ccb7d701efe2aee8182dd4f7f5555bf69da82b2add7a71b4a5773a";
+    deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 all__pkg-config.pkg-config_0_3 ];
+  };
   "libsqlite3-sys_0_5" = libsqlite3-sys_0_5_0;
-  "libsqlite3-sys_0" = libsqlite3-sys_0_5_0;}
+  "libsqlite3-sys_0_6" = libsqlite3-sys_0_6_0;
+  "libsqlite3-sys_0" = libsqlite3-sys_0_6_0;}

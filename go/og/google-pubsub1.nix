@@ -45,5 +45,17 @@ rec {
   };
   "google-pubsub1_0_1" = google-pubsub1_0_1_15;
   "google-pubsub1_0" = google-pubsub1_0_1_15;
-  "google-pubsub1_1_0" = google-pubsub1_1_0_0;
-  "google-pubsub1_1" = google-pubsub1_1_0_0;}
+  google-pubsub1_1_0_1 = buildCratesLib {
+    name = "google-pubsub1";
+    version = "1.0.1";
+    hash = "d0d483a0e6edbb9a553f054f7b6ab9991df6e3d35b32f16a78769465531613ab";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 url all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 ];
+  };
+  google-pubsub1_1_0_2 = buildCratesLib {
+    name = "google-pubsub1";
+    version = "1.0.2";
+    hash = "be4980232d9051e6ef5d415146712cf75f0036343763c84c821f7521c5b13ab6";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde.serde_0_8 url all__serde_json.serde_json_0_8 ];
+  };
+  "google-pubsub1_1_0" = google-pubsub1_1_0_2;
+  "google-pubsub1_1" = google-pubsub1_1_0_2;}

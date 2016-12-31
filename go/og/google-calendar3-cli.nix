@@ -15,5 +15,17 @@ rec {
   };
   "google-calendar3-cli_0_3" = google-calendar3-cli_0_3_6;
   "google-calendar3-cli_0" = google-calendar3-cli_0_3_6;
-  "google-calendar3-cli_1_0" = google-calendar3-cli_1_0_0;
-  "google-calendar3-cli_1" = google-calendar3-cli_1_0_0;}
+  google-calendar3-cli_1_0_1 = buildCratesLib {
+    name = "google-calendar3-cli";
+    version = "1.0.1";
+    hash = "a3f66239bed4cf7bf3daee0ca652fd5813d6a40bf56f1c58a070482da20dd01c";
+    deps = with allCrates; [  all__serde.serde_0_8 all__strsim.strsim_0_5 all__clap.clap_2_0 all__yup-hyper-mock.yup-hyper-mock_1_0 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 ];
+  };
+  google-calendar3-cli_1_0_2 = buildCratesLib {
+    name = "google-calendar3-cli";
+    version = "1.0.2";
+    hash = "74d77e715ad3394ac6b454ffb677600f82f3981a83616875811a9f78ad439b24";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__serde.serde_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__clap.clap_2_0 all__strsim.strsim_0_5 ];
+  };
+  "google-calendar3-cli_1_0" = google-calendar3-cli_1_0_2;
+  "google-calendar3-cli_1" = google-calendar3-cli_1_0_2;}

@@ -33,5 +33,12 @@ rec {
     deps = with allCrates; [  all__digest-buffer.digest-buffer_0_1 all__generic-array.generic-array_0_5 all__byte-tools.byte-tools_0_1 all__digest.digest_0_3 all__fake-simd.fake-simd_0_1 ];
   };
   "sha2_0_2" = sha2_0_2_0;
+  sha2_0_4_0 = buildCratesLib {
+    name = "sha2";
+    version = "0.4.0";
+    hash = "edb7da6a2ed37c4f3090012c8a8eb085da2aa6465e6df21d9a245e294f4a59e8";
+    deps = with allCrates; [  all__fake-simd.fake-simd_0_1 all__digest-buffer.digest-buffer_0_2 all__digest.digest_0_4 all__byte-tools.byte-tools_0_1 all__generic-array.generic-array_0_6 ];
+  };
   "sha2_0_3" = sha2_0_3_0;
-  "sha2_0" = sha2_0_3_0;}
+  "sha2_0_4" = sha2_0_4_0;
+  "sha2_0" = sha2_0_4_0;}

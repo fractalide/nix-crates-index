@@ -28,5 +28,12 @@ rec {
     deps = with allCrates; [  all__generic-array.generic-array_0_5 all__digest.digest_0_3 all__byte-tools.byte-tools_0_1 ];
   };
   "sha3_0_2" = sha3_0_2_0;
+  sha3_0_4_0 = buildCratesLib {
+    name = "sha3";
+    version = "0.4.0";
+    hash = "108cb2e3fb5c390aa2f28640ef710ec37ec30cc5f5fc2527f93300545bd5bf53";
+    deps = with allCrates; [  all__digest.digest_0_4 all__byte-tools.byte-tools_0_1 all__generic-array.generic-array_0_6 ];
+  };
   "sha3_0_3" = sha3_0_3_0;
-  "sha3_0" = sha3_0_3_0;}
+  "sha3_0_4" = sha3_0_4_0;
+  "sha3_0" = sha3_0_4_0;}

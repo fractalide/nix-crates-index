@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
   };
   "rs6502_0_1" = rs6502_0_1_0;
+  rs6502_0_3_0 = buildCratesLib {
+    name = "rs6502";
+    version = "0.3.0";
+    hash = "ccfe7269067d54c1c5804bcd0303cf39a04a4b6ddfffc8b7b4f3f9670ddc9a5e";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
+  };
   "rs6502_0_2" = rs6502_0_2_0;
-  "rs6502_0" = rs6502_0_2_0;}
+  "rs6502_0_3" = rs6502_0_3_0;
+  "rs6502_0" = rs6502_0_3_0;}

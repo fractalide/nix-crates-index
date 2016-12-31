@@ -15,5 +15,17 @@ rec {
   };
   "google-genomics1-cli_0_3" = google-genomics1-cli_0_3_6;
   "google-genomics1-cli_0" = google-genomics1-cli_0_3_6;
-  "google-genomics1-cli_1_0" = google-genomics1-cli_1_0_0;
-  "google-genomics1-cli_1" = google-genomics1-cli_1_0_0;}
+  google-genomics1-cli_1_0_1 = buildCratesLib {
+    name = "google-genomics1-cli";
+    version = "1.0.1";
+    hash = "50f58e062835c202e932fc73393fd7da2e5807d3d145f7181b127a63e492d041";
+    deps = with allCrates; [  all__mime.mime_0_2 all__strsim.strsim_0_5 all__serde_json.serde_json_0_8 all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 all__clap.clap_2_0 all__serde.serde_0_8 ];
+  };
+  google-genomics1-cli_1_0_2 = buildCratesLib {
+    name = "google-genomics1-cli";
+    version = "1.0.2";
+    hash = "8c4fec0ab9a3198c1cc341bd5ca2de9f571ddb66438dc8f0f2f1286da5eaad77";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__yup-hyper-mock.yup-hyper-mock_1_0 all__clap.clap_2_0 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__serde.serde_0_8 ];
+  };
+  "google-genomics1-cli_1_0" = google-genomics1-cli_1_0_2;
+  "google-genomics1-cli_1" = google-genomics1-cli_1_0_2;}

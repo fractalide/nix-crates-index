@@ -26,5 +26,12 @@ rec {
     deps = with allCrates; [  ];
   };
   "rustc-cfg_0_1" = rustc-cfg_0_1_2;
+  rustc-cfg_0_3_0 = buildCratesLib {
+    name = "rustc-cfg";
+    version = "0.3.0";
+    hash = "56a596b5718bf5e059d59a30af12f7f462a152de147aa462b70892849ee18704";
+    deps = with allCrates; [  ];
+  };
   "rustc-cfg_0_2" = rustc-cfg_0_2_0;
-  "rustc-cfg_0" = rustc-cfg_0_2_0;}
+  "rustc-cfg_0_3" = rustc-cfg_0_3_0;
+  "rustc-cfg_0" = rustc-cfg_0_3_0;}

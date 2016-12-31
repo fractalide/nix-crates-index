@@ -15,5 +15,17 @@ rec {
   };
   "google-plus1-cli_0_3" = google-plus1-cli_0_3_6;
   "google-plus1-cli_0" = google-plus1-cli_0_3_6;
-  "google-plus1-cli_1_0" = google-plus1-cli_1_0_0;
-  "google-plus1-cli_1" = google-plus1-cli_1_0_0;}
+  google-plus1-cli_1_0_1 = buildCratesLib {
+    name = "google-plus1-cli";
+    version = "1.0.1";
+    hash = "94ce02ac92c2ddaa85bfd66caec1c67c56d157a932905586958aac08f06c6fbe";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde.serde_0_8 all__clap.clap_2_0 all__serde_json.serde_json_0_8 all__strsim.strsim_0_5 all__mime.mime_0_2 all__yup-hyper-mock.yup-hyper-mock_1_0 ];
+  };
+  google-plus1-cli_1_0_2 = buildCratesLib {
+    name = "google-plus1-cli";
+    version = "1.0.2";
+    hash = "a3626ca4532d6631e6d5ac1849c46adfd7c98edf81b22d24418acd4db1edae38";
+    deps = with allCrates; [  all__clap.clap_2_0 all__mime.mime_0_2 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__strsim.strsim_0_5 all__yup-hyper-mock.yup-hyper-mock_1_0 all__hyper.hyper_0_9 ];
+  };
+  "google-plus1-cli_1_0" = google-plus1-cli_1_0_2;
+  "google-plus1-cli_1" = google-plus1-cli_1_0_2;}

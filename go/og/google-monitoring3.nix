@@ -27,5 +27,17 @@ rec {
   };
   "google-monitoring3_0_1" = google-monitoring3_0_1_15;
   "google-monitoring3_0" = google-monitoring3_0_1_15;
-  "google-monitoring3_1_0" = google-monitoring3_1_0_0;
-  "google-monitoring3_1" = google-monitoring3_1_0_0;}
+  google-monitoring3_1_0_1 = buildCratesLib {
+    name = "google-monitoring3";
+    version = "1.0.1";
+    hash = "fd2c0a1786ac15812f4ce580ba7447a51fede8896d933602b97d931bf67bab64";
+    deps = with allCrates; [  all__mime.mime_0_2 all__hyper.hyper_0_9 url all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
+  };
+  google-monitoring3_1_0_2 = buildCratesLib {
+    name = "google-monitoring3";
+    version = "1.0.2";
+    hash = "6922cc34b8859541482ca7fa7999e4daaa5ba4b8e2a5fc6d7996c979f10598ea";
+    deps = with allCrates; [  all__serde.serde_0_8 url all__hyper.hyper_0_9 all__mime.mime_0_2 all__serde_json.serde_json_0_8 ];
+  };
+  "google-monitoring3_1_0" = google-monitoring3_1_0_2;
+  "google-monitoring3_1" = google-monitoring3_1_0_2;}

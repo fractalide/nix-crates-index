@@ -20,5 +20,12 @@ rec {
     deps = with allCrates; [  all__log.log_0_3 all__error-chain.error-chain_0_5 all__jni-sys.jni-sys_0_2 all__cesu8.cesu8_1 all__combine.combine_2 ];
   };
   "jni_0_1" = jni_0_1_1;
+  jni_0_3_0 = buildCratesLib {
+    name = "jni";
+    version = "0.3.0";
+    hash = "9c08f89f5e037b9cef18259c2cd08a231205a4ded72476941d320fcd3f79c951";
+    deps = with allCrates; [  all__combine.combine_2 all__cesu8.cesu8_1 all__error-chain.error-chain_0_5 all__log.log_0_3 all__jni-sys.jni-sys_0_2 ];
+  };
   "jni_0_2" = jni_0_2_0;
-  "jni_0" = jni_0_2_0;}
+  "jni_0_3" = jni_0_3_0;
+  "jni_0" = jni_0_3_0;}

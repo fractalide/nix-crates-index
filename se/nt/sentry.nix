@@ -55,5 +55,11 @@ rec {
     hash = "c8d81971d583a227dd4360908b20f30b41a6bf2d82efd1b0d23267d4662aeb51";
     deps = with allCrates; [  all__backtrace.backtrace_0_2 all__hyper.hyper_0_9 all__chrono.chrono_0_2 all__time.time_0_1 ];
   };
-  "sentry_0_1" = sentry_0_1_8;
-  "sentry_0" = sentry_0_1_8;}
+  sentry_0_1_9 = buildCratesLib {
+    name = "sentry";
+    version = "0.1.9";
+    hash = "0f6d4c0e34b3ece901b1e5d3a22777e72e56f0c1fababb0dce8f2ad6bcfedcb3";
+    deps = with allCrates; [  all__backtrace.backtrace_0_2 all__chrono.chrono_0_2 all__time.time_0_1 all__hyper.hyper_0_9 ];
+  };
+  "sentry_0_1" = sentry_0_1_9;
+  "sentry_0" = sentry_0_1_9;}

@@ -7,5 +7,12 @@ rec {
     hash = "70e1a0d7cd39973bd7c9e7398dc7af0cc2dee65248bc1ec48cb05165e1451ff7";
     deps = with allCrates; [  ];
   };
+  httpdate_0_2_0 = buildCratesLib {
+    name = "httpdate";
+    version = "0.2.0";
+    hash = "6e585fb44715e516a5cdbfc1d9f31c94b0b1efa41e2a7134cae554f0a7643c90";
+    deps = with allCrates; [  ];
+  };
   "httpdate_0_1" = httpdate_0_1_0;
-  "httpdate_0" = httpdate_0_1_0;}
+  "httpdate_0_2" = httpdate_0_2_0;
+  "httpdate_0" = httpdate_0_2_0;}

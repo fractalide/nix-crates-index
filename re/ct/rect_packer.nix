@@ -7,5 +7,11 @@ rec {
     hash = "5218a7c40c3ed944d4154ce9bb589513d7dd194f65021370958f9a07e6540156";
     deps = with allCrates; [  ];
   };
-  "rect_packer_0_1" = rect_packer_0_1_0;
-  "rect_packer_0" = rect_packer_0_1_0;}
+  rect_packer_0_1_1 = buildCratesLib {
+    name = "rect_packer";
+    version = "0.1.1";
+    hash = "5f84af0a5a6082efc202242e5796f85b9104e794acfa5f6d96920045682b3aac";
+    deps = with allCrates; [  ];
+  };
+  "rect_packer_0_1" = rect_packer_0_1_1;
+  "rect_packer_0" = rect_packer_0_1_1;}

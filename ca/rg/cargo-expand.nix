@@ -57,5 +57,23 @@ rec {
     hash = "e5a9bf0902616aa53ee3f01d2e452d24d8a63845c018db9df14915b20c00f555";
     deps = with allCrates; [  all__isatty.isatty_0_1 ];
   };
-  "cargo-expand_0_3" = cargo-expand_0_3_2;
-  "cargo-expand_0" = cargo-expand_0_3_2;}
+  cargo-expand_0_3_3 = buildCratesLib {
+    name = "cargo-expand";
+    version = "0.3.3";
+    hash = "4b0f31698344453e44143fc625faa18e19ceb310974fddecd62eb45a7812b830";
+    deps = with allCrates; [  all__isatty.isatty_0_1 ];
+  };
+  cargo-expand_0_3_4 = buildCratesLib {
+    name = "cargo-expand";
+    version = "0.3.4";
+    hash = "9f9e8d66d00746f7fa877fcaf1f02af12caca3e8292c2c6b2bdda994abc19443";
+    deps = with allCrates; [  all__isatty.isatty_0_1 ];
+  };
+  cargo-expand_0_3_5 = buildCratesLib {
+    name = "cargo-expand";
+    version = "0.3.5";
+    hash = "2ed26f9fa00a61894d84612df23d8a8a07eeb2241f9f7a75f549b361461b3cda";
+    deps = with allCrates; [  all__isatty.isatty_0_1 ];
+  };
+  "cargo-expand_0_3" = cargo-expand_0_3_5;
+  "cargo-expand_0" = cargo-expand_0_3_5;}

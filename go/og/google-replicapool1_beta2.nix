@@ -99,5 +99,17 @@ rec {
   };
   "google-replicapool1_beta2_0_1" = google-replicapool1_beta2_0_1_15;
   "google-replicapool1_beta2_0" = google-replicapool1_beta2_0_1_15;
-  "google-replicapool1_beta2_1_0" = google-replicapool1_beta2_1_0_0;
-  "google-replicapool1_beta2_1" = google-replicapool1_beta2_1_0_0;}
+  google-replicapool1_beta2_1_0_1 = buildCratesLib {
+    name = "google-replicapool1_beta2";
+    version = "1.0.1";
+    hash = "0810189b22a5c6da5d9dada791bfce7e2e611ca45308c6e0e8383a037bf109a7";
+    deps = with allCrates; [  url all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__serde.serde_0_8 all__mime.mime_0_2 ];
+  };
+  google-replicapool1_beta2_1_0_2 = buildCratesLib {
+    name = "google-replicapool1_beta2";
+    version = "1.0.2";
+    hash = "566625f4b37dcbcbfa619c448e8ef684c07b5abe2896f26588bf42cc47882a11";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 url all__serde.serde_0_8 ];
+  };
+  "google-replicapool1_beta2_1_0" = google-replicapool1_beta2_1_0_2;
+  "google-replicapool1_beta2_1" = google-replicapool1_beta2_1_0_2;}

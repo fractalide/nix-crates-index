@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  ];
   };
   "checksum_0_1" = checksum_0_1_0;
-  "checksum_0_2" = checksum_0_2_0;
-  "checksum_0" = checksum_0_2_0;}
+  checksum_0_2_1 = buildCratesLib {
+    name = "checksum";
+    version = "0.2.1";
+    hash = "d5c24f6a463e9973db3df3c2cc276f689f5baf289c87a693dc859e004d3eb45f";
+    deps = with allCrates; [  ];
+  };
+  "checksum_0_2" = checksum_0_2_1;
+  "checksum_0" = checksum_0_2_1;}

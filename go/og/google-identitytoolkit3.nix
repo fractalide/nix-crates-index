@@ -99,5 +99,17 @@ rec {
   };
   "google-identitytoolkit3_0_1" = google-identitytoolkit3_0_1_15;
   "google-identitytoolkit3_0" = google-identitytoolkit3_0_1_15;
-  "google-identitytoolkit3_1_0" = google-identitytoolkit3_1_0_0;
-  "google-identitytoolkit3_1" = google-identitytoolkit3_1_0_0;}
+  google-identitytoolkit3_1_0_1 = buildCratesLib {
+    name = "google-identitytoolkit3";
+    version = "1.0.1";
+    hash = "566e61b836fe37219cf820ff47459321a6d4c5559d7fcc647eb97515ba8b6efb";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 url all__mime.mime_0_2 ];
+  };
+  google-identitytoolkit3_1_0_2 = buildCratesLib {
+    name = "google-identitytoolkit3";
+    version = "1.0.2";
+    hash = "2e2250be072ff8290b403f9f0fbdbef878ac7c55b9416389933ae0587736e644";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__mime.mime_0_2 all__hyper.hyper_0_9 url ];
+  };
+  "google-identitytoolkit3_1_0" = google-identitytoolkit3_1_0_2;
+  "google-identitytoolkit3_1" = google-identitytoolkit3_1_0_2;}

@@ -1021,5 +1021,11 @@ rec {
     hash = "305ad043f009db535a110200541d4567b63e172b1fe030313fbb92565da7ed24";
     deps = with allCrates; [  all__vec_map.vec_map_0_6 all__unicode-width.unicode-width_0_1 all__unicode-segmentation.unicode-segmentation_0_1 all__bitflags.bitflags_0_7 ];
   };
-  "clap_2_19" = clap_2_19_2;
-  "clap_2" = clap_2_19_2;}
+  clap_2_19_3 = buildCratesLib {
+    name = "clap";
+    version = "2.19.3";
+    hash = "95b78f3fe0fc94c13c731714363260e04b557a637166f33a4570d3189d642374";
+    deps = with allCrates; [  all__unicode-width.unicode-width_0_1 all__unicode-segmentation.unicode-segmentation_0_1 all__bitflags.bitflags_0_7 all__vec_map.vec_map_0_6 ];
+  };
+  "clap_2_19" = clap_2_19_3;
+  "clap_2" = clap_2_19_3;}

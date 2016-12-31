@@ -7,5 +7,11 @@ rec {
     hash = "631d196bb4406d173eba5bea28fdd2454057eb4967ee974bb16bcf068682dd11";
     deps = with allCrates; [  all__error-chain.error-chain_0_7 ];
   };
-  "input-stream_0_1" = input-stream_0_1_0;
-  "input-stream_0" = input-stream_0_1_0;}
+  input-stream_0_1_1 = buildCratesLib {
+    name = "input-stream";
+    version = "0.1.1";
+    hash = "c18656b2b32ec8cb744c88a2f9f46fec1a95044939c2039e44e7103d18c7301f";
+    deps = with allCrates; [  all__error-chain.error-chain_0_7 ];
+  };
+  "input-stream_0_1" = input-stream_0_1_1;
+  "input-stream_0" = input-stream_0_1_1;}
