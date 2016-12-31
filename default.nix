@@ -1,4 +1,4 @@
-{pkgs, stdenv, fetchurl, fetchgit} :
+{pkgs, stdenv, fetchurl, fetchgit, rustcNightlyBin} :
 
 let
   lib = stdenv.lib;
@@ -18,18 +18,7 @@ let
     cratesDeps = pkgs.lib.fold ( recursiveDeps : newCratesDeps: newCratesDeps ++ recursiveDeps.cratesDeps  ) deps deps;
     depsString = pkgs.lib.fold ( dep: str: "${str} --extern ${normalizeName dep.name}=${dep}/lib${normalizeName dep.name}.rlib") "" deps;
     symlinkCalc = pkgs.lib.fold ( dep: str: "${str} ln -sf ${dep}/lib${normalizeName dep.name}.rlib mylibs/ \n") "mkdir mylibs\n ";
-
-    # when you use a more recent nixpkgs then one can just use rustcNightlyBin.rustc from there instead!
-    # for now this is a convenience implementation
-    # WARNING: this is also added in defualt.nix in the nix-crates-index using repo nixcrates
-    rustcNightly = newpkgs.rustcNightlyBin.rustc;
-    newpkgs = import (pkgs.fetchFromGitHub {
-      owner = "NixOS";
-      repo = "nixpkgs";
-      rev = "1f811a67274e340d9e13987801fe726308e748ab";
-      sha256 = "0dhmh0fcjki8qnvy1fyw4jhi0m3kvabj9nfcd2nc4dcl2ljc84mg";
-     }) {};
-
+    rustcNightly = rustcNightlyBin.rustc;
   in
     stdenv.mkDerivation {
       name = name;
