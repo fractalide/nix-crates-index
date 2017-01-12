@@ -69,5 +69,11 @@ rec {
     hash = "774a55f530090b3c0fb3131349f3b52ed4b712504f600d1485113309ab9e9458";
     deps = with allCrates; [  ];
   };
-  "guard_0_3" = guard_0_3_1;
-  "guard_0" = guard_0_3_1;}
+  guard_0_3_2 = buildCratesLib {
+    name = "guard";
+    version = "0.3.2";
+    hash = "868c8f647010539b7ef3b8d3d79668781306101fcd0c95d5aa4e0f80a55b4f58";
+    deps = with allCrates; [  ];
+  };
+  "guard_0_3" = guard_0_3_2;
+  "guard_0" = guard_0_3_2;}

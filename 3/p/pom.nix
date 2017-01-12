@@ -28,5 +28,12 @@ rec {
     deps = with allCrates; [  ];
   };
   "pom_0_3" = pom_0_3_0;
+  pom_0_5_0 = buildCratesLib {
+    name = "pom";
+    version = "0.5.0";
+    hash = "59d4e73a12c3bd6cbe56c0780e201445bdd0bfd2463b302a236475a7cb7c70c2";
+    deps = with allCrates; [  ];
+  };
   "pom_0_4" = pom_0_4_0;
-  "pom_0" = pom_0_4_0;}
+  "pom_0_5" = pom_0_5_0;
+  "pom_0" = pom_0_5_0;}

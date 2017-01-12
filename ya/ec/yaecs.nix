@@ -60,5 +60,24 @@ rec {
     deps = with allCrates; [  all__anymap.anymap_0_12 ];
   };
   "yaecs_0_6" = yaecs_0_6_0;
-  "yaecs_0_7" = yaecs_0_7_0;
-  "yaecs_0" = yaecs_0_7_0;}
+  yaecs_0_7_1 = buildCratesLib {
+    name = "yaecs";
+    version = "0.7.1";
+    hash = "a02630422e7a7fe073d7894b55735bd71faaa620259cec754f433e79253c7c55";
+    deps = with allCrates; [  all__anymap.anymap_0_12 ];
+  };
+  yaecs_0_7_2 = buildCratesLib {
+    name = "yaecs";
+    version = "0.7.2";
+    hash = "0aff546f25ab016b3e4f71722d3b87f631990f81ce4ce93e501aa6cf449d8ea8";
+    deps = with allCrates; [  all__anymap.anymap_0_12 ];
+  };
+  yaecs_0_8_0 = buildCratesLib {
+    name = "yaecs";
+    version = "0.8.0";
+    hash = "0ce4c07f93e1b3b3a0b05e8f4d796f7f8488a3c2db51e8218a9e1f72d6738e6d";
+    deps = with allCrates; [  all__anymap.anymap_0_12 ];
+  };
+  "yaecs_0_7" = yaecs_0_7_2;
+  "yaecs_0_8" = yaecs_0_8_0;
+  "yaecs_0" = yaecs_0_8_0;}

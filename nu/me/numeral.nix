@@ -26,5 +26,18 @@ rec {
     deps = with allCrates; [  ];
   };
   "numeral_0_1" = numeral_0_1_2;
+  numeral_0_3_0 = buildCratesLib {
+    name = "numeral";
+    version = "0.3.0";
+    hash = "cedda0431c2de9bfd51395fde19757d125e7f593ac63a3d640bf69e417566d7c";
+    deps = with allCrates; [  ];
+  };
   "numeral_0_2" = numeral_0_2_0;
-  "numeral_0" = numeral_0_2_0;}
+  numeral_0_3_1 = buildCratesLib {
+    name = "numeral";
+    version = "0.3.1";
+    hash = "f7f9e1a6bfccf9954cef9de533f9a70e9671738e7cd61d867872b5fea208a0a8";
+    deps = with allCrates; [  ];
+  };
+  "numeral_0_3" = numeral_0_3_1;
+  "numeral_0" = numeral_0_3_1;}

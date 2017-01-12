@@ -7,5 +7,18 @@ rec {
     hash = "1373f45c402292b3be9f33da02b98115bea5116832f40a75b6e24e771ed45dca";
     deps = with allCrates; [  ];
   };
+  kuznyechik_0_1_0 = buildCratesLib {
+    name = "kuznyechik";
+    version = "0.1.0";
+    hash = "a168e9325b103300afa961bbf060aee3739193ebd9dff4f2167df970f4eb4e28";
+    deps = with allCrates; [  all__generic-array.generic-array_0_6 all__block-cipher-trait.block-cipher-trait_0_3 ];
+  };
   "kuznyechik_0_0" = kuznyechik_0_0_0;
-  "kuznyechik_0" = kuznyechik_0_0_0;}
+  kuznyechik_0_1_1 = buildCratesLib {
+    name = "kuznyechik";
+    version = "0.1.1";
+    hash = "5b1111c53987fdbe2d9587834d2fcca403e0bde0c37ef42870230897d34e470a";
+    deps = with allCrates; [  all__block-cipher-trait.block-cipher-trait_0_3 all__generic-array.generic-array_0_6 ];
+  };
+  "kuznyechik_0_1" = kuznyechik_0_1_1;
+  "kuznyechik_0" = kuznyechik_0_1_1;}

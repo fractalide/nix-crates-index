@@ -7,5 +7,11 @@ rec {
     hash = "ad9d8410135547f6930c15f0c888d69232ab6bafc1c552bf1cd7503d3bc39b8b";
     deps = with allCrates; [  all__nom.nom_2_0 ];
   };
-  "systemd-parser_0_1" = systemd-parser_0_1_0;
-  "systemd-parser_0" = systemd-parser_0_1_0;}
+  systemd-parser_0_1_2 = buildCratesLib {
+    name = "systemd-parser";
+    version = "0.1.2";
+    hash = "82a4ab629df3a76437a5fc42f0b135e320c0e25459c129686e570e56e6904996";
+    deps = with allCrates; [  all__nom.nom_2_0 all__quick-error.quick-error_1_1 all__itertools.itertools_0_5 ];
+  };
+  "systemd-parser_0_1" = systemd-parser_0_1_2;
+  "systemd-parser_0" = systemd-parser_0_1_2;}

@@ -182,5 +182,17 @@ rec {
     hash = "a21e9f1645b1332782724adf3a6f1a6891417d89c23ec20c67f60621c8292453";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__hyper.hyper_0_9 all__protobuf.protobuf_1_0 all__termion.termion_1_1 all__unicode-segmentation.unicode-segmentation_0_1 all__time.time_0_1 all__getopts.getopts_0_2 all__regex.regex_0_1 all__rand.rand_0_3 all__log.log_0_3 all__libc.libc_0_2 ];
   };
-  "voidmap_0_3" = voidmap_0_3_2;
-  "voidmap_0" = voidmap_0_3_2;}
+  voidmap_0_3_3 = buildCratesLib {
+    name = "voidmap";
+    version = "0.3.3";
+    hash = "5ec720a7ebadf75823511b0c236f014880a03d0d3eeb740fcce20e8824701c77";
+    deps = with allCrates; [  all__protobuf.protobuf_1_0 all__getopts.getopts_0_2 all__regex.regex_0_1 all__hyper.hyper_0_9 all__time.time_0_1 all__rand.rand_0_3 all__libc.libc_0_2 all__termion.termion_1_1 all__lazy_static.lazy_static_0_2 all__log.log_0_3 all__unicode-segmentation.unicode-segmentation_0_1 ];
+  };
+  voidmap_0_3_4 = buildCratesLib {
+    name = "voidmap";
+    version = "0.3.4";
+    hash = "7413d1474ff81da22dc3e6944e4fbe7be24e1e8ea5de4794805c78715277296b";
+    deps = with allCrates; [  all__getopts.getopts_0_2 all__hyper.hyper_0_9 all__unicode-segmentation.unicode-segmentation_0_1 all__libc.libc_0_2 all__time.time_0_1 all__regex.regex_0_1 all__lazy_static.lazy_static_0_2 all__termion.termion_1_1 all__protobuf.protobuf_1_1 all__rand.rand_0_3 all__log.log_0_3 ];
+  };
+  "voidmap_0_3" = voidmap_0_3_4;
+  "voidmap_0" = voidmap_0_3_4;}

@@ -92,5 +92,23 @@ rec {
     deps = with allCrates; [  all__tempdir.tempdir_0_3 all__nix.nix_0_6 ];
   };
   "atomicwrites_0_0" = atomicwrites_0_0_14;
-  "atomicwrites_0_1" = atomicwrites_0_1_0;
-  "atomicwrites_0" = atomicwrites_0_1_0;}
+  atomicwrites_0_1_1 = buildCratesLib {
+    name = "atomicwrites";
+    version = "0.1.1";
+    hash = "08071122da0991ac5d79039fe5d9b6397946b44cc875e7a13ad8ded32d91725b";
+    deps = with allCrates; [  all__tempdir.tempdir_0_3 all__nix.nix_0_6 ];
+  };
+  atomicwrites_0_1_2 = buildCratesLib {
+    name = "atomicwrites";
+    version = "0.1.2";
+    hash = "08a52ce2c05fa718885f29f89bec14b86e711d325ed81b853c3cab70753e8709";
+    deps = with allCrates; [  all__tempdir.tempdir_0_3 all__nix.nix_0_6 ];
+  };
+  atomicwrites_0_1_3 = buildCratesLib {
+    name = "atomicwrites";
+    version = "0.1.3";
+    hash = "c4328d3fa4af4aedc582587976a0f74decc73f90ea7cae3d757c0535f983d16f";
+    deps = with allCrates; [  all__tempdir.tempdir_0_3 all__nix.nix_0_7 ];
+  };
+  "atomicwrites_0_1" = atomicwrites_0_1_3;
+  "atomicwrites_0" = atomicwrites_0_1_3;}

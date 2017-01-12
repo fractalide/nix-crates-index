@@ -79,5 +79,11 @@ rec {
     hash = "160a1fbbe192cec4dfba15c05aa4b3c725d001bd052b193d8e276f97a4ec4fde";
     deps = with allCrates; [  ];
   };
-  "memcache_0_0" = memcache_0_0_13;
-  "memcache_0" = memcache_0_0_13;}
+  memcache_0_0_14 = buildCratesLib {
+    name = "memcache";
+    version = "0.0.14";
+    hash = "4ea73494d62dce43d94fdfbffed708d9eaf132e0fef8848f2a575dbb7333d132";
+    deps = with allCrates; [  ];
+  };
+  "memcache_0_0" = memcache_0_0_14;
+  "memcache_0" = memcache_0_0_14;}

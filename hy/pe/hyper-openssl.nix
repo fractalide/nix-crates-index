@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  all__antidote.antidote_1_0 all__hyper.hyper_0_10 all__openssl.openssl_0_9 ];
   };
   "hyper-openssl_0_1" = hyper-openssl_0_1_0;
-  "hyper-openssl_0_2" = hyper-openssl_0_2_0;
-  "hyper-openssl_0" = hyper-openssl_0_2_0;}
+  hyper-openssl_0_2_1 = buildCratesLib {
+    name = "hyper-openssl";
+    version = "0.2.1";
+    hash = "5f226a866ba44360c633800947e64ddde5a144bb96a4a1eb50e1f9a090991e37";
+    deps = with allCrates; [  all__openssl.openssl_0_9 all__hyper.hyper_0_10 all__antidote.antidote_1_0 ];
+  };
+  "hyper-openssl_0_2" = hyper-openssl_0_2_1;
+  "hyper-openssl_0" = hyper-openssl_0_2_1;}

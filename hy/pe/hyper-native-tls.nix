@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  all__native-tls.native-tls_0_1 all__hyper.hyper_0_10 all__antidote.antidote_1_0 ];
   };
   "hyper-native-tls_0_1" = hyper-native-tls_0_1_0;
-  "hyper-native-tls_0_2" = hyper-native-tls_0_2_0;
-  "hyper-native-tls_0" = hyper-native-tls_0_2_0;}
+  hyper-native-tls_0_2_1 = buildCratesLib {
+    name = "hyper-native-tls";
+    version = "0.2.1";
+    hash = "0e78f1ec6e10c3d39a3b5d1a454d6869883a7d038f3cf3a36d6d0e67db34f1aa";
+    deps = with allCrates; [  all__antidote.antidote_1_0 all__native-tls.native-tls_0_1 all__hyper.hyper_0_10 ];
+  };
+  "hyper-native-tls_0_2" = hyper-native-tls_0_2_1;
+  "hyper-native-tls_0" = hyper-native-tls_0_2_1;}

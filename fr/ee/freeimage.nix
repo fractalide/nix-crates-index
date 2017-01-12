@@ -7,5 +7,11 @@ rec {
     hash = "4f119a76338aff3f59a7847b8b0a0045ae6ce15bc858734efd6277bb0dea7cf9";
     deps = with allCrates; [  libc freeimage-sys freeimage-sys ];
   };
-  "freeimage_0_0" = freeimage_0_0_1;
-  "freeimage_0" = freeimage_0_0_1;}
+  freeimage_0_0_2 = buildCratesLib {
+    name = "freeimage";
+    version = "0.0.2";
+    hash = "c9b83c216a6dd3d8b6156dcacbde6230f902fac4e69df8ed0e0854555f0f34a2";
+    deps = with allCrates; [  enum_primitive num libc all__freeimage-sys.freeimage-sys_0_0_1 all__freeimage-sys.freeimage-sys_0_0_1 ];
+  };
+  "freeimage_0_0" = freeimage_0_0_2;
+  "freeimage_0" = freeimage_0_0_2;}

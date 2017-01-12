@@ -7,5 +7,11 @@ rec {
     hash = "0932d70df5b3c235a6e76defb0becdd13dd64f6f93d5a34605a2e8ef3a021960";
     deps = with allCrates; [  all__digest-buffer.digest-buffer_0_2 all__digest.digest_0_4 all__generic-array.generic-array_0_6 all__byte-tools.byte-tools_0_1 ];
   };
-  "md2_0_1" = md2_0_1_0;
-  "md2_0" = md2_0_1_0;}
+  md2_0_1_1 = buildCratesLib {
+    name = "md2";
+    version = "0.1.1";
+    hash = "6b78c49ae8080aa4c62ac3be670331da03432af5620146f13998fe21a5f395f6";
+    deps = with allCrates; [  all__generic-array.generic-array_0_6 all__digest.digest_0_4 all__byte-tools.byte-tools_0_1 all__digest-buffer.digest-buffer_0_2 ];
+  };
+  "md2_0_1" = md2_0_1_1;
+  "md2_0" = md2_0_1_1;}

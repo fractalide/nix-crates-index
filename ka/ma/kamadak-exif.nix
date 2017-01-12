@@ -7,5 +7,11 @@ rec {
     hash = "f7e77ddb4235d5edd79221d29a8521718a89b7f9240b2a955cd50404797436ca";
     deps = with allCrates; [  ];
   };
-  "kamadak-exif_0_1" = kamadak-exif_0_1_0;
-  "kamadak-exif_0" = kamadak-exif_0_1_0;}
+  kamadak-exif_0_1_1 = buildCratesLib {
+    name = "kamadak-exif";
+    version = "0.1.1";
+    hash = "0a7ae8240ae6e0474a1e1258ada2c9815eaf39d80805fbcd41df6a49dbf7b1e2";
+    deps = with allCrates; [  ];
+  };
+  "kamadak-exif_0_1" = kamadak-exif_0_1_1;
+  "kamadak-exif_0" = kamadak-exif_0_1_1;}

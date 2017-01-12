@@ -7,5 +7,11 @@ rec {
     hash = "6429734e023a276a031ca202fb4db8e73954606f8bc3560adc308726cb9a1319";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
-  "shaderc_0_1" = shaderc_0_1_0;
-  "shaderc_0" = shaderc_0_1_0;}
+  shaderc_0_1_1 = buildCratesLib {
+    name = "shaderc";
+    version = "0.1.1";
+    hash = "09abc48e29d946614b8babc2fc058d48d61da95a7c439f1382f721f466d4c249";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "shaderc_0_1" = shaderc_0_1_1;
+  "shaderc_0" = shaderc_0_1_1;}

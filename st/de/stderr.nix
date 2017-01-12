@@ -32,5 +32,12 @@ rec {
     hash = "7a729549370e8b5c73d1b55511a4ca4511a31b165c6a898350619f86c8aaac41";
     deps = with allCrates; [  ];
   };
+  stderr_0_3_0 = buildCratesLib {
+    name = "stderr";
+    version = "0.3.0";
+    hash = "6a2ffe57c17a4dd6da8c05800acdef0b73445ab47e8d8e4117060e54087c2a0e";
+    deps = with allCrates; [  ];
+  };
   "stderr_0_2" = stderr_0_2_2;
-  "stderr_0" = stderr_0_2_2;}
+  "stderr_0_3" = stderr_0_3_0;
+  "stderr_0" = stderr_0_3_0;}

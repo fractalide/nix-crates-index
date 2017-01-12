@@ -13,5 +13,12 @@ rec {
     hash = "ac4c09c27a1179a9fc9809d49fb6e3a9af31085f3e8f1cf1f1b7f02b2aadae52";
     deps = with allCrates; [  all__num_cpus.num_cpus_1_2 all__stderr.stderr_0_2 ];
   };
+  poolite_0_3_0 = buildCratesLib {
+    name = "poolite";
+    version = "0.3.0";
+    hash = "486e96d5be15ceee66e95dca24f212ce11fac3716311a8c3d899de867b2e8cec";
+    deps = with allCrates; [  all__num_cpus.num_cpus_1_2 all__stderr.stderr_0_3 ];
+  };
   "poolite_0_2" = poolite_0_2_1;
-  "poolite_0" = poolite_0_2_1;}
+  "poolite_0_3" = poolite_0_3_0;
+  "poolite_0" = poolite_0_3_0;}

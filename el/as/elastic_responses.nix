@@ -13,5 +13,17 @@ rec {
     hash = "cf18cd1e3d2968b89427342e960671b67843a16da31bb051ff3ca49a30858d49";
     deps = with allCrates; [  all__json_str.json_str_0_3 all__slog-envlogger.slog-envlogger_0_5 all__serde_derive.serde_derive_0_8 all__slog-stdlog.slog-stdlog_1_1 all__serde_json.serde_json_0_8 all__slog.slog_1_4 all__log.log_0_3 all__serde.serde_0_8 ];
   };
-  "elastic_responses_0_2" = elastic_responses_0_2_1;
-  "elastic_responses_0" = elastic_responses_0_2_1;}
+  elastic_responses_0_2_2 = buildCratesLib {
+    name = "elastic_responses";
+    version = "0.2.2";
+    hash = "d5dafbb3c637f823b030e6a6a4d918aec420a6d048252403b021749a2df722e4";
+    deps = with allCrates; [  all__serde.serde_0_8 all__log.log_0_3 all__serde_json.serde_json_0_8 all__slog.slog_1_4 all__slog-stdlog.slog-stdlog_1_1 all__serde_derive.serde_derive_0_8 all__slog-envlogger.slog-envlogger_0_5 ];
+  };
+  elastic_responses_0_2_3 = buildCratesLib {
+    name = "elastic_responses";
+    version = "0.2.3";
+    hash = "7854f9490eb22c12161c34e759004a9383ee7cde8b82129af96c84617ac11782";
+    deps = with allCrates; [  all__log.log_0_3 all__serde.serde_0_8 all__slog-envlogger.slog-envlogger_0_5 all__slog-stdlog.slog-stdlog_1_1 all__slog.slog_1_4 all__serde_derive.serde_derive_0_8 all__serde_json.serde_json_0_8 ];
+  };
+  "elastic_responses_0_2" = elastic_responses_0_2_3;
+  "elastic_responses_0" = elastic_responses_0_2_3;}
