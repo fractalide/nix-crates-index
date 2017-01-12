@@ -20,5 +20,11 @@ rec {
     deps = with allCrates; [  num ];
   };
   "enum_primitive_0_0" = enum_primitive_0_0_2;
-  "enum_primitive_0_1" = enum_primitive_0_1_0;
-  "enum_primitive_0" = enum_primitive_0_1_0;}
+  enum_primitive_0_1_1 = buildCratesLib {
+    name = "enum_primitive";
+    version = "0.1.1";
+    hash = "be4551092f4d519593039259a9ed8daedf0da12e5109c5280338073eaeb81180";
+    deps = with allCrates; [  all__num-traits.num-traits_0_1 ];
+  };
+  "enum_primitive_0_1" = enum_primitive_0_1_1;
+  "enum_primitive_0" = enum_primitive_0_1_1;}

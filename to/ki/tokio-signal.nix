@@ -7,5 +7,11 @@ rec {
     hash = "97107bc1c3ab64941fafa5691e071791de83534d04e229d182fa692ae88f712f";
     deps = with allCrates; [  all__futures.futures_0_1 all__tokio-core.tokio-core_0_1 all__tokio-uds.tokio-uds_0_1 all__mio.mio_0_6 all__libc.libc_0_2 ];
   };
-  "tokio-signal_0_1" = tokio-signal_0_1_0;
-  "tokio-signal_0" = tokio-signal_0_1_0;}
+  tokio-signal_0_1_1 = buildCratesLib {
+    name = "tokio-signal";
+    version = "0.1.1";
+    hash = "5e3722dc8718736b3939247993e14142fe8c1ccd3671a45a195ed54f673dff15";
+    deps = with allCrates; [  all__futures.futures_0_1 all__tokio-core.tokio-core_0_1 all__libc.libc_0_2 all__tokio-uds.tokio-uds_0_1 all__mio.mio_0_6 ];
+  };
+  "tokio-signal_0_1" = tokio-signal_0_1_1;
+  "tokio-signal_0" = tokio-signal_0_1_1;}

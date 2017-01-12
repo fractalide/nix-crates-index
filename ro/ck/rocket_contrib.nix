@@ -25,5 +25,11 @@ rec {
     hash = "9891116215a591e15daa755af0004e8ede19ce725e2eec08778cafbcc95bde71";
     deps = with allCrates; [  all__log.log_0_3 all__rocket.rocket_0_1 ];
   };
-  "rocket_contrib_0_1" = rocket_contrib_0_1_3;
-  "rocket_contrib_0" = rocket_contrib_0_1_3;}
+  rocket_contrib_0_1_4 = buildCratesLib {
+    name = "rocket_contrib";
+    version = "0.1.4";
+    hash = "8376c8f3906651ff0999c382c64b3ad9437d1bcbf59909be61b2971845d39ad0";
+    deps = with allCrates; [  all__log.log_0_3 all__rocket.rocket_0_1 ];
+  };
+  "rocket_contrib_0_1" = rocket_contrib_0_1_4;
+  "rocket_contrib_0" = rocket_contrib_0_1_4;}

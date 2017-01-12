@@ -7,5 +7,31 @@ rec {
     hash = "2756de0fbab723fa5e9c3da9e8b84c5e8a510034433a9c42ae251c9c524ec0a0";
     deps = with allCrates; [  ];
   };
+  managed_0_1_0 = buildCratesLib {
+    name = "managed";
+    version = "0.1.0";
+    hash = "5e1cd1435deb7fc745a6930dbbeb7b33768aacea6dcf0ad5262b81d432da5e4b";
+    deps = with allCrates; [  ];
+  };
   "managed_0_0" = managed_0_0_0;
-  "managed_0" = managed_0_0_0;}
+  managed_0_1_1 = buildCratesLib {
+    name = "managed";
+    version = "0.1.1";
+    hash = "b4834992c217410d45adca0e4a836a03947dd9f1ec3fc8126f2f0836b17cf573";
+    deps = with allCrates; [  ];
+  };
+  managed_0_2_0 = buildCratesLib {
+    name = "managed";
+    version = "0.2.0";
+    hash = "c94ada75669dbe61ef16666546b180b150910c4b69c60517bccf22062fbdc8fa";
+    deps = with allCrates; [  ];
+  };
+  "managed_0_1" = managed_0_1_1;
+  managed_0_2_1 = buildCratesLib {
+    name = "managed";
+    version = "0.2.1";
+    hash = "5981b4c6de5ce272aaf2caaa56adb8f6fd24a73206b38302db572ab9374aab10";
+    deps = with allCrates; [  ];
+  };
+  "managed_0_2" = managed_0_2_1;
+  "managed_0" = managed_0_2_1;}

@@ -41,5 +41,11 @@ rec {
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__regex.regex_0_1 ];
   };
   "woothee_0_4" = woothee_0_4_0;
-  "woothee_0_5" = woothee_0_5_0;
-  "woothee_0" = woothee_0_5_0;}
+  woothee_0_5_1 = buildCratesLib {
+    name = "woothee";
+    version = "0.5.1";
+    hash = "e1e0fa04c89111e403cf0e9c7e13a5cc850f21fd368e70c988accfab6a53ee6e";
+    deps = with allCrates; [  all__regex.regex_0_2 all__lazy_static.lazy_static_0_2 ];
+  };
+  "woothee_0_5" = woothee_0_5_1;
+  "woothee_0" = woothee_0_5_1;}

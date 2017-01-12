@@ -128,5 +128,12 @@ rec {
     hash = "d0b1240e3627e646f69685ddd3e7d83dd3ff3d586afe83bf3679082028183f2d";
     deps = with allCrates; [  all__freetype-rs.freetype-rs_0_11 all__gfx.gfx_0_12 ];
   };
+  gfx_text_0_14_0 = buildCratesLib {
+    name = "gfx_text";
+    version = "0.14.0";
+    hash = "a927e0575531ae5a62c2ecdd89582ff8c2914f0a436abdf1964b78764cea4f27";
+    deps = with allCrates; [  all__freetype-rs.freetype-rs_0_11 all__gfx.gfx_0_13 ];
+  };
   "gfx_text_0_13" = gfx_text_0_13_2;
-  "gfx_text_0" = gfx_text_0_13_2;}
+  "gfx_text_0_14" = gfx_text_0_14_0;
+  "gfx_text_0" = gfx_text_0_14_0;}

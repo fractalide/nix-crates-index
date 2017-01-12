@@ -7,5 +7,18 @@ rec {
     hash = "9cd9605f4568b8ad930b4821faa87762e3be6bde814cb85bde23e1f54f013eba";
     deps = with allCrates; [  all__rand.rand_0_3 ];
   };
+  fountain_codes_0_2_0 = buildCratesLib {
+    name = "fountain_codes";
+    version = "0.2.0";
+    hash = "208ac9de2d79f5c99412371a2f8ff801a5ba4d3a44cf0936528878e9782f8241";
+    deps = with allCrates; [  all__byteorder.byteorder_1 all__rand.rand_0_3 ];
+  };
   "fountain_codes_0_1" = fountain_codes_0_1_0;
-  "fountain_codes_0" = fountain_codes_0_1_0;}
+  fountain_codes_0_2_1 = buildCratesLib {
+    name = "fountain_codes";
+    version = "0.2.1";
+    hash = "275846880e6a97768822ef20c5ff326e2a2a749dbd4a35ea403c13748f7da2f2";
+    deps = with allCrates; [  all__byteorder.byteorder_1 all__rand.rand_0_3 ];
+  };
+  "fountain_codes_0_2" = fountain_codes_0_2_1;
+  "fountain_codes_0" = fountain_codes_0_2_1;}

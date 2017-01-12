@@ -13,5 +13,36 @@ rec {
     hash = "42be05128bbaa99474fe26c663c1b162ae2fed3019fdadd218c376332dabd5c5";
     deps = with allCrates; [  all__al-sys.al-sys_0_1 all__lazy_static.lazy_static_0_2 ];
   };
+  alto_0_2_0 = buildCratesLib {
+    name = "alto";
+    version = "0.2.0";
+    hash = "85a2703d57daf0ed2b175496e1e7fe7968f3c17186064dfb2382648346a2905e";
+    deps = with allCrates; [  all__rental.rental_0_3 all__al-sys.al-sys_0_3 all__lazy_static.lazy_static_0_2 ];
+  };
   "alto_0_1" = alto_0_1_1;
-  "alto_0" = alto_0_1_1;}
+  alto_0_2_1 = buildCratesLib {
+    name = "alto";
+    version = "0.2.1";
+    hash = "9c8b3e8405aef1792ca50271e267b50ec982257a2f6c673b30318f9d62fc6950";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__rental.rental_0_3 all__al-sys.al-sys_0_3 ];
+  };
+  alto_0_2_2 = buildCratesLib {
+    name = "alto";
+    version = "0.2.2";
+    hash = "967438a067443520e4f0cc569acc3046627f9878c7074da6f31bca9a33ac21c9";
+    deps = with allCrates; [  all__al-sys.al-sys_0_3 all__lazy_static.lazy_static_0_2 all__rental.rental_0_3 ];
+  };
+  alto_0_2_3 = buildCratesLib {
+    name = "alto";
+    version = "0.2.3";
+    hash = "ed782993e1c3572f0328f7cadee41d19786987d00d471ab403cb61290e713925";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__al-sys.al-sys_0_3 all__rental.rental_0_3 ];
+  };
+  alto_0_2_4 = buildCratesLib {
+    name = "alto";
+    version = "0.2.4";
+    hash = "8a4c070282d7ce4f79681ea7fae46758078fb8e5b906734af267dc63c6a2d850";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__rental.rental_0_3 all__al-sys.al-sys_0_3 ];
+  };
+  "alto_0_2" = alto_0_2_4;
+  "alto_0" = alto_0_2_4;}

@@ -13,5 +13,12 @@ rec {
     hash = "9196327308044a655cd5a41b2b67f8d15d55f73f41d769c6cb1b26d2c649bbb9";
     deps = with allCrates; [  all__glib-sys.glib-sys_0_3 all__gudev-sys.gudev-sys_0_1 all__libc.libc_0_2 all__glib.glib_0_1 ];
   };
+  gudev_0_2_0 = buildCratesLib {
+    name = "gudev";
+    version = "0.2.0";
+    hash = "6e2a36e80b9e7c3efb5320f8bf13973302716bf307e7d719b7ae7a49def2f98c";
+    deps = with allCrates; [  all__gudev-sys.gudev-sys_0_1 all__libc.libc_0_2 all__glib-sys.glib-sys_0_3 all__glib.glib_0_1 ];
+  };
   "gudev_0_1" = gudev_0_1_1;
-  "gudev_0" = gudev_0_1_1;}
+  "gudev_0_2" = gudev_0_2_0;
+  "gudev_0" = gudev_0_2_0;}

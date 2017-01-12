@@ -31,5 +31,13 @@ rec {
     hash = "08b34685672932db9b73bbffad55d9b8881ac0a4db9d88a4bec37cfb1d42f6c3";
     deps = with allCrates; [  all__nom.nom_1_2 ];
   };
+  pcapng_1_0_0 = buildCratesLib {
+    name = "pcapng";
+    version = "1.0.0";
+    hash = "4a356ec9da42ba870192de898b5013ff7f32e9ee13f400d7a6640491b9e26ac7";
+    deps = with allCrates; [  all__nom.nom_2_0 ];
+  };
   "pcapng_0_0" = pcapng_0_0_4;
-  "pcapng_0" = pcapng_0_0_4;}
+  "pcapng_0" = pcapng_0_0_4;
+  "pcapng_1_0" = pcapng_1_0_0;
+  "pcapng_1" = pcapng_1_0_0;}

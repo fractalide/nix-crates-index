@@ -13,5 +13,12 @@ rec {
     hash = "09f3aa2170f7c065fc48b49441032ad1b782e6879886c37a96e5d6c77ce8590e";
     deps = with allCrates; [  ];
   };
+  bs58_0_2_0 = buildCratesLib {
+    name = "bs58";
+    version = "0.2.0";
+    hash = "2e6ea4851598d7433fbdba71fa2509d9b0df68124b9c0effe7588f5149692d9f";
+    deps = with allCrates; [  ];
+  };
   "bs58_0_1" = bs58_0_1_3;
-  "bs58_0" = bs58_0_1_3;}
+  "bs58_0_2" = bs58_0_2_0;
+  "bs58_0" = bs58_0_2_0;}

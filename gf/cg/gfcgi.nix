@@ -32,5 +32,11 @@ rec {
     hash = "959420202793c35e1ff9026f2bf5040a6cbcf5c9f34e9202cddf212979ba5485";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
   };
-  "gfcgi_0_4" = gfcgi_0_4_2;
-  "gfcgi_0" = gfcgi_0_4_2;}
+  gfcgi_0_4_3 = buildCratesLib {
+    name = "gfcgi";
+    version = "0.4.3";
+    hash = "8d12a5811c6c1e7c18321951e4386512df17dc396f2ac164c94ddff5fdedcdbc";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
+  };
+  "gfcgi_0_4" = gfcgi_0_4_3;
+  "gfcgi_0" = gfcgi_0_4_3;}

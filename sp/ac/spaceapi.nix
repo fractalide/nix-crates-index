@@ -40,5 +40,11 @@ rec {
     deps = with allCrates; [  all__serde_derive.serde_derive_0_8 all__serde_json.serde_json_0_8 all__log.log_0_3 all__serde.serde_0_8 ];
   };
   "spaceapi_0_3" = spaceapi_0_3_1;
-  "spaceapi_0_4" = spaceapi_0_4_0;
-  "spaceapi_0" = spaceapi_0_4_0;}
+  spaceapi_0_4_1 = buildCratesLib {
+    name = "spaceapi";
+    version = "0.4.1";
+    hash = "44fbc0fd3195f3191b4f76f39123120cc2c47880cc553b1e6c67bdf295ebd507";
+    deps = with allCrates; [  all__serde.serde_0_8 all__serde_derive.serde_derive_0_8 all__log.log_0_3 all__serde_json.serde_json_0_8 ];
+  };
+  "spaceapi_0_4" = spaceapi_0_4_1;
+  "spaceapi_0" = spaceapi_0_4_1;}

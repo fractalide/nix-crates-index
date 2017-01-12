@@ -112,5 +112,19 @@ rec {
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 ];
   };
   "syntex_pos_0_51" = syntex_pos_0_51_0;
+  syntex_pos_0_53_0 = buildCratesLib {
+    name = "syntex_pos";
+    version = "0.53.0";
+    hash = "b4b35411ef4aa76cc547241a6d6952566f7152aa40b7432e224bc3c5fab56c9c";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 ];
+  };
   "syntex_pos_0_52" = syntex_pos_0_52_0;
-  "syntex_pos_0" = syntex_pos_0_52_0;}
+  syntex_pos_0_54_0 = buildCratesLib {
+    name = "syntex_pos";
+    version = "0.54.0";
+    hash = "8df3921c7945dfb9ffc53aa35adb2cf4313b5ab5f079c3619b3d4eb82a0efc2b";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "syntex_pos_0_53" = syntex_pos_0_53_0;
+  "syntex_pos_0_54" = syntex_pos_0_54_0;
+  "syntex_pos_0" = syntex_pos_0_54_0;}

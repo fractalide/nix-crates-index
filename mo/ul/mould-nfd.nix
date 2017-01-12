@@ -13,5 +13,11 @@ rec {
     hash = "166f9816027d987a60d40fc1e5a45b9c8a6802eca8ac272f1f60b1a52cece5bd";
     deps = with allCrates; [  all__permission.permission_0_1 all__mould.mould_0_0_18 all__nfd.nfd_0_0_4 ];
   };
-  "mould-nfd_0_0" = mould-nfd_0_0_7;
-  "mould-nfd_0" = mould-nfd_0_0_7;}
+  mould-nfd_0_0_8 = buildCratesLib {
+    name = "mould-nfd";
+    version = "0.0.8";
+    hash = "50643f2f34f7036331fe9ef853d562c2e1e8b0191dbb8cab39a1e7e53155a5c0";
+    deps = with allCrates; [  all__nfd.nfd_0_0_4 all__permission.permission_0_1 all__mould.mould_0_0_19 ];
+  };
+  "mould-nfd_0_0" = mould-nfd_0_0_8;
+  "mould-nfd_0" = mould-nfd_0_0_8;}

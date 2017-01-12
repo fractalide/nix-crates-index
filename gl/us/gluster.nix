@@ -112,5 +112,18 @@ rec {
     hash = "a160c24cb2d257387482d0514666c4decdb2159ff667d6b65158d9ac81b26803";
     deps = with allCrates; [  all__regex.regex_0_1 all__unix_socket.unix_socket_0_5 all__uuid.uuid_0_3 all__log.log_0_3 all__byteorder.byteorder_0_4 ];
   };
+  gluster_0_5_0 = buildCratesLib {
+    name = "gluster";
+    version = "0.5.0";
+    hash = "8dee573179eacb5429c02539cf79b1d8cfc4ce1aa17ee8cf590a98ee88ba1f43";
+    deps = with allCrates; [  all__byteorder.byteorder_0_4 all__log.log_0_3 all__uuid.uuid_0_3 all__unix_socket.unix_socket_0_5 all__regex.regex_0_1 ];
+  };
   "gluster_0_4" = gluster_0_4_1;
-  "gluster_0" = gluster_0_4_1;}
+  gluster_0_5_1 = buildCratesLib {
+    name = "gluster";
+    version = "0.5.1";
+    hash = "9e6d03408b816308b8efd7cbb69c63f44f1eb64f588380c4305df3b2065e8d37";
+    deps = with allCrates; [  all__log.log_0_3 all__uuid.uuid_0_3 all__unix_socket.unix_socket_0_5 all__regex.regex_0_1 all__byteorder.byteorder_0_4 ];
+  };
+  "gluster_0_5" = gluster_0_5_1;
+  "gluster_0" = gluster_0_5_1;}

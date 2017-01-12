@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__regex.regex_0_1 all__onig.onig_1_2 all__macro-attr.macro-attr_0_2 all__itertools.itertools_0_5 all__time.time_0_1 all__derive_builder.derive_builder_0_2 ];
   };
   "zxcvbn_0_1" = zxcvbn_0_1_0;
-  "zxcvbn_0_2" = zxcvbn_0_2_0;
-  "zxcvbn_0" = zxcvbn_0_2_0;}
+  zxcvbn_0_2_1 = buildCratesLib {
+    name = "zxcvbn";
+    version = "0.2.1";
+    hash = "a1b27a85354f196f504691f7b0b5be86f1b946155707fb4fa0dd55ce3063911c";
+    deps = with allCrates; [  all__macro-attr.macro-attr_0_2 all__regex.regex_0_2 all__onig.onig_1_2 all__lazy_static.lazy_static_0_2 all__time.time_0_1 all__itertools.itertools_0_5 all__derive_builder.derive_builder_0_2 ];
+  };
+  "zxcvbn_0_2" = zxcvbn_0_2_1;
+  "zxcvbn_0" = zxcvbn_0_2_1;}

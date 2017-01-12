@@ -35,5 +35,11 @@ rec {
   };
   "leveldb-sys_1_0" = leveldb-sys_1_0_0;
   "leveldb-sys_1" = leveldb-sys_1_0_0;
-  "leveldb-sys_2_0" = leveldb-sys_2_0_0;
-  "leveldb-sys_2" = leveldb-sys_2_0_0;}
+  leveldb-sys_2_0_1 = buildCratesLib {
+    name = "leveldb-sys";
+    version = "2.0.1";
+    hash = "4a4e97b4e1ee52602c3af5f47c1959e9f349217a41f1510fe4a8ac02ce3dc818";
+    deps = with allCrates; [  libc ];
+  };
+  "leveldb-sys_2_0" = leveldb-sys_2_0_1;
+  "leveldb-sys_2" = leveldb-sys_2_0_1;}

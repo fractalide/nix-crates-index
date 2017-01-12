@@ -56,5 +56,12 @@ rec {
     hash = "73d699063dfc2ee05f524a9dc49a77906e675c90580f4b7551545328ed14b961";
     deps = with allCrates; [  ];
   };
+  json_str_0_4_0 = buildCratesLib {
+    name = "json_str";
+    version = "0.4.0";
+    hash = "44b7aeaec5695af900e93c8c7b149e51a5e8042b6306a4393522feac607a4543";
+    deps = with allCrates; [  ];
+  };
   "json_str_0_3" = json_str_0_3_4;
-  "json_str_0" = json_str_0_3_4;}
+  "json_str_0_4" = json_str_0_4_0;
+  "json_str_0" = json_str_0_4_0;}

@@ -376,5 +376,11 @@ rec {
     hash = "02c2411d418cea2364325b18a205664f9ef8252e06b2e911db97c0b0d98b1406";
     deps = with allCrates; [  all__rand.rand_0_3 ];
   };
-  "quickcheck_0_4" = quickcheck_0_4_1;
-  "quickcheck_0" = quickcheck_0_4_1;}
+  quickcheck_0_4_2 = buildCratesLib {
+    name = "quickcheck";
+    version = "0.4.2";
+    hash = "3ef294c14018cf202d4eb6b610c285c992fdf73f144a1e068198c8cc7daf5e9b";
+    deps = with allCrates; [  all__rand.rand_0_3 ];
+  };
+  "quickcheck_0_4" = quickcheck_0_4_2;
+  "quickcheck_0" = quickcheck_0_4_2;}

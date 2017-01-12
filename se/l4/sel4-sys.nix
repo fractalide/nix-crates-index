@@ -133,5 +133,29 @@ rec {
     hash = "1dc581635facead7b56a1a56decc226a09b661c8f7dc3685e73bfa3ff5666088";
     deps = with allCrates; [  all__bitflags.bitflags_0_7 all__rlibc.rlibc_1_0_0 ];
   };
-  "sel4-sys_0_0" = sel4-sys_0_0_23;
-  "sel4-sys_0" = sel4-sys_0_0_23;}
+  sel4-sys_0_0_24 = buildCratesLib {
+    name = "sel4-sys";
+    version = "0.0.24";
+    hash = "dfad35e812f24c751a4eb5de89d38e6a148ac1e3706b403f5399b280379ab162";
+    deps = with allCrates; [  all__bitflags.bitflags_0_7 all__rlibc.rlibc_1_0_0 ];
+  };
+  sel4-sys_0_0_25 = buildCratesLib {
+    name = "sel4-sys";
+    version = "0.0.25";
+    hash = "a85a1253b252ff6257bc13463bd90c6fac323e2fb3eca2ec10edaf9bdcd0d333";
+    deps = with allCrates; [  all__bitflags.bitflags_0_7 all__rlibc.rlibc_1_0_0 ];
+  };
+  sel4-sys_0_0_26 = buildCratesLib {
+    name = "sel4-sys";
+    version = "0.0.26";
+    hash = "d291e763cae6f7fc3ed334966b7982007032c8abc7b8ab82d73d7fd08df32b89";
+    deps = with allCrates; [  all__rlibc.rlibc_1_0_0 all__bitflags.bitflags_0_7 ];
+  };
+  sel4-sys_0_0_27 = buildCratesLib {
+    name = "sel4-sys";
+    version = "0.0.27";
+    hash = "afe1d1d35ec30a7c3472c16cb8b8f814573c537dbe66e684ac7c8f37f71bd41b";
+    deps = with allCrates; [  all__bitflags.bitflags_0_7 all__rlibc.rlibc_1_0_0 ];
+  };
+  "sel4-sys_0_0" = sel4-sys_0_0_27;
+  "sel4-sys_0" = sel4-sys_0_0_27;}

@@ -32,5 +32,11 @@ rec {
     hash = "5d5612061bc9905e8945c1770cb2fb55bb29aa100c76ad3323ec71b5f211f720";
     deps = with allCrates; [  all__errno.errno_0_2 all__libc.libc_0_2 ];
   };
-  "gfapi-sys_0_2" = gfapi-sys_0_2_4;
-  "gfapi-sys_0" = gfapi-sys_0_2_4;}
+  gfapi-sys_0_2_5 = buildCratesLib {
+    name = "gfapi-sys";
+    version = "0.2.5";
+    hash = "014ebb5f29d9bc6d8e285323c8d390ba4e20e7285f93b71132f517ae9c5450f2";
+    deps = with allCrates; [  all__libffi.libffi_0_4 all__errno.errno_0_2 all__libc.libc_0_2 ];
+  };
+  "gfapi-sys_0_2" = gfapi-sys_0_2_5;
+  "gfapi-sys_0" = gfapi-sys_0_2_5;}

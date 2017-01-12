@@ -60,5 +60,11 @@ rec {
     hash = "e88e43a5a74dd2a11707f9c21dfd4a423c66bd871df813227bb0a3e78f3a1ae9";
     deps = with allCrates; [  all__regex.regex_0_1 all__lazy_static.lazy_static_0_2 ];
   };
-  "semver-parser_0_6" = semver-parser_0_6_1;
-  "semver-parser_0" = semver-parser_0_6_1;}
+  semver-parser_0_6_2 = buildCratesLib {
+    name = "semver-parser";
+    version = "0.6.2";
+    hash = "d8fff3c9c5a54636ab95acd8c1349926e04cb1eb8cd70b5adced8a1d1f703a67";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__regex.regex_0_1 ];
+  };
+  "semver-parser_0_6" = semver-parser_0_6_2;
+  "semver-parser_0" = semver-parser_0_6_2;}

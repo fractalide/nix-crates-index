@@ -151,5 +151,11 @@ rec {
     hash = "1a437f8b4353179418870f014113876cd4cd4f642e42dbc5ed4f328d5f808246";
     deps = with allCrates; [  ];
   };
-  "syn_0_10" = syn_0_10_5;
-  "syn_0" = syn_0_10_5;}
+  syn_0_10_6 = buildCratesLib {
+    name = "syn";
+    version = "0.10.6";
+    hash = "17134635792e6a2361f53efbee798701796d8b5842c1c21b7cdb875e2950c8fc";
+    deps = with allCrates; [  ];
+  };
+  "syn_0_10" = syn_0_10_6;
+  "syn_0" = syn_0_10_6;}

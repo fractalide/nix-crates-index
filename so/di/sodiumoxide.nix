@@ -73,5 +73,11 @@ rec {
     hash = "8d9da099120def269669aa349e0c3e97de4ab2c5cb9a54a765041651dd0055eb";
     deps = with allCrates; [  all__libsodium-sys.libsodium-sys_0_0_12 all__libc.libc_0_2 ];
   };
-  "sodiumoxide_0_0" = sodiumoxide_0_0_12;
-  "sodiumoxide_0" = sodiumoxide_0_0_12;}
+  sodiumoxide_0_0_13 = buildCratesLib {
+    name = "sodiumoxide";
+    version = "0.0.13";
+    hash = "1fa64a17d98ec77bc7251c59a486e555b3813e32fb53ed608880f82e24ef6bd0";
+    deps = with allCrates; [  all__libc.libc_0_2 all__libsodium-sys.libsodium-sys_0_0_13 ];
+  };
+  "sodiumoxide_0_0" = sodiumoxide_0_0_13;
+  "sodiumoxide_0" = sodiumoxide_0_0_13;}

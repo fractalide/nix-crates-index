@@ -28,5 +28,12 @@ rec {
     deps = with allCrates; [  all__url.url_1_2 all__open.open_1_1 all__getopts.getopts_0_2 ];
   };
   "git-brws_0_3" = git-brws_0_3_0;
+  git-brws_0_5_0 = buildCratesLib {
+    name = "git-brws";
+    version = "0.5.0";
+    hash = "57c42d68af67eda866bdf205f0a8ad2e344d3fd9f69c9318741affc7a2eba2e5";
+    deps = with allCrates; [  all__url.url_1_2 all__getopts.getopts_0_2 all__open.open_1_1 ];
+  };
   "git-brws_0_4" = git-brws_0_4_1;
-  "git-brws_0" = git-brws_0_4_1;}
+  "git-brws_0_5" = git-brws_0_5_0;
+  "git-brws_0" = git-brws_0_5_0;}

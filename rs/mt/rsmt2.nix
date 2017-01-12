@@ -7,5 +7,18 @@ rec {
     hash = "25d24a9ec6c287f61e7b00ae795c27ac5b3ac9621d422e2b28c59f8bd32d46ff";
     deps = with allCrates; [  all__regex.regex_0_1 all__nom.nom_1_2 ];
   };
+  rsmt2_0_4_0 = buildCratesLib {
+    name = "rsmt2";
+    version = "0.4.0";
+    hash = "1570df63a0d74a0a8ccf1ac26b3961971596b73dae4570bd4cfaa78c93ca9d37";
+    deps = with allCrates; [  all__error-chain.error-chain_0 all__nom.nom_2 ];
+  };
   "rsmt2_0_2" = rsmt2_0_2_0;
-  "rsmt2_0" = rsmt2_0_2_0;}
+  rsmt2_0_4_1 = buildCratesLib {
+    name = "rsmt2";
+    version = "0.4.1";
+    hash = "d3ef2160fcc46ab279c7d20ef2a2a05a856a52c76a071134fc64655f69a76058";
+    deps = with allCrates; [  all__error-chain.error-chain_0 all__nom.nom_2 ];
+  };
+  "rsmt2_0_4" = rsmt2_0_4_1;
+  "rsmt2_0" = rsmt2_0_4_1;}

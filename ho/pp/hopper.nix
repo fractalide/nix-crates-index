@@ -13,5 +13,11 @@ rec {
     hash = "95176830cccc7c72f69d4a1aa5da6b5dda6abb566b48337051a4d774c0bf6262";
     deps = with allCrates; [  all__bincode.bincode_0_6 all__serde.serde_0_8 ];
   };
-  "hopper_0_1" = hopper_0_1_1;
-  "hopper_0" = hopper_0_1_1;}
+  hopper_0_1_2 = buildCratesLib {
+    name = "hopper";
+    version = "0.1.2";
+    hash = "8bdeae554d709510ee63128d88100c682e1040ba9c13e542278700baf83b5ec2";
+    deps = with allCrates; [  all__bincode.bincode_0_6 all__serde.serde_0_8 ];
+  };
+  "hopper_0_1" = hopper_0_1_2;
+  "hopper_0" = hopper_0_1_2;}

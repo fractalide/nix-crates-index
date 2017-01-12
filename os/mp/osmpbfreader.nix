@@ -46,5 +46,30 @@ rec {
     deps = with allCrates; [  all__flate2.flate2_0_2 all__byteorder.byteorder_1_0_0 all__flat_map.flat_map_0_0_3 all__protobuf.protobuf_1_0_24 ];
   };
   "osmpbfreader_0_5" = osmpbfreader_0_5_0;
-  "osmpbfreader_0_6" = osmpbfreader_0_6_0;
-  "osmpbfreader_0" = osmpbfreader_0_6_0;}
+  osmpbfreader_0_6_1 = buildCratesLib {
+    name = "osmpbfreader";
+    version = "0.6.1";
+    hash = "e41159bc7478652c92471756019c3cbc7c38d4a17ac7307a993f0c4f15a7716a";
+    deps = with allCrates; [  all__flat_map.flat_map_0_0_3 all__byteorder.byteorder_1_0_0 all__flate2.flate2_0_2 all__protobuf.protobuf_1_0_24 ];
+  };
+  osmpbfreader_0_6_2 = buildCratesLib {
+    name = "osmpbfreader";
+    version = "0.6.2";
+    hash = "3b1b345bfef9c2e195af3e83eb8fe158fc79a8ffc4ee88252c4a81cc3d1b0646";
+    deps = with allCrates; [  all__byteorder.byteorder_1_0_0 all__flat_map.flat_map_0_0_3 all__flate2.flate2_0_2 all__protobuf.protobuf_1_0_24 ];
+  };
+  osmpbfreader_0_6_3 = buildCratesLib {
+    name = "osmpbfreader";
+    version = "0.6.3";
+    hash = "ac03d46b1264250d7089fe714d33d5697053e11cf7094dc8fd33936bcb3117e2";
+    deps = with allCrates; [  all__byteorder.byteorder_1_0_0 all__flate2.flate2_0_2 all__flat_map.flat_map_0_0_4 all__protobuf.protobuf_1_0_24 ];
+  };
+  osmpbfreader_0_7_0 = buildCratesLib {
+    name = "osmpbfreader";
+    version = "0.7.0";
+    hash = "6387681dfab2a3f2891871d785d980809612bd201146ac7d8c71f3c99aae11c4";
+    deps = with allCrates; [  all__protobuf.protobuf_1_0_24 all__flate2.flate2_0_2 all__byteorder.byteorder_1_0_0 all__flat_map.flat_map_0_0_4 ];
+  };
+  "osmpbfreader_0_6" = osmpbfreader_0_6_3;
+  "osmpbfreader_0_7" = osmpbfreader_0_7_0;
+  "osmpbfreader_0" = osmpbfreader_0_7_0;}

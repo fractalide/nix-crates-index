@@ -20,5 +20,11 @@ rec {
     hash = "06df4d415e1353e4bf9fe1817561aabc35ec3111683fa1e0106a4973e5b386c8";
     deps = with allCrates; [  all__error-chain.error-chain_0_7 all__syslog.syslog_3_2 all__philipshue.philipshue_0_2 all__ssdp.ssdp_0_5 all__log.log_0_3 ];
   };
-  "hue_persistence_0_2" = hue_persistence_0_2_2;
-  "hue_persistence_0" = hue_persistence_0_2_2;}
+  hue_persistence_0_2_5 = buildCratesLib {
+    name = "hue_persistence";
+    version = "0.2.5";
+    hash = "560163c2f976f1d0e38a592ea7bd6e4ccc7a52fab73b03a5e534d3bfb81eee70";
+    deps = with allCrates; [  all__philipshue.philipshue_0_2 all__syslog.syslog_3_2 all__clap.clap_2_20 all__error-chain.error-chain_0_7 all__ssdp.ssdp_0_5 all__env_logger.env_logger_0_3 all__log.log_0_3 ];
+  };
+  "hue_persistence_0_2" = hue_persistence_0_2_5;
+  "hue_persistence_0" = hue_persistence_0_2_5;}

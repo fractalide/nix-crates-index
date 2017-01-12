@@ -7,5 +7,11 @@ rec {
     hash = "6fe6af75140c25e629f13ec233d35ab2ff2fbb13c36d38c3ae5c0fb0e5ccc2d9";
     deps = with allCrates; [  ];
   };
-  "discrimination_0_0" = discrimination_0_0_0;
-  "discrimination_0" = discrimination_0_0_0;}
+  discrimination_0_0_1 = buildCratesLib {
+    name = "discrimination";
+    version = "0.0.1";
+    hash = "936f8a4c014e697a8870296c4fb5acf311c4d9d295742c84f0130d8602e28472";
+    deps = with allCrates; [  all__either.either_1_0_2 ];
+  };
+  "discrimination_0_0" = discrimination_0_0_1;
+  "discrimination_0" = discrimination_0_0_1;}

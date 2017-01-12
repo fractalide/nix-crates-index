@@ -13,5 +13,17 @@ rec {
     hash = "a95a3f0877a52de80e6707b6a8b614c581015f7209cffc921d0dad1a926d1fea";
     deps = with allCrates; [  all__itertools.itertools_0_5 all__lazy_static.lazy_static_0_2 all__nix.nix_0_7 all__libc.libc_0_2 all__gstuff.gstuff_0_2 all__futures.futures_0_1 all__serde_json.serde_json_0_8 ];
   };
-  "pg_async_0_3" = pg_async_0_3_1;
-  "pg_async_0" = pg_async_0_3_1;}
+  pg_async_0_3_2 = buildCratesLib {
+    name = "pg_async";
+    version = "0.3.2";
+    hash = "2fb27ca9ea5f98b195f42b6cc34a7481c33b5fabbb00f3c2ca80595f57337e69";
+    deps = with allCrates; [  all__libc.libc_0_2 all__lazy_static.lazy_static_0_2 all__gstuff.gstuff_0_2 all__itertools.itertools_0_5 all__serde_json.serde_json_0_8 all__nix.nix_0_7 all__futures.futures_0_1 ];
+  };
+  pg_async_0_3_3 = buildCratesLib {
+    name = "pg_async";
+    version = "0.3.3";
+    hash = "89a614b89402ef1caa80e42d8238a6ba308c1dd5ccad57e34e3e4e4289747940";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__itertools.itertools_0_5 all__lazy_static.lazy_static_0_2 all__futures.futures_0_1 all__gstuff.gstuff_0_2 all__nix.nix_0_7 all__libc.libc_0_2 ];
+  };
+  "pg_async_0_3" = pg_async_0_3_3;
+  "pg_async_0" = pg_async_0_3_3;}

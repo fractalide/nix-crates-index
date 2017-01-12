@@ -54,5 +54,12 @@ rec {
     hash = "f9b88280771d6e6a4e64734e8bccb3b9ad1423f2d093f1a9e443121a11e5ce37";
     deps = with allCrates; [  all__image.image_0_10 all__itertools.itertools_0_4 all__nalgebra.nalgebra_0_5 all__num.num_0_1 all__conv.conv_0_3 all__quickcheck.quickcheck_0_2 all__rand.rand_0_3 ];
   };
+  imageproc_0_7_0 = buildCratesLib {
+    name = "imageproc";
+    version = "0.7.0";
+    hash = "b88a621b5f189c89f319a3240bb3c511f5099f4fb6bc4138c0c0a22d09b787ca";
+    deps = with allCrates; [  all__itertools.itertools_0_4 all__quickcheck.quickcheck_0_2 all__num.num_0_1 all__nalgebra.nalgebra_0_5 all__image.image_0_12 all__rand.rand_0_3 all__conv.conv_0_3 ];
+  };
   "imageproc_0_6" = imageproc_0_6_1;
-  "imageproc_0" = imageproc_0_6_1;}
+  "imageproc_0_7" = imageproc_0_7_0;
+  "imageproc_0" = imageproc_0_7_0;}

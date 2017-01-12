@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  ];
   };
   "ess_0_3" = ess_0_3_1;
-  "ess_0_4" = ess_0_4_0;
-  "ess_0" = ess_0_4_0;}
+  ess_0_4_1 = buildCratesLib {
+    name = "ess";
+    version = "0.4.1";
+    hash = "8a9ea66f13b27f66cb1e8f064f938a9ceb5d6e290d85d7901f9ed4e7723a31f2";
+    deps = with allCrates; [  ];
+  };
+  "ess_0_4" = ess_0_4_1;
+  "ess_0" = ess_0_4_1;}

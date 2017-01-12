@@ -32,5 +32,11 @@ rec {
     hash = "0173fdda78984cf2e1456142a8a6e1a7f1e95decc36478b7cf63c90164707946";
     deps = with allCrates; [  ];
   };
-  "dispatch_0_1" = dispatch_0_1_1;
-  "dispatch_0" = dispatch_0_1_1;}
+  dispatch_0_1_2 = buildCratesLib {
+    name = "dispatch";
+    version = "0.1.2";
+    hash = "a81dc9430a3114d56a7010201937e4b75c30f4b09d293cc29dab1847e3cd6699";
+    deps = with allCrates; [  ];
+  };
+  "dispatch_0_1" = dispatch_0_1_2;
+  "dispatch_0" = dispatch_0_1_2;}

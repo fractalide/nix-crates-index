@@ -73,5 +73,13 @@ rec {
     hash = "d4d0d9bed7804abcf9ac12212fb24be98e57c5ef401520f3c4fb52fe37939513";
     deps = with allCrates; [  ];
   };
+  vsop87_2_0_0 = buildCratesLib {
+    name = "vsop87";
+    version = "2.0.0";
+    hash = "e0673914e08711d6a3be8886387c07d4d812c615e24c4cd081a860fa1fdcd1cb";
+    deps = with allCrates; [  ];
+  };
   "vsop87_1_0" = vsop87_1_0_4;
-  "vsop87_1" = vsop87_1_0_4;}
+  "vsop87_1" = vsop87_1_0_4;
+  "vsop87_2_0" = vsop87_2_0_0;
+  "vsop87_2" = vsop87_2_0_0;}

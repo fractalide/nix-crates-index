@@ -457,5 +457,12 @@ rec {
     hash = "b7bcac5f67c9e6b2b7e92151fa6114daa6fd47f25d9058b5be884511c608327d";
     deps = with allCrates; [  all__docopt.docopt_0_6 ];
   };
+  docopt_macros_0_7_0 = buildCratesLib {
+    name = "docopt_macros";
+    version = "0.7.0";
+    hash = "ac439b88ab0d3926c9852dbf49daa4ac40cc0cf229589ef12baa6394a5cd012f";
+    deps = with allCrates; [  all__docopt.docopt_0_7 ];
+  };
   "docopt_macros_0_6" = docopt_macros_0_6_88;
-  "docopt_macros_0" = docopt_macros_0_6_88;}
+  "docopt_macros_0_7" = docopt_macros_0_7_0;
+  "docopt_macros_0" = docopt_macros_0_7_0;}

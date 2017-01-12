@@ -68,5 +68,12 @@ rec {
     hash = "895700c00a9ed08a85bf6fd28e13d3637f0aa939e2844eda7752d47fa33a8aac";
     deps = with allCrates; [  all__mysql.mysql_7_0 all__postgres.postgres_0_11 all__regex.regex_0_1 all__openssl.openssl_0_7 all__term.term_0_4 all__openssl-sys.openssl-sys_0_7 all__clap.clap_2 all__rusqlite.rusqlite_0_7 all__url.url_1 ];
   };
+  dbmigrate_0_3_0 = buildCratesLib {
+    name = "dbmigrate";
+    version = "0.3.0";
+    hash = "563ef936486be61efdc4deb1954261dd3d3946427cd0c9e2eeb36a21c8c31e56";
+    deps = with allCrates; [  all__mysql.mysql_8_0 all__clap.clap_2 all__dotenv.dotenv_0_8 all__rusqlite.rusqlite_0_8 all__term.term_0_4 all__postgres.postgres_0_13 all__error-chain.error-chain_0_7 all__regex.regex_0_2 all__url.url_1 ];
+  };
   "dbmigrate_0_2" = dbmigrate_0_2_7;
-  "dbmigrate_0" = dbmigrate_0_2_7;}
+  "dbmigrate_0_3" = dbmigrate_0_3_0;
+  "dbmigrate_0" = dbmigrate_0_3_0;}

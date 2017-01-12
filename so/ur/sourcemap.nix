@@ -137,5 +137,19 @@ rec {
     deps = with allCrates; [  all__serde.serde_0_8 all__base64.base64_0_1 all__serde_json.serde_json_0_8 all__url.url_1_2 ];
   };
   "sourcemap_0_10" = sourcemap_0_10_1;
+  sourcemap_0_12_0 = buildCratesLib {
+    name = "sourcemap";
+    version = "0.12.0";
+    hash = "69c86b60688846dcabc69c3993da4b309f901a995d8329f02a8da4c44b60b34e";
+    deps = with allCrates; [  all__url.url_1_2 all__serde_json.serde_json_0_8 all__base64.base64_0_1 all__serde.serde_0_8 ];
+  };
   "sourcemap_0_11" = sourcemap_0_11_0;
-  "sourcemap_0" = sourcemap_0_11_0;}
+  sourcemap_0_13_0 = buildCratesLib {
+    name = "sourcemap";
+    version = "0.13.0";
+    hash = "3c0b1be4d65bb5e3b3697631bd0381bfe06f242a9cd9fa91fbc2a4cff527c7aa";
+    deps = with allCrates; [  all__url.url_1_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__base64.base64_0_1 ];
+  };
+  "sourcemap_0_12" = sourcemap_0_12_0;
+  "sourcemap_0_13" = sourcemap_0_13_0;
+  "sourcemap_0" = sourcemap_0_13_0;}

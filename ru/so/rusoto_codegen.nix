@@ -82,5 +82,12 @@ rec {
     deps = with allCrates; [  all__serde_json.serde_json_0_8 all__Inflector.Inflector_0_6 all__lazy_static.lazy_static_0_2 all__regex.regex_0_1 all__serde.serde_0_8 ];
   };
   "rusoto_codegen_0_3" = rusoto_codegen_0_3_0;
+  rusoto_codegen_0_5_0 = buildCratesLib {
+    name = "rusoto_codegen";
+    version = "0.5.0";
+    hash = "0b1284d94923b7a10c64996ff9243c3106efcde0b50422b87cfdf65d40a19f10";
+    deps = with allCrates; [  all__serde.serde_0_8 all__regex.regex_0_1 all__serde_json.serde_json_0_8 all__Inflector.Inflector_0_6 all__lazy_static.lazy_static_0_2 ];
+  };
   "rusoto_codegen_0_4" = rusoto_codegen_0_4_0;
-  "rusoto_codegen_0" = rusoto_codegen_0_4_0;}
+  "rusoto_codegen_0_5" = rusoto_codegen_0_5_0;
+  "rusoto_codegen_0" = rusoto_codegen_0_5_0;}

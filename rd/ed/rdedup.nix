@@ -78,5 +78,11 @@ rec {
     hash = "156344462c29746ce8f444e36ce398ef64f875e9445de8fc46bce5113016a750";
     deps = with allCrates; [  all__rpassword.rpassword_0_2 all__log.log_0_3 all__env_logger.env_logger_0_3 all__rdedup-lib.rdedup-lib_1_0_1 all__rustc-serialize.rustc-serialize_0_3 all__argparse.argparse_0_2 ];
   };
-  "rdedup_1_0" = rdedup_1_0_1;
-  "rdedup_1" = rdedup_1_0_1;}
+  rdedup_1_0_2 = buildCratesLib {
+    name = "rdedup";
+    version = "1.0.2";
+    hash = "8e697bd830b245a57c6227a2aeae2f46f573d2ed15fd0b73d21348ed7e1d1794";
+    deps = with allCrates; [  all__env_logger.env_logger_0_3 all__rdedup-lib.rdedup-lib_1_0_2 all__rpassword.rpassword_0_2 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__argparse.argparse_0_2 ];
+  };
+  "rdedup_1_0" = rdedup_1_0_2;
+  "rdedup_1" = rdedup_1_0_2;}

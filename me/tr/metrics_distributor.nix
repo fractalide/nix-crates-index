@@ -94,5 +94,11 @@ rec {
     deps = with allCrates; [  all__nom.nom_1_2 all__lazy_static.lazy_static_0_1 all__regex.regex_0_1 all__iron.iron_0_4 all__rustc-serialize.rustc-serialize_0_3 all__hyper.hyper_0_9 all__chrono.chrono_0_2 all__router.router_0_4 ];
   };
   "metrics_distributor_0_3" = metrics_distributor_0_3_6;
-  "metrics_distributor_0_4" = metrics_distributor_0_4_0;
-  "metrics_distributor_0" = metrics_distributor_0_4_0;}
+  metrics_distributor_0_4_1 = buildCratesLib {
+    name = "metrics_distributor";
+    version = "0.4.1";
+    hash = "10f033576247345f06556e283664e152957a5d39796dce36a6cd906e2d9744a0";
+    deps = with allCrates; [  all__nom.nom_2_0_1 all__regex.regex_0_2 all__rustc-serialize.rustc-serialize_0_3 all__hyper.hyper_0_9 all__iron.iron_0_4 all__chrono.chrono_0_2 all__lazy_static.lazy_static_0_1 all__router.router_0_4 ];
+  };
+  "metrics_distributor_0_4" = metrics_distributor_0_4_1;
+  "metrics_distributor_0" = metrics_distributor_0_4_1;}

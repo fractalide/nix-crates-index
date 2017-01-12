@@ -93,5 +93,11 @@ rec {
     hash = "4f649172936d8210e5852fb91f5ee790edd961f321fe7160b1a8cbeaf3937ca1";
     deps = with allCrates; [  all__quote.quote_0_3 all__syn.syn_0_10 ];
   };
-  "tojson_macros_0_3" = tojson_macros_0_3_2;
-  "tojson_macros_0" = tojson_macros_0_3_2;}
+  tojson_macros_0_3_3 = buildCratesLib {
+    name = "tojson_macros";
+    version = "0.3.3";
+    hash = "f3de022224ab73fd64b6cd9f765fcd36083cb59476e934b7f99739969fb65909";
+    deps = with allCrates; [  all__quote.quote_0_3 all__syn.syn_0_10 ];
+  };
+  "tojson_macros_0_3" = tojson_macros_0_3_3;
+  "tojson_macros_0" = tojson_macros_0_3_3;}

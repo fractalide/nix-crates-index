@@ -49,5 +49,11 @@ rec {
     hash = "177a82a61dd7e528022ce97f24e54b499dd2fee4d4646a0f283c5fb500dbfe20";
     deps = with allCrates; [  all__log.log_0_3 ];
   };
-  "futures_0_1" = futures_0_1_7;
-  "futures_0" = futures_0_1_7;}
+  futures_0_1_8 = buildCratesLib {
+    name = "futures";
+    version = "0.1.8";
+    hash = "3e0b237aed5d8b61bc7d6ee1b8ebd719d0a934a38d363c5e56daf34bb634d9b2";
+    deps = with allCrates; [  all__log.log_0_3 ];
+  };
+  "futures_0_1" = futures_0_1_8;
+  "futures_0" = futures_0_1_8;}

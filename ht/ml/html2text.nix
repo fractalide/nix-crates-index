@@ -19,5 +19,17 @@ rec {
     hash = "0090fe35587d5daa1d3ccecd27e5246c8a728c913de74d90b298e670437d4f86";
     deps = with allCrates; [  all__backtrace.backtrace_0_2 all__string_cache.string_cache_0_2 all__html5ever-atoms.html5ever-atoms_0_1 all__unicode-width.unicode-width_0_1 all__html5ever.html5ever_0_9 ];
   };
-  "html2text_0_1" = html2text_0_1_2;
-  "html2text_0" = html2text_0_1_2;}
+  html2text_0_1_3 = buildCratesLib {
+    name = "html2text";
+    version = "0.1.3";
+    hash = "16d273a0f31adf455564071bf8de71475f61155e3da71790fdc28a85bb72af04";
+    deps = with allCrates; [  all__backtrace.backtrace_0_2 all__unicode-width.unicode-width_0_1 all__html5ever.html5ever_0_9 all__html5ever-atoms.html5ever-atoms_0_1 all__string_cache.string_cache_0_2 ];
+  };
+  html2text_0_1_4 = buildCratesLib {
+    name = "html2text";
+    version = "0.1.4";
+    hash = "cde908e3216b05c3390a94398cf2d1dc51dbf64aba6faf91e75b6d3a831ee24b";
+    deps = with allCrates; [  all__string_cache.string_cache_0_2 all__html5ever-atoms.html5ever-atoms_0_1 all__html5ever.html5ever_0_9 all__unicode-width.unicode-width_0_1 all__backtrace.backtrace_0_2 ];
+  };
+  "html2text_0_1" = html2text_0_1_4;
+  "html2text_0" = html2text_0_1_4;}

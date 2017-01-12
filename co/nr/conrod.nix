@@ -648,5 +648,12 @@ rec {
     hash = "9c770f1cb1c174eb943432a611672669aefbae1c21b57b5ff4e10bfb946399fb";
     deps = with allCrates; [  all__daggy.daggy_0_4 all__num.num_0_1 all__pistoncore-input.pistoncore-input_0_14 all__rusttype.rusttype_0_2 ];
   };
+  conrod_0_48_0 = buildCratesLib {
+    name = "conrod";
+    version = "0.48.0";
+    hash = "9d0164e90bd1a6e8bc846ab4d26cb425be46ee880730d481127e6ef59131475d";
+    deps = with allCrates; [  all__num.num_0_1 all__pistoncore-input.pistoncore-input_0_15 all__daggy.daggy_0_4 all__rusttype.rusttype_0_2 ];
+  };
   "conrod_0_47" = conrod_0_47_4;
-  "conrod_0" = conrod_0_47_4;}
+  "conrod_0_48" = conrod_0_48_0;
+  "conrod_0" = conrod_0_48_0;}

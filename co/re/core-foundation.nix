@@ -39,5 +39,11 @@ rec {
     hash = "20a6d0448d3a99d977ae4a2aa5a98d886a923e863e81ad9ff814645b6feb3bbd";
     deps = with allCrates; [  all__core-foundation-sys.core-foundation-sys_0_2 all__libc.libc_0_2 ];
   };
-  "core-foundation_0_2" = core-foundation_0_2_2;
-  "core-foundation_0" = core-foundation_0_2_2;}
+  core-foundation_0_2_3 = buildCratesLib {
+    name = "core-foundation";
+    version = "0.2.3";
+    hash = "25bfd746d203017f7d5cbd31ee5d8e17f94b6521c7af77ece6c9e4b2d4b16c67";
+    deps = with allCrates; [  all__libc.libc_0_2 all__core-foundation-sys.core-foundation-sys_0_2 ];
+  };
+  "core-foundation_0_2" = core-foundation_0_2_3;
+  "core-foundation_0" = core-foundation_0_2_3;}

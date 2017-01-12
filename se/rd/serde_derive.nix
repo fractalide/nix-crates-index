@@ -103,5 +103,11 @@ rec {
     hash = "6e7ad1e74679b92730ca39c361ea125e2846df337c5d94d084eb2f7837c1843d";
     deps = with allCrates; [  serde_codegen ];
   };
-  "serde_derive_0_8" = serde_derive_0_8_21;
-  "serde_derive_0" = serde_derive_0_8_21;}
+  serde_derive_0_8_22 = buildCratesLib {
+    name = "serde_derive";
+    version = "0.8.22";
+    hash = "b2e4153d6def68bcf28d14a398a0d91d4cdea4ad822bedd3632f8dbd5a962d42";
+    deps = with allCrates; [  serde_codegen ];
+  };
+  "serde_derive_0_8" = serde_derive_0_8_22;
+  "serde_derive_0" = serde_derive_0_8_22;}

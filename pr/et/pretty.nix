@@ -50,5 +50,12 @@ rec {
     deps = with allCrates; [  all__typed-arena.typed-arena_1_2 ];
   };
   "pretty_0_0" = pretty_0_0_7;
+  pretty_0_2_0 = buildCratesLib {
+    name = "pretty";
+    version = "0.2.0";
+    hash = "023e184a8dc60fde1d6e0916637835ad61d68fe83a190bf74977e8e4dca9d24e";
+    deps = with allCrates; [  all__typed-arena.typed-arena_1_2 ];
+  };
   "pretty_0_1" = pretty_0_1_0;
-  "pretty_0" = pretty_0_1_0;}
+  "pretty_0_2" = pretty_0_2_0;
+  "pretty_0" = pretty_0_2_0;}

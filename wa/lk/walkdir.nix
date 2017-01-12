@@ -81,5 +81,29 @@ rec {
     hash = "dd7c16466ecc507c7cb5988db03e6eab4aaeab89a5c37a29251fcfd3ac9b7afe";
     deps = with allCrates; [  ];
   };
-  "walkdir_1_0" = walkdir_1_0_3;
-  "walkdir_1" = walkdir_1_0_3;}
+  walkdir_1_0_4 = buildCratesLib {
+    name = "walkdir";
+    version = "1.0.4";
+    hash = "66764ce09982dfcdafdbc0f706128e248e4f26d83d92fea1eea45a88c0ff74cd";
+    deps = with allCrates; [  ];
+  };
+  walkdir_1_0_5 = buildCratesLib {
+    name = "walkdir";
+    version = "1.0.5";
+    hash = "4ab80903d747fc746e364255f29fa45ffca61474e08b934c739133cfc082761d";
+    deps = with allCrates; [  all__same-file.same-file_0_1 ];
+  };
+  walkdir_1_0_6 = buildCratesLib {
+    name = "walkdir";
+    version = "1.0.6";
+    hash = "906f01b096dde8a3bd1eb1069d90d1947ac7b8f397d872287e85649091869c0d";
+    deps = with allCrates; [  all__same-file.same-file_0_1 ];
+  };
+  walkdir_1_0_7 = buildCratesLib {
+    name = "walkdir";
+    version = "1.0.7";
+    hash = "bb08f9e670fab86099470b97cd2b252d6527f0b3cc1401acdb595ffc9dd288ff";
+    deps = with allCrates; [  all__same-file.same-file_0_1 ];
+  };
+  "walkdir_1_0" = walkdir_1_0_7;
+  "walkdir_1" = walkdir_1_0_7;}

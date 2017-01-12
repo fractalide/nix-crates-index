@@ -114,5 +114,11 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
   "num_cpus_1_1" = num_cpus_1_1_0;
-  "num_cpus_1_2" = num_cpus_1_2_0;
-  "num_cpus_1" = num_cpus_1_2_0;}
+  num_cpus_1_2_1 = buildCratesLib {
+    name = "num_cpus";
+    version = "1.2.1";
+    hash = "a225d1e2717567599c24f88e49f00856c6e825a12125181ee42c4257e3688d39";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "num_cpus_1_2" = num_cpus_1_2_1;
+  "num_cpus_1" = num_cpus_1_2_1;}

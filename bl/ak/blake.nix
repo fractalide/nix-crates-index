@@ -27,5 +27,12 @@ rec {
     hash = "f9ced851c7c8b5629b111b622ae819088552598ed8489acb66053b72c0fef628";
     deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
   };
+  blake_1_1_0 = buildCratesLib {
+    name = "blake";
+    version = "1.1.0";
+    hash = "cdaa494b9a1fb0ef86deacce027e5f7b4a1d2bdcc1ce6910c28ae08731e78cf4";
+    deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
+  };
   "blake_1_0" = blake_1_0_2;
-  "blake_1" = blake_1_0_2;}
+  "blake_1_1" = blake_1_1_0;
+  "blake_1" = blake_1_1_0;}

@@ -33,5 +33,12 @@ rec {
     deps = with allCrates; [  all__dotenv_codegen.dotenv_codegen_0_9 ];
   };
   "dotenv_macros_0_8" = dotenv_macros_0_8_0;
+  dotenv_macros_0_10_0 = buildCratesLib {
+    name = "dotenv_macros";
+    version = "0.10.0";
+    hash = "5150bcfa87a2f96095966d7bb9109247382afced681c68e67038a5a7da1b3e5b";
+    deps = with allCrates; [  all__dotenv_codegen.dotenv_codegen_0_10 ];
+  };
   "dotenv_macros_0_9" = dotenv_macros_0_9_0;
-  "dotenv_macros_0" = dotenv_macros_0_9_0;}
+  "dotenv_macros_0_10" = dotenv_macros_0_10_0;
+  "dotenv_macros_0" = dotenv_macros_0_10_0;}

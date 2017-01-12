@@ -7,5 +7,26 @@ rec {
     hash = "852da372d1f5dc8929d102ab03f6ae3c7a3a47e819324c8151e053dd1e859c5b";
     deps = with allCrates; [  ];
   };
+  pom_0_2_0 = buildCratesLib {
+    name = "pom";
+    version = "0.2.0";
+    hash = "f6b5ac2c50b43a468e1554717ca34a593422753c8d9676b0323cbb67db88f9ae";
+    deps = with allCrates; [  ];
+  };
   "pom_0_1" = pom_0_1_0;
-  "pom_0" = pom_0_1_0;}
+  pom_0_3_0 = buildCratesLib {
+    name = "pom";
+    version = "0.3.0";
+    hash = "9b4354fd3086b07b4209cdcb04550deb735daab8f848b259315209b8877c4847";
+    deps = with allCrates; [  ];
+  };
+  "pom_0_2" = pom_0_2_0;
+  pom_0_4_0 = buildCratesLib {
+    name = "pom";
+    version = "0.4.0";
+    hash = "e4655dc870879b28cf63993be775b1435481d074fa636e374027b8bbe5d6eabd";
+    deps = with allCrates; [  ];
+  };
+  "pom_0_3" = pom_0_3_0;
+  "pom_0_4" = pom_0_4_0;
+  "pom_0" = pom_0_4_0;}

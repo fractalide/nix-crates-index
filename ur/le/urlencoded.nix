@@ -46,5 +46,12 @@ rec {
     hash = "5ddcf2d3a0beedb5cdf50cabc521ab76a994907877a1d91d996c251d42c70e2e";
     deps = with allCrates; [  all__iron.iron_0_4 all__bodyparser.bodyparser_0_4 all__url.url_1_2 all__plugin.plugin_0_2 ];
   };
+  urlencoded_0_5_0 = buildCratesLib {
+    name = "urlencoded";
+    version = "0.5.0";
+    hash = "8c28708636d6f7298a53b1cdb6af40f1ab523209a7cb83cf4d41b3ebc671d319";
+    deps = with allCrates; [  all__plugin.plugin_0_2 all__url.url_1_2 all__iron.iron_0_5 all__bodyparser.bodyparser_0_5 ];
+  };
   "urlencoded_0_4" = urlencoded_0_4_1;
-  "urlencoded_0" = urlencoded_0_4_1;}
+  "urlencoded_0_5" = urlencoded_0_5_0;
+  "urlencoded_0" = urlencoded_0_5_0;}

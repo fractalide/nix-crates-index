@@ -37,5 +37,29 @@ rec {
     hash = "845ab576bed4098aba31f50cfaa3cb9d6fbeeea11f6bd1f60cea7944dd625346";
     deps = with allCrates; [  all__sel4-sys.sel4-sys_0_0_23 ];
   };
-  "sel4_0_0" = sel4_0_0_7;
-  "sel4_0" = sel4_0_0_7;}
+  sel4_0_0_8 = buildCratesLib {
+    name = "sel4";
+    version = "0.0.8";
+    hash = "667f506662cd451381ab98b54860c564bcf7be249cd67101834d71e5c7853ebd";
+    deps = with allCrates; [  all__sel4-sys.sel4-sys_0_0_25 ];
+  };
+  sel4_0_0_9 = buildCratesLib {
+    name = "sel4";
+    version = "0.0.9";
+    hash = "cc26b506f0d99b2bc156da7063de10a11ff5d0cf6c4671d6cdd13aac77796050";
+    deps = with allCrates; [  all__sel4-sys.sel4-sys_0_0_26 ];
+  };
+  sel4_0_0_10 = buildCratesLib {
+    name = "sel4";
+    version = "0.0.10";
+    hash = "19afc90ef94e6fd22ae4b5a7ac280c57c279d8e8d11b85b65037bfac83d4eb3c";
+    deps = with allCrates; [  all__sel4-sys.sel4-sys_0_0_26 ];
+  };
+  sel4_0_0_11 = buildCratesLib {
+    name = "sel4";
+    version = "0.0.11";
+    hash = "7b2e5b6a2007f11e7be0cb8f870e01799aacbcdd5e860b09ace9e74133c46759";
+    deps = with allCrates; [  all__sel4-sys.sel4-sys_0_0_27 ];
+  };
+  "sel4_0_0" = sel4_0_0_11;
+  "sel4_0" = sel4_0_0_11;}

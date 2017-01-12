@@ -229,5 +229,12 @@ rec {
     hash = "9e5870d265e31ef6930ba014197ce1a2c79695f86f6dee78002bd76ba30a0186";
     deps = with allCrates; [  all__regex-syntax.regex-syntax_0_3 all__regex.regex_0_1 ];
   };
+  regex_macros_0_2_0 = buildCratesLib {
+    name = "regex_macros";
+    version = "0.2.0";
+    hash = "5d898484ed1f7fdb2e3d2e7b8848ae9a2bc8e3b41d89715132715f0dc4dee08b";
+    deps = with allCrates; [  all__regex.regex_0_2 all__regex-syntax.regex-syntax_0_4 ];
+  };
   "regex_macros_0_1" = regex_macros_0_1_38;
-  "regex_macros_0" = regex_macros_0_1_38;}
+  "regex_macros_0_2" = regex_macros_0_2_0;
+  "regex_macros_0" = regex_macros_0_2_0;}

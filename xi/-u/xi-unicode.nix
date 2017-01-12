@@ -7,5 +7,12 @@ rec {
     hash = "315c4e158d7fa277e3ea35b32e50bc07e9a0c8de9130a7cc4bdeab42ddc7b442";
     deps = with allCrates; [  ];
   };
+  xi-unicode_0_1_0 = buildCratesLib {
+    name = "xi-unicode";
+    version = "0.1.0";
+    hash = "12ea8eda4b1eb72f02d148402e23832d56a33f55d8c1b2d5bcdde91d79d47cb1";
+    deps = with allCrates; [  ];
+  };
   "xi-unicode_0_0" = xi-unicode_0_0_1;
-  "xi-unicode_0" = xi-unicode_0_0_1;}
+  "xi-unicode_0_1" = xi-unicode_0_1_0;
+  "xi-unicode_0" = xi-unicode_0_1_0;}

@@ -21,5 +21,12 @@ rec {
     deps = with allCrates; [  all__openssl.openssl_0_9 all__libc.libc_0_2 all__libbindgen.libbindgen_0_1 ];
   };
   "unbound-sys_0_2" = unbound-sys_0_2_0;
+  unbound-sys_0_4_0 = buildCratesLib {
+    name = "unbound-sys";
+    version = "0.4.0";
+    hash = "1de977160fb9b5674b6673c02dcfb107abd33f57f231bcbdfc96e5cb67f50771";
+    deps = with allCrates; [  all__libc.libc_0_2 all__openssl.openssl_0_9 all__tempdir.tempdir_0_3 all__gcc.gcc_0_3 ];
+  };
   "unbound-sys_0_3" = unbound-sys_0_3_0;
-  "unbound-sys_0" = unbound-sys_0_3_0;}
+  "unbound-sys_0_4" = unbound-sys_0_4_0;
+  "unbound-sys_0" = unbound-sys_0_4_0;}

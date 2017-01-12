@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__url.url_1_2 all__clap.clap_2_19 all__pulldown-cmark.pulldown-cmark_0_0_8 all__hyper.hyper_0_9 all__walkdir.walkdir_1_0_2 ];
   };
   "marker_0_1" = marker_0_1_0;
+  marker_0_3_0 = buildCratesLib {
+    name = "marker";
+    version = "0.3.0";
+    hash = "bcb3931b552856590a144399d720c9d2c01998d8c35131f2d00a9528b0f03889";
+    deps = with allCrates; [  all__walkdir.walkdir_1_0_2 all__rayon.rayon_0_6 all__url.url_1_2 all__clap.clap_2_19 all__hyper.hyper_0_9 all__pulldown-cmark.pulldown-cmark_0_0_8 ];
+  };
   "marker_0_2" = marker_0_2_0;
-  "marker_0" = marker_0_2_0;}
+  "marker_0_3" = marker_0_3_0;
+  "marker_0" = marker_0_3_0;}

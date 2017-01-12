@@ -21,5 +21,12 @@ rec {
     deps = with allCrates; [  all__native-tls.native-tls_0_1 all__serde.serde_0_8 all__serde_urlencoded.serde_urlencoded_0_3 all__url.url_1_2 all__log.log_0_3 all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 ];
   };
   "reqwest_0_1" = reqwest_0_1_0;
+  reqwest_0_3_0 = buildCratesLib {
+    name = "reqwest";
+    version = "0.3.0";
+    hash = "dfc011675ace22e9dd00d0734b1d00854859e6309c9545b6eb3e98cc088cf1eb";
+    deps = with allCrates; [  all__native-tls.native-tls_0_1 all__serde_json.serde_json_0_8 all__serde_urlencoded.serde_urlencoded_0_3 all__log.log_0_3 all__serde.serde_0_8 all__url.url_1_2 all__hyper.hyper_0_10 ];
+  };
   "reqwest_0_2" = reqwest_0_2_0;
-  "reqwest_0" = reqwest_0_2_0;}
+  "reqwest_0_3" = reqwest_0_3_0;
+  "reqwest_0" = reqwest_0_3_0;}

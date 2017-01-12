@@ -260,5 +260,11 @@ rec {
     hash = "1b83402229bde9d923f0b92811be017f9df5946ee86f8647367b1e02bcf5c293";
     deps = with allCrates; [  all__gl_generator.gl_generator_0_5 all__pkg-config.pkg-config_0_3 ];
   };
-  "gleam_0_2" = gleam_0_2_29;
-  "gleam_0" = gleam_0_2_29;}
+  gleam_0_2_30 = buildCratesLib {
+    name = "gleam";
+    version = "0.2.30";
+    hash = "6af023107aa969ccf8868a0304fead4b2f813c19aa9a6a243fddc041f3e51da5";
+    deps = with allCrates; [  all__pkg-config.pkg-config_0_3 all__gl_generator.gl_generator_0_5 ];
+  };
+  "gleam_0_2" = gleam_0_2_30;
+  "gleam_0" = gleam_0_2_30;}

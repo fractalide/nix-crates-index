@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__chrono.chrono_0_2 all__regex.regex_0_1 ];
   };
   "rusoto_credential_0_1" = rusoto_credential_0_1_0;
+  rusoto_credential_0_3_0 = buildCratesLib {
+    name = "rusoto_credential";
+    version = "0.3.0";
+    hash = "0f4cf281df9252063fdfe9cb99f6370386ca07342f210845de15584513a2bc20";
+    deps = with allCrates; [  all__chrono.chrono_0_2 all__hyper.hyper_0_9 all__regex.regex_0_1 all__serde_json.serde_json_0_8 ];
+  };
   "rusoto_credential_0_2" = rusoto_credential_0_2_0;
-  "rusoto_credential_0" = rusoto_credential_0_2_0;}
+  "rusoto_credential_0_3" = rusoto_credential_0_3_0;
+  "rusoto_credential_0" = rusoto_credential_0_3_0;}

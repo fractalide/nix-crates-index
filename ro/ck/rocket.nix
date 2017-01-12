@@ -25,5 +25,11 @@ rec {
     hash = "2700c05d446bfd778f936a72318b608ddeac7fbdc1011b2843795f2ab1d84f04";
     deps = with allCrates; [  all__log.log_0_3 all__toml.toml_0_2 all__url.url_1 all__hyper.hyper_0_9 all__term-painter.term-painter_0_2 ];
   };
-  "rocket_0_1" = rocket_0_1_3;
-  "rocket_0" = rocket_0_1_3;}
+  rocket_0_1_4 = buildCratesLib {
+    name = "rocket";
+    version = "0.1.4";
+    hash = "5dd88fe9e1ebf45569abde07c17f3a32bb8741235cbcd554c5e2e3b0e7dc3f2f";
+    deps = with allCrates; [  all__term-painter.term-painter_0_2 all__url.url_1 all__toml.toml_0_2 all__hyper.hyper_0_9 all__log.log_0_3 ];
+  };
+  "rocket_0_1" = rocket_0_1_4;
+  "rocket_0" = rocket_0_1_4;}

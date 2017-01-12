@@ -96,5 +96,12 @@ rec {
     deps = with allCrates; [  all__sdl2.sdl2_0_19 all__glium.glium_0_14 ];
   };
   "glium_sdl2_0_11" = glium_sdl2_0_11_0;
+  glium_sdl2_0_13_0 = buildCratesLib {
+    name = "glium_sdl2";
+    version = "0.13.0";
+    hash = "2d18fdae034d657a4f3e69b3b3ff83a5bf0111cc4cfed4fbdb2f0d6e81fb3cd2";
+    deps = with allCrates; [  all__sdl2.sdl2_0_27 all__glium.glium_0_15 ];
+  };
   "glium_sdl2_0_12" = glium_sdl2_0_12_0;
-  "glium_sdl2_0" = glium_sdl2_0_12_0;}
+  "glium_sdl2_0_13" = glium_sdl2_0_13_0;
+  "glium_sdl2_0" = glium_sdl2_0_13_0;}

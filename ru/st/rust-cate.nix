@@ -19,5 +19,11 @@ rec {
     hash = "0b6f6e2fcb2651c24ce0291a9e45b7f9bf519d776806e1c4b69a95ce3898f9e4";
     deps = with allCrates; [  all__clap.clap_2_13 ];
   };
-  "rust-cate_0_1" = rust-cate_0_1_2;
-  "rust-cate_0" = rust-cate_0_1_2;}
+  rust-cate_0_1_3 = buildCratesLib {
+    name = "rust-cate";
+    version = "0.1.3";
+    hash = "14e3f63519dad6df0b83cddbb268b10d4c23609c5641a9cc14399fc9ba43ce04";
+    deps = with allCrates; [  all__clap.clap_2_13 lazy_static ];
+  };
+  "rust-cate_0_1" = rust-cate_0_1_3;
+  "rust-cate_0" = rust-cate_0_1_3;}

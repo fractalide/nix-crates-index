@@ -41,5 +41,11 @@ rec {
     deps = with allCrates; [  all__amqp.amqp_0_0_20 all__rand.rand_0_3 all__rustc-serialize.rustc-serialize_0_3 all__url.url_1_2 all__clap.clap_2 all__conduit-mime-types.conduit-mime-types_0_7 ];
   };
   "rabbiteer_1_0" = rabbiteer_1_0_0;
-  "rabbiteer_1_1" = rabbiteer_1_1_0;
-  "rabbiteer_1" = rabbiteer_1_1_0;}
+  rabbiteer_1_1_1 = buildCratesLib {
+    name = "rabbiteer";
+    version = "1.1.1";
+    hash = "c7a9a3355e4e34220a979a0deedd4fb5a5976f182fda17603ea23b0fa2dae647";
+    deps = with allCrates; [  all__url.url_1_2 all__amqp.amqp_0_0_20 all__rand.rand_0_3 all__clap.clap_2 all__conduit-mime-types.conduit-mime-types_0_7 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "rabbiteer_1_1" = rabbiteer_1_1_1;
+  "rabbiteer_1" = rabbiteer_1_1_1;}

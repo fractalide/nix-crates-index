@@ -13,5 +13,23 @@ rec {
     hash = "c2b3ef2b5671ae9e00066dd46bf1e624193f656e69b870437cd57cab5f76cfef";
     deps = with allCrates; [  all__error-chain.error-chain_0_7 all__libc.libc_0_2 all__rustc_version.rustc_version_0_1 ];
   };
-  "cross_0_1" = cross_0_1_1;
-  "cross_0" = cross_0_1_1;}
+  cross_0_1_2 = buildCratesLib {
+    name = "cross";
+    version = "0.1.2";
+    hash = "602561eb366667d498b671839b4fade589758589f36426d9053dc08b65b95b1c";
+    deps = with allCrates; [  all__rustc_version.rustc_version_0_1 all__error-chain.error-chain_0_7 all__libc.libc_0_2 ];
+  };
+  cross_0_1_3 = buildCratesLib {
+    name = "cross";
+    version = "0.1.3";
+    hash = "b81f43334b5eee915522ab999736cd0bf66af33a082743c6289508b3af6b9e2e";
+    deps = with allCrates; [  all__libc.libc_0_2 all__error-chain.error-chain_0_7 all__rustc_version.rustc_version_0_1 ];
+  };
+  cross_0_1_4 = buildCratesLib {
+    name = "cross";
+    version = "0.1.4";
+    hash = "140a20f142d5f566f713c08a4f941baa5f5ba061f2e1d185aae30ab713c4fed3";
+    deps = with allCrates; [  all__error-chain.error-chain_0_7 all__libc.libc_0_2 all__rustc_version.rustc_version_0_1 ];
+  };
+  "cross_0_1" = cross_0_1_4;
+  "cross_0" = cross_0_1_4;}

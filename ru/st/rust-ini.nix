@@ -138,5 +138,12 @@ rec {
     hash = "7c6975d9bfcab77cffaf22c9f7fe08baa55a075e4ec1f8197d1f4be93c4a8658";
     deps = with allCrates; [  all__log.log_0_3 ];
   };
+  rust-ini_0_10_0 = buildCratesLib {
+    name = "rust-ini";
+    version = "0.10.0";
+    hash = "06d4e8b0b50e7e7f827d609fa9746e1cf6371a1fa15404a1a0a86152a801079f";
+    deps = with allCrates; [  all__log.log_0_3 ];
+  };
   "rust-ini_0_9" = rust-ini_0_9_12;
-  "rust-ini_0" = rust-ini_0_9_12;}
+  "rust-ini_0_10" = rust-ini_0_10_0;
+  "rust-ini_0" = rust-ini_0_10_0;}

@@ -25,5 +25,11 @@ rec {
     hash = "c76caa948c1102a4ce14ea29b89f2624e21c551221e6e84392627c2ba358142b";
     deps = with allCrates; [  ];
   };
-  "twiddle_0_1" = twiddle_0_1_3;
-  "twiddle_0" = twiddle_0_1_3;}
+  twiddle_0_1_4 = buildCratesLib {
+    name = "twiddle";
+    version = "0.1.4";
+    hash = "33b7cefc8307ea8f49e32e3870d20b80ddde1f512fd0559419e623e746313bf9";
+    deps = with allCrates; [  ];
+  };
+  "twiddle_0_1" = twiddle_0_1_4;
+  "twiddle_0" = twiddle_0_1_4;}

@@ -115,5 +115,18 @@ rec {
     hash = "a2da68cc45d803dfd68724d767363d82c6f76293a2bf5fe6ded34f640ee01447";
     deps = with allCrates; [  all__byteorder.byteorder_0_4 ];
   };
+  rmp_0_8_0 = buildCratesLib {
+    name = "rmp";
+    version = "0.8.0";
+    hash = "6c035bfde9d475798e09f57fb3e0cd4e9293dad04055aba2377c8e47a131914f";
+    deps = with allCrates; [  all__num-traits.num-traits_0_1 all__byteorder.byteorder_1 ];
+  };
   "rmp_0_7" = rmp_0_7_5;
-  "rmp_0" = rmp_0_7_5;}
+  rmp_0_8_1 = buildCratesLib {
+    name = "rmp";
+    version = "0.8.1";
+    hash = "f3191189872dc96fd68e0dccd7698c1adb92f9941f4e7f9bb6d45febc467df03";
+    deps = with allCrates; [  all__num-traits.num-traits_0_1 all__byteorder.byteorder_1 ];
+  };
+  "rmp_0_8" = rmp_0_8_1;
+  "rmp_0" = rmp_0_8_1;}

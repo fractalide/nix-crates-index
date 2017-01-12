@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  ];
   };
   "try_from_0_1" = try_from_0_1_0;
-  "try_from_0_2" = try_from_0_2_0;
-  "try_from_0" = try_from_0_2_0;}
+  try_from_0_2_1 = buildCratesLib {
+    name = "try_from";
+    version = "0.2.1";
+    hash = "48eb1fb21b59755547de28b0d7c0d67ab0b3f504efae762e2478663665965f53";
+    deps = with allCrates; [  ];
+  };
+  "try_from_0_2" = try_from_0_2_1;
+  "try_from_0" = try_from_0_2_1;}

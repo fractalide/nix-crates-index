@@ -7,5 +7,18 @@ rec {
     hash = "77297a9448711049ba9666e5bd6f358f7409ea056df3aa820875c9338d72c2e3";
     deps = with allCrates; [  ];
   };
+  magma_0_1_0 = buildCratesLib {
+    name = "magma";
+    version = "0.1.0";
+    hash = "d2d5449195292d9aaa508e432037ee7830dd5561e60c8afd0684746066b042c4";
+    deps = with allCrates; [  all__block-cipher-trait.block-cipher-trait_0_3 all__generic-array.generic-array_0_6 all__byte-tools.byte-tools_0_1 ];
+  };
   "magma_0_0" = magma_0_0_0;
-  "magma_0" = magma_0_0_0;}
+  magma_0_1_1 = buildCratesLib {
+    name = "magma";
+    version = "0.1.1";
+    hash = "d9dd4f15cad9315bc3b39ca73d96de176cb37f1640aae1b28edbcf3047ba21e3";
+    deps = with allCrates; [  all__generic-array.generic-array_0_6 all__block-cipher-trait.block-cipher-trait_0_3 all__byte-tools.byte-tools_0_1 ];
+  };
+  "magma_0_1" = magma_0_1_1;
+  "magma_0" = magma_0_1_1;}

@@ -7,5 +7,13 @@ rec {
     hash = "a28afa3945b969d9534fbe34a56cec3ff7b4ae074e53db2d23989eeb423c45c9";
     deps = with allCrates; [  all__chrono.chrono_0_2 all__computus.computus_0_1 ];
   };
+  bankholidays_1_0_0 = buildCratesLib {
+    name = "bankholidays";
+    version = "1.0.0";
+    hash = "ece4df3423eb4155702bc82f620ec8285ba605524ebdab557c8711141b4dda5e";
+    deps = with allCrates; [  all__chrono.chrono_0_2 all__computus.computus_1_0_0 ];
+  };
   "bankholidays_0_1" = bankholidays_0_1_0;
-  "bankholidays_0" = bankholidays_0_1_0;}
+  "bankholidays_0" = bankholidays_0_1_0;
+  "bankholidays_1_0" = bankholidays_1_0_0;
+  "bankholidays_1" = bankholidays_1_0_0;}

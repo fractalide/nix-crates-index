@@ -129,5 +129,12 @@ rec {
     deps = with allCrates; [  all__hyper.hyper_0_8 all__range.range_0_3 all__piston_meta.piston_meta_0_27 all__semver.semver_0_2 ];
   };
   "eco_0_15" = eco_0_15_0;
+  eco_0_17_0 = buildCratesLib {
+    name = "eco";
+    version = "0.17.0";
+    hash = "4a7bd96794b719c2311548b5f9b80aa16b2a7cd07f938e8b14f5f33bfc56fb20";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__range.range_0_3 all__piston_meta.piston_meta_0_28 all__semver.semver_0_2 ];
+  };
   "eco_0_16" = eco_0_16_0;
-  "eco_0" = eco_0_16_0;}
+  "eco_0_17" = eco_0_17_0;
+  "eco_0" = eco_0_17_0;}

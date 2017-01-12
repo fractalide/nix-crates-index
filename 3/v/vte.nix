@@ -19,5 +19,18 @@ rec {
     hash = "182acba7edb46d25ab5ddfc9f390b8c6cc1dcec7a4efc2798f0a8918f07d8c8a";
     deps = with allCrates; [  all__utf8parse.utf8parse_0_1 ];
   };
+  vte_0_2_0 = buildCratesLib {
+    name = "vte";
+    version = "0.2.0";
+    hash = "75f626cde474f0c136ea839352b08ab8a3b1ed25128bbb8a4335245e75051a32";
+    deps = with allCrates; [  all__utf8parse.utf8parse_0_1 ];
+  };
   "vte_0_1" = vte_0_1_2;
-  "vte_0" = vte_0_1_2;}
+  vte_0_2_1 = buildCratesLib {
+    name = "vte";
+    version = "0.2.1";
+    hash = "0221cd88a06e81dea3ef4dcad02a881b19c03c48b6e6a34875cb301ec8de78d9";
+    deps = with allCrates; [  all__utf8parse.utf8parse_0_1 ];
+  };
+  "vte_0_2" = vte_0_2_1;
+  "vte_0" = vte_0_2_1;}

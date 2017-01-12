@@ -27,5 +27,12 @@ rec {
     deps = with allCrates; [  ];
   };
   "dupchecker_0_2" = dupchecker_0_2_1;
+  dupchecker_0_4_0 = buildCratesLib {
+    name = "dupchecker";
+    version = "0.4.0";
+    hash = "215bc869b5aeaee18543e0ae82bacb6223429ce96c4e23dd3d6b8e5c38fa49ec";
+    deps = with allCrates; [  ];
+  };
   "dupchecker_0_3" = dupchecker_0_3_0;
-  "dupchecker_0" = dupchecker_0_3_0;}
+  "dupchecker_0_4" = dupchecker_0_4_0;
+  "dupchecker_0" = dupchecker_0_4_0;}

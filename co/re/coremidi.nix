@@ -7,5 +7,18 @@ rec {
     hash = "008bacc3950e031f94d29d979cc5795f31cad980a687a406a916d2dc8e7a1d87";
     deps = with allCrates; [  all__core-foundation.core-foundation_0_2 all__coremidi-sys.coremidi-sys_1_0_0 all__core-foundation-sys.core-foundation-sys_0_2 all__time.time_0_1 ];
   };
-  "coremidi_0_0" = coremidi_0_0_1;
-  "coremidi_0" = coremidi_0_0_1;}
+  coremidi_0_0_2 = buildCratesLib {
+    name = "coremidi";
+    version = "0.0.2";
+    hash = "65bd6b554cff2b9ac4e85e65736458bced87f8cc8d69667308e3525c2792baf8";
+    deps = with allCrates; [  all__core-foundation.core-foundation_0_2 all__coremidi-sys.coremidi-sys_1_0_0 all__libc.libc_0_2 all__core-foundation-sys.core-foundation-sys_0_2 all__time.time_0_1 ];
+  };
+  coremidi_0_1_0 = buildCratesLib {
+    name = "coremidi";
+    version = "0.1.0";
+    hash = "5f692bc7267ce5f3a8a530a983592fdd2817e78a718d68488a9791033bf07fab";
+    deps = with allCrates; [  all__libc.libc_0_2 all__coremidi-sys.coremidi-sys_1_0_0 all__time.time_0_1 all__core-foundation.core-foundation_0_2 all__core-foundation-sys.core-foundation-sys_0_2 ];
+  };
+  "coremidi_0_0" = coremidi_0_0_2;
+  "coremidi_0_1" = coremidi_0_1_0;
+  "coremidi_0" = coremidi_0_1_0;}

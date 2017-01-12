@@ -45,5 +45,11 @@ rec {
     deps = with allCrates; [  all__chrono.chrono_0_2 all__hex.hex_0_2 all__rust-crypto.rust-crypto_0_2 all__curl.curl_0_4 all__log.log_0_3 all__url.url_1_2 ];
   };
   "rust-s3_0_3" = rust-s3_0_3_2;
-  "rust-s3_0_4" = rust-s3_0_4_0;
-  "rust-s3_0" = rust-s3_0_4_0;}
+  rust-s3_0_4_1 = buildCratesLib {
+    name = "rust-s3";
+    version = "0.4.1";
+    hash = "71d136f38ede130a0b2e57f1fb2037fe2cb227abcb08061395d1095363cbbb75";
+    deps = with allCrates; [  all__rust-crypto.rust-crypto_0_2 all__curl.curl_0_4 all__chrono.chrono_0_2 all__hex.hex_0_2 all__serde.serde_0_8 all__serde_xml.serde_xml_0_9 all__url.url_1_2 all__log.log_0_3 all__serde_codegen.serde_codegen_0_8 ];
+  };
+  "rust-s3_0_4" = rust-s3_0_4_1;
+  "rust-s3_0" = rust-s3_0_4_1;}

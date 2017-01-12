@@ -166,5 +166,12 @@ rec {
     deps = with allCrates; [  all__luminance.luminance_0_14 all__gl.gl_0_5 ];
   };
   "luminance-gl_0_10" = luminance-gl_0_10_0;
+  luminance-gl_0_12_0 = buildCratesLib {
+    name = "luminance-gl";
+    version = "0.12.0";
+    hash = "92b2fc8b600abe427398b5c2b2f25c04302648e8badbc434415bb59a83ef9431";
+    deps = with allCrates; [  all__luminance.luminance_0_15 all__gl.gl_0_5 ];
+  };
   "luminance-gl_0_11" = luminance-gl_0_11_0;
-  "luminance-gl_0" = luminance-gl_0_11_0;}
+  "luminance-gl_0_12" = luminance-gl_0_12_0;
+  "luminance-gl_0" = luminance-gl_0_12_0;}

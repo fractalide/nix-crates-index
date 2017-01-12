@@ -193,5 +193,11 @@ rec {
     hash = "f4f9daaf118aaffce0838b1c563d6439f2ba9f09ab83295f3d3818bde5e0b3b3";
     deps = with allCrates; [  all__regex-syntax.regex-syntax_0_3 all__utf8-ranges.utf8-ranges_0_1 all__memmap.memmap_0_4 all__byteorder.byteorder_0_5 ];
   };
-  "fst_0_1" = fst_0_1_34;
-  "fst_0" = fst_0_1_34;}
+  fst_0_1_35 = buildCratesLib {
+    name = "fst";
+    version = "0.1.35";
+    hash = "6ea95e91e7eabf4603a98f2353940442e69b933f51cd149c50fd5ad02701c002";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__utf8-ranges.utf8-ranges_0_1 all__regex-syntax.regex-syntax_0_3 ];
+  };
+  "fst_0_1" = fst_0_1_35;
+  "fst_0" = fst_0_1_35;}

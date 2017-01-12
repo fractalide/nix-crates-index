@@ -31,5 +31,12 @@ rec {
     hash = "9baab161ab5156f365ffb6074e3a9e6b16a09a7b3ffda518622e66db39d464b3";
     deps = with allCrates; [  ];
   };
+  collider_0_2_0 = buildCratesLib {
+    name = "collider";
+    version = "0.2.0";
+    hash = "e5d386fe14acf0724f7beba2ac5469ec05c81f8074f5df82cb0b8caf5dd08905";
+    deps = with allCrates; [  all__fnv.fnv_1_0_3 ];
+  };
   "collider_0_1" = collider_0_1_4;
-  "collider_0" = collider_0_1_4;}
+  "collider_0_2" = collider_0_2_0;
+  "collider_0" = collider_0_2_0;}

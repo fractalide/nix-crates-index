@@ -13,5 +13,17 @@ rec {
     hash = "f21789a72471af7eac15198255f1697eadfa010674735104bc2c9e43e69403ca";
     deps = with allCrates; [  ];
   };
-  "fallible-streaming-iterator_0_1" = fallible-streaming-iterator_0_1_1;
-  "fallible-streaming-iterator_0" = fallible-streaming-iterator_0_1_1;}
+  fallible-streaming-iterator_0_1_2 = buildCratesLib {
+    name = "fallible-streaming-iterator";
+    version = "0.1.2";
+    hash = "d9613ec96e2b0e727200f52ae87527a912fb1401bb48fd41876e15e752fb350b";
+    deps = with allCrates; [  ];
+  };
+  fallible-streaming-iterator_0_1_3 = buildCratesLib {
+    name = "fallible-streaming-iterator";
+    version = "0.1.3";
+    hash = "d251e1edb26238b753ad5460e1435f91dc58f6e84ec27305c1482045799b76d7";
+    deps = with allCrates; [  ];
+  };
+  "fallible-streaming-iterator_0_1" = fallible-streaming-iterator_0_1_3;
+  "fallible-streaming-iterator_0" = fallible-streaming-iterator_0_1_3;}

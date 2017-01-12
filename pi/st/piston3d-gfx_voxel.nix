@@ -97,5 +97,12 @@ rec {
     deps = with allCrates; [  all__array.array_0_0_1 all__gfx.gfx_0_12 all__image.image_0_10 all__piston-gfx_texture.piston-gfx_texture_0_18 ];
   };
   "piston3d-gfx_voxel_0_11" = piston3d-gfx_voxel_0_11_0;
+  piston3d-gfx_voxel_0_13_0 = buildCratesLib {
+    name = "piston3d-gfx_voxel";
+    version = "0.13.0";
+    hash = "6602059ba46425b3a4cf1efdb6ff40fb56eaec846c19f761e400359b046663f2";
+    deps = with allCrates; [  all__array.array_0_0_1 all__image.image_0_12 all__gfx.gfx_0_13 all__piston-gfx_texture.piston-gfx_texture_0_20 ];
+  };
   "piston3d-gfx_voxel_0_12" = piston3d-gfx_voxel_0_12_0;
-  "piston3d-gfx_voxel_0" = piston3d-gfx_voxel_0_12_0;}
+  "piston3d-gfx_voxel_0_13" = piston3d-gfx_voxel_0_13_0;
+  "piston3d-gfx_voxel_0" = piston3d-gfx_voxel_0_13_0;}

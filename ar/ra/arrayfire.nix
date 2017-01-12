@@ -33,5 +33,11 @@ rec {
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__num.num_0_1 all__libc.libc_0_2 all__rustc_version.rustc_version_0_1 all__rustc-serialize.rustc-serialize_0_3 ];
   };
   "arrayfire_3_3" = arrayfire_3_3_2;
-  "arrayfire_3_4" = arrayfire_3_4_0;
-  "arrayfire_3" = arrayfire_3_4_0;}
+  arrayfire_3_4_1 = buildCratesLib {
+    name = "arrayfire";
+    version = "3.4.1";
+    hash = "6a40a788974e8c155003514c967035a38d0e933d4f363bf3f5f0a08d211fa11f";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__num.num_0_1 all__libc.libc_0_2 all__rustc_version.rustc_version_0_1 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "arrayfire_3_4" = arrayfire_3_4_1;
+  "arrayfire_3" = arrayfire_3_4_1;}

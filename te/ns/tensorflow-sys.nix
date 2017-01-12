@@ -60,5 +60,12 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
   };
   "tensorflow-sys_0_4" = tensorflow-sys_0_4_1;
+  tensorflow-sys_0_6_0 = buildCratesLib {
+    name = "tensorflow-sys";
+    version = "0.6.0";
+    hash = "c45a383c382f9bee2cb01fa05bdf037460b9208c973f60a95ead4893bb84bb5d";
+    deps = with allCrates; [  all__libc.libc_0_2 all__semver.semver_0_5 all__pkg-config.pkg-config_0_3 ];
+  };
   "tensorflow-sys_0_5" = tensorflow-sys_0_5_0;
-  "tensorflow-sys_0" = tensorflow-sys_0_5_0;}
+  "tensorflow-sys_0_6" = tensorflow-sys_0_6_0;
+  "tensorflow-sys_0" = tensorflow-sys_0_6_0;}

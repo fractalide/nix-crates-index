@@ -51,5 +51,12 @@ rec {
     deps = with allCrates; [  all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__r2d2.r2d2_0_7 all__r2d2_redis.r2d2_redis_0_4 all__redis.redis_0_6 all__rand.rand_0_3 ];
   };
   "sidekiq_0_2" = sidekiq_0_2_2;
+  sidekiq_0_4_0 = buildCratesLib {
+    name = "sidekiq";
+    version = "0.4.0";
+    hash = "b8f4206a4f66a7e6587ec85398216537fd327c0fab45230b8d93c1c51c6e9421";
+    deps = with allCrates; [  all__redis.redis_0_6 all__r2d2_redis.r2d2_redis_0_4 all__serde.serde_0_8 all__rand.rand_0_3 all__serde_json.serde_json_0_8 all__r2d2.r2d2_0_7 ];
+  };
   "sidekiq_0_3" = sidekiq_0_3_0;
-  "sidekiq_0" = sidekiq_0_3_0;}
+  "sidekiq_0_4" = sidekiq_0_4_0;
+  "sidekiq_0" = sidekiq_0_4_0;}

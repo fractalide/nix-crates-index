@@ -99,5 +99,11 @@ rec {
     hash = "8c80e194758495a9109566134dc06e42ea0423987d6ceca016edaa90381b3549";
     deps = with allCrates; [  all__kernel32-sys.kernel32-sys_0_2 ];
   };
-  "heapsize_0_3" = heapsize_0_3_7;
-  "heapsize_0" = heapsize_0_3_7;}
+  heapsize_0_3_8 = buildCratesLib {
+    name = "heapsize";
+    version = "0.3.8";
+    hash = "5a376f7402b85be6e0ba504243ecbc0709c48019ecc6286d0540c2e359050c88";
+    deps = with allCrates; [  ];
+  };
+  "heapsize_0_3" = heapsize_0_3_8;
+  "heapsize_0" = heapsize_0_3_8;}

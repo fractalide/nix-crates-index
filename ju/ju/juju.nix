@@ -101,5 +101,17 @@ rec {
     hash = "41314731a3560f2771f795cabfb295d5f5dbec7b03787ed3cd80cdfdb5ac38dc";
     deps = with allCrates; [  all__log.log_0_3 all__charmhelpers.charmhelpers_0_1 ];
   };
-  "juju_0_5" = juju_0_5_5;
-  "juju_0" = juju_0_5_5;}
+  juju_0_5_6 = buildCratesLib {
+    name = "juju";
+    version = "0.5.6";
+    hash = "81a49b5a00ec8fd7415357e4b30b547e2e3e14135df84b09a3c91fa74954ec9c";
+    deps = with allCrates; [  all__charmhelpers.charmhelpers_0_1 all__log.log_0_3 ];
+  };
+  juju_0_5_7 = buildCratesLib {
+    name = "juju";
+    version = "0.5.7";
+    hash = "e44d25e347a67278309bc540bcee1c43aa1b310e218f7a018155cd936d704ac1";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__log.log_0_3 all__charmhelpers.charmhelpers_0_1 ];
+  };
+  "juju_0_5" = juju_0_5_7;
+  "juju_0" = juju_0_5_7;}

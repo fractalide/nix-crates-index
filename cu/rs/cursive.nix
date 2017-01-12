@@ -118,5 +118,11 @@ rec {
     hash = "df4c6f3334176e380b405ff565c540d4b43d2d1d185dcc3ef1ffc7aeb28e95f3";
     deps = with allCrates; [  all__toml.toml_0_2 all__unicode-width.unicode-width_0_1 all__odds.odds_0_2 all__unicode-segmentation.unicode-segmentation_0_1 ];
   };
-  "cursive_0_3" = cursive_0_3_5;
-  "cursive_0" = cursive_0_3_5;}
+  cursive_0_3_6 = buildCratesLib {
+    name = "cursive";
+    version = "0.3.6";
+    hash = "9202bfc527d199c2015096e8f61498a924257bb383e5f464b8855ad47d0a2ad5";
+    deps = with allCrates; [  all__odds.odds_0_2 all__unicode-segmentation.unicode-segmentation_1_0 all__toml.toml_0_2 all__chan-signal.chan-signal_0_1 all__unicode-width.unicode-width_0_1 all__chan.chan_0_1 ];
+  };
+  "cursive_0_3" = cursive_0_3_6;
+  "cursive_0" = cursive_0_3_6;}

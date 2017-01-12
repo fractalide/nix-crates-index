@@ -155,5 +155,12 @@ rec {
     deps = with allCrates; [  all__route-recognizer.route-recognizer_0_1 all__url.url_1_1 all__iron.iron_0_4 ];
   };
   "router_0_3" = router_0_3_4;
+  router_0_5_0 = buildCratesLib {
+    name = "router";
+    version = "0.5.0";
+    hash = "9eb9efe056c20f577f965a1a8fbf467b485fbb88b73ae110e64ce7922e79111e";
+    deps = with allCrates; [  all__url.url_1_1 all__route-recognizer.route-recognizer_0_1 all__iron.iron_0_5 ];
+  };
   "router_0_4" = router_0_4_0;
-  "router_0" = router_0_4_0;}
+  "router_0_5" = router_0_5_0;
+  "router_0" = router_0_5_0;}

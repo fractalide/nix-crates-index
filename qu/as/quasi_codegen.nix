@@ -260,5 +260,12 @@ rec {
     deps = with allCrates; [  all__aster.aster_0_36 ];
   };
   "quasi_codegen_0_27" = quasi_codegen_0_27_0;
+  quasi_codegen_0_29_0 = buildCratesLib {
+    name = "quasi_codegen";
+    version = "0.29.0";
+    hash = "b06172e92ab0099427609854ffb1512c377be5fc4beaf572ae5d5a01b8359596";
+    deps = with allCrates; [  all__aster.aster_0_38 ];
+  };
   "quasi_codegen_0_28" = quasi_codegen_0_28_0;
-  "quasi_codegen_0" = quasi_codegen_0_28_0;}
+  "quasi_codegen_0_29" = quasi_codegen_0_29_0;
+  "quasi_codegen_0" = quasi_codegen_0_29_0;}

@@ -20,5 +20,19 @@ rec {
     deps = with allCrates; [  all__error-chain.error-chain_0_7 all__rust-crypto.rust-crypto_0_2 all__rustc-serialize.rustc-serialize_0_3 all__rand.rand_0_3 ];
   };
   "message_verifier_0_1" = message_verifier_0_1_1;
+  message_verifier_1_0_0 = buildCratesLib {
+    name = "message_verifier";
+    version = "1.0.0";
+    hash = "f8aa726da61588082d4ff28188dffb79dc1ab9099877c96a3427c37dcb88016f";
+    deps = with allCrates; [  all__rust-crypto.rust-crypto_0_2 all__error-chain.error-chain_0_7 all__rand.rand_0_3 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
   "message_verifier_0_2" = message_verifier_0_2_0;
-  "message_verifier_0" = message_verifier_0_2_0;}
+  "message_verifier_0" = message_verifier_0_2_0;
+  message_verifier_1_0_1 = buildCratesLib {
+    name = "message_verifier";
+    version = "1.0.1";
+    hash = "08178677ff80bd85d53e0cbfb0691d2852a04f176be389a8e8873934ee0f21f8";
+    deps = with allCrates; [  all__rand.rand_0_3 all__rustc-serialize.rustc-serialize_0_3 all__rust-crypto.rust-crypto_0_2 all__error-chain.error-chain_0_7 ];
+  };
+  "message_verifier_1_0" = message_verifier_1_0_1;
+  "message_verifier_1" = message_verifier_1_0_1;}

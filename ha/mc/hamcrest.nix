@@ -19,5 +19,11 @@ rec {
     hash = "33d207d31877778ce619c6ca6b84484c4ce196a6fb9f91e085537bdb8390537a";
     deps = with allCrates; [  all__num.num_0_1 all__regex.regex_0_1 ];
   };
-  "hamcrest_0_1" = hamcrest_0_1_2;
-  "hamcrest_0" = hamcrest_0_1_2;}
+  hamcrest_0_1_3 = buildCratesLib {
+    name = "hamcrest";
+    version = "0.1.3";
+    hash = "a6d9e7f519847c8937313ee2f5c9caf3cbe724cca6169ad59258b9fb86813b53";
+    deps = with allCrates; [  all__num.num_0_1 all__regex.regex_0_1 ];
+  };
+  "hamcrest_0_1" = hamcrest_0_1_3;
+  "hamcrest_0" = hamcrest_0_1_3;}

@@ -32,5 +32,12 @@ rec {
     hash = "b46c39882ce440c6e15df4bf81ff7802f376f8dde3595af0fae91519a2041618";
     deps = with allCrates; [  all__mime.mime_0_1 all__tar.tar_0_3 all__url.url_0_5 all__hyperlocal.hyperlocal_0_1 all__openssl.openssl_0_7 all__log.log_0_3 all__jed.jed_0_1 all__hyper.hyper_0_7 all__rustc-serialize.rustc-serialize_0_3 all__flate2.flate2_0_2 ];
   };
+  shiplift_0_3_0 = buildCratesLib {
+    name = "shiplift";
+    version = "0.3.0";
+    hash = "2861f12f66e13d5f070f7bec346d2031cf87d5d673906620abf9e5a727e92470";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__hyperlocal.hyperlocal_0_2 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__tar.tar_0_3 all__jed.jed_0_1 all__openssl.openssl_0_7 all__url.url_0_5 all__flate2.flate2_0_2 ];
+  };
   "shiplift_0_2" = shiplift_0_2_1;
-  "shiplift_0" = shiplift_0_2_1;}
+  "shiplift_0_3" = shiplift_0_3_0;
+  "shiplift_0" = shiplift_0_3_0;}

@@ -39,5 +39,17 @@ rec {
     hash = "e91e572e0c022e4bf90e6ee01db5b4e9c7ac89221bbdd266f388a89a662f0ce3";
     deps = with allCrates; [  all__regex.regex_0_1 all__rustc-serialize.rustc-serialize_0_3 all__getopts.getopts_0_2 all__lazy_static.lazy_static_0_2 ];
   };
-  "avsser_0_6" = avsser_0_6_2;
-  "avsser_0" = avsser_0_6_2;}
+  avsser_0_6_3 = buildCratesLib {
+    name = "avsser";
+    version = "0.6.3";
+    hash = "f1bef605f02cf1e10a04c389665cc8cecc38ca22d70dd1bb68de2c2d755cc125";
+    deps = with allCrates; [  all__regex.regex_0_2 all__lazy_static.lazy_static_0_2 all__rustc-serialize.rustc-serialize_0_3 all__getopts.getopts_0_2 ];
+  };
+  avsser_0_6_4 = buildCratesLib {
+    name = "avsser";
+    version = "0.6.4";
+    hash = "b332b1860da46d88816f0113c70dabcc0126578d20db95c50ae064f9d6308fb3";
+    deps = with allCrates; [  all__getopts.getopts_0_2 all__regex.regex_0_2 all__rustc-serialize.rustc-serialize_0_3 all__lazy_static.lazy_static_0_2 ];
+  };
+  "avsser_0_6" = avsser_0_6_4;
+  "avsser_0" = avsser_0_6_4;}

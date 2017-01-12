@@ -20,5 +20,12 @@ rec {
     deps = with allCrates; [  all__byteorder.byteorder_0_3 all__log.log_0_3 all__regex.regex_0_1 ];
   };
   "mqtt-protocol_0_1" = mqtt-protocol_0_1_1;
+  mqtt-protocol_0_3_0 = buildCratesLib {
+    name = "mqtt-protocol";
+    version = "0.3.0";
+    hash = "ee07fcf3f983ae72660854062fad3c1229cba95aeeecd70b8f5d650ae2b6f4da";
+    deps = with allCrates; [  all__regex.regex_0_1 all__byteorder.byteorder_0_3 all__log.log_0_3 ];
+  };
   "mqtt-protocol_0_2" = mqtt-protocol_0_2_0;
-  "mqtt-protocol_0" = mqtt-protocol_0_2_0;}
+  "mqtt-protocol_0_3" = mqtt-protocol_0_3_0;
+  "mqtt-protocol_0" = mqtt-protocol_0_3_0;}

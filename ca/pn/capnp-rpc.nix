@@ -344,5 +344,18 @@ rec {
     hash = "2b2ac0c45610c5abeae1359263fc30ddca64d6891905f0ab2862b956d8abc955";
     deps = with allCrates; [  all__gjio.gjio_0_1 all__capnp.capnp_0_7 all__gj.gj_0_2 all__capnp-gj.capnp-gj_0_2 all__capnpc.capnpc_0_7 ];
   };
+  capnp-rpc_0_8_0 = buildCratesLib {
+    name = "capnp-rpc";
+    version = "0.8.0";
+    hash = "7990bbac0771fb919a27e9a0d06e4000264d7eede039d0788169c72fdf60a903";
+    deps = with allCrates; [  all__capnp-futures.capnp-futures_0_1 all__futures.futures_0_1 all__capnp.capnp_0_8 all__capnpc.capnpc_0_8 ];
+  };
   "capnp-rpc_0_7" = capnp-rpc_0_7_4;
-  "capnp-rpc_0" = capnp-rpc_0_7_4;}
+  capnp-rpc_0_8_1 = buildCratesLib {
+    name = "capnp-rpc";
+    version = "0.8.1";
+    hash = "d3661d234f46efbdd360845479d2b06078a2112bf7816133abfa27545356c508";
+    deps = with allCrates; [  all__capnp-futures.capnp-futures_0_1 all__futures.futures_0_1 all__capnp.capnp_0_8 all__capnpc.capnpc_0_8 ];
+  };
+  "capnp-rpc_0_8" = capnp-rpc_0_8_1;
+  "capnp-rpc_0" = capnp-rpc_0_8_1;}

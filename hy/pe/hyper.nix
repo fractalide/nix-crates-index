@@ -580,5 +580,12 @@ rec {
     hash = "bcb3fc65554155980167fb821d05c7c66177f92464976c0b676a19d9e03387a7";
     deps = with allCrates; [  all__time.time_0_1 all__mime.mime_0_2 all__rustc-serialize.rustc-serialize_0_3 all__cookie.cookie_0_2 all__num_cpus.num_cpus_1_0 all__unicase.unicase_1_0 all__solicit.solicit_0_4 all__httparse.httparse_1_0 all__log.log_0_3 all__url.url_1_0 all__traitobject.traitobject_0_0_1 all__language-tags.language-tags_0_2 all__typeable.typeable_0_1 ];
   };
+  hyper_0_10_0 = buildCratesLib {
+    name = "hyper";
+    version = "0.10.0";
+    hash = "305b3c3cc13864a07a54d3ffd162ac0c3e3e124173cf74039b27c8459f019038";
+    deps = with allCrates; [  all__log.log_0_3 all__language-tags.language-tags_0_2 all__url.url_1_0 all__traitobject.traitobject_0_0_1 all__rustc-serialize.rustc-serialize_0_3 all__typeable.typeable_0_1 all__httparse.httparse_1_0 all__time.time_0_1 all__unicase.unicase_1_0 all__mime.mime_0_2 all__num_cpus.num_cpus_1_0 ];
+  };
   "hyper_0_9" = hyper_0_9_14;
-  "hyper_0" = hyper_0_9_14;}
+  "hyper_0_10" = hyper_0_10_0;
+  "hyper_0" = hyper_0_10_0;}

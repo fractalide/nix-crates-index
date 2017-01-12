@@ -69,5 +69,12 @@ rec {
     deps = with allCrates; [  all__robotparser.robotparser_0_8 all__string_cache.string_cache_0_2 all__serde.serde_0_8 all__encoding.encoding_0_2 all__serde_json.serde_json_0_8 all__reqwest.reqwest_0_1 all__html5ever.html5ever_0_5 all__log.log_0_3 all__env_logger.env_logger_0_3 all__url.url_1_2 all__tendril.tendril_0_2 all__sidekiq.sidekiq_0_3 ];
   };
   "maman_0_8" = maman_0_8_0;
+  maman_0_10_0 = buildCratesLib {
+    name = "maman";
+    version = "0.10.0";
+    hash = "621a6cc41ddcafe2ea3e32f9ed40b9b5c3d4a6f97fd6a5f7e47749810c3a8d5e";
+    deps = with allCrates; [  all__string_cache.string_cache_0_2 all__env_logger.env_logger_0_3 all__serde_json.serde_json_0_8 all__sidekiq.sidekiq_0_4 all__encoding.encoding_0_2 all__robotparser.robotparser_0_8 all__url.url_1_2 all__html5ever-atoms.html5ever-atoms_0_1 all__reqwest.reqwest_0_2 all__serde.serde_0_8 all__log.log_0_3 all__tendril.tendril_0_2 all__html5ever.html5ever_0_10 ];
+  };
   "maman_0_9" = maman_0_9_0;
-  "maman_0" = maman_0_9_0;}
+  "maman_0_10" = maman_0_10_0;
+  "maman_0" = maman_0_10_0;}

@@ -211,5 +211,11 @@ rec {
     deps = with allCrates; [  all__num-traits.num-traits_0_1 byteorder ];
   };
   "bincode_0_5" = bincode_0_5_9;
-  "bincode_0_6" = bincode_0_6_0;
-  "bincode_0" = bincode_0_6_0;}
+  bincode_0_6_1 = buildCratesLib {
+    name = "bincode";
+    version = "0.6.1";
+    hash = "55eb0b7fd108527b0c77860f75eca70214e11a8b4c6ef05148c54c05a25d48ad";
+    deps = with allCrates; [  all__num-traits.num-traits_0_1 all__byteorder.byteorder_1_0_0 ];
+  };
+  "bincode_0_6" = bincode_0_6_1;
+  "bincode_0" = bincode_0_6_1;}

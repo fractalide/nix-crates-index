@@ -14,5 +14,13 @@ rec {
     deps = with allCrates; [  threadpool num time clap ];
   };
   "rtrace_0_1" = rtrace_0_1_0;
+  rtrace_1_0_0 = buildCratesLib {
+    name = "rtrace";
+    version = "1.0.0";
+    hash = "25ac393de97e80002e9a91c0c535ce15c3b0a7ee73f647d139fb9aa7345211c6";
+    deps = with allCrates; [  all__threadpool.threadpool_1 all__clap.clap_2 ];
+  };
   "rtrace_0_2" = rtrace_0_2_0;
-  "rtrace_0" = rtrace_0_2_0;}
+  "rtrace_0" = rtrace_0_2_0;
+  "rtrace_1_0" = rtrace_1_0_0;
+  "rtrace_1" = rtrace_1_0_0;}

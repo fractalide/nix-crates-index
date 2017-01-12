@@ -31,5 +31,17 @@ rec {
     hash = "0397861e2169fd3575d3e753dad57dc040ad7196934f797420517522075f18a2";
     deps = with allCrates; [  ];
   };
-  "simple-error_0_1" = simple-error_0_1_4;
-  "simple-error_0" = simple-error_0_1_4;}
+  simple-error_0_1_5 = buildCratesLib {
+    name = "simple-error";
+    version = "0.1.5";
+    hash = "691123cc925a6681f244f3bc5e08061d7788394dfdd11405264c04c4ac587a1d";
+    deps = with allCrates; [  ];
+  };
+  simple-error_0_1_6 = buildCratesLib {
+    name = "simple-error";
+    version = "0.1.6";
+    hash = "5cb53e76af6fc9a5586b6918a3ea74d010c9c6b44561088848d72608f380630c";
+    deps = with allCrates; [  ];
+  };
+  "simple-error_0_1" = simple-error_0_1_6;
+  "simple-error_0" = simple-error_0_1_6;}

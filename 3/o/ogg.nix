@@ -46,5 +46,11 @@ rec {
     deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
   };
   "ogg_0_3" = ogg_0_3_3;
-  "ogg_0_4" = ogg_0_4_0;
-  "ogg_0" = ogg_0_4_0;}
+  ogg_0_4_1 = buildCratesLib {
+    name = "ogg";
+    version = "0.4.1";
+    hash = "013b78ceb7fb82555a2f8a95d8e40866fe64a5d15b83c51b3e1fdd40cd903ed3";
+    deps = with allCrates; [  all__byteorder.byteorder_1_0 ];
+  };
+  "ogg_0_4" = ogg_0_4_1;
+  "ogg_0" = ogg_0_4_1;}

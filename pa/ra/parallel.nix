@@ -116,5 +116,19 @@ rec {
     deps = with allCrates; [  all__permutate.permutate_0_2 all__arrayvec.arrayvec_0_3 all__num_cpus.num_cpus_1_2 ];
   };
   "parallel_0_7" = parallel_0_7_0;
+  parallel_0_9_0 = buildCratesLib {
+    name = "parallel";
+    version = "0.9.0";
+    hash = "962b24dfcba6bd5255abe656ecdddad721a7bc2b86f9fe6b7e961609659309c0";
+    deps = with allCrates; [  all__time.time_0_1 all__num_cpus.num_cpus_1_2 all__permutate.permutate_0_2 all__wait-timeout.wait-timeout_0_1 all__sys-info.sys-info_0_4 all__arrayvec.arrayvec_0_3 ];
+  };
   "parallel_0_8" = parallel_0_8_0;
-  "parallel_0" = parallel_0_8_0;}
+  parallel_0_10_0 = buildCratesLib {
+    name = "parallel";
+    version = "0.10.0";
+    hash = "ccc3cb4829c3bfdcc371727b86ba417a60b59d08a546090c8a7615c8077d1591";
+    deps = with allCrates; [  all__num_cpus.num_cpus_1_2 all__sys-info.sys-info_0_4 all__permutate.permutate_0_2 all__smallvec.smallvec_0_3 all__time.time_0_1 all__arrayvec.arrayvec_0_3 all__wait-timeout.wait-timeout_0_1 all__itoa.itoa_0_1 ];
+  };
+  "parallel_0_9" = parallel_0_9_0;
+  "parallel_0_10" = parallel_0_10_0;
+  "parallel_0" = parallel_0_10_0;}

@@ -73,5 +73,11 @@ rec {
     hash = "44e9986c330611ccd26ea74e502c70e5ebab2874c4c23f2f5f3c5a6ed3fbfbc6";
     deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
   };
-  "libsodium-sys_0_0" = libsodium-sys_0_0_12;
-  "libsodium-sys_0" = libsodium-sys_0_0_12;}
+  libsodium-sys_0_0_13 = buildCratesLib {
+    name = "libsodium-sys";
+    version = "0.0.13";
+    hash = "8e92532ef19ec2da77f5a89ae63a5c3dbb5136e8dada4e2c278107c1e1c773d8";
+    deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
+  };
+  "libsodium-sys_0_0" = libsodium-sys_0_0_13;
+  "libsodium-sys_0" = libsodium-sys_0_0_13;}

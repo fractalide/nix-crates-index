@@ -79,5 +79,18 @@ rec {
     deps = with allCrates; [  all__futures.futures_0_1 all__libc.libc_0_2 all__arrayref.arrayref_0_3 all__user.user_0_1 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__byteorder.byteorder_0_5 all__mio.mio_0_6 all__ring.ring_0_6 all__bitflags.bitflags_0_7 all__cryptovec.cryptovec_0_3 all__env_logger.env_logger_0_3 all__untrusted.untrusted_0_3 all__regex.regex_0_1 all__tokio-core.tokio-core_0_1 all__time.time_0_1 ];
   };
   "thrussh_0_6" = thrussh_0_6_0;
+  thrussh_0_8_0 = buildCratesLib {
+    name = "thrussh";
+    version = "0.8.0";
+    hash = "2668f27c58bbfed8e46e57a03fb49680ffc0f7d7e7e3b55c92c1e402eec9f436";
+    deps = with allCrates; [  all__arrayref.arrayref_0_3 all__tokio-core.tokio-core_0_1 all__byteorder.byteorder_0_5 all__rustc-serialize.rustc-serialize_0_3 all__time.time_0_1 all__regex.regex_0_1 all__ring.ring_0_6 all__libc.libc_0_2 all__cryptovec.cryptovec_0_3 all__env_logger.env_logger_0_3 all__futures.futures_0_1 all__bitflags.bitflags_0_7 all__mio.mio_0_6 all__log.log_0_3 all__untrusted.untrusted_0_3 ];
+  };
   "thrussh_0_7" = thrussh_0_7_0;
-  "thrussh_0" = thrussh_0_7_0;}
+  thrussh_0_8_1 = buildCratesLib {
+    name = "thrussh";
+    version = "0.8.1";
+    hash = "79a72a221105d3db99fe71de6762e62166f463e195d3980222547d03ec793e32";
+    deps = with allCrates; [  all__untrusted.untrusted_0_3 all__rustc-serialize.rustc-serialize_0_3 all__byteorder.byteorder_0_5 all__env_logger.env_logger_0_3 all__arrayref.arrayref_0_3 all__libc.libc_0_2 all__mio.mio_0_6 all__regex.regex_0_1 all__futures.futures_0_1 all__tokio-core.tokio-core_0_1 all__bitflags.bitflags_0_7 all__cryptovec.cryptovec_0_3 all__ring.ring_0_6 all__log.log_0_3 all__time.time_0_1 ];
+  };
+  "thrussh_0_8" = thrussh_0_8_1;
+  "thrussh_0" = thrussh_0_8_1;}

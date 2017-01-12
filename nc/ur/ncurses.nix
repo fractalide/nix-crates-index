@@ -56,5 +56,12 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
   "ncurses_5_83" = ncurses_5_83_0;
+  ncurses_5_85_0 = buildCratesLib {
+    name = "ncurses";
+    version = "5.85.0";
+    hash = "21f71f0e1ae96558612b1e9d188ec4f23149a11ee4fb4b96e130523bea52d605";
+    deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
+  };
   "ncurses_5_84" = ncurses_5_84_0;
-  "ncurses_5" = ncurses_5_84_0;}
+  "ncurses_5_85" = ncurses_5_85_0;
+  "ncurses_5" = ncurses_5_85_0;}

@@ -209,5 +209,12 @@ rec {
     deps = with allCrates; [  all__shader_version.shader_version_0_2 all__pistoncore-input.pistoncore-input_0_15 all__pistoncore-window.pistoncore-window_0_24 all__gl.gl_0_6 all__glfw.glfw_0_11 ];
   };
   "pistoncore-glfw_window_0_27" = pistoncore-glfw_window_0_27_0;
+  pistoncore-glfw_window_0_29_0 = buildCratesLib {
+    name = "pistoncore-glfw_window";
+    version = "0.29.0";
+    hash = "0aafd5e703a37256ae574b85cc9cf33304afe08e0f569458e7220b49f8ce0c19";
+    deps = with allCrates; [  all__pistoncore-window.pistoncore-window_0_24 all__glfw.glfw_0_12 all__shader_version.shader_version_0_2 all__pistoncore-input.pistoncore-input_0_15 all__gl.gl_0_6 ];
+  };
   "pistoncore-glfw_window_0_28" = pistoncore-glfw_window_0_28_0;
-  "pistoncore-glfw_window_0" = pistoncore-glfw_window_0_28_0;}
+  "pistoncore-glfw_window_0_29" = pistoncore-glfw_window_0_29_0;
+  "pistoncore-glfw_window_0" = pistoncore-glfw_window_0_29_0;}

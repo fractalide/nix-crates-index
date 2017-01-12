@@ -68,5 +68,11 @@ rec {
     hash = "cdbbc61ca06d2a68981791d287e67756fd2dac0f82f667299de1dbdbd7478863";
     deps = with allCrates; [  all__quickcheck.quickcheck_0_2 all__num.num_0_1 all__rand.rand_0_3 ];
   };
-  "glm_0_2" = glm_0_2_1;
-  "glm_0" = glm_0_2_1;}
+  glm_0_2_2 = buildCratesLib {
+    name = "glm";
+    version = "0.2.2";
+    hash = "c0691c7fbd0ceb1e7bceb4ffdf80f5f781891a267632a83b1d76fba3b912937d";
+    deps = with allCrates; [  all__rand.rand_0_3 all__quickcheck.quickcheck_0_2 all__num.num_0_1 ];
+  };
+  "glm_0_2" = glm_0_2_2;
+  "glm_0" = glm_0_2_2;}

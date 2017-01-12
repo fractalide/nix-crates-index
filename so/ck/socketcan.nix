@@ -71,5 +71,12 @@ rec {
     hash = "d0de76e0fa6da092618dfca2cdb5f30f24cd6e4578bff914bab19d960c9f31aa";
     deps = with allCrates; [  all__hex.hex_0_2 all__libc.libc_0_2 all__itertools.itertools_0_4 all__nix.nix_0_5 ];
   };
+  socketcan_1_6_0 = buildCratesLib {
+    name = "socketcan";
+    version = "1.6.0";
+    hash = "c56a355dd3ee9dd0e5061574e66faffc86971e40fbde6bc500663ccbf875ee79";
+    deps = with allCrates; [  all__itertools.itertools_0_4 all__libc.libc_0_2 all__hex.hex_0_2 all__nix.nix_0_5 all__try_from.try_from_0_2 ];
+  };
   "socketcan_1_5" = socketcan_1_5_1;
-  "socketcan_1" = socketcan_1_5_1;}
+  "socketcan_1_6" = socketcan_1_6_0;
+  "socketcan_1" = socketcan_1_6_0;}

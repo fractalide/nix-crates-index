@@ -237,5 +237,11 @@ rec {
     hash = "c23f84e10051a9dcd2e32e42f19f0acaa2a87a4a8b59d365deae08003a910831";
     deps = with allCrates; [  all__sdl2.sdl2_0_27 all__redox_syscall.redox_syscall_0_1 ];
   };
-  "orbclient_0_2" = orbclient_0_2_11;
-  "orbclient_0" = orbclient_0_2_11;}
+  orbclient_0_2_12 = buildCratesLib {
+    name = "orbclient";
+    version = "0.2.12";
+    hash = "4b3ce382eaf20295abe68a4bdeb9c589fb551cf11403e85b5f4caa6cfed85739";
+    deps = with allCrates; [  all__sdl2.sdl2_0_27 all__redox_syscall.redox_syscall_0_1 ];
+  };
+  "orbclient_0_2" = orbclient_0_2_12;
+  "orbclient_0" = orbclient_0_2_12;}

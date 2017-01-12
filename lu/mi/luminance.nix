@@ -170,5 +170,12 @@ rec {
     deps = with allCrates; [  ];
   };
   "luminance_0_13" = luminance_0_13_1;
+  luminance_0_15_0 = buildCratesLib {
+    name = "luminance";
+    version = "0.15.0";
+    hash = "0d0a597a0f8528d1077a97f4910839c2d4f48dfb98d9df4588e4fc3afb26752d";
+    deps = with allCrates; [  ];
+  };
   "luminance_0_14" = luminance_0_14_0;
-  "luminance_0" = luminance_0_14_0;}
+  "luminance_0_15" = luminance_0_15_0;
+  "luminance_0" = luminance_0_15_0;}

@@ -112,5 +112,19 @@ rec {
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__term.term_0_4 all__syntex_pos.syntex_pos_0_52 all__log.log_0_3 all__unicode-xid.unicode-xid_0_0_3 all__libc.libc_0_2 ];
   };
   "syntex_errors_0_51" = syntex_errors_0_51_0;
+  syntex_errors_0_53_0 = buildCratesLib {
+    name = "syntex_errors";
+    version = "0.53.0";
+    hash = "fadae43447868b088b2f85bb698ff4abb345d0904999190c0d45f885979b6e32";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__libc.libc_0_2 all__syntex_pos.syntex_pos_0_53 all__log.log_0_3 all__unicode-xid.unicode-xid_0_0_3 all__term.term_0_4 ];
+  };
   "syntex_errors_0_52" = syntex_errors_0_52_0;
-  "syntex_errors_0" = syntex_errors_0_52_0;}
+  syntex_errors_0_54_0 = buildCratesLib {
+    name = "syntex_errors";
+    version = "0.54.0";
+    hash = "dee2f6e49c075f71332bb775219d5982bee6732d26227fa1ae1b53cdb12f5cc5";
+    deps = with allCrates; [  all__libc.libc_0_2 all__unicode-xid.unicode-xid_0_0_4 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__syntex_pos.syntex_pos_0_54 all__term.term_0_4 ];
+  };
+  "syntex_errors_0_53" = syntex_errors_0_53_0;
+  "syntex_errors_0_54" = syntex_errors_0_54_0;
+  "syntex_errors_0" = syntex_errors_0_54_0;}

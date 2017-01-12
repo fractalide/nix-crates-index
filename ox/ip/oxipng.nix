@@ -121,5 +121,11 @@ rec {
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__libc.libc_0_2 all__rayon.rayon_0_5 all__libz-sys.libz-sys_1_0_0 all__crc.crc_1_2 all__bit-vec.bit-vec_0_4 all__itertools.itertools_0_5 all__miniz-sys.miniz-sys_0_1 all__num_cpus.num_cpus_1_0_0 all__zopfli.zopfli_0_3 ];
   };
   "oxipng_0_12" = oxipng_0_12_0;
-  "oxipng_0_13" = oxipng_0_13_0;
-  "oxipng_0" = oxipng_0_13_0;}
+  oxipng_0_13_1 = buildCratesLib {
+    name = "oxipng";
+    version = "0.13.1";
+    hash = "87a1f50ac3eab48ce176493194490783cdae0da76413e24cc5e668ce5bdc5e0f";
+    deps = with allCrates; [  all__libz-sys.libz-sys_1_0_0 all__zopfli.zopfli_0_3 all__miniz-sys.miniz-sys_0_1 all__num_cpus.num_cpus_1_0_0 all__byteorder.byteorder_1_0_0 all__itertools.itertools_0_5 all__libc.libc_0_2 all__crc.crc_1_2 all__bit-vec.bit-vec_0_4 all__rayon.rayon_0_6 ];
+  };
+  "oxipng_0_13" = oxipng_0_13_1;
+  "oxipng_0" = oxipng_0_13_1;}

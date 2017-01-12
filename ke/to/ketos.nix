@@ -113,5 +113,12 @@ rec {
     hash = "9e228ef0718cb7a9cf7c1b4ff9e93c54e1b75caf025886f0563146905fbed75f";
     deps = with allCrates; [  all__rand.rand_0_3 all__byteorder.byteorder_0_5 all__getopts.getopts_0_2 all__num.num_0_1 all__linefeed.linefeed_0_2 ];
   };
+  ketos_0_5_0 = buildCratesLib {
+    name = "ketos";
+    version = "0.5.0";
+    hash = "4cdefdcf757837e4b9dae16feb015585ccde4c6a59a6e151c351448d41fe8b49";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__linefeed.linefeed_0_2 all__rand.rand_0_3 all__getopts.getopts_0_2 all__num.num_0_1 ];
+  };
   "ketos_0_4" = ketos_0_4_3;
-  "ketos_0" = ketos_0_4_3;}
+  "ketos_0_5" = ketos_0_5_0;
+  "ketos_0" = ketos_0_5_0;}

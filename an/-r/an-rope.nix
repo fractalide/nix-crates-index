@@ -7,5 +7,24 @@ rec {
     hash = "b7fa46f3be86eb809300de69d0a633cf617b7620f70b986e1a1e6cdf1c83b694";
     deps = with allCrates; [  ];
   };
-  "an-rope_0_0" = an-rope_0_0_1;
-  "an-rope_0" = an-rope_0_0_1;}
+  an-rope_0_0_2 = buildCratesLib {
+    name = "an-rope";
+    version = "0.0.2";
+    hash = "c80c7ff0df2cb5790dff41c024a2a19061125340fc59a17c91ea7fc1cc102899";
+    deps = with allCrates; [  ];
+  };
+  an-rope_0_0_3 = buildCratesLib {
+    name = "an-rope";
+    version = "0.0.3";
+    hash = "5cbd33b1680f50ae78f31b070bc4574a6e442ec4f979356e5df977240d46863e";
+    deps = with allCrates; [  all__unicode-segmentation.unicode-segmentation_1_0_1 ];
+  };
+  an-rope_0_1_2 = buildCratesLib {
+    name = "an-rope";
+    version = "0.1.2";
+    hash = "a926200f9fe319887bec09cc55026c93c18ed2db4b907ef2885dc1d94c03ffe6";
+    deps = with allCrates; [  all__newtype_derive.newtype_derive_0_1 all__macro-attr.macro-attr_0_2 all__unicode-segmentation.unicode-segmentation_1_0_1 ];
+  };
+  "an-rope_0_0" = an-rope_0_0_3;
+  "an-rope_0_1" = an-rope_0_1_2;
+  "an-rope_0" = an-rope_0_1_2;}

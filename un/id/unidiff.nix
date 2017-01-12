@@ -31,5 +31,12 @@ rec {
     hash = "4a27c50929a7cf7f66519d2c266395b897b6ed62c968c631834082aa91a812a8";
     deps = with allCrates; [  all__encoding.encoding_0_2 all__regex.regex_0_1 all__lazy_static.lazy_static_0_1 ];
   };
+  unidiff_0_2_0 = buildCratesLib {
+    name = "unidiff";
+    version = "0.2.0";
+    hash = "946a67925fa3a02c6420f7b3b7973a74228e0101c11b4d68c54c9f1916e47238";
+    deps = with allCrates; [  all__encoding.encoding_0_2 all__regex.regex_0_2 all__lazy_static.lazy_static_0_2 ];
+  };
   "unidiff_0_1" = unidiff_0_1_4;
-  "unidiff_0" = unidiff_0_1_4;}
+  "unidiff_0_2" = unidiff_0_2_0;
+  "unidiff_0" = unidiff_0_2_0;}

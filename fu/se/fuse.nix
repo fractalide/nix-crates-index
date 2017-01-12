@@ -55,5 +55,12 @@ rec {
     hash = "adf08478eb39cff95e34daa7a2743a256d1c18388c0328d2f717e8ef748001f6";
     deps = with allCrates; [  all__libc.libc_0_1 all__thread-scoped.thread-scoped_1_0 all__log.log_0_3 all__time.time_0_1 all__pkg-config.pkg-config_0_3 ];
   };
+  fuse_0_3_0 = buildCratesLib {
+    name = "fuse";
+    version = "0.3.0";
+    hash = "5087262ce5b36fed6ccd4abf0a8224e48d055a2bb07fecb5605765de6f114a28";
+    deps = with allCrates; [  all__time.time_0_1 all__log.log_0_3 all__thread-scoped.thread-scoped_1 all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
+  };
   "fuse_0_2" = fuse_0_2_8;
-  "fuse_0" = fuse_0_2_8;}
+  "fuse_0_3" = fuse_0_3_0;
+  "fuse_0" = fuse_0_3_0;}

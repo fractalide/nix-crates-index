@@ -19,5 +19,11 @@ rec {
     hash = "5f66670af8e1645e13e6729c42b45a2418dbef93811202ee6131bfa80f5ff5ff";
     deps = with allCrates; [  all__mould.mould_0_0_18 all__identify.identify_0_1 all__permission.permission_0_1 ];
   };
-  "mould-auth_0_0" = mould-auth_0_0_9;
-  "mould-auth_0" = mould-auth_0_0_9;}
+  mould-auth_0_0_10 = buildCratesLib {
+    name = "mould-auth";
+    version = "0.0.10";
+    hash = "c8448a26c5d7ad59878e5739bd9f7e86501b92f9cc6321a11d75a0596d3b2bd9";
+    deps = with allCrates; [  all__permission.permission_0_1 all__mould.mould_0_0_19 all__identify.identify_0_1 ];
+  };
+  "mould-auth_0_0" = mould-auth_0_0_10;
+  "mould-auth_0" = mould-auth_0_0_10;}

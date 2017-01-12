@@ -32,5 +32,12 @@ rec {
     deps = with allCrates; [  all__tensorflow-sys.tensorflow-sys_0_5 all__num-complex.num-complex_0_1 all__libc.libc_0_2 ];
   };
   "tensorflow_0_0" = tensorflow_0_0_4;
+  tensorflow_0_2_0 = buildCratesLib {
+    name = "tensorflow";
+    version = "0.2.0";
+    hash = "9cadeae3dd5ff4d0a426f01eb153338fbce946bcd0af11b9204d23a8a8154847";
+    deps = with allCrates; [  all__tensorflow-sys.tensorflow-sys_0_6 all__libc.libc_0_2 all__num-complex.num-complex_0_1 ];
+  };
   "tensorflow_0_1" = tensorflow_0_1_0;
-  "tensorflow_0" = tensorflow_0_1_0;}
+  "tensorflow_0_2" = tensorflow_0_2_0;
+  "tensorflow_0" = tensorflow_0_2_0;}

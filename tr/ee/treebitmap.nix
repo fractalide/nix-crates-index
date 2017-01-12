@@ -20,5 +20,17 @@ rec {
     deps = with allCrates; [  ];
   };
   "treebitmap_0_1" = treebitmap_0_1_1;
-  "treebitmap_0_2" = treebitmap_0_2_0;
-  "treebitmap_0" = treebitmap_0_2_0;}
+  treebitmap_0_2_1 = buildCratesLib {
+    name = "treebitmap";
+    version = "0.2.1";
+    hash = "bbd47f93d30cd4bbf2051b5e9d111f8185d62eac2f27efdca7e83a32e92ddb32";
+    deps = with allCrates; [  ];
+  };
+  treebitmap_0_2_2 = buildCratesLib {
+    name = "treebitmap";
+    version = "0.2.2";
+    hash = "1efcc0a760c155a5eff13249f6d3339b7000278f24360db9e4c80fab798c79c5";
+    deps = with allCrates; [  ];
+  };
+  "treebitmap_0_2" = treebitmap_0_2_2;
+  "treebitmap_0" = treebitmap_0_2_2;}

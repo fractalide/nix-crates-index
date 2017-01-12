@@ -20,5 +20,12 @@ rec {
     deps = with allCrates; [  all__smallvec.smallvec_0_2 all__error-chain.error-chain_0_5 ];
   };
   "mhash_0_1" = mhash_0_1_2;
+  mhash_0_3_0 = buildCratesLib {
+    name = "mhash";
+    version = "0.3.0";
+    hash = "fd6c86f9200b2ae663f9a6943fb2c8c8e2fc757b83354516fd1bf61aa04d4a0d";
+    deps = with allCrates; [  all__error-chain.error-chain_0_5 all__smallvec.smallvec_0_2 ];
+  };
   "mhash_0_2" = mhash_0_2_0;
-  "mhash_0" = mhash_0_2_0;}
+  "mhash_0_3" = mhash_0_3_0;
+  "mhash_0" = mhash_0_3_0;}

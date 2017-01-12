@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__regex.regex_0_1 all__idna.idna_0_1 all__hyper.hyper_0_9 all__url.url_1_2 all__serde_json.serde_json_0_8 all__error-chain.error-chain_0_5 ];
   };
   "tldextract_0_1" = tldextract_0_1_0;
+  tldextract_0_3_0 = buildCratesLib {
+    name = "tldextract";
+    version = "0.3.0";
+    hash = "3645d418152e576e04f804f51c3ec780590cc36111bea7c8d26959baa92662db";
+    deps = with allCrates; [  all__url.url_1_2 all__serde_json.serde_json_0_8 all__idna.idna_0_1 all__error-chain.error-chain_0_7 all__regex.regex_0_1 all__hyper.hyper_0_9 ];
+  };
   "tldextract_0_2" = tldextract_0_2_0;
-  "tldextract_0" = tldextract_0_2_0;}
+  "tldextract_0_3" = tldextract_0_3_0;
+  "tldextract_0" = tldextract_0_3_0;}

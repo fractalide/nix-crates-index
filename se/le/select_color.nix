@@ -63,5 +63,12 @@ rec {
     deps = with allCrates; [  all__image.image_0_10 ];
   };
   "select_color_0_7" = select_color_0_7_0;
+  select_color_0_9_0 = buildCratesLib {
+    name = "select_color";
+    version = "0.9.0";
+    hash = "8146cf6fa4dbb9257cf5025b2a1666cec5681c7c3f298e508532526d1d297a8e";
+    deps = with allCrates; [  all__image.image_0_12 ];
+  };
   "select_color_0_8" = select_color_0_8_0;
-  "select_color_0" = select_color_0_8_0;}
+  "select_color_0_9" = select_color_0_9_0;
+  "select_color_0" = select_color_0_9_0;}

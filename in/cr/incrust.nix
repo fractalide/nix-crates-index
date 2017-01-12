@@ -141,5 +141,17 @@ rec {
     hash = "c1167bc651d9a4c69fad90a159b2e08657046c0bd1634cca38e35117face7aaa";
     deps = with allCrates; [  all__marksman_escape.marksman_escape_0_1 all__log.log_0_3 all__maplit.maplit_0_1 all__nom.nom_2_0 ];
   };
-  "incrust_0_2" = incrust_0_2_10;
-  "incrust_0" = incrust_0_2_10;}
+  incrust_0_2_11 = buildCratesLib {
+    name = "incrust";
+    version = "0.2.11";
+    hash = "71dce90e68d8579fab98369ca71b570d78241143a5bd1d9e660d3bfe8157017d";
+    deps = with allCrates; [  all__maplit.maplit_0_1 all__log.log_0_3 all__nom.nom_2_0 all__marksman_escape.marksman_escape_0_1 ];
+  };
+  incrust_0_2_12 = buildCratesLib {
+    name = "incrust";
+    version = "0.2.12";
+    hash = "fda8fafc6674d67cb4a466d1b6967f326bc37481decfaaa889649cc138d0f2b4";
+    deps = with allCrates; [  all__log.log_0_3 all__maplit.maplit_0_1 all__nom.nom_2_0 all__marksman_escape.marksman_escape_0_1 ];
+  };
+  "incrust_0_2" = incrust_0_2_12;
+  "incrust_0" = incrust_0_2_12;}

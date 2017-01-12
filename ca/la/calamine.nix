@@ -57,5 +57,18 @@ rec {
     hash = "bfb65bce51fce80e3f8d882d80b9b57c0a71e8d5c1c035ecd1aaa9abbed6d8bf";
     deps = with allCrates; [  all__encoding.encoding_0_2 all__zip.zip_0_2 all__byteorder.byteorder_0_5 all__error-chain.error-chain_0_6 all__quick-xml.quick-xml_0_4 all__log.log_0_3 ];
   };
-  "calamine_0_3" = calamine_0_3_2;
-  "calamine_0" = calamine_0_3_2;}
+  calamine_0_3_3 = buildCratesLib {
+    name = "calamine";
+    version = "0.3.3";
+    hash = "20853dd4ecd1dd25bf3be46bdcd54aed1a64f0c58200a262f5bf333ead80ae21";
+    deps = with allCrates; [  all__log.log_0_3 all__error-chain.error-chain_0_7 all__encoding.encoding_0_2 all__quick-xml.quick-xml_0_4 all__byteorder.byteorder_1_0_0 all__zip.zip_0_2 ];
+  };
+  calamine_0_4_0 = buildCratesLib {
+    name = "calamine";
+    version = "0.4.0";
+    hash = "8494f7f5d6970f3d45aa0049316ddecf95a4f27d706dd1ac61c34eed370247ce";
+    deps = with allCrates; [  all__encoding.encoding_0_2 all__zip.zip_0_2 all__quick-xml.quick-xml_0_4 all__byteorder.byteorder_1_0_0 all__error-chain.error-chain_0_7 all__log.log_0_3 ];
+  };
+  "calamine_0_3" = calamine_0_3_3;
+  "calamine_0_4" = calamine_0_4_0;
+  "calamine_0" = calamine_0_4_0;}

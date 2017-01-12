@@ -25,5 +25,12 @@ rec {
     hash = "926afbcb99f926969ba076fa793b32d6d8968da9b659a776329fc2aae5998161";
     deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
   };
+  croaring-sys_0_2_0 = buildCratesLib {
+    name = "croaring-sys";
+    version = "0.2.0";
+    hash = "26106511175675cd2e112e1fcb87330f287543bd665b12cb2f61974f503e795d";
+    deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
+  };
   "croaring-sys_0_1" = croaring-sys_0_1_3;
-  "croaring-sys_0" = croaring-sys_0_1_3;}
+  "croaring-sys_0_2" = croaring-sys_0_2_0;
+  "croaring-sys_0" = croaring-sys_0_2_0;}

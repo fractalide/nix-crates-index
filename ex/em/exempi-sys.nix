@@ -7,5 +7,12 @@ rec {
     hash = "40e261b7924afdd1df6188324d39bf9faaea1da2c182fbdbdcfdf58a97c69685";
     deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
   };
+  exempi-sys_2_4_0 = buildCratesLib {
+    name = "exempi-sys";
+    version = "2.4.0";
+    hash = "0f9315a593329206d8f27373d2b0159143f8bd0b1dc3d173353e991544bd3ddf";
+    deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
+  };
   "exempi-sys_2_3" = exempi-sys_2_3_0;
-  "exempi-sys_2" = exempi-sys_2_3_0;}
+  "exempi-sys_2_4" = exempi-sys_2_4_0;
+  "exempi-sys_2" = exempi-sys_2_4_0;}

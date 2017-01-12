@@ -159,5 +159,11 @@ rec {
     hash = "1ead277bf2480fee24fcdf19ec975eae8fff3cfe6db40a9ee208492213399340";
     deps = with allCrates; [  all__unicode-width.unicode-width_0_1 ];
   };
-  "tabwriter_1_0" = tabwriter_1_0_2;
-  "tabwriter_1" = tabwriter_1_0_2;}
+  tabwriter_1_0_3 = buildCratesLib {
+    name = "tabwriter";
+    version = "1.0.3";
+    hash = "3b7810162bc0a2eb2dc9a9bfd16ddb2d1f6022df3236d1478937bfadcb12385e";
+    deps = with allCrates; [  all__unicode-width.unicode-width_0_1 ];
+  };
+  "tabwriter_1_0" = tabwriter_1_0_3;
+  "tabwriter_1" = tabwriter_1_0_3;}

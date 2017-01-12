@@ -299,5 +299,12 @@ rec {
     deps = with allCrates; [  all__typemap.typemap_0_3 all__conduit-mime-types.conduit-mime-types_0_7 all__hyper.hyper_0_9 all__plugin.plugin_0_2 all__log.log_0_3 all__error.error_0_1 all__num_cpus.num_cpus_0_2 all__url.url_1_1 all__modifier.modifier_0_1 all__lazy_static.lazy_static_0_1 ];
   };
   "iron_0_3" = iron_0_3_1;
+  iron_0_5_0 = buildCratesLib {
+    name = "iron";
+    version = "0.5.0";
+    hash = "7f7ed0b38a1f73cb64764a37ed9d9a767c03602faa313d7702a543a3f2dfc235";
+    deps = with allCrates; [  all__hyper.hyper_0_10 all__log.log_0_3 all__lazy_static.lazy_static_0_2 all__num_cpus.num_cpus_1_0 all__error.error_0_1 all__conduit-mime-types.conduit-mime-types_0_7 all__modifier.modifier_0_1 all__url.url_1_1 all__plugin.plugin_0_2 all__typemap.typemap_0_3 ];
+  };
   "iron_0_4" = iron_0_4_0;
-  "iron_0" = iron_0_4_0;}
+  "iron_0_5" = iron_0_5_0;
+  "iron_0" = iron_0_5_0;}

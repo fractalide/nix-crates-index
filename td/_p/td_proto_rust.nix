@@ -19,5 +19,11 @@ rec {
     hash = "2a86a24f5e48855a0dd5394443d16d61f1a2b0a8cdf261ac1f0cecf9fdeedb15";
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 ];
   };
-  "td_proto_rust_0_1" = td_proto_rust_0_1_2;
-  "td_proto_rust_0" = td_proto_rust_0_1_2;}
+  td_proto_rust_0_1_3 = buildCratesLib {
+    name = "td_proto_rust";
+    version = "0.1.3";
+    hash = "1d3195320491d85579a2ee393a0d8bd4ca26ccb20d07456ac46395f8180cf545";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "td_proto_rust_0_1" = td_proto_rust_0_1_3;
+  "td_proto_rust_0" = td_proto_rust_0_1_3;}

@@ -7,5 +7,11 @@ rec {
     hash = "a0f6bfca725e6f65d282185d62600c068c44126720fed9f6c11bda12a3cde91c";
     deps = with allCrates; [  all__semver.semver_0_1 all__rustc_version.rustc_version_0_1 all__semver.semver_0_1 all__rustc_version.rustc_version_0_1 ];
   };
-  "rustc_version_runtime_0_1" = rustc_version_runtime_0_1_0;
-  "rustc_version_runtime_0" = rustc_version_runtime_0_1_0;}
+  rustc_version_runtime_0_1_3 = buildCratesLib {
+    name = "rustc_version_runtime";
+    version = "0.1.3";
+    hash = "90811d74046aca9c061fb9f7f2568c61696b7f218a7baad60a0f2ccae90efbd2";
+    deps = with allCrates; [  all__rustc_version.rustc_version_0_1 all__semver.semver_0_1 all__rustc_version.rustc_version_0_1 all__semver.semver_0_1 ];
+  };
+  "rustc_version_runtime_0_1" = rustc_version_runtime_0_1_3;
+  "rustc_version_runtime_0" = rustc_version_runtime_0_1_3;}

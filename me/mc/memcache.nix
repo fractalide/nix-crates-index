@@ -55,5 +55,29 @@ rec {
     hash = "90edeba5a2821a47cd55cdd0fd56b2ff029b3cbe6d9c765e7ec2135da2ddebf1";
     deps = with allCrates; [  libc ];
   };
-  "memcache_0_0" = memcache_0_0_9;
-  "memcache_0" = memcache_0_0_9;}
+  memcache_0_0_10 = buildCratesLib {
+    name = "memcache";
+    version = "0.0.10";
+    hash = "80729a73830f5271e23304b4b44d027dbcaa35ddc853fb9afd3a44027fe600a9";
+    deps = with allCrates; [  ];
+  };
+  memcache_0_0_11 = buildCratesLib {
+    name = "memcache";
+    version = "0.0.11";
+    hash = "0819c38b168172b23489362862260c9422115a747050af55265b45dce31752e7";
+    deps = with allCrates; [  ];
+  };
+  memcache_0_0_12 = buildCratesLib {
+    name = "memcache";
+    version = "0.0.12";
+    hash = "2fd966ab13c1e7937d007b903d609e84f74b3a674ec722c1a758a77925eac185";
+    deps = with allCrates; [  ];
+  };
+  memcache_0_0_13 = buildCratesLib {
+    name = "memcache";
+    version = "0.0.13";
+    hash = "160a1fbbe192cec4dfba15c05aa4b3c725d001bd052b193d8e276f97a4ec4fde";
+    deps = with allCrates; [  ];
+  };
+  "memcache_0_0" = memcache_0_0_13;
+  "memcache_0" = memcache_0_0_13;}

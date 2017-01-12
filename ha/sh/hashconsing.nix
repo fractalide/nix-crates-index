@@ -21,5 +21,12 @@ rec {
     deps = with allCrates; [  ];
   };
   "hashconsing_0_3" = hashconsing_0_3_0;
+  hashconsing_0_5_0 = buildCratesLib {
+    name = "hashconsing";
+    version = "0.5.0";
+    hash = "29aaea4c9536a48b21fab143aa19038ef0aa728162be4e4b76e6b0d6212db76b";
+    deps = with allCrates; [  ];
+  };
   "hashconsing_0_4" = hashconsing_0_4_0;
-  "hashconsing_0" = hashconsing_0_4_0;}
+  "hashconsing_0_5" = hashconsing_0_5_0;
+  "hashconsing_0" = hashconsing_0_5_0;}

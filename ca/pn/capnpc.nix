@@ -458,5 +458,12 @@ rec {
     hash = "343d08ea01272b44b1f50bac9ea918f299115113bb18b075f1f53a047f346b71";
     deps = with allCrates; [  all__capnp.capnp_0_7 ];
   };
+  capnpc_0_8_0 = buildCratesLib {
+    name = "capnpc";
+    version = "0.8.0";
+    hash = "8149aee4db006c20f858ae97acb1abe2a5b2fc0a29f8fba32f8af7ac0289f85a";
+    deps = with allCrates; [  all__capnp.capnp_0_8 ];
+  };
   "capnpc_0_7" = capnpc_0_7_5;
-  "capnpc_0" = capnpc_0_7_5;}
+  "capnpc_0_8" = capnpc_0_8_0;
+  "capnpc_0" = capnpc_0_8_0;}

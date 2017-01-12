@@ -229,5 +229,11 @@ rec {
     hash = "33f27f0bce442322771e3698d542266e231fb9a738b42ae045e8dbd0b7c7eab2";
     deps = with allCrates; [  all__httparse.httparse_1 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__xml-rs.xml-rs_0_1 all__lsio.lsio_0_1 all__chrono.chrono_0_2 all__openssl.openssl_0_7 all__term.term_0_4 all__url.url_1_2 all__time.time_0_1 all__log.log_0_3 all__regex.regex_0_1 all__md5.md5_0_2 all__rustc-serialize.rustc-serialize_0_3 all__serde.serde_0_8 ];
   };
-  "aws-sdk-rust_0_1" = aws-sdk-rust_0_1_38;
-  "aws-sdk-rust_0" = aws-sdk-rust_0_1_38;}
+  aws-sdk-rust_0_1_39 = buildCratesLib {
+    name = "aws-sdk-rust";
+    version = "0.1.39";
+    hash = "bf11680a6e85b6a33d89cabffb2580fe8712b2e011efca13cec8947a67f576cc";
+    deps = with allCrates; [  all__regex.regex_0_1 all__hyper.hyper_0_9 all__term.term_0_4 all__rustc-serialize.rustc-serialize_0_3 all__lsio.lsio_0_1 all__serde_json.serde_json_0_8 all__httparse.httparse_1 all__chrono.chrono_0_2 all__log.log_0_3 all__time.time_0_1 all__openssl.openssl_0_7 all__url.url_1_2 all__serde.serde_0_8 all__xml-rs.xml-rs_0_1 all__md5.md5_0_2 ];
+  };
+  "aws-sdk-rust_0_1" = aws-sdk-rust_0_1_39;
+  "aws-sdk-rust_0" = aws-sdk-rust_0_1_39;}

@@ -95,5 +95,18 @@ rec {
     hash = "99d74a45572c88b77fd0fcdb0643ac7db45ee5cef5466cbab24af1903268a70b";
     deps = with allCrates; [  all__glium.glium_0_15 all__image.image_0_10 all__quick-error.quick-error_1 ];
   };
+  korome_0_14_0 = buildCratesLib {
+    name = "korome";
+    version = "0.14.0";
+    hash = "f57aa74d6be465af76a353ff4dd959529470b48d8e0d852c86db89a09d38cf10";
+    deps = with allCrates; [  all__image.image_0_10 all__quick-error.quick-error_1 all__glium.glium_0_15 ];
+  };
   "korome_0_13" = korome_0_13_1;
-  "korome_0" = korome_0_13_1;}
+  korome_0_14_1 = buildCratesLib {
+    name = "korome";
+    version = "0.14.1";
+    hash = "cff98440dda4a6632a18a1df6cee92333d7a871f76a1d3147efd3aaf82f40465";
+    deps = with allCrates; [  glium all__quick-error.quick-error_1 image ];
+  };
+  "korome_0_14" = korome_0_14_1;
+  "korome_0" = korome_0_14_1;}

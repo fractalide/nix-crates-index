@@ -7,5 +7,12 @@ rec {
     hash = "29b83c3c7aad4c9a8273f7aa108aeedf50f88b5330ac3b99cf5f40ba2bb323fa";
     deps = with allCrates; [  rmp all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  rmp-serialize_0_8_0 = buildCratesLib {
+    name = "rmp-serialize";
+    version = "0.8.0";
+    hash = "54d9fa965323a18d5d81fa6cafa10cb5c0e4ba60e88acecf958f2ac427181cba";
+    deps = with allCrates; [  all__rmp.rmp_0_8 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
   "rmp-serialize_0_7" = rmp-serialize_0_7_0;
-  "rmp-serialize_0" = rmp-serialize_0_7_0;}
+  "rmp-serialize_0_8" = rmp-serialize_0_8_0;
+  "rmp-serialize_0" = rmp-serialize_0_8_0;}

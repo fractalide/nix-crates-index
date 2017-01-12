@@ -92,5 +92,25 @@ rec {
     hash = "b4fb40d3f59150e23d59d759544e1b0089273557696d49d085d9bc1c32469169";
     deps = with allCrates; [  all__threadpool.threadpool_1_3 all__log.log_0_3 ];
   };
+  cadence_0_9_0 = buildCratesLib {
+    name = "cadence";
+    version = "0.9.0";
+    hash = "760b704e9e63ffc6327ec7b41431f8a63ccb5dd8209034ca17ce6510b4b4a052";
+    deps = with allCrates; [  all__threadpool.threadpool_1_3 all__crossbeam.crossbeam_0_2 all__log.log_0_3 ];
+  };
   "cadence_0_8" = cadence_0_8_2;
-  "cadence_0" = cadence_0_8_2;}
+  cadence_0_9_1 = buildCratesLib {
+    name = "cadence";
+    version = "0.9.1";
+    hash = "2aaec5f49f5a7913a4ee7fd35067dffe3e86fb99441035057551949b10d09d0c";
+    deps = with allCrates; [  all__log.log_0_3 all__crossbeam.crossbeam_0_2 all__threadpool.threadpool_1_3 ];
+  };
+  cadence_0_10_0 = buildCratesLib {
+    name = "cadence";
+    version = "0.10.0";
+    hash = "7c6d6d5af41d50e8c1a5d9f511bee22fdb01d17b9ec1fff8181e9ebdedd75906";
+    deps = with allCrates; [  all__crossbeam.crossbeam_0_2 all__threadpool.threadpool_1_3 ];
+  };
+  "cadence_0_9" = cadence_0_9_1;
+  "cadence_0_10" = cadence_0_10_0;
+  "cadence_0" = cadence_0_10_0;}

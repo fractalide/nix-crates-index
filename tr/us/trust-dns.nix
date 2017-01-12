@@ -123,5 +123,11 @@ rec {
     hash = "441cdc518c2638ab667ade407857de59eb0f047c4ffad212f518b51c3f3aa854";
     deps = with allCrates; [  all__error-chain.error-chain_0_1 all__backtrace.backtrace_0_2 all__chrono.chrono_0_2 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__lazy_static.lazy_static_0_2 all__data-encoding.data-encoding_1_1 all__time.time_0_1 all__tokio-core.tokio-core_0_1 all__futures.futures_0_1 all__rand.rand_0_3 ];
   };
-  "trust-dns_0_9" = trust-dns_0_9_2;
-  "trust-dns_0" = trust-dns_0_9_2;}
+  trust-dns_0_9_3 = buildCratesLib {
+    name = "trust-dns";
+    version = "0.9.3";
+    hash = "382fb31339a075d000aae553a0ff2c8c3191a6cc9131a55f9a403546e8e0ef47";
+    deps = with allCrates; [  all__futures.futures_0_1 all__lazy_static.lazy_static_0_2 all__backtrace.backtrace_0_2 all__time.time_0_1 all__log.log_0_3 all__rand.rand_0_3 all__data-encoding.data-encoding_1_1 all__untrusted.untrusted_0_3 all__error-chain.error-chain_0_1 all__rustc-serialize.rustc-serialize_0_3 all__tokio-core.tokio-core_0_1 all__chrono.chrono_0_2 ];
+  };
+  "trust-dns_0_9" = trust-dns_0_9_3;
+  "trust-dns_0" = trust-dns_0_9_3;}

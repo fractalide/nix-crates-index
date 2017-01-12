@@ -241,5 +241,20 @@ rec {
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__toml.toml_0_2 all__glob.glob_0_2 all__rustc-serialize.rustc-serialize_0_3 all__clap.clap_2_10 all__tempdir.tempdir_0_3 ];
   };
   "rusty-tags_1_1" = rusty-tags_1_1_1;
+  rusty-tags_1_3_0 = buildCratesLib {
+    name = "rusty-tags";
+    version = "1.3.0";
+    hash = "11ca08da6746d1a631f4f98604d6fb2cce143ed78ac041cc8fd6adb8ee82ede2";
+    deps = with allCrates; [  all__glob.glob_0_2 all__clap.clap_2_10 all__lazy_static.lazy_static_0_2 all__toml.toml_0_2 all__rustc-serialize.rustc-serialize_0_3 all__tempdir.tempdir_0_3 ];
+  };
   "rusty-tags_1_2" = rusty-tags_1_2_0;
-  "rusty-tags_1" = rusty-tags_1_2_0;}
+  rusty-tags_2_0_0 = buildCratesLib {
+    name = "rusty-tags";
+    version = "2.0.0";
+    hash = "4c992400c8ffea44820f309619745621310094b6966fcbc660782dfae5656d6d";
+    deps = with allCrates; [  all__toml.toml_0_2 all__rustc-serialize.rustc-serialize_0_3 all__tempdir.tempdir_0_3 all__lazy_static.lazy_static_0_2 all__clap.clap_2_10 ];
+  };
+  "rusty-tags_1_3" = rusty-tags_1_3_0;
+  "rusty-tags_1" = rusty-tags_1_3_0;
+  "rusty-tags_2_0" = rusty-tags_2_0_0;
+  "rusty-tags_2" = rusty-tags_2_0_0;}

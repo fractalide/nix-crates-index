@@ -150,5 +150,11 @@ rec {
     hash = "c69c28c9a1a2b98ed625e473c5fa756ba05e3dd4df98661b7eb05dc77ba8a2ad";
     deps = with allCrates; [  all__encoding.encoding_0_2 all__matches.matches_0_1 ];
   };
-  "cssparser_0_7" = cssparser_0_7_1;
-  "cssparser_0" = cssparser_0_7_1;}
+  cssparser_0_7_2 = buildCratesLib {
+    name = "cssparser";
+    version = "0.7.2";
+    hash = "7df2dd7211145ec79b2b3864344c5e0b242bfcdbd4805e9c0d7281a2309b0715";
+    deps = with allCrates; [  all__matches.matches_0_1 all__encoding.encoding_0_2 ];
+  };
+  "cssparser_0_7" = cssparser_0_7_2;
+  "cssparser_0" = cssparser_0_7_2;}

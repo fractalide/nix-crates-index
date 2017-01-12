@@ -71,5 +71,12 @@ rec {
     hash = "07b171b407e583dc8f01011a713f20575a81ac60acecf3b8153012709aeb1fd6";
     deps = with allCrates; [  all__iron.iron_0_4 all__serde.serde_0_8 all__persistent.persistent_0_2 all__plugin.plugin_0_2 all__serde_json.serde_json_0_8 ];
   };
+  bodyparser_0_5_0 = buildCratesLib {
+    name = "bodyparser";
+    version = "0.5.0";
+    hash = "6928e817538b74a73d1dd6e9a942a2a35c632a597b6bb14fd009480f859a6bf5";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__persistent.persistent_0_3 all__iron.iron_0_5 all__serde.serde_0_8 all__plugin.plugin_0_2 ];
+  };
   "bodyparser_0_4" = bodyparser_0_4_1;
-  "bodyparser_0" = bodyparser_0_4_1;}
+  "bodyparser_0_5" = bodyparser_0_5_0;
+  "bodyparser_0" = bodyparser_0_5_0;}

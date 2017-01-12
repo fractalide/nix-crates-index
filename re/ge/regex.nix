@@ -475,5 +475,18 @@ rec {
     hash = "4fd4ace6a8cf7860714a2c2280d6c1f7e6a413486c13298bbc86fd3da019402f";
     deps = with allCrates; [  all__utf8-ranges.utf8-ranges_0_1 all__thread_local.thread_local_0_2 all__memchr.memchr_0_1 all__regex-syntax.regex-syntax_0_3 all__aho-corasick.aho-corasick_0_5 ];
   };
+  regex_0_2_0 = buildCratesLib {
+    name = "regex";
+    version = "0.2.0";
+    hash = "5338778c78b1d17424ffc270282b611c2e2fab6af72e59afd691b324451a2587";
+    deps = with allCrates; [  all__regex-syntax.regex-syntax_0_4 all__memchr.memchr_1 all__aho-corasick.aho-corasick_0_5 all__thread_local.thread_local_0_3 all__utf8-ranges.utf8-ranges_1 ];
+  };
   "regex_0_1" = regex_0_1_80;
-  "regex_0" = regex_0_1_80;}
+  regex_0_2_1 = buildCratesLib {
+    name = "regex";
+    version = "0.2.1";
+    hash = "4278c17d0f6d62dfef0ab00028feb45bd7d2102843f80763474eeb1be8a10c01";
+    deps = with allCrates; [  all__utf8-ranges.utf8-ranges_1_0_0 all__memchr.memchr_1_0_0 all__thread_local.thread_local_0_3 all__aho-corasick.aho-corasick_0_6 all__regex-syntax.regex-syntax_0_4 ];
+  };
+  "regex_0_2" = regex_0_2_1;
+  "regex_0" = regex_0_2_1;}

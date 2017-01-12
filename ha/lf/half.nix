@@ -7,5 +7,11 @@ rec {
     hash = "4d07978d54bfc4102f0656a19b2a6b8af375dd6a09db587920d03ea35195d844";
     deps = with allCrates; [  ];
   };
-  "half_0_1" = half_0_1_0;
-  "half_0" = half_0_1_0;}
+  half_0_1_1 = buildCratesLib {
+    name = "half";
+    version = "0.1.1";
+    hash = "06e5e7e692af2db21146dc4894fcc146bb39cac2aa9012c8227086400aecaa2b";
+    deps = with allCrates; [  ];
+  };
+  "half_0_1" = half_0_1_1;
+  "half_0" = half_0_1_1;}

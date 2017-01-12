@@ -85,5 +85,37 @@ rec {
   };
   "rzbackup_2_0" = rzbackup_2_0_7;
   "rzbackup_2" = rzbackup_2_0_7;
+  rzbackup_3_1_0 = buildCratesLib {
+    name = "rzbackup";
+    version = "3.1.0";
+    hash = "07582ed7f002d8164d4e7c8a9328c5111105adb14fa386c6a1ba6ac070090efa";
+    deps = with allCrates; [  all__futures.futures_0_1 all__rust-crypto.rust-crypto_0_2 all__rustc-serialize.rustc-serialize_0_3 all__byteorder.byteorder_0_5 all__lru-cache.lru-cache_0_0 all__futures-cpupool.futures-cpupool_0_1 all__clap.clap_2_13 all__adler32.adler32_0_3 all__libc.libc_0_2 all__output.output_0_4 all__minilzo.minilzo_0_1 all__num_cpus.num_cpus_1_1 all__protobuf.protobuf_1_0 all__rand.rand_0_3 ];
+  };
   "rzbackup_3_0" = rzbackup_3_0_0;
-  "rzbackup_3" = rzbackup_3_0_0;}
+  rzbackup_3_1_1 = buildCratesLib {
+    name = "rzbackup";
+    version = "3.1.1";
+    hash = "cc631182a8127f4cbd7a9d0c59ba51b3b020d8fb89be3bb88b1dfeddccccd9cd";
+    deps = with allCrates; [  all__futures.futures_0_1 all__protobuf.protobuf_1_0 all__libc.libc_0_2 all__byteorder.byteorder_0_5 all__minilzo.minilzo_0_1 all__adler32.adler32_0_3 all__rust-crypto.rust-crypto_0_2 all__clap.clap_2_13 all__num_cpus.num_cpus_1_1 all__futures-cpupool.futures-cpupool_0_1 all__output.output_0_4 all__rustc-serialize.rustc-serialize_0_3 all__lru-cache.lru-cache_0_0 all__rand.rand_0_3 ];
+  };
+  rzbackup_3_2_0 = buildCratesLib {
+    name = "rzbackup";
+    version = "3.2.0";
+    hash = "0382916532dd31bf2349752591e15389c64a183e244c3c50b043956f13ccf1f0";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__adler32.adler32_0_3 all__futures-cpupool.futures-cpupool_0_1 all__libc.libc_0_2 all__byteorder.byteorder_0_5 all__rust-crypto.rust-crypto_0_2 all__rand.rand_0_3 all__protobuf.protobuf_1_0 all__errno.errno_0_2 all__lazy_static.lazy_static_0_2 all__futures.futures_0_1 all__clap.clap_2_13 all__minilzo.minilzo_0_1 all__num_cpus.num_cpus_1_1 all__lru-cache.lru-cache_0_0 all__output.output_0_4 ];
+  };
+  "rzbackup_3_1" = rzbackup_3_1_1;
+  rzbackup_3_2_1 = buildCratesLib {
+    name = "rzbackup";
+    version = "3.2.1";
+    hash = "123b7522b2240196f29233e03d2a558b2e54074916246f7f03832650d9618db8";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__rustc-serialize.rustc-serialize_0_3 all__clap.clap_2_13 all__lazy_static.lazy_static_0_2 all__futures-cpupool.futures-cpupool_0_1 all__rand.rand_0_3 all__errno.errno_0_2 all__futures.futures_0_1 all__minilzo.minilzo_0_1 all__output.output_0_4 all__adler32.adler32_0_3 all__num_cpus.num_cpus_1_1 all__libc.libc_0_2 all__protobuf.protobuf_1_0 all__lru-cache.lru-cache_0_0 all__rust-crypto.rust-crypto_0_2 ];
+  };
+  rzbackup_3_2_2 = buildCratesLib {
+    name = "rzbackup";
+    version = "3.2.2";
+    hash = "7d12f35a53bad5fce09a47421a8f07ed9d76d7e7931f29ed8178bb1d8a93feba";
+    deps = with allCrates; [  all__minilzo.minilzo_0_1 all__num_cpus.num_cpus_1_1 all__lru-cache.lru-cache_0_0 all__rustc-serialize.rustc-serialize_0_3 all__adler32.adler32_0_3 all__futures-cpupool.futures-cpupool_0_1 all__byteorder.byteorder_0_5 all__clap.clap_2_13 all__protobuf.protobuf_1_0 all__lazy_static.lazy_static_0_2 all__rust-crypto.rust-crypto_0_2 all__errno.errno_0_2 all__futures.futures_0_1 all__rand.rand_0_3 all__libc.libc_0_2 all__output.output_0_4 ];
+  };
+  "rzbackup_3_2" = rzbackup_3_2_2;
+  "rzbackup_3" = rzbackup_3_2_2;}

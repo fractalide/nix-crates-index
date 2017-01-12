@@ -21,5 +21,12 @@ rec {
     deps = with allCrates; [  all__ogg.ogg_0_3 all__byteorder.byteorder_0_5 ];
   };
   "ogg_metadata_0_2" = ogg_metadata_0_2_0;
+  ogg_metadata_0_4_0 = buildCratesLib {
+    name = "ogg_metadata";
+    version = "0.4.0";
+    hash = "bb1753e64956b3afd900f788bf6d2e9d0986df39168be86f4b47ec2058d0c2f7";
+    deps = with allCrates; [  all__ogg.ogg_0_4 all__byteorder.byteorder_1_0 ];
+  };
   "ogg_metadata_0_3" = ogg_metadata_0_3_0;
-  "ogg_metadata_0" = ogg_metadata_0_3_0;}
+  "ogg_metadata_0_4" = ogg_metadata_0_4_0;
+  "ogg_metadata_0" = ogg_metadata_0_4_0;}

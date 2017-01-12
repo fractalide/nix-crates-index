@@ -19,5 +19,11 @@ rec {
     hash = "fd3fc831590ee7fcf693c673e4e3cbe14fbda44dc0f26d9bdc79cfc9f551dc05";
     deps = with allCrates; [  all__string_cache.string_cache_0_3 all__string_cache_codegen.string_cache_codegen_0_3 ];
   };
-  "html5ever-atoms_0_1" = html5ever-atoms_0_1_2;
-  "html5ever-atoms_0" = html5ever-atoms_0_1_2;}
+  html5ever-atoms_0_1_3 = buildCratesLib {
+    name = "html5ever-atoms";
+    version = "0.1.3";
+    hash = "4109e35fec157307b918eb9d5b7018e2fa771aea0c04831e22003ac4722fbd1b";
+    deps = with allCrates; [  all__string_cache.string_cache_0_3 all__string_cache_codegen.string_cache_codegen_0_3 ];
+  };
+  "html5ever-atoms_0_1" = html5ever-atoms_0_1_3;
+  "html5ever-atoms_0" = html5ever-atoms_0_1_3;}

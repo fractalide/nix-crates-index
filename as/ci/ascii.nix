@@ -122,5 +122,12 @@ rec {
     hash = "3ae7d751998c189c1d4468cf0a39bb2eae052a9c58d50ebb3b9591ee3813ad50";
     deps = with allCrates; [  ];
   };
+  ascii_0_8_0 = buildCratesLib {
+    name = "ascii";
+    version = "0.8.0";
+    hash = "4ba7abd037a4a5f8eb09b47994fd3522eff469bf03a9ba2e0d8787742a85f8fc";
+    deps = with allCrates; [  ];
+  };
   "ascii_0_7" = ascii_0_7_1;
-  "ascii_0" = ascii_0_7_1;}
+  "ascii_0_8" = ascii_0_8_0;
+  "ascii_0" = ascii_0_8_0;}

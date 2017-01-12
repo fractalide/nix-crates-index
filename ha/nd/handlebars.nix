@@ -462,5 +462,11 @@ rec {
     deps = with allCrates; [  all__regex.regex_0_1 all__lazy_static.lazy_static_0_2 all__log.log_0_3 all__pest.pest_0_3 all__quick-error.quick-error_1_0_0 ];
   };
   "handlebars_0_23" = handlebars_0_23_0;
-  "handlebars_0_24" = handlebars_0_24_0;
-  "handlebars_0" = handlebars_0_24_0;}
+  handlebars_0_24_1 = buildCratesLib {
+    name = "handlebars";
+    version = "0.24.1";
+    hash = "e6971d7072097815b5b4af95cb03f280c297801df85d298fa8d5719b3b49f88a";
+    deps = with allCrates; [  all__log.log_0_3 all__lazy_static.lazy_static_0_2 all__quick-error.quick-error_1_0_0 all__pest.pest_0_3 all__regex.regex_0_2 ];
+  };
+  "handlebars_0_24" = handlebars_0_24_1;
+  "handlebars_0" = handlebars_0_24_1;}

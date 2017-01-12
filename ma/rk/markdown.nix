@@ -20,5 +20,12 @@ rec {
     hash = "70fd5d33ad7582d518092d7a5703eede03cb0c5ad3b7617eb62b4770061a2bed";
     deps = with allCrates; [  all__difference.difference_0_4 all__regex.regex_0_1 all__pipeline.pipeline_0_5 ];
   };
+  markdown_0_2_0 = buildCratesLib {
+    name = "markdown";
+    version = "0.2.0";
+    hash = "bdb7e864aa1dccbebb05751e899bc84c639df47490c0c24caf4b1a77770b6566";
+    deps = with allCrates; [  all__pipeline.pipeline_0_5 all__regex.regex_0_1 ];
+  };
   "markdown_0_1" = markdown_0_1_1;
-  "markdown_0" = markdown_0_1_1;}
+  "markdown_0_2" = markdown_0_2_0;
+  "markdown_0" = markdown_0_2_0;}

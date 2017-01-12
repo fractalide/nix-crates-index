@@ -56,5 +56,11 @@ rec {
     hash = "8dd45ee5e8995886562445928ed58f213875e1dc92b9e919f2b3108017407680";
     deps = with allCrates; [  all__bitflags.bitflags_0_5 all__alsa-sys.alsa-sys_0_1 all__libc.libc_0_2 ];
   };
-  "alsa_0_1" = alsa_0_1_3;
-  "alsa_0" = alsa_0_1_3;}
+  alsa_0_1_4 = buildCratesLib {
+    name = "alsa";
+    version = "0.1.4";
+    hash = "21c623ab7dac90cdff1e06a7c731a008a912e6dc4268f977fcdbcc2802704a73";
+    deps = with allCrates; [  all__alsa-sys.alsa-sys_0_1 all__bitflags.bitflags_0_5 all__libc.libc_0_2 ];
+  };
+  "alsa_0_1" = alsa_0_1_4;
+  "alsa_0" = alsa_0_1_4;}

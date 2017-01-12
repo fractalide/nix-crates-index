@@ -21,5 +21,12 @@ rec {
     deps = with allCrates; [  ];
   };
   "derive_more_0_2" = derive_more_0_2_0;
+  derive_more_0_4_0 = buildCratesLib {
+    name = "derive_more";
+    version = "0.4.0";
+    hash = "a33585dc6e2acd428644363b1856943be4c55722b0910a7e62dd9588ae41219f";
+    deps = with allCrates; [  all__syn.syn_0_10 all__quote.quote_0_3 ];
+  };
   "derive_more_0_3" = derive_more_0_3_0;
-  "derive_more_0" = derive_more_0_3_0;}
+  "derive_more_0_4" = derive_more_0_4_0;
+  "derive_more_0" = derive_more_0_4_0;}

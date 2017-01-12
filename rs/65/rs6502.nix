@@ -21,5 +21,29 @@ rec {
     deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
   };
   "rs6502_0_2" = rs6502_0_2_0;
-  "rs6502_0_3" = rs6502_0_3_0;
-  "rs6502_0" = rs6502_0_3_0;}
+  rs6502_0_3_1 = buildCratesLib {
+    name = "rs6502";
+    version = "0.3.1";
+    hash = "b79bc404f83e69bb9372d56d6feee99fd8865e990754037ab394269800f9ae1f";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
+  };
+  rs6502_0_3_2 = buildCratesLib {
+    name = "rs6502";
+    version = "0.3.2";
+    hash = "cebb4cf541b37b5d08d0fd9d9bc63b161ee93009d8e69e217476d500bccc0c3f";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
+  };
+  rs6502_0_3_3 = buildCratesLib {
+    name = "rs6502";
+    version = "0.3.3";
+    hash = "6bcd32ed509862a3acda7e8d64326e52c2a28dd23b1db1213c100d2befb65887";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
+  };
+  rs6502_0_3_4 = buildCratesLib {
+    name = "rs6502";
+    version = "0.3.4";
+    hash = "0ff949fa1726938573e7ad4d34262595c07a99d4be5b37d0906290b04eaea13f";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
+  };
+  "rs6502_0_3" = rs6502_0_3_4;
+  "rs6502_0" = rs6502_0_3_4;}

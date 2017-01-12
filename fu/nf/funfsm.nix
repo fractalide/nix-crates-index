@@ -7,5 +7,12 @@ rec {
     hash = "157db45901d2156266e2b884423025ab816fa86bd68900fdcad6c6b1dee5ac35";
     deps = with allCrates; [  ];
   };
+  funfsm_0_2_0 = buildCratesLib {
+    name = "funfsm";
+    version = "0.2.0";
+    hash = "4f1705fe92d9017bf1b29d94435693c88b60797f7e7673de9f6f7f7ddec19121";
+    deps = with allCrates; [  ];
+  };
   "funfsm_0_1" = funfsm_0_1_0;
-  "funfsm_0" = funfsm_0_1_0;}
+  "funfsm_0_2" = funfsm_0_2_0;
+  "funfsm_0" = funfsm_0_2_0;}

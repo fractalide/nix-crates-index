@@ -7,5 +7,12 @@ rec {
     hash = "f4d8992e0879779005aff7549af29e508f2d9c1e2384cbe6171967d6618c0fa6";
     deps = with allCrates; [  all__exempi-sys.exempi-sys_2_3 all__bitflags.bitflags_0_5 all__libc.libc_0_2 ];
   };
+  exempi_2_4_0 = buildCratesLib {
+    name = "exempi";
+    version = "2.4.0";
+    hash = "4639405b457bb8b8c0c9511ef2c668c1ae600c19c59e2863a90124c842594d99";
+    deps = with allCrates; [  all__exempi-sys.exempi-sys_2_4 all__libc.libc_0_2 all__bitflags.bitflags_0_5 ];
+  };
   "exempi_2_3" = exempi_2_3_0;
-  "exempi_2" = exempi_2_3_0;}
+  "exempi_2_4" = exempi_2_4_0;
+  "exempi_2" = exempi_2_4_0;}

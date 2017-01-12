@@ -13,5 +13,12 @@ rec {
     hash = "3bcd552d827bce3a92a3e31b9a572ec757b48707a3e59471138282a8cdd280fe";
     deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
   };
+  md6_1_1_0 = buildCratesLib {
+    name = "md6";
+    version = "1.1.0";
+    hash = "f5e2f70949bb2b5d019270052226568504a4e8ffa7ca4ed0496b95407f921e5e";
+    deps = with allCrates; [  all__libc.libc_0_2 all__gcc.gcc_0_3 ];
+  };
   "md6_1_0" = md6_1_0_1;
-  "md6_1" = md6_1_0_1;}
+  "md6_1_1" = md6_1_1_0;
+  "md6_1" = md6_1_1_0;}

@@ -255,5 +255,31 @@ rec {
     hash = "76df2dce95fef56fd35dbc41c36e37b19aede703c6be7739e8b65d5788ffc728";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__enum_primitive.enum_primitive_0_1 all__num-iter.num-iter_0_1 all__num-traits.num-traits_0_1 all__glob.glob_0_2 all__num-rational.num-rational_0_1 ];
   };
+  image_0_11_0 = buildCratesLib {
+    name = "image";
+    version = "0.11.0";
+    hash = "e3a6f17edf55a7de3834cb22825ce88fe7660e11328dabe0354eddfa68f2b480";
+    deps = with allCrates; [  all__enum_primitive.enum_primitive_0_1 all__glob.glob_0_2 all__num-rational.num-rational_0_1 all__num-iter.num-iter_0_1 all__num-traits.num-traits_0_1 all__byteorder.byteorder_0_5 ];
+  };
   "image_0_10" = image_0_10_4;
-  "image_0" = image_0_10_4;}
+  image_0_11_1 = buildCratesLib {
+    name = "image";
+    version = "0.11.1";
+    hash = "9d62758640802fa9b18d0338fb3a338a09b120df0d0215135e4378ad6eede5dd";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__num-iter.num-iter_0_1 all__enum_primitive.enum_primitive_0_1 all__glob.glob_0_2 all__num-traits.num-traits_0_1 all__num-rational.num-rational_0_1 ];
+  };
+  image_0_12_0 = buildCratesLib {
+    name = "image";
+    version = "0.12.0";
+    hash = "ec590387b63c46ea29d300fd91077a02fc0242496849b5a0e61bf4322a07b330";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__enum_primitive.enum_primitive_0_1 all__num-traits.num-traits_0_1 all__glob.glob_0_2 all__num-rational.num-rational_0_1 all__num-iter.num-iter_0_1 ];
+  };
+  "image_0_11" = image_0_11_1;
+  image_0_12_1 = buildCratesLib {
+    name = "image";
+    version = "0.12.1";
+    hash = "103a3523fe4736c3bdf58a74620b3c390a5696414c674cfd07cceece65e48013";
+    deps = with allCrates; [  all__num-iter.num-iter_0_1 all__num-rational.num-rational_0_1 all__byteorder.byteorder_1_0_0 all__glob.glob_0_2 all__num-traits.num-traits_0_1 all__enum_primitive.enum_primitive_0_1 ];
+  };
+  "image_0_12" = image_0_12_1;
+  "image_0" = image_0_12_1;}

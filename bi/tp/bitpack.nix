@@ -7,5 +7,11 @@ rec {
     hash = "156b29fef3de4d3392852c6f597798574a4855fed8550493863b0920b62ace9c";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
   };
-  "bitpack_0_1" = bitpack_0_1_0;
-  "bitpack_0" = bitpack_0_1_0;}
+  bitpack_0_1_1 = buildCratesLib {
+    name = "bitpack";
+    version = "0.1.1";
+    hash = "0f3c9d1c91abb6f68ecd22f7115683ff5f1020f0be65d0c0719bda8a94584f76";
+    deps = with allCrates; [  all__byteorder.byteorder_1_0 ];
+  };
+  "bitpack_0_1" = bitpack_0_1_1;
+  "bitpack_0" = bitpack_0_1_1;}

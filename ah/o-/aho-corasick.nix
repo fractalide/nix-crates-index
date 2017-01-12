@@ -119,5 +119,18 @@ rec {
     hash = "ca972c2ea5f742bfce5687b9aef75506a764f61d37f8f649047846a9686ddb66";
     deps = with allCrates; [  all__memchr.memchr_0_1 ];
   };
+  aho-corasick_0_6_0 = buildCratesLib {
+    name = "aho-corasick";
+    version = "0.6.0";
+    hash = "9b1112e9e6d4a66f5f63fbaa520a0bbfe45e63cdd2d13c7ea1660ccc45345073";
+    deps = with allCrates; [  all__memchr.memchr_1 ];
+  };
   "aho-corasick_0_5" = aho-corasick_0_5_3;
-  "aho-corasick_0" = aho-corasick_0_5_3;}
+  aho-corasick_0_6_1 = buildCratesLib {
+    name = "aho-corasick";
+    version = "0.6.1";
+    hash = "4f660b942762979b56c9f07b4b36bb559776fbad102f05d6771e1b629e8fd5bf";
+    deps = with allCrates; [  all__memchr.memchr_1 ];
+  };
+  "aho-corasick_0_6" = aho-corasick_0_6_1;
+  "aho-corasick_0" = aho-corasick_0_6_1;}

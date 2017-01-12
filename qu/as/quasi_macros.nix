@@ -322,5 +322,12 @@ rec {
     deps = with allCrates; [  all__quasi_codegen.quasi_codegen_0_28 ];
   };
   "quasi_macros_0_27" = quasi_macros_0_27_0;
+  quasi_macros_0_29_0 = buildCratesLib {
+    name = "quasi_macros";
+    version = "0.29.0";
+    hash = "735f7310ef0f2e156e1814a5f09b93ec9678a6c2e513ce28504d0a03369a2706";
+    deps = with allCrates; [  all__quasi_codegen.quasi_codegen_0_29 ];
+  };
   "quasi_macros_0_28" = quasi_macros_0_28_0;
-  "quasi_macros_0" = quasi_macros_0_28_0;}
+  "quasi_macros_0_29" = quasi_macros_0_29_0;
+  "quasi_macros_0" = quasi_macros_0_29_0;}

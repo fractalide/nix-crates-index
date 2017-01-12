@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__slug.slug_0_1 all__serde_json.serde_json_0_8 ];
   };
   "jmespath_0_0" = jmespath_0_0_1;
-  "jmespath_0_1" = jmespath_0_1_0;
-  "jmespath_0" = jmespath_0_1_0;}
+  jmespath_0_1_1 = buildCratesLib {
+    name = "jmespath";
+    version = "0.1.1";
+    hash = "fc1c4c50f53efaa139b2fa57d93b59b343dd2787f067874d8ade7ed6ffde55d3";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__lazy_static.lazy_static_0_2 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__slug.slug_0_1 ];
+  };
+  "jmespath_0_1" = jmespath_0_1_1;
+  "jmespath_0" = jmespath_0_1_1;}

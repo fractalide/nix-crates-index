@@ -33,5 +33,11 @@ rec {
     deps = with allCrates; [  all__bitflags.bitflags_0_7 all__libc.libc_0_2 all__liblmdb-sys.liblmdb-sys_0_2 ];
   };
   "lmdb-zero_0_2" = lmdb-zero_0_2_2;
-  "lmdb-zero_0_3" = lmdb-zero_0_3_0;
-  "lmdb-zero_0" = lmdb-zero_0_3_0;}
+  lmdb-zero_0_3_1 = buildCratesLib {
+    name = "lmdb-zero";
+    version = "0.3.1";
+    hash = "784a9a20f6c3b73cbb1cf10a5c6f62128fcd7df6133ff054157c98669599d743";
+    deps = with allCrates; [  all__liblmdb-sys.liblmdb-sys_0_2 all__libc.libc_0_2 all__bitflags.bitflags_0_7 ];
+  };
+  "lmdb-zero_0_3" = lmdb-zero_0_3_1;
+  "lmdb-zero_0" = lmdb-zero_0_3_1;}

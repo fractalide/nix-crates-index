@@ -27,5 +27,18 @@ rec {
     deps = with allCrates; [  all__mio.mio_0_6 all__rustc-serialize.rustc-serialize_0_3 all__get_if_addrs.get_if_addrs_0_4 all__json_macros.json_macros_0_3 ];
   };
   "yell_0_2" = yell_0_2_1;
+  yell_0_4_0 = buildCratesLib {
+    name = "yell";
+    version = "0.4.0";
+    hash = "385429cc227e79d0ddf9a0fa52aa255816a009a85a082bf536a464b510f2aae2";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__mio.mio_0_6 all__get_if_addrs.get_if_addrs_0_4 all__json_macros.json_macros_0_3 ];
+  };
   "yell_0_3" = yell_0_3_0;
-  "yell_0" = yell_0_3_0;}
+  yell_0_4_1 = buildCratesLib {
+    name = "yell";
+    version = "0.4.1";
+    hash = "0e0faba3789f1f0856da28fb4d93ca558086f3ff1d000d8f490aa8b818370047";
+    deps = with allCrates; [  all__json_macros.json_macros_0_3 all__mio.mio_0_6 all__rustc-serialize.rustc-serialize_0_3 all__get_if_addrs.get_if_addrs_0_4 ];
+  };
+  "yell_0_4" = yell_0_4_1;
+  "yell_0" = yell_0_4_1;}

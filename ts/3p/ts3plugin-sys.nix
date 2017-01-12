@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__libc.libc_0_2 all__bitflags.bitflags_0_7 ];
   };
   "ts3plugin-sys_0_1" = ts3plugin-sys_0_1_0;
+  ts3plugin-sys_0_3_0 = buildCratesLib {
+    name = "ts3plugin-sys";
+    version = "0.3.0";
+    hash = "7cf5718ff432874f8f331c73ddb388062a056c4007b2fdaf15d93f514923a55d";
+    deps = with allCrates; [  all__bitflags.bitflags_0_7 ];
+  };
   "ts3plugin-sys_0_2" = ts3plugin-sys_0_2_0;
-  "ts3plugin-sys_0" = ts3plugin-sys_0_2_0;}
+  "ts3plugin-sys_0_3" = ts3plugin-sys_0_3_0;
+  "ts3plugin-sys_0" = ts3plugin-sys_0_3_0;}

@@ -457,5 +457,12 @@ rec {
     hash = "4a7ef30445607f6fc8720f0a0a2c7442284b629cf0d049286860fae23e71c4d9";
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__lazy_static.lazy_static_0_2 all__regex.regex_0_1 all__strsim.strsim_0_5 ];
   };
+  docopt_0_7_0 = buildCratesLib {
+    name = "docopt";
+    version = "0.7.0";
+    hash = "ab32ea6e284d87987066f21a9e809a73c14720571ef34516f0890b3d355ccfd8";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__regex.regex_0_2 all__lazy_static.lazy_static_0_2 all__strsim.strsim_0_6 ];
+  };
   "docopt_0_6" = docopt_0_6_86;
-  "docopt_0" = docopt_0_6_86;}
+  "docopt_0_7" = docopt_0_7_0;
+  "docopt_0" = docopt_0_7_0;}

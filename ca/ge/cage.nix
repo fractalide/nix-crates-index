@@ -110,5 +110,12 @@ rec {
     hash = "6e102dee2c93b72711091a6885a9f5d4db152467868eaf4b3929f5629e9fa3f5";
     deps = with allCrates; [  all__error-chain.error-chain_0_5 all__lazy_static.lazy_static_0_2 all__yaml-rust.yaml-rust_0_3 all__rustc-serialize.rustc-serialize_0_3 all__glob.glob_0_2 all__rand.rand_0_3 all__colored.colored_1_3 all__includedir.includedir_0_2 all__compose_yml.compose_yml_0_0_48 all__clap.clap_2_14 all__boondock.boondock_0_0_47 all__env_logger.env_logger_0_3 all__serde.serde_0_8 all__retry.retry_0_4 all__phf.phf_0_7 all__url.url_1_2 all__handlebars.handlebars_0_21 all__log.log_0_3 all__regex.regex_0_1 all__rayon.rayon_0_4 all__serde_yaml.serde_yaml_0_4 all__semver.semver_0_5 all__shlex.shlex_0_1 all__includedir_codegen.includedir_codegen_0_2 all__glob.glob_0_2 ];
   };
+  cage_0_2_0 = buildCratesLib {
+    name = "cage";
+    version = "0.2.0";
+    hash = "97cd8fbae8f050e85caeff009e617ea772806b1f220899cc5830ea9b3e3e8518";
+    deps = with allCrates; [  all__includedir.includedir_0_2 all__shlex.shlex_0_1 all__handlebars.handlebars_0_21 all__regex.regex_0_1 all__semver.semver_0_5 all__clap.clap_2_14 all__yaml-rust.yaml-rust_0_3 all__phf.phf_0_7 all__lazy_static.lazy_static_0_2 all__serde.serde_0_8 all__itertools.itertools_0_5 all__retry.retry_0_4 all__boondock.boondock_0_0_47 all__serde_yaml.serde_yaml_0_4 all__colored.colored_1_3 all__env_logger.env_logger_0_3 all__error-chain.error-chain_0_5 all__rayon.rayon_0_4 all__rand.rand_0_3 all__url.url_1_2 all__glob.glob_0_2 all__rustc-serialize.rustc-serialize_0_3 all__log.log_0_3 all__compose_yml.compose_yml_0_0_48 all__glob.glob_0_2 all__includedir_codegen.includedir_codegen_0_2 ];
+  };
   "cage_0_1" = cage_0_1_10;
-  "cage_0" = cage_0_1_10;}
+  "cage_0_2" = cage_0_2_0;
+  "cage_0" = cage_0_2_0;}

@@ -41,5 +41,11 @@ rec {
     deps = with allCrates; [  ];
   };
   "bit_field_0_5" = bit_field_0_5_0;
-  "bit_field_0_6" = bit_field_0_6_0;
-  "bit_field_0" = bit_field_0_6_0;}
+  bit_field_0_6_1 = buildCratesLib {
+    name = "bit_field";
+    version = "0.6.1";
+    hash = "2f2608c2dbf1057804d86937a32731a17458a60b10e83ad91c1c35c36e522f5d";
+    deps = with allCrates; [  ];
+  };
+  "bit_field_0_6" = bit_field_0_6_1;
+  "bit_field_0" = bit_field_0_6_1;}

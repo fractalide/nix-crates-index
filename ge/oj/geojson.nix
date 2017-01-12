@@ -107,5 +107,11 @@ rec {
     hash = "7f2f193391131eabe2eae64c1ad79f10f1b572d0e7846722c8bb7ff566771764";
     deps = with allCrates; [  ];
   };
-  "geojson_0_4" = geojson_0_4_2;
-  "geojson_0" = geojson_0_4_2;}
+  geojson_0_4_3 = buildCratesLib {
+    name = "geojson";
+    version = "0.4.3";
+    hash = "dd92f28a2620e771a7785087f81e22b9fc95271b7432d1bd0757c4ccadaa8e64";
+    deps = with allCrates; [  ];
+  };
+  "geojson_0_4" = geojson_0_4_3;
+  "geojson_0" = geojson_0_4_3;}

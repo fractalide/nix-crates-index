@@ -93,5 +93,11 @@ rec {
     hash = "904b0352c29734b7494537ac7ea8dd4a53906440403df6c518adaae79241aa45";
     deps = with allCrates; [  ];
   };
-  "portmidi_0_2" = portmidi_0_2_3;
-  "portmidi_0" = portmidi_0_2_3;}
+  portmidi_0_2_4 = buildCratesLib {
+    name = "portmidi";
+    version = "0.2.4";
+    hash = "8e72656dc8167fc128af6ea91224ab4cb9a584cb1ecdcf955a31dbcf3f888747";
+    deps = with allCrates; [  ];
+  };
+  "portmidi_0_2" = portmidi_0_2_4;
+  "portmidi_0" = portmidi_0_2_4;}

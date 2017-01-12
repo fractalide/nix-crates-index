@@ -318,5 +318,12 @@ rec {
     hash = "164ec385410899bc54faa0f492bdbe03e967f460b3c654d831f78ccbc43c9e17";
     deps = with allCrates; [  all__image.image_0_10 all__piston2d-graphics.piston2d-graphics_0_19 all__piston-shaders_graphics2d.piston-shaders_graphics2d_0_1 all__fnv.fnv_1_0_2 all__gl.gl_0_6 all__rusttype.rusttype_0_2 all__shader_version.shader_version_0_2 all__piston-texture.piston-texture_0_5 all__khronos_api.khronos_api_0_0_8 ];
   };
+  piston2d-opengl_graphics_0_37_0 = buildCratesLib {
+    name = "piston2d-opengl_graphics";
+    version = "0.37.0";
+    hash = "7cdf1e9fe6a0190ad3a3556cd512d2ca92438e1818dc60ea4258cba1072e1471";
+    deps = with allCrates; [  all__shader_version.shader_version_0_2 all__gl.gl_0_6 all__piston-shaders_graphics2d.piston-shaders_graphics2d_0_1 all__image.image_0_12 all__piston2d-graphics.piston2d-graphics_0_19 all__fnv.fnv_1_0_2 all__piston-texture.piston-texture_0_5 all__rusttype.rusttype_0_2 all__khronos_api.khronos_api_0_0_8 ];
+  };
   "piston2d-opengl_graphics_0_36" = piston2d-opengl_graphics_0_36_2;
-  "piston2d-opengl_graphics_0" = piston2d-opengl_graphics_0_36_2;}
+  "piston2d-opengl_graphics_0_37" = piston2d-opengl_graphics_0_37_0;
+  "piston2d-opengl_graphics_0" = piston2d-opengl_graphics_0_37_0;}

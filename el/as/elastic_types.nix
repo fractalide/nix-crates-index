@@ -122,5 +122,25 @@ rec {
     deps = with allCrates; [  all__geojson.geojson_0_4 all__serde.serde_0_8 all__elastic_date_macros.elastic_date_macros_0_5 all__geo.geo_0_0 all__geohash.geohash_0_2 all__chrono.chrono_0_2 all__serde_json.serde_json_0_8 ];
   };
   "elastic_types_0_7" = elastic_types_0_7_1;
+  elastic_types_0_9_0 = buildCratesLib {
+    name = "elastic_types";
+    version = "0.9.0";
+    hash = "ba304970b00715578345d2e79654cb61a88496d53ad58ea1525a67a20d6948c2";
+    deps = with allCrates; [  all__chrono.chrono_0_2 all__geohash.geohash_0_2 all__serde_json.serde_json_0_8 all__geojson.geojson_0_4 all__serde.serde_0_8 all__geo.geo_0_0 all__elastic_date_macros.elastic_date_macros_0_5 ];
+  };
   "elastic_types_0_8" = elastic_types_0_8_0;
-  "elastic_types_0" = elastic_types_0_8_0;}
+  elastic_types_0_10_0 = buildCratesLib {
+    name = "elastic_types";
+    version = "0.10.0";
+    hash = "186769f1cd8636c017c2a5581196854cbfefb4339cd76b8cbc5a4fdd3e36db4c";
+    deps = with allCrates; [  all__elastic_date_macros.elastic_date_macros_0_5 all__geo.geo_0_0 all__serde_json.serde_json_0_8 all__chrono.chrono_0_2 all__geohash.geohash_0_2 all__geojson.geojson_0_4 all__serde.serde_0_8 ];
+  };
+  "elastic_types_0_9" = elastic_types_0_9_0;
+  elastic_types_0_10_1 = buildCratesLib {
+    name = "elastic_types";
+    version = "0.10.1";
+    hash = "9d022889d65c59bcf30e1acba3db912594a155a3f0679bc84ffb7d4a1a0cf3df";
+    deps = with allCrates; [  all__geo.geo_0_0 all__chrono.chrono_0_2 all__serde_json.serde_json_0_8 all__elastic_date_macros.elastic_date_macros_0_5 all__geojson.geojson_0_4 all__geohash.geohash_0_2 all__serde.serde_0_8 ];
+  };
+  "elastic_types_0_10" = elastic_types_0_10_1;
+  "elastic_types_0" = elastic_types_0_10_1;}

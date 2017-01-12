@@ -505,5 +505,12 @@ rec {
     deps = with allCrates; [  all__piston-texture.piston-texture_0_5 all__gfx_device_gl.gfx_device_gl_0_12 all__piston2d-graphics.piston2d-graphics_0_19 all__piston.piston_0_27 all__shader_version.shader_version_0_2 all__gfx.gfx_0_13 all__piston2d-gfx_graphics.piston2d-gfx_graphics_0_34 all__pistoncore-glutin_window.pistoncore-glutin_window_0_33 ];
   };
   "piston_window_0_59" = piston_window_0_59_0;
+  piston_window_0_61_0 = buildCratesLib {
+    name = "piston_window";
+    version = "0.61.0";
+    hash = "6631340b8600c3edd5a924ba9057d027a461640a83596de681ea0757cea38772";
+    deps = with allCrates; [  all__piston2d-graphics.piston2d-graphics_0_19 all__piston.piston_0_27 all__piston2d-gfx_graphics.piston2d-gfx_graphics_0_35 all__gfx_device_gl.gfx_device_gl_0_12 all__shader_version.shader_version_0_2 all__gfx.gfx_0_13 all__pistoncore-glutin_window.pistoncore-glutin_window_0_33 all__piston-texture.piston-texture_0_5 ];
+  };
   "piston_window_0_60" = piston_window_0_60_0;
-  "piston_window_0" = piston_window_0_60_0;}
+  "piston_window_0_61" = piston_window_0_61_0;
+  "piston_window_0" = piston_window_0_61_0;}

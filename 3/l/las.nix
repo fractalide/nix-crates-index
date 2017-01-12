@@ -64,5 +64,12 @@ rec {
     deps = with allCrates; [  all__chrono.chrono_0_2 all__byteorder.byteorder_0_5 ];
   };
   "las_0_3" = las_0_3_4;
+  las_0_5_0 = buildCratesLib {
+    name = "las";
+    version = "0.5.0";
+    hash = "38f240e6b6222e60bcb8976ef85abf91e43b0efebc3d0f01d56cb641023b1241";
+    deps = with allCrates; [  all__chrono.chrono_0_2 all__byteorder.byteorder_0_5 all__log.log_0_3 ];
+  };
   "las_0_4" = las_0_4_0;
-  "las_0" = las_0_4_0;}
+  "las_0_5" = las_0_5_0;
+  "las_0" = las_0_5_0;}

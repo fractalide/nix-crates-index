@@ -144,5 +144,12 @@ rec {
     deps = with allCrates; [  all__bitflags.bitflags_0_7 all__log.log_0_3 all__num.num_0_1 all__semver.semver_0_2 all__enum_primitive.enum_primitive_0_1 all__libc.libc_0_2 ];
   };
   "glfw_0_10" = glfw_0_10_0;
+  glfw_0_12_0 = buildCratesLib {
+    name = "glfw";
+    version = "0.12.0";
+    hash = "095fd9bba8ad04ba0e8b8c10e5c61c365fcb17e7884503d430ad2d5644a9f032";
+    deps = with allCrates; [  all__bitflags.bitflags_0_7 all__num.num_0_1 all__semver.semver_0_2 all__log.log_0_3 all__libc.libc_0_2 all__enum_primitive.enum_primitive_0_1 ];
+  };
   "glfw_0_11" = glfw_0_11_0;
-  "glfw_0" = glfw_0_11_0;}
+  "glfw_0_12" = glfw_0_12_0;
+  "glfw_0" = glfw_0_12_0;}

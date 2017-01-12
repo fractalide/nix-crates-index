@@ -40,5 +40,11 @@ rec {
     deps = with allCrates; [  all__clap.clap_2_19 all__crates-index-diff.crates-index-diff_3 all__curl.curl_0_4 all__rustc-serialize.rustc-serialize_0_3 all__tokio-core.tokio-core_0_1 all__prettytable-rs.prettytable-rs_0_6 all__futures.futures_0_1 all__tokio-curl.tokio-curl_0_1 all__open.open_1_1 all__futures-cpupool.futures-cpupool_0_1 all__termion.termion_1_1 ];
   };
   "crates-io-cli_1_2" = crates-io-cli_1_2_0;
-  "crates-io-cli_1_3" = crates-io-cli_1_3_0;
-  "crates-io-cli_1" = crates-io-cli_1_3_0;}
+  crates-io-cli_1_3_1 = buildCratesLib {
+    name = "crates-io-cli";
+    version = "1.3.1";
+    hash = "b251473ce2ad944844649808b2fcce99cfd2a8ce6e2627721ec30f6a4cd8c34f";
+    deps = with allCrates; [  all__crates-index-diff.crates-index-diff_3 all__curl.curl_0_4 all__futures-cpupool.futures-cpupool_0_1 all__prettytable-rs.prettytable-rs_0_6 all__tokio-core.tokio-core_0_1 all__futures.futures_0_1 all__clap.clap_2_19 all__open.open_1_1 all__rustc-serialize.rustc-serialize_0_3 all__tokio-curl.tokio-curl_0_1 all__termion.termion_1_1 ];
+  };
+  "crates-io-cli_1_3" = crates-io-cli_1_3_1;
+  "crates-io-cli_1" = crates-io-cli_1_3_1;}

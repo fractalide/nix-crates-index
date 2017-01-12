@@ -55,5 +55,11 @@ rec {
     hash = "b254a3c29dbd04f57cf2b4246a57390fcd6fde328e229c275ae5b3407109d86a";
     deps = with allCrates; [  all__hyper.hyper_0_7 all__mime_guess.mime_guess_1_1 all__tar.tar_0_3 all__mime.mime_0_1 all__log.log_0_3 all__env_logger.env_logger_0_3 ];
   };
-  "static-server_0_0" = static-server_0_0_9;
-  "static-server_0" = static-server_0_0_9;}
+  static-server_0_0_10 = buildCratesLib {
+    name = "static-server";
+    version = "0.0.10";
+    hash = "d95c1713204ced469504f17bba90789cfd9c70a76a75fc53669bb4cc4989414f";
+    deps = with allCrates; [  all__tar.tar_0_4 all__mime.mime_0_2 all__env_logger.env_logger_0_3 all__mime_guess.mime_guess_1_8 all__hyper.hyper_0_9 all__log.log_0_3 ];
+  };
+  "static-server_0_0" = static-server_0_0_10;
+  "static-server_0" = static-server_0_0_10;}

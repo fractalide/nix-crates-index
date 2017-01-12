@@ -7,5 +7,12 @@ rec {
     hash = "f65182c46bc87621207a0b7238c18f350f325b7e970910aa4944165452b5b02e";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__antidote.antidote_1_0 all__openssl.openssl_0_9 ];
   };
+  hyper-openssl_0_2_0 = buildCratesLib {
+    name = "hyper-openssl";
+    version = "0.2.0";
+    hash = "3a3ed7de87477769b255f1e5202929f130db9c50a76a07ca370c81f94530e9fc";
+    deps = with allCrates; [  all__antidote.antidote_1_0 all__hyper.hyper_0_10 all__openssl.openssl_0_9 ];
+  };
   "hyper-openssl_0_1" = hyper-openssl_0_1_0;
-  "hyper-openssl_0" = hyper-openssl_0_1_0;}
+  "hyper-openssl_0_2" = hyper-openssl_0_2_0;
+  "hyper-openssl_0" = hyper-openssl_0_2_0;}

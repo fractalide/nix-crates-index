@@ -19,5 +19,29 @@ rec {
     hash = "8840e48c899520264d499a0b40840dba62dbbaf8ecda604ed83021a2124d770d";
     deps = with allCrates; [  all__serde_derive.serde_derive_0_8 all__futures.futures_0_1 all__tokio-curl.tokio-curl_0_1 all__tokio-core.tokio-core_0_1 all__curl.curl_0_4 all__serde.serde_0_8 all__telebot-derive.telebot-derive_0_0_2 all__serde_json.serde_json_0_8 ];
   };
-  "telebot_0_0" = telebot_0_0_3;
-  "telebot_0" = telebot_0_0_3;}
+  telebot_0_0_4 = buildCratesLib {
+    name = "telebot";
+    version = "0.0.4";
+    hash = "0f551c64411459395f8a2538626c5450e2049f5ea4a806862a8e175c5c2c729a";
+    deps = with allCrates; [  all__serde_derive.serde_derive_0_8 all__telebot-derive.telebot-derive_0_0_2 all__serde_json.serde_json_0_8 all__futures.futures_0_1 all__serde.serde_0_8 all__tokio-core.tokio-core_0_1 all__curl.curl_0_4 all__tokio-curl.tokio-curl_0_1 ];
+  };
+  telebot_0_0_5 = buildCratesLib {
+    name = "telebot";
+    version = "0.0.5";
+    hash = "2e66e349e123fedc6b095a66175ae239848fd408f673526dce2e82644d61e415";
+    deps = with allCrates; [  all__telebot-derive.telebot-derive_0_0_4 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__tokio-core.tokio-core_0_1 all__tokio-curl.tokio-curl_0_1 all__futures.futures_0_1 all__serde_derive.serde_derive_0_8 all__curl.curl_0_4 ];
+  };
+  telebot_0_0_6 = buildCratesLib {
+    name = "telebot";
+    version = "0.0.6";
+    hash = "6dde585a1f645f947cefba60e7d82c0312e3c41ac8a99437a332bc81d64732a2";
+    deps = with allCrates; [  all__serde_derive.serde_derive_0_8 all__serde_json.serde_json_0_8 all__tokio-core.tokio-core_0_1 all__curl.curl_0_4 all__tokio-curl.tokio-curl_0_1 all__futures.futures_0_1 all__telebot-derive.telebot-derive_0_0_4 all__serde.serde_0_8 ];
+  };
+  telebot_0_0_7 = buildCratesLib {
+    name = "telebot";
+    version = "0.0.7";
+    hash = "24c544300c9b8b3bae91ba974bef7ba7b1ba60f897daa539d1275718a21c7258";
+    deps = with allCrates; [  all__telebot-derive.telebot-derive_0_0_4 all__tokio-curl.tokio-curl_0_1 all__curl.curl_0_4 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__serde_derive.serde_derive_0_8 all__futures.futures_0_1 all__tokio-core.tokio-core_0_1 ];
+  };
+  "telebot_0_0" = telebot_0_0_7;
+  "telebot_0" = telebot_0_0_7;}

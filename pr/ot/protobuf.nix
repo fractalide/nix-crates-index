@@ -213,5 +213,12 @@ rec {
     hash = "6ec4c2fe04370298218a09ab53a534febf54c160c5554e4de987b6d73c916d5d";
     deps = with allCrates; [  ];
   };
+  protobuf_1_1_0 = buildCratesLib {
+    name = "protobuf";
+    version = "1.1.0";
+    hash = "229112a9213bf62a59f0702871a6e4872fe928161fc7a08f17cdd6c8c7988bf7";
+    deps = with allCrates; [  ];
+  };
   "protobuf_1_0" = protobuf_1_0_24;
-  "protobuf_1" = protobuf_1_0_24;}
+  "protobuf_1_1" = protobuf_1_1_0;
+  "protobuf_1" = protobuf_1_1_0;}

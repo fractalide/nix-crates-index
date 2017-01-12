@@ -251,5 +251,11 @@ rec {
     hash = "801fda86f12fd8963d2d3ec2df11c2689f40fc984fb2a5ba9e021b2adb189e2f";
     deps = with allCrates; [  all__synthax.synthax_0_3 all__easy-plugin-parsers.easy-plugin-parsers_0_11 all__synthax.synthax_0_3 ];
   };
-  "easy-plugin_0_11" = easy-plugin_0_11_6;
-  "easy-plugin_0" = easy-plugin_0_11_6;}
+  easy-plugin_0_11_7 = buildCratesLib {
+    name = "easy-plugin";
+    version = "0.11.7";
+    hash = "14ea70276161e48666f84aea57a67ccc7855e375eeb69a31e162a318ace87ebc";
+    deps = with allCrates; [  all__synthax.synthax_0_3 all__easy-plugin-parsers.easy-plugin-parsers_0_11 all__synthax.synthax_0_3 ];
+  };
+  "easy-plugin_0_11" = easy-plugin_0_11_7;
+  "easy-plugin_0" = easy-plugin_0_11_7;}

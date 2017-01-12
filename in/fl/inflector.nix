@@ -102,5 +102,12 @@ rec {
     deps = with allCrates; [  all__regex.regex_0_1 all__lazy_static.lazy_static_0_2 ];
   };
   "Inflector_0_5" = Inflector_0_5_1;
+  Inflector_0_7_0 = buildCratesLib {
+    name = "Inflector";
+    version = "0.7.0";
+    hash = "c7c19d25307383974da633a677359cea2f6b143debcc30f2ea21e74fd0ab2e92";
+    deps = with allCrates; [  all__regex.regex_0_2 all__lazy_static.lazy_static_0_2 ];
+  };
   "Inflector_0_6" = Inflector_0_6_0;
-  "Inflector_0" = Inflector_0_6_0;}
+  "Inflector_0_7" = Inflector_0_7_0;
+  "Inflector_0" = Inflector_0_7_0;}

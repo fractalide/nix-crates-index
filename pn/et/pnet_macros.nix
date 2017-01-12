@@ -179,5 +179,19 @@ rec {
     deps = with allCrates; [  regex ];
   };
   "pnet_macros_0_10" = pnet_macros_0_10_0;
+  pnet_macros_0_12_0 = buildCratesLib {
+    name = "pnet_macros";
+    version = "0.12.0";
+    hash = "cdcdcedb6f4659adcce408acd56d65f015a081d4264f3b04002da7e23cf9800c";
+    deps = with allCrates; [  regex ];
+  };
   "pnet_macros_0_11" = pnet_macros_0_11_0;
-  "pnet_macros_0" = pnet_macros_0_11_0;}
+  pnet_macros_0_13_0 = buildCratesLib {
+    name = "pnet_macros";
+    version = "0.13.0";
+    hash = "73e9b934fe80312580c8542ec066b246abc12e164aca9f64c2972e061afa3582";
+    deps = with allCrates; [  regex ];
+  };
+  "pnet_macros_0_12" = pnet_macros_0_12_0;
+  "pnet_macros_0_13" = pnet_macros_0_13_0;
+  "pnet_macros_0" = pnet_macros_0_13_0;}

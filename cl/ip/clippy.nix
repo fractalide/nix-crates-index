@@ -595,5 +595,23 @@ rec {
     hash = "ae3fb361e922a08b698e746d4f199ff2d1e8d4b5f1984eaf8881e720cf5b8e34";
     deps = with allCrates; [  all__clippy_lints.clippy_lints_0_0_104 ];
   };
-  "clippy_0_0" = clippy_0_0_104;
-  "clippy_0" = clippy_0_0_104;}
+  clippy_0_0_105 = buildCratesLib {
+    name = "clippy";
+    version = "0.0.105";
+    hash = "57945e0dfc8138bdbb93f322d147ff4fe751e9965af7e82d6a0bf96844269dad";
+    deps = with allCrates; [  all__clippy_lints.clippy_lints_0_0_105 ];
+  };
+  clippy_0_0_106 = buildCratesLib {
+    name = "clippy";
+    version = "0.0.106";
+    hash = "3219d8d0dc2d7677a3dab0f83a04e06137c2683b0d1ed39d70de4d91dd643bd0";
+    deps = with allCrates; [  all__clippy_lints.clippy_lints_0_0_106 ];
+  };
+  clippy_0_0_107 = buildCratesLib {
+    name = "clippy";
+    version = "0.0.107";
+    hash = "99ec3049475544d2330fe515c213fb669b7fa97b1f472443d3798e4ab719071c";
+    deps = with allCrates; [  all__clippy_lints.clippy_lints_0_0_107 ];
+  };
+  "clippy_0_0" = clippy_0_0_107;
+  "clippy_0" = clippy_0_0_107;}

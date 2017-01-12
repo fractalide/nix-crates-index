@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  all__rand.rand_0_3 all__sdl2_mixer.sdl2_mixer_0_25 all__rustc-serialize.rustc-serialize_0_3 all__sdl2-sys.sdl2-sys_0_25 all__zip.zip_0_1 all__toml.toml_0_2 all__sdl2.sdl2_0_25 all__rusttype.rusttype_0_2 all__sdl2_image.sdl2_image_0_25 ];
   };
   "ggez_0_1" = ggez_0_1_0;
-  "ggez_0_2" = ggez_0_2_0;
-  "ggez_0" = ggez_0_2_0;}
+  ggez_0_2_1 = buildCratesLib {
+    name = "ggez";
+    version = "0.2.1";
+    hash = "a6ee0da08bcd5334608e66363425096dbc8de92183d29f228493f80592696b0c";
+    deps = with allCrates; [  all__zip.zip_0_1 all__sdl2_image.sdl2_image_0_25 all__sdl2_mixer.sdl2_mixer_0_25 all__rusttype.rusttype_0_2 all__toml.toml_0_2 all__rand.rand_0_3 all__sdl2.sdl2_0_25 all__rustc-serialize.rustc-serialize_0_3 all__sdl2-sys.sdl2-sys_0_25 ];
+  };
+  "ggez_0_2" = ggez_0_2_1;
+  "ggez_0" = ggez_0_2_1;}

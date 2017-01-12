@@ -38,5 +38,12 @@ rec {
     hash = "637a539881d06871491696a9dccb0c31e061d079fe23f5a445fbbf36d544cf44";
     deps = with allCrates; [  all__winapi.winapi_0_2 all__libc.libc_0_1 all__kernel32-sys.kernel32-sys_0_1 ];
   };
+  utime_0_2_0 = buildCratesLib {
+    name = "utime";
+    version = "0.2.0";
+    hash = "4a9c0ddf7a5a39cd0c316dac124303d71fa197f8607027546c3be3e1c6f7bd9b";
+    deps = with allCrates; [  all__kernel32-sys.kernel32-sys_0_2 all__winapi.winapi_0_2 all__libc.libc_0_2 ];
+  };
   "utime_0_1" = utime_0_1_3;
-  "utime_0" = utime_0_1_3;}
+  "utime_0_2" = utime_0_2_0;
+  "utime_0" = utime_0_2_0;}

@@ -131,5 +131,11 @@ rec {
     hash = "2b55ca56086f0116dd5d61c16eed4c5167843dd7434d3af6c344614a6b8cf9e0";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__ruby-sys.ruby-sys_0_2 ];
   };
-  "ruru_0_9" = ruru_0_9_2;
-  "ruru_0" = ruru_0_9_2;}
+  ruru_0_9_3 = buildCratesLib {
+    name = "ruru";
+    version = "0.9.3";
+    hash = "6486d6c50b7a08246a492a61893635c1977d41c138041d443eb603f6298e0273";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__ruby-sys.ruby-sys_0_2 ];
+  };
+  "ruru_0_9" = ruru_0_9_3;
+  "ruru_0" = ruru_0_9_3;}

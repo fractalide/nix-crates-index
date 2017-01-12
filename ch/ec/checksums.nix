@@ -65,5 +65,11 @@ rec {
     hash = "734ccffbfc5161836f2eae590ed383f2f6ba0b5c5d4ac334e300637919cb5b20";
     deps = with allCrates; [  all__blake2-rfc.blake2-rfc_0_2 all__futures.futures_0_1 all__lazy_static.lazy_static_0_2 all__md6.md6_1_0 all__crc8.crc8_0_1 all__crc.crc_1_3 all__shaman.shaman_0_1 all__pbr.pbr_0_3 all__futures-cpupool.futures-cpupool_0_1 all__num_cpus.num_cpus_1_1 all__tabwriter.tabwriter_0_1 all__regex.regex_0_1 all__blake.blake_1_0 all__walkdir.walkdir_0_1 all__clap.clap_2_13 all__md5.md5_0_2 all__tiny-keccak.tiny-keccak_1_1 all__crc16.crc16_0_3 ];
   };
-  "checksums_0_5" = checksums_0_5_2;
-  "checksums_0" = checksums_0_5_2;}
+  checksums_0_5_3 = buildCratesLib {
+    name = "checksums";
+    version = "0.5.3";
+    hash = "aa3f2e8b5f79323fa9c249a52508f05da5d535bec6ce5268379888aab3b8d3c8";
+    deps = with allCrates; [  all__crc16.crc16_0_3 all__tiny-keccak.tiny-keccak_1_1 all__futures.futures_0_1 all__pbr.pbr_0_3 all__regex.regex_0_2 all__clap.clap_2_19 all__blake2-rfc.blake2-rfc_0_2 all__walkdir.walkdir_1_0 all__md5.md5_0_3 all__num_cpus.num_cpus_1_2 all__lazy_static.lazy_static_0_2 all__crc8.crc8_0_1 all__futures-cpupool.futures-cpupool_0_1 all__crc.crc_1_4 all__tabwriter.tabwriter_1_0 all__blake.blake_1_1 all__md6.md6_1_1 all__shaman.shaman_0_1 ];
+  };
+  "checksums_0_5" = checksums_0_5_3;
+  "checksums_0" = checksums_0_5_3;}

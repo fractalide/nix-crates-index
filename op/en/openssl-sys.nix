@@ -435,5 +435,17 @@ rec {
     hash = "5e23374cdaca202b655937ff6d1ad6887edc391d9ff371f3f48350c3e9fad001";
     deps = with allCrates; [  all__libc.libc_0_2 all__pkg-config.pkg-config_0_3 ];
   };
-  "openssl-sys_0_9" = openssl-sys_0_9_4;
-  "openssl-sys_0" = openssl-sys_0_9_4;}
+  openssl-sys_0_9_5 = buildCratesLib {
+    name = "openssl-sys";
+    version = "0.9.5";
+    hash = "4e38c5a9261a179e63757eee43a1ee63f9033a2e99b8147aa4c245857a995af7";
+    deps = with allCrates; [  all__libc.libc_0_2 all__metadeps.metadeps_1 ];
+  };
+  openssl-sys_0_9_6 = buildCratesLib {
+    name = "openssl-sys";
+    version = "0.9.6";
+    hash = "b1482f9a06f56c906007e17ea14d73d102210b5d27bc948bf5e175f493f3f7c3";
+    deps = with allCrates; [  all__libc.libc_0_2 all__metadeps.metadeps_1 ];
+  };
+  "openssl-sys_0_9" = openssl-sys_0_9_6;
+  "openssl-sys_0" = openssl-sys_0_9_6;}

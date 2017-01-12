@@ -50,5 +50,11 @@ rec {
     deps = with allCrates; [  all__clap.clap_2 all__float-cmp.float-cmp_0_2 all__byteorder.byteorder_0_5 all__rand.rand_0_3 ];
   };
   "beamdpr_0_1" = beamdpr_0_1_7;
-  "beamdpr_0_2" = beamdpr_0_2_0;
-  "beamdpr_0" = beamdpr_0_2_0;}
+  beamdpr_0_2_2 = buildCratesLib {
+    name = "beamdpr";
+    version = "0.2.2";
+    hash = "c946b7652e9ffb87b710920a1c24d1fab6e3c91e54f99d74a66a7f1b1f54b4e6";
+    deps = with allCrates; [  all__rand.rand_0_3 all__float-cmp.float-cmp_0_2 all__byteorder.byteorder_0_5 all__clap.clap_2 ];
+  };
+  "beamdpr_0_2" = beamdpr_0_2_2;
+  "beamdpr_0" = beamdpr_0_2_2;}

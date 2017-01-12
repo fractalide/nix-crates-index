@@ -31,5 +31,17 @@ rec {
     hash = "a7db97e572363d8e19e66e098beb6444bc9c05cdbf5d1196b11f795dd333d47e";
     deps = with allCrates; [  all__quick-error.quick-error_1_0_0 all__curl.curl_0_2 all__rustc-serialize.rustc-serialize_0_3 all__toml.toml_0_1 all__docopt.docopt_0_6 all__pad.pad_0_1 all__regex.regex_0_1 all__semver.semver_0_2 ];
   };
-  "cargo-edit_0_1" = cargo-edit_0_1_4;
-  "cargo-edit_0" = cargo-edit_0_1_4;}
+  cargo-edit_0_1_5 = buildCratesLib {
+    name = "cargo-edit";
+    version = "0.1.5";
+    hash = "a6e514694aa3cd6f52a7bb7b54d1c8701e28cee17538699195c3dbd4a843006d";
+    deps = with allCrates; [  all__docopt.docopt_0_6 all__rustc-serialize.rustc-serialize_0_3 all__pad.pad_0_1 all__regex.regex_0_2 all__curl.curl_0_2 all__toml.toml_0_1 all__quick-error.quick-error_1_0_0 all__semver.semver_0_2 ];
+  };
+  cargo-edit_0_1_6 = buildCratesLib {
+    name = "cargo-edit";
+    version = "0.1.6";
+    hash = "33e1d080185ea47c1bc674ed1a258e594468c31791b6eea3a84cd9c175373d0b";
+    deps = with allCrates; [  all__toml.toml_0_1 all__pad.pad_0_1 all__rustc-serialize.rustc-serialize_0_3 all__curl.curl_0_2 all__docopt.docopt_0_6 all__semver.semver_0_2 all__regex.regex_0_2 all__quick-error.quick-error_1_0_0 ];
+  };
+  "cargo-edit_0_1" = cargo-edit_0_1_6;
+  "cargo-edit_0" = cargo-edit_0_1_6;}

@@ -19,5 +19,13 @@ rec {
     hash = "77c69986d4d6d803057216b7e6080a907ed76178e8f2dc5becd851eac440e2e2";
     deps = with allCrates; [  ];
   };
+  magnetic_2_0_0 = buildCratesLib {
+    name = "magnetic";
+    version = "2.0.0";
+    hash = "8765614d70a06c9c36b40892f85cd3f3c7dc6ac56a9cb25d4f7ecd7d5473c0b3";
+    deps = with allCrates; [  ];
+  };
   "magnetic_1_0" = magnetic_1_0_2;
-  "magnetic_1" = magnetic_1_0_2;}
+  "magnetic_1" = magnetic_1_0_2;
+  "magnetic_2_0" = magnetic_2_0_0;
+  "magnetic_2" = magnetic_2_0_0;}

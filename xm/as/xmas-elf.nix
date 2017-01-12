@@ -21,5 +21,12 @@ rec {
     deps = with allCrates; [  all__zero.zero_0_1 ];
   };
   "xmas-elf_0_2" = xmas-elf_0_2_0;
+  xmas-elf_0_4_0 = buildCratesLib {
+    name = "xmas-elf";
+    version = "0.4.0";
+    hash = "53c92a93b42ac52388febac8dc749c920b4b075c5a0bfb811fa6d26b447a60c0";
+    deps = with allCrates; [  all__zero.zero_0_1 ];
+  };
   "xmas-elf_0_3" = xmas-elf_0_3_0;
-  "xmas-elf_0" = xmas-elf_0_3_0;}
+  "xmas-elf_0_4" = xmas-elf_0_4_0;
+  "xmas-elf_0" = xmas-elf_0_4_0;}

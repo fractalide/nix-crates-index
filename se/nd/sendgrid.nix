@@ -52,5 +52,11 @@ rec {
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__serde_json.serde_json_0_8 all__url.url_1_1 all__hyper.hyper_0_9 all__serde.serde_0_8 ];
   };
   "sendgrid_0_3" = sendgrid_0_3_0;
-  "sendgrid_0_4" = sendgrid_0_4_0;
-  "sendgrid_0" = sendgrid_0_4_0;}
+  sendgrid_0_4_1 = buildCratesLib {
+    name = "sendgrid";
+    version = "0.4.1";
+    hash = "39d03e1c59344d7f28ba02d541fe4ceceddec31599edbc74d06eb0e5249bc7fc";
+    deps = with allCrates; [  all__hyper.hyper_0_10 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__rustc-serialize.rustc-serialize_0_3 all__url.url_1_2 ];
+  };
+  "sendgrid_0_4" = sendgrid_0_4_1;
+  "sendgrid_0" = sendgrid_0_4_1;}

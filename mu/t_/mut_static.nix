@@ -7,5 +7,35 @@ rec {
     hash = "ddd651751ccd77068d52d899be65f6408c989f9623658c12a6994bb7e4f6dd1c";
     deps = with allCrates; [  all__error-chain.error-chain_0_7 ];
   };
+  mut_static_1_0_0 = buildCratesLib {
+    name = "mut_static";
+    version = "1.0.0";
+    hash = "9459cf51476c0c34388ab247b19e01e2545c56c656203763216c55395611d89a";
+    deps = with allCrates; [  all__error-chain.error-chain_0_7 ];
+  };
   "mut_static_0_1" = mut_static_0_1_0;
-  "mut_static_0" = mut_static_0_1_0;}
+  "mut_static_0" = mut_static_0_1_0;
+  mut_static_1_0_1 = buildCratesLib {
+    name = "mut_static";
+    version = "1.0.1";
+    hash = "35c6a6c3cb2e32e1debf5bbab3378a769c21782dc89754e96592ff3627a42367";
+    deps = with allCrates; [  all__error-chain.error-chain_0_7 ];
+  };
+  mut_static_2_0_0 = buildCratesLib {
+    name = "mut_static";
+    version = "2.0.0";
+    hash = "2a27166527844ae38a7f9a38b43fde970c9538abf11876d4d1f9ebd8697435e9";
+    deps = with allCrates; [  all__error-chain.error-chain_0_7 ];
+  };
+  "mut_static_1_0" = mut_static_1_0_1;
+  "mut_static_1" = mut_static_1_0_1;
+  mut_static_3_0_0 = buildCratesLib {
+    name = "mut_static";
+    version = "3.0.0";
+    hash = "85c6a105f1e00040484213d500002ddeb1aa9bf4064d36b70a90f3ff4df7a65a";
+    deps = with allCrates; [  all__error-chain.error-chain_0_7 ];
+  };
+  "mut_static_2_0" = mut_static_2_0_0;
+  "mut_static_2" = mut_static_2_0_0;
+  "mut_static_3_0" = mut_static_3_0_0;
+  "mut_static_3" = mut_static_3_0_0;}

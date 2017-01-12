@@ -7,5 +7,11 @@ rec {
     hash = "6e1c148af5dcff7a3abfda222eea40d3327e562d12940aa050386d856a37fc6f";
     deps = with allCrates; [  all__num-traits.num-traits_0_1 ];
   };
-  "simple-vector2d_0_1" = simple-vector2d_0_1_0;
-  "simple-vector2d_0" = simple-vector2d_0_1_0;}
+  simple-vector2d_0_1_1 = buildCratesLib {
+    name = "simple-vector2d";
+    version = "0.1.1";
+    hash = "607213fdff3b2c780c8f28a493c55dcf33a358d86435ec404db377be8ba901b3";
+    deps = with allCrates; [  all__num-traits.num-traits_0_1 ];
+  };
+  "simple-vector2d_0_1" = simple-vector2d_0_1_1;
+  "simple-vector2d_0" = simple-vector2d_0_1_1;}

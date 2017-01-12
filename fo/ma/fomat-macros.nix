@@ -13,5 +13,12 @@ rec {
     hash = "9852f98cb3e035532c9ecf16a7f3be1ea5b120e6a91d9a84aa5933ca0e26bc99";
     deps = with allCrates; [  ];
   };
+  fomat-macros_0_2_0 = buildCratesLib {
+    name = "fomat-macros";
+    version = "0.2.0";
+    hash = "982f75945bd2cd959a3d650d22dee1ceb5e9381ba528c0b5ae3f4fee3782a56f";
+    deps = with allCrates; [  ];
+  };
   "fomat-macros_0_1" = fomat-macros_0_1_1;
-  "fomat-macros_0" = fomat-macros_0_1_1;}
+  "fomat-macros_0_2" = fomat-macros_0_2_0;
+  "fomat-macros_0" = fomat-macros_0_2_0;}

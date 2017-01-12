@@ -83,5 +83,11 @@ rec {
     hash = "66e998abb8823fecd2a8a7205429b17a340d447d8c69b3bce86846dcdea3e33b";
     deps = with allCrates; [  all__libc.libc_0_2 all__serde.serde_0_8 all__core-foundation.core-foundation_0_2 ];
   };
-  "core-graphics_0_4" = core-graphics_0_4_2;
-  "core-graphics_0" = core-graphics_0_4_2;}
+  core-graphics_0_4_3 = buildCratesLib {
+    name = "core-graphics";
+    version = "0.4.3";
+    hash = "9c80a36b106a8fa8b8ed882b0c14d83fa6678c0c05a0f5a100975c2de2c415d8";
+    deps = with allCrates; [  all__libc.libc_0_2 all__serde.serde_0_8 all__core-foundation.core-foundation_0_2 ];
+  };
+  "core-graphics_0_4" = core-graphics_0_4_3;
+  "core-graphics_0" = core-graphics_0_4_3;}

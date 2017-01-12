@@ -31,5 +31,11 @@ rec {
     hash = "ebbe627e9932b0956b3f89ce2a010d0c3ff05a1d62459dc29ed707c460933d45";
     deps = with allCrates; [  all__capnp.capnp_0_7 all__capnpc.capnpc_0_7 ];
   };
-  "sandstorm_0_0" = sandstorm_0_0_5;
-  "sandstorm_0" = sandstorm_0_0_5;}
+  sandstorm_0_0_6 = buildCratesLib {
+    name = "sandstorm";
+    version = "0.0.6";
+    hash = "834c109880e98f259fd86aeb05832c4b8ecebd7520864a06066e111bce4fc932";
+    deps = with allCrates; [  all__capnp.capnp_0_8 all__capnpc.capnpc_0_8 ];
+  };
+  "sandstorm_0_0" = sandstorm_0_0_6;
+  "sandstorm_0" = sandstorm_0_0_6;}

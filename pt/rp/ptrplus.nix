@@ -14,5 +14,13 @@ rec {
     deps = with allCrates; [  ];
   };
   "ptrplus_0_1" = ptrplus_0_1_0;
+  ptrplus_1_0_0 = buildCratesLib {
+    name = "ptrplus";
+    version = "1.0.0";
+    hash = "53f990683cd4072b981378e80360349b4cdf94291a4edefae901a793a30ac2d6";
+    deps = with allCrates; [  ];
+  };
   "ptrplus_0_2" = ptrplus_0_2_0;
-  "ptrplus_0" = ptrplus_0_2_0;}
+  "ptrplus_0" = ptrplus_0_2_0;
+  "ptrplus_1_0" = ptrplus_1_0_0;
+  "ptrplus_1" = ptrplus_1_0_0;}

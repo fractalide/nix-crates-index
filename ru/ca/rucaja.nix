@@ -49,5 +49,24 @@ rec {
     hash = "973af1a9150d0d6af60dacf430bd1aa7fcfb581b8a362cd514d9852148170598";
     deps = with allCrates; [  all__jni-sys.jni-sys_0_2 ];
   };
-  "rucaja_0_1" = rucaja_0_1_7;
-  "rucaja_0" = rucaja_0_1_7;}
+  rucaja_0_1_8 = buildCratesLib {
+    name = "rucaja";
+    version = "0.1.8";
+    hash = "1e5575344df30f8ef1d4e56130d0dfb6987d6ce3cb782231f6efcaa2f3771d23";
+    deps = with allCrates; [  all__jni-sys.jni-sys_0_2 ];
+  };
+  rucaja_0_1_9 = buildCratesLib {
+    name = "rucaja";
+    version = "0.1.9";
+    hash = "e8eb29fdb48eb82f8f23c83878a79274e82972cf56b15d89c18e1b6daa3a9b58";
+    deps = with allCrates; [  all__jni-sys.jni-sys_0_2 ];
+  };
+  rucaja_0_2_0 = buildCratesLib {
+    name = "rucaja";
+    version = "0.2.0";
+    hash = "96cfe47e0ccf10b018cdc2031b09e6d9e88a24f86a43a8bb4534889360f6d85f";
+    deps = with allCrates; [  all__jni-sys.jni-sys_0_2 ];
+  };
+  "rucaja_0_1" = rucaja_0_1_9;
+  "rucaja_0_2" = rucaja_0_2_0;
+  "rucaja_0" = rucaja_0_2_0;}

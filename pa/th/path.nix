@@ -28,5 +28,39 @@ rec {
     deps = with allCrates; [  all__mowl.mowl_1 all__time.time_0 all__log.log_0 all__fnv.fnv_1 all__linked-hash-map.linked-hash-map_0 ];
   };
   "path_0_3" = path_0_3_0;
+  path_0_5_0 = buildCratesLib {
+    name = "path";
+    version = "0.5.0";
+    hash = "e547daf8d75ecec739e613461508fa041d4a4a9ed4d77542293f8c6e595eacfb";
+    deps = with allCrates; [  all__log.log_0 all__time.time_0 all__linked-hash-map.linked-hash-map_0 all__mowl.mowl_1 all__fnv.fnv_1 ];
+  };
   "path_0_4" = path_0_4_0;
-  "path_0" = path_0_4_0;}
+  path_0_6_0 = buildCratesLib {
+    name = "path";
+    version = "0.6.0";
+    hash = "cc747c4b11fc38d7699d7268a6b3261a1888efb0593f26076ef3df1417be2cce";
+    deps = with allCrates; [  all__time.time_0 all__linked-hash-map.linked-hash-map_0 all__mowl.mowl_1 all__log.log_0 all__fnv.fnv_1 ];
+  };
+  "path_0_5" = path_0_5_0;
+  path_0_7_0 = buildCratesLib {
+    name = "path";
+    version = "0.7.0";
+    hash = "7edd63e770339966a61a3d671752d4ad4493928c28f7c2d7a38d23bb2fdcf273";
+    deps = with allCrates; [  all__fnv.fnv_1 all__log.log_0 all__mowl.mowl_1 all__time.time_0 all__linked-hash-map.linked-hash-map_0 ];
+  };
+  "path_0_6" = path_0_6_0;
+  path_0_8_0 = buildCratesLib {
+    name = "path";
+    version = "0.8.0";
+    hash = "9ba815cd85c1678628a51b3f6f755c6bcfd33f3151e6412168b5184415525423";
+    deps = with allCrates; [  all__log.log_0 all__linked-hash-map.linked-hash-map_0 all__mowl.mowl_1 all__time.time_0 all__fnv.fnv_1 ];
+  };
+  "path_0_7" = path_0_7_0;
+  path_0_8_1 = buildCratesLib {
+    name = "path";
+    version = "0.8.1";
+    hash = "b5fbcec5a17d2d000a94ab3c9fa237445bb8a6c4d04a041a4bcb1aff73b4d619";
+    deps = with allCrates; [  all__time.time_0 all__fnv.fnv_1 all__log.log_0 all__mowl.mowl_1 all__linked-hash-map.linked-hash-map_0 ];
+  };
+  "path_0_8" = path_0_8_1;
+  "path_0" = path_0_8_1;}

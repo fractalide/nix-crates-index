@@ -13,5 +13,18 @@ rec {
     hash = "459f951e3c3df5e1c5453cb56c9ed833242817bd5d6bc3ae03a5b00c2d85732e";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__regex.regex_0_1 ];
   };
+  locale_config_0_2_0 = buildCratesLib {
+    name = "locale_config";
+    version = "0.2.0";
+    hash = "36dc6816273271dd5db05be90ad840d0db8c4c06f0019795876f42d1fc018882";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__regex.regex_0_1 ];
+  };
   "locale_config_0_1" = locale_config_0_1_1;
-  "locale_config_0" = locale_config_0_1_1;}
+  locale_config_0_2_1 = buildCratesLib {
+    name = "locale_config";
+    version = "0.2.1";
+    hash = "7ef0c21105edc71139c0188bc70a3d2a44eccc331987894a2a2fb77763fe7658";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__regex.regex_0_1 ];
+  };
+  "locale_config_0_2" = locale_config_0_2_1;
+  "locale_config_0" = locale_config_0_2_1;}

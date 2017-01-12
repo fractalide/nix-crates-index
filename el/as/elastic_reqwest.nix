@@ -19,5 +19,18 @@ rec {
     hash = "4d6df76838a635262ff0c3bf866cce8f0fe34250c41a5bc53b7821c75c9edfb2";
     deps = with allCrates; [  all__elastic_requests.elastic_requests_0_1 all__reqwest.reqwest_0_2 all__url.url_1 ];
   };
+  elastic_reqwest_0_2_0 = buildCratesLib {
+    name = "elastic_reqwest";
+    version = "0.2.0";
+    hash = "11155dbb59e34672c62e72537ee8c235907da5d8f90b6263cb8c34e3c311f0bb";
+    deps = with allCrates; [  all__reqwest.reqwest_0_2 all__url.url_1 all__elastic_requests.elastic_requests_0_1 ];
+  };
   "elastic_reqwest_0_1" = elastic_reqwest_0_1_2;
-  "elastic_reqwest_0" = elastic_reqwest_0_1_2;}
+  elastic_reqwest_0_2_1 = buildCratesLib {
+    name = "elastic_reqwest";
+    version = "0.2.1";
+    hash = "7d37fa2a527096cdb9316c01f9014a23266cf2ab12c2194e97106d78ab871118";
+    deps = with allCrates; [  all__reqwest.reqwest_0_2 all__elastic_requests.elastic_requests_0_1 all__url.url_1 ];
+  };
+  "elastic_reqwest_0_2" = elastic_reqwest_0_2_1;
+  "elastic_reqwest_0" = elastic_reqwest_0_2_1;}

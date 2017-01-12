@@ -363,5 +363,11 @@ rec {
     deps = with allCrates; [  all__quickcheck.quickcheck_0_3 ];
   };
   "quickcheck_macros_0_2" = quickcheck_macros_0_2_29;
-  "quickcheck_macros_0_4" = quickcheck_macros_0_4_0;
-  "quickcheck_macros_0" = quickcheck_macros_0_4_0;}
+  quickcheck_macros_0_4_1 = buildCratesLib {
+    name = "quickcheck_macros";
+    version = "0.4.1";
+    hash = "a93b222f5a3f8bb54251bf929274fa11f3435b0d1eaf63ecb85ffa10139fc672";
+    deps = with allCrates; [  all__quickcheck.quickcheck_0_4 ];
+  };
+  "quickcheck_macros_0_4" = quickcheck_macros_0_4_1;
+  "quickcheck_macros_0" = quickcheck_macros_0_4_1;}

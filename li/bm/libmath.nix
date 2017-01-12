@@ -25,5 +25,18 @@ rec {
     hash = "f38552595728398692eb3923b24e9f9014663d5f26c7c597c004684f7903ea66";
     deps = with allCrates; [  all__rand.rand_0_3 ];
   };
-  "libmath_0_1" = libmath_0_1_3;
-  "libmath_0" = libmath_0_1_3;}
+  libmath_0_1_4 = buildCratesLib {
+    name = "libmath";
+    version = "0.1.4";
+    hash = "81f9daadfd4d8c4946fa32071d428cb70e493ab2c55a57a48da5261447d124cf";
+    deps = with allCrates; [  all__rand.rand_0_3 ];
+  };
+  libmath_0_2_0 = buildCratesLib {
+    name = "libmath";
+    version = "0.2.0";
+    hash = "7106862740a3c76312d518470824620f186f2da3e5c4a4fedeafac6d5aabd7dc";
+    deps = with allCrates; [  all__rand.rand_0_3 ];
+  };
+  "libmath_0_1" = libmath_0_1_4;
+  "libmath_0_2" = libmath_0_2_0;
+  "libmath_0" = libmath_0_2_0;}

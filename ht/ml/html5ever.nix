@@ -209,5 +209,18 @@ rec {
     deps = with allCrates; [  all__html5ever-atoms.html5ever-atoms_0_1 all__tendril.tendril_0_2 all__phf.phf_0_7 all__mac.mac_0 all__log.log_0 all__rustc-serialize.rustc-serialize_0_3 all__syn.syn_0_10 all__phf_codegen.phf_codegen_0_7 all__quote.quote_0_3 ];
   };
   "html5ever_0_10" = html5ever_0_10_3;
+  html5ever_0_12_0 = buildCratesLib {
+    name = "html5ever";
+    version = "0.12.0";
+    hash = "571d3baec55dfd01bbb2ad78c92f645da03f4fbf36b90c315d4c2ac8dee6e933";
+    deps = with allCrates; [  all__phf.phf_0_7 all__tendril.tendril_0_2 all__mac.mac_0 all__html5ever-atoms.html5ever-atoms_0_1 all__log.log_0 all__quote.quote_0_3 all__syn.syn_0_10 all__phf_codegen.phf_codegen_0_7 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
   "html5ever_0_11" = html5ever_0_11_0;
-  "html5ever_0" = html5ever_0_11_0;}
+  html5ever_0_12_1 = buildCratesLib {
+    name = "html5ever";
+    version = "0.12.1";
+    hash = "a358fef34c3334e92cd34d83ce870a386334e605e7abe987a69a7078a4142c69";
+    deps = with allCrates; [  all__mac.mac_0 all__log.log_0 all__html5ever-atoms.html5ever-atoms_0_1 all__phf.phf_0_7 all__tendril.tendril_0_2 all__quote.quote_0_3 all__syn.syn_0_10 all__phf_codegen.phf_codegen_0_7 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "html5ever_0_12" = html5ever_0_12_1;
+  "html5ever_0" = html5ever_0_12_1;}

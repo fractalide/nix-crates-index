@@ -45,5 +45,11 @@ rec {
     hash = "0246fe4bf828b88df88d333937596b9020a7238f78cd8a39a59156b48052eebd";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
-  "simple-slab_0_3" = simple-slab_0_3_1;
-  "simple-slab_0" = simple-slab_0_3_1;}
+  simple-slab_0_3_2 = buildCratesLib {
+    name = "simple-slab";
+    version = "0.3.2";
+    hash = "25a0f01b0c278c72b907e325da64d8af11b4b5e16bb0d8eeb9a9dc4953aa1024";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "simple-slab_0_3" = simple-slab_0_3_2;
+  "simple-slab_0" = simple-slab_0_3_2;}

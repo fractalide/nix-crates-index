@@ -13,5 +13,12 @@ rec {
     hash = "6d85b7e9de15ddc963e8aa3c16c448b6fcb089b08d1696c017c434b39ba0923d";
     deps = with allCrates; [  all__regex.regex_0_1 all__libc.libc_0_2 ];
   };
+  rure_0_2_0 = buildCratesLib {
+    name = "rure";
+    version = "0.2.0";
+    hash = "a79fe4d7765648d5d3765666e209f2d0e57573591e58a6f749ddd6d33b752df5";
+    deps = with allCrates; [  all__libc.libc_0_2 all__regex.regex_0_2 ];
+  };
   "rure_0_1" = rure_0_1_1;
-  "rure_0" = rure_0_1_1;}
+  "rure_0_2" = rure_0_2_0;
+  "rure_0" = rure_0_2_0;}

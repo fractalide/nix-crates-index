@@ -55,5 +55,17 @@ rec {
     hash = "05c9a0f115230c83a411bfd4e0202d8ea93b3b2e4f85372dfcd6af6d0f6a8842";
     deps = with allCrates; [  all__sel4.sel4_0_0_7 all__sel4-sys.sel4-sys_0_0_23 all__maplit.maplit_0_1 ];
   };
-  "sel4-start_0_0" = sel4-start_0_0_23;
-  "sel4-start_0" = sel4-start_0_0_23;}
+  sel4-start_0_0_26 = buildCratesLib {
+    name = "sel4-start";
+    version = "0.0.26";
+    hash = "b7bf0ac9175200831592264603971b77f0fe9c02f18e45ee87969286e7a4d0a5";
+    deps = with allCrates; [  all__sel4-sys.sel4-sys_0_0_26 all__sel4.sel4_0_0_9 all__maplit.maplit_0_1 ];
+  };
+  sel4-start_0_0_27 = buildCratesLib {
+    name = "sel4-start";
+    version = "0.0.27";
+    hash = "525089ceaf7b9167edd7116198cd3cd40fb656543a7f904326f291486c5db023";
+    deps = with allCrates; [  all__sel4.sel4_0_0_11 all__sel4-sys.sel4-sys_0_0_27 all__maplit.maplit_0_1 ];
+  };
+  "sel4-start_0_0" = sel4-start_0_0_27;
+  "sel4-start_0" = sel4-start_0_0_27;}

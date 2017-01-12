@@ -7,5 +7,12 @@ rec {
     hash = "ca50a379a08e42d48fcd4c7cba94a82449871bb15899dd77f2d4db8c2653e01c";
     deps = with allCrates; [  all__itertools.itertools_0_5 all__ndarray.ndarray_0_7 ];
   };
+  ndarray-odeint_0_2_0 = buildCratesLib {
+    name = "ndarray-odeint";
+    version = "0.2.0";
+    hash = "b287ff325ba68b558b1874328d361412d7b3bfb6be03625dd3e0706d7d8cd8f2";
+    deps = with allCrates; [  all__ndarray.ndarray_0_7 all__itertools.itertools_0_5 ];
+  };
   "ndarray-odeint_0_1" = ndarray-odeint_0_1_0;
-  "ndarray-odeint_0" = ndarray-odeint_0_1_0;}
+  "ndarray-odeint_0_2" = ndarray-odeint_0_2_0;
+  "ndarray-odeint_0" = ndarray-odeint_0_2_0;}

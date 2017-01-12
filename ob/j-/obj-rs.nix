@@ -173,5 +173,11 @@ rec {
     hash = "06aa0bdff5f7fb706830247996bf334e2dfb64990fd437ed05c37994bab98805";
     deps = with allCrates; [  all__vec_map.vec_map_0_6 all__rustc-serialize.rustc-serialize_0_3 ];
   };
-  "obj-rs_0_4" = obj-rs_0_4_16;
-  "obj-rs_0" = obj-rs_0_4_16;}
+  obj-rs_0_4_17 = buildCratesLib {
+    name = "obj-rs";
+    version = "0.4.17";
+    hash = "28cf7c22debc2f3a199dbe69b0451983f94ddbdcda6d2723d2ecb5a499ac22cc";
+    deps = with allCrates; [  all__vec_map.vec_map_0_6 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "obj-rs_0_4" = obj-rs_0_4_17;
+  "obj-rs_0" = obj-rs_0_4_17;}

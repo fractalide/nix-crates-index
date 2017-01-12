@@ -7,5 +7,12 @@ rec {
     hash = "c6114eb961bf13233abf64590628e4666197f898e5e7d52ce6a027e49f887564";
     deps = with allCrates; [  all__chrono.chrono_0_2 all__uuid.uuid_0_3 ];
   };
+  icalendar_0_2_0 = buildCratesLib {
+    name = "icalendar";
+    version = "0.2.0";
+    hash = "9665b23508e5bfc0d71313eab6b87f78c105b7cced16ea2654bef84c8e3c2078";
+    deps = with allCrates; [  all__chrono.chrono_0_2 all__uuid.uuid_0_3 ];
+  };
   "icalendar_0_1" = icalendar_0_1_0;
-  "icalendar_0" = icalendar_0_1_0;}
+  "icalendar_0_2" = icalendar_0_2_0;
+  "icalendar_0" = icalendar_0_2_0;}

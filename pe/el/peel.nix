@@ -52,5 +52,12 @@ rec {
     deps = with allCrates; [  all__nom.nom_2 all__mowl.mowl_1 all__petgraph.petgraph_0 all__log.log_0 ];
   };
   "peel_0_2" = peel_0_2_0;
+  peel_0_4_0 = buildCratesLib {
+    name = "peel";
+    version = "0.4.0";
+    hash = "7323d301692efbfa61e2da71d717a0560329f2fa2d0462949096486e380eec34";
+    deps = with allCrates; [  all__mowl.mowl_1 all__log.log_0 all__petgraph.petgraph_0 all__nom.nom_2 ];
+  };
   "peel_0_3" = peel_0_3_0;
-  "peel_0" = peel_0_3_0;}
+  "peel_0_4" = peel_0_4_0;
+  "peel_0" = peel_0_4_0;}

@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde_derive.serde_derive_0_8 all__serde.serde_0_8 all__ruma-identifiers.ruma-identifiers_0_6 all__ruma-signatures.ruma-signatures_0_1 ];
   };
   "ruma-events_0_1" = ruma-events_0_1_0;
+  ruma-events_0_3_0 = buildCratesLib {
+    name = "ruma-events";
+    version = "0.3.0";
+    hash = "8e29f8d161ecca4d40b5ab1c75d515d5fdc8dfdc21df45e1a6964f0995a008a2";
+    deps = with allCrates; [  all__ruma-signatures.ruma-signatures_0_1 all__ruma-identifiers.ruma-identifiers_0_6 all__serde_derive.serde_derive_0_8 all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
+  };
   "ruma-events_0_2" = ruma-events_0_2_0;
-  "ruma-events_0" = ruma-events_0_2_0;}
+  "ruma-events_0_3" = ruma-events_0_3_0;
+  "ruma-events_0" = ruma-events_0_3_0;}

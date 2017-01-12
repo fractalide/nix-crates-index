@@ -53,5 +53,12 @@ rec {
     deps = with allCrates; [  all__anymap.anymap_0_12 ];
   };
   "yaecs_0_5" = yaecs_0_5_3;
+  yaecs_0_7_0 = buildCratesLib {
+    name = "yaecs";
+    version = "0.7.0";
+    hash = "7bc17f91e398f52120de14b0280ad2513f51dda086b5cdf35bafd8c2a5e5355f";
+    deps = with allCrates; [  all__anymap.anymap_0_12 ];
+  };
   "yaecs_0_6" = yaecs_0_6_0;
-  "yaecs_0" = yaecs_0_6_0;}
+  "yaecs_0_7" = yaecs_0_7_0;
+  "yaecs_0" = yaecs_0_7_0;}

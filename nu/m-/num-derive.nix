@@ -19,5 +19,11 @@ rec {
     hash = "88bec4baca6ed7b5900428e98532d2ac8c4ac242f5460425a90676f85e19b40d";
     deps = with allCrates; [  all__syn.syn_0_7 all__quote.quote_0_1 ];
   };
-  "num-derive_0_1" = num-derive_0_1_38;
-  "num-derive_0" = num-derive_0_1_38;}
+  num-derive_0_1_39 = buildCratesLib {
+    name = "num-derive";
+    version = "0.1.39";
+    hash = "c8bdc32450baf46be50a6dc8e9f70916c93142100841545c6810dbda5d79eaa6";
+    deps = with allCrates; [  all__quote.quote_0_1 all__syn.syn_0_7 ];
+  };
+  "num-derive_0_1" = num-derive_0_1_39;
+  "num-derive_0" = num-derive_0_1_39;}

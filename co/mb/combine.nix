@@ -67,5 +67,11 @@ rec {
     deps = with allCrates; [  all__ascii.ascii_0_7 ];
   };
   "combine_2_0" = combine_2_0_0;
-  "combine_2_1" = combine_2_1_0;
-  "combine_2" = combine_2_1_0;}
+  combine_2_1_1 = buildCratesLib {
+    name = "combine";
+    version = "2.1.1";
+    hash = "3cfe5771c363b3a19cf5fd42a4608e3ae5a544f07fd3a25af28f9569645162a2";
+    deps = with allCrates; [  all__ascii.ascii_0_7 ];
+  };
+  "combine_2_1" = combine_2_1_1;
+  "combine_2" = combine_2_1_1;}

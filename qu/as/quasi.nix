@@ -322,5 +322,12 @@ rec {
     deps = with allCrates; [  ];
   };
   "quasi_0_27" = quasi_0_27_0;
+  quasi_0_29_0 = buildCratesLib {
+    name = "quasi";
+    version = "0.29.0";
+    hash = "dcbf815446dc6a0afbc72d88f9a8aa71b608d10b168e09437c80c0fd6fd410c9";
+    deps = with allCrates; [  ];
+  };
   "quasi_0_28" = quasi_0_28_0;
-  "quasi_0" = quasi_0_28_0;}
+  "quasi_0_29" = quasi_0_29_0;
+  "quasi_0" = quasi_0_29_0;}

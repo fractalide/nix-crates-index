@@ -429,5 +429,12 @@ rec {
     deps = with allCrates; [  all__range.range_0_3 all__read_token.read_token_0_7 ];
   };
   "piston_meta_0_26" = piston_meta_0_26_2;
+  piston_meta_0_28_0 = buildCratesLib {
+    name = "piston_meta";
+    version = "0.28.0";
+    hash = "823a50a864c6a15a46a43243990c0d80e271e3c8703b63f769eaae10bcf7749c";
+    deps = with allCrates; [  all__range.range_0_3 all__read_token.read_token_0_7 ];
+  };
   "piston_meta_0_27" = piston_meta_0_27_0;
-  "piston_meta_0" = piston_meta_0_27_0;}
+  "piston_meta_0_28" = piston_meta_0_28_0;
+  "piston_meta_0" = piston_meta_0_28_0;}

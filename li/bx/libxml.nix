@@ -91,5 +91,29 @@ rec {
     hash = "bbeb3f37f78c46911f55ec7d45cb91e618f94cc1f18c20af49cc728f99949653";
     deps = with allCrates; [  all__libc.libc_0_1 all__gcc.gcc_0_3 ];
   };
-  "libxml_0_0" = libxml_0_0_742;
-  "libxml_0" = libxml_0_0_742;}
+  libxml_0_0_743 = buildCratesLib {
+    name = "libxml";
+    version = "0.0.743";
+    hash = "44a9f9c8db286268df402f621afc3d2cd79620916be9bc01ab0834650369ae13";
+    deps = with allCrates; [  all__libc.libc_0_1 all__gcc.gcc_0_3 ];
+  };
+  libxml_0_0_744 = buildCratesLib {
+    name = "libxml";
+    version = "0.0.744";
+    hash = "0e03cd3cd52ec7f6ad132ccee14c8b135e0ba97e5d91c24396cab27aadfe4569";
+    deps = with allCrates; [  all__libc.libc_0_1 all__gcc.gcc_0_3 ];
+  };
+  libxml_0_0_745 = buildCratesLib {
+    name = "libxml";
+    version = "0.0.745";
+    hash = "4030439660f8a98bc567df3040f8b44b6f7d5ed2668c0f1be8d0f6cbb2f706d9";
+    deps = with allCrates; [  all__libc.libc_0_1 all__gcc.gcc_0_3 ];
+  };
+  libxml_0_0_746 = buildCratesLib {
+    name = "libxml";
+    version = "0.0.746";
+    hash = "6e22bc8bbd6dec6ffe6da033c70fb7a850ca80aa3ba9c987cd31804ee72e326c";
+    deps = with allCrates; [  all__libc.libc_0_1 all__gcc.gcc_0_3 ];
+  };
+  "libxml_0_0" = libxml_0_0_746;
+  "libxml_0" = libxml_0_0_746;}

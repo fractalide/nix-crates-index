@@ -28,5 +28,11 @@ rec {
     deps = with allCrates; [  all__log.log_0_3 all__byteorder.byteorder_0_5 all__try_from.try_from_0_2 all__integer-encoding.integer-encoding_1_0_3 ];
   };
   "rift_0_4" = rift_0_4_0;
-  "rift_0_5" = rift_0_5_0;
-  "rift_0" = rift_0_5_0;}
+  rift_0_5_1 = buildCratesLib {
+    name = "rift";
+    version = "0.5.1";
+    hash = "b85fcbd7b554fb23eb947c72e0226584792beeb52576929a17ac6717408cfca8";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__try_from.try_from_0_2 all__log.log_0_3 all__integer-encoding.integer-encoding_1_0_3 ];
+  };
+  "rift_0_5" = rift_0_5_1;
+  "rift_0" = rift_0_5_1;}

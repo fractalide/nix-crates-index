@@ -28,5 +28,25 @@ rec {
     deps = with allCrates; [  all__uuid.uuid_0_2 all__log.log_0_3 all__snap.snap_0_1 all__byteorder.byteorder_0_5 all__lz4-compress.lz4-compress_0_1 ];
   };
   "cdrs_0_3" = cdrs_0_3_0;
-  "cdrs_0_4" = cdrs_0_4_0;
-  "cdrs_0" = cdrs_0_4_0;}
+  cdrs_0_4_1 = buildCratesLib {
+    name = "cdrs";
+    version = "0.4.1";
+    hash = "e54c98d407e25bd14bc0095486c6af4a3776331342102f79503223bcc43f96a1";
+    deps = with allCrates; [  all__snap.snap_0_1 all__byteorder.byteorder_0_5 all__log.log_0_3 all__lz4-compress.lz4-compress_0_1 all__uuid.uuid_0_2 ];
+  };
+  cdrs_0_5_0 = buildCratesLib {
+    name = "cdrs";
+    version = "0.5.0";
+    hash = "da5c89e34effe3f404bac345d611ac780fd64049d3888c333138f4abf11d9406";
+    deps = with allCrates; [  all__byteorder.byteorder_0_5 all__log.log_0_3 all__snap.snap_0_1 all__uuid.uuid_0_2 all__lz4-compress.lz4-compress_0_1 ];
+  };
+  "cdrs_0_4" = cdrs_0_4_1;
+  cdrs_0_6_0 = buildCratesLib {
+    name = "cdrs";
+    version = "0.6.0";
+    hash = "5decd76b799214eca33527c53812c194d20e5fad3075e5872b646ae05bef01d3";
+    deps = with allCrates; [  all__log.log_0_3 all__snap.snap_0_1 all__byteorder.byteorder_0_5 all__uuid.uuid_0_2 all__lz4-compress.lz4-compress_0_1 ];
+  };
+  "cdrs_0_5" = cdrs_0_5_0;
+  "cdrs_0_6" = cdrs_0_6_0;
+  "cdrs_0" = cdrs_0_6_0;}

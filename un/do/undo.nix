@@ -38,5 +38,12 @@ rec {
     hash = "0194575a371bfb60f604bac2186a502e1756896e54f25899bca9cf2b3288f80a";
     deps = with allCrates; [  all__fnv.fnv_1_0_5 ];
   };
+  undo_0_3_0 = buildCratesLib {
+    name = "undo";
+    version = "0.3.0";
+    hash = "7944cdefe998c4959381fb1a024d90167237ae3c8b7ac495264ab9832425f06c";
+    deps = with allCrates; [  all__fnv.fnv_1_0_5 ];
+  };
   "undo_0_2" = undo_0_2_4;
-  "undo_0" = undo_0_2_4;}
+  "undo_0_3" = undo_0_3_0;
+  "undo_0" = undo_0_3_0;}

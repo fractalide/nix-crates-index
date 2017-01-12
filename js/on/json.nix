@@ -233,5 +233,11 @@ rec {
     hash = "094a203ed13827f7fcfc27ba2148c1d335ccf833187f165993d3496c3041b2af";
     deps = with allCrates; [  ];
   };
-  "json_0_11" = json_0_11_3;
-  "json_0" = json_0_11_3;}
+  json_0_11_4 = buildCratesLib {
+    name = "json";
+    version = "0.11.4";
+    hash = "8b64c79ddc27e8690a5c235d3f8959923b08d42cb8956973dab0bf9cc8827c85";
+    deps = with allCrates; [  ];
+  };
+  "json_0_11" = json_0_11_4;
+  "json_0" = json_0_11_4;}

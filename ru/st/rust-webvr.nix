@@ -25,5 +25,11 @@ rec {
     hash = "4159326d700f139e36ab1c30a98ef23a3aa253ec3b92a4d6824c9b7552398beb";
     deps = with allCrates; [  all__log.log_0_3 all__time.time_0_1 ];
   };
-  "rust-webvr_0_1" = rust-webvr_0_1_4;
-  "rust-webvr_0" = rust-webvr_0_1_4;}
+  rust-webvr_0_1_5 = buildCratesLib {
+    name = "rust-webvr";
+    version = "0.1.5";
+    hash = "0f1c2770eade344950b6959fb7f4c658200a252a61f265b3487383b82fafe61e";
+    deps = with allCrates; [  all__time.time_0_1 all__log.log_0_3 ];
+  };
+  "rust-webvr_0_1" = rust-webvr_0_1_5;
+  "rust-webvr_0" = rust-webvr_0_1_5;}

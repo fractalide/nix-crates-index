@@ -31,5 +31,11 @@ rec {
     hash = "dcd8241fe896659d4ebb8de17235ccc266f02e7a89af09c3a53475b2e7615648";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 ];
   };
-  "hc256_0_1" = hc256_0_1_4;
-  "hc256_0" = hc256_0_1_4;}
+  hc256_0_1_5 = buildCratesLib {
+    name = "hc256";
+    version = "0.1.5";
+    hash = "58ab066e57e0ca0f0094da0690452ae9e78088f85469f4bd857d5be650fe4e34";
+    deps = with allCrates; [  all__byteorder.byteorder_1_0 ];
+  };
+  "hc256_0_1" = hc256_0_1_5;
+  "hc256_0" = hc256_0_1_5;}

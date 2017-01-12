@@ -62,5 +62,12 @@ rec {
     hash = "40f5ae44e1a0385d2face973a543b432591320c66cf251eba0d4e215f2e924c9";
     deps = with allCrates; [  all__postgres.postgres_0_11 schemamama ];
   };
+  schemamama_postgres_0_2_0 = buildCratesLib {
+    name = "schemamama_postgres";
+    version = "0.2.0";
+    hash = "9e6d286e7728a1dbbba14d4522fbbe97833475fe5595b6968c0617cec2c779ed";
+    deps = with allCrates; [  all__postgres.postgres_0_13 schemamama ];
+  };
   "schemamama_postgres_0_1" = schemamama_postgres_0_1_1;
-  "schemamama_postgres_0" = schemamama_postgres_0_1_1;}
+  "schemamama_postgres_0_2" = schemamama_postgres_0_2_0;
+  "schemamama_postgres_0" = schemamama_postgres_0_2_0;}

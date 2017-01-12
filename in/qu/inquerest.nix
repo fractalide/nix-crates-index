@@ -92,5 +92,12 @@ rec {
     hash = "5ab19d3f149b0f81a600c732ac6fe92a92be75d8634767c9cb1d691e40d6eb25";
     deps = with allCrates; [  all__peg.peg_0_3 ];
   };
+  inquerest_0_2_0 = buildCratesLib {
+    name = "inquerest";
+    version = "0.2.0";
+    hash = "26bdb6bcef2b227ddd62f58d3504562a17ab88eef6ca68d6188a92767e1c684a";
+    deps = with allCrates; [  all__nom.nom_2 ];
+  };
   "inquerest_0_1" = inquerest_0_1_5;
-  "inquerest_0" = inquerest_0_1_5;}
+  "inquerest_0_2" = inquerest_0_2_0;
+  "inquerest_0" = inquerest_0_2_0;}

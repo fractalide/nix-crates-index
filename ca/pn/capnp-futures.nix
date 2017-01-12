@@ -13,5 +13,12 @@ rec {
     hash = "e040dbc0ac20641b848955e188359851b20d20d9d9ea433ce88ed925e3b6b49b";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__capnp.capnp_0_7 all__futures.futures_0_1 ];
   };
+  capnp-futures_0_1_0 = buildCratesLib {
+    name = "capnp-futures";
+    version = "0.1.0";
+    hash = "ec92a85a00f604b2d62c7c9d95f366a8973bd686d7e8aa4f56819d779d06567d";
+    deps = with allCrates; [  all__futures.futures_0_1 all__byteorder.byteorder_0_5 all__capnp.capnp_0_8 ];
+  };
   "capnp-futures_0_0" = capnp-futures_0_0_2;
-  "capnp-futures_0" = capnp-futures_0_0_2;}
+  "capnp-futures_0_1" = capnp-futures_0_1_0;
+  "capnp-futures_0" = capnp-futures_0_1_0;}

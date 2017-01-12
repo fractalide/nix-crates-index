@@ -13,5 +13,17 @@ rec {
     hash = "7e6f4825b2d1868b8f3e320631efe384b0b0d26291b34e0326a42f16942eba26";
     deps = with allCrates; [  all__syn.syn_0_9 all__log.log_0_3 all__quote.quote_0_3 ];
   };
-  "telebot-derive_0_0" = telebot-derive_0_0_2;
-  "telebot-derive_0" = telebot-derive_0_0_2;}
+  telebot-derive_0_0_3 = buildCratesLib {
+    name = "telebot-derive";
+    version = "0.0.3";
+    hash = "23a648f42aae2452159f023e70f97a8e0e7124a5e806eb99e496ed9a6826d2b8";
+    deps = with allCrates; [  all__syn.syn_0_9 all__log.log_0_3 all__quote.quote_0_3 ];
+  };
+  telebot-derive_0_0_4 = buildCratesLib {
+    name = "telebot-derive";
+    version = "0.0.4";
+    hash = "b97224e7acab133662610504c4ded4b93aa543512552b0772c767f9b09736062";
+    deps = with allCrates; [  all__syn.syn_0_9 all__log.log_0_3 all__quote.quote_0_3 ];
+  };
+  "telebot-derive_0_0" = telebot-derive_0_0_4;
+  "telebot-derive_0" = telebot-derive_0_0_4;}

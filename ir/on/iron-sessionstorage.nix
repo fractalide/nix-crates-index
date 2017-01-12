@@ -41,5 +41,18 @@ rec {
     deps = with allCrates; [  all__iron.iron_0_4 all__error-chain.error-chain_0_5 all__rand.rand_0_3 all__cookie.cookie_0_2 ];
   };
   "iron-sessionstorage_0_4" = iron-sessionstorage_0_4_0;
+  iron-sessionstorage_0_6_0 = buildCratesLib {
+    name = "iron-sessionstorage";
+    version = "0.6.0";
+    hash = "f9092d99805ff38cec474574b86fd1f03ea521d973cdabadbcb93c623ebcf368";
+    deps = with allCrates; [  all__cookie.cookie_0_4 all__iron.iron_0_5 all__error-chain.error-chain_0_5 all__rand.rand_0_3 ];
+  };
   "iron-sessionstorage_0_5" = iron-sessionstorage_0_5_0;
-  "iron-sessionstorage_0" = iron-sessionstorage_0_5_0;}
+  iron-sessionstorage_0_6_1 = buildCratesLib {
+    name = "iron-sessionstorage";
+    version = "0.6.1";
+    hash = "ff2133a53d7a3fb8ebfdd1cbaca9495f8c3e49768053685ff3859ca7967a3312";
+    deps = with allCrates; [  all__iron.iron_0_5 all__error-chain.error-chain_0_5 all__rand.rand_0_3 all__cookie.cookie_0_4 ];
+  };
+  "iron-sessionstorage_0_6" = iron-sessionstorage_0_6_1;
+  "iron-sessionstorage_0" = iron-sessionstorage_0_6_1;}

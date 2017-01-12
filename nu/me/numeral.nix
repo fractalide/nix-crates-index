@@ -19,5 +19,12 @@ rec {
     hash = "4b431e6d574a3998de4f2787610ae04c56f541986e9837e71dc6dc7354ce601c";
     deps = with allCrates; [  ];
   };
+  numeral_0_2_0 = buildCratesLib {
+    name = "numeral";
+    version = "0.2.0";
+    hash = "25a9d7f24e6990d5a1668b44363d5aed0be3f62f6a1bee586eafa7ce594b9fab";
+    deps = with allCrates; [  ];
+  };
   "numeral_0_1" = numeral_0_1_2;
-  "numeral_0" = numeral_0_1_2;}
+  "numeral_0_2" = numeral_0_2_0;
+  "numeral_0" = numeral_0_2_0;}

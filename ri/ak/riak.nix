@@ -20,5 +20,36 @@ rec {
     deps = with allCrates; [  all__log.log_0_3 all__protobuf.protobuf_1_0_24 ];
   };
   "riak_0_1" = riak_0_1_7;
-  "riak_0_2" = riak_0_2_4;
-  "riak_0" = riak_0_2_4;}
+  riak_0_2_5 = buildCratesLib {
+    name = "riak";
+    version = "0.2.5";
+    hash = "a7881269f6981e565df2e1d80386147357d312377dcd7b604424ba249aae14f0";
+    deps = with allCrates; [  all__protobuf.protobuf_1_0_24 all__log.log_0_3 ];
+  };
+  riak_0_2_7 = buildCratesLib {
+    name = "riak";
+    version = "0.2.7";
+    hash = "ad1a704f67acc61b17af6d422bc20a62effacdfedbd8cba49731ce45723cc8c8";
+    deps = with allCrates; [  all__log.log_0_3 all__protobuf.protobuf_1_0_24 ];
+  };
+  riak_0_3_0 = buildCratesLib {
+    name = "riak";
+    version = "0.3.0";
+    hash = "a59d0d8a71438cf9c235eb8fcf0cb629878ac5c5ca05c3fac28d63305655ba89";
+    deps = with allCrates; [  all__log.log_0_3 all__protobuf.protobuf_1_0_24 ];
+  };
+  "riak_0_2" = riak_0_2_7;
+  riak_0_3_2 = buildCratesLib {
+    name = "riak";
+    version = "0.3.2";
+    hash = "4a402edfeaba0c87cf5252103810ff29a5422e652945443290ec982a4c01f51f";
+    deps = with allCrates; [  all__protobuf.protobuf_1_1 all__log.log_0_3 ];
+  };
+  riak_0_3_3 = buildCratesLib {
+    name = "riak";
+    version = "0.3.3";
+    hash = "c88b700b1b4352d9c7db36d0d4bc037ebd8ed7bea6ac47da11a0351df4fb2750";
+    deps = with allCrates; [  all__protobuf.protobuf_1_1 all__log.log_0_3 ];
+  };
+  "riak_0_3" = riak_0_3_3;
+  "riak_0" = riak_0_3_3;}

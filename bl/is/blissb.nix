@@ -7,5 +7,12 @@ rec {
     hash = "686a2dee23adeed87b090329329772a0f6b66a470b432f17bede9f443ecad7e1";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__tiny-keccak.tiny-keccak_1_1 all__bitpack.bitpack_0_1 all__rand.rand_0_3 ];
   };
+  blissb_0_2_0 = buildCratesLib {
+    name = "blissb";
+    version = "0.2.0";
+    hash = "02366788738c75976b4ffe77ee9db82169b52fe48e7523fe6cf89ef23b74a93f";
+    deps = with allCrates; [  all__bitpack.bitpack_0_1 all__byteorder.byteorder_1_0 all__tiny-keccak.tiny-keccak_1_1 all__rand.rand_0_3 ];
+  };
   "blissb_0_1" = blissb_0_1_0;
-  "blissb_0" = blissb_0_1_0;}
+  "blissb_0_2" = blissb_0_2_0;
+  "blissb_0" = blissb_0_2_0;}

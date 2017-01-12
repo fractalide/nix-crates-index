@@ -13,5 +13,11 @@ rec {
     hash = "fa1fd7be2ce7de3131595f0e277bfa26ad207c10845e103b76737d2e0370bfb2";
     deps = with allCrates; [  sysconf ];
   };
-  "procure_0_1" = procure_0_1_1;
-  "procure_0" = procure_0_1_1;}
+  procure_0_1_2 = buildCratesLib {
+    name = "procure";
+    version = "0.1.2";
+    hash = "d1c3666e3e195344f10ebc851bbabfb5ef9a36b6c307c9e7d2856e176c9e5446";
+    deps = with allCrates; [  all__sysconf.sysconf_0_1 ];
+  };
+  "procure_0_1" = procure_0_1_2;
+  "procure_0" = procure_0_1_2;}

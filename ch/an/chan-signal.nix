@@ -43,5 +43,12 @@ rec {
     hash = "365122ab60a9dc6240b48e39d011b4389c3853093d98bf586edd2b79bfb4fbfa";
     deps = with allCrates; [  all__chan.chan_0_1 all__bit-set.bit-set_0_2 all__libc.libc_0_2 all__lazy_static.lazy_static_0_1 ];
   };
+  chan-signal_0_2_0 = buildCratesLib {
+    name = "chan-signal";
+    version = "0.2.0";
+    hash = "0f3bb6c3bc387004ad914f0c5b7f33ace8bf7604bbec35f228b1a017f52cd3a0";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__bit-set.bit-set_0_4 all__libc.libc_0_2 all__chan.chan_0_1 ];
+  };
   "chan-signal_0_1" = chan-signal_0_1_7;
-  "chan-signal_0" = chan-signal_0_1_7;}
+  "chan-signal_0_2" = chan-signal_0_2_0;
+  "chan-signal_0" = chan-signal_0_2_0;}

@@ -183,5 +183,19 @@ rec {
     deps = with allCrates; [  ws2_32-sys pnet_macros_support winapi libc pnet_macros ];
   };
   "pnet_0_13" = pnet_0_13_0;
+  pnet_0_15_0 = buildCratesLib {
+    name = "pnet";
+    version = "0.15.0";
+    hash = "2164d1aa8dedff1c4dd40a9a77cf7b4d4c8b4fed04048b2f497ad14c1618527c";
+    deps = with allCrates; [  pnet_macros_support winapi ws2_32-sys libc pnet_macros ];
+  };
   "pnet_0_14" = pnet_0_14_0;
-  "pnet_0" = pnet_0_14_0;}
+  pnet_0_16_0 = buildCratesLib {
+    name = "pnet";
+    version = "0.16.0";
+    hash = "e183089b308e3860218d926c0d8393ecba5a4a161154f945f8b9c75382c63eda";
+    deps = with allCrates; [  winapi libc pnet_macros_support ws2_32-sys pnet_macros ];
+  };
+  "pnet_0_15" = pnet_0_15_0;
+  "pnet_0_16" = pnet_0_16_0;
+  "pnet_0" = pnet_0_16_0;}

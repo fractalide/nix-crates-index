@@ -52,5 +52,17 @@ rec {
     deps = with allCrates; [  all__json_macro.json_macro_0_1 all__petgraph.petgraph_0_3 all__bitflags.bitflags_0_7 all__hlua.hlua_0_1 all__dbus.dbus_0_4 all__env_logger.env_logger_0_3 all__log.log_0_3 all__lazy_static.lazy_static_0_2 all__wayland-sys.wayland-sys_0_6 all__dbus-macros.dbus-macros_0_0_6 all__nix.nix_0_6 all__rustc-serialize.rustc-serialize_0_3 all__rustwlc.rustwlc_0_5 all__getopts.getopts_0_2 all__uuid.uuid_0_3 ];
   };
   "way-cooler_0_3" = way-cooler_0_3_3;
-  "way-cooler_0_4" = way-cooler_0_4_0;
-  "way-cooler_0" = way-cooler_0_4_0;}
+  way-cooler_0_4_1 = buildCratesLib {
+    name = "way-cooler";
+    version = "0.4.1";
+    hash = "f353e0fc76c9b71c3987cf47feb6e299696f9a370d53969f35424f845e3cad6a";
+    deps = with allCrates; [  all__dbus.dbus_0_4 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__dbus-macros.dbus-macros_0_0_6 all__getopts.getopts_0_2 all__env_logger.env_logger_0_3 all__lazy_static.lazy_static_0_2 all__uuid.uuid_0_3 all__json_macro.json_macro_0_1 all__bitflags.bitflags_0_7 all__hlua.hlua_0_1 all__nix.nix_0_6 all__wayland-sys.wayland-sys_0_6 all__rustwlc.rustwlc_0_5 all__petgraph.petgraph_0_3 ];
+  };
+  way-cooler_0_4_2 = buildCratesLib {
+    name = "way-cooler";
+    version = "0.4.2";
+    hash = "09bad4e10da1ed8ed6221da9d199c6b2fa925a7cb6ae448759a70a258f6d95c8";
+    deps = with allCrates; [  all__json_macro.json_macro_0_1 all__env_logger.env_logger_0_3 all__wayland-sys.wayland-sys_0_6 all__nix.nix_0_6 all__log.log_0_3 all__lazy_static.lazy_static_0_2 all__rustc-serialize.rustc-serialize_0_3 all__uuid.uuid_0_3 all__hlua.hlua_0_1 all__petgraph.petgraph_0_4 all__bitflags.bitflags_0_7 all__dbus.dbus_0_4 all__dbus-macros.dbus-macros_0_0_6 all__getopts.getopts_0_2 all__rustwlc.rustwlc_0_5 ];
+  };
+  "way-cooler_0_4" = way-cooler_0_4_2;
+  "way-cooler_0" = way-cooler_0_4_2;}

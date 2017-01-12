@@ -78,5 +78,11 @@ rec {
     hash = "7575315dec0d7dd548f039f8afd9c31fcfa4e8bc02432a0887b3f0e47d6ac2e6";
     deps = with allCrates; [  all__serde_json.serde_json_0_8 all__pest.pest_0_4 all__glob.glob_0_2 all__regex.regex_0_1 all__chrono.chrono_0_2 all__error-chain.error-chain_0_7 all__serde.serde_0_8 all__lazy_static.lazy_static_0_2 all__humansize.humansize_0_1 all__url.url_1_2 all__slug.slug_0_1 ];
   };
-  "tera_0_6" = tera_0_6_1;
-  "tera_0" = tera_0_6_1;}
+  tera_0_6_2 = buildCratesLib {
+    name = "tera";
+    version = "0.6.2";
+    hash = "65e176aa29461e96a60da9ccb22cd4c7eb1ed3b4254f725eee4687f26125ca39";
+    deps = with allCrates; [  all__pest.pest_0_4 all__slug.slug_0_1 all__lazy_static.lazy_static_0_2 all__glob.glob_0_2 all__regex.regex_0_2 all__humansize.humansize_0_1 all__serde.serde_0_8 all__url.url_1_2 all__chrono.chrono_0_2 all__serde_json.serde_json_0_8 all__error-chain.error-chain_0_7 ];
+  };
+  "tera_0_6" = tera_0_6_2;
+  "tera_0" = tera_0_6_2;}

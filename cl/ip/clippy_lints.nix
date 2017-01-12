@@ -211,5 +211,23 @@ rec {
     hash = "70812027c1a8de9277d125557dce08262bc27508f2eb99592ad2d39a24a0b1c7";
     deps = with allCrates; [  all__toml.toml_0_1 all__unicode-normalization.unicode-normalization_0_1 all__regex-syntax.regex-syntax_0_3 all__matches.matches_0_1 all__quine-mc_cluskey.quine-mc_cluskey_0_2 all__rustc-serialize.rustc-serialize_0_3 all__semver.semver_0_2 ];
   };
-  "clippy_lints_0_0" = clippy_lints_0_0_104;
-  "clippy_lints_0" = clippy_lints_0_0_104;}
+  clippy_lints_0_0_105 = buildCratesLib {
+    name = "clippy_lints";
+    version = "0.0.105";
+    hash = "4681435245f2384eb697ab660e4dacb903651296e98e7f3cda3f48547bfc40bb";
+    deps = with allCrates; [  all__semver.semver_0_2 all__toml.toml_0_1 all__matches.matches_0_1 all__rustc-serialize.rustc-serialize_0_3 all__unicode-normalization.unicode-normalization_0_1 all__regex-syntax.regex-syntax_0_3 all__quine-mc_cluskey.quine-mc_cluskey_0_2 ];
+  };
+  clippy_lints_0_0_106 = buildCratesLib {
+    name = "clippy_lints";
+    version = "0.0.106";
+    hash = "c3783fe5c09bef8978af2da8542d18ce7e5b78b289bc82eea8cd609b163a4ab4";
+    deps = with allCrates; [  all__matches.matches_0_1 all__toml.toml_0_1 all__quine-mc_cluskey.quine-mc_cluskey_0_2 all__regex-syntax.regex-syntax_0_3 all__rustc-serialize.rustc-serialize_0_3 all__semver.semver_0_2 all__unicode-normalization.unicode-normalization_0_1 ];
+  };
+  clippy_lints_0_0_107 = buildCratesLib {
+    name = "clippy_lints";
+    version = "0.0.107";
+    hash = "6a5b967814b5912082a96a18833dcf36d793b13488ab145e485d97eac4a41c80";
+    deps = with allCrates; [  all__toml.toml_0_1 all__matches.matches_0_1 all__semver.semver_0_2 all__quine-mc_cluskey.quine-mc_cluskey_0_2 all__rustc-serialize.rustc-serialize_0_3 all__regex-syntax.regex-syntax_0_4 all__unicode-normalization.unicode-normalization_0_1 ];
+  };
+  "clippy_lints_0_0" = clippy_lints_0_0_107;
+  "clippy_lints_0" = clippy_lints_0_0_107;}

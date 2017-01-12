@@ -20,5 +20,11 @@ rec {
     hash = "510941fbeecc62a2c318bc717d32e32b6672ceb64b1795d6b11d8d360dcf52c7";
     deps = with allCrates; [  ];
   };
-  "jni-sys_0_2" = jni-sys_0_2_1;
-  "jni-sys_0" = jni-sys_0_2_1;}
+  jni-sys_0_2_2 = buildCratesLib {
+    name = "jni-sys";
+    version = "0.2.2";
+    hash = "83ba0fad4625733b25833da250d0c84058314e1a276f4939f3e87c195997c206";
+    deps = with allCrates; [  ];
+  };
+  "jni-sys_0_2" = jni-sys_0_2_2;
+  "jni-sys_0" = jni-sys_0_2_2;}

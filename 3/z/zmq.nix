@@ -76,5 +76,11 @@ rec {
     deps = with allCrates; [  all__log.log_0_3 all__zmq-sys.zmq-sys_0_8 all__libc.libc_0_2 all__zmq-sys.zmq-sys_0_8 ];
   };
   "zmq_0_7" = zmq_0_7_0;
-  "zmq_0_8" = zmq_0_8_0;
-  "zmq_0" = zmq_0_8_0;}
+  zmq_0_8_1 = buildCratesLib {
+    name = "zmq";
+    version = "0.8.1";
+    hash = "9623581b345b8a85fb72cae9b2cb67116d73ccb141e6c02f689e311962b74f9c";
+    deps = with allCrates; [  all__libc.libc_0_2 all__zmq-sys.zmq-sys_0_8 all__log.log_0_3 all__zmq-sys.zmq-sys_0_8 ];
+  };
+  "zmq_0_8" = zmq_0_8_1;
+  "zmq_0" = zmq_0_8_1;}

@@ -7,5 +7,19 @@ rec {
     hash = "28995de818192e751e43f78a7e63b44bb52e68902f410c80f5a50896f81e59a8";
     deps = with allCrates; [  all__serde.serde_0_8 ];
   };
+  ruma-api_0_2_0 = buildCratesLib {
+    name = "ruma-api";
+    version = "0.2.0";
+    hash = "5ddd35841f8e4a97ec2a44815b3da7aca89ec8b5abf9b54f44a272072b8553ca";
+    deps = with allCrates; [  all__serde.serde_0_8 ];
+  };
   "ruma-api_0_1" = ruma-api_0_1_0;
-  "ruma-api_0" = ruma-api_0_1_0;}
+  ruma-api_0_3_0 = buildCratesLib {
+    name = "ruma-api";
+    version = "0.3.0";
+    hash = "2aecad3a1f408065794705544572a1f1be9cd8648295cc389db0e73b7b43a2a1";
+    deps = with allCrates; [  all__serde.serde_0_8 ];
+  };
+  "ruma-api_0_2" = ruma-api_0_2_0;
+  "ruma-api_0_3" = ruma-api_0_3_0;
+  "ruma-api_0" = ruma-api_0_3_0;}

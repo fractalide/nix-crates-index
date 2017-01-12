@@ -7,5 +7,11 @@ rec {
     hash = "aa4e52995154bb6f0b41e4379a279482c9387c1632e3798ba4e511ef8c54ee09";
     deps = with allCrates; [  ];
   };
-  "native-tls_0_1" = native-tls_0_1_0;
-  "native-tls_0" = native-tls_0_1_0;}
+  native-tls_0_1_1 = buildCratesLib {
+    name = "native-tls";
+    version = "0.1.1";
+    hash = "b805ee0e8fa268f67a4e5c7f4f80adb8af1fc4428ea0ce5b0ecab1430ef17ec0";
+    deps = with allCrates; [  ];
+  };
+  "native-tls_0_1" = native-tls_0_1_1;
+  "native-tls_0" = native-tls_0_1_1;}

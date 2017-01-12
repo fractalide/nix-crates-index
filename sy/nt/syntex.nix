@@ -321,5 +321,19 @@ rec {
     deps = with allCrates; [  all__syntex_syntax.syntex_syntax_0_52 all__syntex_errors.syntex_errors_0_52 ];
   };
   "syntex_0_51" = syntex_0_51_0;
+  syntex_0_53_0 = buildCratesLib {
+    name = "syntex";
+    version = "0.53.0";
+    hash = "5b8f5635f1741c37137b36cd43d2312bc8c196c14f385c05e7f4850206e28d65";
+    deps = with allCrates; [  all__syntex_syntax.syntex_syntax_0_53 all__syntex_errors.syntex_errors_0_53 ];
+  };
   "syntex_0_52" = syntex_0_52_0;
-  "syntex_0" = syntex_0_52_0;}
+  syntex_0_54_0 = buildCratesLib {
+    name = "syntex";
+    version = "0.54.0";
+    hash = "bb3f52553a966675982404dc34028291b347e0c9a9c0b0b34f2da6be8a0443f8";
+    deps = with allCrates; [  all__syntex_syntax.syntex_syntax_0_54 all__syntex_errors.syntex_errors_0_54 ];
+  };
+  "syntex_0_53" = syntex_0_53_0;
+  "syntex_0_54" = syntex_0_54_0;
+  "syntex_0" = syntex_0_54_0;}

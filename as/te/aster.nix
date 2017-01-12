@@ -456,5 +456,19 @@ rec {
     deps = with allCrates; [  ];
   };
   "aster_0_35" = aster_0_35_1;
+  aster_0_37_0 = buildCratesLib {
+    name = "aster";
+    version = "0.37.0";
+    hash = "48848cffd6084efd82768c8c974e6fa4343b401b3df3fa703282e25efecd8832";
+    deps = with allCrates; [  ];
+  };
   "aster_0_36" = aster_0_36_0;
-  "aster_0" = aster_0_36_0;}
+  aster_0_38_0 = buildCratesLib {
+    name = "aster";
+    version = "0.38.0";
+    hash = "2c9b49e42a449c0b79d8acb91db37621de0978064dca7d3288ddcf030123e5b3";
+    deps = with allCrates; [  ];
+  };
+  "aster_0_37" = aster_0_37_0;
+  "aster_0_38" = aster_0_38_0;
+  "aster_0" = aster_0_38_0;}

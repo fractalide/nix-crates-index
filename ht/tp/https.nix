@@ -14,5 +14,18 @@ rec {
     deps = with allCrates; [  all__time.time_0_1 all__iron.iron_0_4 all__lazysort.lazysort_0_1 all__clap.clap_2_19 all__url.url_1_1 all__mime_guess.mime_guess_1_8 ];
   };
   "https_0_1" = https_0_1_0;
+  https_0_3_0 = buildCratesLib {
+    name = "https";
+    version = "0.3.0";
+    hash = "03c670773e65434f4084bd6f802f9c1a6b91825000da9af34eed94d3c01b2c36";
+    deps = with allCrates; [  all__time.time_0_1 all__clap.clap_2_20 all__lazy_static.lazy_static_0_2 all__url.url_1_2 all__base64.base64_0_2 all__lazysort.lazysort_0_1 all__mime_guess.mime_guess_1_8 all__iron.iron_0_4 ];
+  };
   "https_0_2" = https_0_2_0;
-  "https_0" = https_0_2_0;}
+  https_0_3_1 = buildCratesLib {
+    name = "https";
+    version = "0.3.1";
+    hash = "d494fb391c71b446008d0f8506c25c981aa31f07f53a5793a2c6857a9405180c";
+    deps = with allCrates; [  all__flate2.flate2_0_2 all__url.url_1_2 all__md6.md6_1_1 all__lazysort.lazysort_0_1 all__lazy_static.lazy_static_0_2 all__brotli2.brotli2_0_2 all__iron.iron_0_4 all__bzip2.bzip2_0_3 all__time.time_0_1 all__base64.base64_0_2 all__clap.clap_2_20 all__mime_guess.mime_guess_1_8 ];
+  };
+  "https_0_3" = https_0_3_1;
+  "https_0" = https_0_3_1;}

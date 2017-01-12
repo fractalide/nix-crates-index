@@ -29,5 +29,11 @@ rec {
     deps = with allCrates; [  all__ioctl.ioctl_0_3 all__libc.libc_0_2 all__uuid.uuid_0_3 ];
   };
   "btrfs_1_1" = btrfs_1_1_0;
-  "btrfs_1_2" = btrfs_1_2_0;
-  "btrfs_1" = btrfs_1_2_0;}
+  btrfs_1_2_1 = buildCratesLib {
+    name = "btrfs";
+    version = "1.2.1";
+    hash = "92f4527795dbab99ea5d15231b167f085e25908975f902b04e41ebf8deb19ccf";
+    deps = with allCrates; [  all__ioctl.ioctl_0_3 all__crc.crc_1_4 all__minilzo.minilzo_0_1 all__libc.libc_0_2 all__lazy_static.lazy_static_0_2 all__flate2.flate2_0_2 all__uuid.uuid_0_3 ];
+  };
+  "btrfs_1_2" = btrfs_1_2_1;
+  "btrfs_1" = btrfs_1_2_1;}

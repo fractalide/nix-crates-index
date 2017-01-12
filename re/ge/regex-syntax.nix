@@ -129,5 +129,12 @@ rec {
     hash = "f9ec002c35e86791825ed294b50008eea9ddfc8def4420124fbc6b08db834957";
     deps = with allCrates; [  ];
   };
+  regex-syntax_0_4_0 = buildCratesLib {
+    name = "regex-syntax";
+    version = "0.4.0";
+    hash = "2f9191b1f57603095f105d317e375d19b1c9c5c3185ea9633a99a6dcbed04457";
+    deps = with allCrates; [  ];
+  };
   "regex-syntax_0_3" = regex-syntax_0_3_9;
-  "regex-syntax_0" = regex-syntax_0_3_9;}
+  "regex-syntax_0_4" = regex-syntax_0_4_0;
+  "regex-syntax_0" = regex-syntax_0_4_0;}

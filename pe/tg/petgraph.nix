@@ -281,5 +281,11 @@ rec {
     hash = "482cccfa008640b6d0f85733d63c4146ec5db2b76101ecfb9ba4b1eb57be29aa";
     deps = with allCrates; [  all__fixedbitset.fixedbitset_0_1 ];
   };
-  "petgraph_0_4" = petgraph_0_4_1;
-  "petgraph_0" = petgraph_0_4_1;}
+  petgraph_0_4_2 = buildCratesLib {
+    name = "petgraph";
+    version = "0.4.2";
+    hash = "d7367187d39513428bbc0718eff8f26114a80198520c2662f46883099443b6de";
+    deps = with allCrates; [  all__fixedbitset.fixedbitset_0_1 ];
+  };
+  "petgraph_0_4" = petgraph_0_4_2;
+  "petgraph_0" = petgraph_0_4_2;}

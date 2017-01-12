@@ -33,5 +33,24 @@ rec {
     hash = "ed4d0734dcec87da461a68fb936fe9adb9a956acf2c8ed075d753b661457117a";
     deps = with allCrates; [  all__integer-encoding.integer-encoding_1_0 all__crc.crc_1_2 ];
   };
-  "sstable_0_3" = sstable_0_3_1;
-  "sstable_0" = sstable_0_3_1;}
+  sstable_0_3_2 = buildCratesLib {
+    name = "sstable";
+    version = "0.3.2";
+    hash = "104fa464170a040f06e82f210e3752906053aa657874e32b75754352c594e7db";
+    deps = with allCrates; [  all__integer-encoding.integer-encoding_1_0 all__crc.crc_1_2 ];
+  };
+  sstable_0_4_0 = buildCratesLib {
+    name = "sstable";
+    version = "0.4.0";
+    hash = "31f6f3d664f3f7635ed967a685e0764f7ed4d0e41ce45ecad8c069bbf3a00ce0";
+    deps = with allCrates; [  all__crc.crc_1_2 all__integer-encoding.integer-encoding_1_0 ];
+  };
+  "sstable_0_3" = sstable_0_3_2;
+  sstable_0_4_1 = buildCratesLib {
+    name = "sstable";
+    version = "0.4.1";
+    hash = "3d059e3794b861fadbe699a662b3425c2727e29359f5d3dbbdb5332d73b1a4fd";
+    deps = with allCrates; [  all__crc.crc_1_2 all__integer-encoding.integer-encoding_1_0 ];
+  };
+  "sstable_0_4" = sstable_0_4_1;
+  "sstable_0" = sstable_0_4_1;}

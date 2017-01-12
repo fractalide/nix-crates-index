@@ -19,5 +19,11 @@ rec {
     hash = "f8e0064315b35001e159e4032e9dd1396588c67f4e9a7276029f1c724592425a";
     deps = with allCrates; [  ];
   };
-  "flat_map_0_0" = flat_map_0_0_3;
-  "flat_map_0" = flat_map_0_0_3;}
+  flat_map_0_0_4 = buildCratesLib {
+    name = "flat_map";
+    version = "0.0.4";
+    hash = "fc16c081affe2ded9d62cd239a9ef1b4801fa98037b59523014f661c7bee182c";
+    deps = with allCrates; [  ];
+  };
+  "flat_map_0_0" = flat_map_0_0_4;
+  "flat_map_0" = flat_map_0_0_4;}

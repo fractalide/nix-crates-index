@@ -38,5 +38,12 @@ rec {
     deps = with allCrates; [  all__iron.iron_0_4 ];
   };
   "iron-error-router_0_1" = iron-error-router_0_1_5;
+  iron-error-router_0_3_0 = buildCratesLib {
+    name = "iron-error-router";
+    version = "0.3.0";
+    hash = "6b0c6c805b7e844439f86f83314a594487d129fc7fbce1deb8d9ed32de164bd6";
+    deps = with allCrates; [  all__iron.iron_0_5 ];
+  };
   "iron-error-router_0_2" = iron-error-router_0_2_0;
-  "iron-error-router_0" = iron-error-router_0_2_0;}
+  "iron-error-router_0_3" = iron-error-router_0_3_0;
+  "iron-error-router_0" = iron-error-router_0_3_0;}

@@ -183,5 +183,11 @@ rec {
     hash = "ffc7cae7df54ab2c3b9f8cab92b2de395bd8033a3380521d2d23c340e24cc779";
     deps = with allCrates; [  all__shared_library.shared_library_0_1 all__lazy_static.lazy_static_0_2 all__libc.libc_0_2 all__gl_generator.gl_generator_0_5 all__wayland-kbd.wayland-kbd_0_3 all__x11-dl.x11-dl_2_4 all__wayland-window.wayland-window_0_2 all__osmesa-sys.osmesa-sys_0_1 all__wayland-client.wayland-client_0_5 all__android_glue.android_glue_0_2 all__objc.objc_0_2 ];
   };
-  "servo-glutin_0_6" = servo-glutin_0_6_3;
-  "servo-glutin_0" = servo-glutin_0_6_3;}
+  servo-glutin_0_6_4 = buildCratesLib {
+    name = "servo-glutin";
+    version = "0.6.4";
+    hash = "6c32094e9b558e9bf8cec93b9f78fee88e7c30e90341c5014b08a54b1ddce4f7";
+    deps = with allCrates; [  all__shared_library.shared_library_0_1 all__libc.libc_0_2 all__lazy_static.lazy_static_0_2 all__gl_generator.gl_generator_0_5 all__objc.objc_0_2 all__osmesa-sys.osmesa-sys_0_1 all__x11-dl.x11-dl_2_4 all__wayland-window.wayland-window_0_2 all__wayland-kbd.wayland-kbd_0_3 all__wayland-client.wayland-client_0_5 all__android_glue.android_glue_0_2 ];
+  };
+  "servo-glutin_0_6" = servo-glutin_0_6_4;
+  "servo-glutin_0" = servo-glutin_0_6_4;}

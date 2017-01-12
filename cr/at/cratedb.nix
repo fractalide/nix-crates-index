@@ -7,5 +7,11 @@ rec {
     hash = "f65b0eca1c7f688fc825c106d3ef3686918ae5906dbc7093cd9377b6d1352fc8";
     deps = with allCrates; [  all__syntex.syntex_0_48 all__hyper.hyper_0_9 all__serde_codegen.serde_codegen_0_8 all__erased-serde.erased-serde_0_1 all__serde_derive.serde_derive_0_8 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
   };
-  "cratedb_0_1" = cratedb_0_1_0;
-  "cratedb_0" = cratedb_0_1_0;}
+  cratedb_0_1_1 = buildCratesLib {
+    name = "cratedb";
+    version = "0.1.1";
+    hash = "1c86f88f0f4a33f5f3fb748598b35068779e9e866687b3be45d97afd624916a9";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__serde_codegen.serde_codegen_0_8 all__serde_derive.serde_derive_0_8 all__serde.serde_0_8 all__erased-serde.erased-serde_0_1 all__hyper.hyper_0_9 all__rand.rand_0_3 ];
+  };
+  "cratedb_0_1" = cratedb_0_1_1;
+  "cratedb_0" = cratedb_0_1_1;}

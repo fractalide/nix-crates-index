@@ -13,5 +13,11 @@ rec {
     hash = "f9c334f32d1f26d296ac2bf1095e3a70fd26bed56b1d4b8e33a24603589351f5";
     deps = with allCrates; [  ];
   };
-  "quadrature_0_1" = quadrature_0_1_1;
-  "quadrature_0" = quadrature_0_1_1;}
+  quadrature_0_1_2 = buildCratesLib {
+    name = "quadrature";
+    version = "0.1.2";
+    hash = "2054ccb02f454fcb2bc81e343aa0a171636a6331003fd5ec24c47a10966634b7";
+    deps = with allCrates; [  ];
+  };
+  "quadrature_0_1" = quadrature_0_1_2;
+  "quadrature_0" = quadrature_0_1_2;}

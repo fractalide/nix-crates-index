@@ -399,5 +399,19 @@ rec {
     deps = with allCrates; [  all__syntex_pos.syntex_pos_0_52 all__syntex_errors.syntex_errors_0_52 all__unicode-xid.unicode-xid_0_0_3 all__libc.libc_0_2 all__bitflags.bitflags_0_7 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__term.term_0_4 ];
   };
   "syntex_syntax_0_51" = syntex_syntax_0_51_0;
+  syntex_syntax_0_53_0 = buildCratesLib {
+    name = "syntex_syntax";
+    version = "0.53.0";
+    hash = "3cd35f965370ddb347321bb5f3b48ffb7fdc5fecbdfce7adc257902c0afe72cf";
+    deps = with allCrates; [  all__term.term_0_4 all__log.log_0_3 all__syntex_pos.syntex_pos_0_53 all__libc.libc_0_2 all__bitflags.bitflags_0_7 all__syntex_errors.syntex_errors_0_53 all__unicode-xid.unicode-xid_0_0_3 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
   "syntex_syntax_0_52" = syntex_syntax_0_52_0;
-  "syntex_syntax_0" = syntex_syntax_0_52_0;}
+  syntex_syntax_0_54_0 = buildCratesLib {
+    name = "syntex_syntax";
+    version = "0.54.0";
+    hash = "dc960085bae44591e22d01f6c0e82a8aec832f8659aca556cdf8ecbdac2bb47b";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__unicode-xid.unicode-xid_0_0_4 all__log.log_0_3 all__bitflags.bitflags_0_7 all__syntex_errors.syntex_errors_0_54 all__libc.libc_0_2 all__syntex_pos.syntex_pos_0_54 all__term.term_0_4 ];
+  };
+  "syntex_syntax_0_53" = syntex_syntax_0_53_0;
+  "syntex_syntax_0_54" = syntex_syntax_0_54_0;
+  "syntex_syntax_0" = syntex_syntax_0_54_0;}

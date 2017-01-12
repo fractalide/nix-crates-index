@@ -96,5 +96,11 @@ rec {
     hash = "825a162a05af56cbae36c8c925b4b3babf858aa85eae23911f6a7f18143a61a9";
     deps = with allCrates; [  all__env_logger.env_logger_0_3 all__syntex_syntax.syntex_syntax_0_52 all__typed-arena.typed-arena_1_2 all__toml.toml_0_2 all__syntex_errors.syntex_errors_0_52 all__log.log_0_3 all__clap.clap_2_19 ];
   };
-  "racer_2_0" = racer_2_0_3;
-  "racer_2" = racer_2_0_3;}
+  racer_2_0_4 = buildCratesLib {
+    name = "racer";
+    version = "2.0.4";
+    hash = "58f8c494a28e756e4cb956e28b2a5bdbce1767f45b543b5adcba167fb5a69886";
+    deps = with allCrates; [  all__toml.toml_0_2 all__typed-arena.typed-arena_1_2 all__syntex_errors.syntex_errors_0_52 all__env_logger.env_logger_0_3 all__clap.clap_2_19 all__log.log_0_3 all__syntex_syntax.syntex_syntax_0_52 ];
+  };
+  "racer_2_0" = racer_2_0_4;
+  "racer_2" = racer_2_0_4;}

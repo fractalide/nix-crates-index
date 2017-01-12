@@ -104,5 +104,12 @@ rec {
     deps = with allCrates; [  all__range.range_0_3 ];
   };
   "read_token_0_6" = read_token_0_6_2;
+  read_token_0_8_0 = buildCratesLib {
+    name = "read_token";
+    version = "0.8.0";
+    hash = "ebc5489d4e6c140c386dd87e3a157e0e27b79186ebb2d7979117242390d4e892";
+    deps = with allCrates; [  all__range.range_0_3 ];
+  };
   "read_token_0_7" = read_token_0_7_0;
-  "read_token_0" = read_token_0_7_0;}
+  "read_token_0_8" = read_token_0_8_0;
+  "read_token_0" = read_token_0_8_0;}

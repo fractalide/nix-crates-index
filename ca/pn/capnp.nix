@@ -518,5 +518,12 @@ rec {
     hash = "b55264c94911026888bd2b0173e7685b7a20196fbcbcb8e685065c773a044b7e";
     deps = with allCrates; [  all__byteorder.byteorder_0_4 ];
   };
+  capnp_0_8_0 = buildCratesLib {
+    name = "capnp";
+    version = "0.8.0";
+    hash = "a21f6eae08bc436f7ed49fcf8908e203d872119b5d4a14017d9860fe39b48b1c";
+    deps = with allCrates; [  all__byteorder.byteorder_1_0 ];
+  };
   "capnp_0_7" = capnp_0_7_5;
-  "capnp_0" = capnp_0_7_5;}
+  "capnp_0_8" = capnp_0_8_0;
+  "capnp_0" = capnp_0_8_0;}

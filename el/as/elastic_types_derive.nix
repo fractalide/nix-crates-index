@@ -20,5 +20,26 @@ rec {
     deps = with allCrates; [  all__serde.serde_0_8 all__syn.syn_0_9 all__serde_codegen_internals.serde_codegen_internals_0_10 all__quote.quote_0_3 all__serde_json.serde_json_0_8 ];
   };
   "elastic_types_derive_0_6" = elastic_types_derive_0_6_1;
+  elastic_types_derive_0_8_0 = buildCratesLib {
+    name = "elastic_types_derive";
+    version = "0.8.0";
+    hash = "353324cfaf1ac4e4cf016c140ee7b8e668f3b0925edba490de57ccdb903dcc75";
+    deps = with allCrates; [  all__serde_codegen_internals.serde_codegen_internals_0_10 all__syn.syn_0_9 all__serde_json.serde_json_0_8 all__quote.quote_0_3 all__serde.serde_0_8 ];
+  };
   "elastic_types_derive_0_7" = elastic_types_derive_0_7_0;
-  "elastic_types_derive_0" = elastic_types_derive_0_7_0;}
+  elastic_types_derive_0_9_0 = buildCratesLib {
+    name = "elastic_types_derive";
+    version = "0.9.0";
+    hash = "ea7e5072874c740eab2c1695566eac0476c480987785ac7d03a2ac5b28f8b1e9";
+    deps = with allCrates; [  all__serde.serde_0_8 all__serde_codegen_internals.serde_codegen_internals_0_10 all__syn.syn_0_9 all__serde_json.serde_json_0_8 all__quote.quote_0_3 ];
+  };
+  "elastic_types_derive_0_8" = elastic_types_derive_0_8_0;
+  elastic_types_derive_0_10_0 = buildCratesLib {
+    name = "elastic_types_derive";
+    version = "0.10.0";
+    hash = "e4ca56a2673e9b4f25e524d8719944ba8bf2bfabd0dcdd31265244a475afe8af";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__syn.syn_0_9 all__serde_codegen_internals.serde_codegen_internals_0_10 all__serde.serde_0_8 all__quote.quote_0_3 ];
+  };
+  "elastic_types_derive_0_9" = elastic_types_derive_0_9_0;
+  "elastic_types_derive_0_10" = elastic_types_derive_0_10_0;
+  "elastic_types_derive_0" = elastic_types_derive_0_10_0;}

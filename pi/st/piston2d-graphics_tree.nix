@@ -21,5 +21,12 @@ rec {
     deps = with allCrates; [  all__image.image_0_10 all__range.range_0_3 all__piston-texture.piston-texture_0_5 all__piston2d-graphics.piston2d-graphics_0_19 ];
   };
   "piston2d-graphics_tree_0_2" = piston2d-graphics_tree_0_2_0;
+  piston2d-graphics_tree_0_4_0 = buildCratesLib {
+    name = "piston2d-graphics_tree";
+    version = "0.4.0";
+    hash = "e117db15629fa3fa49d9a03107c7b029c9a7ac4236bb7f256f65828d8aa7ac8b";
+    deps = with allCrates; [  all__range.range_0_3 all__image.image_0_12 all__piston-texture.piston-texture_0_5 all__piston2d-graphics.piston2d-graphics_0_19 ];
+  };
   "piston2d-graphics_tree_0_3" = piston2d-graphics_tree_0_3_0;
-  "piston2d-graphics_tree_0" = piston2d-graphics_tree_0_3_0;}
+  "piston2d-graphics_tree_0_4" = piston2d-graphics_tree_0_4_0;
+  "piston2d-graphics_tree_0" = piston2d-graphics_tree_0_4_0;}

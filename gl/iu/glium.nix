@@ -418,5 +418,12 @@ rec {
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__backtrace.backtrace_0_2 all__smallvec.smallvec_0_1 all__gl_generator.gl_generator_0_5 ];
   };
   "glium_0_14" = glium_0_14_0;
+  glium_0_16_0 = buildCratesLib {
+    name = "glium";
+    version = "0.16.0";
+    hash = "7c468bf7855f25954a1140f066ebacc1ad5342fd33bf96be28e184c084176f11";
+    deps = with allCrates; [  all__fnv.fnv_1_0_3 all__lazy_static.lazy_static_0_2 all__smallvec.smallvec_0_1 all__backtrace.backtrace_0_2 all__gl_generator.gl_generator_0_5 ];
+  };
   "glium_0_15" = glium_0_15_0;
-  "glium_0" = glium_0_15_0;}
+  "glium_0_16" = glium_0_16_0;
+  "glium_0" = glium_0_16_0;}

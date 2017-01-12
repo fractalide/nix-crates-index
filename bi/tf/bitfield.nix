@@ -61,5 +61,11 @@ rec {
     hash = "086f160d0e86c4afd44a89f7f530e12b49d36e5ac08d75ba1f4517a1ef28fc86";
     deps = with allCrates; [  ];
   };
-  "bitfield_0_0" = bitfield_0_0_10;
-  "bitfield_0" = bitfield_0_0_10;}
+  bitfield_0_0_11 = buildCratesLib {
+    name = "bitfield";
+    version = "0.0.11";
+    hash = "ff94b6920038f15c8551c9387b8a8c9a86845106b425425c83738408e5d59b9a";
+    deps = with allCrates; [  ];
+  };
+  "bitfield_0_0" = bitfield_0_0_11;
+  "bitfield_0" = bitfield_0_0_11;}

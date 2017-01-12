@@ -37,5 +37,11 @@ rec {
     hash = "826e31600625675411397496cfa5cd99adc2b6e92b486b884d1c55450f8d8e63";
     deps = with allCrates; [  all__env_logger.env_logger_0_3 all__toml.toml_0_2 all__url.url_1 all__clap.clap_2 all__rustc-serialize.rustc-serialize_0_3 pbr all__time.time_0_1 all__term.term_0_4 all__lsio.lsio_0_1 all__aws-sdk-rust.aws-sdk-rust_0_1 all__chrono.chrono_0_2 all__md5.md5_0_2 ];
   };
-  "s3lsio_0_1" = s3lsio_0_1_16;
-  "s3lsio_0" = s3lsio_0_1_16;}
+  s3lsio_0_1_21 = buildCratesLib {
+    name = "s3lsio";
+    version = "0.1.21";
+    hash = "7dfbdb033c5aedd4c97cab33847b8d0e817f30a141d3d387727378f77631d16e";
+    deps = with allCrates; [  all__toml.toml_0_2 all__url.url_1 all__term.term_0_4 all__md5.md5_0_2 all__chrono.chrono_0_2 all__lsio.lsio_0_1 all__time.time_0_1 pbr all__aws-sdk-rust.aws-sdk-rust_0_1 all__rustc-serialize.rustc-serialize_0_3 all__rand.rand_0_3 all__env_logger.env_logger_0_3 all__clap.clap_2 ];
+  };
+  "s3lsio_0_1" = s3lsio_0_1_21;
+  "s3lsio_0" = s3lsio_0_1_21;}

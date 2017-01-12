@@ -193,5 +193,12 @@ rec {
     deps = with allCrates; [  all__url.url_1_2 all__lazy_static.lazy_static_0_2 all__time.time_0_1 all__md5.md5_0_2 all__rustc-serialize.rustc-serialize_0_3 all__regex.regex_0_1 all__log.log_0_3 all__xml-rs.xml-rs_0_1 all__serde.serde_0_8 all__ring.ring_0_4 all__chrono.chrono_0_2 all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__rusoto_credential.rusoto_credential_0_2 all__rustc_version.rustc_version_0_1 rusoto_codegen ];
   };
   "rusoto_0_19" = rusoto_0_19_1;
+  rusoto_0_21_0 = buildCratesLib {
+    name = "rusoto";
+    version = "0.21.0";
+    hash = "7549b06791c8bb082f4a96468ac64af2d560f3a79716f6bdf2da8e1243ef45dd";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__ring.ring_0_6 all__url.url_1_2 all__lazy_static.lazy_static_0_2 all__regex.regex_0_1 all__hyper.hyper_0_9 all__rustc-serialize.rustc-serialize_0_3 all__log.log_0_3 all__chrono.chrono_0_2 all__md5.md5_0_2 all__serde.serde_0_8 all__rusoto_credential.rusoto_credential_0_3 all__time.time_0_1 all__xml-rs.xml-rs_0_1 all__rustc_version.rustc_version_0_1 rusoto_codegen ];
+  };
   "rusoto_0_20" = rusoto_0_20_0;
-  "rusoto_0" = rusoto_0_20_0;}
+  "rusoto_0_21" = rusoto_0_21_0;
+  "rusoto_0" = rusoto_0_21_0;}

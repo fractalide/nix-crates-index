@@ -50,5 +50,11 @@ rec {
     hash = "205495562dee0b698398cf7a13849c895473e1eb227af550d57b37ab1b6524b6";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__libc.libc_0_2 all__shared_library.shared_library_0_1 all__objc.objc_0_2 all__wayland-client.wayland-client_0_7 all__x11-dl.x11-dl_2_8 all__wayland-kbd.wayland-kbd_0_6 all__wayland-window.wayland-window_0_4 all__android_glue.android_glue_0_2 ];
   };
-  "winit_0_5" = winit_0_5_6;
-  "winit_0" = winit_0_5_6;}
+  winit_0_5_7 = buildCratesLib {
+    name = "winit";
+    version = "0.5.7";
+    hash = "43f10685de37740dd0a63bffb4449c805866941b0c2eb56aa3d09dc2c25475b5";
+    deps = with allCrates; [  all__shared_library.shared_library_0_1 all__lazy_static.lazy_static_0_2 all__libc.libc_0_2 all__android_glue.android_glue_0_2 all__objc.objc_0_2 all__wayland-client.wayland-client_0_7 all__wayland-window.wayland-window_0_4 all__wayland-kbd.wayland-kbd_0_6 all__x11-dl.x11-dl_2_8 ];
+  };
+  "winit_0_5" = winit_0_5_7;
+  "winit_0" = winit_0_5_7;}

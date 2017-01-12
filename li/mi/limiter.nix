@@ -45,5 +45,11 @@ rec {
     hash = "45e6a9dbdeedb1cf698f02166cfc475debec8722a4949a53cee572dd3163e7dc";
     deps = with allCrates; [  all__iron.iron_0_4 ];
   };
-  "limiter_0_3" = limiter_0_3_1;
-  "limiter_0" = limiter_0_3_1;}
+  limiter_0_3_2 = buildCratesLib {
+    name = "limiter";
+    version = "0.3.2";
+    hash = "cbc5d8bf63416df5331084dd9883b9598582f0d7ad5e42d53e55b05366931676";
+    deps = with allCrates; [  all__url.url_1_2 all__iron.iron_0_5 ];
+  };
+  "limiter_0_3" = limiter_0_3_2;
+  "limiter_0" = limiter_0_3_2;}

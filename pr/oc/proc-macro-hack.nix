@@ -7,5 +7,18 @@ rec {
     hash = "ae423087b91c101e6599f4bfad6d98970802f0c2f34e2c0268296e6787473242";
     deps = with allCrates; [  ];
   };
+  proc-macro-hack_0_2_0 = buildCratesLib {
+    name = "proc-macro-hack";
+    version = "0.2.0";
+    hash = "f6e1d4137bbb9b27440e9675921ad60faf0ad298e7e00504e196409b504d7ce9";
+    deps = with allCrates; [  ];
+  };
   "proc-macro-hack_0_1" = proc-macro-hack_0_1_0;
-  "proc-macro-hack_0" = proc-macro-hack_0_1_0;}
+  proc-macro-hack_0_2_1 = buildCratesLib {
+    name = "proc-macro-hack";
+    version = "0.2.1";
+    hash = "dba3bb7102364bb89dda8e810a2aa4fbe3823d1e1c4734aab7a9ee2b2d7306f4";
+    deps = with allCrates; [  ];
+  };
+  "proc-macro-hack_0_2" = proc-macro-hack_0_2_1;
+  "proc-macro-hack_0" = proc-macro-hack_0_2_1;}

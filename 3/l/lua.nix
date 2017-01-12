@@ -55,5 +55,11 @@ rec {
     hash = "79c997c0c96ea522435a3c3c976cda1beb09a4f9b7930fad2b599e245bb10655";
     deps = with allCrates; [  all__libc.libc_0_2 all__bitflags.bitflags_0_1 all__gcc.gcc_0_3 ];
   };
-  "lua_0_0" = lua_0_0_9;
-  "lua_0" = lua_0_0_9;}
+  lua_0_0_10 = buildCratesLib {
+    name = "lua";
+    version = "0.0.10";
+    hash = "652f45fa7edd0b02ae5e8629930046eaf105edf4fe10b609071b2938470232f2";
+    deps = with allCrates; [  all__bitflags.bitflags_0_1 all__libc.libc_0_2 all__gcc.gcc_0_3 ];
+  };
+  "lua_0_0" = lua_0_0_10;
+  "lua_0" = lua_0_0_10;}

@@ -92,5 +92,12 @@ rec {
     hash = "f7ed85e0daed5cc215d666332f673a735daca8ac69d9367ed651a4481d39317a";
     deps = with allCrates; [  all__rand.rand_0_3 all__libc.libc_0_2 ];
   };
+  memsec_0_3_0 = buildCratesLib {
+    name = "memsec";
+    version = "0.3.0";
+    hash = "c1e24ff6f09c1975b6e2afbc49f3d795db52aca6489763092c907bdf68ca966b";
+    deps = with allCrates; [  all__rand.rand_0_3 all__libc.libc_0_2 ];
+  };
   "memsec_0_2" = memsec_0_2_3;
-  "memsec_0" = memsec_0_2_3;}
+  "memsec_0_3" = memsec_0_3_0;
+  "memsec_0" = memsec_0_3_0;}

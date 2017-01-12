@@ -7,5 +7,12 @@ rec {
     hash = "86e565c2237b6e1993261e69dcba5d8ee527c0046a960228c6bdabd7835fa39c";
     deps = with allCrates; [  all__num.num_0_1 all__num-macros.num-macros_0_1 all__bitflags.bitflags_0_6 all__regex.regex_0_1 all__serde_json.serde_json_0_8 all__serde.serde_0_8 ];
   };
+  rspirv_0_2_0 = buildCratesLib {
+    name = "rspirv";
+    version = "0.2.0";
+    hash = "21cfdcb84f3a02f5ec66a24fe8cffe708ed57048e90e2224980925b308cd72ca";
+    deps = with allCrates; [  all__num.num_0_1 all__bitflags.bitflags_0_6 all__num-derive.num-derive_0_1 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__regex.regex_0_1 ];
+  };
   "rspirv_0_1" = rspirv_0_1_0;
-  "rspirv_0" = rspirv_0_1_0;}
+  "rspirv_0_2" = rspirv_0_2_0;
+  "rspirv_0" = rspirv_0_2_0;}

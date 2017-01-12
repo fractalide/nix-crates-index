@@ -69,5 +69,11 @@ rec {
     hash = "1917b64743bfffdafcd63b04e0117930a901e88e3a3e08c15f6742bfae657f6a";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 ];
   };
-  "tag_safe_0_2" = tag_safe_0_2_1;
-  "tag_safe_0" = tag_safe_0_2_1;}
+  tag_safe_0_2_2 = buildCratesLib {
+    name = "tag_safe";
+    version = "0.2.2";
+    hash = "3ea94f90c361b59c67de303216a528e744a66091ce51198707f47dc5879e5231";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 ];
+  };
+  "tag_safe_0_2" = tag_safe_0_2_2;
+  "tag_safe_0" = tag_safe_0_2_2;}

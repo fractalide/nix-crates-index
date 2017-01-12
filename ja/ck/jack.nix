@@ -38,5 +38,11 @@ rec {
     hash = "f640ccb635aa51abc15477e0d9abc7693f219c8a6bdabd1007cb9d4272eabad8";
     deps = with allCrates; [  all__jack-sys.jack-sys_0_1 all__libc.libc_0_2 all__bitflags.bitflags_0_7 all__lazy_static.lazy_static_0_2 ];
   };
-  "jack_0_2" = jack_0_2_1;
-  "jack_0" = jack_0_2_1;}
+  jack_0_2_2 = buildCratesLib {
+    name = "jack";
+    version = "0.2.2";
+    hash = "63cf6cc88346d8e610a5d03a40846e002da7d519f9629544dd8c01f36d24b357";
+    deps = with allCrates; [  all__bitflags.bitflags_0_7 all__libc.libc_0_2 all__jack-sys.jack-sys_0_1 all__lazy_static.lazy_static_0_2 ];
+  };
+  "jack_0_2" = jack_0_2_2;
+  "jack_0" = jack_0_2_2;}

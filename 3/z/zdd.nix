@@ -7,5 +7,12 @@ rec {
     hash = "0c19407ebda17fe5a059adb41cdd22603fde14f68474974f776fe76319705414";
     deps = with allCrates; [  all__hashconsing.hashconsing_0_3 all__rand.rand_0_3 ];
   };
+  zdd_0_2_0 = buildCratesLib {
+    name = "zdd";
+    version = "0.2.0";
+    hash = "ac1f235c4613d468bd9fa7ff0706fe8648dc2427f25b8bb56d40f64f1c6884fc";
+    deps = with allCrates; [  all__hashconsing.hashconsing_0 all__rand.rand_0 ];
+  };
   "zdd_0_1" = zdd_0_1_0;
-  "zdd_0" = zdd_0_1_0;}
+  "zdd_0_2" = zdd_0_2_0;
+  "zdd_0" = zdd_0_2_0;}

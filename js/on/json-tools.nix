@@ -34,5 +34,19 @@ rec {
     deps = with allCrates; [  ];
   };
   "json-tools_0_2" = json-tools_0_2_0;
+  json-tools_1_0_0 = buildCratesLib {
+    name = "json-tools";
+    version = "1.0.0";
+    hash = "c1ece2873590f899f91535bb2eda27789bd446b5d10ac159a4c217f2b101b526";
+    deps = with allCrates; [  ];
+  };
   "json-tools_0_3" = json-tools_0_3_0;
-  "json-tools_0" = json-tools_0_3_0;}
+  "json-tools_0" = json-tools_0_3_0;
+  json-tools_1_0_1 = buildCratesLib {
+    name = "json-tools";
+    version = "1.0.1";
+    hash = "2e95efb9e47aad18dcc29361a14558fabeb7ea0b13f6a3def55580c246c737dd";
+    deps = with allCrates; [  ];
+  };
+  "json-tools_1_0" = json-tools_1_0_1;
+  "json-tools_1" = json-tools_1_0_1;}

@@ -7,5 +7,12 @@ rec {
     hash = "b245039eddbd1a051b8bfa5d5b6afaad6d34d172057a15d561e80b50b4978e8d";
     deps = with allCrates; [  ];
   };
+  bitreader_0_2_0 = buildCratesLib {
+    name = "bitreader";
+    version = "0.2.0";
+    hash = "8319aa6588c40cce19a135009ec70dc730a34ed9d27bab2409298b948546da7a";
+    deps = with allCrates; [  ];
+  };
   "bitreader_0_1" = bitreader_0_1_0;
-  "bitreader_0" = bitreader_0_1_0;}
+  "bitreader_0_2" = bitreader_0_2_0;
+  "bitreader_0" = bitreader_0_2_0;}

@@ -26,5 +26,12 @@ rec {
     deps = with allCrates; [  all__clap.clap_2_19 all__rand.rand_0_3 ];
   };
   "rpwg_0_1" = rpwg_0_1_2;
+  rpwg_0_3_0 = buildCratesLib {
+    name = "rpwg";
+    version = "0.3.0";
+    hash = "0aae52a1ff41146bd6502d796c4bb9567e23248e03c47e3855982dfaa1bde9de";
+    deps = with allCrates; [  all__rand.rand_0_3 all__clap.clap_2_19 ];
+  };
   "rpwg_0_2" = rpwg_0_2_0;
-  "rpwg_0" = rpwg_0_2_0;}
+  "rpwg_0_3" = rpwg_0_3_0;
+  "rpwg_0" = rpwg_0_3_0;}

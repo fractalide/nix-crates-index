@@ -81,5 +81,12 @@ rec {
     hash = "0c0aea7e6e026f9090c56aa7cda9d4ad6f182c717f0640cb03beace1f75a43d2";
     deps = with allCrates; [  all__iron.iron_0_4 all__plugin.plugin_0_2 ];
   };
+  persistent_0_3_0 = buildCratesLib {
+    name = "persistent";
+    version = "0.3.0";
+    hash = "d4c9c94f2ef72dc272c6bcc8157ccf2bc7da14f4c58c69059ac2fc48492d6916";
+    deps = with allCrates; [  all__iron.iron_0_5 all__plugin.plugin_0_2 ];
+  };
   "persistent_0_2" = persistent_0_2_1;
-  "persistent_0" = persistent_0_2_1;}
+  "persistent_0_3" = persistent_0_3_0;
+  "persistent_0" = persistent_0_3_0;}

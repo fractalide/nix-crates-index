@@ -56,5 +56,11 @@ rec {
     hash = "b678faf43999ffaf6fcbf493cc02a00b00b765be7ec58367c1b77b6b3ae949aa";
     deps = with allCrates; [  all__memsec.memsec_0_2 ];
   };
-  "seckey_0_2" = seckey_0_2_5;
-  "seckey_0" = seckey_0_2_5;}
+  seckey_0_2_6 = buildCratesLib {
+    name = "seckey";
+    version = "0.2.6";
+    hash = "2cd243d4684cfaf0d70a120393740579dcc3a095ba345d39fe8320568fddc2d2";
+    deps = with allCrates; [  all__memsec.memsec_0_3 ];
+  };
+  "seckey_0_2" = seckey_0_2_6;
+  "seckey_0" = seckey_0_2_6;}

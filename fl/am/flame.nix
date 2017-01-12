@@ -67,5 +67,11 @@ rec {
     hash = "f202258cfcd638d60a195f1e16dcdd75e805d24689f8975c7b3d9d1b90aa42be";
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__thread-id.thread-id_2_0_0 ];
   };
-  "flame_0_1" = flame_0_1_10;
-  "flame_0" = flame_0_1_10;}
+  flame_0_1_11 = buildCratesLib {
+    name = "flame";
+    version = "0.1.11";
+    hash = "6d0af22a282c95218961e02030da0b4af46c1e1b119b5057dcf7918ee1e96177";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__thread-id.thread-id_2_0_0 ];
+  };
+  "flame_0_1" = flame_0_1_11;
+  "flame_0" = flame_0_1_11;}

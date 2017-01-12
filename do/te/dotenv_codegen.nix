@@ -57,5 +57,12 @@ rec {
     hash = "4a1fb3200aaf202927cec798d53b33ff692fd96bde2ea392fd3ed20029464fd7";
     deps = with allCrates; [  all__dotenv.dotenv_0_8 ];
   };
+  dotenv_codegen_0_10_0 = buildCratesLib {
+    name = "dotenv_codegen";
+    version = "0.10.0";
+    hash = "db383639c143d2346388b345e15853a3bccf0501e1a27e9c27667645541fe0c5";
+    deps = with allCrates; [  all__dotenv.dotenv_0_8 ];
+  };
   "dotenv_codegen_0_9" = dotenv_codegen_0_9_3;
-  "dotenv_codegen_0" = dotenv_codegen_0_9_3;}
+  "dotenv_codegen_0_10" = dotenv_codegen_0_10_0;
+  "dotenv_codegen_0" = dotenv_codegen_0_10_0;}

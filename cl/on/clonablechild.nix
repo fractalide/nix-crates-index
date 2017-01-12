@@ -7,5 +7,11 @@ rec {
     hash = "d74eb2288c216e9eb98b93f557b2be3124c0a5d265b3ecd7c04e91c9f0882a74";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
-  "clonablechild_0_1" = clonablechild_0_1_0;
-  "clonablechild_0" = clonablechild_0_1_0;}
+  clonablechild_0_1_1 = buildCratesLib {
+    name = "clonablechild";
+    version = "0.1.1";
+    hash = "4a4946a850c1e921fbdd9a1f92bf1298c41a301c0f6e9bacbabf95ea7d6d0225";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "clonablechild_0_1" = clonablechild_0_1_1;
+  "clonablechild_0" = clonablechild_0_1_1;}

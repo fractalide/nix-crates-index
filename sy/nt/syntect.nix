@@ -61,5 +61,11 @@ rec {
     hash = "d89b830beceb259c98167444f74482d9016c82d479fb602b8319d34128fcf542";
     deps = with allCrates; [  all__flate2.flate2_0_2 all__plist.plist_0_0_14 all__fnv.fnv_1_0_2 all__rustc-serialize.rustc-serialize_0_3 all__lazy_static.lazy_static_0_2 all__bincode.bincode_0_6 all__regex-syntax.regex-syntax_0_3 all__walkdir.walkdir_0_1 all__yaml-rust.yaml-rust_0_3 all__onig.onig_1_1 all__bitflags.bitflags_0_7 ];
   };
-  "syntect_1_0" = syntect_1_0_2;
-  "syntect_1" = syntect_1_0_2;}
+  syntect_1_0_3 = buildCratesLib {
+    name = "syntect";
+    version = "1.0.3";
+    hash = "ec9348a972d85073ab0bccaadfc517ef7961c8260a14585fc74aacbdd2fe807d";
+    deps = with allCrates; [  all__walkdir.walkdir_0_1 all__fnv.fnv_1_0_2 all__lazy_static.lazy_static_0_2 all__yaml-rust.yaml-rust_0_3 all__bitflags.bitflags_0_7 all__onig.onig_1_1 all__regex-syntax.regex-syntax_0_3 all__rustc-serialize.rustc-serialize_0_3 all__flate2.flate2_0_2 all__bincode.bincode_0_6 all__plist.plist_0_0_14 ];
+  };
+  "syntect_1_0" = syntect_1_0_3;
+  "syntect_1" = syntect_1_0_3;}

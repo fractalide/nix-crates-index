@@ -161,5 +161,24 @@ rec {
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__hyper.hyper_0_9 all__log.log_0_3 all__cookie.cookie_0_2 all__regex.regex_0_1 all__time.time_0_1 ];
   };
   "webdriver_0_16" = webdriver_0_16_0;
-  "webdriver_0_17" = webdriver_0_17_0;
-  "webdriver_0" = webdriver_0_17_0;}
+  webdriver_0_17_1 = buildCratesLib {
+    name = "webdriver";
+    version = "0.17.1";
+    hash = "b6a882a0a869b3c24ea501e1219c5385f0e085773ffbbc3217f8c2b720cb7b03";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__log.log_0_3 all__time.time_0_1 all__cookie.cookie_0_2 all__hyper.hyper_0_9 all__regex.regex_0_1 ];
+  };
+  webdriver_0_18_0 = buildCratesLib {
+    name = "webdriver";
+    version = "0.18.0";
+    hash = "8cf640310f06947d2b464bc3186dfc70900250d0d921118bb891ac69add16887";
+    deps = with allCrates; [  all__regex.regex_0_1 all__cookie.cookie_0_2 all__hyper.hyper_0_9 all__rustc-serialize.rustc-serialize_0_3 all__log.log_0_3 all__time.time_0_1 ];
+  };
+  "webdriver_0_17" = webdriver_0_17_1;
+  webdriver_0_18_1 = buildCratesLib {
+    name = "webdriver";
+    version = "0.18.1";
+    hash = "05abc445aa37b8cba7f51f4b12a559ae2c20ced669a3cbcb70c49a9c19f0b12e";
+    deps = with allCrates; [  all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__time.time_0_1 all__hyper.hyper_0_9 all__regex.regex_0_2 all__cookie.cookie_0_2 ];
+  };
+  "webdriver_0_18" = webdriver_0_18_1;
+  "webdriver_0" = webdriver_0_18_1;}

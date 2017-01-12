@@ -19,5 +19,11 @@ rec {
     hash = "52416b3e937abac22a543a7f1c66bd37feb60137ff1ab42390fa02df85347e58";
     deps = with allCrates; [  all__futures.futures_0_1 all__log.log_0_3 all__slab.slab_0_3 all__mio.mio_0_6 all__scoped-tls.scoped-tls_0_1 ];
   };
-  "tokio-core_0_1" = tokio-core_0_1_2;
-  "tokio-core_0" = tokio-core_0_1_2;}
+  tokio-core_0_1_3 = buildCratesLib {
+    name = "tokio-core";
+    version = "0.1.3";
+    hash = "0800e9475303171ffbc79394079ef503b6d00949649799208f4fc8f1eca20892";
+    deps = with allCrates; [  all__futures.futures_0_1 all__log.log_0_3 all__mio.mio_0_6 all__scoped-tls.scoped-tls_0_1 all__slab.slab_0_3 ];
+  };
+  "tokio-core_0_1" = tokio-core_0_1_3;
+  "tokio-core_0" = tokio-core_0_1_3;}

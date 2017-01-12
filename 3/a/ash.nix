@@ -34,5 +34,46 @@ rec {
     deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__shared_library.shared_library_0_1 ];
   };
   "ash_0_3" = ash_0_3_1;
+  ash_0_10_0 = buildCratesLib {
+    name = "ash";
+    version = "0.10.0";
+    hash = "336f4de64a3b8cf4937c4fb5bb77a2129e68de7ef01f96da60ac0438db58076b";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__shared_library.shared_library_0_1 ];
+  };
   "ash_0_9" = ash_0_9_0;
-  "ash_0" = ash_0_9_0;}
+  ash_0_11_0 = buildCratesLib {
+    name = "ash";
+    version = "0.11.0";
+    hash = "8661d30bae0048fda08da51010537756214d48e6ad903e8bdd578cba53db7fb4";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__shared_library.shared_library_0_1 ];
+  };
+  "ash_0_10" = ash_0_10_0;
+  ash_0_12_0 = buildCratesLib {
+    name = "ash";
+    version = "0.12.0";
+    hash = "b733a979f5c1c4e2fbdfb8cff1591d1989671d7e5c147876255f587b00f60d6e";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__shared_library.shared_library_0_1 ];
+  };
+  "ash_0_11" = ash_0_11_0;
+  ash_0_13_0 = buildCratesLib {
+    name = "ash";
+    version = "0.13.0";
+    hash = "64231dfcc60cf38ef87ed86f7a7a89b8b48d337627eb9ab5caf27deadb362040";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__shared_library.shared_library_0_1 ];
+  };
+  "ash_0_12" = ash_0_12_0;
+  ash_0_14_0 = buildCratesLib {
+    name = "ash";
+    version = "0.14.0";
+    hash = "f2f5f6501d90c887917464f9e0c321ebc92419cdebd2eb9ba2dfbe02b705632d";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__shared_library.shared_library_0_1 ];
+  };
+  "ash_0_13" = ash_0_13_0;
+  ash_0_14_1 = buildCratesLib {
+    name = "ash";
+    version = "0.14.1";
+    hash = "2fd6a972189ab13a41a8486e9f6ad6644efc0d95d97a3e43222fa1abc5760e69";
+    deps = with allCrates; [  all__shared_library.shared_library_0_1 all__lazy_static.lazy_static_0_2 ];
+  };
+  "ash_0_14" = ash_0_14_1;
+  "ash_0" = ash_0_14_1;}

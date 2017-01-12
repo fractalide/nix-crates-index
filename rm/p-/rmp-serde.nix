@@ -70,5 +70,12 @@ rec {
     deps = with allCrates; [  all__serde.serde_0_8 all__rmp.rmp_0_7 ];
   };
   "rmp-serde_0_9" = rmp-serde_0_9_6;
+  rmp-serde_0_11_0 = buildCratesLib {
+    name = "rmp-serde";
+    version = "0.11.0";
+    hash = "465c16e5683160bf9ebd86f49faa1076d8989b2ae472f670774d0fff635a33e9";
+    deps = with allCrates; [  all__byteorder.byteorder_1 all__rmp.rmp_0_8 all__serde.serde_0_8 ];
+  };
   "rmp-serde_0_10" = rmp-serde_0_10_0;
-  "rmp-serde_0" = rmp-serde_0_10_0;}
+  "rmp-serde_0_11" = rmp-serde_0_11_0;
+  "rmp-serde_0" = rmp-serde_0_11_0;}

@@ -48,5 +48,31 @@ rec {
     deps = with allCrates; [  all__inotify.inotify_0_3 all__rustc-serialize.rustc-serialize_0_3 all__rand.rand_0_3 all__libc.libc_0_2 all__log.log_0_3 all__ctrlc.ctrlc_2_0 all__argparse.argparse_0_2 all__x11.x11_2_11 all__env_logger.env_logger_0_3 all__walkdir.walkdir_1_0_3 all__lazy_static.lazy_static_0_2 all__unix_socket.unix_socket_0_5 ];
   };
   "panty_0_5" = panty_0_5_0;
+  panty_0_7_0 = buildCratesLib {
+    name = "panty";
+    version = "0.7.0";
+    hash = "22cab39d069879dd721579c83e7063bd0be7e18ef162148cffb7f995ef9d0c6e";
+    deps = with allCrates; [  all__libc.libc_0_2 all__lazy_static.lazy_static_0_2 all__inotify.inotify_0_3 all__rustc-serialize.rustc-serialize_0_3 all__unix_socket.unix_socket_0_5 all__walkdir.walkdir_1_0_3 all__env_logger.env_logger_0_3 all__ctrlc.ctrlc_2_0 all__log.log_0_3 all__x11.x11_2_11 all__rand.rand_0_3 all__argparse.argparse_0_2 ];
+  };
   "panty_0_6" = panty_0_6_0;
-  "panty_0" = panty_0_6_0;}
+  panty_0_7_1 = buildCratesLib {
+    name = "panty";
+    version = "0.7.1";
+    hash = "477000490fd106cec6a5fd28cefd42181c81ce6c2282ac6cb8cafcf42d4dfee4";
+    deps = with allCrates; [  all__ctrlc.ctrlc_2_0 all__env_logger.env_logger_0_3 all__x11.x11_2_11 all__unix_socket.unix_socket_0_5 all__log.log_0_3 all__rand.rand_0_3 all__rustc-serialize.rustc-serialize_0_3 all__walkdir.walkdir_1_0_3 all__lazy_static.lazy_static_0_2 all__argparse.argparse_0_2 all__libc.libc_0_2 all__inotify.inotify_0_3 ];
+  };
+  panty_0_7_2 = buildCratesLib {
+    name = "panty";
+    version = "0.7.2";
+    hash = "7687afef447c43c7436c990123fc1490416ccab045dfbeff025e9f93023b1157";
+    deps = with allCrates; [  all__argparse.argparse_0_2 all__x11.x11_2_11 all__libc.libc_0_2 all__log.log_0_3 all__rustc-serialize.rustc-serialize_0_3 all__env_logger.env_logger_0_3 all__inotify.inotify_0_3 all__rand.rand_0_3 all__walkdir.walkdir_1_0_3 all__lazy_static.lazy_static_0_2 all__ctrlc.ctrlc_2_0 all__unix_socket.unix_socket_0_5 ];
+  };
+  panty_0_8_0 = buildCratesLib {
+    name = "panty";
+    version = "0.8.0";
+    hash = "90923551ebe00fc70094006bd1dfcbc8ef5757574b20c0113be2a196898926ea";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__log.log_0_3 all__rand.rand_0_3 all__argparse.argparse_0_2 all__libc.libc_0_2 all__inotify.inotify_0_3 all__unix_socket.unix_socket_0_5 all__x11.x11_2_11 all__env_logger.env_logger_0_3 all__walkdir.walkdir_1_0_3 all__lazy_static.lazy_static_0_2 all__ctrlc.ctrlc_2_0 ];
+  };
+  "panty_0_7" = panty_0_7_2;
+  "panty_0_8" = panty_0_8_0;
+  "panty_0" = panty_0_8_0;}

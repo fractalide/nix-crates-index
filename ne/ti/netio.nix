@@ -86,13 +86,19 @@ rec {
     hash = "facc4dfd6409963ac52eca234dfb5c7bf31efffaa97fce7a0fc73842e35069ee";
     deps = with allCrates; [  buf_redux all__memchr.memchr_0_1 ];
   };
+  netio_0_2_9 = buildCratesLib {
+    name = "netio";
+    version = "0.2.9";
+    hash = "e085f6a8800356852ec2605a08f0c5df7fa66949048ae5b82fcc1b26f3659826";
+    deps = with allCrates; [  buf_redux all__memchr.memchr_0_1 ];
+  };
   netio_0_3_0 = buildCratesLib {
     name = "netio";
     version = "0.3.0";
     hash = "15d0de622d8399ceb9a37b2ae9ec1f938985b3af8b7205d121ff911824a7d80c";
     deps = with allCrates; [  buf_redux all__memchr.memchr_0_1 ];
   };
-  "netio_0_2" = netio_0_2_8;
+  "netio_0_2" = netio_0_2_9;
   netio_0_3_1 = buildCratesLib {
     name = "netio";
     version = "0.3.1";
@@ -105,18 +111,30 @@ rec {
     hash = "070daf56f81556efb1103f414914f53661300ade2188c5ce3ebf0ad6a0f36827";
     deps = with allCrates; [  all__memchr.memchr_0_1 buf_redux ];
   };
+  netio_0_3_3 = buildCratesLib {
+    name = "netio";
+    version = "0.3.3";
+    hash = "eaf692c99ead3dff7d5ec3ab06ea09352fe6360d7e6c3bf327713ff809426a72";
+    deps = with allCrates; [  all__memchr.memchr_0_1 buf_redux ];
+  };
   netio_0_4_0 = buildCratesLib {
     name = "netio";
     version = "0.4.0";
     hash = "116b85bf5878c24445ae99ab8fabb3d16ac30ac93f18b4c729de222d5d407356";
     deps = with allCrates; [  buf_redux all__memchr.memchr_0_1 ];
   };
-  "netio_0_3" = netio_0_3_2;
+  "netio_0_3" = netio_0_3_3;
   netio_0_4_1 = buildCratesLib {
     name = "netio";
     version = "0.4.1";
     hash = "4494c0f04a26f3a75a12710b02ffdaf8ab359dd1d812693b299c7ddbebd30033";
     deps = with allCrates; [  buf_redux all__memchr.memchr_0_1 ];
+  };
+  netio_0_4_2 = buildCratesLib {
+    name = "netio";
+    version = "0.4.2";
+    hash = "4a51a5b52b0a4530a8a808f8ec5f49ae3caffe87c3eb8074e1e0a70dad338cf8";
+    deps = with allCrates; [  all__memchr.memchr_0_1 buf_redux ];
   };
   netio_0_5_0 = buildCratesLib {
     name = "netio";
@@ -124,6 +142,12 @@ rec {
     hash = "295b2b74b00a28ef61a7a40bacf3b84158ddf3dc441a2ecdb515ebe03afd3096";
     deps = with allCrates; [  buf_redux all__memchr.memchr_0_1 ];
   };
-  "netio_0_4" = netio_0_4_1;
-  "netio_0_5" = netio_0_5_0;
-  "netio_0" = netio_0_5_0;}
+  "netio_0_4" = netio_0_4_2;
+  netio_0_5_1 = buildCratesLib {
+    name = "netio";
+    version = "0.5.1";
+    hash = "1ff7dbdb801d8dd30ff2731933756ff9db7f325808b1b3417128c8b517c7616f";
+    deps = with allCrates; [  buf_redux all__memchr.memchr_0_1 ];
+  };
+  "netio_0_5" = netio_0_5_1;
+  "netio_0" = netio_0_5_1;}

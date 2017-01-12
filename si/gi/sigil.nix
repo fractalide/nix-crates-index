@@ -13,5 +13,12 @@ rec {
     hash = "4bbbb932b8d8c79225eb4657efbc3254fbc2d3f7e8c75ea7ac383be3ba594382";
     deps = with allCrates; [  lazy_static all__csv.csv_0_14 ];
   };
+  sigil_0_2_0 = buildCratesLib {
+    name = "sigil";
+    version = "0.2.0";
+    hash = "575b896c1b96fad0cb6268a151f8ac8c129b3330093348216dc4727916b5d9aa";
+    deps = with allCrates; [  lazy_static all__csv.csv_0_14 ];
+  };
   "sigil_0_1" = sigil_0_1_1;
-  "sigil_0" = sigil_0_1_1;}
+  "sigil_0_2" = sigil_0_2_0;
+  "sigil_0" = sigil_0_2_0;}

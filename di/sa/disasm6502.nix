@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  ];
   };
   "disasm6502_0_1" = disasm6502_0_1_0;
-  "disasm6502_0_2" = disasm6502_0_2_0;
-  "disasm6502_0" = disasm6502_0_2_0;}
+  disasm6502_0_2_1 = buildCratesLib {
+    name = "disasm6502";
+    version = "0.2.1";
+    hash = "f2c97d27df44e4411700e35ff83a2ff832415e5c20db9aae13a534a7e93eeae7";
+    deps = with allCrates; [  ];
+  };
+  "disasm6502_0_2" = disasm6502_0_2_1;
+  "disasm6502_0" = disasm6502_0_2_1;}

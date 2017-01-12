@@ -104,5 +104,12 @@ rec {
     deps = with allCrates; [  all__range.range_0_3 all__piston_meta.piston_meta_0_27 ];
   };
   "piston_meta_search_0_13" = piston_meta_search_0_13_1;
+  piston_meta_search_0_15_0 = buildCratesLib {
+    name = "piston_meta_search";
+    version = "0.15.0";
+    hash = "3b72d8e2b84f3c3b2ee69bbfa08860135713e5c1fd2e5936f3fe16e1f5730ec8";
+    deps = with allCrates; [  all__piston_meta.piston_meta_0_28 all__range.range_0_3 ];
+  };
   "piston_meta_search_0_14" = piston_meta_search_0_14_0;
-  "piston_meta_search_0" = piston_meta_search_0_14_0;}
+  "piston_meta_search_0_15" = piston_meta_search_0_15_0;
+  "piston_meta_search_0" = piston_meta_search_0_15_0;}

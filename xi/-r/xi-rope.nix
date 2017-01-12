@@ -7,5 +7,11 @@ rec {
     hash = "c4f2d35b6ed85e258bd49533265b9d6de70d35b02561ea480d501b11a0ad189f";
     deps = with allCrates; [  ];
   };
-  "xi-rope_0_1" = xi-rope_0_1_0;
-  "xi-rope_0" = xi-rope_0_1_0;}
+  xi-rope_0_1_1 = buildCratesLib {
+    name = "xi-rope";
+    version = "0.1.1";
+    hash = "f5799e22c054c043100264621885d0f7d693b28c974ac0dfc6502b0862c1c4db";
+    deps = with allCrates; [  all__bytecount.bytecount_0_1 ];
+  };
+  "xi-rope_0_1" = xi-rope_0_1_1;
+  "xi-rope_0" = xi-rope_0_1_1;}

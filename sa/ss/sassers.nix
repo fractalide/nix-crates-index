@@ -84,5 +84,12 @@ rec {
     deps = with allCrates; [  all__regex.regex_0_1 all__docopt.docopt_0_6 all__env_logger.env_logger_0_3 all__log.log_0_3 ];
   };
   "sassers_0_11" = sassers_0_11_0;
+  sassers_0_13_0 = buildCratesLib {
+    name = "sassers";
+    version = "0.13.0";
+    hash = "b0fb6e00573b75c1a08b39d13d858e61ca0c460c0456fc50834f9d82a12412ab";
+    deps = with allCrates; [  all__docopt.docopt_0_6 all__regex.regex_0_1 all__log.log_0_3 all__env_logger.env_logger_0_3 ];
+  };
   "sassers_0_12" = sassers_0_12_0;
-  "sassers_0" = sassers_0_12_0;}
+  "sassers_0_13" = sassers_0_13_0;
+  "sassers_0" = sassers_0_13_0;}

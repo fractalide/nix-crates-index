@@ -13,5 +13,13 @@ rec {
     hash = "b13cdbc8097865363b2d529b003e21b39952eb5472ceb3061759776d2f4caeae";
     deps = with allCrates; [  all__quick-error.quick-error_1_1 ];
   };
+  fs-utils_1_0_0 = buildCratesLib {
+    name = "fs-utils";
+    version = "1.0.0";
+    hash = "be53d63dc756ab9da8b003c2698e200cf1d751f9ed1d3e248365a028c4cbbff6";
+    deps = with allCrates; [  all__quick-error.quick-error_1_1 ];
+  };
   "fs-utils_0_1" = fs-utils_0_1_1;
-  "fs-utils_0" = fs-utils_0_1_1;}
+  "fs-utils_0" = fs-utils_0_1_1;
+  "fs-utils_1_0" = fs-utils_1_0_0;
+  "fs-utils_1" = fs-utils_1_0_0;}

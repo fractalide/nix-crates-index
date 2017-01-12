@@ -185,5 +185,12 @@ rec {
   };
   "c-ares_0_21" = c-ares_0_21_0;
   "c-ares_0" = c-ares_0_21_0;
+  c-ares_1_1_0 = buildCratesLib {
+    name = "c-ares";
+    version = "1.1.0";
+    hash = "1b21e0d7868f79596f10cb78e9a52ba23885fd500eaca44506ea73ec389f3f63";
+    deps = with allCrates; [  all__bitflags.bitflags_0_7 all__c-types.c-types_1 all__itertools.itertools_0_5 all__c-ares-sys.c-ares-sys_1_0 ];
+  };
   "c-ares_1_0" = c-ares_1_0_0;
-  "c-ares_1" = c-ares_1_0_0;}
+  "c-ares_1_1" = c-ares_1_1_0;
+  "c-ares_1" = c-ares_1_1_0;}

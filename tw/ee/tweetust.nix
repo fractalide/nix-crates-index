@@ -47,5 +47,11 @@ rec {
     deps = with allCrates; [  all__oauthcli.oauthcli_1_0_1 all__serde_json.serde_json_0_8 all__url.url_1_2 all__serde.serde_0_8 all__chrono.chrono_0_2 all__multipart.multipart_0_8 all__hyper.hyper_0_9 all__matches.matches_0_1 all__nom.nom_1_2 all__Inflector.Inflector_0_6 all__serde_codegen.serde_codegen_0_8 all__log.log_0_3 ];
   };
   "tweetust_0_3" = tweetust_0_3_0;
-  "tweetust_0_4" = tweetust_0_4_0;
-  "tweetust_0" = tweetust_0_4_0;}
+  tweetust_0_4_1 = buildCratesLib {
+    name = "tweetust";
+    version = "0.4.1";
+    hash = "1df8bffd56e0328b060802ab7cef8188c900532d3a23e32e1d3ff7a5839c0eb4";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__url.url_1_2 all__multipart.multipart_0_8 all__chrono.chrono_0_2 all__oauthcli.oauthcli_1_0_2 all__hyper.hyper_0_9 all__serde.serde_0_8 all__Inflector.Inflector_0_6 all__nom.nom_1_2 all__serde_codegen.serde_codegen_0_8 all__matches.matches_0_1 all__log.log_0_3 ];
+  };
+  "tweetust_0_4" = tweetust_0_4_1;
+  "tweetust_0" = tweetust_0_4_1;}

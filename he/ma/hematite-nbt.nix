@@ -14,5 +14,12 @@ rec {
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__flate2.flate2_0_2 ];
   };
   "hematite-nbt_0_1" = hematite-nbt_0_1_0;
+  hematite-nbt_0_3_0 = buildCratesLib {
+    name = "hematite-nbt";
+    version = "0.3.0";
+    hash = "8c4d3ebba6dbd300e8028c9aec0639d9c225c604a49c112fe9aad55f28c35264";
+    deps = with allCrates; [  all__byteorder.byteorder_1_0_0 all__flate2.flate2_0_2 ];
+  };
   "hematite-nbt_0_2" = hematite-nbt_0_2_0;
-  "hematite-nbt_0" = hematite-nbt_0_2_0;}
+  "hematite-nbt_0_3" = hematite-nbt_0_3_0;
+  "hematite-nbt_0" = hematite-nbt_0_3_0;}

@@ -285,5 +285,12 @@ rec {
     hash = "1eaff8714fc7493ffa6f8062d109610eb3cf0d01415498f3247196c07157ea57";
     deps = with allCrates; [  all__piston-shaders_graphics2d.piston-shaders_graphics2d_0_2 all__shader_version.shader_version_0_2 all__piston-gfx_texture.piston-gfx_texture_0_19 all__piston2d-graphics.piston2d-graphics_0_19 all__rusttype.rusttype_0_2 all__gfx.gfx_0_13 all__draw_state.draw_state_0_6 ];
   };
+  piston2d-gfx_graphics_0_35_0 = buildCratesLib {
+    name = "piston2d-gfx_graphics";
+    version = "0.35.0";
+    hash = "ef399957f5dc396fd36348eabd16d91d2f14812ed29e4d272f0578c9e4276fe7";
+    deps = with allCrates; [  all__draw_state.draw_state_0_6 all__gfx.gfx_0_13 all__rusttype.rusttype_0_2 all__piston-gfx_texture.piston-gfx_texture_0_20 all__piston2d-graphics.piston2d-graphics_0_19 all__piston-shaders_graphics2d.piston-shaders_graphics2d_0_2 all__shader_version.shader_version_0_2 ];
+  };
   "piston2d-gfx_graphics_0_34" = piston2d-gfx_graphics_0_34_1;
-  "piston2d-gfx_graphics_0" = piston2d-gfx_graphics_0_34_1;}
+  "piston2d-gfx_graphics_0_35" = piston2d-gfx_graphics_0_35_0;
+  "piston2d-gfx_graphics_0" = piston2d-gfx_graphics_0_35_0;}

@@ -25,5 +25,18 @@ rec {
     hash = "369a1e40736ad744f8bb6eadaea68b5c7135c706e72f9f5b3a129e239652de55";
     deps = with allCrates; [  all__num.num_0_1 ];
   };
+  angular-units_0_2_0 = buildCratesLib {
+    name = "angular-units";
+    version = "0.2.0";
+    hash = "4c84f9e1b2f4f366ce133f4a4252174fabd8e8e51f196234adae583ccddd13c5";
+    deps = with allCrates; [  all__num.num_0_1 ];
+  };
   "angular-units_0_1" = angular-units_0_1_3;
-  "angular-units_0" = angular-units_0_1_3;}
+  angular-units_0_2_1 = buildCratesLib {
+    name = "angular-units";
+    version = "0.2.1";
+    hash = "b3f16f59a4520ab9db8c1873d7025f29af06a329af523f7933c7e9f60cd3f58d";
+    deps = with allCrates; [  all__num.num_0_1 ];
+  };
+  "angular-units_0_2" = angular-units_0_2_1;
+  "angular-units_0" = angular-units_0_2_1;}

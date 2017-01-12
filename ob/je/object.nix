@@ -20,5 +20,12 @@ rec {
     deps = with allCrates; [  all__xmas-elf.xmas-elf_0_3 ];
   };
   "object_0_0" = object_0_0_2;
+  object_0_3_0 = buildCratesLib {
+    name = "object";
+    version = "0.3.0";
+    hash = "c1358583d355ac6bd4edacacd65b3b5c6c31e611f930435cbb396d1a6a55e23c";
+    deps = with allCrates; [  all__xmas-elf.xmas-elf_0_4 ];
+  };
   "object_0_1" = object_0_1_0;
-  "object_0" = object_0_1_0;}
+  "object_0_3" = object_0_3_0;
+  "object_0" = object_0_3_0;}

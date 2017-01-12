@@ -25,5 +25,18 @@ rec {
     hash = "0081f2cae1400b296465489682ceeb9ca1e5b5d909352849bf8ab0fe3ba044e0";
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  juniper_0_6_0 = buildCratesLib {
+    name = "juniper";
+    version = "0.6.0";
+    hash = "f19cd41d7ed02c444125883d1b4060d73e9d7977397aca88288faab84f010e06";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 ];
+  };
   "juniper_0_5" = juniper_0_5_3;
-  "juniper_0" = juniper_0_5_3;}
+  juniper_0_6_1 = buildCratesLib {
+    name = "juniper";
+    version = "0.6.1";
+    hash = "e1df8a25026b4e6350bb45dc211877dd97d963eb665c419cd29e4c8505ede81a";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 ];
+  };
+  "juniper_0_6" = juniper_0_6_1;
+  "juniper_0" = juniper_0_6_1;}

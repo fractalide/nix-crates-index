@@ -340,5 +340,12 @@ rec {
     hash = "266c1815d7ca63a5bd86284043faf91e8c95e943e55ce05dc0ae08e952de18bc";
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__rustc-serialize.rustc-serialize_0_3 ];
   };
+  csv_0_15_0 = buildCratesLib {
+    name = "csv";
+    version = "0.15.0";
+    hash = "7ef22b37c7a51c564a365892c012dc0271221fdcc64c69b19ba4d6fa8bd96d9c";
+    deps = with allCrates; [  all__byteorder.byteorder_1 all__rustc-serialize.rustc-serialize_0_3 all__memchr.memchr_1 ];
+  };
   "csv_0_14" = csv_0_14_7;
-  "csv_0" = csv_0_14_7;}
+  "csv_0_15" = csv_0_15_0;
+  "csv_0" = csv_0_15_0;}

@@ -13,5 +13,23 @@ rec {
     hash = "df0bc65e0849a631c98a3906998d8786d17a6c6b3cc01d2a802b53d07b176bc2";
     deps = with allCrates; [  all__serde_derive.serde_derive_0_8 all__router.router_0_4 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__tera.tera_0_5 all__iron.iron_0_4 ];
   };
-  "iron-tera_0_1" = iron-tera_0_1_1;
-  "iron-tera_0" = iron-tera_0_1_1;}
+  iron-tera_0_1_2 = buildCratesLib {
+    name = "iron-tera";
+    version = "0.1.2";
+    hash = "66106f22bbaa84d0165b9e0064eed131c187a8b9818fb93ee55f4e95c8fa1e4a";
+    deps = with allCrates; [  all__router.router_0_4 all__iron.iron_0_4 all__serde.serde_0_8 all__serde_json.serde_json_0_8 all__serde_derive.serde_derive_0_8 all__tera.tera_0_6 ];
+  };
+  iron-tera_0_1_3 = buildCratesLib {
+    name = "iron-tera";
+    version = "0.1.3";
+    hash = "40524ae5d0f8627cf8aec5e8008bcd83fc17005a5b4715804443bebc60235092";
+    deps = with allCrates; [  all__serde.serde_0_8 all__tera.tera_0_6 all__serde_json.serde_json_0_8 all__iron.iron_0_4 ];
+  };
+  iron-tera_0_1_4 = buildCratesLib {
+    name = "iron-tera";
+    version = "0.1.4";
+    hash = "1628f454c47b1d8980197c3fb4b818a10ea52b65aa0cf5c0f8671092f7408090";
+    deps = with allCrates; [  all__tera.tera_0_6 all__iron.iron_0_4 all__serde.serde_0_8 all__serde_json.serde_json_0_8 ];
+  };
+  "iron-tera_0_1" = iron-tera_0_1_4;
+  "iron-tera_0" = iron-tera_0_1_4;}

@@ -194,5 +194,11 @@ rec {
     hash = "a51822fc847e7a8101514d1d44e354ba2ffa7d4c194dcab48870740e327cac70";
     deps = with allCrates; [  ];
   };
-  "libc_0_2" = libc_0_2_18;
-  "libc_0" = libc_0_2_18;}
+  libc_0_2_19 = buildCratesLib {
+    name = "libc";
+    version = "0.2.19";
+    hash = "9e030dc72013ed68994d1b2cbf36a94dd0e58418ba949c4b0db7eeb70a7a6352";
+    deps = with allCrates; [  ];
+  };
+  "libc_0_2" = libc_0_2_19;
+  "libc_0" = libc_0_2_19;}

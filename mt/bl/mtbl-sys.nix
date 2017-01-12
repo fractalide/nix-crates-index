@@ -13,5 +13,12 @@ rec {
     hash = "3b9c3df99a0ddd3e1607211cbb712051d4e0f0609173c3e069a76ee40905732d";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
+  mtbl-sys_0_2_0 = buildCratesLib {
+    name = "mtbl-sys";
+    version = "0.2.0";
+    hash = "83a10442334b5980c6836ef1246746f9ba3e30345eb8d5be6d687583a7400773";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
   "mtbl-sys_0_1" = mtbl-sys_0_1_1;
-  "mtbl-sys_0" = mtbl-sys_0_1_1;}
+  "mtbl-sys_0_2" = mtbl-sys_0_2_0;
+  "mtbl-sys_0" = mtbl-sys_0_2_0;}

@@ -25,5 +25,11 @@ rec {
     hash = "8de73733f1d567f1188c2cf51eaf072272d24c1d6d9549456a11f59a8c248410";
     deps = with allCrates; [  all__libc.libc_0_1 ];
   };
-  "pgs-files_0_0" = pgs-files_0_0_6;
-  "pgs-files_0" = pgs-files_0_0_6;}
+  pgs-files_0_0_7 = buildCratesLib {
+    name = "pgs-files";
+    version = "0.0.7";
+    hash = "6a7b7d377867a5a16859f9521ea3b884438f6e3eb096ffd18014243125faf715";
+    deps = with allCrates; [  all__libc.libc_0_1 ];
+  };
+  "pgs-files_0_0" = pgs-files_0_0_7;
+  "pgs-files_0" = pgs-files_0_0_7;}

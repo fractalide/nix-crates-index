@@ -76,5 +76,12 @@ rec {
     deps = with allCrates; [  all__pistoncore-input.pistoncore-input_0_15 all__gfx.gfx_0_12 all__gfx_debug_draw.gfx_debug_draw_0_11 ];
   };
   "dev_menu_0_9" = dev_menu_0_9_1;
+  dev_menu_0_11_0 = buildCratesLib {
+    name = "dev_menu";
+    version = "0.11.0";
+    hash = "cc216235e7d5f4cd60e795e553fc4371a16cdc7842ed6ece7c42acda5fa438ca";
+    deps = with allCrates; [  all__pistoncore-input.pistoncore-input_0_15 all__gfx.gfx_0_13 all__gfx_debug_draw.gfx_debug_draw_0_12 ];
+  };
   "dev_menu_0_10" = dev_menu_0_10_0;
-  "dev_menu_0" = dev_menu_0_10_0;}
+  "dev_menu_0_11" = dev_menu_0_11_0;
+  "dev_menu_0" = dev_menu_0_11_0;}

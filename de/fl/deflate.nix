@@ -55,5 +55,17 @@ rec {
     deps = with allCrates; [  all__byteorder.byteorder_0_5 all__adler32.adler32_0_3 ];
   };
   "deflate_0_6" = deflate_0_6_0;
-  "deflate_0_7" = deflate_0_7_0;
-  "deflate_0" = deflate_0_7_0;}
+  deflate_0_7_1 = buildCratesLib {
+    name = "deflate";
+    version = "0.7.1";
+    hash = "9ff83bf00c00c4c259cb2c784862e22b83ed81c34246eda186017726fad5eac9";
+    deps = with allCrates; [  all__adler32.adler32_0_3 all__byteorder.byteorder_1_0_0 ];
+  };
+  deflate_0_7_2 = buildCratesLib {
+    name = "deflate";
+    version = "0.7.2";
+    hash = "eab23bda1e017b3408412dd8d1e81e157b8fe09af8abce809fbe0aa9e6c7da4d";
+    deps = with allCrates; [  all__byteorder.byteorder_1_0_0 all__adler32.adler32_0_3 ];
+  };
+  "deflate_0_7" = deflate_0_7_2;
+  "deflate_0" = deflate_0_7_2;}

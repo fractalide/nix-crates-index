@@ -43,5 +43,12 @@ rec {
     hash = "7222908f322b34f9325a4e6cd32aa49e914110ff9fd4aa956fa447029497dd60";
     deps = with allCrates; [  all__teardown_tree___treap.teardown_tree___treap_0_0_1 all__rand.rand_0_3 ];
   };
+  teardown_tree_0_5_0 = buildCratesLib {
+    name = "teardown_tree";
+    version = "0.5.0";
+    hash = "14dfd79adf39dc22cde8cfca67ed1c07fbf0addf74f3dc23f793fe10577bf3d3";
+    deps = with allCrates; [  all__rand.rand_0_3 ];
+  };
   "teardown_tree_0_4" = teardown_tree_0_4_8;
-  "teardown_tree_0" = teardown_tree_0_4_8;}
+  "teardown_tree_0_5" = teardown_tree_0_5_0;
+  "teardown_tree_0" = teardown_tree_0_5_0;}

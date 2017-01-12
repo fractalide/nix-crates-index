@@ -467,5 +467,11 @@ rec {
     deps = with allCrates; [  ];
   };
   "iobuf_5_6" = iobuf_5_6_3;
-  "iobuf_5_7" = iobuf_5_7_0;
-  "iobuf_5" = iobuf_5_7_0;}
+  iobuf_5_7_1 = buildCratesLib {
+    name = "iobuf";
+    version = "5.7.1";
+    hash = "8829be880cae02311416f8e5a5a25eb1088841967beb658fef6cdd19b9d37f62";
+    deps = with allCrates; [  ];
+  };
+  "iobuf_5_7" = iobuf_5_7_1;
+  "iobuf_5" = iobuf_5_7_1;}

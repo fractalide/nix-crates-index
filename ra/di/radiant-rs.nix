@@ -13,5 +13,11 @@ rec {
     hash = "14d44b837fc26873c1075ada16d0be5a6fa7a37c92653a159df8f1416dd54604";
     deps = with allCrates; [  all__glium.glium_0_15 all__unicode-normalization.unicode-normalization_0_1 all__regex.regex_0_1 all__rusttype.rusttype_0_2 all__lazy_static.lazy_static_0_2 all__image.image_0_10 all__font-loader.font-loader_0_1 all__num.num_0_1 ];
   };
-  "radiant-rs_0_1" = radiant-rs_0_1_1;
-  "radiant-rs_0" = radiant-rs_0_1_1;}
+  radiant-rs_0_1_2 = buildCratesLib {
+    name = "radiant-rs";
+    version = "0.1.2";
+    hash = "645e0cc2db2f2c3933b28fcff523a31899d5955e299462629ddb43c1fa97b9fc";
+    deps = with allCrates; [  all__num.num_0_1 all__avec.avec_0_1 all__glium.glium_0_15 all__lazy_static.lazy_static_0_2 all__regex.regex_0_1 all__image.image_0_10 all__rusttype.rusttype_0_2 all__unicode-normalization.unicode-normalization_0_1 all__font-loader.font-loader_0_1 ];
+  };
+  "radiant-rs_0_1" = radiant-rs_0_1_2;
+  "radiant-rs_0" = radiant-rs_0_1_2;}

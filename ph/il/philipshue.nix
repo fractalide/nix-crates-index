@@ -45,5 +45,11 @@ rec {
     hash = "b5a9988b5eab4c916f5ef0084e5afd593144146d7e24a8437a4f67e5fb4e0bde";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__serde_json.serde_json_0_8 all__serde.serde_0_8 all__error-chain.error-chain_0_7 ];
   };
-  "philipshue_0_2" = philipshue_0_2_1;
-  "philipshue_0" = philipshue_0_2_1;}
+  philipshue_0_2_2 = buildCratesLib {
+    name = "philipshue";
+    version = "0.2.2";
+    hash = "80513b55df7248350a3b980515b65afa26c862471be7af7d24afdf2bb90a4198";
+    deps = with allCrates; [  all__serde_json.serde_json_0_8 all__hyper.hyper_0_9 all__error-chain.error-chain_0_7 all__serde.serde_0_8 ];
+  };
+  "philipshue_0_2" = philipshue_0_2_2;
+  "philipshue_0" = philipshue_0_2_2;}

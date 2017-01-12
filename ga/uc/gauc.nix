@@ -121,5 +121,11 @@ rec {
     hash = "816d410b883ca26ffe6714c87d8caed52d689733cace5ad417f9c2250d032631";
     deps = with allCrates; [  iron clap env_logger all__serde_json.serde_json_0_8 ctrlc all__serde.serde_0_8 hyper libc log router ];
   };
-  "gauc_0_1" = gauc_0_1_20;
-  "gauc_0" = gauc_0_1_20;}
+  gauc_0_1_21 = buildCratesLib {
+    name = "gauc";
+    version = "0.1.21";
+    hash = "d6f7a4f05ce6c8d378af10e95fec55e747f3870adbda331fd2dc55462430ba12";
+    deps = with allCrates; [  log all__serde_json.serde_json_0_8 env_logger router hyper all__serde.serde_0_8 clap libc iron ctrlc ];
+  };
+  "gauc_0_1" = gauc_0_1_21;
+  "gauc_0" = gauc_0_1_21;}

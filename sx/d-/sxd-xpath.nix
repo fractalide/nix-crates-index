@@ -39,5 +39,12 @@ rec {
     deps = with allCrates; [  all__quick-error.quick-error_1_1 all__getopts.getopts_0_2 all__sxd-document.sxd-document_0_2 all__peresil.peresil_0_3 ];
   };
   "sxd-xpath_0_2" = sxd-xpath_0_2_1;
+  sxd-xpath_0_4_0 = buildCratesLib {
+    name = "sxd-xpath";
+    version = "0.4.0";
+    hash = "f9d279b2ba303f3b51bb3f245538eb00be7c78c34fcad7232eb2af56a6f985fd";
+    deps = with allCrates; [  all__quick-error.quick-error_1_1 all__peresil.peresil_0_3 all__sxd-document.sxd-document_0_2 ];
+  };
   "sxd-xpath_0_3" = sxd-xpath_0_3_0;
-  "sxd-xpath_0" = sxd-xpath_0_3_0;}
+  "sxd-xpath_0_4" = sxd-xpath_0_4_0;
+  "sxd-xpath_0" = sxd-xpath_0_4_0;}

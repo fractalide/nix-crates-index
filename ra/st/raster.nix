@@ -56,5 +56,12 @@ rec {
     deps = with allCrates; [  all__image.image_0_10 ];
   };
   "raster_0_0" = raster_0_0_8;
+  raster_0_2_0 = buildCratesLib {
+    name = "raster";
+    version = "0.2.0";
+    hash = "4c3f9e9cfa4260e25ea0d3bc72f3724afbeb65a61f8cb4d38c1d4de5309cd7ef";
+    deps = with allCrates; [  all__png.png_0_5 all__gif.gif_0_9 all__image.image_0_10 ];
+  };
   "raster_0_1" = raster_0_1_0;
-  "raster_0" = raster_0_1_0;}
+  "raster_0_2" = raster_0_2_0;
+  "raster_0" = raster_0_2_0;}

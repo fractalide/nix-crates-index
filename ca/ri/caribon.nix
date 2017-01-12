@@ -96,5 +96,12 @@ rec {
     hash = "b462d4221abf52c2bac09de46f64d8e1f9ed7089e1cd591f59ca35326275dc81";
     deps = with allCrates; [  all__strsim.strsim_0_5 all__stemmer.stemmer_0_3 ];
   };
+  caribon_0_8_0 = buildCratesLib {
+    name = "caribon";
+    version = "0.8.0";
+    hash = "25ecaf739ba0d2d68920d4a9400aab7cc85f5c42a8e8a7096e2396e669ae88cb";
+    deps = with allCrates; [  all__stemmer.stemmer_0_3 all__strsim.strsim_0_5 ];
+  };
   "caribon_0_7" = caribon_0_7_4;
-  "caribon_0" = caribon_0_7_4;}
+  "caribon_0_8" = caribon_0_8_0;
+  "caribon_0" = caribon_0_8_0;}

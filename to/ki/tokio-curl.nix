@@ -49,5 +49,11 @@ rec {
     hash = "f263f9c3a86b70d19fc0cc86a70192cb7702856ff1916750cdb201de42b050f7";
     deps = with allCrates; [  all__tokio-core.tokio-core_0_1 all__curl.curl_0_4 all__log.log_0_3 all__futures.futures_0_1 all__libc.libc_0_2 all__scoped-tls.scoped-tls_0_1 all__mio.mio_0_6 all__slab.slab_0_3 ];
   };
-  "tokio-curl_0_1" = tokio-curl_0_1_7;
-  "tokio-curl_0" = tokio-curl_0_1_7;}
+  tokio-curl_0_1_8 = buildCratesLib {
+    name = "tokio-curl";
+    version = "0.1.8";
+    hash = "b1575c76d09fd72aee8eb56e78ae3f1e064414d9cb0d2322bdc792ba7c42c512";
+    deps = with allCrates; [  all__tokio-core.tokio-core_0_1 all__futures.futures_0_1 all__log.log_0_3 all__curl.curl_0_4 all__mio.mio_0_6 all__scoped-tls.scoped-tls_0_1 all__slab.slab_0_3 all__libc.libc_0_2 ];
+  };
+  "tokio-curl_0_1" = tokio-curl_0_1_8;
+  "tokio-curl_0" = tokio-curl_0_1_8;}

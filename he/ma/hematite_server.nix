@@ -7,5 +7,11 @@ rec {
     hash = "7c4b1b1a8a8cb5481b0005b94e8c7efbdf90a7c61b6c13bb64e6eaacf47f9ee5";
     deps = with allCrates; [  all__rand.rand_0_3 all__uuid.uuid_0_1 all__flate2.flate2_0_2 all__log.log_0_3 all__byteorder.byteorder_0_5 all__hematite-nbt.hematite-nbt_0_2 all__regex.regex_0_1 all__time.time_0_1 all__num.num_0_1 all__rustc-serialize.rustc-serialize_0_3 ];
   };
-  "hematite_server_0_0" = hematite_server_0_0_2;
-  "hematite_server_0" = hematite_server_0_0_2;}
+  hematite_server_0_0_3 = buildCratesLib {
+    name = "hematite_server";
+    version = "0.0.3";
+    hash = "acd5fb07e2460a61c21d102c2287df4daaa815a2f6f6fb4cd0697a9ca26fd90c";
+    deps = with allCrates; [  all__flate2.flate2_0_2 all__byteorder.byteorder_1_0_0 all__time.time_0_1 all__uuid.uuid_0_1 all__rustc-serialize.rustc-serialize_0_3 all__rand.rand_0_3 all__log.log_0_3 all__hematite-nbt.hematite-nbt_0_3 all__regex.regex_0_1 all__num.num_0_1 ];
+  };
+  "hematite_server_0_0" = hematite_server_0_0_3;
+  "hematite_server_0" = hematite_server_0_0_3;}

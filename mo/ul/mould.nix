@@ -91,5 +91,11 @@ rec {
     hash = "83d1896182a7ab15a3eda4461428a3a46afb73ad4e53dc81288213979ad1e1e7";
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__hyper.hyper_0_9 all__log.log_0_3 all__websocket.websocket_0_17 ];
   };
-  "mould_0_0" = mould_0_0_18;
-  "mould_0" = mould_0_0_18;}
+  mould_0_0_19 = buildCratesLib {
+    name = "mould";
+    version = "0.0.19";
+    hash = "13010f3602e18854bdcf08eaaa1f55ba81ac0cd047d71b2337daab37f7a971fe";
+    deps = with allCrates; [  all__websocket.websocket_0_17 all__slab.slab_0_3 all__rustc-serialize.rustc-serialize_0_3 all__log.log_0_3 all__hyper.hyper_0_9 ];
+  };
+  "mould_0_0" = mould_0_0_19;
+  "mould_0" = mould_0_0_19;}

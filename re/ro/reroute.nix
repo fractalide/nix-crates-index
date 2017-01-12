@@ -57,5 +57,17 @@ rec {
     deps = with allCrates; [  all__hyper.hyper_0_9 all__regex.regex_0_1 ];
   };
   "reroute_0_2" = reroute_0_2_4;
-  "reroute_0_3" = reroute_0_3_0;
-  "reroute_0" = reroute_0_3_0;}
+  reroute_0_3_1 = buildCratesLib {
+    name = "reroute";
+    version = "0.3.1";
+    hash = "841fb8c3f48953f3e84c2aef7f430aacd37c08a17382572a6d006b1c5161869f";
+    deps = with allCrates; [  all__hyper.hyper_0_9 all__regex.regex_0_2 ];
+  };
+  reroute_0_3_2 = buildCratesLib {
+    name = "reroute";
+    version = "0.3.2";
+    hash = "60e74d10c2baf37be4ded4c6f24fdc385f71fc6f1259f668ec5750f38897adfd";
+    deps = with allCrates; [  all__regex.regex_0_2 all__hyper.hyper_0_10 ];
+  };
+  "reroute_0_3" = reroute_0_3_2;
+  "reroute_0" = reroute_0_3_2;}

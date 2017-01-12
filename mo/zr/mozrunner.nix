@@ -33,5 +33,11 @@ rec {
     hash = "999be8c424b7addde367030a6b578e8ad0de32287e67b903ad187860f939bae7";
     deps = with allCrates; [  all__mozprofile.mozprofile_0_2 all__log.log_0_3 ];
   };
-  "mozrunner_0_3" = mozrunner_0_3_2;
-  "mozrunner_0" = mozrunner_0_3_2;}
+  mozrunner_0_3_3 = buildCratesLib {
+    name = "mozrunner";
+    version = "0.3.3";
+    hash = "d0058147554cd0b9062b2bd1951590cb7a22023cb6b76bd7317496c51eb50da0";
+    deps = with allCrates; [  all__mozprofile.mozprofile_0_2 all__log.log_0_3 ];
+  };
+  "mozrunner_0_3" = mozrunner_0_3_3;
+  "mozrunner_0" = mozrunner_0_3_3;}

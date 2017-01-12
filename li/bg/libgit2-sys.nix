@@ -409,5 +409,11 @@ rec {
     hash = "502e50bcdcfa98df366bdd54935bff856f4cf11f725daa608092c0288205887a";
     deps = with allCrates; [  libz-sys all__libc.libc_0_2 all__gcc.gcc_0_3 all__cmake.cmake_0_1 all__pkg-config.pkg-config_0_3 ];
   };
-  "libgit2-sys_0_6" = libgit2-sys_0_6_5;
-  "libgit2-sys_0" = libgit2-sys_0_6_5;}
+  libgit2-sys_0_6_6 = buildCratesLib {
+    name = "libgit2-sys";
+    version = "0.6.6";
+    hash = "c7a4e33e9f8b8883c1a5898e72cdc63c00c4f2265283651533b00373094e901c";
+    deps = with allCrates; [  all__libc.libc_0_2 libz-sys all__gcc.gcc_0_3 all__cmake.cmake_0_1 all__pkg-config.pkg-config_0_3 ];
+  };
+  "libgit2-sys_0_6" = libgit2-sys_0_6_6;
+  "libgit2-sys_0" = libgit2-sys_0_6_6;}

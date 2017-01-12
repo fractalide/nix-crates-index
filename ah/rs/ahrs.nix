@@ -38,5 +38,11 @@ rec {
     hash = "b48210dc66c9bc8f0c4c7ba79f79ed125c4b9950c9ed864bdc1c9b31ae7939f8";
     deps = with allCrates; [  nalgebra ];
   };
-  "ahrs_0_1" = ahrs_0_1_4;
-  "ahrs_0" = ahrs_0_1_4;}
+  ahrs_0_1_5 = buildCratesLib {
+    name = "ahrs";
+    version = "0.1.5";
+    hash = "c0621cbb48cb9fa40dc64a4f018ac86863a909d27ab62772e6b7fdc8cdbf7580";
+    deps = with allCrates; [  nalgebra ];
+  };
+  "ahrs_0_1" = ahrs_0_1_5;
+  "ahrs_0" = ahrs_0_1_5;}

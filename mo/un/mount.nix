@@ -75,5 +75,12 @@ rec {
     hash = "c518ef1edf5da3aa1cdd5160c08d1781995ccb74b5669c2315ce29fe6cf6c1f2";
     deps = with allCrates; [  all__iron.iron_0_4 all__sequence_trie.sequence_trie_0_0 ];
   };
+  mount_0_3_0 = buildCratesLib {
+    name = "mount";
+    version = "0.3.0";
+    hash = "32245731923cd096899502fc4c4317cfd09f121e80e73f7f576cf3777a824256";
+    deps = with allCrates; [  all__iron.iron_0_5 all__sequence_trie.sequence_trie_0_2 ];
+  };
   "mount_0_2" = mount_0_2_1;
-  "mount_0" = mount_0_2_1;}
+  "mount_0_3" = mount_0_3_0;
+  "mount_0" = mount_0_3_0;}

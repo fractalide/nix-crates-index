@@ -56,5 +56,13 @@ rec {
   };
   "r2d2_mysql_3_0" = r2d2_mysql_3_0_0;
   "r2d2_mysql_3" = r2d2_mysql_3_0_0;
+  r2d2_mysql_8_0_0 = buildCratesLib {
+    name = "r2d2_mysql";
+    version = "8.0.0";
+    hash = "834cf0bd5d5c62b073e22a2d380a7f96efd3f993345879f5a7f3e9bc8d35e506";
+    deps = with allCrates; [  all__mysql.mysql_8_0_0 all__r2d2.r2d2_0_7 all__rustc-serialize.rustc-serialize_0_3 ];
+  };
   "r2d2_mysql_7_1" = r2d2_mysql_7_1_0;
-  "r2d2_mysql_7" = r2d2_mysql_7_1_0;}
+  "r2d2_mysql_7" = r2d2_mysql_7_1_0;
+  "r2d2_mysql_8_0" = r2d2_mysql_8_0_0;
+  "r2d2_mysql_8" = r2d2_mysql_8_0_0;}

@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  all__tempdir.tempdir_0_3 all__difference.difference_0_4 ];
   };
   "goldenfile_0_4" = goldenfile_0_4_0;
-  "goldenfile_0_5" = goldenfile_0_5_0;
-  "goldenfile_0" = goldenfile_0_5_0;}
+  goldenfile_0_5_1 = buildCratesLib {
+    name = "goldenfile";
+    version = "0.5.1";
+    hash = "d9f2e4330fca719162a03c58d223dc4a59b9c2bb1ae61970ecc06890e4026bd8";
+    deps = with allCrates; [  all__difference.difference_0_4 all__tempdir.tempdir_0_3 ];
+  };
+  "goldenfile_0_5" = goldenfile_0_5_1;
+  "goldenfile_0" = goldenfile_0_5_1;}

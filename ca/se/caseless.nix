@@ -20,5 +20,11 @@ rec {
     hash = "b6893f86ac0c9275b5cbba9212ccd71020b447d4c3e2eebad70e1bc47fdd6dfb";
     deps = with allCrates; [  all__unicode-normalization.unicode-normalization_0_1 all__regex.regex_0_1 ];
   };
-  "caseless_0_1" = caseless_0_1_1;
-  "caseless_0" = caseless_0_1_1;}
+  caseless_0_1_2 = buildCratesLib {
+    name = "caseless";
+    version = "0.1.2";
+    hash = "7943e9a31ba2742c288cb755e66a2af03b708e3878c921d56204263270314f8a";
+    deps = with allCrates; [  all__unicode-normalization.unicode-normalization_0_1 all__regex.regex_0_2 ];
+  };
+  "caseless_0_1" = caseless_0_1_2;
+  "caseless_0" = caseless_0_1_2;}

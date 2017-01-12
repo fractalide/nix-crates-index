@@ -7,5 +7,12 @@ rec {
     hash = "4c762459f981075bd7e602425933a21ea7030b8e08d2ab471d096799bd40e5c0";
     deps = with allCrates; [  ];
   };
+  fux_kdtree_0_2_0 = buildCratesLib {
+    name = "fux_kdtree";
+    version = "0.2.0";
+    hash = "216bf8256834a87394bf0364f82a92444ee8a00c757630a02a2bf278456f74e7";
+    deps = with allCrates; [  ];
+  };
   "fux_kdtree_0_1" = fux_kdtree_0_1_0;
-  "fux_kdtree_0" = fux_kdtree_0_1_0;}
+  "fux_kdtree_0_2" = fux_kdtree_0_2_0;
+  "fux_kdtree_0" = fux_kdtree_0_2_0;}

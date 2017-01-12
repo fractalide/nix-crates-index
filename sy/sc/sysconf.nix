@@ -13,5 +13,11 @@ rec {
     hash = "1cdea6c3efe3db2d9e5a77ec9cf56a6934a9bff43464589422c699989519a3ea";
     deps = with allCrates; [  all__libc.libc_0_2 ];
   };
-  "sysconf_0_1" = sysconf_0_1_1;
-  "sysconf_0" = sysconf_0_1_1;}
+  sysconf_0_1_2 = buildCratesLib {
+    name = "sysconf";
+    version = "0.1.2";
+    hash = "909bbe5cb1dbd4ba086ff591ccdbf2c991892e5644c364917febae9f69cbdc2a";
+    deps = with allCrates; [  all__libc.libc_0_2 ];
+  };
+  "sysconf_0_1" = sysconf_0_1_2;
+  "sysconf_0" = sysconf_0_1_2;}

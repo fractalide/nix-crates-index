@@ -19,5 +19,11 @@ rec {
     hash = "df912e41aeada424cce6583382b2ada3673c9be048ebc51ca814ae65bbaa473b";
     deps = with allCrates; [  all__log.log_0_3 all__byteorder.byteorder_0_5 all__crc.crc_1_3 all__memmap.memmap_0_5 ];
   };
-  "commitlog_0_0" = commitlog_0_0_4;
-  "commitlog_0" = commitlog_0_0_4;}
+  commitlog_0_0_6 = buildCratesLib {
+    name = "commitlog";
+    version = "0.0.6";
+    hash = "7d9ccb1033fc8ef38ae4b27eff86c11f5d487fec2c8e272dbc131512219048b8";
+    deps = with allCrates; [  all__memmap.memmap_0_5 all__seahash.seahash_3_0_4 all__log.log_0_3 all__byteorder.byteorder_0_5 ];
+  };
+  "commitlog_0_0" = commitlog_0_0_6;
+  "commitlog_0" = commitlog_0_0_6;}

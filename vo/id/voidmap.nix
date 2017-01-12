@@ -163,5 +163,24 @@ rec {
     hash = "8502851a3df55d5810bd45c24d374b7fa8563bbac9b76e532e44b458d0c91cdf";
     deps = with allCrates; [  all__hyper.hyper_0_9 all__rand.rand_0_3 all__unicode-segmentation.unicode-segmentation_0_1 all__log.log_0_3 all__regex.regex_0_1 all__lazy_static.lazy_static_0_2 all__time.time_0_1 all__termion.termion_1_1 all__libc.libc_0_2 all__protobuf.protobuf_1_0 all__getopts.getopts_0_2 ];
   };
+  voidmap_0_3_0 = buildCratesLib {
+    name = "voidmap";
+    version = "0.3.0";
+    hash = "de2dcd7a849c59522f5e3606fb8a128e5ba8d3316d1bfbffac7037203e70d316";
+    deps = with allCrates; [  all__libc.libc_0_2 all__protobuf.protobuf_1_0 all__termion.termion_1_1 all__rand.rand_0_3 all__unicode-segmentation.unicode-segmentation_0_1 all__regex.regex_0_1 all__getopts.getopts_0_2 all__hyper.hyper_0_9 all__lazy_static.lazy_static_0_2 all__time.time_0_1 all__log.log_0_3 ];
+  };
   "voidmap_0_2" = voidmap_0_2_26;
-  "voidmap_0" = voidmap_0_2_26;}
+  voidmap_0_3_1 = buildCratesLib {
+    name = "voidmap";
+    version = "0.3.1";
+    hash = "c6712e7b52cc29646f4e977013fa59b814cd8854e73adff8fa6039a5f5075047";
+    deps = with allCrates; [  all__regex.regex_0_1 all__getopts.getopts_0_2 all__time.time_0_1 all__libc.libc_0_2 all__unicode-segmentation.unicode-segmentation_0_1 all__rand.rand_0_3 all__lazy_static.lazy_static_0_2 all__termion.termion_1_1 all__protobuf.protobuf_1_0 all__log.log_0_3 all__hyper.hyper_0_9 ];
+  };
+  voidmap_0_3_2 = buildCratesLib {
+    name = "voidmap";
+    version = "0.3.2";
+    hash = "a21e9f1645b1332782724adf3a6f1a6891417d89c23ec20c67f60621c8292453";
+    deps = with allCrates; [  all__lazy_static.lazy_static_0_2 all__hyper.hyper_0_9 all__protobuf.protobuf_1_0 all__termion.termion_1_1 all__unicode-segmentation.unicode-segmentation_0_1 all__time.time_0_1 all__getopts.getopts_0_2 all__regex.regex_0_1 all__rand.rand_0_3 all__log.log_0_3 all__libc.libc_0_2 ];
+  };
+  "voidmap_0_3" = voidmap_0_3_2;
+  "voidmap_0" = voidmap_0_3_2;}

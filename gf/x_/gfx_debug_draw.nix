@@ -81,5 +81,12 @@ rec {
     hash = "7a0e3ed925f31b17f71f027e7097f6fe94775322c26c7139538f2f390e092bb5";
     deps = with allCrates; [  all__gfx.gfx_0_12 all__vecmath.vecmath_0_2 all__gfx_text.gfx_text_0_13 ];
   };
+  gfx_debug_draw_0_12_0 = buildCratesLib {
+    name = "gfx_debug_draw";
+    version = "0.12.0";
+    hash = "8388c71e6d92b75a39f28bb96c04881e619944e517405e0f2277db54e60a5c7a";
+    deps = with allCrates; [  all__vecmath.vecmath_0_2 all__gfx.gfx_0_13 all__gfx_text.gfx_text_0_14 ];
+  };
   "gfx_debug_draw_0_11" = gfx_debug_draw_0_11_1;
-  "gfx_debug_draw_0" = gfx_debug_draw_0_11_1;}
+  "gfx_debug_draw_0_12" = gfx_debug_draw_0_12_0;
+  "gfx_debug_draw_0" = gfx_debug_draw_0_12_0;}

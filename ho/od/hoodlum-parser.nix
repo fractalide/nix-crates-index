@@ -33,5 +33,12 @@ rec {
     hash = "9c7d63c926b42f87db3f5d104a0a43ea988345dd46279ba06cd4636b8c30a4a6";
     deps = with allCrates; [  all__lalrpop-util.lalrpop-util_0_12 all__libflate.libflate_0_1 ];
   };
+  hoodlum-parser_0_5_0 = buildCratesLib {
+    name = "hoodlum-parser";
+    version = "0.5.0";
+    hash = "a949eec57ecae939e983fcceafc6f9b573f46e2fdee548701a15939f3b04659c";
+    deps = with allCrates; [  all__lalrpop-util.lalrpop-util_0_12 all__libflate.libflate_0_1 ];
+  };
   "hoodlum-parser_0_4" = hoodlum-parser_0_4_2;
-  "hoodlum-parser_0" = hoodlum-parser_0_4_2;}
+  "hoodlum-parser_0_5" = hoodlum-parser_0_5_0;
+  "hoodlum-parser_0" = hoodlum-parser_0_5_0;}

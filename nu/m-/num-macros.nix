@@ -79,5 +79,11 @@ rec {
     hash = "260f43d0e7e6bb0d4360f356a45a5f53fd4153ef1583b656b6ff35b7dae9cf0a";
     deps = with allCrates; [  ];
   };
-  "num-macros_0_1" = num-macros_0_1_36;
-  "num-macros_0" = num-macros_0_1_36;}
+  num-macros_0_1_37 = buildCratesLib {
+    name = "num-macros";
+    version = "0.1.37";
+    hash = "45bd5535c1d1eb762b8a4895613127d9264c15544940e5f659fbbf7c39c27e71";
+    deps = with allCrates; [  ];
+  };
+  "num-macros_0_1" = num-macros_0_1_37;
+  "num-macros_0" = num-macros_0_1_37;}

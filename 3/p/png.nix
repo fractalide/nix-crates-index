@@ -71,5 +71,24 @@ rec {
     hash = "06208e2ee243e3118a55dda9318f821f206d8563fb8d4df258767f8e62bb0997";
     deps = with allCrates; [  all__inflate.inflate_0_1 all__bitflags.bitflags_0_7 all__num-iter.num-iter_0_1 ];
   };
+  png_0_6_0 = buildCratesLib {
+    name = "png";
+    version = "0.6.0";
+    hash = "e41c4eb3d6b7416510b129d27ebe70b9dbf311a8a751a5ca1b1757c602e7fb3d";
+    deps = with allCrates; [  all__inflate.inflate_0_1 all__bitflags.bitflags_0_7 all__num-iter.num-iter_0_1 ];
+  };
   "png_0_5" = png_0_5_2;
-  "png_0" = png_0_5_2;}
+  png_0_6_1 = buildCratesLib {
+    name = "png";
+    version = "0.6.1";
+    hash = "2c7645eac8dca576d2811af4b0129aca7c0222649fc733753be0ccc62af4d53d";
+    deps = with allCrates; [  all__inflate.inflate_0_1 all__bitflags.bitflags_0_7 all__num-iter.num-iter_0_1 ];
+  };
+  png_0_6_2 = buildCratesLib {
+    name = "png";
+    version = "0.6.2";
+    hash = "3cb773e9a557edb568ce9935cf783e3cdcabe06a9449d41b3e5506d88e582c82";
+    deps = with allCrates; [  all__inflate.inflate_0_1 all__num-iter.num-iter_0_1 all__bitflags.bitflags_0_7 ];
+  };
+  "png_0_6" = png_0_6_2;
+  "png_0" = png_0_6_2;}
