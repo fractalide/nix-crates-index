@@ -14,5 +14,11 @@ rec {
     deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__shlex.shlex_0_1 all__term.term_0_4 all__clap.clap_2_5 all__regex.regex_0_1 ];
   };
   "cargo-kcov_0_1" = cargo-kcov_0_1_0;
-  "cargo-kcov_0_2" = cargo-kcov_0_2_0;
-  "cargo-kcov_0" = cargo-kcov_0_2_0;}
+  cargo-kcov_0_2_1 = buildCratesLib {
+    name = "cargo-kcov";
+    version = "0.2.1";
+    hash = "960d7decf3e14af500cf74186af4e490607366b4a19605022122739cdd3dcfb2";
+    deps = with allCrates; [  all__rustc-serialize.rustc-serialize_0_3 all__term.term_0_4 all__clap.clap_2_19 all__shlex.shlex_0_1 all__regex.regex_0_2 ];
+  };
+  "cargo-kcov_0_2" = cargo-kcov_0_2_1;
+  "cargo-kcov_0" = cargo-kcov_0_2_1;}

@@ -40,5 +40,12 @@ rec {
     deps = with allCrates; [  all__syntex.syntex_0_36 all__extprim.extprim_1_1 all__syntex_syntax.syntex_syntax_0_36 all__rustc_version.rustc_version_0_1 ];
   };
   "extprim_literals_1_0" = extprim_literals_1_0_1;
+  extprim_literals_1_2_0 = buildCratesLib {
+    name = "extprim_literals";
+    version = "1.2.0";
+    hash = "9527d8d189f791329d45a034a53f156958ce2916b9a606c16bf5fe0c979f1c8d";
+    deps = with allCrates; [  all__extprim.extprim_1_2 all__syntex_syntax.syntex_syntax_0_48 all__syntex.syntex_0_48 all__rustc_version.rustc_version_0_1 ];
+  };
   "extprim_literals_1_1" = extprim_literals_1_1_0;
-  "extprim_literals_1" = extprim_literals_1_1_0;}
+  "extprim_literals_1_2" = extprim_literals_1_2_0;
+  "extprim_literals_1" = extprim_literals_1_2_0;}

@@ -7,5 +7,11 @@ rec {
     hash = "ece5f1d7d8270abc5b4fb912739a44705bbc19f4401fe6671320931c14ab9db8";
     deps = with allCrates; [  all__regex.regex_0_2 ];
   };
-  "nipponium_0_1" = nipponium_0_1_0;
-  "nipponium_0" = nipponium_0_1_0;}
+  nipponium_0_1_1 = buildCratesLib {
+    name = "nipponium";
+    version = "0.1.1";
+    hash = "54a38abed5083c9f69ccd3e8e49be692f0c378e1e22a208a0772ff973af3427c";
+    deps = with allCrates; [  all__regex.regex_0_2 ];
+  };
+  "nipponium_0_1" = nipponium_0_1_1;
+  "nipponium_0" = nipponium_0_1_1;}

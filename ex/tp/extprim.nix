@@ -91,5 +91,12 @@ rec {
     hash = "e16638eb41eb5d4cd055b5e2bea4006a9001ecb0467ca81314f8be1d611522b8";
     deps = with allCrates; [  all__num-traits.num-traits_0_1 all__rustc_version.rustc_version_0_1 ];
   };
+  extprim_1_2_0 = buildCratesLib {
+    name = "extprim";
+    version = "1.2.0";
+    hash = "ccaf3c15bac022181574e0ea7673e327393fd842f6c350e1c6507cfb1f89cfad";
+    deps = with allCrates; [  all__num-traits.num-traits_0_1 all__rustc_version.rustc_version_0_1 ];
+  };
   "extprim_1_1" = extprim_1_1_1;
-  "extprim_1" = extprim_1_1_1;}
+  "extprim_1_2" = extprim_1_2_0;
+  "extprim_1" = extprim_1_2_0;}
