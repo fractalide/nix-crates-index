@@ -1,5 +1,31 @@
-{pkgs, stdenv, fetchurl, fetchgit, rustNightlyBin} :
-
+{ stdenv, fetchurl, fetchgit
+  , pkgs ? (
+  let
+    pkgs = import <nixpkgs>;
+    pkgs_ = (pkgs {});
+    rustOverlay = (pkgs_.fetchFromGitHub {
+      owner = "mozilla";
+      repo = "nixpkgs-mozilla";
+      rev = "4779fb7776c3d38d78b5ebcee62165e6d1350f74";
+      sha256 = "04q6pwlz82qsm81pp7kk7i6ngrslq193v5wchdsrdifbn8cdqgbs";
+    });
+  in (pkgs {
+    overlays = [
+      (import (builtins.toPath "${rustOverlay}/rust-overlay.nix"))
+      (self: super: {
+        rust = {
+          rustc = super.rustChannels.nightly.rust;
+          cargo = super.rustChannels.nightly.cargo;
+        };
+        rustPlatform = super.recurseIntoAttrs (super.makeRustPlatform {
+          rustc = super.rustChannels.nightly.rust;
+          cargo = super.rustChannels.nightly.cargo;
+        });
+      })
+    ];
+  }))
+}:
+with pkgs;
 let
   lib = stdenv.lib;
   inherit (lib) fix extends callPackageWith;
@@ -18,7 +44,7 @@ let
     cratesDeps = pkgs.lib.fold ( recursiveDeps : newCratesDeps: newCratesDeps ++ recursiveDeps.cratesDeps  ) deps deps;
     depsString = pkgs.lib.fold ( dep: str: "${str} --extern ${normalizeName dep.name}=${dep}/lib${normalizeName dep.name}.rlib") "" deps;
     symlinkCalc = pkgs.lib.fold ( dep: str: "${str} ln -sf ${dep}/lib${normalizeName dep.name}.rlib mylibs/ \n") "mkdir mylibs\n ";
-    rustNightly = rustNightlyBin.rustc;
+    rustNightly = rust.rustc;
   in
     stdenv.mkDerivation {
       name = name;
